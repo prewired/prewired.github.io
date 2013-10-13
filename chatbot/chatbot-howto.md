@@ -1,5 +1,6 @@
-# Getting Started #
+# Getting Started with Chatbots#
 
+## Setting up some tools ##
 
 Check that you have Python 2.7 installed. Type
 
@@ -17,4 +18,5 @@ then you are good to go. Otherwise, install Python 2.7
 
 Next, [install pip](http://www.pip-installer.org/en/latest/installing.html)
 
-Finally, [install NLTK](http://nltk.org/install.html).
+Finally, [install NLTK](http://nltk.org/install.html) (skipping steps
+(1) and (2), since we've already covered them).
