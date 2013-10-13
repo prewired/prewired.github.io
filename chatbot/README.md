@@ -1,1 +1,1 @@
-Project for building chatbots based on http://nltk.org/_modules/nltk/chat/
+Project for building chatbots based on http://nltk.org/_modules/nltk/chat
