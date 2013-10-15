@@ -56,10 +56,12 @@ Make a copy of one of the bots, and call it  `mybot.py`:
 % cp chat/rude.py chat/mybot.py
 ```
 
-Now you can edit and modify `mybot.py` using your favourite editor. A
-simple way to test your modified version is via the file `test.py`
-which should be sitting in the `prewired` directory where you
-downloaded `chat.zip`. This just calls the `demo()` function:
+Now you can edit and modify `mybot.py` using your favourite
+editor. See if you can come up with a bot that is more amusing than
+any of the standard NLTK ones. A simple way to test your modified
+version is via the file `test.py` which should be sitting in the
+`prewired` directory where you downloaded `chat.zip`. This just calls
+the `demo()` function:
 
 ```python
 
@@ -69,9 +71,30 @@ if __name__ == "__main__":
     demo()
 ```
 
-If you used a different name than `mybot.py`, modify this file accordingly.
+If you used a different name than `mybot.py`, modify this file
+accordingly.
 
+## Regular Expressions ## 
 
+The chatbots all use regular expressions to match input from the user,
+and to compute the response. The [Regular Expression HOWTO](http://docs.python.org/2/howto/regex.html) is quite
+dense, but nevertheless an essential resource for learning about
+Python's regular expression syntax. A more linguistically-oriented
+presentation can be found in [Chapter 3, Section 3.4 of the NLTK
+book](http://nltk.org/book/ch03.html).
+
+One slight glitch you might notice in the responses produced by the
+chatbots is a redundant whitespace character that is inserted when a
+substring from the user input gets substituted into the bot's
+response. This is illustrated in the following example, where the word
+*crazy* is preceded by two whitespace characters in the response.
+
+```
+>You are crazy
+More like YOU'RE  crazy!
+```
+
+See if you can figure out why this sometimes happens.
 
 
 
