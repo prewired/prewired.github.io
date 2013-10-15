@@ -47,7 +47,7 @@ Which chatbot would you like to talk to?
 
 Pick a number and play around with some of the bots. Once you've got a
 feeling for what they can and cannot do, have a look at the code of
-one of them, such as `chat/eliza.py`. See if you figure out just from the
+one of them, such as `chat/eliza.py`. See if you can figure out just from the
 `pairs` data what is going on. 
 
 Make a copy of one of the bots, and call it  `mybot.py`:
@@ -59,7 +59,17 @@ Make a copy of one of the bots, and call it  `mybot.py`:
 Now you can edit and modify `mybot.py` using your favourite editor. A
 simple way to test your modified version is via the file `test.py`
 which should be sitting in the `prewired` directory where you
-downloaded `chat.zip`.
+downloaded `chat.zip`. This just calls the `demo()` function:
+
+```python
+
+from chat.mybot import demo
+
+if __name__ == "__main__":
+    demo()
+```
+
+If you used a different name than `mybot.py`, modify this file accordingly.
 
 
 
