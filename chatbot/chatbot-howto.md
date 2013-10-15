@@ -1,6 +1,6 @@
 # Getting Started with Chatbots#
 
-## Setting up some tools ##
+## Getting the files##
 
 Check that you have Python 2.7 installed. Type
 
@@ -16,7 +16,23 @@ at the terminal. If you get something like this
 then you are good to go. Otherwise, install Python 2.7
 [using these instructions](http://www.python.org/getit/releases/2.7.5/).
 
-Next, [install pip](http://www.pip-installer.org/en/latest/installing.html)
+In order to skip the (minor) hassle of installing
+[NLTK](http://nltk.org/install.html), we've prepared a zip archive of
+just the files you need for running the chatbots. [Download it
+here](http://data.inf.ed.ac.uk/catalog/storage/f/2013-10-15T11%3A50%3A03.026Z/chat.zip).
 
-Finally, [install NLTK](http://nltk.org/install.html) (skipping steps
-(1) and (2), since we've already covered them).
+## Running a chatbot ##
+
+The quickest way to run the chatbots is to call chat as a module (using the -m option):
+
+````% python -m chat
+
+Which chatbot would you like to talk to?
+  1: Eliza (psycho-babble)
+  2: Iesha (teen anime junky)
+  3: Rude (abusive bot)
+  4: Suntsu (Chinese sayings)
+  5: Zen (gems of wisdom)
+````
+
+Pick a number and play around with one of the bots. 
