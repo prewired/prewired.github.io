@@ -100,5 +100,10 @@ More like YOU'RE  crazy!
 
 See if you can figure out why this sometimes happens.
 
+Another thing you could try would be to use the 'or' operator (`|`) in
+your input patterns. This will probably give you an unexpected result
+if the response contains a `%` 'backreference'. If you can't work out what the problem is, ask
+a mentor for a hint.
+
 
 
