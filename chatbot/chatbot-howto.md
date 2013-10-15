@@ -25,7 +25,8 @@ here](http://data.inf.ed.ac.uk/catalog/storage/f/2013-10-15T11%3A50%3A03.026Z/ch
 
 The quickest way to run the chatbots is to call `chat` as a module (using the `-m` option):
 
-```% python -m chat
+```
+% python -m chat
 
 Which chatbot would you like to talk to?
   1: Eliza (psycho-babble)
