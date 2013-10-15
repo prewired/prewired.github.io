@@ -74,7 +74,7 @@ if __name__ == "__main__":
 If you used a different name than `mybot.py`, modify this file
 accordingly.
 
-## Regular Expressions ## 
+## Regular Expressions ##
 
 The chatbots all use regular expressions to match input from the user,
 and to compute the response. The [Regular Expression HOWTO](http://docs.python.org/2/howto/regex.html) is quite
