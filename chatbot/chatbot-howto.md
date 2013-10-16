@@ -23,7 +23,7 @@ then you are good to go. Otherwise, install Python 2.7
 In order to skip the (minor) hassle of installing
 [NLTK](http://nltk.org/install.html), we've prepared a zip archive of
 just the files you need for running the chatbots. Make a directory (say, `prewired`) where you want to do your work,  [download this
-zip file](http://data.inf.ed.ac.uk/catalog/storage/f/2013-10-15T11%3A50%3A03.026Z/chat.zip) into it, and unzip it.
+zip file](http://prewired.org/chat.zip) into it, and unzip it.
 
 ```
 % mkdir prewired
