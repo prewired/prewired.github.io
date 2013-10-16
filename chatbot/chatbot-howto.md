@@ -1,5 +1,7 @@
 # Getting Started with Chatbots#
 
+## http://tinyurl.com/prewired ##
+
 ## Getting the files##
 
 Check that you have Python 2.7 installed. Type
