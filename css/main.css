@@ -91,7 +91,7 @@ td, th {
         font-size: 1em;
         line-height: 1.4;
         font-family: "Rosario", Arial, Helvetica, sans-serif;
-        
+        overflow-x: hidden;
     }
 
     h1 { font-size: 4em; font-weight: bold; line-height: 0.2; text-align: center;  letter-spacing: -2px; text-shadow: 2px 2px 1px white; font-family: Arial, Helvetica, sans-serif;}
@@ -100,8 +100,11 @@ td, th {
     h4 {}
     h5 {}
 
+    header a { text-decoration: none; color: inherit; }
+    header a:hover {text-decoration: none; }
     p, li { font-weight: bold; font-size: 1.2em; }
-    p a, li a {text-decoration: none;}
+    p a { text-decoration: underline; }
+    li a {text-decoration: none;}
     footer a { text-decoration: underline;}
     a { text-decoration: inherit; }
     a:hover { text-decoration: underline; }
@@ -384,6 +387,7 @@ td, th {
     4.0 Images & video
 **/
 
+    img { max-width: 100%; }
     .logo { width: 100%; max-width: 144px;}
     .icon { width: 100%; max-width: 64px;}
 
