@@ -96,7 +96,7 @@ td, th {
 
     h1 { font-size: 4em; font-weight: bold; line-height: 0.2; text-align: center;  letter-spacing: -2px; text-shadow: 2px 2px 1px white; font-family: Arial, Helvetica, sans-serif;}
     h2 { font-size: 1.4em; font-weight: bold; text-align: center; letter-spacing: -1px; font-family: Arial, Helvetica, sans-serif;}
-    h3 { font-size: 1.4em; font-weight: normal;}
+    h3 { font-size: 1.8em; font-weight: bold; text-transform: none;}
     h4 {}
     h5 {}
 
@@ -239,7 +239,8 @@ td, th {
 
     .note { color: silver; }
 
-    nav { opacity: 0.6; }
+    .trans { opacity: 0.6; }
+    .opaque { opacity: 1; }
 
     .win {
       background-color: #E6EFC2;
@@ -328,6 +329,8 @@ td, th {
       display: block;
     }
 
+    footer { margin-top: 2em; }
+
 /*  3.1     */
     @media screen and (min-width: 479px){
 
@@ -342,8 +345,6 @@ td, th {
             top: 0;
             width: 100%;
         }
-        .pos-right { position: absolute; top: 0; right: 8px;}
-        .pos-left { position: absolute; top: 0; left: 8px;}
 
     }
 
@@ -371,12 +372,15 @@ td, th {
         .content { height: 100%; overflow-y: scroll;}
         .content .inner { padding-left: 32px; padding-top: 64px;}
         nav a { display: block; }
+        nav .btn-big a { padding-top: 1.2em; padding-bottom: 1.2em;}
+        nav .btn-big .logo { margin-top: -0.6em; }
 
     }
 
 /*  3.3     */
     @media screen and (min-width: 1024px){
-
+        .pos-right { position: absolute; top: 0; right: 8px;}
+        .pos-left { position: absolute; top: 0; left: 8px;}
     }
 
 /*  3.4     */
