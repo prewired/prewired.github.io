@@ -1,0 +1,13 @@
+# Site settings
+title: Prewired: An Edinburgh programming club for under 19s
+email: 
+description: 
+baseurl:
+url: "http://www.prewired.org"
+twitter: prewired
+github: prewired
+
+# Build settings
+permalink: pretty
+
+highlighter: pygments
