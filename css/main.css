@@ -107,7 +107,7 @@ td, th {
     a { text-decoration: inherit; }
     a:hover { text-decoration: underline; }
 
-    nav { text-align: center; letter-spacing:0.1em; }
+    nav { text-align: center; letter-spacing:0.1em; font-weight: bold;}
     nav a:hover { text-decoration: none; }
 
     .note {
