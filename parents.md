@@ -1,5 +1,6 @@
 ---
 layout: default
+redirect_from: "/parents/"
 ---
 
 ### Information for Parents
