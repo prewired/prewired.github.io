@@ -88,21 +88,19 @@ td, th {
 **/
 
     body {
-        font-size: 1em;
+        font-size: 1.2em;
         line-height: 1.4;
         font-family: "Rosario", Arial, Helvetica, sans-serif;
-        overflow-x: hidden;
-    }
+        overflow-x: hidden;    }
 
-    h1 { font-size: 4em; font-weight: bold; line-height: 0.2; text-align: center;  letter-spacing: -2px; text-shadow: 2px 2px 1px white; font-family: Arial, Helvetica, sans-serif;}
-    h2 { font-size: 1.4em; font-weight: bold; text-align: center; letter-spacing: -1px; font-family: Arial, Helvetica, sans-serif;}
-    h3 { font-size: 1.8em; font-weight: bold; text-transform: none;}
+    h1 { font-size: 3em; font-weight: bold; line-height: 0.2; text-align: center;  letter-spacing: -2px; text-shadow: 2px 2px 1px white; font-family: Arial, Helvetica, sans-serif;}
+    h2 { font-size: 1.2em; font-weight: bold; text-align: center; letter-spacing: -1px; font-family: Arial, Helvetica, sans-serif;}
+    h3 { font-size: 1.4em; font-weight: bold; text-transform: none;}
     h4 {}
     h5 {}
 
     header a { text-decoration: none; color: inherit; }
     header a:hover {text-decoration: none; }
-    p, li { font-weight: bold; font-size: 1.2em; }
     p a { text-decoration: underline; }
     li a {text-decoration: underline;}
     footer a { text-decoration: underline;}
@@ -284,7 +282,7 @@ td, th {
         padding: 0.8em;
     }
     
-    ul { padding: 0; margin: 0;}
+    nav ul { padding: 0; margin: 0;}
     ul.subp { margin-top: -1em; margin-left: 8em;}
     ul.subp li, ul.subp p { padding: 0; margin: 0; }
 
