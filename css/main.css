@@ -352,7 +352,7 @@ td, th {
     @media screen and (min-width: 768px){
 
         .wrapper { 
-            width: 80%; max-width: 768px; 
+            width: 90%; max-width: 1200px; 
             margin-left: auto; margin-right: auto;
         }
 
