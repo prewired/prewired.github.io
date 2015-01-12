@@ -54,7 +54,7 @@ The first time you come to a session, please introduce yourself to the Duty Ment
 
 You'll be asked to read our [child protection policy](policy.html) and sign your acknowledgment of them. You'll also be asked to fill out your details for the [mentors database](https://docs.google.com/forms/d/1NAZyNhLD-vFHEqpxOqYa0oaWjvDHe2Xuy4RI1uUqgGM/viewform) so we can keep in touch with you and keep track of the skills we have floating around the room (you can ask us to remove you from this at any time, if you decide to stop coming).
 
-Sometimes it can be hard to get stuck in, so [here are some guidelines for effective mentoring](#mentor-guidelines).
+Sometimes it can be hard to get stuck in, so [here are some guidelines for effective mentoring](#mentors-guidelines).
 
 ### Ongoing participation
 
