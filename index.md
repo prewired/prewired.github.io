@@ -7,7 +7,7 @@ layout: default
 ### How to join
 
 1. You or a parent sign up for the [newsletter](#newsletter) using the form below, so you don't miss out on any announcements.
-2. Register for the first week you'd like to attend on Eventbrite, leaving your emergency contact details and any special requirements.
+2. [Register](membership.html) for the first week you'd like to attend on Eventbrite, leaving your emergency contact details and any special requirements.
 3. Turn up!
     - If you have never coded before, or have but don't know what to do, no problem! Introduce yourself to the Duty Mentor (who should be easy to spot) when you arrive, and they'll help you to get started.
     - If you're already working on a coding project (maybe you're building your own website), or learning a topic by yourself and are happy to carry on with that, cool beans. Make yourself at home and ask any of our mentors if you need help (they'll be wearing special tshirts, or you can put your hand up and someone will spot you).
