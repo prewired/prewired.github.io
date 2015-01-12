@@ -9,6 +9,8 @@ You can contact the organisers by emailing hello@prewired.org.
 
 Don't forget to sign up for the [newsletter](#newsletter) to stay up to date with the latest developments!
 
+You can also send [@prewired](http://twitter.com/prewired) a message on Twitter; the Twitter account is run by volunteer participants.
+
 ### Community
 
 We're in the process of setting up our very own private social network. Stay tuned to the newsletter for more information!

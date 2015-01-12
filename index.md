@@ -31,6 +31,7 @@ If you want to chat to other members in-between sessions, you can:
 - Request to join the mailing list: prewired-discuss@googlegroups.com
 - Join the facebook group.
 - Join the IRC channel (ask a mentor for the password).
+- Send [@prewired](http://twitter.com/prewired) a message on Twitter.
 
 Watch this space... Soon we'll have our very own social network which you can use to blog about your projects or chat to other members in your own private space.
 
