@@ -7,7 +7,7 @@ redirect_from: "/membership/"
 
 We need to know is coming so we can collect emergency contact information etc.
 
-Participants can [register for individual Prewired sessions on Eventbrite here](https://www.eventbrite.co.uk/e/prewired-tickets-10049009859?ref=ecal), or alterntatively sign up for longer-term membership below.
+Participants can [register for individual Prewired sessions on Eventbrite here](http://www.eventbrite.co.uk/e/prewired-tickets-12525428895), or alterntatively sign up for longer-term membership below.
 
 ### Membership
 
