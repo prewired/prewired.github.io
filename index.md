@@ -36,4 +36,4 @@ Watch this space... Soon we'll have our very own social network which you can us
 
 ### Any questions?
 
-Check out the FAQ, or email hello [at] prewired [dot] org.
+Check out the [FAQ](faq.html), or email hello [at] prewired [dot] org.

@@ -25,7 +25,7 @@ Prewired is also a place for young people to **meet peers** with shared interest
 
 ### What does your child need?
 
-Firstly, they'll need to [register](registration.html). This can be done on a session-by-session basis, or through longer-term [membership](#membership).
+Firstly, they'll need to [register](membership.html). This can be done on a session-by-session basis, or through longer-term [membership](#membership).
 
 If possible, please bring a laptop. We have a few spares, but not many.
 
@@ -39,7 +39,7 @@ Nothing! Prewired is free, run by volunteers, occasionally supported by donation
 
 ### Membership
 
-For frequent attendees, we offer a long-term membership option. This just means you have to fill out the registration form less frequently, by giving us permission to hold your data on file. You can [sign up here](membership).
+For frequent attendees, we offer a long-term membership option. This just means you have to fill out the registration form less frequently, by giving us permission to hold your data on file. You can [sign up here](membership.html#membership).
 
 ### Why do we do this?
 
