@@ -62,7 +62,7 @@ You don't need to come every week, but it's helpful for the kids to have some co
 
 Please also add your details to the [mentors database](https://docs.google.com/forms/d/1NAZyNhLD-vFHEqpxOqYa0oaWjvDHe2Xuy4RI1uUqgGM/viewform).
 
-Mentors who have undergone Disclosure can take a turn at being the Duty Mentor. We rotate this each week between people happy to do it, and it's mostly just about being the first port of call for kids, parents and other mentors. You can see the [Duty Mentor guidelines and rota here](#). 
+Mentors who have undergone Disclosure can take a turn at being the Duty Mentor. We rotate this each week between people happy to do it, and it's mostly just about being the first port of call for kids, parents and other mentors. You can see the [Duty Mentor guidelines and rota here](#duty-mentor-guidelines-and-rota). 
 
 ### Organising and outreach
 
