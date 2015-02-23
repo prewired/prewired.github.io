@@ -110,6 +110,12 @@ td, th {
     nav { text-align: center; letter-spacing:0.1em; font-weight: bold;}
     nav a:hover { text-decoration: none; }
 
+    .new {
+        font-size: 1.6em;
+        position: absolute; 
+        margin-left: 32px;
+    }
+
     .note {
       font-size: 1em;
       font-weight: bold;
@@ -172,6 +178,17 @@ td, th {
         }
         nav ul li a.no-hov:hover { border: none; }
 
+        /*.new {
+            border-top: 4px dotted #FF4000;
+            margin-bottom: -4px;
+        }
+        .new a { margin-top: -4px; }
+        .new a:hover {
+            margin-bottom: 0px;
+            margin-top: -8px;
+        }*/
+
+
     /* Darkish */
         .darkish{ color: #9e9e9e;  }
         .darkish-bg{ background-color: #9e9e9e; }
@@ -195,7 +212,7 @@ td, th {
         .darker-hov:hover { color: #000; }
 
     /* Primary Color (orange) */
-        .color1{ color: #FF4000;}
+        .color1, .new { color: #FF4000;}
         .color1-bg{ background-color: #FF4000;}
         .color1-texture { background-color: #FF4000; }
         .color1-border{ border-color: #FF4000;}
