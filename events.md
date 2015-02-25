@@ -15,8 +15,8 @@ Learn the basics of how to make your first Android app with members of Scotland'
 
 Before you come, if possible, install the following on your laptop (follow the links for instructions):
 
-* Android Studio and the Android SDK (http://developer.android.com/sdk/installing/index.html?pkg=studio)
-* GenyMotion (https://www.genymotion.com)
+* [Android Studio and the Android SDK](http://developer.android.com/sdk/installing/index.html?pkg=studio)
+* [GenyMotion](https://www.genymotion.com) (plugin to Android studio)
 
 *No prior experience with Android or Java necessary! (But it also won't hurt)*
 
