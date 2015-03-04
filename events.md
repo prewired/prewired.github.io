@@ -21,7 +21,7 @@ Further information to be announced.
 
 ### Mini Maker Faire, 19th April
 
-The [Mini Maker Faire(http://makerfaireedinburgh.com/) is an event in Edinburgh around easter time. We'll have a table to show off the variety of interesting projects that happen at Prewired. If you're interested and have something to show - maybe a website, game, hardware project, or anything else - talk to Eder at any Prewired session, or drop an email to hello@prewired.org. We'll be actively recruiting for projects very soon...
+The [Mini Maker Faire](http://makerfaireedinburgh.com/) is an event in Edinburgh around easter time. We'll have a table to show off the variety of interesting projects that happen at Prewired. If you're interested and have something to show - maybe a website, game, hardware project, or anything else - talk to Eder at any Prewired session, or drop an email to hello@prewired.org. We'll be actively recruiting for projects very soon...
 
 ### Young Rewired State
 
