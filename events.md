@@ -32,7 +32,7 @@ The [Mini Maker Faire](http://makerfaireedinburgh.com/) is an event in **Summerh
 **To sign up:**
 
 * Think of the project(s) you'd like to show. What do you need to be able to share it with other people? You could make a poster or a video, or just demo it directly!
-* [Fill in this form](#) to let us know what you need and what you will bring, and what time you can be there. We'll have our table all day, but you don't have to stay the whole time (you can leave your poster/project/demo with us if you like of course).
+* [Fill in this form](https://docs.google.com/forms/d/15Y203tAXsnEDQ51ZX3Tl9OVzLDH1HT9T1BIW5EwvOBw/viewform) to let us know what you need and what you will bring, and what time you can be there. We'll have our table all day, but you don't have to stay the whole time (you can leave your poster/project/demo with us if you like of course).
 * Show up at the time you said you would, on Sunday 19th! Bring your excitement.
 
 If you stay to show something at the Prewired table for an hour or more, you get free entry to the Maker Faire (as 'crew'). When you're done (or before) you can spend as much time looking around all of the other awesome stuff at the Faire as you like! If you want to bring parents/siblings/friends, they'll have to buy a ticket on the Maker Faire website.
