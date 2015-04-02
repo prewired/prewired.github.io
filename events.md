@@ -9,7 +9,7 @@ As well as our weekly sessions, we hold special one-off or annually repeating ev
 
 ### Ongoing
 
-#### Maker Week, 13th - 17th April, 12-4pm
+#### Maker Week, 13th - 17th April, 12-4pm<span class="new">*</span>
 
 This is Prewired every day! Come to **CodeBase** for as many or as few days as you like during this week. Our mentors will be around to help you work on whatever cool project you like. A great chance to start and finish something in one week!
 
