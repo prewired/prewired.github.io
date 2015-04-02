@@ -9,7 +9,7 @@ As well as our weekly sessions, we hold special one-off or annually repeating ev
 
 ### Ongoing
 
-#### <span class="btn-big inner lighter color1-bg">Maker Week</span>, 13th - 17th April, 12-4pm
+#### <span class="btn-big inner lighter color1-bg">Maker Week</span> 13th - 17th April, 12-4pm
 
 This is Prewired every day! Come to **CodeBase** for as many or as few days as you like during this week. Our mentors will be around to help you work on whatever cool project you like. A great chance to start and finish something in one week!
 
@@ -25,9 +25,19 @@ This is Prewired every day! Come to **CodeBase** for as many or as few days as y
 * A packed lunch if you'd like something to eat. We'll have a few snacks and juice, but not proper lunch.
 * Excitement and enthusiasm!
 
-#### Mini Maker Faire, 19th April
+#### <span class="btn-big inner lighter color2-bg">Mini Maker Faire</span> 19th April, 10-5pm
 
-The [Mini Maker Faire](http://makerfaireedinburgh.com/) is an event in Edinburgh around easter time. We'll have a table to show off the variety of interesting projects that happen at Prewired. If you're interested and have something to show - maybe a website, game, hardware project, or anything else - talk to Eder at any Prewired session, or drop an email to hello@prewired.org. We'll be actively recruiting for projects very soon...
+The [Mini Maker Faire](http://makerfaireedinburgh.com/) is an event in **Summerhall**, Edinburgh, on Sunday 19th April. We'll have a table to show off the variety of interesting projects that happen at Prewired, both things created during the Maker Week, and anything else cool that you've worked on - maybe a website, game, hardware project, or anything else. 
+
+**To sign up:**
+
+* Think of the project(s) you'd like to show. What do you need to be able to share it with other people? You could make a poster or a video, or just demo it directly!
+* [Fill in this form](#) to let us know what you need and what you will bring, and what time you can be there. We'll have our table all day, but you don't have to stay the whole time (you can leave your poster/project/demo with us if you like of course).
+* Show up at the time you said you would, on Sunday 19th! Bring your excitement.
+
+If you stay to show something at the Prewired table for an hour or more, you get free entry to the Maker Faire (as 'crew'). When you're done (or before) you can spend as much time looking around all of the other awesome stuff at the Faire as you like! If you want to bring parents/siblings/friends, they'll have to buy a ticket on the Maker Faire website.
+
+If you have any questions, hello@prewired.org. 
 
 #### Google Science Fair
 
