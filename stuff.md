@@ -26,7 +26,7 @@ If you'd like to donate or lend something to us, email hello@prewired.org, or dr
 
 #### We have
 
-* 8x Dell laptops and power supplies (donated by Skyscanner) which duel-boot Ubuntu and Windows (thanks to Cameron Gray for setting them up!)
+* 6x Dell laptops and power supplies (donated by Skyscanner) which duel-boot Ubuntu and Windows (thanks to Cameron Gray for setting them up!)
 * 3 other laptops (pending setup, missing power supplies, donated by UoE Computing Society / TARDIS)
 * Dell monitor (DVI) (donated by TARDIS)
 * HDMI-DVI cable (on loan from Rikki Guy)
