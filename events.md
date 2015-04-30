@@ -9,35 +9,15 @@ As well as our weekly sessions, we hold special one-off or annually repeating ev
 
 ### Ongoing
 
-#### <span class="btn-big inner lighter color1-bg">Maker Week</span> 13th - 17th April, 12-4pm
-
-This is Prewired every day! Come to **CodeBase** for as many or as few days as you like during this week. Our mentors will be around to help you work on whatever cool project you like. A great chance to start and finish something in one week!
-
-**To sign up:**
-
-* [Make sure you're registered as a member](/membership.html) so we have your emergency contact details.
-* [Sign up for the days/times you will attend here](http://doodle.com/cakheiix3min7is9). It's public so you can see when your friends will be there too (in case you want to work on something together) but if you'd rather not post for all to see, then email hello@prewired.org with the days you'd like to come.
-* Make sure you're signed up for the [newsletter](#newsletter) for any updates.
-
-**What to bring:**
-
-* Your laptop or other hardware you'd like to work with (we'll have the usual spares).
-* A packed lunch if you'd like something to eat. We'll have a few snacks and juice, but not proper lunch.
-* Excitement and enthusiasm!
-
-#### <span class="btn-big inner lighter color2-bg">Mini Maker Faire</span> 19th April, 10-5pm
-
-The [Mini Maker Faire](http://makerfaireedinburgh.com/) is an event in **Summerhall**, Edinburgh, on Sunday 19th April. We'll have a table to show off the variety of interesting projects that happen at Prewired, both things created during the Maker Week, and anything else cool that you've worked on - maybe a website, game, hardware project, or anything else. 
-
-**To sign up:**
-
-* Think of the project(s) you'd like to show. What do you need to be able to share it with other people? You could make a poster or a video, or just demo it directly!
-* [Fill in this form](https://docs.google.com/forms/d/15Y203tAXsnEDQ51ZX3Tl9OVzLDH1HT9T1BIW5EwvOBw/viewform) to let us know what you need and what you will bring, and what time you can be there. We'll have our table all day, but you don't have to stay the whole time (you can leave your poster/project/demo with us if you like of course).
-* Show up at the time you said you would, on Sunday 19th! Bring your excitement.
-
-If you stay to show something at the Prewired table for an hour or more, you get free entry to the Maker Faire (as 'crew'). When you're done (or before) you can spend as much time looking around all of the other awesome stuff at the Faire as you like! If you want to bring parents/siblings/friends, they'll have to buy a ticket on the Maker Faire website.
-
 If you have any questions, hello@prewired.org. 
+
+#### <span class="btn-big inner lighter color1-bg">Young Rewired State</span>, 27th July - 3rd August
+
+Annually we send teams to [the Young Rewired State Festival of Code](http://www.yrs.io) in the last week of July. This involves working in teams or individually on a single project, for five days at your local centre (put Edinburgh when you sign up and you'll be allocated to Prewired), then a trip for the weekend to the final competition in Birmingham, where hundreds participants from all over the UK gather to present their projects, meet other like-minded young people, have fun and win prizes! 
+
+It's free, and Prewired should be teaming up with other Scottish centres to run a coach to Birmingham.
+
+Sign up as a participant or mentor on the [YRS website](http://www.yrs.io)
 
 #### Google Science Fair
 
@@ -53,10 +33,6 @@ Watch this space for details of next month's workshop...
 
 ### Upcoming
 
-#### Young Rewired State
-
-Annually we send teams to [the Young Rewired State Festival of Code](http://www.yrs.io) in July/August.
-
 #### First Lego League Competition
 
 Annually we enter a team into the First Lego League Competition, around November.
@@ -64,6 +40,14 @@ Annually we enter a team into the First Lego League Competition, around November
 <hr/>
 
 ### Past Events
+
+**13th-17th April 2015 - Maker Week**
+
+Prewired every day! Mentors were around to help Prewired participants work on whatever cool project they wanted, and there were some great outcomes! [A note about it on Amy's blog](http://rhiaro.co.uk/2015/04/prewired-maker).
+
+**19th April 2015 - Mini Maker Faire**, 10-5pm**
+
+The [Mini Maker Faire](http://makerfaireedinburgh.com/) was an event in **Summerhall**, Edinburgh, on Sunday 19th April. We had a table to show off the variety of interesting projects that happen at Prewired. Kids attended as 'crew' to show off their work and tell people about Prewired. They did an amazing job! [A note about it on Amy's blog](http://rhiaro.co.uk/2015/04/edinburgh-mini).
 
 **4th March 2015 - Beginners Android Development**
 
