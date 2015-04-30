@@ -23,6 +23,7 @@ If you'd like to donate or lend something to us, email hello@prewired.org, or dr
 * More spare laptops and power supplies - old and clunky are perfectly fine! At a minimum should be able to run a web browser and a text editor. Able to run Netbeans, Minecraft and Unity are a plus!
 * Hard drives for kids to be able to backup/store their work.
 * Webhosting, accessible by individual kids over FTP for them to experiment with web development.
+* More tables and chairs for the CodeBase events space.
 
 #### We have
 
