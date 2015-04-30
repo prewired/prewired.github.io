@@ -45,7 +45,7 @@ Annually we enter a team into the First Lego League Competition, around November
 
 Prewired every day! Mentors were around to help Prewired participants work on whatever cool project they wanted, and there were some great outcomes! [A note about it on Amy's blog](http://rhiaro.co.uk/2015/04/prewired-maker).
 
-**19th April 2015 - Mini Maker Faire**, 10-5pm**
+**19th April 2015 - Mini Maker Faire**
 
 The [Mini Maker Faire](http://makerfaireedinburgh.com/) was an event in **Summerhall**, Edinburgh, on Sunday 19th April. We had a table to show off the variety of interesting projects that happen at Prewired. Kids attended as 'crew' to show off their work and tell people about Prewired. They did an amazing job! [A note about it on Amy's blog](http://rhiaro.co.uk/2015/04/edinburgh-mini).
 
