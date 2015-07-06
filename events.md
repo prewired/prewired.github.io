@@ -9,19 +9,17 @@ As well as our weekly sessions, we hold special one-off or annually repeating ev
 
 ### Ongoing
 
-If you have any questions, hello@prewired.org. 
+If you have any questions, hello@prewired.org.
 
 #### <span class="btn-big inner lighter color1-bg">Young Rewired State</span>, 27th July - 3rd August
 
-Annually we send teams to [the Young Rewired State Festival of Code](http://www.yrs.io) in the last week of July. This involves working in teams or individually on a single project, for five days at your local centre (put Edinburgh when you sign up and you'll be allocated to Prewired), then a trip for the weekend to the final competition in Birmingham, where hundreds participants from all over the UK gather to present their projects, meet other like-minded young people, have fun and win prizes! 
+**See [prewired.org/yrs15](http://www.prewired.org/yrs15) for details!**
+
+Annually we send teams to [the Young Rewired State Festival of Code](http://www.yrs.io) in the last week of July. This involves working in teams or individually on a single project, for five days at your local centre (put Edinburgh when you sign up and you'll be allocated to Prewired), then a trip for the weekend to the final competition in Birmingham, where hundreds participants from all over the UK gather to present their projects, meet other like-minded young people, have fun and win prizes!
 
 It's free, and Prewired should be teaming up with other Scottish centres to run a coach to Birmingham.
 
-Sign up as a participant or mentor on the [YRS website](http://www.yrs.io)
-
-#### Google Science Fair
-
-We're entering teams into the [Google Science Fair](https://www.googlesciencefair.com). To take part, head to the 'Science Fair' labelled table at Prewired on 11th March! (And read the Science Fair website for more info).
+Sign up as a participant or mentor on the [YRS website](http://festival.yrs.io)
 
 <hr/>
 
