@@ -9,9 +9,9 @@ redirect_from: "/yrs15/"
 
 Annually we send teams to [the Young Rewired State Festival of Code](http://festival.yrs.io) in the last week of July. This involves working in teams or individually on a single project, for five days at your local centre (put Edinburgh when you sign up and you'll be allocated to Prewired), then a trip for the weekend to the final competition in Birmingham, where hundreds participants from all over the UK gather to present their projects, meet other like-minded young people, have fun and win prizes!
 
-<a href="http://festival.yrs.io"><span class="btn-big inner lighter color2-bg">Sign up to particpate!</span></a>
+<a href="http://festival.yrs.io"><span class="btn-big inner left lighter color2-bg">Sign up to particpate!</span></a>
 
-<a href="http://festival.yrs.io"><span class="btn-big inner lighter color3-bg">Sign up to mentor!</span></a>
+<a href="http://festival.yrs.io"><span class="btn-big inner left lighter color3-bg">Sign up to mentor!</span></a>
 
 #### Edinburgh Centre
 
@@ -23,7 +23,7 @@ Annually we send teams to [the Young Rewired State Festival of Code](http://fest
 
 **Food?** We'll provide snacks during the week, but please bring a packed lunch or money to buy food from nearby shops/cafes.
 
-**Equipment** We have spare laptops you can borrow, but if you have your own please bring it as we don't have enough for everyone. We also have some Lego Mindstorms and Arduino kit, but do bring your own if you think you'd like to use it.
+**Equipment?** We have spare laptops you can borrow, but if you have your own please bring it as we don't have enough for everyone. We also have some Lego Mindstorms and Arduino kit, but do bring your own if you think you'd like to use it.
 
 #### Festival of Code
 
