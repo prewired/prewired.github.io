@@ -13,6 +13,8 @@ Annually we send teams to [the Young Rewired State Festival of Code](http://fest
 
 <a href="http://festival.yrs.io"><span class="btn-big inner left lighter color3-bg">Sign up to mentor!</span></a>
 
+<div class="w1of1 clearfix"></div>
+
 #### Edinburgh Centre
 
 **Where?** CodeBase Events Space, 3 Lady Lawson Street.
