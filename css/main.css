@@ -67,7 +67,7 @@ td, th {
 /* @last-updated 18th Mar 2013              */
 /*******************************************/
 
-/** 
+/**
     0.0 Accessibility
 **/
     .no-css {
@@ -83,7 +83,7 @@ td, th {
         }
     }
 
-/** 
+/**
     1.0 Typography
 **/
 
@@ -96,7 +96,7 @@ td, th {
     h1 { font-size: 3em; font-weight: bold; line-height: 0.2; text-align: center;  letter-spacing: -2px; text-shadow: 2px 2px 1px white; font-family: Arial, Helvetica, sans-serif;}
     h2 { font-size: 1.2em; font-weight: bold; text-align: center; letter-spacing: -1px; font-family: Arial, Helvetica, sans-serif;}
     h3 { font-size: 1.4em; font-weight: bold; text-transform: none;}
-    h4 {}
+    h4 { border-bottom: 1px solid black; }
     h5 {}
 
     header a { text-decoration: none; color: inherit; }
@@ -112,7 +112,7 @@ td, th {
 
     .new {
         font-size: 1.6em;
-        position: absolute; 
+        position: absolute;
         margin-left: 32px;
     }
 
@@ -161,7 +161,7 @@ td, th {
     @media screen and (min-width: 1200px){}
 
 
-/** 
+/**
     2.0 Colors, shadows, borders
 **/
     
@@ -275,7 +275,7 @@ td, th {
     }
 
 
-/** 
+/**
     3.0 Spacing / Grid
 **/
 
@@ -367,8 +367,8 @@ td, th {
 /*  3.2     */
     @media screen and (min-width: 768px){
 
-        .wrapper { 
-            width: 90%; max-width: 1200px; 
+        .wrapper {
+            width: 90%; max-width: 1200px;
             margin-left: auto; margin-right: auto;
         }
 
@@ -403,7 +403,7 @@ td, th {
     @media screen and (min-width: 1200px){}
 
 
-/** 
+/**
     4.0 Images & video
 **/
 
@@ -420,8 +420,8 @@ td, th {
         text-align: center;
     }
 
-    .vid-holder iframe,  
-    .vid-holder object,  
+    .vid-holder iframe,
+    .vid-holder object,
     .vid-holder embed {
         position: absolute;
         top: 0;
