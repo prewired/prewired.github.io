@@ -11,7 +11,7 @@ As well as our weekly sessions, we hold special one-off or annually repeating ev
 
 If you have any questions, hello@prewired.org.
 
-#### <span class="btn-big inner lighter color1-bg">Young Rewired State</span>, 27th July - 3rd August
+#### <span class="btn-big inner lighter color1-bg">[Young Rewired State](http://www.prewired.org/yrs15)</span>  27th July - 3rd August
 
 **See [prewired.org/yrs15](http://www.prewired.org/yrs15) for details!**
 
