@@ -3,9 +3,9 @@ layout: default
 redirect_from: "/yrs15/"
 ---
 
-### Young Rewired State Festival of Code
+### Young Rewired State Festival of Code, Edinburgh 2015
 
-#### <span class="btn-big inner lighter color1-bg">27th July - 2nd August</span>
+#### <span class="btn-big inner lighter color1-bg">27th July - 2nd August 2015</span>
 
 Annually we send teams to [the Young Rewired State Festival of Code](http://festival.yrs.io) in the last week of July. This involves working in teams or individually on a single project, for five days at your local centre (put Edinburgh when you sign up and you'll be allocated to Prewired), then a trip for the weekend to the final competition in Birmingham, where hundreds participants from all over the UK gather to present their projects, meet other like-minded young people, have fun and win prizes!
 
