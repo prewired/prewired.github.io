@@ -46,3 +46,23 @@ If you'd like to help out for the four days in Edinburgh and/or at the Festival 
 #### Questions?
 
 Email hello@prewired.org and be sure to put YRS in the subject line. You can also tweet [@Prewired](http://twitter.com/prewired), and keep checking this page for updates.
+
+#### Cerys's Blog
+
+Hi, my name is Cerys and I regularly go to prewired on a Wednesday afternoon/evening.
+I am going to write a bit about my trip to YRS 2015.
+
+fri - morning, bus trip
+fri - arrive late miss pizza
+fri - taxi to accommodation
+fri night/sat morning - Coding late fix project! yay!
+sat morning - wait outside 4 ever 4 bus
+sat morning - breakie 
+sat morning- delay start of heats free time!
+sat morning - heats some really interesting projects
+sat - lunch, hotdog & Caribbean festival...slushie!!
+sat - semi finals & arduino stuff
+sat - out to dinner, cafe rouge.
+sun - finals
+sun - lunch, pulled pork roll & oreo ice-cream sandwich
+sun - leave for home
