@@ -45,6 +45,8 @@ If you'd like to help out for the four days in Edinburgh and/or at the Festival 
 
 #### Questions?
 
+Email hello@prewired.org and be sure to put YRS in the subject line. You can also tweet [@Prewired](http://twitter.com/prewired), and keep checking this page for updates.
+
 #### Cerys's Blog
 
 Hi, my name is Cerys and I regularly go to Prewired on a Wednesday.
