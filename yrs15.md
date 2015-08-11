@@ -50,13 +50,21 @@ Email hello@prewired.org and be sure to put YRS in the subject line. You can als
 #### Cerys's Blog
 
 Hi, my name is Cerys and I regularly go to Prewired on a Wednesday.
+
 last weekend was the Young Rewired State (YRS) coding competition.
+
 Prewired had teams entered, each one developing a project that included open source data.
+
 My team consisted of Robert P, Robert C, Lukah and Me.
+
 We decided to create a website that helped you plan your day, finding places to eat & go, also generating routes in between.
-We named it *Mr. Penguin's Day Trip Planner*.
+
+We named it **_Mr. Penguin's Day Trip Planner_**.
+
 We used JavaScript, html & CSS.
+
 I really enjoyed my time at YRS and would definitely recommend it.
+
 I am really looking forward to next year!
 
 **Friday**
