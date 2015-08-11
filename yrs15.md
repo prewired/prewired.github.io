@@ -49,70 +49,63 @@ Email hello@prewired.org and be sure to put YRS in the subject line. You can als
 
 #### Cerys's Blog
 
-Hi, my name is Cerys and I regularly go to Prewired on a Wednesday.
-
-last weekend was the Young Rewired State (YRS) coding competition.
-
-Prewired had teams entered, each one developing a project that included open source data.
-
-My team consisted of Robert P, Robert C, Lukah and Me.
-
-We decided to create a website that helped you plan your day, finding places to eat & go, also generating routes in between.
-
-We named it **_Mr. Penguin's Day Trip Planner_**.
-
-We used JavaScript, html & CSS.
-
-I really enjoyed my time at YRS and would definitely recommend it.
-
-I am really looking forward to next year!
+Hi, my name is Cerys and I regularly go to Prewired on a Wednesday.  
+last weekend was the Young Rewired State (YRS) coding competition.  
+Prewired had teams entered, each one developing a project that included open source data.  
+My team consisted of Robert P, Robert C, Lukah and Me.  
+We decided to create a website that helped you plan your day, finding places to eat & go, also generating routes in between.  
+We named it **_Mr. Penguin's Day Trip Planner_**.  
+We used JavaScript, html & CSS.  
+I really enjoyed my time at YRS and would definitely recommend it.  
+I am really looking forward to next year!  
 
 **Friday**
 
-On Friday morning me and my dad got on the bus to code base, when we go there we were 30 minutes early so we went into Peppers (a coffee shop across the road) and my dad got a coffee.
-Soon after it was time to meet our group!
-When the bus arrived everyone was buzzing with excitement and we clambered aboard.
+On Friday morning me and my dad got on the bus to code base, when we go there we were 30 minutes early so we went into Peppers (a coffee shop across the road) and my dad got a coffee.  
+Soon after it was time to meet our group!  
+When the bus arrived everyone was buzzing with excitement and we clambered aboard.  
 Image??
-The bus trip was *really* long, approx 10 hours after leaving Edinburgh we finally arrived at the main venue (the ICC) at 8 o'clock (pm) instead of 6 o'clock (when we were due to leave) therefore missing out on pizza. :(
-Soon pizza arrived for us and it was yummy!!
-Whilst we were having pizza the buses taking the under 14 year olds had left so we had to make our own way to the overnight accommodation.
-Me, my dad, Owen, his mum and a dad and son from Glasgow took to taxis to the place were we were sleeping.
-We were staying in a massive gym hall belonging to Aston uni.
-When we got there we unpacked our sleeping bags in the 1st hall and took our laptops through to the second hall.
-In the 1st hall the lights went out at 10pm and in the second hall the lights never went out and there was wifi.
-Me and my dad were up all night trying to understand why our project wasn't working. Finally we fixed it and we also fixed a couple of other bugs. By this time it was just after 1am. Soon after we went to bed.
+The bus trip was *really* long, approx 10 hours after leaving Edinburgh we finally arrived at the main venue (the ICC) at 8 o'clock (pm) instead of 6 o'clock (when we were due to leave) therefore missing out on pizza. :(  
+Soon pizza arrived for us and it was yummy!!  
+Whilst we were having pizza the buses taking the under 14 year olds had left so we had to make our own way to the overnight accommodation.  
+Me, my dad, Owen, his mum and a dad and son from Glasgow took to taxis to the place were we were sleeping.  
+We were staying in a massive gym hall belonging to Aston uni.  
+When we got there we unpacked our sleeping bags in the 1st hall and took our laptops through to the second hall.  
+In the 1st hall the lights went out at 10pm and in the second hall the lights never went out and there was wifi.  
+Me and my dad were up all night trying to understand why our project wasn't working. Finally we fixed it and we also fixed a couple of other bugs. By this time it was just after 1am. Soon after we went to bed.  
 
 **Saturday**
 
-In the morning we had to be dressed and out at 7 so the buses could pick us up but it turned out the buses weren't actually picking us up till 7:30!
-When we got to the ICC, breakfast was set out.
+In the morning we had to be dressed and out at 7 so the buses could pick us up but it turned out the buses weren't actually picking us up till 7:30!  
+When we got to the ICC, breakfast was set out.  
 Image??
-It was an assortment of pastry's, some fruit kebabs and blueberry muffins.
-I had some fruit kebab and a blueberry muffin
-The heats were due to start at 9:30 but then delayed to just after 11, YAY! More time to work on our presentation!
-We went into the room were the heats were being held, and listened to some of other peoples projects. Some were really interesting! Finally it was our turn. We were called up two project before us so we were ready waiting on the sidelines. Then our name was called! Me and Robert(P) presented our project! It went well.
-After the heats had finished it was lunch!
-Prewired was sponsored so we got free food!
-For lunch I had a hotdog. Yum!
-Outside the ICC there was a Caribbean that had music, food and drink.We walked about the stall and stand and then I spotted a stand with 12 different flavours of slushie!
-My dad bought me a tall cup and Filled it with 6 of the twelve flavours!
-When we got back to the ICC the names of the projects that got through to the semi-final were announced. No one from Prewired got through. :(
-Whilst the semi-finals were on, there were work shops for other people who weren't in them.
-I took part in an Arduino work shop and created an animated duck that walked and danced and then I created an animated heart that beat and programmed it to make beating noises.
-We went back to the overnight accommodation and settled down. Once the lights went out lots of people stayed up on there laptops. I stayed up for a bit doing graphics for a robber game I was creating in my spare time. Not long after, I went to sleep.
+It was an assortment of pastry's, some fruit kebabs and blueberry muffins.  
+I had some fruit kebab and a blueberry muffin.  
+The heats were due to start at 9:30 but then delayed to just after 11, YAY! More time to work on our presentation!  
+We went into the room were the heats were being held, and listened to some of other peoples projects. Some were really interesting!  
+Finally it was our turn. We were called up two project before us so we were ready waiting on the sidelines. Then our name was called! Me and Robert(P) presented our project! It went well.  
+After the heats had finished it was lunch!  
+Prewired was sponsored so we got free food!  
+For lunch I had a hotdog. Yum!  
+Outside the ICC there was a Caribbean that had music, food and drink.We walked about the stall and stand and then I spotted a stand with 12 different flavours of slushie!  
+My dad bought me a tall cup and Filled it with 6 of the twelve flavours!  
+When we got back to the ICC the names of the projects that got through to the semi-final were announced. No one from Prewired got through. :(  
+Whilst the semi-finals were on, there were work shops for other people who weren't in them.  
+I took part in an Arduino work shop and created an animated duck that walked and danced and then I created an animated heart that beat and programmed it to make beating noises.  
+We went back to the overnight accommodation and settled down. Once the lights went out lots of people stayed up on there laptops. I stayed up for a bit doing graphics for a robber game I was creating in my spare time. Not long after, I went to sleep.  
 
 **Sunday**
 
-When we woke up we had to pack our bags because today was the last day, the day of the finals!
-The finals were after breakfast and were due to start at about ?.
-There were 4 categories, best example of code, code a better country, should exist and best design award.
+When we woke up we had to pack our bags because today was the last day, the day of the finals!  
+The finals were after breakfast and were due to start at about 10am.  
+There were 4 categories, best example of code, code a better country, should exist and best design award.  
 Image??
-There were some really amazing projects!
-After the finals it was lunch time, for lunch I had a pulled pork roll (so did my dad).
-Afterwards I had an Oreo ice-cream sandwich, mmmmmmmmm, yummy!
-After lunch we left early, missing the announcement of the winners.
-We had only been on the bus for a short while when Freda (a mentor) stood up and shouted "Railcode! Its the twins!!", no one had any idea what she was talking about, as she was watching a live coverage of the winners announcement. It turned out two people (twins) that were with prewired but were not taking the coach back, had won a prize for there project, Railcode. They had won a drone each! Well done!
-We got back to Edinburgh at about 10pm.
-We said goodbye to our friends and took a taxi home.
+There were some really amazing projects!  
+After the finals it was lunch time, for lunch I had a pulled pork roll (so did my dad).  
+Afterwards I had an Oreo ice-cream sandwich, mmmmmmmmm, yummy!  
+After lunch we left early, missing the announcement of the winners.  
+We had only been on the bus for a short while when Freda (a mentor) stood up and shouted "Railcode! Its the twins!!", no one had any idea what she was talking about, as she was watching a live coverage of the winners announcement. It turned out two people (twins) that were with prewired but were not taking the coach back, had won a prize for there project, Railcode. They had won a drone each! Well done!  
+We got back to Edinburgh at about 10pm.  
+Then we said goodbye to our friends and took a taxi home.  
 
-Now that YRS is finished, and my blog is written, I just need to figure out how to get it all working with GitHub and Markdown!
+Now that YRS is finished, and my blog is written, I just need to figure out how to get it all working with GitHub and Markdown!  
