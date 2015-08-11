@@ -99,7 +99,7 @@ We went back to the overnight accommodation and settled down. Once the lights we
 When we woke up we had to pack our bags because today was the last day, the day of the finals!  
 The finals were after breakfast and were due to start at about 10am.  
 There were 4 categories, best example of code, code a better country, should exist and best design award.  
-![the finals!](/img/yrs15/YRS15_finals.jpg)  
+![the finals!](/img/yrs15/yrs15_finals_20percent.jpg)  
 There were some really amazing projects!  
 After the finals it was lunch time, for lunch I had a pulled pork roll (so did my dad).  
 Afterwards I had an Oreo ice-cream sandwich, mmmmmmmmm, yummy!  
