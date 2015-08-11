@@ -78,7 +78,7 @@ Me and my dad were up all night trying to understand why our project wasn't work
 
 In the morning we had to be dressed and out at 7 so the buses could pick us up but it turned out the buses weren't actually picking us up till 7:30!  
 When we got to the ICC, breakfast was set out.  
-![Me asleep](/img/yrs15/YRS15_sleepy_head.jpg)  
+![Me asleep](/img/yrs15/YRS15_sleepy_head_small.jpg)  
 It was an assortment of pastry's, some fruit kebabs and blueberry muffins.  
 I had some fruit kebab and a blueberry muffin.  
 The heats were due to start at 9:30 but then delayed to just after 11, YAY! More time to work on our presentation!  
