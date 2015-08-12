@@ -65,7 +65,7 @@ On Friday morning me and my dad got on the bus to code base, when we go there we
 Soon after it was time to meet our group!  
 ![Prewired!](/img/yrs15/yrs15_our_group_75percent.jpg)  
 When the bus arrived everyone was buzzing with excitement and we clambered aboard.  
-![Me on the bus!](/img/yrs15/yrs15_on_the_bus_50percent.jpg)  
+![Me on the bus!](/img/yrs15/yrs15_on_the_bus_25percent.jpg)  
 The bus trip was *really* long, approx 10 hours after leaving Edinburgh we finally arrived at the main venue (the ICC) at 8 o'clock (pm) instead of 6 o'clock (when we were due to arrive). 
 Soon pizza arrived for us and it was yummy!!  
 Whilst we were having pizza the buses taking the under 14 year olds had left so we had to make our own way to the overnight accommodation.  
