@@ -85,7 +85,7 @@ I had some fruit kebab and a blueberry muffin.
 The heats were due to start at 9:30 but then delayed to just after 11, YAY! More time to work on our presentation!  
 ![working on our projects!](/img/yrs15/yrsTwitter10.jpg)  
 We went into the room were the heats were being held, and listened to some of other peoples projects. Some were really interesting!  
-Finally it was our turn. We were called up two project before us so we were ready waiting on the sidelines. Then our name was called! Me and Robert(P) presented our project! It went well.  
+Finally it was our turn. We were called up two project before us so we were ready waiting on the sidelines. Then our name was called! Me and Robert (P) presented our project! It went well.  
 After the heats had finished it was lunch!  
 Prewired was sponsored so we got free food!  
 For lunch I had a hotdog. Yum!  
@@ -106,7 +106,7 @@ There were some really amazing projects!
 After the finals it was lunch time, for lunch I had a pulled pork roll (so did my dad).  
 Afterwards I had an Oreo ice-cream sandwich, mmmmmmmmm, yummy!  
 After lunch we left early, missing the announcement of the winners.  
-We had only been on the bus for a short while when Freda (a mentor) stood up and shouted *"Railcode! Its the twins!!"*, no one had any idea what she was talking about, as she was watching a live coverage of the winners announcement. It turned out two people (twins) that were with Prewired but were not taking the coach back, had won a prize for there project, Railcode. They had won a drone each! Well done!  
+We had only been on the bus for a short while when Freda (a mentor) stood up and shouted *"Railcode! Its the twins!!"*, no one had any idea what she was talking about, as she was watching a live coverage of the winners announcement. It turned out two people (twins) that were with Prewired but were not taking the coach back, had won a prize for there project, Railcode. They had won a drone each! **Well done!**  
 ![the twins!](/img/yrs15/yrsTwitter09.png)  
 We got back to Edinburgh at about 10pm.  
 Then we said goodbye to our friends and took a taxi home.  
