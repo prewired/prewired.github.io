@@ -7,25 +7,12 @@ redirect_from: "/events/"
 
 As well as our weekly sessions, we hold special one-off or annually repeating events. If you know of an event you'd like to take part in with Prewired's help, please let us know!
 
-### Ongoing
-
-If you have any questions, hello@prewired.org.
-
-#### <span class="btn-big inner lighter color1-bg">Young Rewired State</span>  27th July - 3rd August
-
-**See [PreWired YRS 2015 Edinburgh](http://www.prewired.org/yrs15) for details!**
-
-Annually we send teams to [the Young Rewired State Festival of Code](http://www.yrs.io) in the last week of July. This involves working in teams or individually on a single project, for four days at your local centre (put Edinburgh when you sign up and you'll be allocated to Prewired), then a trip for the weekend to the final competition in Birmingham, where hundreds participants from all over the UK gather to present their projects, meet other like-minded young people, have fun and win prizes!
-
-It's free, and Prewired should be teaming up with other Scottish centres to run a coach to Birmingham.
-
-Sign up as a participant or mentor on the [YRS website](http://festival.yrs.io)
-
-<hr/>
-
 ### Workshops
 
-Watch this space for details of next month's workshop...
+* **September 2nd**: 3D printing demo with [Daniel Pinchassoff](http://robobu.com)
+  * If you'd like to try your hand at modelling for a 3D printer, have a look at [Meshmixer software](www.meshmixer.com) or have a look on [thingiverse](www.thingiverse.com) to get an idea of the range of 3D printable designs already out there.
+* **October 21st**: Robotics workshop with [Daniel Pinchassoff](http://robobu.com)
+  * Details to follow..
 
 <hr/>
 
@@ -38,6 +25,12 @@ Annually we enter a team into the First Lego League Competition, around November
 <hr/>
 
 ### Past Events
+
+**Young Rewired State 27th July - 3rd August**
+
+**See [PreWired YRS 2015 Edinburgh](http://www.prewired.org/yrs15) for details!**
+
+Sign up as a participant or mentor on the [YRS website](http://festival.yrs.io)
 
 **13th-17th April 2015 - Maker Week**
 
