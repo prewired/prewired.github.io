@@ -38,3 +38,5 @@ Watch this space... Soon we'll have our very own social network which you can us
 ### Any questions?
 
 Check out the [FAQ](faq.html), or email hello [at] prewired [dot] org.
+
+To find out more about how we've developed and what we've been doing, read [our first Prewired report](/assets/prewired-for-web.pdf)!
