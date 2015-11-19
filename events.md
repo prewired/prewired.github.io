@@ -9,7 +9,7 @@ As well as our weekly sessions, we hold special one-off or annually repeating ev
 
 ### Upcoming
 
-#### Coding.Demystified(;)
+#### Coding.Demystified();
 A workshop for **parents and other interested adults**.
 Are you curious about programming? 
 Join us at this 2-hour interactive workshop to try your hand at coding, build your own programs and discover the creative world of computing. 
