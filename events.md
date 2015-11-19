@@ -21,9 +21,9 @@ Join us at this 2-hour interactive workshop to try your hand at coding, build yo
 Lady Lawson Street EH3 9DR
 
 To Book Go To: 
-www.eventbrite.co.uk/e/codingdemystified-tickets-19628305791
+[www.eventbrite.co.uk/e/codingdemystified-tickets-19628305791](http://www.eventbrite.co.uk/e/codingdemystified-tickets-19628305791)
 <br/>
-If you have any questions email us: hello@prewired.org
+If you have any questions email us: [hello@prewired.org](mailto:hello@prewired.org)
 
 You will need a laptop but if you haven't got access to one, let us know and we’ll try and get one for you to use.
 
