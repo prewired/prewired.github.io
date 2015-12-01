@@ -7,26 +7,6 @@ redirect_from: "/events/"
 
 As well as our weekly sessions, we hold special one-off or annually repeating events. If you know of an event you'd like to take part in with Prewired's help, please let us know!
 
-### Upcoming
-
-#### Coding.Demystified();
-A workshop for **parents and other interested adults**.
-Are you curious about programming? 
-Join us at this 2-hour interactive workshop to try your hand at coding, build your own programs and discover the creative world of computing. 
-
-*No prior knowledge or programming experience is required.*
-
-*When:* on 25th November 2015 <br/>
-*Where:* Prewired Codebase Level M  
-Lady Lawson Street EH3 9DR
-
-To Book Go To: 
-[www.eventbrite.co.uk/e/codingdemystified-tickets-19628305791](http://www.eventbrite.co.uk/e/codingdemystified-tickets-19628305791)
-<br/>
-If you have any questions email us: [hello@prewired.org](mailto:hello@prewired.org)
-
-You will need a laptop but if you haven't got access to one, let us know and we’ll try and get one for you to use.
-
 
 <hr/>
 
@@ -45,8 +25,15 @@ Annually we enter a team into the First Lego League Competition, around November
 
 ### Past Events
 
+**25th November 2015 - Coding.Demystified();**
+
+A workshop for parents and other interested adults.
+Are you curious about programming? 
+Join us at this 2-hour interactive workshop to try your hand at coding, build your own programs and discover the creative world of computing. 
+
 **September 2nd**: 3D printing demo with [Daniel Pinchassoff](http://robobu.com)
-  * If you'd like to try your hand at modelling for a 3D printer, have a look at [Meshmixer software](www.meshmixer.com) or have a look on [thingiverse](www.thingiverse.com) to get an idea of the range of 3D printable designs already out there.
+
+If you'd like to try your hand at modelling for a 3D printer, have a look at [Meshmixer software](www.meshmixer.com) or have a look on [thingiverse](www.thingiverse.com) to get an idea of the range of 3D printable designs already out there.
 
 **October 21st**: Robotics workshop with [Daniel Pinchassoff](http://robobu.com)
 
