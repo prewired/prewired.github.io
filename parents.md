@@ -25,7 +25,7 @@ Prewired is also a place for young people to **meet peers** with shared interest
 
 ### What does your child need?
 
-Firstly, they'll need to [register](membership.html). This can be done on a session-by-session basis, or through longer-term [membership](#membership).
+Firstly, they'll need to [register for membership](membership.html), and then [book a place](http://www.eventbrite.co.uk/e/prewired-tickets-12525428895) for each session that they would like to attend.
 
 If possible, please bring a laptop. We have a few spares, but not many.
 
