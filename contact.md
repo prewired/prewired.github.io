@@ -17,7 +17,7 @@ We're in the process of setting up our very own private social network. Stay tun
 
 Meanwhile, participants and mentors can join the [prewired-discuss Google Group](https://groups.google.com/forum/#!forum/prewired-discuss) or the [facebook group](https://www.facebook.com/groups/prewired).
 
-We also have an IRC channel (server: irc.imaginarynet.org.uk, channel: #prewired); you'll need to ask a mentor for the password.
+We also have an IRC channel (server: irc.imaginarynet.uk, channel: #prewired); you'll need to ask a mentor for the password.
 
 ### Mentors
 
