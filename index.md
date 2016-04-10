@@ -2,6 +2,13 @@
 layout: default
 ---
 
+<div style="text-align:center;">
+  <hr><h2>Important - Slight location change!</h2>
+  <p>Prewired has now moved to a new, larger space within CodeBase.  To access it, please enter via the doors at 38 Castle Terrace instead of the main doors to
+    Argyle house.  The new entrance is just around the corner from the old one as shown on the map below, the doors are clearly labelled with "CodeBase".</p>
+  <img src="/img/prewired-redirect.png">
+</div>
+
 {% include welcome.html %}
 
 ### How to join
