@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div style="text-align:center;">
-  <strong>Don't forget, Prewired is still running as usual during the summer holidays!</strong>
+  <strong>Prewired is still running as usual during the summer holidays!</strong>
   <hr>
 </div>
 
