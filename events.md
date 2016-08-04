@@ -3,27 +3,24 @@ layout: default
 redirect_from: "/events/"
 ---
 
-### Events
+### Current Events
 
 As well as our weekly sessions, we hold special one-off or annually repeating events. If you know of an event you'd like to take part in with Prewired's help, please let us know!
 
+#### Summer Hack Week
 
-<hr/>
+This year, as a replacement for YRS, we are running a week-long team programming competition, from August 8th to 12th, 10am to 4pm each day.
 
-### Workshops
-* More to come...
+Sign up here: [On our Eventbrite](https://www.eventbrite.co.uk/e/prewired-summer-hack-2016-tickets-26930901050)
 
-<hr/>
-
-### Ongoing
-
-#### First Lego League Competition
-
-Annually we enter a team into the First Lego League Competition, around November.
 
 <hr/>
 
 ### Past Events
+
+**First Lego League Competition**
+
+Annually we enter a team into the First Lego League Competition, around November.
 
 **25th November 2015 - Coding.Demystified();**
 
