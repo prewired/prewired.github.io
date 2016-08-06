@@ -11,7 +11,7 @@ layout: default
 
 
 <div style="text-align:center;">
-  <strong>Prewired is still running as usual during the summer holidays.</strong>
+  <strong>Prewired is running as usual during the summer holidays (except for Wednesday 10th August).</strong>
   <hr>
 </div>
 
