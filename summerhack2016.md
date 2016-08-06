@@ -18,7 +18,7 @@ The Summer Hack will take place daily  August 8th&ndash;12th 2016. Details of th
 ### Monday
 
 <div align="center">
-    <table border="1" style="width:600px">
+    <table border="1" style="width:50%">
         <thead>
             <tr>
                 <th>Time</th>
@@ -78,7 +78,7 @@ The Summer Hack will take place daily  August 8th&ndash;12th 2016. Details of th
 ### Tuesday
 
 <div align="center">
-    <table border="1" style="width:600px">
+    <table border="1" style="width:50%">
         <thead>
             <tr>
                 <th>Time</th>
@@ -162,7 +162,7 @@ The Summer Hack will take place daily  August 8th&ndash;12th 2016. Details of th
 ### Wednesday
 
 <div align="center">
-    <table border="1" style="width:600px">
+    <table border="1" style="width:50%">
         <thead>
             <tr>
                 <th>Time</th>
@@ -245,7 +245,7 @@ The Summer Hack will take place daily  August 8th&ndash;12th 2016. Details of th
 ### Thursday
 
 <div align="center">
-    <table border="1" style="width:600px">
+    <table border="1" style="width:50%">
         <thead>
             <tr>
                 <th>Time</th>
@@ -323,7 +323,7 @@ The Summer Hack will take place daily  August 8th&ndash;12th 2016. Details of th
 ### Friday
 
 <div align="center">
-    <table border="1" style="width:600px">
+    <table border="1" style="width:50%">
         <thead>
             <tr>
                 <th>Time</th>
