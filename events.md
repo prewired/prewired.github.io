@@ -9,10 +9,16 @@ As well as our weekly sessions, we hold special one-off or annually repeating ev
 
 #### Summer Hack Week
 
+<div align="center">
+<button class="btn-big color2-bg"><a href="/summerhack2016/">Find out about Summer Hack 2016!</a></button>
+</div>
+
+<!--
 This year, as a replacement for YRS, we are running a week-long team programming competition, from August 8th to 12th, 10am to 4pm each day.
 
 Sign up here: [On our Eventbrite](https://www.eventbrite.co.uk/e/prewired-summer-hack-2016-tickets-26930901050)
 
+-->
 
 <hr/>
 

@@ -2,8 +2,16 @@
 layout: default
 ---
 
+<div align="center">
+<p>
+<button class="btn-big color2-bg"><a href="/summerhack2016/">Check out Summer Hack 2016!</a></button>
+</p>
+</div>
+
+
+
 <div style="text-align:center;">
-  <strong>Prewired is still running as usual during the summer holidays!</strong>
+  <strong>Prewired is still running as usual during the summer holidays.</strong>
   <hr>
 </div>
 
