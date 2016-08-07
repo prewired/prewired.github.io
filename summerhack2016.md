@@ -418,7 +418,7 @@ Work on the Prewired website and learn about [Markdown](https://daringfireball.n
 ### Digital Play
 
 Build a game that is suitable for very young children.
-Take into account recent research about Early Years Digital Play published by Moray House, University of Edinburgh.
+Take into account recent research from the University of Edinburgh about [Exploring play and creativity in pre-schoolers’ use of apps](/assets/exploring_play.pdf).
 
 ### The Answer
 
