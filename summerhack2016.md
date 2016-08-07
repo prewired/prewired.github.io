@@ -399,13 +399,48 @@ The Summer Hack will take place daily  August 8th&ndash;12th 2016. Details of th
 
 ## Challenges
 
-* Swap your stuff! Create an app or website where you can offer clothes, toys, gadgets in exchange for things that other people want to get rid of.
-* Design a project with a device to help younger children learn programming 
-* Work on the Prewired website and learn about [Markdown](https://daringfireball.net/projects/markdown/), CSS, [Jekyll](https://jekyllrb.com), Git and [GitHub Pages](https://pages.github.com).
-* Design a programme that will ask people questions (and then do something fun with their answers).
-* Create a mini­-app to design with your friends.
-* Lego robots! Can your robot do this?
-* Make a [chatbot](https://en.wikipedia.org/wiki/Chatterbot). Talk to a computer, have it say silly things back.
-* True Grit: build a game that makes it fun to find [grit bins](http://www.edinburgh.gov.uk/info/20227/gritting_and_salt_bins/) in Edinburgh, and to check that the location on the Council map is their real location. (You can also use [OpenStreetMap](http://overpass-turbo.eu/s/hJ6) to record [grit bin](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dgrit_bin) locations.)
-* Anything else you want to build! 
+### Swap your stuff! 
+
+Create an app or website where you can offer clothes, toys, gadgets in exchange for things that other people want to get rid of.
+
+### Active Coding
+
+Design a project with a device to help younger children learn programming.
+
+### Recycle Me!
+
+Build a web site or mobile app that encourages people to recycle more stuff for Edinburgh Council.
+
+### Website Upgrade
+
+Work on the Prewired website and learn about [Markdown](https://daringfireball.net/projects/markdown/), CSS, [Jekyll](https://jekyllrb.com), Git and [GitHub Pages](https://pages.github.com).
+
+### Digital Play
+
+Build a game that is suitable for very young children.
+Take into account recent research about Early Years Digital Play published by Moray House, University of Edinburgh.
+
+### The Answer
+
+Design a programme that will ask people questions (and then do something fun with their answers).
+
+### Mobile Design
+
+Create a mini­-app to design with your friends.
+
+### Lego robots! 
+
+Can your robot do this?
+
+### Chatbot Challenge
+
+Make a [chatbot](https://en.wikipedia.org/wiki/Chatterbot). Talk to a computer, have it say silly things back.
+
+### True Grit
+
+Build a game that makes it fun to find [grit bins](http://www.edinburgh.gov.uk/info/20227/gritting_and_salt_bins/) in Edinburgh, and to check that the location on the Council map is their real location. (You can also use [OpenStreetMap](http://overpass-turbo.eu/s/hJ6) to record [grit bin](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dgrit_bin) locations.)
+
+### Wildcard *
+
+Anything else you want to build! 
 
