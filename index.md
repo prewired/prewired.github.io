@@ -4,7 +4,7 @@ layout: default
 
 <div align="center">
 <p>
-<button class="btn-big color2-bg"><a href="/summerhack2016/">Check out Summer Hack 2016!</a></button>
+<button class="btn-big color2-bg"><a href="summerhack2016.html">Check out Summer Hack 2016!</a></button>
 </p>
 </div>
 
