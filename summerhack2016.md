@@ -42,8 +42,8 @@ The Summer Hack will take place daily  August 8th&ndash;12th 2016. Details of th
                 </td>
             </tr>
             <tr>
-                <td>10:45</td>
-                <td>Team Formation</td>
+                <td>10:15</td>
+                <td>Challenges</td>
             </tr>
             <tr>
                 <td>11:15</td>
@@ -51,7 +51,7 @@ The Summer Hack will take place daily  August 8th&ndash;12th 2016. Details of th
             </tr>
             <tr>
                 <td>11:30</td>
-                <td>Team Formation continued</td>
+                <td>Who knows what?</td>
             </tr>
             <tr>
             <td>12:30</td>
@@ -59,11 +59,11 @@ The Summer Hack will take place daily  August 8th&ndash;12th 2016. Details of th
             </tr>
             <tr>
                 <td>13:00</td>
-                <td>Challenges</td>
+                <td>Team Formation</td>
             </tr>
             <tr>
                 <td>14:00</td>
-                <td>Decisions &mdash; time for teams to plan their projects (incorporating snack break)
+                <td>Teams start planning their projects (incorporating snack break)
                 </td>
             </tr>
             <tr>
@@ -434,7 +434,7 @@ Can your robot do this?
 
 ### Chatbot Challenge
 
-Make a [chatbot](https://en.wikipedia.org/wiki/Chatterbot). Talk to a computer, have it say silly things back.
+Make a [chatbot](https://en.wikipedia.org/wiki/Chatterbot). Talk to a computer, have it say silly things back. You could use the [NLTK chat library](http://nltk.org/_modules/nltk/chat) as a starting point.
 
 ### True Grit
 
