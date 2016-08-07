@@ -10,7 +10,7 @@ As well as our weekly sessions, we hold special one-off or annually repeating ev
 #### Summer Hack Week
 
 <div align="center">
-<button class="btn-big color2-bg"><a href="summerhack2016.html">Find out about Summer Hack 2016!</a></button>
+<a href="summerhack2016.html"><button class="btn-big color2-bg">Find out about Summer Hack 2016!</button></a>
 </div>
 
 <!--

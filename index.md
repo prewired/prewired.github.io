@@ -4,7 +4,7 @@ layout: default
 
 <div align="center">
 <p>
-<button class="btn-big color2-bg"><a href="summerhack2016.html">Check out Summer Hack 2016!</a></button>
+<a href="summerhack2016.html"><button class="btn-big color2-bg">Find out about Summer Hack 2016!</button></a>
 </p>
 </div>
 
@@ -54,3 +54,8 @@ Watch this space... Soon we'll have our very own social network which you can us
 Check out the [FAQ](faq.html), or email hello [at] prewired [dot] org.
 
 To find out more about how we've developed and what we've been doing, read [our first Prewired report](/assets/prewired-for-web.pdf)!
+
+<div align="center">
+<img src="img/report_cover.png" alt="Prewired Report Cover Image"/>
+</div>
+
