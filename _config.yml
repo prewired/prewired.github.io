@@ -10,7 +10,7 @@ github: prewired
 # Build settings
 #permalink: pretty
 
-highlighter: pygments
+highlighter: rouge
 
 gems:
   - jekyll-redirect-from
