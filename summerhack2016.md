@@ -67,9 +67,14 @@ The Summer Hack will take place daily  August 8th&ndash;12th 2016. Details of th
                 </td>
             </tr>
             <tr>
-                <td>15:30&ndash;16:00</td>
+                <td>15:30</td>
                 <td>Review and Wrap-up</td>
             </tr>
+            <tr>
+               <td>16:00</td>
+                <td>End of the day
+                </td>
+            </tr> 
         </tbody>
     </table>
 </div>
@@ -405,11 +410,11 @@ Create an app or website where you can offer clothes, toys, gadgets in exchange 
 
 ### Active Coding
 
-Design a project with a device to help younger children learn programming.
+Design a project with a device (e.g., Raspberry Pi, Arduino, [BBC micro:bit](https://www.microbit.co.uk)) to help younger children learn programming.
 
 ### Recycle Me!
 
-Build a web site or mobile app that encourages people to recycle more stuff for Edinburgh Council.
+Build a web site or mobile app that encourages people to recycle more stuff for [City of Edinburgh Council](http://www.edinburgh.gov.uk/info/20001/bins_and_recycling).
 
 ### Website Upgrade
 
@@ -422,7 +427,7 @@ Take into account recent research from the University of Edinburgh about [Explor
 
 ### The Answer
 
-Design a programme that will ask people questions (and then do something fun with their answers).
+Create a programme that will ask people questions (and then do something fun with their answers, such as [generative art](https://labs.ideo.com/2014/06/04/painting-with-code/) with [Nodebox](https://www.nodebox.net/code/index.php/Introduction)).
 
 ### Mobile Design
 
