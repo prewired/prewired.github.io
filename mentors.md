@@ -42,8 +42,6 @@ From time to time we hold a more structured workshop about a specific topic, and
 
 We work with the [STEM Ambassador Programme](http://www.stemnet.org.uk/ambassadors/) to organise [Disclosure](http://www.disclosurescotland.co.uk/) for our mentors free of charge. This can be very useful for you if you wish to work with children or vulnerable people in other contexts too. We periodically arrange sessions when there's enough interest, and we're keen to have Disclosure for as many of our mentors as possible. Check back here to find out when one is being scheduled.
 
-**> Next Disclosure session:** Please fill in [this Doodle poll](http://doodle.com/qrdvcqvgy97947nn) to indicate your availability.
-
 #### Certifications
 
 Currently volunteering at Prewired doesn't qualify you for any specific awards (except for massive kudos and great experience and references for the CV). However, we're interested in improving your experience however we can, so if you know of a scheme you think we'd fit into that will help you to earn something more, please let us know.
@@ -58,7 +56,7 @@ Sometimes it can be hard to get stuck in, so [here are some guidelines for effec
 
 ### Ongoing participation
 
-You don't need to come every week, but it's helpful for the kids to have some consistency, so we'd love it if you could come as often as possible. If you do become a regular, please join the prewired-helpers@googlegroups.com mailing list, where we post special announcements, meetings/programmes/events/opportunities that might interest mentors, and occasional reminders about sessions. You can also use this list to chat to other mentors and ask questions.
+You don't need to come every week, but it's helpful for the kids to have some consistency, so we'd love it if you could come as often as possible. If you do become a regular, please join the [prewired-helpers@googlegroups.com](http://groups.google.com/forum/#!forum/prewired-helpers) mailing list, where we post special announcements, meetings/programmes/events/opportunities that might interest mentors, and occasional reminders about sessions. You can also use this list to chat to other mentors and ask questions.
 
 Please also add your details to the [mentors database](https://docs.google.com/forms/d/1NAZyNhLD-vFHEqpxOqYa0oaWjvDHe2Xuy4RI1uUqgGM/viewform).
 
@@ -112,9 +110,3 @@ It's really no big deal, and it's a huge help to us if you take a turn. Here's w
 9. At the end of the session, thank kids and parents as they're leaving and remind them to come back next week!
 10. Take any feedback from kids and parents to report back to organising committee (Amy, Ewan, Freda).
 
-
-#### Rota
-
-* **14th January:** Ewan Klein
-* **21st January:** Freda O'Byrne
-* **28th January:** Rikki Guy
