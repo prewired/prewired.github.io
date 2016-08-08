@@ -404,46 +404,55 @@ The Summer Hack will take place daily  August 8th&ndash;12th 2016. Details of th
 
 ## Challenges
 
-### Swap your stuff! 
-
-Create an app or website where you can offer clothes, toys, gadgets in exchange for things that other people want to get rid of.
-
 ### Active Coding
 
 Design a project with a device (e.g., Raspberry Pi, Arduino, [BBC micro:bit](https://www.microbit.co.uk)) to help younger children learn programming.
+
+### Chatbot Challenge
+
+Make a [chatbot](https://en.wikipedia.org/wiki/Chatterbot). Talk to a computer, have it say silly things back. You could use the [NLTK chat library](http://nltk.org/_modules/nltk/chat) as a starting point.
+
+
+### The Answer
+
+Create a programme that will ask people questions (and then do something fun with their answers, such as [generative art](https://labs.ideo.com/2014/06/04/painting-with-code/) with [Nodebox](https://www.nodebox.net/code/index.php/Introduction)).
+
 
 ### Recycle Me!
 
 Build a web site or mobile app that encourages people to recycle more stuff for [City of Edinburgh Council](http://www.edinburgh.gov.uk/info/20001/bins_and_recycling).
 
+### True Grit
+
+Build a game that makes it fun to find [grit bins](http://www.edinburgh.gov.uk/info/20227/gritting_and_salt_bins/) in Edinburgh, and to check that the location on the Council map is their real location. (You can also use [OpenStreetMap](http://overpass-turbo.eu/s/hJ6) to record [grit bin](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dgrit_bin) locations.)
+
 ### Website Upgrade
 
 Work on the Prewired website and learn about [Markdown](https://daringfireball.net/projects/markdown/), CSS, [Jekyll](https://jekyllrb.com), Git and [GitHub Pages](https://pages.github.com).
+
+### Give Me Shelter
+
+Create an interactive digital adventure about what it's like to be homeless.
+
+### Library Games
+
+Create a game that takes place in a library.
+
+### Swap your stuff! 
+
+Create an app or website where you can offer clothes, toys, gadgets in exchange for things that other people want to get rid of. (Or donate them to [Shelter](http://scotland.shelter.org.uk).)
 
 ### Digital Play
 
 Build a game that is suitable for very young children.
 Take into account recent research from the University of Edinburgh about [Exploring play and creativity in pre-schoolers’ use of apps](/assets/exploring_play.pdf).
 
-### The Answer
-
-Create a programme that will ask people questions (and then do something fun with their answers, such as [generative art](https://labs.ideo.com/2014/06/04/painting-with-code/) with [Nodebox](https://www.nodebox.net/code/index.php/Introduction)).
-
-### Mobile Design
-
-Create a mini­-app to design with your friends.
-
 ### Lego robots! 
 
 Can your robot do this?
 
-### Chatbot Challenge
 
-Make a [chatbot](https://en.wikipedia.org/wiki/Chatterbot). Talk to a computer, have it say silly things back. You could use the [NLTK chat library](http://nltk.org/_modules/nltk/chat) as a starting point.
 
-### True Grit
-
-Build a game that makes it fun to find [grit bins](http://www.edinburgh.gov.uk/info/20227/gritting_and_salt_bins/) in Edinburgh, and to check that the location on the Council map is their real location. (You can also use [OpenStreetMap](http://overpass-turbo.eu/s/hJ6) to record [grit bin](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dgrit_bin) locations.)
 
 ### Wildcard *
 
