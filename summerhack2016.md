@@ -428,7 +428,7 @@ Build a game that makes it fun to find [grit bins](http://www.edinburgh.gov.uk/i
 
 ### Website Upgrade
 
-Work on the Prewired website and learn about [Markdown](https://daringfireball.net/projects/markdown/), CSS, [Jekyll](https://jekyllrb.com), Git and [GitHub Pages](https://pages.github.com).
+Work on the Prewired website and learn about [Markdown](https://daringfireball.net/projects/markdown/), CSS, [Jekyll](https://jekyllrb.com), [Jekyll Themes](http://jekyllthemes.org), Git and [GitHub Pages](https://pages.github.com).
 
 ### Give Me Shelter
 
