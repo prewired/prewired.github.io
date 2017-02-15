@@ -2,19 +2,6 @@
 layout: default
 ---
 
-<div align="center">
-<p>
-<a href="summerhack2016.html"><button class="btn-big color2-bg">Find out about Summer Hack 2016!</button></a>
-</p>
-</div>
-
-
-
-<div style="text-align:center;">
-  <strong>Prewired is running as usual during the summer holidays (except for Wednesday 10th August).</strong>
-  <hr>
-</div>
-
 {% include welcome.html %}
 
 ### How to join
