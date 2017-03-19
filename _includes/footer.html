@@ -1,24 +1,23 @@
-<footer class="dark-bg trans lighter clearfix"><div class="inner">
-    <hr/>
-    <div class="w1of1 clearfix">
-        <div class="w1of3">
-            <div class="inner">
-                {% include newsletter.html %}
-            </div>
-        </div>
-        <div class="w1of3">
-            <div class="inner">
-                {%include register.html %}
-            </div>
-        </div>
-        <div class="w1of3">
-            <div class="inner">
-                <h3>Organisers</h3>
-                <p><strong>Prewired</strong> is organised by <a href="http://rhiaro.co.uk">Amy Guy</a>, Ewan Klein, Freda O'Byrne and Rikki Guy, and was founded in 2013 by <a href="http://twitter.com/ewanhklein">Ewan Klein</a>, <a href="http://twitter.com/FredaOByrne">Freda O'Byrne</a>, <a href="http://rhiaro.co.uk">Amy Guy</a>, <a href="http://twitter.com/kitbarnes">Kit Barnes</a> and <a href="http://www.inf.ed.ac.uk/people/staff/Stuart_Anderson.html">Stuart Anderson</a>.</p>
-                <h3>hello@prewired.org</h3>
-                <p>Email us if you have any questions!</p>
-            </div>
-        </div>
-    </div>
-    
-</div></footer>
+<div class="page__footer-follow">
+<a href="http://prewired.org"><img align="right" src="{{ '/assets/images/prewired-small-logo.png' | absolute_url }}" alt="Prewired Logo"/></a><a href="http://coderdojoscotland.com/clubs"><img align="right" src="{{ '/assets/images/coderdojo-horiz-logo.png' | absolute_url }}" alt="CoderDojo Logo"/></a>
+  <ul class="social-icons">
+    {% if site.data.ui-text[site.locale].follow_label %}
+      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+    {% endif %}
+    {% if site.twitter.username %}
+      <li><a href="https://twitter.com/{{ site.twitter.username }}"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    {% endif %}
+    {% if site.facebook.username %}
+      <li><a href="https://facebook.com/{{ site.facebook.username }}"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+    {% endif %}
+    {% if site.author.github %}
+      <li><a href="http://github.com/{{ site.author.github }}"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    {% endif %}
+    {% if site.author.bitbucket %}
+      <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fa fa-fw fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
+    {% endif %}
+    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | absolute_url }}{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>

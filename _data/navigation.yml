@@ -1,0 +1,14 @@
+# main links
+main:
+  - title: "Registration"
+    url: /registration/
+  - title: "Parents"
+    url: /parents/
+  - title: "Mentors"
+    url: /mentors/
+  - title: "About Us"
+    url: "/about/"
+  - title: "Contact"
+    url: /contact/
+  - title: "FAQ"
+    url: /faq/
