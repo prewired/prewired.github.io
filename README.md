@@ -1,7 +1,5 @@
-prewired
-========
+# Prewired legacy
 
-Repo for http://prewired.org
+Branch to keep version of http://prewired.org prior to revamp in March 2017
 
-More info might appear at http://ewan-klein.github.io/prewired/
 
