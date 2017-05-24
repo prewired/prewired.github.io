@@ -6,6 +6,8 @@ main:
     url: /parents/
   - title: "Mentors"
     url: /mentors/
+  - title: "Resources"
+    url: /resources/
   - title: "About Us"
     url: "/about/"
   - title: "Contact"
