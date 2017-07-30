@@ -1,18 +1,25 @@
 --- 
-layout: single
+layout: splash
 title: "Summer Hack 2017"
 permalink: /summerhack2017/
 header:
-  image: /assets/images/summerhack2016.jpg
+  overlay_image: /assets/images/summerhack2016.jpg
+  overlay_filter: 0.4
+  cta_label: "Register now"
+  cta_url: "https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform"
 --- 
 {% include toc %}
 {% include base_path %}
 
+## Overview 
+
 We are excited to announce that we are running **Summer Hack** again this year &mdash; a week-long team programming competition for young people of secondary school age.
 
-The Summer Hack will take place daily August 7th&ndash;11th 2017, from 10:00 am to 4:00 pm. Details of the schedule are shown below. The event will take place at [Codebase Events Space](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh EH3 9SJ
+The Summer Hack will take place daily August 7th&ndash;11th 2017, from 10:00 am to 4:00 pm. Details of the schedule are shown below. The event will take place at [CodeBase Events Space](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh EH3 9SJ
 
-We still have a limited number of places, so if you want to be involved, [sign up now](https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform)!
+We still have a limited number of places, so if you want to be involved, sign up now!
+
+[Register for Summer Hack](https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform){: .btn .btn--info .btn--x-large}{: .text-center}
 
 * What is involved? You will be working in a small team, working together on a small project.
 * Will there be prizes? Yes. At the end of the week, each team will give a demo of their project, and prizes will be awarded in various categories.
@@ -23,8 +30,6 @@ To get more of an idea of what will happen, check out this video of highlights f
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/K9JfPVBy6jQ" frameborder="0" allowfullscreen></iframe>
 
-
-
 <hr/> 
 
 ## Schedule 
@@ -32,7 +37,7 @@ To get more of an idea of what will happen, check out this video of highlights f
 ### Monday
 
 <div align="center">
-    <table>
+    <table width="50%">
         <thead>
             <tr>
                 <th>Time</th>
