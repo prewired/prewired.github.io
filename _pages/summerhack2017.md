@@ -37,7 +37,7 @@ To get more of an idea of what will happen, check out this video of highlights f
 ### Monday
 
 <div align="center">
-    <table width="50%">
+    <table style="width:50%">
         <thead>
             <tr>
                 <th>Time</th>
@@ -102,7 +102,7 @@ To get more of an idea of what will happen, check out this video of highlights f
 ### Tuesday
 
 <div align="center">
-    <table>
+    <table style="width:50%">
         <thead>
             <tr>
                 <th>Time</th>
@@ -186,7 +186,7 @@ To get more of an idea of what will happen, check out this video of highlights f
 ### Wednesday
 
 <div align="center">
-    <table>
+    <table style="width:50%">
         <thead>
             <tr>
                 <th>Time</th>
@@ -269,7 +269,7 @@ To get more of an idea of what will happen, check out this video of highlights f
 ### Thursday
 
 <div align="center">
-    <table>
+    <table style="width:50%">
         <thead>
             <tr>
                 <th>Time</th>
@@ -347,7 +347,7 @@ To get more of an idea of what will happen, check out this video of highlights f
 ### Friday
 
 <div align="center">
-    <table>
+    <table style="width:50%">
         <thead>
             <tr>
                 <th>Time</th>
