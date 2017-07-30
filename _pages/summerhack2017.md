@@ -5,6 +5,8 @@ permalink: /summerhack2017/
 header:
   image: /assets/images/summerhack2016.jpg
 --- 
+{% include toc %}
+{% include base_path %}
 
 We are excited to announce that we are running **Summer Hack** again this year &mdash; a week-long team programming competition for young people of secondary school age.
 
@@ -16,6 +18,11 @@ We still have a limited number of places, so if you want to be involved, [sign u
 * Will there be prizes? Yes. At the end of the week, each team will give a demo of their project, and prizes will be awarded in various categories.
 * Do you need to bring a laptop? Not necessarily &mdash; we can provide one.
 * What about food? We will provide snacks but you will need to bring your own lunch.
+
+To get more of an idea of what will happen, check out this video of highlights from last year's Summer Hack, kindly produced for us by the awesome team at [Product Forge](https://productforge.io):
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K9JfPVBy6jQ" frameborder="0" allowfullscreen></iframe>
+
 
 
 <hr/> 
