@@ -15,7 +15,7 @@ header:
 
 We are excited to announce that we are running **Summer Hack** again this year &mdash; a week-long team programming competition for young people of secondary school age.
 
-The Summer Hack will take place daily August 7th&ndash;11th 2017, from 10:00 am to 4:00 pm. Details of the schedule are shown below. The event will take place at [CodeBase Events Space](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh EH3 9SJ
+The Summer Hack will take place from every day 10:00 am to 4:00 pm, August 7th&ndash;11th 2017 at [CodeBase Events Space](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh EH3 9SJ. Details of the schedule are shown below. 
 
 We still have a limited number of places, so if you want to be involved, sign up now!
 

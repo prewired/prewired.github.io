@@ -1,5 +1,8 @@
 # main links
 main:
+  
+  - title: "SummerHack"
+    url: /summerhack2017/  
   - title: "Registration"
     url: /registration/
   - title: "Parents"
