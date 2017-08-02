@@ -44,11 +44,7 @@ To get more of an idea of what will happen, check out this video of highlights f
                 <th>Activity</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <td>09:30</td>
-                <td>Registration</td>
-            </tr>
+        <tbody>            
             <tr>
                 <td>10:00</td>
                 <td>
