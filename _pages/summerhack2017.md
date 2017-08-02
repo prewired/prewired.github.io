@@ -62,7 +62,7 @@ To get more of an idea of what will happen, check out this video of highlights f
             </tr>
             <tr>
                 <td>10:15</td>
-                <td>Challenges</td>
+                <td>Team Formation</td>
             </tr>
             <tr>
                 <td>11:15</td>
@@ -78,7 +78,7 @@ To get more of an idea of what will happen, check out this video of highlights f
             </tr>
             <tr>
                 <td>13:00</td>
-                <td>Team Formation</td>
+                <td>Challenges</td>
             </tr>
             <tr>
                 <td>14:00</td>
