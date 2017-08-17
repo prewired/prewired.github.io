@@ -10,7 +10,7 @@ header:
 
 ## Do I need to come with my child?
 
-**If your child is younger than 11**: Yes, you must accompany your child to every Prewired session. If your child is very young and needs lots of support, you should be prepared to sit with them to help. You can of course ask a mentor for technical advice.
+**If your child is younger than 11**: Yes, you must accompany your child throughout every Prewired session that they attend. If your child is very young and needs lots of support, you should be prepared to sit with them to help. You can of course ask a mentor for technical advice.
 
 **If your child is 11 or older**: It is up to you. You are welcome to accompany your child if you think this would benefit them. They will otherwise be fully supervised at all times by volunteers from local community groups, companies and universities.
 
