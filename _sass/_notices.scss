@@ -68,6 +68,13 @@
   @include notice($light-gray);
 }
 
+/* Prewired addition */
+
+.block {
+  @include notice($light-gray);
+  font-size: $type-size-5 !important;
+}
+
 /* Primary notice */
 
 .notice--primary {

@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "SummerHack"
-    url: /summerhack2017/  
   - title: "Registration"
     url: /registration/
   - title: "Parents"
@@ -10,6 +8,8 @@ main:
     url: /mentors/
   - title: "Resources"
     url: /resources/
+  - title: "SummerHack"
+    url: /summerhack-projects-2017/  
   - title: "About Us"
     url: "/about/"
   - title: "Contact"

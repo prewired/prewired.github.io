@@ -5,13 +5,17 @@ permalink: /summerhack2017/
 header:
   overlay_image: /assets/images/summerhack2016.jpg
   overlay_filter: 0.4
-  cta_label: "Register now"
+  cta_label: "Register is closed"
   cta_url: "https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform"
 --- 
-{% include toc %}
+<!--{% include toc %}-->
 {% include base_path %}
 
-## Overview 
+Summer Hack 2017 is done and dusted! 
+
+We have written a [brief overview of the team projects]({{ base_path }}/summerhack-projects-2017/) to keep you amused until next years's awesome Summer Hack.
+
+<!--## Overview 
 
 We are excited to announce that we are running **Summer Hack** again this year &mdash; a week-long team programming competition for young people of secondary school age.
 
@@ -388,7 +392,7 @@ To get more of an idea of what will happen, check out this video of highlights f
             <tr>
                 <td>13:00</td>
                 <td>Presentations
- 				<br/>
+                <br/>
                     <ul>
                         <li>Each team presents the work they have done during the week</li>
                     </ul>
@@ -419,7 +423,7 @@ To get more of an idea of what will happen, check out this video of highlights f
 
 ## Challenges
 
-TBA
+TBA-->
 
 <!-- ### Active Coding
 
