@@ -5,7 +5,7 @@ permalink: /summerhack2017/
 header:
   overlay_image: /assets/images/summerhack2016.jpg
   overlay_filter: 0.4
-  cta_label: "Register is closed"
+  cta_label: "Registration is closed"
   cta_url: "https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform"
 --- 
 <!--{% include toc %}-->
