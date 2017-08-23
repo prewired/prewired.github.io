@@ -52,7 +52,7 @@ Kiran, Theo, Gregor and Christina
 <div class="block" markdown="1">
 # Team Red Hat Hackers
 
-Andrew
+Andrew, Torin and Marcus
 
 **Eco Pong**: This is  an app that engages primary-aged children with the idea of saving energy. It uses the real-time energy data from schools to rank schools each week, from most efficient to least efficient. This ranking is used in a weekly inter-school Pong tournament to give advantages to the schools that are more efficient (e.g., larger paddle, faster moving speed). The idea is to demonstrate the effects of inefficient energy usage in a form that primary pupils would understand and engage with.
 
