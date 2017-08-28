@@ -5,8 +5,16 @@ permalink: /summerhack-projects-2017/
 header:
   image: /assets/images/summerhack2016.jpg
 --- 
-Summer Hack 2017 took place on August 7th&ndash;11th 2017 at [CodeBase](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh. A brief summary of the five team projects is given below.
+Summer Hack 2017 took place on August 7th&ndash;11th 2017 at [CodeBase](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh. 
 
+A big thanks to [Product Forge](https://productforge.io) for producing this brilliant video of the week's highlights:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jh6mrX0uLZM" frameborder="0" allowfullscreen></iframe>
+
+----
+
+# Team Projects
+
+Five teams created projects during the week, and these are briefly described below.
 
 <div class="block" markdown="1">
 # Team S.Post
