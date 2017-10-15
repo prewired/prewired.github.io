@@ -23,16 +23,15 @@ independent developers; and by staff from local tech companies. <!-- Our list of
 
 ## Management Committee
 
-Prewired is in the process of applying for SCIO status, and is organised by a management committee with the following members: 
+Prewired became a Scottish Charity (SC047780) in September 2017. The Board of Trustees currently has the following members:: 
 
 | Name                  | Position  |
 |-----------------------|-----------|
 | Ewan Klein            | Chairperson |
 | Yula Syahrial         | Treasurer |
-| Stuart Roebuck        | Trustee   |
+| Rikki Guy             | Secretary   |
 | Freda O'Byrne         | Trustee   |
 | Helen Williams        | Trustee   |
-| Rikki Guy             | Trustee   |
 | Oliver Littlejohn     | Trustee   |
 | Cameron Gray          | Trustee   |
 
