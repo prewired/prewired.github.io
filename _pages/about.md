@@ -23,7 +23,7 @@ independent developers; and by staff from local tech companies. <!-- Our list of
 
 ## Management Committee
 
-Prewired became a Scottish Charity (SC047780) in September 2017. The Board of Trustees currently has the following members:: 
+Prewired became a Scottish Charity (SC047780) in September 2017. The Board of Trustees currently has the following members:
 
 | Name                  | Position  |
 |-----------------------|-----------|
@@ -39,7 +39,7 @@ Prewired became a Scottish Charity (SC047780) in September 2017. The Board of Tr
 
 ## Brief History
 
-The University of Edinburgh’s School of Informatics first provided a local centre for the Young Rewired State annual week-long Festival of Code in 2012. In 2013, we entered three teams into the final competition of the Festival of Code and although they didn't win any prizes, they did brilliantly well. This experience, and theenthusiasm, knowledge and ideas of the participants, inspired a group of us &mdash; <a href="http://twitter.com/ewanhklein">Ewan Klein</a>, <a href="http://twitter.com/FredaOByrne">Freda O'Byrne</a>, <a href="http://rhiaro.co.uk">Amy Guy</a>, <a href="http://twitter.com/kitbarnes">Kit Barnes</a> and <a href="http://www.inf.ed.ac.uk/people/staff/Stuart_Anderson.html">Stuart Anderson</a> &mdash; to pursue longer-term means of encouraging young people to engage with programming and related activities in Edinburgh.
+The University of Edinburgh’s School of Informatics first provided a local centre for the Young Rewired State annual week-long Festival of Code in 2012. In 2013, we entered three teams into the final competition of the Festival of Code and although they didn't win any prizes, they did brilliantly well. This experience, and the enthusiasm, knowledge and ideas of the participants, inspired a group of us &mdash; <a href="http://twitter.com/ewanhklein">Ewan Klein</a>, <a href="http://twitter.com/FredaOByrne">Freda O'Byrne</a>, <a href="http://rhiaro.co.uk">Amy Guy</a>, <a href="http://twitter.com/kitbarnes">Kit Barnes</a> and <a href="http://www.inf.ed.ac.uk/people/staff/Stuart_Anderson.html">Stuart Anderson</a> &mdash; to pursue longer-term means of encouraging young people to engage with programming and related activities in Edinburgh.
 
 Thus, Prewired was born, with these objectives:
 
