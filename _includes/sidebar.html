@@ -8,7 +8,7 @@
         {% if s.image contains "://" %}
           "{{ s.image }}"
         {% else %}
-          "{{ s.image | absolute_url }}"
+          "{{ s.image | relative_url }}"
         {% endif %}
         alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
       {% endif %}
@@ -20,6 +20,4 @@
     {% endif %}
   {% endif %}
   </div>
-{% elsif page.sidebar_cal %}
-  {% include sidebar_cal %}
 {% endif %}

@@ -1,5 +1,0 @@
-<div class="sidebar sticky">
-  <h3 align="center">Event Calendar</h3>
-  <iframe id="ecal" src="https://www.eventbrite.co.uk/calendar-widget?eid=20439490065" frameborder="0" height="300" width="100%" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe>
-<p align="center"><a class="footnote" target="_blank" href="http://www.eventbrite.co.uk/r/ecal">Powered by Eventbrite</a></p>
-</div>
