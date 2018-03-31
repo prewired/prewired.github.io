@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.3.0"
+gem "jekyll", "~> 3.5"
 gem "minimal-mistakes-jekyll"
 
 # If you have any plugins, put them here!

@@ -9,9 +9,11 @@ main:
   - title: "Resources"
     url: /resources/
   - title: "SummerHack"
-    url: /summerhack-projects-2017/  
+    url: /summerhack2018/  
   - title: "About Us"
     url: "/about/"
+  - title: "Blog"
+    url: "/year-archive/"
   - title: "Contact"
     url: /contact/
   - title: "FAQ"
