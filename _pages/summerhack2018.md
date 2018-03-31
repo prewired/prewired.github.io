@@ -1,11 +1,15 @@
 --- 
-layout: splash
+layout: single
 title: "Summer Hack 2018"
 permalink: /summerhack2018/
+sidebar:
+  nav: "sh-projects"
 header:
-  overlay_image: /assets/images/summerhack2016.jpg
-  overlay_filter: 0.4
-  cta_label: "Registration coming in July"
+  image: /assets/images/summerhack2016.jpg
+  #overlay_filter: 0.4
+  #overlay_image: /assets/images/summerhack2016.jpg
+  #overlay_filter: 0.4
+  #cta_label: "Registration coming in July"
   #cta_url: "https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform"
 --- 
 <!--{% include toc %}-->

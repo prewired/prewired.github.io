@@ -18,3 +18,9 @@ main:
     url: /contact/
   - title: "FAQ"
     url: /faq/
+
+sh-projects:
+  - title: Previous Hacks
+    children:
+      - title: "2017"
+        url: /summerhack-projects-2017/
