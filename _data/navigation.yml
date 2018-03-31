@@ -11,9 +11,9 @@ main:
   - title: "SummerHack"
     url: /summerhack2018/  
   - title: "About Us"
-    url: "/about/"
+    url: "/about/"    
   - title: "Blog"
-    url: "/year-archive/"
+    url: "/blog/"
   - title: "Contact"
     url: /contact/
   - title: "FAQ"

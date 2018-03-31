@@ -1,6 +1,6 @@
 ---
 title: Blog
 layout: posts
-permalink: /year-archive/
+permalink: /blog/
 author_profile: true
 ---
