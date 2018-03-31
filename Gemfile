@@ -1,7 +1,10 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.5"
+#gem "jekyll", "~> 3.5"
+gem "github-pages", group: :jekyll_plugins
 gem "minimal-mistakes-jekyll"
+
+
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
