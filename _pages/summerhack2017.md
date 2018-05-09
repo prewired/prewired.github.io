@@ -23,7 +23,7 @@ The Summer Hack will take place from every day 10:00 am to 4:00 pm, August 7th&n
 
 We still have a limited number of places, so if you want to be involved, sign up now!
 
-[Register for Summer Hack](https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform){: .btn .btn--info .btn--x-large}{: .text-center}
+<!-- [Register for Summer Hack](https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform){: .btn .btn--info .btn--x-large}{: .text-center} -->
 
 * What is involved? You will be working in a small team, working together on a small project.
 * Will there be prizes? Yes. At the end of the week, each team will give a demo of their project, and prizes will be awarded in various categories.
