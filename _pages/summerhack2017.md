@@ -15,7 +15,7 @@ Summer Hack 2017 is done and dusted!
 
 We have written a [brief overview of the team projects]({{ base_path }}/summerhack-projects-2017/) to keep you amused until next years's awesome Summer Hack.
 
-<!--## Overview 
+## Overview 
 
 We are excited to announce that we are running **Summer Hack** again this year &mdash; a week-long team programming competition for young people of secondary school age.
 
@@ -423,9 +423,7 @@ To get more of an idea of what will happen, check out this video of highlights f
 
 ## Challenges
 
-TBA-->
-
-<!-- ### Active Coding
+### Active Coding
 
 Design a project with a device (e.g., Raspberry Pi, Arduino, [BBC micro:bit](https://www.microbit.co.uk)) to help younger children learn programming.
 
