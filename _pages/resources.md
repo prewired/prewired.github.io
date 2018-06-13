@@ -16,6 +16,7 @@ This page contains a bunch of links to useful learning resources. Many of the pa
 * Code.org projects: <https://studio.code.org/projects>
 * CodeCombat: <https://codecombat.com>
 * Codingame: <https://www.codingame.com>
+* Exercism.io: <http://exercism.io/>
 * CoderDojo Scotland: <http://coderdojoscotland.com/resources>
 * Khan Academy Programming: <https://www.khanacademy.org/computing/computer-programming>
 * Gallery of interesting Jupyter Notebooks: <https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks>
