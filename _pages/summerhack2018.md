@@ -23,6 +23,8 @@ We have written a [brief overview of the team projects]({{ base_path }}/summerha
 
 We are excited to announce that we are running **Summer Hack** again this year &mdash; a week-long team programming competition for young people of secondary school age (aged 12 and over).
 
+**Registration**: You can register by filling in the registration form, we will get in touch with more details nearer the time: <a href="https://goo.gl/forms/cwolczUwfViOJMOT2" target="_blank">Registration form</a>
+
 The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 23rd&ndash;27th 2018 at [CodeBase Events Space](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh EH3 9SJ. Details of the schedule will be announced nearer the time. 
 
 * What is involved? You will be working in a small team, collaborating on a small project.
@@ -31,8 +33,6 @@ The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 23rd&n
 * What about food? We will provide snacks but you will need to bring your own lunch.
 
 **Important**: because you will be working as a member of a team, you must commit to attending every day during the Summer Hack.
-
-**Registration**: You can register by filling in the registration form, we will get in touch with more details nearer the time: <a href="https://goo.gl/forms/cwolczUwfViOJMOT2" target="_blank">Registration form</a>
 
 <!-- 
 Details of the schedule are shown below. 
