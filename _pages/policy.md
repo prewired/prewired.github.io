@@ -41,7 +41,7 @@ All mentors must sign that they have read this child protection policy and that 
 
 ## Communications
 
-* The Prewired Facebook page are only open to participants, parents and active mentors and is moderated by a member of the Prewired management committee. <!-- The Facebook page and Google Group are moderated, and the IRC channel is password-protected. -->
+* The Prewired Facebook page is only open to participants, parents and active mentors and is moderated by a member of the Prewired management committee. <!-- The Facebook page and Google Group are moderated, and the IRC channel is password-protected. -->
 * Mentors are instructed not to communicate with participants in private email messages or any other form of private medium, and must only use the public/moderated communications mechanisms above.
 
 ## Snacks
