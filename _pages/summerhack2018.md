@@ -23,7 +23,7 @@ We have written a [brief overview of the team projects]({{ base_path }}/summerha
 
 We are excited to announce that we are running **Summer Hack** again this year &mdash; a week-long team programming competition for young people of secondary school age (aged 12 and over).
 
-**Registration**: You can register by filling in the registration form, we will get in touch with more details nearer the time: <a href="https://goo.gl/forms/cwolczUwfViOJMOT2" target="_blank">Registration form</a>
+<!-- **Registration**: You can register by filling in the registration form, we will get in touch with more details nearer the time: <a href="https://goo.gl/forms/cwolczUwfViOJMOT2" target="_blank">Registration form</a> -->
 
 The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 23rd&ndash;27th 2018 at [CodeBase Events Space](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh EH3 9SJ. Details of the schedule will be announced nearer the time. 
 
@@ -34,24 +34,19 @@ The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 23rd&n
 
 **Important**: because you will be working as a member of a team, you must commit to attending every day during the Summer Hack.
 
-<!-- 
+
 Details of the schedule are shown below. 
 
+<!-- We still have a limited number of places, so if you want to be involved, sign up now! 
 
-We still have a limited number of places, so if you want to be involved, sign up now!
+[Register for Summer Hack](https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform){: .btn .btn--info .btn--x-large}{: .text-center} -->
 
-[Register for Summer Hack](https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform){: .btn .btn--info .btn--x-large}{: .text-center}
 
-* What is involved? You will be working in a small team, working together on a small project.
-* Will there be prizes? Yes. At the end of the week, each team will give a demo of their project, and prizes will be awarded in various categories.
-* Do you need to bring a laptop? Not necessarily &mdash; we can provide one.
-* What about food? We will provide snacks but you will need to bring your own lunch.
-
-To get more of an idea of what will happen, check out this video of highlights from last year's Summer Hack, kindly produced for us by the awesome team at [Product Forge](https://productforge.io):
+<!-- To get more of an idea of what will happen, check out this video of highlights from last year's Summer Hack, kindly produced for us by the awesome team at [Product Forge](https://productforge.io):
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/K9JfPVBy6jQ" frameborder="0" allowfullscreen></iframe>
 
-<hr/> 
+<hr/>  -->
 
 ## Schedule 
 
@@ -440,7 +435,7 @@ To get more of an idea of what will happen, check out this video of highlights f
 
 ## Challenges
 
-TBA-->
+TBA
 
 <!-- ### Active Coding
 
