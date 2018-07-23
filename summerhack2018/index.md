@@ -1,7 +1,7 @@
 --- 
 layout: single
 title: "Summer Hack 2018"
-permalink: /summerhack2018/
+permalink: /summerhack2018/index.html
 sidebar:
   nav: "sh-projects"
 header:
@@ -12,14 +12,14 @@ header:
   #cta_label: "Registration coming in July"
   #cta_url: "https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform"
 --- 
-<!--{% include toc %}-->
+{% include toc %}
 {% include base_path %}
 
 <!-- Summer Hack 2017 is done and dusted! 
 
 We have written a [brief overview of the team projects]({{ base_path }}/summerhack-projects-2017/) to keep you amused until next years's awesome Summer Hack. -->
 
-<!--## Overview -->
+## Overview
 
 We are excited to announce that we are running **Summer Hack** again this year &mdash; a week-long team programming competition for young people of secondary school age (aged 12 and over).
 
@@ -435,59 +435,35 @@ Details of the schedule are shown below.
 
 ## Challenges
 
-TBA
+### Cyber Security Challenge (Civic Digits)
 
-<!-- ### Active Coding
+Create a game or an app to help someone who doesn’t know or think about cyber security
 
-Design a project with a device (e.g., Raspberry Pi, Arduino, [BBC micro:bit](https://www.microbit.co.uk)) to help younger children learn programming.
+Imagine someone who never really thinks about cyber security and isn’t aware of any threat online. How could you engage them? What would be the most fun, provocative or interesting way to do either of the following?
+* Tell someone something about how to stay safe online
+* Encourage them to find out for themselves.
 
-### Chatbot Challenge
+[Read more...](/summerhack2018/cyber.html)
 
-Make a [chatbot](https://en.wikipedia.org/wiki/Chatterbot). Talk to a computer, have it say silly things back. You could use the [NLTK chat library](http://nltk.org/_modules/nltk/chat) as a starting point.
+### micro:bit Tamagotchi Pet (Eagle Labs)
 
+Use a micro:bit to make a Tamagotchi pet &mdash; a pet which:
 
-### The Answer
+* makes a different face when it’s sad, angry or happy
+* tells you it’s hungry
+* needs regular walkies
+* gathers interesting data about its owner and tells its Tamagotchi friends about them
 
-Create a programme that will ask people questions (and then do something fun with their answers, such as [generative art](https://labs.ideo.com/2014/06/04/painting-with-code/) with [Nodebox](https://www.nodebox.net/code/index.php/Introduction)).
+[Read more...](/summerhack2018/tamagotchi.html)
 
+### Robot Airport Assistant (Skyscanner)
 
-### Recycle Me!
-
-Build a web site or mobile app that encourages people to recycle more stuff for [City of Edinburgh Council](http://www.edinburgh.gov.uk/info/20001/bins_and_recycling).
-
-### True Grit
-
-Build a game that makes it fun to find [grit bins](http://www.edinburgh.gov.uk/info/20227/gritting_and_salt_bins/) in Edinburgh, and to check that the location on the Council map is their real location. (You can also use [OpenStreetMap](http://overpass-turbo.eu/s/hJ6) to record [grit bin](http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dgrit_bin) locations.)
-
-### Website Upgrade
-
-Work on the Prewired website and learn about [Markdown](https://daringfireball.net/projects/markdown/), CSS, [Jekyll](https://jekyllrb.com), [Jekyll Themes](http://jekyllthemes.org), Git and [GitHub Pages](https://pages.github.com).
-
-### Give Me Shelter
-
-Create an interactive digital adventure about what it's like to be homeless.
-
-### Library Games
-
-Create a game that takes place in a library.
-
-### Swap your stuff! 
-
-Create an app or website where you can offer clothes, toys, gadgets in exchange for things that other people want to get rid of. (Or donate them to [Shelter](http://scotland.shelter.org.uk).)
-
-### Digital Play
-
-Build a game that is suitable for very young children.
-Take into account recent research from the University of Edinburgh about [Exploring play and creativity in pre-schoolers’ use of apps](/assets/exploring_play.pdf).
-
-### Lego robots! 
-
-Can your robot do this?
+Make a Lego robot to guide passengers to different locations in a (mocked-up) airport, help them with their luggage, buy presents to take home, warn when their flight is boarding. Keep a record of who the passengers are and where they are going.
 
 
+### Am I Addicted? Web History Analyser
 
+Develop a programme that imports your web browsing history for the last week (or month), and figures out what kind of web sites you really like (or even addicted to). 
 
-### Wildcard *
-
-Anything else you want to build!  -->
+Could/should the programme warn you when you are indulging in your addiction?
 

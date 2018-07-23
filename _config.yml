@@ -24,6 +24,7 @@ url                      : "https://www.prewired.org"
 baseurl                  : ""
 repository               : "prewired" 
 teaser                   : "/assets/images/prewired-logo.png"
+github                   : [metadata]
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
