@@ -10,6 +10,10 @@ permalink: /resources/
 
 This page contains a bunch of links to useful learning resources. Many of the pages we link to are themselves links to many other sites and tools. We will expand< this list and try to make it more useful as we go along. Let us know which bits you find useful (or not), and make suggestions for new things that should be added. 
 
+## Project Ideas
+
+* Make your own Tamagotchi using a MicroBit: <https://www.prewired.org/pdfs/MicroBits%20Tamagotchi%20Workshop.pdf>
+
 ## General Coding
 
 * Code.org classes: <https://code.org/>
