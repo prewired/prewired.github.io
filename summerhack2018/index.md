@@ -22,7 +22,7 @@ We have written a [brief overview of the team projects]({{ base_path }}/summerha
 ## Livestream
 
 <iframe
-    src="http://player.twitch.tv/?prewired"
+    src="https://player.twitch.tv/?channel=prewired"
     height="358"
     width="636"
     frameborder="0"
