@@ -19,6 +19,17 @@ header:
 
 We have written a [brief overview of the team projects]({{ base_path }}/summerhack-projects-2017/) to keep you amused until next years's awesome Summer Hack. -->
 
+## Livestream
+
+<iframe
+    src="http://player.twitch.tv/?prewired"
+    height="358"
+    width="636"
+    frameborder="0"
+    scrolling="no"
+    allowfullscreen="true">
+</iframe>
+
 ## Overview
 
 We are excited to announce that we are running **Summer Hack** again this year &mdash; a week-long team programming competition for young people of secondary school age (aged 12 and over).
