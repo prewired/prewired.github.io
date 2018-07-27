@@ -12,7 +12,7 @@ This page contains a bunch of links to useful learning resources. Many of the pa
 
 ## Project Ideas
 
-* Make your own Tamagotchi using a MicroBit: <https://www.prewired.org/pdfs/MicroBits%20Tamagotchi%20Workshop.pdf>
+* Make your own [Tamagotchi pet using a micro:bit]({{ base_path }}/summerhack2018/tamagotchi.html)
 
 ## General Coding
 

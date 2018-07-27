@@ -2,7 +2,6 @@
 PORT := 4004
 
 local: 
-	#bundle exec jekyll serve --port $(PORT) --config _config.yml,_config_dev.yml
 	bundle exec jekyll serve --port $(PORT)
 
 build: 
