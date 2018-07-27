@@ -89,7 +89,7 @@ Andrew, Charlie, Kenneth, Sandy and Robert
 
 **AirBuddy**: A robot assistant that uses line-following and a text-based interface to guide people through an airport.
 
-[Project code](https://github.com/prewired/summerhack2017-projects/tree/master/eco-pong){: .btn .btn--large .btn--info}
+[Project code](http://gitlab.com/theexperiencedameteurs/projects){: .btn .btn--large .btn--info}
 </div>
 
 # Awards
