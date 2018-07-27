@@ -1,7 +1,7 @@
 --- 
 layout: single
 title: "Summer Hack 2018"
-permalink: /summerhack2018/index.html
+permalink: /summerhack2018/
 sidebar:
   nav: "sh-projects"
 header:
@@ -15,11 +15,12 @@ header:
 {% include toc %}
 {% include base_path %}
 
-<!-- Summer Hack 2017 is done and dusted! 
+Summer Hack 2018 is done and dusted! 
 
-We have written a [brief overview of the team projects]({{ base_path }}/summerhack-projects-2017/) to keep you amused until next years's awesome Summer Hack. -->
+We have 
+written a [brief overview of the team projects]({{ "/summerhack2018/projects/" | relative_path }}) to keep you amused until next years's awesome Summer Hack. 
 
-## Livestream
+<!-- ## Livestream
 
 <iframe
     src="https://player.twitch.tv/?channel=prewired"
@@ -34,7 +35,7 @@ We have written a [brief overview of the team projects]({{ base_path }}/summerha
 
 We are excited to announce that we are running **Summer Hack** again this year &mdash; a week-long team programming competition for young people of secondary school age (aged 12 and over).
 
-<!-- **Registration**: You can register by filling in the registration form, we will get in touch with more details nearer the time: <a href="https://goo.gl/forms/cwolczUwfViOJMOT2" target="_blank">Registration form</a> -->
+<!-- **Registration**: You can register by filling in the registration form, we will get in touch with more details nearer the time: <a href="https://goo.gl/forms/cwolczUwfViOJMOT2" target="_blank">Registration form</a> 
 
 The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 23rd&ndash;27th 2018 at [CodeBase Events Space](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh EH3 9SJ. Details of the schedule will be announced nearer the time. 
 
@@ -57,8 +58,9 @@ Details of the schedule are shown below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/K9JfPVBy6jQ" frameborder="0" allowfullscreen></iframe>
 
-<hr/>  -->
+<hr/> -->
 
+<!--
 ## Schedule 
 
 ### Monday
@@ -477,4 +479,4 @@ Make a Lego robot to guide passengers to different locations in a (mocked-up) ai
 Develop a programme that imports your web browsing history for the last week (or month), and figures out what kind of web sites you really like (or even addicted to). 
 
 Could/should the programme warn you when you are indulging in your addiction?
-
+ -->
