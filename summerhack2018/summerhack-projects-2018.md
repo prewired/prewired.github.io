@@ -60,7 +60,7 @@ Cameron, Cerys and Ruaridh
 
 <div class="block" markdown="1">
 
-## <a name="pythononagoras">Pythonagoras</a>
+## Pythonagoras
 
 Beccie, Christina and Tom
 
@@ -83,7 +83,7 @@ Bruce, Luca, Kiran and Theo
 
 
 <div class="block" markdown="1">
-## <a name="expams">Experienced Amateurs</a>
+## Experienced Amateurs
 
 Andrew, Charlie, Kenneth, Sandy and Robert
 
@@ -98,15 +98,11 @@ Andrew, Charlie, Kenneth, Sandy and Robert
 [Pythonagoras](#pythonagoras)
 
 ## Second Prize (micro:bit Project Kits, sponsored by Float): 
-[Experienced Amateurs](#expams)
+[Experienced Amateurs](#experienced-amateurs)
 
 ## Civic Digits Cyber Security Prize: 
 [Pythonagoras](#pythonagoras)
 
 ## Code Quality Prize: 
-[Experienced Amateurs](#expams)
-
-
-
-
+[Experienced Amateurs](#experienced-amateurs)
 
