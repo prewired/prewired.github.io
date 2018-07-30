@@ -7,7 +7,7 @@ sidebar_cal: true
 
 If you would like to attend Prewired, please:
 1. Complete the [Membership Form](#membership-form) below. This is important so that we can collect important things like emergency contact information. You only need to do this once.
-2. Once we have your membership details, just go ahead and [book a place for individual Prewired sessions on Eventbrite](https://www.eventbrite.co.uk/e/prewired-registration-46970337544). 
+2. Once we have your membership details, just go ahead and [book a place for individual Prewired sessions on Eventbrite](https://www.eventbrite.co.uk/e/prewired-registration-15338031465). 
 3. Turn up!
     * Check yourself in on the registration list using the tablet at the front desk &mdash; someone at the desk will help you if necessary.
     * If you have never coded before, or have but don't know what to do, no problem! Introduce yourself to the Duty Mentor (who should be easy to spot) when you arrive, and they'll help you to get started.
