@@ -1,20 +1,20 @@
 --- 
 layout: single
-title: "Summer Hack 2018 Projects"
-permalink: /summerhack2018/projects/
+title: "Summer Hack 2019 Projects"
+permalink: /summerhack2019/projects/
 header:
   image: /assets/images/summerhack2016.jpg
 --- 
 {% include toc %}
 {% include base_path %}
 
-Summer Hack 2018 took place on July 23rd&ndash;27th 2018 at [CodeBase](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh. 
+Summer Hack 2019 took place on July 22nd&ndash;26th 2019 at [CodeBase](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh. 
 
 <!-- A big thanks to [Product Forge](https://productforge.io) for producing this brilliant video of the week's highlights:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jh6mrX0uLZM" frameborder="0" allowfullscreen></iframe>
  -->
 ----
-# Challenges
+<!-- # Challenges
 
 The teams all decided to pick one of the following two challenges:
 
@@ -66,7 +66,7 @@ Beccie, Christina and Tom
 
 **Glitch**: A game that walks users through the process of registering for and using a social media platform in order to highlight the data privacy risks. 
 
-<!-- [Project code](https://github.com/sonicpose/9044){: .btn .btn--large .btn--info} -->
+<!-- [Project code](https://github.com/sonicpose/9044){: .btn .btn--large .btn--info} 
 </div>
 
 <div class="block" markdown="1">
@@ -105,4 +105,4 @@ Andrew, Charlie, Kenneth, Sandy and Robert
 
 ## Code Quality Prize: 
 [Experienced Amateurs](#experienced-amateurs)
-
+ -->

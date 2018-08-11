@@ -15,7 +15,7 @@ check-internal:
 
 
 debug: clean
-	bundle exec jekyll build --trace --config _config.yml,_config_dev.yml
+	bundle exec jekyll build --verbose
 
 clean:
 	rm -rf _site/*

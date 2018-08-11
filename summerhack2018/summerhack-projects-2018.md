@@ -53,9 +53,11 @@ Calum, Logan, Reuben and Gregor
 
 Cameron, Cerys and Ruaridh
 
-**SKYBorg**: A robot to help elderly / limited-mobility passengers to reach different destinations in an airport.
+**SKYBorg**: A Mindstorms robot to help elderly / limited-mobility passengers to reach different destinations in an airport.
 
 [Project code](https://github.com/CerysKitten25/coffee-cup){: .btn .btn--large .btn--info}
+[Slides](https://docs.google.com/presentation/d/1xD5xUzQjaOB1LenBphnrT_li2ViJpKnaSLnmxS9zLNM/edit?ts=5b6b0add#slide=id.g3dc3b5a4aa_0_31){: .btn .btn--large .btn--success}
+
 </div>
 
 <div class="block" markdown="1">
