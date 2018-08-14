@@ -68,6 +68,8 @@ Beccie, Christina and Tom
 
 **Glitch**: A game that walks users through the process of registering for and using a social media platform in order to highlight the data privacy risks. 
 
+[Slides]({{ base_path }}/pdfs/pythonagoras_slides.pdf){: .btn .btn--large .btn--success}
+
 <!-- [Project code](https://github.com/sonicpose/9044){: .btn .btn--large .btn--info} -->
 </div>
 
