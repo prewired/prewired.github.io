@@ -23,6 +23,6 @@ sh-projects:
   - title: Previous Hacks
     children:
       - title: "2017"
-        url: /summerhack-projects-2017/
+        url: /summerhack2017/projects/
       - title: "2018"
         url: /summerhack2018/projects/

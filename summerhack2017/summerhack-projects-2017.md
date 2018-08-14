@@ -1,7 +1,7 @@
 --- 
 layout: single
 title: "Summer Hack 2017 Projects"
-permalink: /summerhack-projects-2017/
+permalink: /summerhack2017/projects/
 header:
   image: /assets/images/summerhack2016.jpg
 --- 
