@@ -3,7 +3,7 @@ layout: single
 title: "Documents"
 permalink: "/docs/"
 header:
-  image: /assets/images/cameron.jpg
+  image: /assets/images/participants-oct-2018.jpg
 ---
 {% include base_path %}
 
