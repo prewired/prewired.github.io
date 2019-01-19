@@ -8,11 +8,13 @@ permalink: /resources/
 
 ## Introduction
 
-This page contains a bunch of links to useful learning resources. Many of the pages we link to are themselves links to many other sites and tools. We will expand< this list and try to make it more useful as we go along. Let us know which bits you find useful (or not), and make suggestions for new things that should be added. 
+This page contains a bunch of links to useful learning resources. Many of the pages we link to are themselves links to many other sites and tools. We will expand this list and try to make it more useful as we go along. Let us know which bits you find useful (or not), and make suggestions for new things that should be added. 
 
-## Project Ideas
+## Starting with Scratch
 
-* Make your own [Tamagotchi pet using a micro:bit]({{ base_path }}/summerhack2018/tamagotchi.html)
+Scratch is great way to begin learning to code.  It allows you to make cool programs using a drag-and-drop approach and is designed to be fun!
+
+* Free online book: [Book of Scratch, vol 1](https://www.raspberrypi.org/magpi-issues/CC_Book_of_Scratch_v1.pdf)  
 
 ## General Coding
 
@@ -64,3 +66,7 @@ This page contains a bunch of links to useful learning resources. Many of the pa
 
 * Visual intro to ML: <http://www.r2d3.us/visual-intro-to-machine-learning-part-1/>
 * Machine Learning for Beginners (Python): <http://pythonforengineers.com/machine-learning-for-complete-beginners/>
+
+## Project Ideas
+
+* Make your own [Tamagotchi pet using a micro:bit]({{ base_path }}/summerhack2018/tamagotchi.html)
