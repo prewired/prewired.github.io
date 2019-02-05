@@ -18,6 +18,8 @@ main:
     url: /contact/
   - title: "FAQ"
     url: /faq/
+  - title: "Documents"
+    url: /docs/
 
 sh-projects:
   - title: Previous Hacks

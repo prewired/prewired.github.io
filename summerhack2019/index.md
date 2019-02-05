@@ -1,6 +1,6 @@
 --- 
 layout: single
-title: "Summer Hack 2019"
+title: "Summer Hack 2019 is Coming"
 permalink: /summerhack2019/
 sidebar:
   nav: "sh-projects"
@@ -15,7 +15,12 @@ header:
 <!-- {% include toc %} -->
 {% include base_path %}
 
-Summer Hack 2018 is done and dusted &mdash; you can [check out the projects]({{ base_path }}//summerhack2018/projects/).
+Summer Hack 2018 is done and dusted. You can check out what happened:
+
+* [the Summer Hack 2018 team projects]({{ base_path }}//summerhack2018/projects/)
+* [the Summer Hack 2018 Flickr album](https://www.flickr.com/photos/prewired/sets/72157671837473418/with/43072882944/)
+
+<hr/>
 
 We are now planning for next year. So go ahead and put the date in your diary!
 
