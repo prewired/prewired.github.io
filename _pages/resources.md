@@ -14,13 +14,17 @@ This page contains a bunch of links to useful learning resources. Many of the pa
 
 Scratch is great way to begin learning to code.  It allows you to make cool programs using a drag-and-drop approach and is designed to be fun!
 
-* Free online book: [Book of Scratch, vol 1](https://www.raspberrypi.org/magpi-issues/CC_Book_of_Scratch_v1.pdf)  
+* Free online book: [Book of Scratch, vol 1](https://www.raspberrypi.org/magpi-issues/CC_Book_of_Scratch_v1.pdf) 
+
+## Beyond Scratch
+
+If you've been doing Scratch for a while at home, school or Prewired and want to go further, or you just feel like a challenge, then a good place to start is by learning Python or JavaScript at [CodeCombat]<https://codecombat.com/>. Or try out any of the links below!
 
 ## General Coding
 
+* CodeCombat: <https://codecombat.com>
 * Code.org classes: <https://code.org/>
 * Code.org projects: <https://studio.code.org/projects>
-* CodeCombat: <https://codecombat.com>
 * Codingame: <https://www.codingame.com>
 * Exercism.io: <http://exercism.io/>
 * CoderDojo Scotland: <http://coderdojoscotland.com/resources>
@@ -47,6 +51,7 @@ Scratch is great way to begin learning to code.  It allows you to make cool prog
 
 * BBC Microbits: <http://microbit.org/code>
 * Adafruit: <https://learn.adafruit.com>
+* Robot Making Ideas: <https://www.personalrobots.biz/>
 * Hackster.io: <https://www.hackster.io>
 
 ## Data
