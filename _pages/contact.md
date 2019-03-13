@@ -23,4 +23,4 @@ Participants and mentors can request to join the [Prewired Facebook group](https
 
 ## Mentors
 
-Memtors can ask for an invite to the `#mentors` channel on the [Slack](https://slack.com) Prewired team &mdash; this is where we post announcements, etc that might interest mentors and occasional reminders about sessions. Mentors also use this channel to chat to other mentors and ask questions.
+Mentors can ask for an invite to the `#mentors` channel on the [Slack](https://slack.com) Prewired team &mdash; this is where we post announcements, etc that might interest mentors and occasional reminders about sessions. Mentors also use this channel to chat to other mentors and ask questions.
