@@ -24,11 +24,11 @@ Summer Hack 2018 is done and dusted. You can check out what happened:
 
 We are now planning for Summer Hack 2019. The date is under review, but will be confirmed shortly. 
 
- <!-- So go ahead and put the date in your diary!
+<!-- So go ahead and put the date in your diary!
 
 <div class="notice--info">
 <h1 class="text-center">Summer Hack 2019<br/>is<br/>22nd&ndash;26th July 2019</h1>
-</div> -->
+</div>  -->
 
 
 <!-- ## Livestream
