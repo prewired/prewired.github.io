@@ -1,5 +1,6 @@
 ---
 layout: single
+classes: wide
 title: Privacy Policy
 subtitle: 
 permalink: "/privacy/"
