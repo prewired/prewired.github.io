@@ -1,33 +1,44 @@
 ---
 layout: single
 title: Privacy Policy
-subtitle: How we respect privacy when we deal with personal information collected by Prewired
+subtitle: 
 permalink: "/privacy/"
 header:
   image: 
 ---
 
-
 This Privacy Policy applies to information that Prewired collects about individuals who interact with our organisation. It explains what personal information we collect and how we use it. 
 
-If you have any comments or questions about this notice, feel free to contact us at admin@prewired.org.
+If you have any comments or questions about this notice, feel free to contact us at admin[AT]prewired.org.
 
 ## Personal data that we process
 
 The following table explains the types of data we collect and the legal basis, under current data protection legislation, on which this data is processed. 
 
-Purpose
-Data (key elements)
-Basis
-Enquiring about our organisation and its work
-Name, email, message
-Legitimate interests - it is necessary for us to read and store your message so that we can respond in the way that you would expect.
-Registering to work as a mentor for one or more of our events
-Name, email, areas of expertise, availability
-Consent - you have given your active consent. 
-Registering to participate in one of our events (e.g., weekly evening session, Summer Hack)
-Name, email, ...
-Consent - you have given your active consent. 
+<table>
+	<tr>
+		<th> Purpose</th>
+		<th>Data</th>
+		<th>Basis</th>
+	</tr>
+	<tr>
+		<td>Enquiring about our organisation and its work</td>
+		<td>Name, email, message</td>
+		<td>Legitimate interests &mdash; it is necessary for us to read and store your message so that we can respond in the way that you would expect.</td>
+	</tr>
+	<tr>
+		<td>Registering to work as a mentor for one or more of our events</td>
+		<td>Name, email, areas of expertise, availability</td>
+		<td>Consent &mdash;  you have given your active consent. </td>
+	</tr>
+	<tr>
+		<td>Registering to participate in one of our events (e.g., weekly evening session, Summer Hack)</td>
+		<td>Name, email</td>
+		<td>Consent &mdash; you have given your active consent. </td>
+	</tr>
+</table>
+
+
 
 ## How we use your data
 
@@ -51,6 +62,7 @@ We will only pass your data to third parties in the following circumstances:
 In addition, we will only pass data to third parties outside of the EU where appropriate safeguards are in place as defined by Article 46 of the General Data Protection Regulation. 
 
 ## How long we keep your data
+
 We take the principles of data minimisation and removal seriously and have internal policies in place to ensure that we only ever ask for the minimum amount of data for the associated purpose and delete that data promptly once it is no longer required. 
 Where data is collected on the basis of consent, we will seek renewal of consent at least every three years. 
 
@@ -63,7 +75,7 @@ You have a range of rights over your data, which include the following:
 * You have the right of access to your information. 
 * You have the right to lodge a complaint with the Information Commissioner if you feel your rights have been infringed. 
 
-A full summary of your legal rights over your data can be found on the Information Commissioner’s website here: https://ico.org.uk/
+A full summary of your legal rights over your data can be found on the Information Commissioner’s website here: <https://ico.org.uk/>
 
 If you would like to access the rights listed above, or any other legal rights you have over your data under current legislation, please get in touch with us. 
 
