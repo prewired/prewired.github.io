@@ -15,6 +15,10 @@ You can contact the organisers by emailing hello[AT]prewired.org.
 
 You can also send [@prewired](http://twitter.com/prewired) a message on Twitter; the Twitter account is run by volunteer participants.
 
+## Mailing List
+
+You can subscribe to our mailing list to receive emails about our current and new events. Subscribe here: [http://eepurl.com/dv2dPb](http://eepurl.com/dv2dPb)
+
 ## Community
 
 Participants and mentors can request to join the [Prewired Facebook group](https://www.facebook.com/groups/prewired).
