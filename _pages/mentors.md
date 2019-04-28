@@ -28,7 +28,7 @@ From time to time we hold more structured workshops about a specific topic, and 
 
 ### Disclosure (aka CRB checking)
 
-We work with the [STEM Ambassador Programme](http://www.stemnet.org.uk/ambassadors/) to organise [Disclosure](http://www.disclosurescotland.co.uk/) for our mentors free of charge. This can be very useful for you if you wish to work with children or vulnerable people in other contexts too. We periodically arrange sessions when there's enough interest, and we're keen to have Disclosure for as many of our mentors as possible. <!-- Check back here to find out when one is being scheduled. -->
+We work with the [STEM East Ambassador Programme](http://www.stemeast.org.uk) to organise [PVG Disclosure](/https://www.mygov.scot/pvg-scheme/) for our mentors free of charge. All  our mentors are obliged to obtain PVG Disclosure and we periodically arrange sessions with STEM East.  <!-- Check back here to find out when one is being scheduled. -->
 
 ### Certifications
 
@@ -44,15 +44,16 @@ Sometimes it can be hard to get stuck in, so we have developed [some guidelines 
 
 ## Ongoing participation
 
-You don't need to come every week, but it's helpful for the kids to have some consistency, so we'd love it if you could come as often as possible. If you do become a regular, please ask for an invite to the `#mentors` channel on the [Slack](https://slack.com) Prewired team &mdash; this is where we post  announcements, etc that might interest mentors and occasional reminders about sessions. You can also use this channel to chat to other mentors and ask questions.
+You don't need to come every week, but it's helpful for the kids to have some consistency, so we'd love it if you could come as often as possible. If you do become a regular, please ask for an invite to the `#mentors` channel on the [Slack](https://slack.com) Prewired team &mdash; this is where we post announcements, etc. that might interest mentors and occasional reminders about sessions. You can also use this channel to chat to other mentors and ask questions.
 
-Please also add your details to the [mentors' database](https://docs.google.com/forms/d/1NAZyNhLD-vFHEqpxOqYa0oaWjvDHe2Xuy4RI1uUqgGM/viewform).
+<!-- Please also add your details to the [mentors' database](https://docs.google.com/forms/d/1NAZyNhLD-vFHEqpxOqYa0oaWjvDHe2Xuy4RI1uUqgGM/viewform). 
 
 Mentors who have undergone Disclosure can take a turn at being the Duty Mentor, which is mostly just about being the first port of call for kids, parents and other mentors. You can see the [Duty Mentor guidelines and rota here]({{ base_path }}/duty-mentor/).
+-->
 
 ## Organising and outreach
 
-If you're interested in getting more involved in the organising side of things, let us know that too! If you have any specific qualifications, skills or experience (e.g., in education, child services, first-aid, accounting...) don't forget to mention that.
+If you're interested in getting more involved in the organising side of things, let us know that too! If you have any specific qualifications, skills or experience (e.g., in education, child services, first-aid, accounting, ...) don't forget to mention that.
 
 ## Mentor Guidelines
 
