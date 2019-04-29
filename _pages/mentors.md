@@ -28,7 +28,7 @@ From time to time we hold more structured workshops about a specific topic, and 
 
 ### Disclosure (aka CRB checking)
 
-We work with the [STEM East Ambassador Programme](http://www.stemeast.org.uk) to organise [PVG Disclosure](/https://www.mygov.scot/pvg-scheme/) for our mentors free of charge. All  our mentors are obliged to obtain PVG Disclosure and we periodically arrange sessions with STEM East.  <!-- Check back here to find out when one is being scheduled. -->
+We work with the [STEM East Ambassador Programme](http://www.stemeast.org.uk) to organise [PVG Disclosure](https://www.mygov.scot/pvg-scheme/) for our mentors free of charge. All  our mentors are obliged to obtain PVG Disclosure and we periodically arrange sessions with STEM East.  <!-- Check back here to find out when one is being scheduled. -->
 
 ### Certifications
 
