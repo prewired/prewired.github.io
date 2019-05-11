@@ -11,7 +11,7 @@ Sessions are held at [CodeBase](http://thisiscodebase.com), 38 Castle Terrace, E
 
 ## Get in Touch
 
-You can contact the organisers by emailing hello[AT]prewired.org.
+You can contact the organisers by emailing hello [AT] prewired.org.
 
 You can also send [@prewired](http://twitter.com/prewired) a message on Twitter; the Twitter account is run by volunteer participants.
 

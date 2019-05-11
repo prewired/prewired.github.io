@@ -1,75 +1,49 @@
 --- 
 layout: single
-title: "Summer Hack 2019 is Coming"
+title: "Summer Hack 2019"
 permalink: /summerhack2019/
 sidebar:
   nav: "sh-projects"
 header:
-  image: /assets/images/summerhack2019.jpg
-  #overlay_filter: 0.4
-  #overlay_image: /assets/images/summerhack2016.jpg
-  #overlay_filter: 0.4
-  #cta_label: "Save the date: 22nd&ndash;26th July 2018"
+  #image: /assets/images/summerhack2019.jpg
+  overlay_filter: 0.4
+  overlay_image: /assets/images/summerhack2016.jpg
+  overlay_filter: 0.4
+  cta_label: "Save the date: 22nd&ndash;26th July 2019"
   #cta_url: "https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform"
 --- 
 <!-- {% include toc %} -->
 {% include base_path %}
 
-We are now planning for Summer Hack 2019.
-
-So go ahead and put the date in your diary!
-
-<div class="notice--info">
-<h1 class="text-center">Summer Hack 2019<br/>is<br/>22nd&ndash;26th July 2019</h1>
-</div> 
-
-<hr/>
-
-You can also check out what happened in Summer Hack 2018:
-
-* [the Summer Hack 2018 team projects]({{ base_path }}//summerhack2018/projects/)
-* [the Summer Hack 2018 Flickr album](https://www.flickr.com/photos/prewired/sets/72157671837473418/with/43072882944/)
-
-
-<!-- ## Livestream
-
-<iframe
-    src="https://player.twitch.tv/?channel=prewired"
-    height="358"
-    width="636"
-    frameborder="0"
-    scrolling="no"
-    allowfullscreen="true">
-</iframe>
 
 ## Overview
 
 We are excited to announce that we are running **Summer Hack** again this year &mdash; a week-long team programming competition for young people of secondary school age (aged 12 and over).
 
 <!-- **Registration**: You can register by filling in the registration form, we will get in touch with more details nearer the time: <a href="https://goo.gl/forms/cwolczUwfViOJMOT2" target="_blank">Registration form</a> 
+-->
 
-The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 23rd&ndash;27th 2018 at [CodeBase Events Space](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh EH3 9SJ. Details of the schedule will be announced nearer the time. 
+The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 22nd&ndash;26th 2019 at [CodeBase Events Space](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh EH3 9SJ. 
+
+Details of the schedule and registration will be announced shortly. 
 
 * What is involved? You will be working in a small team, collaborating on a small project.
 * Will there be prizes? Yes. At the end of the week, each team will give a demo of their project, and prizes will be awarded in various categories.
 * Do you need to bring a laptop? Not necessarily &mdash; we can provide one.
 * What about food? We will provide snacks but you will need to bring your own lunch.
 
-**Important**: because you will be working as a member of a team, you must commit to attending every day during the Summer Hack.
 
 
-Details of the schedule are shown below. 
+<div class="notice--success">
+<h1>Because you will be working as a member of a team, you must commit to attending <i>every day</i> of the Summer Hack.</h1>
+</div>
+
+ 
 
 <!-- We still have a limited number of places, so if you want to be involved, sign up now! 
 
 [Register for Summer Hack](https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform){: .btn .btn--info .btn--x-large}{: .text-center} -->
 
-
-<!-- To get more of an idea of what will happen, check out this video of highlights from last year's Summer Hack, kindly produced for us by the awesome team at [Product Forge](https://productforge.io):
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/K9JfPVBy6jQ" frameborder="0" allowfullscreen></iframe>
-
-<hr/> -->
 
 <!--
 ## Schedule 
