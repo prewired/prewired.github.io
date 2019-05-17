@@ -52,7 +52,7 @@ See [About Us]({{ base_path }}/about#why-do-we-do-this/).
 
 ## How do we deal with child protection?
 
-A majority of our mentors have completed [STEM Ambassador](http://www.stemnet.org.uk/ambassadors/) training and hold [Disclosure](http://www.disclosurescotland.co.uk/). We also have adopted a [child protection policy]({{ base_path }}/policy/).
+A majority of our mentors have completed [STEM Ambassador](http://www.stemnet.org.uk/ambassadors/) training and hold [Disclosure](http://www.disclosurescotland.co.uk/). We also have adopted a [child protection policy]({{ base_path }}/child-protection-policy/).
 
 ## Any other questions?
 

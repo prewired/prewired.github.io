@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Prewired Child Protection Policy"
-permalink: /policy/
+permalink: /child-protection-policy/
 ---
 {% include toc %}
 {% include base_path %}
@@ -21,7 +21,7 @@ The purpose of this policy statement is:
 This policy statement applies to anyone working on behalf of Prewired, including the Board of Trustees, volunteers, external contractors and paid staff. 
 
 ## Legal framework 
-This policy has been drawn up on the basis of legislation, policy and guidance that seeks to protect children in Scotland. A summary of the key legislation and guidance is available from https://www.gov.scot/policies/child-protection/. 
+This policy has been drawn up on the basis of legislation, policy and guidance that seeks to protect children in Scotland. A summary of the key legislation and guidance is available from <https://www.gov.scot/policies/child-protection/>. 
 
 ## We believe that: 
 * children and young people should never experience abuse of any kind 
@@ -52,7 +52,7 @@ This policy has been drawn up on the basis of legislation, policy and guidance t
 
 ## Supervision
 * A Duty Mentor is designated for each weekly session. The Duty Mentor is responsible for the safe running of the session and must hold Disclosure Scotland.
-*Prewired is attended by mentors from local universities, companies and community groups. All mentors hold PVG Disclosure Scotland.
+* Prewired is attended by mentors from local universities, companies and community groups. All mentors are required to hold PVG Disclosure Scotland.
 * Prewired session activities are normally confined to a single open space and no child will be unsupervised at any time. In instances where more than one space is used, at least two Disclosed mentors will be present in each space at all times.
 * Parents must accompany children under 11 years old.
 * New attendees are met and welcomed by a mentor who will help them to get started on a project that interests them.
@@ -82,6 +82,8 @@ Freda O’Byrne:  cpo [AT] prewired.org
 
 
 ---
+*We are indebted to the [NSPCC](https://www.nspcc.org.uk) for their [example safeguarding policy](https://learning.nspcc.org.uk/media/1601/safeguarding-policy-statement-example.pdf), which we have used as a basis for this policy statement.*
+
 *We are committed to reviewing our policy and good practice annually.*   
 
 *Version 2.2*  

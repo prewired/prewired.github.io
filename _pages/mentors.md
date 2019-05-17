@@ -26,9 +26,9 @@ From time to time we hold more structured workshops about a specific topic, and 
 
 ## Certifications and qualifications
 
-### Disclosure (aka CRB checking)
+### Disclosure
 
-We work with the [STEM East Ambassador Programme](http://www.stemeast.org.uk) to organise [PVG Disclosure](https://www.mygov.scot/pvg-scheme/) for our mentors free of charge. All  our mentors are obliged to obtain PVG Disclosure and we periodically arrange sessions with STEM East.  <!-- Check back here to find out when one is being scheduled. -->
+We work with the [STEM East Ambassador Programme](http://www.stemeast.org.uk) to organise [PVG Disclosure](https://www.mygov.scot/pvg-scheme/) for our mentors free of charge. All our mentors are obliged to obtain PVG Disclosure and we periodically arrange sessions with STEM East.  <!-- Check back here to find out when one is being scheduled. -->
 
 ### Certifications
 
@@ -59,10 +59,10 @@ If you're interested in getting more involved in the organising side of things, 
 
 ### Mentors must
 
-* Comply with our [child protection policy]({{ base_path }}/policy/).
-* Be identifiable as a mentor (e.g., by wearing a lanyard or T-shirt).
+* Comply with our [child protection policy]({{ base_path }}/child-protection-policy/).
+* Be identifiable as a mentor (e.g., by wearing a lanyard).
 * Provide us with up-to-date contact details if they wish to come regularly.
-* Return borrowed mentor lanyards or T-shirts at the end of a session.
+* Return borrowed mentor lanyards at the end of a session.
 
 ### Mentors should
 
