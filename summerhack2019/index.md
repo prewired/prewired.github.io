@@ -45,7 +45,7 @@ Details of the schedule and registration will be announced shortly.
 [Register for Summer Hack](https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform){: .btn .btn--info .btn--x-large}{: .text-center} -->
 
 
-<!--
+
 ## Schedule 
 
 ### Monday
@@ -430,6 +430,8 @@ Details of the schedule and registration will be announced shortly.
 <hr/>
 
 <br/>
+
+<!--
 
 ## Challenges
 
