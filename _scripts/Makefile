@@ -1,3 +1,7 @@
+%.pdf: %.md
+	pandoc -N --template=sig.tex $< --pdf-engine=xelatex -o $@    
 
-pdf:
-    pandoc -N --template=sig.tex child-protection-policy.md --pdf-engine=xelatex -o child-protection-policy.pdf
+all: child-protection-policy.pdf
+
+clean:
+	rm -f child-protection-policy.pdf
