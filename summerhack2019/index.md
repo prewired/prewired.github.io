@@ -9,8 +9,8 @@ header:
   overlay_filter: 0.4
   overlay_image: /assets/images/summerhack2016.jpg
   overlay_filter: 0.4
-  cta_label: "Save the date: 22nd&ndash;26th July 2019"
-  #cta_url: "https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform"
+ # cta_label: "Register for Summer Hack 2019"
+ # cta_url: "https://forms.gle/U42MZZs22h3Yx47Q6"
 --- 
 <!-- {% include toc %} -->
 {% include base_path %}
@@ -20,12 +20,11 @@ header:
 
 We are excited to announce that we are running **Summer Hack** again this year &mdash; a week-long team programming competition for young people of secondary school age (aged 12 and over).
 
-<!-- **Registration**: You can register by filling in the registration form, we will get in touch with more details nearer the time: <a href="https://goo.gl/forms/cwolczUwfViOJMOT2" target="_blank">Registration form</a> 
--->
+<!-- **Register now**: Please complete this <a href="https://forms.gle/U42MZZs22h3Yx47Q6" target="_blank">registration form</a>  and we will get in touch with more details nearer the time. -->
+
 
 The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 22nd&ndash;26th 2019 at [CodeBase Events Space](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh EH3 9SJ. 
 
-Details of the schedule and registration will be announced shortly. 
 
 * What is involved? You will be working in a small team, collaborating on a small project.
 * Will there be prizes? Yes. At the end of the week, each team will give a demo of their project, and prizes will be awarded in various categories.
@@ -46,7 +45,7 @@ Details of the schedule and registration will be announced shortly.
 
 
 
-## Schedule 
+## Outline Schedule 
 
 ### Monday
 
@@ -62,29 +61,16 @@ Details of the schedule and registration will be announced shortly.
             <tr>
                 <td>10:00</td>
                 <td>
-                    Welcome               
-                    <ul>
-                        <li>Aims of the week</li>
-                        <li>Expectations / rules for the week</li>
-                        <li>How to win prizes</li>
-                    </ul>
+                    Welcome and introduction to Summer Hack 2019
                 </td>
             </tr>
             <tr>
                 <td>10:15</td>
-                <td>Team Formation</td>
+                <td>Team Formation (including snack break</td>
             </tr>
             <tr>
-                <td>11:15</td>
-                <td>Snack</td>
-            </tr>
-            <tr>
-                <td>11:30</td>
-                <td>Who knows what?</td>
-            </tr>
-            <tr>
-            <td>12:30</td>
-            <td>Lunch (bring your own)</td>
+                <td>12:30</td>
+                <td>Lunch (bring your own)</td>
             </tr>
             <tr>
                 <td>13:00</td>
@@ -92,17 +78,16 @@ Details of the schedule and registration will be announced shortly.
             </tr>
             <tr>
                 <td>14:00</td>
-                <td>Teams start planning their projects (incorporating snack break)
+                <td>Project planning (including snack break)
                 </td>
             </tr>
             <tr>
                 <td>15:30</td>
-                <td>Review and Wrap-up</td>
+                <td>Review the day</td>
             </tr>
             <tr>
                <td>16:00</td>
-                <td>End of the day
-                </td>
+                <td>End of the day</td>
             </tr> 
         </tbody>
     </table>
@@ -122,34 +107,19 @@ Details of the schedule and registration will be announced shortly.
         <tbody>
             <tr>
                 <td>10:00</td>
-                <td>
-                    Prompt Start!
-                </td>
+                <td>Prompt Start!</td>
             </tr>
             <tr>
                 <td>10:15</td>
                 <td>
                     Daily update
-                    <br/>
-                    <ul>
-                        <li>Aims of the day</li>
-                        <li>Finalise project plans</li>
-                    </ul>
                 </td>
             </tr>
             <tr>
                 <td>10:45</td>
                 <td>
-                    Hacking
+                    Hacking (including snack break)
                 </td>
-            </tr>
-            <tr>
-                <td>11:15</td>
-                <td>Snack</td>
-            </tr>
-            <tr>
-                <td>12:00</td>
-                <td>Hacking</td>
             </tr>
             <tr>
                 <td>12:30</td>
@@ -161,32 +131,16 @@ Details of the schedule and registration will be announced shortly.
             </tr>
             <tr>
                 <td>13:30</td>
-                <td>Hacking
+                <td>Hacking (including snack break)
                 </td>
             </tr>
-            <tr>
-                <td>14:30</td>
-                <td>Afternoon snack
-                </td>
-            </tr>
-            <tr>
-               <td>14:45</td>
-                <td>Hacking
-                </td>
-            </tr> 
             <tr>
                 <td>15:30</td>
-                <td>Last word for the day
-                    <ul>
-                        <li>Tomorrow is your best opportunity to code your solution</li>
-                        <li>Come prepared to focus</li>
-                    </ul>
-                </td>
+                <td>Review the day</td>
             </tr>
             <tr>
-               <td>16:00</td>
-                <td>End of the day
-                </td>
+            <td>16:00</td>
+            <td>End of the day</td>
             </tr> 
         </tbody>
     </table>
@@ -206,34 +160,19 @@ Details of the schedule and registration will be announced shortly.
         <tbody>
             <tr>
                 <td>10:00</td>
-                <td>
-                    Prompt Start!
-                </td>
+                <td>Prompt Start!</td>
             </tr>
             <tr>
                 <td>10:15</td>
                 <td>
                     Daily update
-                    <br/>
-                    <ul>
-                        <li>Put aside all thoughts of changing what you want to do and focus on coding!</li>
-                        <li>Work well with each other</li>
-                    </ul>
                 </td>
             </tr>
             <tr>
                 <td>10:45</td>
                 <td>
-                    Hacking
+                    Hacking (including snack break)
                 </td>
-            </tr>
-            <tr>
-                <td>11:15</td>
-                <td>Snack</td>
-            </tr>
-            <tr>
-                <td>12:00</td>
-                <td>Hacking</td>
             </tr>
             <tr>
                 <td>12:30</td>
@@ -245,32 +184,17 @@ Details of the schedule and registration will be announced shortly.
             </tr>
             <tr>
                 <td>13:30</td>
-                <td>Hacking
-                </td>
-            </tr>
-            <tr>
-                <td>14:30</td>
-                <td>Afternoon snack
-                </td>
-            </tr>
-            <tr>
-                <td>14:45</td>
-                <td>Hacking
+                <td>Hacking (including snack break)
                 </td>
             </tr>
             <tr>
                 <td>15:30</td>
-                <td>Last word for the day
-                    <ul>
-                        <li>Tonight is a good time to start to think about your presentations</li>
-                    </ul>
-                </td>
+                <td>Review the day</td>
             </tr>
             <tr>
-                <td>16:00</td>
-                <td>End of the day
-                </td>
-            </tr>
+            <td>16:00</td>
+            <td>End of the day</td>
+            </tr> 
         </tbody>
     </table>
 </div>
@@ -289,33 +213,19 @@ Details of the schedule and registration will be announced shortly.
         <tbody>
             <tr>
                 <td>10:00</td>
-                <td>
-                    Prompt Start!
-                </td>
+                <td>Prompt Start!</td>
             </tr>
             <tr>
                 <td>10:15</td>
                 <td>
                     Daily update
-                    <br/>
-                    <ul>
-                        <li>Keep coding whilst preparing for a presentation</li>
-                    </ul>
                 </td>
             </tr>
             <tr>
                 <td>10:45</td>
                 <td>
-                    Hacking
+                    Hacking (including snack break)
                 </td>
-            </tr>
-            <tr>
-                <td>11:15</td>
-                <td>Snack</td>
-            </tr>
-            <tr>
-                <td>12:00</td>
-                <td>Hacking</td>
             </tr>
             <tr>
                 <td>12:30</td>
@@ -327,32 +237,32 @@ Details of the schedule and registration will be announced shortly.
             </tr>
             <tr>
                 <td>13:30</td>
-                <td>Slots for each team to individually rehearse their presentation in the Boardroom with mentor feedback and guidance
+                <td>Team presentation rehearsals
                 </td>
             </tr>
             <tr>
                 <td>14:30</td>
-                <td>Afternoon snack
+                <td>Snack
                 </td>
             </tr>
             <tr>
                 <td>14:45</td>
-                <td>Hacking
+                <td>
+                    Hacking
                 </td>
             </tr>
             <tr>
                 <td>15:30</td>
-                <td>Last word for the day
-                </td>
+                <td>Review the day</td>
             </tr>
             <tr>
-                <td>16:00</td>
-                <td>End of the day
-                </td>
-            </tr>
+            <td>16:00</td>
+            <td>End of the day</td>
+            </tr> 
         </tbody>
     </table>
 </div>
+
 
 ### Friday
 
@@ -367,62 +277,41 @@ Details of the schedule and registration will be announced shortly.
         <tbody>
             <tr>
                 <td>10:00</td>
-                <td>
-                    Prompt Start!
-                </td>
+                <td>Prompt Start!</td>
             </tr>
             <tr>
                 <td>10:15</td>
                 <td>
                     Daily update
-                    <br/>
-                    <ul>
-                        <li>Tie up loose ends and prepare for final presentations after lunch</li>
-                    </ul>
                 </td>
             </tr>
             <tr>
                 <td>10:45</td>
                 <td>
-                    Hacking
+                    Hacking (including snack break)
                 </td>
             </tr>
             <tr>
-                <td>11:15</td>
-                <td>Snack</td>
-            </tr>
-            <tr>
                 <td>12:00</td>
-                <td>Hacking</td>
-            </tr>
-            <tr>
-                <td>12:30</td>
                 <td>Lunch (bring your own)</td>
             </tr>
             <tr>
                 <td>13:00</td>
-                <td>Presentations
-                <br/>
-                    <ul>
-                        <li>Each team presents the work they have done during the week</li>
-                    </ul>
-                </td>
+                <td>Presentations</td>
             </tr>
             <tr>
                 <td>14:00</td>
-                <td>Judging / extended snack period
+                <td>Judging
                 </td>
             </tr>
             <tr>
                 <td>15:00</td>
-                <td>Awards
-                </td>
+                <td>Awards</td>
             </tr>
             <tr>
-                <td>15:45&ndash;16:00</td>
-                <td>Thanks and tidy-up
-                </td>
-            </tr>
+            <td>16:00</td>
+            <td>End of the day</td>
+            </tr> 
         </tbody>
     </table>
 </div>
