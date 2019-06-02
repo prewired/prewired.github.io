@@ -4,20 +4,27 @@ MD := $(PAGESDIR)/$(SRC)
 
 installdir := ../_build
 
-OPTIONS := -N --pdf-engine=xelatex --template=sig.tex --number-sections
+#OPTIONS := -N --pdf-engine=xelatex --template=sig.tex --number-sections
+OPTIONS := --pdf-engine=xelatex --number-sections --template=sig.tex 
 
 
 PDF := $(SRC:md=pdf)
 #PDF := $(patsubst %.md, %.pdf, $(HANDBOOK))
 
-PANDOC := /usr/local/bin/pandoc
 
 
-all: $(PDF)
+all: clean $(PDF) 
 
 
 $(PDF): $(MD)
-	$(PANDOC) $(OPTIONS) $^ -o $(PDF)
+	./filter_md.py $^ | pandoc $(OPTIONS) -o $(PDF)
+
+
+filter: $(MD)
+	./filter_md.py $^ > temp.md
+
+clean:
+	-rm *pdf
 
 
 
