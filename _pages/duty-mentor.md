@@ -14,7 +14,7 @@ We hope that everyone who has undergone Disclosure is happy to be on the rota fo
 It's really no big deal, and it's a huge help to us if you take a turn. Here's what you need to do:
 
 1. Arrive at the venue at least 10 minutes in advance.
-2. Don the 'Duty Mentor' lanyard or funny hat and make yourself obvious.
+2. Don the 'Duty Mentor' lanyard and make yourself obvious.
 3. Make sure you have the attendees list, which consists of Eventbrite signups and long-term members. Read the details to make yourself aware of any serious allergies or medical conditions amongst kids present that evening. Put the list somewhere you can remember for the duration of the evening.
 4. Greet kids and parents as they arrive, focusing on ones who look new (or ask if they've been before); invite them to choose somewhere to sit and make themselves at home. Make sure they have their own laptop or know where to find the Prewired ones if not.
 5. For new attendees or those looking a bit lost, ask what they're working on. Make suggestions or refer them to another mentor if you're busy.

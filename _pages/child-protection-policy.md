@@ -1,6 +1,7 @@
 ---
 layout: single
-title: "Prewired Child Protection Policy"
+title: 'Prewired Child Protection Policy'
+date: '24 April 2019'
 permalink: /child-protection-policy/
 ---
 {% include toc %}
@@ -9,6 +10,7 @@ permalink: /child-protection-policy/
 ## The purpose and scope of this policy statement 
 
 The goals of Prewired SCIO are:
+
 * to encourage young people to become active participants in creatively using and building digital technologies;
 * to provide a supportive environment in which young people can work collaboratively with their peers and with more experienced mentors to develop their digital skills and undertake individual and team projects; and
 * to support mentors in building on their existing strengths and in acquiring new skills by working with young people, and to support them in demonstrating how they have developed personally and how they have made a positive impact.
@@ -81,7 +83,7 @@ Freda O’Byrne:  cpo [AT] prewired.org
 
 
 
----
+<hr/>
 *We are indebted to the [NSPCC](https://www.nspcc.org.uk) for their [example safeguarding policy](https://learning.nspcc.org.uk/media/1601/safeguarding-policy-statement-example.pdf), which we have used as a basis for this policy statement.*
 
 *We are committed to reviewing our policy and good practice annually.*   

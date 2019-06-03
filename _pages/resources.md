@@ -10,6 +10,8 @@ permalink: /resources/
 
 This page contains a bunch of links to useful learning resources. Many of the pages we link to are themselves links to many other sites and tools. We will expand this list and try to make it more useful as we go along. Let us know which bits you find useful (or not), and make suggestions for new things that should be added. 
 
+We have also produced a [Programming and Computing FAQ]({{ base_path }}/computingfaq) to give you a quick overview.
+
 ## Starting with Scratch
 
 Scratch is great way to begin learning to code.  It allows you to make cool programs using a drag-and-drop approach and is designed to be fun!

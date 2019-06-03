@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: Privacy Policy
+title: Prewired Privacy Policy
 subtitle: 
 permalink: "/privacy/"
 header:
