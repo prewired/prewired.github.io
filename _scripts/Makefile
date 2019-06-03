@@ -1,10 +1,8 @@
 PAGESDIR := ../_pages
 SRC := child-protection-policy.md 
 MD := $(PAGESDIR)/$(SRC)
+BUILDDIR := ../_build
 
-installdir := ../_build
-
-#OPTIONS := -N --pdf-engine=xelatex --template=sig.tex --number-sections
 OPTIONS := --pdf-engine=xelatex --number-sections --template=sig.tex 
 
 
@@ -12,21 +10,17 @@ PDF := $(SRC:md=pdf)
 #PDF := $(patsubst %.md, %.pdf, $(HANDBOOK))
 
 
-
-all: clean $(PDF) 
+all: $(PDF) 
 
 
 $(PDF): $(MD)
 	./filter_md.py $^ | pandoc $(OPTIONS) -o $(PDF)
+	mv $(PDF) $(BUILDDIR)
 
 
 filter: $(MD)
 	./filter_md.py $^ > temp.md
 
 clean:
-	-rm *pdf
+	-rm $(PDF) 
 
-
-
-# pdf:
-#     pandoc -N --template=sig.tex child-protection-policy.md --pdf-engine=xelatex -o child-protection-policy.pdf
