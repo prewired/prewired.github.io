@@ -69,7 +69,7 @@ The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 22nd&n
                 <td>Team Formation (including snack break</td>
             </tr>
             <tr>
-                <td>12:30</td>
+                <td>12:00</td>
                 <td>Lunch (bring your own)</td>
             </tr>
             <tr>
@@ -122,7 +122,7 @@ The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 22nd&n
                 </td>
             </tr>
             <tr>
-                <td>12:30</td>
+                <td>12:00</td>
                 <td>Lunch (bring your own)</td>
             </tr>
             <tr>
@@ -175,7 +175,7 @@ The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 22nd&n
                 </td>
             </tr>
             <tr>
-                <td>12:30</td>
+                <td>12:00</td>
                 <td>Lunch (bring your own)</td>
             </tr>
             <tr>
@@ -228,7 +228,7 @@ The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 22nd&n
                 </td>
             </tr>
             <tr>
-                <td>12:30</td>
+                <td>12:00</td>
                 <td>Lunch (bring your own)</td>
             </tr>
             <tr>
