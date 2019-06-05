@@ -11,9 +11,14 @@ Sessions are held at [CodeBase](http://thisiscodebase.com), 38 Castle Terrace, E
 
 ## Get in Touch
 
-You can contact the organisers by emailing hello[AT]prewired.org.
+You can contact the organisers by emailing hello [AT] prewired.org.
 
 You can also send [@prewired](http://twitter.com/prewired) a message on Twitter; the Twitter account is run by volunteer participants.
+
+
+## Mailing List
+
+You can subscribe to our mailing list to receive emails about our current and new events. Subscribe here: [http://eepurl.com/dv2dPb](http://eepurl.com/dv2dPb)
 
 ## Community
 
@@ -21,6 +26,13 @@ Participants and mentors can request to join the [Prewired Facebook group](https
 
 <!-- We also have an IRC channel (server: irc.imaginarynet.uk, channel: #prewired); you'll need to ask a mentor for the password. -->
 
-## Mentors
+<!-- ## Mentors
 
-Memtors can ask for an invite to the `#mentors` channel on the [Slack](https://slack.com) Prewired team &mdash; this is where we post announcements, etc that might interest mentors and occasional reminders about sessions. Mentors also use this channel to chat to other mentors and ask questions.
+Mentors can ask for an invite to the `#mentors` channel on the [Slack](https://slack.com) Prewired team &mdash; this is where we post announcements, etc that might interest mentors and occasional reminders about sessions. Mentors also use this channel to chat to other mentors and ask questions. -->
+
+## Complaints and Concerns
+
+If you are unhappy about any issue to do with Prewired and wish to discuss this in confidence, you can send email to either of the following people:
+
+* Ewan Klein: ewan [AT] prewired.org
+* Helen Williams: helen [AT] prewired.org

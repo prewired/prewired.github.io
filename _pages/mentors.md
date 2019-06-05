@@ -26,9 +26,9 @@ From time to time we hold more structured workshops about a specific topic, and 
 
 ## Certifications and qualifications
 
-### Disclosure (aka CRB checking)
+### Disclosure
 
-We work with the [STEM Ambassador Programme](http://www.stemnet.org.uk/ambassadors/) to organise [Disclosure](http://www.disclosurescotland.co.uk/) for our mentors free of charge. This can be very useful for you if you wish to work with children or vulnerable people in other contexts too. We periodically arrange sessions when there's enough interest, and we're keen to have Disclosure for as many of our mentors as possible. <!-- Check back here to find out when one is being scheduled. -->
+We work with the [STEM East Ambassador Programme](http://www.stemeast.org.uk) to organise [PVG Disclosure](https://www.mygov.scot/pvg-scheme/) for our mentors free of charge. All our mentors are required to obtain PVG Disclosure and we periodically arrange sessions with STEM East.  <!-- Check back here to find out when one is being scheduled. -->
 
 ### Certifications
 
@@ -38,30 +38,27 @@ Currently volunteering at Prewired doesn't qualify you for any specific awards (
 
 The first time you come to a session, please introduce yourself to the Duty Mentor and remind them who you are and what topics you're able to help with. 
 
-You'll be asked to read our [child protection policy]({{ base_path }}/policy/) and sign your acknowledgment that you have done so. You'll also be asked to fill out your details for the [mentors database](https://docs.google.com/forms/d/1NAZyNhLD-vFHEqpxOqYa0oaWjvDHe2Xuy4RI1uUqgGM/viewform) so we can keep in touch with you and keep track of the skills we have around the room (you can ask us to remove you from this at any time, if you decide to stop coming).
+You'll be asked to read our [child protection policy]({{ base_path }}/child-protection-policy/) and sign your acknowledgment that you have done so. You'll also be asked to fill out your details for the [mentors database](https://docs.google.com/forms/d/1NAZyNhLD-vFHEqpxOqYa0oaWjvDHe2Xuy4RI1uUqgGM/viewform) so we can keep in touch with you and keep track of the skills we have around the room (you can ask us to remove you from this at any time, if you decide to stop coming).
 
-Sometimes it can be hard to get stuck in, so we have developed [some guidelines for mentoring](#mentors-guidelines).
+Sometimes it can be hard to get stuck in, but we have some suggestions below in **Mentor Guidelines**.
 
 ## Ongoing participation
 
-You don't need to come every week, but it's helpful for the kids to have some consistency, so we'd love it if you could come as often as possible. If you do become a regular, please ask for an invite to the `#mentors` channel on the [Slack](https://slack.com) Prewired team &mdash; this is where we post  announcements, etc that might interest mentors and occasional reminders about sessions. You can also use this channel to chat to other mentors and ask questions.
+You don't need to come every week, but it's helpful for the kids to have some consistency, so we'd love it if you could come as often as possible. If you do become a regular, please ask for an invite to the `#mentors` channel on the [Slack](https://slack.com) Prewired team &mdash; this is where we post announcements, etc. that might interest mentors and occasional reminders about sessions. You can also use this channel to chat to other mentors and ask questions.
 
-Please also add your details to the [mentors' database](https://docs.google.com/forms/d/1NAZyNhLD-vFHEqpxOqYa0oaWjvDHe2Xuy4RI1uUqgGM/viewform).
-
-Mentors who have undergone Disclosure can take a turn at being the Duty Mentor, which is mostly just about being the first port of call for kids, parents and other mentors. You can see the [Duty Mentor guidelines and rota here]({{ base_path }}/duty-mentor/).
 
 ## Organising and outreach
 
-If you're interested in getting more involved in the organising side of things, let us know that too! If you have any specific qualifications, skills or experience (e.g., in education, child services, first-aid, accounting...) don't forget to mention that.
+If you're interested in getting more involved in the organising side of things, let us know that too! If you have any specific qualifications, skills or experience (e.g., in education, child services, first-aid, accounting, ...), don't forget to mention that.
 
 ## Mentor Guidelines
 
 ### Mentors must
 
-* Comply with our [child protection policy]({{ base_path }}/policy/).
-* Be identifiable as a mentor (e.g., by wearing a lanyard or T-shirt).
+* Comply with our [child protection policy]({{ base_path }}/child-protection-policy/).
+* Be identifiable as a mentor (e.g., by wearing a lanyard).
 * Provide us with up-to-date contact details if they wish to come regularly.
-* Return borrowed mentor lanyards or T-shirts at the end of a session.
+* Return borrowed mentor lanyards at the end of a session.
 
 ### Mentors should
 
@@ -71,8 +68,7 @@ If you're interested in getting more involved in the organising side of things, 
 * Find another mentor who knows about the specific topic if you can't help with something. Just ask around, but don't leave a child with a question hanging.
 * Help kids search the web for answers. Being able to look up information and understand how StackOverflow works is a valuable skill you can teach to someone!
 * Answer parents' questions to the best of your ability, but  defer to one of the organisers if need be.
-* Undergo training for the [STEM Ambassador Programme](http://www.stemnet.org.uk/ambassadors/), which includes Disclosure. You're not obliged to do this, but the more Disclosed mentors we have the better. We periodically arrange sessions.
-<!-- * Take a turn at being the [Duty Mentor](#duty-mentor-guidelines-and-rota), but you can opt out if you'd rather not. -->
+* Undergo training for the [STEM Ambassador Programme](http://www.stemnet.org.uk/ambassadors/), which includes PVG Disclosure. You are required to do this within three months of participating in Prewired as a regular volunteer.
 * Do as the Duty Mentor says.
 
 ### Mentors must not
