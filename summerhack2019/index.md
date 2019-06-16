@@ -9,8 +9,8 @@ header:
   overlay_filter: 0.4
   overlay_image: /assets/images/summerhack2016.jpg
   overlay_filter: 0.4
- # cta_label: "Register for Summer Hack 2019"
- # cta_url: "https://forms.gle/U42MZZs22h3Yx47Q6"
+  cta_label: "Register for Summer Hack 2019"
+  cta_url: "https://forms.gle/U42MZZs22h3Yx47Q6"
 --- 
 <!-- {% include toc %} -->
 {% include base_path %}
@@ -20,7 +20,7 @@ header:
 
 We are excited to announce that we are running **Summer Hack** again this year &mdash; a week-long team programming competition for young people of secondary school age (aged 12 and over).
 
-<!-- **Register now**: Please complete this <a href="https://forms.gle/U42MZZs22h3Yx47Q6" target="_blank">registration form</a>  and we will get in touch with more details nearer the time. -->
+**Register now**: Please complete this <a href="https://forms.gle/U42MZZs22h3Yx47Q6" target="_blank">registration form</a>  and we will get back to you soon.
 
 
 The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 22nd&ndash;26th 2019 at [CodeBase Events Space](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh EH3 9SJ. 
