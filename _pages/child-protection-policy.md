@@ -56,20 +56,20 @@ This policy has been drawn up on the basis of legislation, policy and guidance t
 * recording and storing information professionally and securely. 
 
 ## Supervision
-* A Duty Mentor is designated for each weekly session. The Duty Mentor is responsible for the safe running of the session and must hold Disclosure Scotland.
-* Prewired is attended by mentors from local universities, companies and community groups. All mentors are required to hold PVG Disclosure Scotland.
-* Prewired session activities are normally confined to a single open space and no child will be unsupervised at any time. In instances where more than one space is used, at least two Disclosed mentors will be present in each space at all times.
+* A Duty Mentor is designated for each weekly session. The Duty Mentor is responsible for the safe running of the session.
+* Prewired is attended by mentors from local universities, companies and community groups. All mentors are required to obtain PVG Disclosure Scotland.
+* Prewired session activities are normally confined to a single open space and no child will be unsupervised at any time. In instances where more than one space is used, at least two full mentors will be present in each space at all times.
 * Parents must accompany children under 11 years old.
 * New attendees are met and welcomed by a mentor who will help them to get started on a project that interests them.
 * All attendees are made aware of how mentors may be identified and who is the Duty Mentor.
 * Where children are not accompanied by a parent, any problems not involving coding (e.g., being unwell or upset) are dealt with by the Duty Mentor.
 * Mentors, participants or parents noticing anything wrong or with any concerns should report them to the Duty Mentor who will take appropriate action.
 * Mentors will, as far as possible, monitor the activities of children working independently to ensure they are not accessing inappropriate online content.
-* At least two mentors will remain at the venue until all children have been collected by guardians or left to go home at the end of the session.
+* At least two full mentors will remain at the venue until all children have been collected by guardians or left to go home at the end of the session.
 
 ## Mentors
 * Interested volunteers must contact Prewired organisers before attending their first session and introduce themselves to the Duty Mentor on arrival.
-* Interested volunteers must be registered in our database and must undergo PVG Disclosure to take on the role of Prewired mentor.
+* Interested volunteers must be registered in our database and must obtain PVG Disclosure to take on the role of full mentor.
 * Mentors must be identifiable to parents and children by wearing a mentor lanyard.
 
 ## Online Safety Policy
