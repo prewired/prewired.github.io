@@ -12,7 +12,7 @@ header:
   cta_label: "Register for Summer Hack 2019"
   cta_url: "https://forms.gle/U42MZZs22h3Yx47Q6"
 --- 
-<!-- {% include toc %} -->
+{% include toc %}
 {% include base_path %}
 
 
