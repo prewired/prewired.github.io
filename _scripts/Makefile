@@ -1,5 +1,5 @@
 PAGESDIR := ../_pages
-SRC := child-protection-policy.md 
+SRC := child-protection-policy.md
 MD := $(PAGESDIR)/$(SRC)
 BUILDDIR := ../_build
 
