@@ -1,10 +1,12 @@
 ---
 layout: single
-title: "Summer Hack 2019: Edinburgh Pollinator Pledge Challenge"
-permalink: "/summerhack2019/pollinator.html"
+title: "Summer Hack 2019 Challenges"
+permalink: "/summerhack2019/challenges.html"
 ---
 {% include base_path %}
 
+
+## Edinburgh Pollinator Pledge Challenge
 
 The aim of the Edinburgh Pollinator Pledge is to create a network of people and habitats that are supporting pollinators across the city.  What would be the most fun, provocative or interesting way to do either of the following?
 
