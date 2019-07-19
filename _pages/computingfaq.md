@@ -9,7 +9,6 @@ permalink: /computingfaq/
 
 ## Which programming language should I learn?
 
-
 Like horses for courses there's no "best" language; it depends on why
 you are learning to code in the first place. What reasons are there for
 learning and how might you benefit?
@@ -26,21 +25,21 @@ learning and how might you benefit?
 Even more so than in other disciplines, you need  the attitude "if at
 first I don't succeed ...", and coding is the perfect playground for experimentation and trial.
 
-The current demand for coding languages may not be the same in 10 years' time,
-but the associated skills will be the same. We therefore suggest emphasising fun and skills. Learning one language makes it easier to learn a second, but see note at the end.
+The current demand for programming languages may not be the same in 10 years' time,
+but the associated skills will be the same. We therefore suggest emphasising fun and skills. Learning one language makes it easier to learn a second, but see note at the end. That said, two of the languages used most oftern by Prewired participants are **Python** and **Scratch**.
 
 The [Python](https://docs.python.org/3/tutorial/) programming language is relatively easy to learn and versatile. It's being used to
 teach introductory computer science in many universities. However, like most language, there's spelling, punctuation and grammar to get right.
 
-By contrast, [Scratch](https://scratch.mit.edu) is a visual programming langauge that makes it much easier to write code without bothering about syntax. 
+By contrast, [Scratch](https://scratch.mit.edu) is a visual programming language that encourages children to design and create their own games. It has a drag-and-drop interface that makes it much easier to write code without bothering about syntax.  Primary schools in Scotland offer Scratch as an introduction to computing, so if you already know how to use Scratch, it is a good starting point before graduating to a lnaguage like Python.
 
-[Blockly](https://developers.google.com/blockly/) is similar in approach to Scratch, and it what the BBC micro:bit uses. It is fine to start
-with but you will soon hit up against its limitations.
+[Blockly](https://developers.google.com/blockly/) is similar in approach to Scratch, and is what the BBC micro:bit uses. It is fine to start
+with but you will soon hit up against limitations in the kind of programs you can create.
 
 <!-- Scratch Jr. is simplified Scratch without word recognition but only runs
 on tablets.
 
-Snap is an attempt to include any concepts omitted in Scratch. -->
+Snap is an attempt to include many concepts omitted in Scratch. -->
 
 Here is a list of some popular and widely-used programmig languages:
 
@@ -49,7 +48,7 @@ Here is a list of some popular and widely-used programmig languages:
 | Language | Description |
 | -------- | ----------- |
 | Python | a general-purpose and versatile language that was originally designed for teaching but is increasingly used for data science.
-| HTML | the language that defines how a web page is diplayed in a browser. Strictly speaking, it is a markup language rather than a programming language.| 
+| HTML | the language that defines how a web page is diplayed in a browser. Strictly speaking, HTML is not a programming language. Rather, it is a markup language that adds structure to the text that is 'understood' by web browsers.| 
 | JavaScript | a language that was designed to allow web pages to be interactive and is becoming widely adopted for data visualisation.| 
 | Java | designed to run equally well on a wide variety of computing platforms. Now often used for large team-built enterprise systems.| 
 | PHP | used on servers to process incoming web pages. Old but still widely used.| 
