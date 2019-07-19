@@ -2,8 +2,10 @@
 layout: single
 title: "Resources"
 permalink: /resources/
+toc: true
+toc_label: "On This Page"
+toc_icon: "cog"
 ---
-{% include toc %}
 {% include base_path %}
 
 ## Introduction
@@ -40,7 +42,6 @@ If you've been doing Scratch for a while at home, school or Prewired and want to
 ## Beginning Python
 
 In addition to the general coding links above, the following page gives an excellent overview of learning resources for newcomers to Python: <https://docs.python-guide.org/intro/learning/>
-
 
 
 ## Collaboration Tools

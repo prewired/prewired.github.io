@@ -36,7 +36,7 @@ teach introductory computer science in many universities. However, like most lan
 
 By contrast, [Scratch](https://scratch.mit.edu) is a visual programming language that encourages children to design and create their own games. It has a drag-and-drop interface that makes it much easier to write code without bothering about syntax.  Primary schools in Scotland offer Scratch as an introduction to computing, so if you already know how to use Scratch, it is a good starting point before graduating to a lnaguage like Python.
 
-[Blockly](https://developers.google.com/blockly/) is similar in approach to Scratch, and is what the BBC micro:bit uses. It is fine to start
+[Blockly](https://developers.google.com/blockly/) is similar in approach to Scratch, and is what the [BBC micro:bit](https://microbit.org) uses. It is fine to start
 with but you will soon hit up against limitations in the kind of programs you can create.
 
 <!-- Scratch Jr. is simplified Scratch without word recognition but only runs
