@@ -2,8 +2,10 @@
 layout: single
 title: "Summer Hack 2019 Challenges"
 permalink: "/summerhack2019/challenges.html"
+toc: true
+toc_label: "On This Page"
+toc_icon: "cog"
 ---
-{% include toc %}
 {% include base_path %}
 
 
@@ -54,7 +56,17 @@ As pointed out in [Transition Edinburgh](https://transitionedinburgh.org.uk): "B
 
 It has [recently been claimed](https://e360.yale.edu/digest/planting-1-2-trillion-trees-could-cancel-out-a-decade-of-co2-emissions-scientists-find) that "there is enough room in the world’s existing parks, forests, and abandoned land to plant 1.2 trillion additional trees, which would have the CO2 storage capacity to cancel out a decade of carbon dioxide emissions." **How can we encourage the beneficial impact of trees in Edinburgh, or more broadly in Scotland?** This could involve initiatives to encourage more tree planting, or preservation of existing trees, or better management of trees for sustainable forestry.
 
-Based on [data about trees](https://data.edinburghopendata.info/dataset/edinburgh-council-trees-dataset) owned by City of Edinburgh Council, [Edinburgh Tree Map](http://edinburghtreemap.org) provides a way of visualising over 50,000 trees in the city.
+ [Edinburgh Tree Map](http://edinburghtreemap.org) provides a way of visualising over 50,000 trees in the city. It was based on an earlier release of the recently published [data about City of Edinburgh Council trees](https://data.edinburghopendata.info/dataset/edinburgh-council-trees-dataset). Can you think of other interesting uses for this data?
+
+### More Tree Resources and Ideas
+
+* [Tree Time Edinburgh](https://edinburghlivinglandscape.org.uk/project/tree-time-edinburgh/)
+* [Forestry Commission Open Data (Scotland)](http://data-forestry.opendata.arcgis.com/search?tags=Scotland)
+* [Treezilla](http://www.treezilla.org)
+* [I-Tree Tools (USA)](https://www.itreetools.org)
+* [National Biodiversity Map for Scotland](https://scotland.nbnatlas.org)
+
+
 
 ## 4. Clean Air for Edinburgh
 
@@ -64,6 +76,7 @@ Air pollution causes illness and premature deaths. It doesn't just affect our lu
 
 1. Promote active travel, for example by encouraging young people to travel to school without relying on their parents to take them by car.
 2. Increase awareness of the dangers of air pollution, for example by developing an initiative in Edinburgh like [Air Quality Aberdeen](https://www.airaberdeen.org)
+3. Find ways of discouraging [engine idling](http://www.campaignforcleanair.org/myths-and-facts.html) by stationary vehicles.
 3. Reduce the use of polluting vehicles in 'last mile delivery' of parcels and goods.
 
 We have particulate monitor with the same [sensors as this one](https://www.airaberdeen.org/sensors/) which participants can use during the Summer Hack.

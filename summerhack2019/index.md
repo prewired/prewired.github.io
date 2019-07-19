@@ -11,8 +11,10 @@ header:
   overlay_filter: 0.4
   cta_label: "Register for Summer Hack 2019"
   cta_url: "https://forms.gle/U42MZZs22h3Yx47Q6"
+toc: true
+toc_label: "On This Page"
+toc_icon: "cog"
 --- 
-{% include toc %}
 {% include base_path %}
 
 
@@ -327,7 +329,7 @@ The theme of this year's Summer Hack will be the environment. On the principle o
 ## Sponsors
 
 
-![](/assets/images/swt-logo.png){: .align-left}
+[![](/assets/images/swt-logo.png){: .align-left}](https://scottishwildlifetrust.org.uk)
 
 <!--
 
