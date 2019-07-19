@@ -10,6 +10,9 @@ permalink: /resources/
 
 This page contains a bunch of links to useful learning resources. Many of the pages we link to are themselves links to many other sites and tools. We will expand this list and try to make it more useful as we go along. Let us know which bits you find useful (or not), and make suggestions for new things that should be added. 
 
+**Note** Although we are happy to receive suggestions for new resources, as a matter of policy we do not post links to sites with paid-for content or whose main goal is commercial rather than educational.
+{: .notice--danger}
+
 We have also produced a [Programming and Computing FAQ]({{ base_path }}/computingfaq) to give you a quick overview.
 
 ## Starting with Scratch
@@ -33,6 +36,11 @@ If you've been doing Scratch for a while at home, school or Prewired and want to
 * CoderDojo Scotland: <http://coderdojoscotland.com/resources>
 * Khan Academy Programming: <https://www.khanacademy.org/computing/computer-programming>
 * Gallery of interesting Jupyter Notebooks: <https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks>
+
+## Beginning Python
+
+In addition to the general coding links above, the following page gives an excellent overview of learning resources for newcomers to Python: <https://docs.python-guide.org/intro/learning/>
+
 
 
 ## Collaboration Tools

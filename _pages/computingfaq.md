@@ -2,8 +2,11 @@
 layout: single
 title: "Programming and Computers FAQ"
 permalink: /computingfaq/
+toc: true
+toc_label: "On This Page"
+toc_icon: "cog"
 ---
-{% include toc %}
+
 {% include base_path %}
 
 
@@ -29,7 +32,7 @@ The current demand for programming languages may not be the same in 10 years' ti
 but the associated skills will be the same. We therefore suggest emphasising fun and skills. Learning one language makes it easier to learn a second, but see note at the end. That said, two of the languages used most oftern by Prewired participants are **Python** and **Scratch**.
 
 The [Python](https://docs.python.org/3/tutorial/) programming language is relatively easy to learn and versatile. It's being used to
-teach introductory computer science in many universities. However, like most language, there's spelling, punctuation and grammar to get right.
+teach introductory computer science in many universities. However, like most language, there's spelling, punctuation and grammar to get right. There is an excellent overview of introductory learning resources for Python at [The Hitchhiker's Guide to Python](https://docs.python-guide.org/intro/learning/#beginner).
 
 By contrast, [Scratch](https://scratch.mit.edu) is a visual programming language that encourages children to design and create their own games. It has a drag-and-drop interface that makes it much easier to write code without bothering about syntax.  Primary schools in Scotland offer Scratch as an introduction to computing, so if you already know how to use Scratch, it is a good starting point before graduating to a lnaguage like Python.
 
@@ -59,10 +62,11 @@ Here is a list of some popular and widely-used programmig languages:
 | R | a modern language for use in statistics and data science. Originally intended for, and designed by, statisticians but gaining popularity.| 
 | Assembler | as near to 'bare metal' as is practical. Used to get up close and personal with the processor. Not particularly difficult, but tire instruction achieves very little, so very many are needed to get something done.|
 
-**Note**|An approach to programming that's gaining in popularity because it
+**Note** An approach to programming that's gaining in popularity because it
 is very good at making use of multiple processing units (as in dual or quad core), and also produces
 extremely reliable code, is  *functional programming*.  Haskell is an example of a functional language which appears in
 the top language league. The functional programming paradigm can be hard to adjust to if you started out learning a procedural language such as Python or C. However, it's interesting to note that many popular languages, including Python, Java and JavaScript, now incorporate ways of allowing you to programme in a functional way.
+{: .notice--primary}
 
 <!-- It's arguable that it's harder
 to learn this as a second language than a first, but there's probably
@@ -84,8 +88,7 @@ it can then be installed alongside Windows.
 
 
 Scratch, Blockly and Snap cannot damage your computer but installing other
-languages might interfere in unexpected way with the normal behaviour of your computer. Unless you are already quite confident about programing languages, so you probably want to limit use of your treasured home computer/laptop. Scratch works fine on a tablet but text-based languages really need a
-keyboard.
+languages might interfere in unexpected way with the normal behaviour of your computer. Unless you are already quite confident about programing languages, so you probably want to limit use of your treasured home computer/laptop. Scratch works fine on a tablet but text-based languages really need a keyboard.
 
 Prewired provide laptops for use during the session. You can save work
 in the cloud (easy with Scratch), or bring a USB flash drive to save
