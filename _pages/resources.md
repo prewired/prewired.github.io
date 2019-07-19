@@ -12,7 +12,7 @@ toc_icon: "cog"
 
 This page contains a bunch of links to useful learning resources. Many of the pages we link to are themselves links to many other sites and tools. We will expand this list and try to make it more useful as we go along. Let us know which bits you find useful (or not), and make suggestions for new things that should be added. 
 
-**Note** Although we are happy to receive suggestions for new resources, as a matter of policy we do not post links to sites with paid-for content or whose main goal is commercial rather than educational.
+**Note** Although we are happy to receive suggestions for new resources, as a matter of policy we do not post links to sites which have mainly paid-for content or whose main goal is commercial rather than educational.
 {: .notice--danger}
 
 We have also produced a [Programming and Computing FAQ]({{ base_path }}/computingfaq) to give you a quick overview.
