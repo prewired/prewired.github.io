@@ -324,6 +324,11 @@ The theme of this year's Summer Hack will be the environment. On the principle o
 
 <br/>
 
+## Sponsors
+
+
+![](/assets/images/swt-logo.png){: .align-left}
+
 <!--
 
 ## Challenges
