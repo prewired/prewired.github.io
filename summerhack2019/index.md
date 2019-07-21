@@ -45,19 +45,21 @@ The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 22nd&n
 
 [Register for Summer Hack](https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform){: .btn .btn--info .btn--x-large}{: .text-center} -->
 
-## Theme: Improving our Environment
+## Theme and Challenges: Improving our Environment
 
 The theme of this year's Summer Hack will be the environment. On the principle of "think globally, act locally", we will explore how digital technology can help to make the city we live in more sustainable, healthy and friendly towards nature. The challenges for the Summer Hack will contribute to this theme in different ways.
 
-## Challenges
 
 <!-- All the challenges for this year are in [the Challenges page]({{ "/summerhack2019/challenges.html" | absolute_url }}) -->
 
-We face three major environmental challenges:
+The world &mdash; and our city &mdash; faces three major environmental problems:
 
-1. Loss of biodiversity
-2. Global warming caused by CO2 emissions
-3. Air pollution
+1. Loss of biodiversity, including insect pollinators.
+2. Global warming caused by CO2 emissions.
+3. Air pollution, due to emissions from a variety of sources.
+
+For the Summer Hack, we want to consider ways of using digital technology that will contribute towards solutions.
+
 
 ## Outline Schedule 
 
