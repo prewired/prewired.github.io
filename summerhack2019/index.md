@@ -49,6 +49,8 @@ The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 22nd&n
 
 The theme of this year's Summer Hack will be the environment. On the principle of "think globally, act locally", we will explore how digital technology can help to make the city we live in more sustainable, healthy and friendly towards nature. The challenges for the Summer Hack will contribute to this theme in different ways.
 
+## Challenges
+
 
 
 ## Outline Schedule 

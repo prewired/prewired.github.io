@@ -12,6 +12,5 @@ data_files:
 
 
 {% for file in page.data_files %}
-  * [{{ file }}]({{ file }})
+  * [{{ file }}]({{ /summerhack2019/data/ | absolute_url }}{{ file }})
 {% endfor %}
-
