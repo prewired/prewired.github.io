@@ -34,7 +34,7 @@ More information on the actions that people can take is available on the website
 
 ### Sample Code
 
-We have created a [Jupyter notebook](https://nbviewer.jupyter.org/github/prewired/workshops/blob/master/notebooks/swt.ipynb) which illustrates some simple ways to visualise the pollinator pledge data on a map using Python. [Source code for notebook](https://github.com/prewired/workshops/blob/master/notebooks/swt.ipynb)
+We have created a [Jupyter notebook](https://nbviewer.jupyter.org/github/prewired/workshops/blob/master/notebooks/swt.ipynb) which illustrates some simple ways to visualise the pollinator pledge data on a map using Python. [[Source code for notebook](https://github.com/prewired/workshops/blob/master/notebooks/swt.ipynb)]
 
 ## 2. Zero Carbon Edinburgh
 
@@ -82,7 +82,9 @@ Air pollution causes illness and premature deaths. It doesn't just affect our lu
 We have particulate monitor with the same [sensors as this one](https://www.airaberdeen.org/sensors/) which participants can use during the Summer Hack.
 
 
+## 5. Make Your Own Challenge
 
+Don't like any of the suggestions above? Feel free to make up your own challenge, as long as at fits within the general theme of *Improving our Environment*. And make sure you discuss your idea with one of the mentors before getting too committed to it.
 
 
 
