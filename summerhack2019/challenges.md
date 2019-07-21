@@ -34,7 +34,7 @@ More information on the actions that people can take is available on the website
 
 ### Sample Code
 
-We have created a [Jupyter notebook](https://nbviewer.jupyter.org/github/prewired/workshops/blob/master/notebooks/swt.ipynb) which illustrates some simple ways to visualise the pollinator pledge data on a map using Python.
+We have created a [Jupyter notebook](https://nbviewer.jupyter.org/github/prewired/workshops/blob/master/notebooks/swt.ipynb) which illustrates some simple ways to visualise the pollinator pledge data on a map using Python. [Source code for notebook](https://github.com/prewired/workshops/blob/master/notebooks/swt.ipynb)
 
 ## 2. Zero Carbon Edinburgh
 
