@@ -51,7 +51,7 @@ The theme of this year's Summer Hack will be the environment. On the principle o
 
 ## Challenges
 
-
+All the challenges for this year are in [the Challenges page]({{ "/summerhack2019/challenges.html" | absolute_url }})
 
 ## Outline Schedule 
 

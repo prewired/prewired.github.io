@@ -26,7 +26,7 @@ There are over 160,000 gardens in Edinburgh and these could form part of a massi
 
 We are looking for a creative and engaging approach to inspire more people to sign up and show the progress of the pledge. You might want to think about using a story or the character of a bee to make your game interesting.
 
-There were 226 people signed up to the pledge at the last count and the location information has been visualised as a map  on the Edinburgh Living Landscape [Pollinator Pledge page](https://edinburghlivinglandscape.org.uk/pollinatorpledge/).  The underlying data is available here [TBD]. Each point represents a person that has signed the pledge and has contributed a node to the network. 
+There were 226 people signed up to the pledge at the last count and the location information has been visualised as a map  on the Edinburgh Living Landscape [Pollinator Pledge page](https://edinburghlivinglandscape.org.uk/pollinatorpledge/).  The underlying data is available [here](https://github.com/prewired/workshops/tree/master/data/processed). Each point represents a person that has signed the pledge and has contributed a node to the network. 
 
 The bee map provided shows which areas we think are the most suitable for bumble bees. This show the gaps in the network and which areas you could target to get more pledges and complete the network. 
 
