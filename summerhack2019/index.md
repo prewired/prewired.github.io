@@ -51,7 +51,13 @@ The theme of this year's Summer Hack will be the environment. On the principle o
 
 ## Challenges
 
-All the challenges for this year are in [the Challenges page]({{ "/summerhack2019/challenges.html" | absolute_url }})
+<!-- All the challenges for this year are in [the Challenges page]({{ "/summerhack2019/challenges.html" | absolute_url }}) -->
+
+We face three major environmental challenges:
+
+1. Loss of biodiversity
+2. Global warming caused by CO2 emissions
+3. Air pollution
 
 ## Outline Schedule 
 

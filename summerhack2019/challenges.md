@@ -6,7 +6,8 @@ toc: true
 toc_label: "On This Page"
 toc_icon: "cog"
 ---
-{% include base_path %}
+
+There are a number of pressing environmental challenges that we currently face
 
 
 ## 1. Edinburgh Pollinator Pledge (Scottish Wildlife Trust)
