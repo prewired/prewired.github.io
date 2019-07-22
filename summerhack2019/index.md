@@ -22,8 +22,8 @@ toc_icon: "cog"
 
 We are excited to announce that we are running **Summer Hack** again this year &mdash; a week-long team programming competition for young people of secondary school age (aged 12 and over).
 
-**Register now**: Please complete this <a href="https://forms.gle/U42MZZs22h3Yx47Q6" target="_blank">registration form</a>  and we will get back to you soon.
-
+<!-- **Register now**: Please complete this <a href="https://forms.gle/U42MZZs22h3Yx47Q6" target="_blank">registration form</a>  and we will get back to you soon.
+ -->
 
 The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 22nd&ndash;26th 2019 at [CodeBase Events Space](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh EH3 9SJ. 
 
@@ -50,8 +50,6 @@ The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 22nd&n
 The theme of this year's Summer Hack will be the environment. On the principle of "think globally, act locally", we will explore how digital technology can help to make the city we live in more sustainable, healthy and friendly towards nature. The challenges for the Summer Hack will contribute to this theme in different ways.
 
 
-<!-- All the challenges for this year are in [the Challenges page]({{ "/summerhack2019/challenges.html" | absolute_url }}) -->
-
 The world &mdash; and our city &mdash; faces three major environmental problems:
 
 1. Loss of biodiversity, including insect pollinators.
@@ -59,6 +57,9 @@ The world &mdash; and our city &mdash; faces three major environmental problems:
 3. Air pollution, due to emissions from a variety of sources.
 
 For the Summer Hack, we want to consider ways of using digital technology that will contribute towards solutions.
+
+In order to think about more specific ways of addressing these problems,  have a look at this
+[page with possible approaches]({{ "/summerhack2019/approaches.html" | absolute_url }}).
 
 
 ## Outline Schedule 
@@ -338,9 +339,16 @@ For the Summer Hack, we want to consider ways of using digital technology that w
 
 ## Sponsors
 
+<div markdown="1">
 
-[![](/assets/images/swt-logo.png){: .align-left}](https://scottishwildlifetrust.org.uk)
+[![](/assets/images/swt-logo.png)](https://scottishwildlifetrust.org.uk)
 
+</div>
+<div markdown="1">
+
+[![](/assets/images/productforge-logo.png)](https://productforge.io)
+
+</div>
 <!--
 
 ## Challenges
