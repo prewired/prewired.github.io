@@ -341,6 +341,12 @@ In order to think about more specific ways of addressing these problems,  have a
 
 <div markdown="1">
 
+[![](/assets/images/bos-logo.png)](https://bankofscotland.co.uk)
+
+</div>
+
+<div markdown="1">
+
 [![](/assets/images/swt-logo.png)](https://scottishwildlifetrust.org.uk)
 
 </div>
@@ -349,6 +355,8 @@ In order to think about more specific ways of addressing these problems,  have a
 [![](/assets/images/productforge-logo.png)](https://productforge.io)
 
 </div>
+
+
 <!--
 
 ## Challenges
