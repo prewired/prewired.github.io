@@ -55,6 +55,7 @@ In addition to the general coding links above, the following page gives an excel
 
 * HTML/CSS lesson: <https://openclassrooms.com/courses/build-your-website-with-html5-and-css3>
 * HTML/CSS exercises: <https://www.codecademy.com/learn/learn-html-css>
+* CSS3 Cheatsheet: <https://websitesetup.org/css3-cheat-sheet/>
 * Web editor (CodePen):  <https://codepen.io>
 * Web editor (JSbin):  <http://jsbin.com>
 
