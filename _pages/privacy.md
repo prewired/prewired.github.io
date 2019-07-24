@@ -81,7 +81,7 @@ We will not pass your data to third parties except where we are required to do s
 
 In very limited circumstances, we may work with partner organisations (e.g., CodeBase, Product Forge) to make photographic or video recordings of Prewired events. We will only do this when the goal is to benefit Prewired's charitable aims, for example by publicising Prewired activities. We will ask for your active consent in such cases. If you refuse to give consent, we will take all steps possible to ensure that you are not included in any photographs or videos. You will also be able withdraw consent retroactively.
 
-In addition, we will only store outside of the EU where appropriate safeguards are in place as defined by Article 46 of the General Data Protection Regulation.
+In addition, we will only store data outside of the EU where appropriate safeguards are in place as defined by Article 46 of the General Data Protection Regulation.
 
 ## How long we keep your data
 
