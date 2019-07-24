@@ -30,7 +30,7 @@ The following table explains the types of data we collect and the legal basis, u
 
 <table>
 	<tr>
-		<th> Purpose</th>
+		<th>Purpose</th>
 		<th>Data</th>
 		<th>Basis</th>
 	</tr>
@@ -76,6 +76,8 @@ We do not carry out any automated processing of your personal data except to col
 
 We will not pass your data to third parties except where we are required to do so by law.
 
+In very limited circumstances, we may work with partner organisations (e.g., CodeBase, Product Forge) to make photographic or video recordings of Prewired events. We will only do this when the goal is to benefit Prewired's charitable aims, for example by publicising Prewired activities. We will ask for your active consent in such cases. If you refuse to give consent, we will take all steps possible to ensure that you are not included in any photographs or videos. You will also be able withdraw consent retroactively.
+
 In addition, we will only store outside of the EU where appropriate safeguards are in place as defined by Article 46 of the General Data Protection Regulation.
 
 ## How long we keep your data
@@ -103,6 +105,6 @@ We may modify this Privacy Policy from time to time and will publish the most cu
 
 ----
 
-*Version 1.2, last revised 23 April 2019*
+*Version 1.3, last revised 24 July 2019*
 
 
