@@ -9,8 +9,8 @@ header:
   overlay_filter: 0.4
   overlay_image: /assets/images/summerhack2016.jpg
   overlay_filter: 0.4
-  cta_label: "Register for Summer Hack 2019"
-  cta_url: "https://forms.gle/U42MZZs22h3Yx47Q6"
+  #cta_label: "Register for Summer Hack 2019"
+  #cta_url: "https://forms.gle/U42MZZs22h3Yx47Q6"
 toc: true
 toc_label: "On This Page"
 toc_icon: "cog"

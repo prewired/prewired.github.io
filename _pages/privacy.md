@@ -4,8 +4,6 @@ classes: wide
 title: Prewired Privacy Policy
 subtitle: 
 permalink: "/privacy/"
-header:
-  image:
 toc: true
 toc_label: "On This Page"
 toc_icon: "cog"
