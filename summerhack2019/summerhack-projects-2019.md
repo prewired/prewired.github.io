@@ -4,9 +4,10 @@ title: "Summer Hack 2019 Projects"
 permalink: /summerhack2019/projects/
 header:
   image: /assets/images/summerhack2016.jpg
+toc: true
+toc_label: "On This Page"
+toc_icon: "cog"
 --- 
-{% include toc %}
-{% include base_path %}
 
 Summer Hack 2019 took place on July 22nd&ndash;26th 2019 at [CodeBase](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh. 
 
@@ -31,78 +32,78 @@ Imagine someone who never really thinks about cyber security and isn’t aware o
 ## Robot Airport Assistant (Skyscanner)
 
 Make a Lego robot to guide passengers to different locations in a (mocked-up) airport, help them with their luggage, buy presents to take home, warn when their flight is boarding. Keep a record of who the passengers are and where they are going.
+-->
 
-# Team Projects
 
 Five teams created projects during the week &mdash; brief descriptions below.
 
 <div class="block" markdown="1">
 
-## Clueless?
+## The Bugs
 
-Calum, Logan, Reuben and Gregor
+Christina, Sarah, Cameron, Cole
 
-**Earthbound**: A Mario-type game that incentivizes users to enter private data in order to skip levels and finally warns them of the dangers of disclosing this data. 
+**Green Beans**: A game created with PyGame that uses a restaurant cooking scenario to raise awareness about sustainability. 
 
-[Project code](https://drive.google.com/file/d/1LI8jV3ZFxO_j60yYKfqQBTs8_dh8vr09/view){: .btn .btn--large .btn--info}
+<!-- [Project code](https://drive.google.com/file/d/1LI8jV3ZFxO_j60yYKfqQBTs8_dh8vr09/view){: .btn .btn--large .btn--info} -->
 </div>
 
 <div class="block" markdown="1">
 
-## Coffee Cup
+## [INSERT TEAM NAME HERE]
+Andrew, Gregor, Ardal
 
-Cameron, Cerys and Ruaridh
 
-**SKYBorg**: A robot to help elderly / limited-mobility passengers to reach different destinations in an airport.
+**Balance**: A game created with Unity that uses a city management scenario to explore the balance betwwen economic and environmental sustainablity. 
 
-[Project code](https://github.com/CerysKitten25/coffee-cup){: .btn .btn--large .btn--info}
+<!-- [Project code](https://github.com/CerysKitten25/coffee-cup){: .btn .btn--large .btn--info} -->
 </div>
 
 <div class="block" markdown="1">
 
-## Pythonagoras
+## Next Level
 
-Beccie, Christina and Tom
+Sandy
 
-**Glitch**: A game that walks users through the process of registering for and using a social media platform in order to highlight the data privacy risks. 
+**Climate Crisis**: A game created with Scratch which tests the user's environental awareness and increases the level of difficulty in the game accordingly. 
 
-<!-- [Project code](https://github.com/sonicpose/9044){: .btn .btn--large .btn--info} 
-</div>
-
-<div class="block" markdown="1">
-## Team Rocket 
-
-Bruce, Luca, Kiran and Theo
-
-**Cyberstrike**: A visual novel, including mini-games, designed to give information about cyber security to an alien from Planet Zorg. Lily shows the alien how to use Google maps and social media to find its friend. 
-
-![]({{ base_path }}/assets/images/summerhack2018/rocket.png){: .align-center}
-
-[Project code](https://gitlab.com/brucekly/cyberstrike){: .btn .btn--large .btn--info}
-</div>
-
+<!-- [Project code](https://github.com/sonicpose/9044){: .btn .btn--large .btn--info} -->
+</div> 
 
 <div class="block" markdown="1">
-## Experienced Amateurs
+## Pollinator World
 
-Andrew, Charlie, Kenneth, Sandy and Robert
+Joe, Joseph, Joe
 
-**AirBuddy**: A robot assistant that uses line-following and a text-based interface to guide people through an airport.
+**Pollinator World**: A social media / forum site which awards points to users when they  upload information showing how they have created a wildlife-friendly garden. 
 
-[Project code](http://gitlab.com/theexperiencedameteurs/projects){: .btn .btn--large .btn--info}
+<!-- ![]({{ base_path }}/assets/images/summerhack2018/rocket.png){: .align-center} -->
+
+<!-- [Project code](https://gitlab.com/brucekly/cyberstrike){: .btn .btn--large .btn--info}
+ -->	
+ </div>
+
+
+<div class="block" markdown="1">
+## We Have Idea
+
+Kenneth, Fraser, Robert
+
+**Air Quality Meter**: An Android app that allows the user to determine the air quality in the area around their postcode.
+
+[Project code](https://github.com/Fraserbc/we_have_idea-clean_air){: .btn .btn--large .btn--info}
 </div>
+
 
 # Awards
 
-## First Prize (Arduino Ultimate Starter Kits, sponsored by Airts):
-[Pythonagoras](#pythonagoras)
+## First Prize:
+We have Idea
 
-## Second Prize (micro:bit Project Kits, sponsored by Float): 
-[Experienced Amateurs](#experienced-amateurs)
+## Second Prize: 
+The Bugs
 
-## Civic Digits Cyber Security Prize: 
-[Pythonagoras](#pythonagoras)
+## Third Prize: 
+[INSERT TEAM NAME HERE]
 
-## Code Quality Prize: 
-[Experienced Amateurs](#experienced-amateurs)
- -->
+
