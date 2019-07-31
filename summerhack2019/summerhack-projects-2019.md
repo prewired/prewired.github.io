@@ -2,38 +2,16 @@
 layout: single
 title: "Summer Hack 2019 Projects"
 permalink: /summerhack2019/projects/
+sidebar:
+  nav: "sh-projects"
 header:
-  image: /assets/images/summerhack2016.jpg
+  image: /assets/images/summerhack2019/group01.jpg
 toc: true
 toc_label: "On This Page"
 toc_icon: "cog"
 --- 
 
-Summer Hack 2019 took place on July 22nd&ndash;26th 2019 at [CodeBase](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh. 
-
-<!-- A big thanks to [Product Forge](https://productforge.io) for producing this brilliant video of the week's highlights:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jh6mrX0uLZM" frameborder="0" allowfullscreen></iframe>
- -->
-----
-<!-- # Challenges
-
-The teams all decided to pick one of the following two challenges:
-
-## Cyber Security Challenge (Civic Digits)
-
-Create a game or an app to help someone who doesn’t know or think about cyber security
-
-Imagine someone who never really thinks about cyber security and isn’t aware of any threat online. How could you engage them? What would be the most fun, provocative or interesting way to do either of the following?
-* Tell someone something about how to stay safe online
-* Encourage them to find out for themselves.
-
-[Read more...](/summerhack2018/cyber.html)
-
-## Robot Airport Assistant (Skyscanner)
-
-Make a Lego robot to guide passengers to different locations in a (mocked-up) airport, help them with their luggage, buy presents to take home, warn when their flight is boarding. Keep a record of who the passengers are and where they are going.
--->
-
+We had an awesomely good Summer Hack 2019! It took place on July 22nd&ndash;26th 2019 at [CodeBase](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh. 
 
 Five teams created projects during the week &mdash; brief descriptions below.
 

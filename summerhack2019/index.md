@@ -5,9 +5,9 @@ permalink: /summerhack2019/
 sidebar:
   nav: "sh-projects"
 header:
-  #image: /assets/images/summerhack2019.jpg
+  #image: /assets/images/summerhack2019/group01.jpg
   overlay_filter: 0.4
-  overlay_image: /assets/images/summerhack2016.jpg
+  overlay_image: /assets/images/summerhack2019/group01.jpg
   overlay_filter: 0.4
   #cta_label: "Register for Summer Hack 2019"
   #cta_url: "https://forms.gle/U42MZZs22h3Yx47Q6"
