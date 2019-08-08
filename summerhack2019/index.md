@@ -356,39 +356,3 @@ In order to think about more specific ways of addressing these problems,  have a
 </div>
 
 
-<!--
-
-## Challenges
-
-### Cyber Security Challenge (Civic Digits)
-
-Create a game or an app to help someone who doesn’t know or think about cyber security
-
-Imagine someone who never really thinks about cyber security and isn’t aware of any threat online. How could you engage them? What would be the most fun, provocative or interesting way to do either of the following?
-* Tell someone something about how to stay safe online
-* Encourage them to find out for themselves.
-
-[Read more...](/summerhack2018/cyber.html)
-
-### micro:bit Tamagotchi Pet (Eagle Labs)
-
-Use a micro:bit to make a Tamagotchi pet &mdash; a pet which:
-
-* makes a different face when it’s sad, angry or happy
-* tells you it’s hungry
-* needs regular walkies
-* gathers interesting data about its owner and tells its Tamagotchi friends about them
-
-[Read more...](/summerhack2018/tamagotchi.html)
-
-### Robot Airport Assistant (Skyscanner)
-
-Make a Lego robot to guide passengers to different locations in a (mocked-up) airport, help them with their luggage, buy presents to take home, warn when their flight is boarding. Keep a record of who the passengers are and where they are going.
-
-
-### Am I Addicted? Web History Analyser
-
-Develop a programme that imports your web browsing history for the last week (or month), and figures out what kind of web sites you really like (or even addicted to). 
-
-Could/should the programme warn you when you are indulging in your addiction?
- -->
