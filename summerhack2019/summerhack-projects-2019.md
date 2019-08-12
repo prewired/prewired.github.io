@@ -6,14 +6,29 @@ sidebar:
   nav: "sh-projects"
 header:
   image: /assets/images/summerhack2019/group01.jpg
-toc: true
-toc_label: "On This Page"
-toc_icon: "cog"
+#toc: true
+#toc_label: "On This Page"
+gallery:
+  - url: assets/images/summerhack2019/the-bugs-team.jpg
+    image_path: assets/images/summerhack2019/the-bugs-team.jpg
+  - url: assets/images/summerhack2019/we-have-idea-team.jpg
+    image_path: assets/images/summerhack2019/we-have-idea-team.jpg
+  - url: assets/images/summerhack2019/insert-team-name-here-team.jpg
+    image_path: assets/images/summerhack2019/insert-team-name-here-team.jpg
+  - url: assets/images/summerhack2019/next-level-team.jpg
+    image_path: assets/images/summerhack2019/next-level-team.jpg
+  - url: assets/images/summerhack2019/group02.jpg
+    image_path: assets/images/summerhack2019/group02.jpg
+  - url: assets/images/summerhack2019/pollination-team.jpg
+    image_path: assets/images/summerhack2019/pollination-team.jpg
 --- 
+{% include toc %}
 
 We had an awesomely good Summer Hack 2019! It took place on July 22nd&ndash;26th 2019 at [CodeBase](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh. 
 
 Five teams created projects during the week &mdash; brief descriptions below.
+
+# Project Descriptions
 
 <div class="block" markdown="1">
 
@@ -29,7 +44,6 @@ It is a click-and-drag game, currently with three different meal options and two
 
 [Presentation]({{ "/pdfs/The_Bugs_SH2019.pdf"| absolute_url }}){: .btn .btn--large .btn--info}
 
-<!-- [Project code](https://drive.google.com/file/d/1LI8jV3ZFxO_j60yYKfqQBTs8_dh8vr09/view){: .btn .btn--large .btn--info} -->
 </div>
 
 <div class="block" markdown="1">
@@ -42,7 +56,6 @@ Andrew, Gregor, Ardal
 
 ![]({{ "/assets/images/summerhack2019/balance.png" | absolute_url }}){: .align-center} 
 
-<!-- [Project code](https://github.com/CerysKitten25/coffee-cup){: .btn .btn--large .btn--info} -->
 </div>
 
 <div class="block" markdown="1">
@@ -55,7 +68,6 @@ Sandy
 
 ![]({{ "/assets/images/summerhack2019/nextlevel.png" | absolute_url }}){: .align-center} 
 
-<!-- [Project code](https://github.com/sonicpose/9044){: .btn .btn--large .btn--info} -->
 </div> 
 
 <div class="block" markdown="1">
@@ -67,10 +79,7 @@ Joe, Joseph, Joe
 
 ![]({{ "/assets/images/summerhack2019/pollinationworld.png" | absolute_url }}){: .align-center} 
 
-<!-- [Project code](https://gitlab.com/brucekly/cyberstrike){: .btn .btn--large .btn--info}
- -->	
- </div>
-
+</div>
 
 <div class="block" markdown="1">
 ## We Have Idea
@@ -91,7 +100,13 @@ Kenneth, Fraser, Robert
 * **Second Prize**: The Bugs
 * **Third Prize**: [INSERT TEAM NAME HERE]
 
+# Pix
+
+{% include gallery class="full" layout="half" %}
+
 # Summer Hack 2019 Sponsors
+
+We are grateful to our sponsors, who helped make it all possible. And of course a big thanks to CodeBase for hosting us again.
 
 <div markdown="1">
 
