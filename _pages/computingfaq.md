@@ -87,8 +87,8 @@ it can then be installed alongside Windows.
 ## What computing equipment do I need?
 
 
-Scratch, Blockly and Snap cannot damage your computer but installing other
-languages might interfere in unexpected way with the normal behaviour of your computer. Unless you are already quite confident about programing languages, so you probably want to limit use of your treasured home computer/laptop. Scratch works fine on a tablet but text-based languages really need a keyboard.
+Scratch and Blockly cannot damage your computer but installing other
+languages might interfere in unexpected ways with the normal behaviour of your computer. Unless you are already quite confident about programing languages, you probably want to limit use of your treasured home computer/laptop. Scratch works fine on a tablet but text-based languages really need a keyboard.
 
 Prewired provide laptops for use during the session. You can save work
 in the cloud (easy with Scratch), or bring a USB flash drive to save
