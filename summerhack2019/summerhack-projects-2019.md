@@ -90,7 +90,6 @@ Kenneth, Fraser, Robert
 
 ![]({{ "/assets/images/summerhack2019/airquality-small.png" | absolute_url }}){: .align-center} 
 
-[Project code](https://github.com/Fraserbc/we_have_idea-clean_air){: .btn .btn--large .btn--info}
 </div>
 
 

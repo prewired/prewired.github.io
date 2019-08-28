@@ -75,5 +75,5 @@ If you're interested in getting more involved in the organising side of things, 
 
 * Share any food or drink with Prewired participants that has not been provided by Prewired.
 * Encourage kids to communicate with them through any private channel such as email or ask them for any personal details.
-* Stand around chatting between themselves for long periods. You can take the juice-break with everyone else, but remember you're here to help the kids, not socialise! (We periodically arrange mentors parties for you for that.
+* Stand around chatting between themselves for long periods. You can take the juice-break with everyone else, but remember you're here to help the kids, not socialise! (We periodically arrange mentors parties for that!)
 
