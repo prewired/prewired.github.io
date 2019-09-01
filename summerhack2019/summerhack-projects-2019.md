@@ -99,7 +99,7 @@ Kenneth, Fraser, Robert
 * **Second Prize**: The Bugs
 * **Third Prize**: [INSERT TEAM NAME HERE]
 
-# Pix
+# Photos
 
 {% include gallery class="full" layout="half" %}
 
