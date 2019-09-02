@@ -9,6 +9,8 @@ with open(fn, 'r') as fp:
             continue
         if line.startswith('permalink'):
             continue
+        if line.startswith('toc'):
+            continue
         if line.startswith('##'):
             line = line[1:]
         if line.startswith('{%'):

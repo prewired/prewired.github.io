@@ -10,7 +10,6 @@ toc: true
 toc_label: "On This Page"
 toc_icon: "cog"
 ---
-{% include base_path %}
 
 ## The purpose and scope of this policy statement 
 
