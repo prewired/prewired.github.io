@@ -1,7 +1,7 @@
 --- 
 layout: single
-title: "Summer Hack 2019"
-permalink: /summerhack2019/
+title: "Summer Hack 2020"
+permalink: /summerhack2020/
 sidebar:
   nav: "sh-projects"
 header:
@@ -19,12 +19,12 @@ toc_icon: "cog"
 
 ## Overview
 
-We are excited to announce that we are running **Summer Hack** again this year &mdash; a week-long team programming competition for young people of secondary school age (aged 12 and over).
+We are excited to announce that we are running **Summer Hack** again for 2020 &mdash; a week-long team programming competition for young people of secondary school age (aged 12 and over).
 
 <!-- **Register now**: Please complete this <a href="https://forms.gle/U42MZZs22h3Yx47Q6" target="_blank">registration form</a>  and we will get back to you soon.
  -->
 
-The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 22nd&ndash;26th 2019 at [CodeBase Events Space](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh EH3 9SJ. 
+The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 20th&ndash;24th 2019 at [CodeBase Events Space](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh EH3 9SJ. 
 
 
 * What is involved? You will be working in a small team, collaborating on a small project.
@@ -44,7 +44,7 @@ The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 22nd&n
 
 [Register for Summer Hack](https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform){: .btn .btn--info .btn--x-large}{: .text-center} -->
 
-## Theme and Challenges: Improving our Environment
+<!-- ## Theme and Challenges: Improving our Environment
 
 The theme of this year's Summer Hack will be the environment. On the principle of "think globally, act locally", we will explore how digital technology can help to make the city we live in more sustainable, healthy and friendly towards nature. The challenges for the Summer Hack will contribute to this theme in different ways.
 
@@ -356,3 +356,4 @@ In order to think about more specific ways of addressing these problems,  have a
 </div>
 
 
+ -->

@@ -9,7 +9,7 @@ main:
   - title: "Resources"
     url: /resources/
   - title: "SummerHack"
-    url: /summerhack2019/projects/
+    url: /summerhack2020/
   - title: "Contact"
     url: /contact/
   - title: "Privacy"
@@ -30,3 +30,5 @@ sh-projects:
         url: /summerhack2017/projects/
       - title: "2018"
         url: /summerhack2018/projects/
+      - title: "2019"
+        url: /summerhack2019/projects/
