@@ -4,7 +4,7 @@ source "https://rubygems.org"
 gem "github-pages", group: :jekyll_plugins
 gem "minimal-mistakes-jekyll"
 
-
+gem "nokogiri", ">= 1.10.4"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
