@@ -4,8 +4,8 @@ main:
     url: /registration/
   - title: "Parents"
     url: /parents/
-  - title: "Mentors"
-    url: /mentors/
+  - title: "Volunteers"
+    url: /volunteers/
   - title: "Resources"
     url: /resources/
   - title: "SummerHack"

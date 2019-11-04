@@ -28,11 +28,11 @@ The Duty Mentor for a given session should be agreed at least one week in advanc
 ### Welcoming New Volunteers
 
 1. Greet new volunteers and explain how Prewired works. 
-2. Make sure that they read the [New Volunteer Guidelines]({{ "/mentors#mentors-guidelines/" | absolute_url }}) then and there.
+2. Make sure that they read the [New Volunteer Guidelines]({{ "/mentors#volunteer-guidelines/" | absolute_url }}) then and there.
 3. Get them to sign printed copies of the following documents (there should be copies in the folder in the cupboard):
-	* Child Protection Policy
+	* [Prewired Child Protection Policy]({{"/child-protection-policy/"| absolute_url }})
 	* Use of Prewired Computing Facilities
-	* Mentor Data Consent Form
+	* Privacy Notice and Consent: Prewired Volunteers and Trustees
 4. Enter their name and email address in the Volunteers Register and check whether they are a member of the Disclosure Scotland PVG Scheme.
 4. Encourage them to join the Prewired Slack workspace and invite them to the `#mentor` channel. 
 5. Give them a Visitor lanyard to wear during the session and remind them to return it at the end of the evening.
