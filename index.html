@@ -36,11 +36,10 @@ feature_row:
     btn_label: "Read More"
     btn_class: "btn--inverse"
 ---
-{% include base_path %}
-
-<!-- <div class="notice--success">
-<h1>Prewired is running as normal over the summer holiday, apart our special event: <a href="{{ base_path }}/summerhack2019/">Summer Hack 2019</a>.</h1>
-</div> -->
+<div class="notice--success">
+<!-- <h1>Prewired  running as normal over the summer holiday, apart our special event:is <a href="{{ base_path }}/summerhack2019/">Summer Hack 2019</a>.</h1> -->
+<h1>The last Prewired session before Christmas will be Wednesday 18 December. We will start again in the New Year on Wednesday 8 January 2020.</h1>
+</div>
 
 {% include feature_row id="intro" type="center" %}
 
@@ -52,9 +51,16 @@ feature_row:
 
 <h2>Sponsors &amp; Supporters</h2>
 
-<p>In addition to the generous provision of accommodation from <a href="http://thisiscodebase.com">CodeBase</a>, Prewired is grateful for the support it has received, both as in-kind donations and as funding, from Edinburgh-based tech companies, most notably  <a href="https://cultivatehq.com/">Cultivate</a>, <a href="http://www.port80.com">Port80</a> and <a href="https://www.skyscanner.net">Skyscanner</a>.  Please <a href="{{ base_path }}/contact/">contact us</a> if you are interested in becoming a <a href="{{ base_path }}/sponsors/">sponsor</a>.</p>
+<p>In addition to the generous provision of accommodation from <a href="http://thisiscodebase.com">CodeBase</a>, Prewired is grateful for the support it has received, both as in-kind donations and as funding, from Edinburgh-based tech companies, most notably  <a href="https://deliveroo.engineering">Deliveroo Engineering</a> and <a href="https://www.skyscanner.net">Skyscanner</a>.  Please <a href="{{ '/contact/' | absolute_url  }}">contact us</a> if you are interested in becoming a <a href="{{ '/sponsors/' | absolute_url }}">sponsor</a>.
+</p>
 
+<!-- <figure class="third">
+  <img src="/assets/images/codebase-logo.png">
+  <img src="assets/images/codebase-logo.png">
+  <img src="assets/images/codebase-logo.png">
+</figure> -->
 
+<div class="text-center">
 
 <div class="grid__wrapper">
     <div class="grid__item">
@@ -64,20 +70,20 @@ feature_row:
     </div>
        <div class="grid__item">
         <div class="archive__item">
-            <a href="https://cultivatehq.com"><img src="{{ '/assets/images/cultivate-logo.png' | absolute_url }}"></a>
+            <a href="https://deliveroo.engineering"><img src="{{ '/assets/images/deliveroo-logo-350.png' | absolute_url }}"></a>
         </div>
     </div>
-    <div class="grid__item">
+    <!-- <div class="grid__item">
         <div class="archive__item">
             <a href="http://www.port80.com""><img src="{{ '/assets/images/port80-logo.png' | absolute_url }}"></a>
-        </div>
-    </div>
+        </div> 
+    </div> -->
     <div class="grid__item">
         <div class="archive__item">
             <a href="https://www.skyscanner.net"><img src="{{ 'assets/images/skyscanner-logo.png' | absolute_url }}"></a>
         </div>
     </div>
- 
+ </div>
 </div>
 
 

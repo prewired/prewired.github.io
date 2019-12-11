@@ -7,7 +7,7 @@ permalink: "/contact/"
 
 We run sessions 5.30&ndash;7.30 pm, every Wednesday during school term time.
 
-Sessions are held at [CodeBase](http://thisiscodebase.com), 38 Castle Terrace, Edinburgh EH3 9DZ (see [map](https://www.google.co.uk/maps/place/CodeBase/@55.946414,-3.200923,15z/data=!4m2!3m1!1s0x0:0x5727e05b4321b9f6?sa=X&ei=wNayVLb3KsLP7QbmmYGIBA&ved=0CHQQ_BIwDg)). There is some metered parking nearby, but no free parking.
+Sessions are held at [CodeBase](http://thisiscodebase.com), 37A Castle Terrace, Edinburgh EH1 2EL (see [map](https://www.google.co.uk/maps/place/CodeBase/@55.946414,-3.200923,15z/data=!4m2!3m1!1s0x0:0x5727e05b4321b9f6?sa=X&ei=wNayVLb3KsLP7QbmmYGIBA&ved=0CHQQ_BIwDg)). There is some metered parking nearby, but no free parking.
 
 ## Get in Touch
 
