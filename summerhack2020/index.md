@@ -21,8 +21,8 @@ toc_icon: "cog"
 
 We are excited to announce that we are running **Summer Hack** again for 2020 &mdash; a week-long team programming competition for young people of secondary school age (aged 12 and over). The theme of this year's Summer Hack is **Inclusion**.
 
-<!-- **Register now**: Please complete this <a href="https://forms.gle/U42MZZs22h3Yx47Q6" target="_blank">registration form</a>  and we will get back to you soon.
- -->
+**Register now**: Please complete this <a href="https://forms.gle/DUJaXg5r442RRPRJ8" target="_blank">registration form</a>  and we will get back to you soon.
+
 
 The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 20th&ndash;24th 2020 at [CodeBase Events Space](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh EH3 9SJ. 
 
