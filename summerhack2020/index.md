@@ -19,8 +19,9 @@ toc_icon: "cog"
 
 ## Overview
 
-We are excited to announce that we are running **Summer Hack** again for 2020 &mdash; a week-long team programming competition for young people of secondary school age (aged 12 and over). The theme of this year's Summer Hack is **Inclusion**.
+We are still hoping to run **Summer Hack** for 2020 &mdash; a week-long team programming competition for young people of secondary school age (aged 12 and over). The theme of this year's Summer Hack is **Inclusion**. However, due to the Covid-19 emergency measures, it may be necessary to postpone the event until later in the year. We will update this page when more information becomes available.
 
+<!--
 **Register now**: Please complete this <a href="https://forms.gle/DUJaXg5r442RRPRJ8" target="_blank">registration form</a>  and we will get back to you soon.
 
 
@@ -38,7 +39,7 @@ The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 20th&n
 <h1>Because you will be working as a member of a team, you must commit to attending <i>every day</i> of the Summer Hack.</h1>
 </div>
 
- 
+-->
 
 <!-- We still have a limited number of places, so if you want to be involved, sign up now! 
 
