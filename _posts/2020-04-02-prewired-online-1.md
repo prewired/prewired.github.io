@@ -18,12 +18,12 @@ where James ran an introductory workshop on machine learning systems that work a
 
 To round off the session, Colin presented us with a coding challenge to work on over the coming week. 
 <div class="notice--info">
-<div style="font-size:1.3em;">
-<h2>Shared Birthday Challenge</h2>
-<p>
+	<div style="font-size:1.3em;">
+	<h2>Shared Birthday Challenge</h2>
+	<p>
   Suppose you invite a bunch of your friends over to your house. <i>How many people do you have to invite in order to have a good chance that at least two of them have the same birthday?</i> It's possible to do some maths with probability theory to solve this, but Colin wants us to write code that <i>simulates</i> a way of solving the problem. That is, the code should do something like adding together a certain number of people and then checking their birthdays to see if there is a match. If you repeat this checking process enough times, you should get a reasonably good approximation of how many people you need to invite in order to get, say, a 50% chance of a match. At the next session of Prewired Online (Wednesday 8th April, 5:30 pm), you will have a chance to present your solution &mdash; it doesn't matter if you didn't manage to make it to the session on 1 April. You can write your program in any language you like (Colin claims he did one in Scratch :smile: ). You might want to think about what's particularly cool about your solution: is it concise? readable? fast? has a nice interface? Whatever.
-</p>
-</div>
+	</p>
+	</div>
 </div>
 
 
