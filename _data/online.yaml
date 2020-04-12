@@ -2,7 +2,9 @@ weeks:
   - date: 8 April 2020
     challenge:
       title: Eight Queens
+      image: /assets/images/chess_board.png
       description: >
+
         Pretend that the grid below is a chess board. Your job is to place
         eight queens on the board in such a way that no queen can capture any other
         queen. For those who don't play chess, what you need to do is fill in eight of
