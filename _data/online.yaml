@@ -1,0 +1,31 @@
+weeks:
+  - date: 8 April 2020
+    challenge:
+      title: Eight Queens
+      description: >
+        Pretend that the grid below is a chess board. Your job is to place
+        eight queens on the board in such a way that no queen can capture any other
+        queen. For those who don't play chess, what you need to do is fill in eight of
+        the sixty-four squares below so that no two squares are in line with each
+        other vertically, horizontally, or diagonally.
+        Once you have found a solution, try to write some code that can 
+        tell you how many <i>different</i> possible solutions there are. 
+        As a double bonus, how many of those solutions are unique; that is,
+        not a rotated or flipped version of another solution.
+    workshops:
+      resources:
+        - resource: 
+        - resource:  
+
+  - date: 1 April 2020
+    challenge: 
+      title: Shared Birthday
+      description: >
+        I have a group of 30 friends round for a party. What is the probability
+        at least two of them share a birthday? Write the code so that you can also
+        given an answer for <i>N</i> friends, where <i>N</i> is between 2 and 50.
+    workshops:
+      topic: Introduction to neural nets and image recognition
+      resources:
+      - resource: <a href="https://isitacat.com">Cat Detector</a>
+      - resource: <a href="https://teachablemachine.withgoogle.com">Teachable Machine website</a>
