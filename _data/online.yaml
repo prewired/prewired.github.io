@@ -15,9 +15,13 @@ weeks:
         As a double bonus, how many of those solutions are unique; that is,
         not a rotated or flipped version of another solution.
     workshops:
+      author: Jelmer van der Linde
+      topic: Classifying personal names
       resources:
-        - resource: 
-        - resource:  
+        - resource: GitHub code repository &mdash; <a href="https://github.com/jelmervdl/prewired">https://github.com/jelmervdl/prewired</a>
+        - resource: Interactive Jupyter Notebook 6 &mdash; 
+                    <a href="https://mybinder.org/v2/gh/jelmervdl/prewired/master?filepath=machine-learning.ipynb">Machine Learning</a>
+        - resource: NLTK Book Chapter 6 &mdash; <a href="http://www.nltk.org/book/ch06.html ">Learning to Classify Text</a>
 
   - date: 1 April 2020
     challenge: 
@@ -27,6 +31,7 @@ weeks:
         at least two of them share a birthday? Write the code so that you can also
         given an answer for <i>N</i> friends, where <i>N</i> is between 2 and 50.
     workshops:
+      author: James Raymond
       topic: Introduction to neural nets and image recognition
       resources:
       - resource: <a href="https://isitacat.com">Cat Detector</a>
