@@ -18,9 +18,8 @@ weeks:
       author: Jelmer van der Linde
       topic: Classifying personal names
       resources:
-        - resource: GitHub code repository &mdash; <a href="https://github.com/jelmervdl/prewired">https://github.com/jelmervdl/prewired</a>
-        - resource: Interactive Jupyter Notebook 6 &mdash; 
-                    <a href="https://mybinder.org/v2/gh/jelmervdl/prewired/master?filepath=machine-learning.ipynb">Machine Learning</a>
+        - resource: GitHub code repository &mdash; <a href="https://github.com/prewired/workshop-ml-text-processing-names">https://github.com/prewired/workshop-ml-text-processing-names</a>
+        - resource: <a href="https://mybinder.org/v2/gh/prewired/workshop-ml-text-processing-names/master?filepath=https%3A%2F%2Fgithub.com%2Fprewired%2Fworkshop-ml-text-processing-names%2Fblob%2Fmaster%2Fml-firstnames-classification.ipynb">Interactive Jupyter Notebook</a>
         - resource: NLTK Book Chapter 6 &mdash; <a href="http://www.nltk.org/book/ch06.html ">Learning to Classify Text</a>
 
   - date: 1 April 2020
