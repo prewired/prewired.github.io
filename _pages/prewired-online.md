@@ -34,6 +34,9 @@ Date: {{ week.date }}
 <p>
     {{ week.challenge.description }}
 </p>
+{% if week.challenge.solution %}
+<img src="{{week.challenge.solution | absolute_url}}">
+{% endif %}
 <h3>Workshop</h3>
 <ul>
 <li>Topic: {{week.workshops.topic}}</li>

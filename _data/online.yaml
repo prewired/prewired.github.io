@@ -30,6 +30,7 @@ weeks:
         I have a group of 30 friends round for a party. What is the probability
         at least two of them share a birthday? Write the code so that you can also
         given an answer for <i>N</i> friends, where <i>N</i> is between 2 and 50.
+      solution: <a href="https://github.com/prewired/online-challenges/blob/master/solutions/birthday.ipynb">Sample solution</a>
     workshops:
       author: James Raymond
       topic: Introduction to neural nets and image recognition
