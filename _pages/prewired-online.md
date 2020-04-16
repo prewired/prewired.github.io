@@ -33,10 +33,13 @@ Date: {{ week.date }}
 {% endif %}
 <p>
     {{ week.challenge.description }}
+
+	{% if week.challenge.solution %}
+<br/>
+	<a href ="{{week.challenge.solution}}">Sample solution (Jupyter Notebook)</a>
 </p>
-{% if week.challenge.solution %}
-<img src="{{week.challenge.solution | absolute_url}}">
 {% endif %}
+
 <h3>Workshop</h3>
 <ul>
 <li>Topic: {{week.workshops.topic}}</li>
