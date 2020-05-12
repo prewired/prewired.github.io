@@ -37,3 +37,13 @@ weeks:
       resources:
       - resource: <a href="https://isitacat.com">Cat Detector</a>
       - resource: <a href="https://teachablemachine.withgoogle.com">Teachable Machine website</a>
+
+  - date: 13 May 2020
+    challenge: 
+      title: nothing yet!
+    workshops:
+      author: Ewan Klein
+      topic: First Steps in Digital Art, Workshop 1
+      resources:
+      - resource: <a href="https://editor.p5js.org">p5.js online editor</a>
+      - resource: Dan Schiffman <a href="https://thecodingtrain.com/beginners/p5js/">Code! Programming with p5.js</a>, especially videos 1.1, 1.2, 1.3.
