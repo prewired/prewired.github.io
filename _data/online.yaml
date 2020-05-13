@@ -8,6 +8,8 @@ weeks:
       resources:
       - resource: <a href="https://editor.p5js.org">p5.js online editor</a>
       - resource: Dan Schiffman <a href="https://thecodingtrain.com/beginners/p5js/">Code! Programming with p5.js</a>, especially videos 1.1, 1.2, 1.3.
+      - resource: <a href="https://editor.p5js.org/prewiredonline/sketches/VGCMHSDAD">Simple shapes sketch</a>
+      - resource: <a href="https://editor.p5js.org/prewiredonline/sketches/GYSXBi1Kw">Variables and if-else sketch</a>
 
   - date: 8 April 2020
     challenge:
