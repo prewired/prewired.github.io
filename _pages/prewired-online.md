@@ -27,7 +27,11 @@ On the rest of this page, we will list topics and resources for the sessions on 
 <h2 style="padding-left: 1em;background: #263238;color: #eeffff;line-height: 1.8;padding-bottom: .25em;">
 Date: {{ week.date }}
 </h2>
+
+{% if week.challenge.title %}
 <h3>Challenge: {{ week.challenge.title }}</h3>
+{% endif %}
+
 {% if week.challenge.image %}
 <img src="{{week.challenge.image | absolute_url}}">
 {% endif %}
