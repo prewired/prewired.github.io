@@ -7,19 +7,24 @@ toc: true
 toc_label: "On This Page"
 toc_icon: "cog"
 ---
+![](/assets/images/p5strapline.pdf){: .align-center}
 
 ## Introduction
 
-We have set up Prewired Online to explore ways of running Prewired during a period when it is not possible to hold events in CodeBase. We are using a videoconference platform which enables participants to join the sessions via a web browser (currently, we recommend using Chrome). The current structure of the sessions is roughly the following:
+We have set up Prewired Online to explore ways of running Prewired during a period when it is not possible to hold events in CodeBase. We are using the Blackboard Collaborate videoconference platform which enables participants to join the sessions via a web browser (currently, we recommend using Chrome). 
+
+Make sure you sign up to <a href="https://eepurl.com/dv2dPb" target="_blank">our mailing list</a> to get registration details for Prewired Online. A link for joining the session will be sent out to all registered participants.
+
+Over the coming weeks, we will focus on creating digital art and games with [p5.js](https://p5js.org). We will run two strands in parallel, one for newcomers to coding and another for more experienced programmers. 
+
+The current structure of the sessions is roughly the following:
 <ul>
 	<li>Introduction to the session</li>
 	<li>Round-up of news and what we've each been doing recently</li>
-	<li>Discussion of last week's Challenge</li>
-	<li>Breakout rooms on specific topics / workshops</li>
-	<li>Presentation of Challenge for the coming week</li>
+	<li>Breakout rooms on using p5.js</li>
+	<li>Review of the session and feedback</li>
 </ul>
 
-We have a brief blogpost about what happened during <a href="{% post_url 2020-04-02-prewired-online-1 %}">the first session of Prewired Online</a>.
 
 On the rest of this page, we will list topics and resources for the sessions on week-by-week basis.
 
