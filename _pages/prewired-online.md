@@ -7,7 +7,7 @@ toc: true
 toc_label: "On This Page"
 toc_icon: "cog"
 ---
-![](/assets/images/p5strapline.pdf){: .align-center}
+![5.js @ Prewired Online](/assets/images/p5strapline.jpg){: .align-center}
 
 ## Introduction
 
