@@ -3,11 +3,14 @@ layout: single
 classes: wide
 title: "Prewired Online"
 permalink: /prewired-online/
+header:
+  image: /assets/images/p5strapline.jpg
 toc: true
 toc_label: "On This Page"
 toc_icon: "cog"
 ---
-![5.js @ Prewired Online](/assets/images/p5strapline.jpg){: .align-center}
+
+<!--![5.js @ Prewired Online](/assets/images/p5strapline.jpg){: .align-center}-->
 
 ## Introduction
 
@@ -16,6 +19,14 @@ We have set up Prewired Online to explore ways of running Prewired during a peri
 Make sure you sign up to <a href="https://eepurl.com/dv2dPb" target="_blank">our mailing list</a> to get registration details for Prewired Online. A link for joining the session will be sent out to all registered participants.
 
 Over the coming weeks, we will focus on creating digital art and games with [p5.js](https://p5js.org). We will run two strands in parallel, one for newcomers to coding and another for more experienced programmers. 
+
+<div align="center">
+<video width="400" height="400" controls="controls" poster="/assets/images/face-thumbnail.png">
+  <source src="/assets/images/make-a-face.mp4" type="video/mp4">
+  	 Sorry, your browser doesn't support HTML5 videos.
+</video>
+</div>
+
 
 The current structure of the sessions is roughly the following:
 <ul>
