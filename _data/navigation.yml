@@ -2,8 +2,8 @@
 main:
   - title: "Registration"
     url: /registration/
-  - title: "Prewired Online"
-    url: /prewired-online/
+ # - title: "Prewired Online"
+ #   url: /prewired-online/
   - title: "Parents"
     url: /parents/
   - title: "Volunteers"

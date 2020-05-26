@@ -1,14 +1,14 @@
 weeks:
-  - date: 20 May 2020
-    challenge: 
-      title: 
-    workshops:
-      author: Ewan Klein
-      topic: First Steps in Digital Art, Workshop 2
-      resources:
-      - resource: <a href="https://editor.p5js.org">p5.js online editor</a>
-      - resource: Dan Schiffman <a href="https://thecodingtrain.com/beginners/p5js/">Code! Programming with p5.js</a>, especially videos 1.4, 1.5, 1.6., 2.1
-      # - resource: <a href="https://editor.p5js.org/prewiredonline/sketches/VGCMHSDAD">Simple shapes sketch</a>
+  # - date: 20 May 2020
+  #   challenge: 
+  #     title: 
+  #   workshops:
+  #     author: Ewan Klein
+  #     topic: First Steps in Digital Art, Workshop 2
+  #     resources:
+  #     - resource: <a href="https://editor.p5js.org">p5.js online editor</a>
+  #     - resource: Dan Schiffman <a href="https://thecodingtrain.com/beginners/p5js/">Code! Programming with p5.js</a>, especially videos 1.4, 1.5, 1.6., 2.1
+  #     # - resource: <a href="https://editor.p5js.org/prewiredonline/sketches/VGCMHSDAD">Simple shapes sketch</a>
       # - resource: <a href="https://editor.p5js.org/prewiredonline/sketches/GYSXBi1Kw">Variables and if-else sketch</a>
   - date: 13 May 2020
     challenge: 
