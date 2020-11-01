@@ -265,3 +265,11 @@ defaults:
       comments: # true
       share: true
       related: true
+  - scope:
+      path:            "assets/**"
+    values:
+      sitemap:         false
+  - scope:
+      path:            "pdfs/**"
+    values:
+      sitemap:         false
