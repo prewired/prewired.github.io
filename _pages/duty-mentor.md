@@ -28,7 +28,7 @@ The Duty Mentor for a given session should be agreed at least one week in advanc
 ### Welcoming New Volunteers
 
 1. Greet new volunteers and explain how Prewired works. 
-2. Make sure that they read the [New Volunteer Guidelines]({{ "/volunteers#volunteer-guidelines/" | absolute_url }}) then and there.
+2. Make sure that they read the [New Volunteer Guidelines]({{ "/volunteers/#volunteer-guidelines/" | absolute_url }}) then and there.
 3. Get them to sign printed copies of the following documents (there should be copies in the folder in the cupboard):
 	* [Prewired Child Protection Policy]({{"/child-protection-policy/"| absolute_url }})
 	* Use of Prewired Computing Facilities
