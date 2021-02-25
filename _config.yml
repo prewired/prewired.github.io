@@ -23,8 +23,9 @@ description              : "An Edinburgh programming club for under 19s"
 url                      : "https://www.prewired.org" 
 baseurl                  : ""
 repository               : "prewired" 
-teaser                   : "/assets/images/prewired-logo.png"
+teaser                   : ""
 github                   : [metadata]
+logo                     : "/assets/logos/logo-no-text-colour-88x97.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
