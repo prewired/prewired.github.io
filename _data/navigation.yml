@@ -38,3 +38,12 @@ sh-projects:
         url: /summerhack2018/projects/
       - title: "2019"
         url: /summerhack2019/projects/
+
+about:
+  - title: More about us
+    children:
+      - title: "In the News"
+        url: /press-coverage/
+      - title: "Videos"
+        url: /videos/
+        

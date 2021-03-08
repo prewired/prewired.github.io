@@ -2,6 +2,8 @@
 layout: single
 title: "About Prewired"
 permalink: "/about/"
+sidebar:
+  nav: "about"
 header:
   image: /assets/images/cameron.jpg
 ---
