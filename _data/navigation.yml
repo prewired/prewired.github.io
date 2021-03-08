@@ -24,6 +24,8 @@ main:
     url: "/blog/" 
   - title: "FAQ"
     url: /faq/
+  - title: "Press Coverage"
+    url: /press-coverage/
   - title: "Documents"
     url: /docs/
 
