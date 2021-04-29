@@ -47,8 +47,12 @@ The following table explains the types of data we collect and the legal basis, u
 	</tr>
 	<tr>
 		<td>Registering to attend one of our events (e.g., weekly evening session, Summer Hack)</td>
-		<td>Name, email, emergency contact details; if necessary, allergy and medical conditions</td>
-		<td>Consent &mdash; you have given your active consent. </td>
+		<td>Name, email, emergency contact details; if necessary, allergy and medical conditions.<br><br>
+		We may also collect data such as your age, postcode and ethnicity.
+		</td>
+		<td>Consent &mdash; you have given your active consent.<br><br>
+		We only collect age, postcode and ethnicity data for statistical reasons, and this data is anonymised so that it cannot be tied to you. We collect this data to ensure we are reaching as many people as possible.
+		</td>
 	</tr>
 		<tr>
 		<td>Attending one of our events (e.g., weekly evening session, Summer Hack)</td>
@@ -72,7 +76,6 @@ For example, we may use your personal information to:
 
 We do not carry out any automated processing of your personal data except to collect aggregated statistics about our events for the purposes of reporting to sponsors and other interested bodies.
 
-
 ## When we share your data
 
 We will not pass your data to third parties except where we are required to do so by law.
@@ -84,6 +87,8 @@ In addition, we will only store data outside of the EU where appropriate safegua
 ## How long we keep your data
 
 We take the principles of data minimisation and removal seriously and have internal policies in place to ensure that we only ever ask for the minimum amount of data for the associated purpose and delete that data promptly once it is no longer required. Where attendee data is collected on the basis of consent, we will seek renewal of consent at least every year.
+
+Data that is anonymised such as age, postcode and ethnicity may be kept indefinitely for the purpose of historical statistics and reporting; however this information cannot be tied back to you and is stored separately from your personal data.
 
 ## Rights you have over your data
 
@@ -100,12 +105,14 @@ If you would like to access the rights listed above, or any other legal rights y
 
 Please note that relying on some of these rights, such as the right to deleting your data, will make it impossible for us to continue to deliver some services to you. However, where possible we will always try to allow the maximum access to your rights while continuing to deliver as many services to you as possible. 
 
+Note that we cannot remove anonymised data such as age, postcode and ethnicity, however this cannot be tied back to you and is stored in a separate database, separate from your personal data.
+
 ## Modifications
 We may modify this Privacy Policy from time to time and will publish the most current version on our website.
 
 
 ----
 
-*Version 1.3, last revised 24 July 2019*
+*Version 1.4, last revised 29 April 2021*
 
 
