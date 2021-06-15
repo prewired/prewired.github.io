@@ -1,0 +1,62 @@
+I"H<p>Summer Hack 2017 took place on August 7th–11th 2017 at <a href="https://goo.gl/maps/KD9Gru6wjzr">CodeBase</a>, 38 Castle Terrace, Edinburgh.</p>
+
+<p>A big thanks to <a href="https://productforge.io">Product Forge</a> for producing this brilliant video of the week’s highlights:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jh6mrX0uLZM" frameborder="0" allowfullscreen=""></iframe>
+
+<hr />
+
+<h1 id="team-projects">Team Projects</h1>
+
+<p>Five teams created projects during the week, and these are briefly described below.</p>
+
+<div class="block">
+  <h1 id="team-spost">Team S.Post</h1>
+
+  <p>Gregor, Christopher and Robert</p>
+
+  <p><strong>Oh No I Died</strong>: A site to upload information about yourself for your family to view when you have passed away.</p>
+
+  <p><a href="https://github.com/prewired/summerhack2017-projects/tree/master/oh-no-i-died" class="btn btn--large btn--info">Project code</a></p>
+</div>
+
+<div class="block">
+  <h1 id="team-prequel">Team Prequel</h1>
+
+  <p>Harry, Andrew, Mahika and Beccie</p>
+
+  <p><strong>Budget sheets</strong>: Budget sheets introduces comparison into financial budgeting. The website allows you to sign up, input expenditures and see their proportions in relationship to each other (i.e., comparing food spending with luxury spending) and then displays that in a pie chart. It also allows you to compare your total expenditures with that of other allowed users, introducing competition into it. The website is intended for recent undergraduates as they have access to money they never had before.</p>
+
+  <p><a href="https://github.com/CaptainCorin100/Prequel" class="btn btn--large btn--info">Project code</a></p>
+</div>
+
+<div class="block">
+  <h1 id="team-9044">Team 9044</h1>
+
+  <p>Imogen, Abhi, Akash and Dan</p>
+
+  <p><strong>Youtube Downloader</strong>: This project makes it easy for people to download YouTube videos. There are two main components. The front end (webpage or user interface) was written in HTML and CSS by Imogen and Abhi. The back end (the code behind the webpage) was written in Python by Akash and Dan.  The front and back ends were linked together with PHP.</p>
+
+  <p><a href="https://github.com/sonicpose/9044" class="btn btn--large btn--info">Project code</a></p>
+</div>
+
+<div class="block">
+  <h1 id="team-name-not-found">Team Name Not Found</h1>
+
+  <p>Kiran, Theo, Gregor and Christina</p>
+
+  <p><strong>Don’t Kill Barry</strong>: This game is to help solve the issue of energy overuse, which leads to climate change. The game was written in Python and the aim was, by controlling household items, to reduce the energy usage and keep the penguin (Barry) alive for as long as possible.</p>
+
+  <p><a href="https://github.com/prewired/summerhack2017-projects/tree/master/dont-kill-barry" class="btn btn--large btn--info">Project code</a></p>
+</div>
+
+<div class="block">
+  <h1 id="team-red-hat-hackers">Team Red Hat Hackers</h1>
+
+  <p>Andrew, Torin and Marcus</p>
+
+  <p><strong>Eco Pong</strong>: This is  an app that engages primary-aged children with the idea of saving energy. It uses the real-time energy data from schools to rank schools each week, from most efficient to least efficient. This ranking is used in a weekly inter-school Pong tournament to give advantages to the schools that are more efficient (e.g., larger paddle, faster moving speed). The idea is to demonstrate the effects of inefficient energy usage in a form that primary pupils would understand and engage with.</p>
+
+  <p><a href="https://github.com/prewired/summerhack2017-projects/tree/master/eco-pong" class="btn btn--large btn--info">Project code</a></p>
+</div>
+
+:ET

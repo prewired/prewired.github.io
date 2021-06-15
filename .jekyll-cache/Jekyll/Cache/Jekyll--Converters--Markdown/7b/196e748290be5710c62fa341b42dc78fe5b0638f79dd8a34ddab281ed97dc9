@@ -1,0 +1,159 @@
+I"<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#project-descriptions" id="markdown-toc-project-descriptions">Project Descriptions</a>    <ul>
+      <li><a href="#the-bugs" id="markdown-toc-the-bugs">The Bugs</a></li>
+      <li><a href="#insert-team-name-here" id="markdown-toc-insert-team-name-here">[INSERT TEAM NAME HERE]</a></li>
+      <li><a href="#next-level" id="markdown-toc-next-level">Next Level</a></li>
+      <li><a href="#pollinator-world" id="markdown-toc-pollinator-world">Pollinator World</a></li>
+      <li><a href="#we-have-idea" id="markdown-toc-we-have-idea">We Have Idea</a></li>
+    </ul>
+  </li>
+  <li><a href="#awards" id="markdown-toc-awards">Awards</a></li>
+  <li><a href="#photos" id="markdown-toc-photos">Photos</a></li>
+  <li><a href="#summer-hack-2019-sponsors" id="markdown-toc-summer-hack-2019-sponsors">Summer Hack 2019 Sponsors</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<p>We had an awesomely good Summer Hack 2019! It took place on July 22nd–26th 2019 at <a href="https://goo.gl/maps/KD9Gru6wjzr">CodeBase</a>, 38 Castle Terrace, Edinburgh.</p>
+
+<p>Five teams created projects during the week — brief descriptions below.</p>
+
+<h1 id="project-descriptions">Project Descriptions</h1>
+
+<div class="block">
+
+  <h2 id="the-bugs">The Bugs</h2>
+
+  <p>Christina, Sarah, Cameron, Cole</p>
+
+  <p><strong>Green Beans</strong>: A game that uses a restaurant cooking scenario to raise awareness about sustainability and show people how they can reduce greenhouse gas emissions in their everyday lives.
+There is also a profit score to make it more realistic and to show how people can protect the environment without damaging their lifestyle.
+It is a click-and-drag game, currently with three different meal options and two different upgrades.</p>
+
+  <p><img src="https://www.prewired.org/assets/images/summerhack2019/bugs.png" alt="" class="align-center" /></p>
+
+  <p><a href="https://www.prewired.org/pdfs/The_Bugs_SH2019.pdf" class="btn btn--large btn--info">Presentation</a></p>
+
+</div>
+
+<div class="block">
+
+  <h2 id="insert-team-name-here">[INSERT TEAM NAME HERE]</h2>
+  <p>Andrew, Gregor, Ardal</p>
+
+  <p><strong>Balance</strong>: A game created with Unity that uses a city management scenario to explore the balance betwwen economic and environmental sustainablity.</p>
+
+  <p><img src="https://www.prewired.org/assets/images/summerhack2019/balance.png" alt="" class="align-center" /></p>
+
+</div>
+
+<div class="block">
+
+  <h2 id="next-level">Next Level</h2>
+
+  <p>Sandy</p>
+
+  <p><strong>Climate Crisis</strong>: A game created with Scratch which tests the user’s environental awareness and increases the level of difficulty in the game accordingly.</p>
+
+  <p><img src="https://www.prewired.org/assets/images/summerhack2019/nextlevel.png" alt="" class="align-center" /></p>
+
+</div>
+
+<div class="block">
+  <h2 id="pollinator-world">Pollinator World</h2>
+
+  <p>Joe, Joseph, Joe</p>
+
+  <p><strong>Pollinator World</strong>: A social media / forum site which awards points to users when they  upload information showing how they have created a wildlife-friendly garden.</p>
+
+  <p><img src="https://www.prewired.org/assets/images/summerhack2019/pollinationworld.png" alt="" class="align-center" /></p>
+
+</div>
+
+<div class="block">
+  <h2 id="we-have-idea">We Have Idea</h2>
+
+  <p>Kenneth, Fraser, Robert</p>
+
+  <p><strong>Air Quality Meter</strong>: An responsive web app that allows the user to determine the air quality in the area around their postcode.</p>
+
+  <p><img src="https://www.prewired.org/assets/images/summerhack2019/airquality-small.png" alt="" class="align-center" /></p>
+
+</div>
+
+<h1 id="awards">Awards</h1>
+
+<ul>
+  <li><strong>First Prize</strong>: We have Idea</li>
+  <li><strong>Second Prize</strong>: The Bugs</li>
+  <li><strong>Third Prize</strong>: [INSERT TEAM NAME HERE]</li>
+</ul>
+
+<h1 id="photos">Photos</h1>
+
+<figure class="third full">
+  
+    
+      <a href="/assets/images/summerhack2019/the-bugs-team.jpg">
+        <img src="/assets/images/summerhack2019/the-bugs-team.jpg" alt="" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/summerhack2019/we-have-idea-team.jpg">
+        <img src="/assets/images/summerhack2019/we-have-idea-team.jpg" alt="" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/summerhack2019/insert-team-name-here-team.jpg">
+        <img src="/assets/images/summerhack2019/insert-team-name-here-team.jpg" alt="" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/summerhack2019/next-level-team.jpg">
+        <img src="/assets/images/summerhack2019/next-level-team.jpg" alt="" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/summerhack2019/group02.jpg">
+        <img src="/assets/images/summerhack2019/group02.jpg" alt="" />
+      </a>
+    
+  
+    
+      <a href="/assets/images/summerhack2019/pollination-team.jpg">
+        <img src="/assets/images/summerhack2019/pollination-team.jpg" alt="" />
+      </a>
+    
+  
+  
+</figure>
+
+<h1 id="summer-hack-2019-sponsors">Summer Hack 2019 Sponsors</h1>
+
+<p>We are grateful to our sponsors, who helped make it all possible. And of course a big thanks to CodeBase for hosting us again.</p>
+
+<div>
+
+  <p><a href="https://bankofscotland.co.uk"><img src="/assets/images/bos-logo.png" alt="" /></a></p>
+
+</div>
+
+<div>
+
+  <p><a href="https://scottishwildlifetrust.org.uk"><img src="/assets/images/swt-logo.png" alt="" /></a></p>
+
+</div>
+<div>
+
+  <p><a href="https://productforge.io"><img src="/assets/images/productforge-logo.png" alt="" /></a></p>
+
+</div>
+:ET

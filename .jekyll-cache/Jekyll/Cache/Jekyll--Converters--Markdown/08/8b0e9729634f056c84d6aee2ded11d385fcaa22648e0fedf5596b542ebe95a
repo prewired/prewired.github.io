@@ -1,24 +1,14 @@
---- 
-layout: single
-title: "Summer Hack 2018"
-permalink: /summerhack2018/
-sidebar:
-  nav: "sh-projects"
-header:
-  image: /assets/images/summerhack2016.jpg
-  #overlay_filter: 0.4
-  #overlay_image: /assets/images/summerhack2016.jpg
-  #overlay_filter: 0.4
-  #cta_label: "Registration coming in July"
-  #cta_url: "https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform"
---- 
-{% include toc %}
-{% include base_path %}
+I"—4<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
 
-Summer Hack 2018 is done and dusted! 
+  </nav>
+</aside>
 
-We have 
-written a [brief overview of the team projects]({{ "/summerhack2018/projects/" | relative_path }}) to keep you amused until next years' awesome Summer Hack. 
+<p>Summer Hack 2018 is done and dusted!</p>
+
+<p>We have 
+written a <a href="/summerhack2018/projects/">brief overview of the team projects</a> to keep you amused until next yearsâ€™ awesome Summer Hack.</p>
 
 <!-- ## Livestream
 
@@ -52,7 +42,6 @@ Details of the schedule are shown below.
 <!-- We still have a limited number of places, so if you want to be involved, sign up now! 
 
 [Register for Summer Hack](https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform){: .btn .btn--info .btn--x-large}{: .text-center} -->
-
 
 <!-- To get more of an idea of what will happen, check out this video of highlights from last year's Summer Hack, kindly produced for us by the awesome team at [Product Forge](https://productforge.io):
 
@@ -480,3 +469,4 @@ Develop a programme that imports your web browsing history for the last week (or
 
 Could/should the programme warn you when you are indulging in your addiction?
  -->
+:ET

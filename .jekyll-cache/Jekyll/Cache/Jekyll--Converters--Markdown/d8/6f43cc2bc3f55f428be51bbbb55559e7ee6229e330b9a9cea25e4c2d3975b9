@@ -1,0 +1,95 @@
+I"`
+<h2 id="introduction">Introduction</h2>
+
+<p>This page contains a bunch of links to useful learning resources. Many of the pages we link to are themselves links to many other sites and tools. We will expand this list and try to make it more useful as we go along. Let us know which bits you find useful (or not), and make suggestions for new things that should be added.</p>
+
+<p class="notice--danger"><strong>Note</strong> Although we are happy to receive suggestions for new resources, as a matter of policy we do not post links to sites which have mainly paid-for content or whose main goal is commercial rather than educational.</p>
+
+<p>We have also produced a <a href="https://www.prewired.org/computingfaq">Programming and Computing FAQ</a> to give you a quick overview.</p>
+
+<h2 id="starting-with-scratch">Starting with Scratch</h2>
+
+<p>Scratch is great way to begin learning to code.  It allows you to make cool programs using a drag-and-drop approach and is designed to be fun!</p>
+
+<ul>
+  <li>Free online book: <a href="https://www.raspberrypi.org/magpi-issues/CC_Book_of_Scratch_v1.pdf">Book of Scratch, vol 1</a></li>
+</ul>
+
+<h2 id="beyond-scratch">Beyond Scratch</h2>
+
+<p>If you&#8217;ve been doing Scratch for a while at home, school or Prewired and want to go further, or you just feel like a challenge, then a good place to start is by learning Python or JavaScript at <a href="https://codecombat.com/">CodeCombat</a>. Or try out any of the links below!</p>
+
+<h2 id="general-coding">General Coding</h2>
+
+<ul>
+  <li>Code Academy: <a href="https://www.codecademy.com">https://www.codecademy.com</a></li>
+  <li>CodeCombat: <a href="https://codecombat.com">https://codecombat.com</a></li>
+  <li>Code.org classes: <a href="https://code.org/">https://code.org/</a></li>
+  <li>Code.org projects: <a href="https://studio.code.org/projects">https://studio.code.org/projects</a></li>
+  <li>Codingame: <a href="https://www.codingame.com">https://www.codingame.com</a></li>
+  <li>Exercism.io: <a href="http://exercism.io/">http://exercism.io/</a></li>
+  <li>CoderDojo Scotland: <a href="http://coderdojoscotland.com/resources">http://coderdojoscotland.com/resources</a></li>
+  <li>Khan Academy Programming: <a href="https://www.khanacademy.org/computing/computer-programming">https://www.khanacademy.org/computing/computer-programming</a></li>
+  <li>Gallery of interesting Jupyter Notebooks: <a href="https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks">https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks</a></li>
+</ul>
+
+<h2 id="beginning-python">Beginning Python</h2>
+
+<p>In addition to the general coding links above, the following page gives an excellent overview of learning resources for newcomers to Python: <a href="https://docs.python-guide.org/intro/learning/">https://docs.python-guide.org/intro/learning/</a></p>
+
+<h2 id="collaboration-tools">Collaboration Tools</h2>
+
+<ul>
+  <li>Git intro: <a href="https://openclassrooms.com/courses/manage-your-code-with-git-and-github">https://openclassrooms.com/courses/manage-your-code-with-git-and-github</a></li>
+  <li>GitHub: <a href="https://github.com/">https://github.com/</a></li>
+  <li>Using GitHub: <a href="https://openclassrooms.com/courses/contribute-to-open-source-on-github">https://openclassrooms.com/courses/contribute-to-open-source-on-github</a></li>
+</ul>
+
+<h2 id="web-development">Web Development</h2>
+
+<ul>
+  <li>HTML/CSS lesson: <a href="https://openclassrooms.com/courses/build-your-website-with-html5-and-css3">https://openclassrooms.com/courses/build-your-website-with-html5-and-css3</a></li>
+  <li>HTML/CSS exercises: <a href="https://www.codecademy.com/learn/learn-html-css">https://www.codecademy.com/learn/learn-html-css</a></li>
+  <li>CSS3 Cheatsheet: <a href="https://websitesetup.org/css3-cheat-sheet/">https://websitesetup.org/css3-cheat-sheet/</a></li>
+  <li>Web editor (CodePen):  <a href="https://codepen.io">https://codepen.io</a></li>
+  <li>Web editor (JSbin):  <a href="http://jsbin.com">http://jsbin.com</a></li>
+</ul>
+
+<h2 id="hardware">Hardware</h2>
+
+<ul>
+  <li>BBC micro:bits: <a href="http://microbit.org/code">http://microbit.org/code</a></li>
+  <li>Adafruit: <a href="https://learn.adafruit.com">https://learn.adafruit.com</a></li>
+  <li>Robot Making Ideas: <a href="https://www.personalrobots.biz/">https://www.personalrobots.biz/</a></li>
+  <li>Hackster.io: <a href="https://www.hackster.io">https://www.hackster.io</a></li>
+</ul>
+
+<h2 id="data">Data</h2>
+
+<ul>
+  <li>School of Data: <a href="https://schoolofdata.org/courses/">https://schoolofdata.org/courses/</a></li>
+  <li>Data Journalism: <a href="http://datadrivenjournalism.net/resources">http://datadrivenjournalism.net/resources</a></li>
+  <li>SQL intro:  <a href="https://www.khanacademy.org/computing/computer-programming/sql">https://www.khanacademy.org/computing/computer-programming/sql</a></li>
+</ul>
+
+<h2 id="visualisation">Visualisation</h2>
+
+<ul>
+  <li>Visualising Data: <a href="http://www.visualisingdata.com">http://www.visualisingdata.com</a></li>
+  <li>D3 Javascript Library: <a href="https://d3js.org">https://d3js.org</a></li>
+  <li>Hitchhikers Guide to D3: <a href="https://medium.com/@enjalot/the-hitchhikers-guide-to-d3-js-a8552174733a">https://medium.com/@enjalot/the-hitchhikers-guide-to-d3-js-a8552174733a</a></li>
+</ul>
+
+<h2 id="machine-learning">Machine Learning</h2>
+
+<ul>
+  <li>Visual intro to ML: <a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/">http://www.r2d3.us/visual-intro-to-machine-learning-part-1/</a></li>
+  <li>Machine Learning for Beginners (Python): <a href="http://pythonforengineers.com/machine-learning-for-complete-beginners/">http://pythonforengineers.com/machine-learning-for-complete-beginners/</a></li>
+</ul>
+
+<h2 id="project-ideas">Project Ideas</h2>
+
+<ul>
+  <li>Make your own <a href="https://www.prewired.org/summerhack2018/tamagotchi.html">Tamagotchi pet using a micro:bit</a></li>
+</ul>
+:EF

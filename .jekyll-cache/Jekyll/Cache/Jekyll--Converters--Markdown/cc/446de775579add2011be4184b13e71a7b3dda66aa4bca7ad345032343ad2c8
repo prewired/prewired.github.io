@@ -1,69 +1,41 @@
---- 
-layout: single
-title: "Summer Hack 2018"
-permalink: /summerhack2018/
-sidebar:
-  nav: "sh-projects"
-header:
-  image: /assets/images/summerhack2016.jpg
-  #overlay_filter: 0.4
-  #overlay_image: /assets/images/summerhack2016.jpg
-  #overlay_filter: 0.4
-  #cta_label: "Registration coming in July"
-  #cta_url: "https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform"
---- 
-{% include toc %}
-{% include base_path %}
+I"�8<!--<aside class="sidebar__right">
+<nav class="toc" markdown="1">
+<header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+*  Auto generated table of contents
+{:toc .toc__menu}
+</nav>
+</aside>-->
 
-Summer Hack 2018 is done and dusted! 
+<p>Summer Hack 2017 is done and dusted!</p>
 
-We have 
-written a [brief overview of the team projects]({{ "/summerhack2018/projects/" | relative_path }}) to keep you amused until next years' awesome Summer Hack. 
+<p>We have written a <a href="https://www.prewired.org/summerhack-projects-2017/">brief overview of the team projects</a> to keep you amused until next years’s awesome Summer Hack.</p>
 
-<!-- ## Livestream
+<h2 id="overview">Overview</h2>
 
-<iframe
-    src="https://player.twitch.tv/?channel=prewired"
-    height="358"
-    width="636"
-    frameborder="0"
-    scrolling="no"
-    allowfullscreen="true">
-</iframe>
+<p>We are excited to announce that we are running <strong>Summer Hack</strong> again this year — a week-long team programming competition for young people of secondary school age.</p>
 
-## Overview
+<p>The Summer Hack will take place from every day 10:00 am to 4:00 pm, August 7th–11th 2017 at <a href="https://goo.gl/maps/KD9Gru6wjzr">CodeBase Events Space</a>, 38 Castle Terrace, Edinburgh EH3 9SJ. Details of the schedule are shown below.</p>
 
-We are excited to announce that we are running **Summer Hack** again this year &mdash; a week-long team programming competition for young people of secondary school age (aged 12 and over).
+<p>We still have a limited number of places, so if you want to be involved, sign up now!</p>
 
-<!-- **Registration**: You can register by filling in the registration form, we will get in touch with more details nearer the time: <a href="https://goo.gl/forms/cwolczUwfViOJMOT2" target="_blank">Registration form</a> 
+<!-- [Register for Summer Hack](https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform){: .btn .btn--info .btn--x-large}{: .text-center} -->
 
-The Summer Hack will take place 10:00 am  &ndash; 4:00 pm every day, July 23rd&ndash;27th 2018 at [CodeBase Events Space](https://goo.gl/maps/KD9Gru6wjzr), 38 Castle Terrace, Edinburgh EH3 9SJ. Details of the schedule will be announced nearer the time. 
+<ul>
+  <li>What is involved? You will be working in a small team, working together on a small project.</li>
+  <li>Will there be prizes? Yes. At the end of the week, each team will give a demo of their project, and prizes will be awarded in various categories.</li>
+  <li>Do you need to bring a laptop? Not necessarily — we can provide one.</li>
+  <li>What about food? We will provide snacks but you will need to bring your own lunch.</li>
+</ul>
 
-* What is involved? You will be working in a small team, collaborating on a small project.
-* Will there be prizes? Yes. At the end of the week, each team will give a demo of their project, and prizes will be awarded in various categories.
-* Do you need to bring a laptop? Not necessarily &mdash; we can provide one.
-* What about food? We will provide snacks but you will need to bring your own lunch.
+<p>To get more of an idea of what will happen, check out this video of highlights from last year’s Summer Hack, kindly produced for us by the awesome team at <a href="https://productforge.io">Product Forge</a>:</p>
 
-**Important**: because you will be working as a member of a team, you must commit to attending every day during the Summer Hack.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K9JfPVBy6jQ" frameborder="0" allowfullscreen=""></iframe>
 
+<hr />
 
-Details of the schedule are shown below. 
+<h2 id="schedule">Schedule</h2>
 
-<!-- We still have a limited number of places, so if you want to be involved, sign up now! 
-
-[Register for Summer Hack](https://docs.google.com/forms/d/e/1FAIpQLSdgyqgtlBbllYQSVio2OHywUDGs6milG7bsPFr4mLYSjGNXBw/viewform){: .btn .btn--info .btn--x-large}{: .text-center} -->
-
-
-<!-- To get more of an idea of what will happen, check out this video of highlights from last year's Summer Hack, kindly produced for us by the awesome team at [Product Forge](https://productforge.io):
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/K9JfPVBy6jQ" frameborder="0" allowfullscreen></iframe>
-
-<hr/> -->
-
-<!--
-## Schedule 
-
-### Monday
+<h3 id="monday">Monday</h3>
 
 <div align="center">
     <table style="width:50%">
@@ -123,8 +95,7 @@ Details of the schedule are shown below.
     </table>
 </div>
 
-
-### Tuesday
+<h3 id="tuesday">Tuesday</h3>
 
 <div align="center">
     <table style="width:50%">
@@ -145,7 +116,7 @@ Details of the schedule are shown below.
                 <td>10:15</td>
                 <td>
                     Daily update
-                    <br/>
+                    <br />
                     <ul>
                         <li>Aims of the day</li>
                         <li>Finalise project plans</li>
@@ -207,8 +178,7 @@ Details of the schedule are shown below.
     </table>
 </div>
 
-
-### Wednesday
+<h3 id="wednesday">Wednesday</h3>
 
 <div align="center">
     <table style="width:50%">
@@ -229,7 +199,7 @@ Details of the schedule are shown below.
                 <td>10:15</td>
                 <td>
                     Daily update
-                    <br/>
+                    <br />
                     <ul>
                         <li>Put aside all thoughts of changing what you want to do and focus on coding!</li>
                         <li>Work well with each other</li>
@@ -290,8 +260,7 @@ Details of the schedule are shown below.
     </table>
 </div>
 
-
-### Thursday
+<h3 id="thursday">Thursday</h3>
 
 <div align="center">
     <table style="width:50%">
@@ -312,7 +281,7 @@ Details of the schedule are shown below.
                 <td>10:15</td>
                 <td>
                     Daily update
-                    <br/>
+                    <br />
                     <ul>
                         <li>Keep coding whilst preparing for a presentation</li>
                     </ul>
@@ -369,7 +338,7 @@ Details of the schedule are shown below.
     </table>
 </div>
 
-### Friday
+<h3 id="friday">Friday</h3>
 
 <div align="center">
     <table style="width:50%">
@@ -390,7 +359,7 @@ Details of the schedule are shown below.
                 <td>10:15</td>
                 <td>
                     Daily update
-                    <br/>
+                    <br />
                     <ul>
                         <li>Tie up loose ends and prepare for final presentations after lunch</li>
                     </ul>
@@ -417,7 +386,7 @@ Details of the schedule are shown below.
             <tr>
                 <td>13:00</td>
                 <td>Presentations
-                <br/>
+                <br />
                     <ul>
                         <li>Each team presents the work they have done during the week</li>
                     </ul>
@@ -442,41 +411,59 @@ Details of the schedule are shown below.
     </table>
 </div>
 
-<hr/>
+<hr />
 
-<br/>
+<p><br /></p>
 
-## Challenges
+<h2 id="challenges">Challenges</h2>
 
-### Cyber Security Challenge (Civic Digits)
+<h3 id="active-coding">Active Coding</h3>
 
-Create a game or an app to help someone who doesn’t know or think about cyber security
+<p>Design a project with a device (e.g., Raspberry Pi, Arduino, <a href="https://www.microbit.co.uk">BBC micro:bit</a>) to help younger children learn programming.</p>
 
-Imagine someone who never really thinks about cyber security and isn’t aware of any threat online. How could you engage them? What would be the most fun, provocative or interesting way to do either of the following?
-* Tell someone something about how to stay safe online
-* Encourage them to find out for themselves.
+<h3 id="chatbot-challenge">Chatbot Challenge</h3>
 
-[Read more...](/summerhack2018/cyber.html)
+<p>Make a <a href="https://en.wikipedia.org/wiki/Chatterbot">chatbot</a>. Talk to a computer, have it say silly things back. You could use the <a href="http://nltk.org/_modules/nltk/chat">NLTK chat library</a> as a starting point.</p>
 
-### micro:bit Tamagotchi Pet (Eagle Labs)
+<h3 id="the-answer">The Answer</h3>
 
-Use a micro:bit to make a Tamagotchi pet &mdash; a pet which:
+<p>Create a programme that will ask people questions (and then do something fun with their answers, such as <a href="https://labs.ideo.com/2014/06/04/painting-with-code/">generative art</a> with <a href="https://www.nodebox.net/code/index.php/Introduction">Nodebox</a>).</p>
 
-* makes a different face when it’s sad, angry or happy
-* tells you it’s hungry
-* needs regular walkies
-* gathers interesting data about its owner and tells its Tamagotchi friends about them
+<h3 id="recycle-me">Recycle Me!</h3>
 
-[Read more...](/summerhack2018/tamagotchi.html)
+<p>Build a web site or mobile app that encourages people to recycle more stuff for <a href="http://www.edinburgh.gov.uk/info/20001/bins_and_recycling">City of Edinburgh Council</a>.</p>
 
-### Robot Airport Assistant (Skyscanner)
+<h3 id="true-grit">True Grit</h3>
 
-Make a Lego robot to guide passengers to different locations in a (mocked-up) airport, help them with their luggage, buy presents to take home, warn when their flight is boarding. Keep a record of who the passengers are and where they are going.
+<p>Build a game that makes it fun to find <a href="http://www.edinburgh.gov.uk/info/20227/gritting_and_salt_bins/">grit bins</a> in Edinburgh, and to check that the location on the Council map is their real location. (You can also use <a href="http://overpass-turbo.eu/s/hJ6">OpenStreetMap</a> to record <a href="http://wiki.openstreetmap.org/wiki/Tag:amenity%3Dgrit_bin">grit bin</a> locations.)</p>
 
+<h3 id="website-upgrade">Website Upgrade</h3>
 
-### Am I Addicted? Web History Analyser
+<p>Work on the Prewired website and learn about <a href="https://daringfireball.net/projects/markdown/">Markdown</a>, CSS, <a href="https://jekyllrb.com">Jekyll</a>, <a href="http://jekyllthemes.org">Jekyll Themes</a>, Git and <a href="https://pages.github.com">GitHub Pages</a>.</p>
 
-Develop a programme that imports your web browsing history for the last week (or month), and figures out what kind of web sites you really like (or even addicted to). 
+<h3 id="give-me-shelter">Give Me Shelter</h3>
 
-Could/should the programme warn you when you are indulging in your addiction?
- -->
+<p>Create an interactive digital adventure about what it’s like to be homeless.</p>
+
+<h3 id="library-games">Library Games</h3>
+
+<p>Create a game that takes place in a library.</p>
+
+<h3 id="swap-your-stuff">Swap your stuff!</h3>
+
+<p>Create an app or website where you can offer clothes, toys, gadgets in exchange for things that other people want to get rid of. (Or donate them to <a href="http://scotland.shelter.org.uk">Shelter</a>.)</p>
+
+<h3 id="digital-play">Digital Play</h3>
+
+<p>Build a game that is suitable for very young children.
+Take into account recent research from the University of Edinburgh about <a href="/assets/exploring_play.pdf">Exploring play and creativity in pre-schoolers’ use of apps</a>.</p>
+
+<h3 id="lego-robots">Lego robots!</h3>
+
+<p>Can your robot do this?</p>
+
+<h3 id="wildcard-">Wildcard *</h3>
+
+<p>Anything else you want to build!  –&gt;</p>
+
+:ET

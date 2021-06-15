@@ -1,0 +1,134 @@
+I"Y<!--![5.js @ Prewired Online](/assets/images/p5strapline.jpg){: .align-center}-->
+
+<h2 id="introduction">Introduction</h2>
+
+<p>We set up Prewired Online to explore ways of running Prewired during a period
+when it is not possible to hold events in CodeBase. Information on the
+sessions that we ran us listed below. However, since attendance levels have
+been low, we have decided to suspend the online sessions for the time being.</p>
+
+<p>If you would be interested in getting updates on the possibility of Prewired
+Online restarting, please get in touch with us by email at <a href="mailto:hello@prewired.org">hello@prewired.org</a>.</p>
+
+<p><!-- We are using the Blackboard Collaborate videoconference platform which enables participants to join the sessions via a web browser (currently, we recommend using Chrome). --></p>
+
+<!-- Make sure you sign up to <a href="https://eepurl.com/dv2dPb" target="_blank">our mailing list</a> to get registration details for Prewired Online. A link for joining the session will be sent out to all registered participants. -->
+
+<!-- Over the coming weeks, we will focus on creating digital art and games with [p5.js](https://p5js.org). We will run two strands in parallel, one for newcomers to coding and another for more experienced programmers.  -->
+
+<div align="center">
+<video width="400" height="400" controls="controls" poster="/assets/images/face-thumbnail.png">
+  <source src="/assets/images/make-a-face.mp4" type="video/mp4" />
+  	 Sorry, your browser doesn't support HTML5 videos.
+</video>
+</div>
+
+<!-- The current structure of the sessions is roughly the following:
+<ul>
+	<li>Introduction to the session</li>
+	<li>Round-up of news and what we've each been doing recently</li>
+	<li>Breakout rooms on using p5.js</li>
+	<li>Review of the session and feedback</li>
+</ul>
+
+
+On the rest of this page, we will list topics and resources for the sessions on week-by-week basis. -->
+
+<h2 style="padding-left: 1em;background: #263238;color: #eeffff;line-height: 1.8;padding-bottom: .25em;">
+Date: 13 May 2020
+</h2>
+
+<p>
+    
+
+	
+
+<h3>Workshop</h3>
+<ul>
+<li>Topic: First Steps in Digital Art, Workshop 1</li>
+<li>Author: Ewan Klein</li>
+<li>Resources:</li>
+<ul>
+
+<li><a href="https://editor.p5js.org">p5.js online editor</a></li>
+
+<li>Dan Schiffman <a href="https://thecodingtrain.com/beginners/p5js/">Code! Programming with p5.js</a>, especially videos 1.1, 1.2, 1.3.</li>
+
+<li><a href="https://editor.p5js.org/prewiredonline/sketches/VGCMHSDAD">Simple shapes sketch</a></li>
+
+<li><a href="https://editor.p5js.org/prewiredonline/sketches/GYSXBi1Kw">Variables and if-else sketch</a></li>
+
+</ul>
+</ul>
+
+<h2 style="padding-left: 1em;background: #263238;color: #eeffff;line-height: 1.8;padding-bottom: .25em;">
+Date: 8 April 2020
+</h2>
+
+
+<h3>Challenge: Eight Queens</h3>
+
+
+
+<img src="https://www.prewired.org/assets/images/chess_board.png" />
+
+<p>
+    
+Pretend that the grid below is a chess board. Your job is to place eight queens on the board in such a way that no queen can capture any other queen. For those who don't play chess, what you need to do is fill in eight of the sixty-four squares below so that no two squares are in line with each other vertically, horizontally, or diagonally. Once you have found a solution, try to write some code that can  tell you how many <i>different</i> possible solutions there are.  As a double bonus, how many of those solutions are unique; that is, not a rotated or flipped version of another solution.
+
+
+	
+
+<h3>Workshop</h3>
+<ul>
+<li>Topic: Classifying personal names</li>
+<li>Author: Jelmer van der Linde</li>
+<li>Resources:</li>
+<ul>
+
+<li>GitHub code repository &mdash; <a href="https://github.com/prewired/workshop-ml-text-processing-names">https://github.com/prewired/workshop-ml-text-processing-names</a></li>
+
+<li><a href="https://mybinder.org/v2/gh/prewired/workshop-ml-text-processing-names/2c688f1b14fe9a57f3861744f64a28abb2a0f77a">Interactive Jupyter Notebook</a></li>
+
+<li>NLTK Book Chapter 6 &mdash; <a href="http://www.nltk.org/book/ch06.html">Learning to Classify Text</a></li>
+
+</ul>
+</ul>
+
+<h2 style="padding-left: 1em;background: #263238;color: #eeffff;line-height: 1.8;padding-bottom: .25em;">
+Date: 1 April 2020
+</h2>
+
+
+<h3>Challenge: Shared Birthday</h3>
+
+
+
+<p>
+    I have a group of 30 friends round for a party. What is the probability at least two of them share a birthday? Write the code so that you can also given an answer for <i>N</i> friends, where <i>N</i> is between 2 and 50.
+
+
+	
+<br />
+	<a href="https://github.com/prewired/online-challenges/blob/master/solutions/birthday.ipynb">Sample solution (Jupyter Notebook)</a>
+</p>
+
+
+<h3>Workshop</h3>
+<ul>
+<li>Topic: Introduction to neural nets and image recognition</li>
+<li>Author: James Raymond</li>
+<li>Resources:</li>
+<ul>
+
+<li><a href="https://isitacat.com">Cat Detector</a></li>
+
+<li><a href="https://teachablemachine.withgoogle.com">Teachable Machine website</a></li>
+
+</ul>
+</ul>
+
+
+
+</p></p>
+:ET
