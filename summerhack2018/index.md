@@ -18,7 +18,7 @@ header:
 Summer Hack 2018 is done and dusted! 
 
 We have 
-written a [brief overview of the team projects]({{ "/summerhack2018/projects/" | relative_path }}) to keep you amused until next years' awesome Summer Hack. 
+written a [brief overview of the team projects]({{ "/summerhack2018/projects/" | relative_path }}) to keep you amused until next year's awesome Summer Hack. 
 
 <!-- ## Livestream
 
