@@ -1,6 +1,6 @@
 # Prewired Website
 
-Code for [http://prewired.org](http://prewired.org).
+Code for [https://prewired.org](https://prewired.org).
 
 Based on [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
 
