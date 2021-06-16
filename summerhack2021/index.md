@@ -5,22 +5,16 @@ permalink: /summerhack2021/
 sidebar:
   nav: "sh-projects"
 header:
-  #image: /assets/images/summerhack2019/group01.jpg
-  overlay_filter: 0.4
   overlay_image: /assets/images/summerhack2019/group01.jpg
   overlay_filter: 0.4
-  #cta_label: "Register for Summer Hack 2020"
-  #cta_url: "https://forms.gle/U42MZZs22h3Yx47Q6"
-toc: true
-toc_label: "On This Page"
-toc_icon: "cog"
+  cta_label: "Visit plusplus.prewired.org"
+  cta_url: "https://plusplus.prewired.org"
 --- 
 {% include base_path %}
 
-## Overview
+As part of Prewired++ we are excited to announce that we are running a new version of our SummerHack, called the **Emporium of Digital Delights**, which runs from the 17th of May to July 2021. It will consist of a series of three Sprints (or hackathons), each of which will last 12 days. You can participate in any one of them, or any two, or all three. After all the Sprints are completed, the Emporium will launch a digital showcase, where you can show off your project to friends 🥳, family 🏠 and the world at large 🌍. 
 
-
-As part of Prewired++ we are excited to announce that we are running a new version of our Summer Hack, called the Long Thin Summer Hack (LTSH) from the start of April to July 2021. We aim to recreate our Summer Hack where young people will work together in teams over a longer duration to develop a digital project of their own design. Keep an eye out for more details following soon!
+To find out more, visit: [plusplus.prewired.org](https://plusplus.prewired.org/)
 
 <!--
 **Register now**: Please complete this <a href="https://forms.gle/DUJaXg5r442RRPRJ8" target="_blank">registration form</a>  and we will get back to you soon.
