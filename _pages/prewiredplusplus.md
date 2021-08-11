@@ -9,9 +9,8 @@ permalink: "/prewiredplusplus/"
 Pre-Covid, Prewired operated on a face-to-face basis with close interaction between young people and volunteers within a safe space. Thanks to funding from the Creative Informatics Resident Entrepreneur programme, we are now embarking on the challenge of recreating that experience in an online environment. We call this new initiative <b>Prewired++</b>.
 ![Prewired++ Logo](/assets/logos/logo-plusplus-mono-small.png){: .align-center}
 
-A key part of Prewired++ will be new version of our Summer Hack, called the Emporium of Digital Delights,
-#[Long Thin Summer Hack]({{ "/summerhack2021/" | absolute_url }})
-from mid-May through to July this year. 
+A key part of Prewired++ will be new version of our Summer Hack, called the [Emporium of Digital Delights](https://plusplus.prewired.org)
+from mid-May through to July 2021. 
 
 # Goals of Prewired++
 
