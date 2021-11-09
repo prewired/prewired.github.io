@@ -27,19 +27,17 @@ independent developers; and by staff from local tech companies. <!-- Our list of
 
 Prewired became a Scottish Charity (SC047780) in September 2017. The Board of Trustees currently has the following members:
 
-| Name                  | Position  |
-|-----------------------|-----------|
-| Ewan Klein            | Chairperson |
-| Yula Syahrial         | Treasurer |
-| Rikki Guy             | Secretary   |
-| Freda O'Byrne         | Trustee   |
-| Helen Williams        | Trustee   |
-| Oliver Littlejohn     | Trustee   |
-| Cameron Gray          | Trustee   |
-| Kelly Gardner          | Trustee   |
-
-
-
+| Name                  | Position        |
+|-----------------------|-----------------|
+| Benjamin Milne        | Chairperson     |
+| Yula Syahrial         | Treasurer       |
+| Claire Wheelan        | Secretary       |
+| Charlotte Holland     | Social Media    |
+| Helen Williams        | Trustee         |
+| Cameron Gray          | Trustee         |
+| Kelly Gardner         | Trustee         |
+| Athina Frantzana      | Trustee         |
+| Jelmer van der Linde  | Trustee         |
 
 ## Brief History
 
