@@ -38,6 +38,7 @@ Prewired became a Scottish Charity (SC047780) in September 2017. The Board of Tr
 | Kelly Gardner         | Trustee         |
 | Athina Frantzana      | Trustee         |
 | Jelmer van der Linde  | Trustee         |
+| Chuks Ododo           | Trustee         |
 
 ## Brief History
 
