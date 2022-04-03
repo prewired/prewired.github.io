@@ -1,9 +1,9 @@
 ---
 layout: single-meta
 title: "Prewired Child Protection Policy"
-date: '24 April 2019'
-last_modified_at: '24 April 2019'
-version: 2.2
+date: '03 April 2021'
+last_modified_at: '03 April 2021'
+version: 2.3
 meta: 'We are indebted to the <a href="https://www.nspcc.org.uk">NSPCC</a> for their <a href="https://learning.nspcc.org.uk/media/1601/safeguarding-policy-statement-example.pdf">example safeguarding policy</a>, which we have used as a basis for this policy statement.'
 permalink: /child-protection-policy/
 toc: true
@@ -81,15 +81,4 @@ This policy has been drawn up on the basis of legislation, policy and guidance t
 ## Contact details 
 
 Prewired child protection officer   
-Freda O’Byrne:  cpo [AT] prewired.org
-
-
-
-
-<!-- <hr/>
-We are indebted to the [NSPCC](https://www.nspcc.org.uk) for their [example safeguarding policy](https://learning.nspcc.org.uk/media/1601/safeguarding-policy-statement-example.pdf), which we have used as a basis for this policy statement.
-
-We are committed to reviewing our policy and good practice annually. 
-
-*Version 2.2*  
-*Last updated 24 April 2019* -->
+Athina Frantzana: cpo [AT] prewired.org
