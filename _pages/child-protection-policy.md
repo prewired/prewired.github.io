@@ -16,8 +16,8 @@ toc_icon: "cog"
 The goals of Prewired SCIO are:
 
 * to encourage young people to become active participants in creatively using and building digital technologies;
-* to provide a supportive environment in which young people can work collaboratively with their peers and with more experienced mentors to develop their digital skills and undertake individual and team projects; and
-* to support mentors in building on their existing strengths and in acquiring new skills by working with young people, and to support them in demonstrating how they have developed personally and how they have made a positive impact.
+* to provide a supportive environment in which young people can work collaboratively with their peers and with more experienced volunteers to develop their digital skills and undertake individual and team projects; and
+* to support volunteers in building on their existing strengths and in acquiring new skills by working with young people, and to support them in demonstrating how they have developed personally and how they have made a positive impact.
 
 The purpose of this policy statement is: 
 
@@ -58,25 +58,25 @@ This policy has been drawn up on the basis of legislation, policy and guidance t
 
 ## Supervision
 * A Duty Mentor is designated for each weekly session. The Duty Mentor is responsible for the safe running of the session.
-* Prewired is attended by mentors from local universities, companies and community groups. All mentors are required to obtain PVG Disclosure Scotland.
-* Prewired session activities are normally confined to a single open space and no child will be unsupervised at any time. In instances where more than one space is used, at least two full mentors will be present in each space at all times.
+* Prewired is attended by volunteers from local universities, companies and community groups. All volunteers are required to obtain PVG Disclosure Scotland.
+* Prewired session activities are normally confined to a single open space and no child will be unsupervised at any time. In instances where more than one space is used, at least two full volunteers will be present in each space at all times.
 * Parents must accompany children under 11 years old.
-* New attendees are met and welcomed by a mentor who will help them to get started on a project that interests them.
-* All attendees are made aware of how mentors may be identified and who is the Duty Mentor.
+* New attendees are met and welcomed by a volunteer who will help them to get started on a project that interests them.
+* All attendees are made aware of how volunteers may be identified and who is the Duty Mentor.
 * Where children are not accompanied by a parent, any problems not involving coding (e.g., being unwell or upset) are dealt with by the Duty Mentor.
-* Mentors, participants or parents noticing anything wrong or with any concerns should report them to the Duty Mentor who will take appropriate action.
-* Mentors will, as far as possible, monitor the activities of children working independently to ensure they are not accessing inappropriate online content.
-* At least two full mentors will remain at the venue until all children have been collected by guardians or left to go home at the end of the session.
+* Volunteers, participants or parents noticing anything wrong or with any concerns should report them to the Duty Mentor who will take appropriate action.
+* Volunteers will, as far as possible, monitor the activities of children working independently to ensure they are not accessing inappropriate online content.
+* At least two full volunteers will remain at the venue until all children have been collected by guardians or left to go home at the end of the session.
 
-## Mentors
+## Volunteers
 * Interested volunteers must contact Prewired organisers before attending their first session and introduce themselves to the Duty Mentor on arrival.
-* Interested volunteers must be registered in our database and must obtain PVG Disclosure to take on the role of full mentor.
-* Mentors must be identifiable to parents and children by wearing a mentor lanyard.
+* Interested volunteers must be registered in our database and must obtain PVG Disclosure to take on the role of full volunteer.
+* Volunteers must be identifiable to parents and children by wearing a volunteer lanyard.
 
 ## Online Safety Policy
 
-* The Prewired Facebook page is only open to participants, parents and active mentors and is moderated by a member of the Prewired management committee. 
-* Mentors are instructed not to communicate with participants in private email messages or any other form of private medium, and must only use the public/moderated communications mechanisms above.
+* The Prewired Facebook page is only open to participants, parents and active volunteers and is moderated by a member of the Prewired management committee. 
+* Volunteers are instructed not to communicate with participants in private email messages or any other form of private medium, and must only use the public/moderated communications mechanisms above.
 
 ## Contact details 
 

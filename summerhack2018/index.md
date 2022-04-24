@@ -342,7 +342,7 @@ Details of the schedule are shown below.
             </tr>
             <tr>
                 <td>13:30</td>
-                <td>Slots for each team to individually rehearse their presentation in the Boardroom with mentor feedback and guidance
+                <td>Slots for each team to individually rehearse their presentation in the Boardroom with volunteer feedback and guidance
                 </td>
             </tr>
             <tr>

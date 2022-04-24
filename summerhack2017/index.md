@@ -317,7 +317,7 @@ To get more of an idea of what will happen, check out this video of highlights f
             </tr>
             <tr>
                 <td>13:30</td>
-                <td>Slots for each team to individually rehearse their presentation in the Boardroom with mentor feedback and guidance
+                <td>Slots for each team to individually rehearse their presentation in the Boardroom with volunteer feedback and guidance
                 </td>
             </tr>
             <tr>

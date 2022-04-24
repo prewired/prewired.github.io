@@ -41,7 +41,7 @@ The following table explains the types of data we collect and the legal basis, u
 		<td>Legitimate interests &mdash; it is necessary for us to read and store your message so that we can respond in the way that you would expect.</td>
 	</tr>
 	<tr>
-		<td>Registering to work as a mentor for one or more of our events</td>
+		<td>Registering to work as a volunteer for one or more of our events</td>
 		<td>Name, email, areas of expertise, availability, PVG Disclosure status and documentation</td>
 		<td>Consent &mdash;  you have given your active consent. </td>
 	</tr>
@@ -71,7 +71,7 @@ For example, we may use your personal information to:
 
 * reply to enquiries you send to us;
 * ensure that we are able to meet your needs as an attendee in one of our events;
-* include you as a mentor in regular or one-off events; 
+* include you as a volunteer in regular or one-off events; 
 * where you have specifically agreed to this, send you communications by email relating to our work which we think may be of interest to you.
 
 We do not carry out any automated processing of your personal data except to collect aggregated statistics about our events for the purposes of reporting to sponsors and other interested bodies.

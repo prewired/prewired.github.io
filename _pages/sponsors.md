@@ -29,7 +29,7 @@ For certain special events and hackathons we'd like to provide light lunch daily
 
 ## Expertise
 
-If you're a company with employees to spare on Wednesday evenings, send them along to CodeBase as [mentors]({{ base_path }}/mentors/)!
+If you're a company with employees to spare on Wednesday evenings, send them along to CodeBase as [volunteers]({{ base_path }}/volunteers/)!
 
 <!-- ## Transport
 
@@ -45,9 +45,9 @@ Sometimes we hold special hackathons, usually in the school holidays, and we wan
 
 ## Sponsorship policy
 
-Prewired is an independent, non-political organisation. Views of organisers, mentors and participants are our own and will be neither directed nor constrained by our sponsors. Our sponsors do not and will not influence how Prewired runs as an organisation and have no hand in its management.
+Prewired is an independent, non-political organisation. Views of organisers, volunteers and participants are our own and will be neither directed nor constrained by our sponsors. Our sponsors do not and will not influence how Prewired runs as an organisation and have no hand in its management.
 
-We are not under any obligation to endorse any of the products or services of our sponsors. Where our mentors make recommendations, they are based on merit alone.
+We are not under any obligation to endorse any of the products or services of our sponsors. Where our volunteers make recommendations, they are based on merit alone.
 
 Since we wish to encourage our participants to think independently, we do not support advertising targeted at them. We refrain from asking for, or handing out, branded merchandise or marketing material from any of our sponsors, except where products are of particular use or benefit to participants. We hope that sponsors choose to support us for the benefit of the participants and the positive impact our activities may have on their future, rather than for personal, organisational or commercial gain.
 

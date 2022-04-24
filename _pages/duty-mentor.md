@@ -45,5 +45,5 @@ The Duty Mentor for a given session should be agreed at least one week in advanc
 ### End of the Session
 
 1. At the end of the session, thank attendees and parents as they're leaving and remind them to come back next week!
-2. If there any young people who are still waiting to be collected by their guardian at the end of the session, make sure that at least two volunteers (including one full Mentor) remain at the venue until they have been collected.
+2. If there any young people who are still waiting to be collected by their guardian at the end of the session, make sure that at least two volunteers (including the Duty Mentor) remain at the venue until they have been collected.
 3. Take any feedback from attendees, parents and volunteers to report back to Board.

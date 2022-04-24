@@ -12,7 +12,7 @@ If you would like to attend Prewired, please:
 4. Turn up!
     * Check yourself in on the registration list using the tablet at the front desk &mdash; someone at the desk will help you if necessary.
     * If you have never coded before, or have but don't know what to do, no problem! Introduce yourself to the Duty Mentor (who should be easy to spot) when you arrive, and they'll help you to get started.
-    * If you're already working on a coding project (maybe you're building your own website), or learning a topic by yourself and are happy to carry on with that, cool beans. Make yourself at home and ask any of our mentors if you need help (they'll be wearing lanyards), or you can put your hand up and someone will spot you).
+    * If you're already working on a coding project (maybe you're building your own website), or learning a topic by yourself and are happy to carry on with that, cool beans. Make yourself at home and ask any of our volunteers if you need help (they'll be wearing lanyards), or you can put your hand up and someone will spot you).
 
 ### Membership Form
 

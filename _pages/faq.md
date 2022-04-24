@@ -34,7 +34,7 @@ Yes. See [information for parents]({{ base_path }}/parents/).
 
 ## How can I help?
 
-Consider becoming a [mentor]({{ base_path }}/mentors/) or a [sponsor]({{ base_path }}/sponsors/).
+Consider becoming a [volunteer]({{ base_path }}/volunteers/) or a [sponsor]({{ base_path }}/sponsors/).
 
 <!-- ## How is Prewired organised / structured?
 

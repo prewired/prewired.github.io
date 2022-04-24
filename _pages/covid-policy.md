@@ -14,7 +14,7 @@ toc_icon: "cog"
 
 To make sure that Prewired remains a safe place for everyone, we ask that you follow our Covid Policy.
 
-* All attendees must wear a mask whilst inside the building, unless medically exempt. Our mentors will be doing the same.
+* All attendees must wear a mask whilst inside the building, unless medically exempt. Our volunteers will be doing the same.
 * Be respectful of other people and stay socially distanced whenever possible.
 * We don’t require proof of a negative test result, however we strongly encourage all attendees to test regularly, especially before each session.
 * If you have coronavirus, experience any symptoms, or are feeling unwell, please stay at home.

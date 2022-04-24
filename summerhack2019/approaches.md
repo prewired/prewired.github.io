@@ -84,7 +84,7 @@ We have particulate monitor with the same [sensors as this one](https://www.aira
 
 ## 5. Make Your Own Challenge
 
-Don't like any of the suggestions above? Feel free to make up your own challenge, as long as at addresses on of  the three environmental problems that we have highlighted. And make sure you discuss your idea with one of the mentors before getting too committed to it.
+Don't like any of the suggestions above? Feel free to make up your own challenge, as long as at addresses on of  the three environmental problems that we have highlighted. And make sure you discuss your idea with one of the volunteers before getting too committed to it.
 
 
 

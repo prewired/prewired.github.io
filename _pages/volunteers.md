@@ -65,7 +65,7 @@ You’ll also be asked to fill out your details for the Volunteers’ Register s
 
 Sometimes it can be hard to get stuck in, but we have some suggestions below in [Volunteer Guidelines](#volunteer-guidelines).
 
-Please ask for an invite to the `#volunteers` channel on the Slack Prewired team &mdash; this is where we post announcements, etc. that might interest volunteers and occasional reminders about sessions. You can also use this channel to chat to other volunteers and ask questions.
+Please ask for an invite to the `#mentors` channel on the Slack Prewired team &mdash; this is where we post announcements, etc. that might interest volunteers and occasional reminders about sessions. You can also use this channel to chat to other volunteers and ask questions.
 
 Simple snacks are provided at each session. We do not provide, and do not allow fizzy/sugary drinks, energy drinks, alcohol or sweets. We ask that the CodeBase vending machine is not used by volunteers or attendees during Prewired sessions and please note that volunteers must not share food with attendees which has not been provided by Prewired.
 

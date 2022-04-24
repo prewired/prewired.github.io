@@ -10,7 +10,7 @@ header:
 
 ## Do I need to come with my child?
 
-**If your child is younger than 11**: Yes, you must accompany your child throughout every Prewired session that they attend. If your child is very young and needs lots of support, you should be prepared to sit with them to help. You can of course ask a mentor for technical advice.
+**If your child is younger than 11**: Yes, you must accompany your child throughout every Prewired session that they attend. If your child is very young and needs lots of support, you should be prepared to sit with them to help. You can of course ask a volunteer for technical advice.
 
 **If your child is 11 or older**: It is up to you. You are welcome to accompany your child if you think this would benefit them. They will otherwise be fully supervised at all times by volunteers from local community groups, companies and universities.
 
@@ -24,7 +24,7 @@ We have no lower limit on age or ability, so long as your child is enthusiastic 
 
 Prewired provides an unstructured but **supportive environment** for under 19s to explore and learn about computer programming and related topics.
 
-We have **mentors** from university and industry with a wide variety of skills who volunteer their time because they love to teach young people about computing. 
+We have **volunteers** from university and industry with a wide variety of skills who volunteer their time because they love to teach young people about computing. 
 
 Occasionally we run structured **workshops** to introduce attendees to a new topic they may not have considered before. Over the summer we hold **hackathons**, where the kids are challenged to meet specific goals in a set amount of time; this is a really fun learning experience, with concrete outcomes. In the past, we have formed teams to take part in national **events** like [the First Lego League](http://www.firstlegoleague.org/) or [Young Rewired State](https://yrs.io).
 
