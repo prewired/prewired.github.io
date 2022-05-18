@@ -10,7 +10,7 @@ toc_icon: "cog"
 ---
 We're always looking for more helpers! 
 
-Helping young people learn to code is hugely rewarding. If you can offer your time for two hours on a Wednesday evening, we’d love to hear from you! Prewired sessions take place weekly on Wednesdays from 5.30 pm to 7.30 pm at CodeBase, 38 Castle St, Edinburgh, EH3 9DZ. We run them pretty much throughout the year, with some breaks during Christmas and Easter. We also hold an annual Summer Hack &mdash; a one-week team-based hackathon. 
+Helping young people learn to code is hugely rewarding. If you can offer your time for two hours on a Wednesday evening, we’d love to hear from you! Prewired sessions take place weekly on Wednesdays from 5.30 pm to 7.30 pm at CodeBase, 37A Castle St, Edinburgh, EH3 9DZ. We run them pretty much throughout the year, with some breaks during Christmas and Easter. We also hold an annual Summer Hack &mdash; a one-week team-based hackathon. 
 
 Please drop us an email before showing up, so we know who to expect &mdash; hello [at] prewired [dot] org.
 

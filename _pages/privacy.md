@@ -13,7 +13,7 @@ toc_icon: "cog"
 ## Our Contact Details
 
 Prewired SCIO   
-38 Castle Terrace   
+37A Castle Terrace   
 Edinburgh EH3 9DZ   
 
 hello [AT] prewired.org
