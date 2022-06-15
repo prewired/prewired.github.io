@@ -25,12 +25,11 @@ Scratch is great way to begin learning to code.  It allows you to make cool prog
 
 ## Beyond Scratch
 
-If you've been doing Scratch for a while at home, school or Prewired and want to go further, or you just feel like a challenge, then a good place to start is by learning Python or JavaScript at [CodeCombat](https://codecombat.com/). Or try out any of the links below!
+If you've been doing Scratch for a while at home, school or Prewired and want to go further, or you just feel like a challenge, then a good place to start is by learning Python or JavaScript - Try out any of the links below!
 
 ## General Coding
 
 * Code Academy: <https://www.codecademy.com>
-* CodeCombat: <https://codecombat.com>
 * Code.org classes: <https://code.org/>
 * Code.org projects: <https://studio.code.org/projects>
 * Codingame: <https://www.codingame.com>
