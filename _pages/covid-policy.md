@@ -12,7 +12,7 @@ toc_icon: "cog"
 
 ## Covid Policy 2022
 
-To make sure that Prewired remains a safe place for everyone, we ask that you follow our
+To make sure that Prewired remains a safe place for everyone, we ask that you follow our Covid Policy.
 
 * Be respectful of other people and stay socially distanced whenever possible.
 * We don’t require proof of a negative test result, however we strongly encourage all attendees to test regularly, especially before each session.
