@@ -34,5 +34,5 @@ Volunteers can ask for an invite to the `#volunteers` channel on the [Slack](htt
 
 If you are unhappy about any issue to do with Prewired and wish to discuss this in confidence, you can send email to either of the following people:
 
-* Ewan Klein: ewan [AT] prewired.org
+* Benjamin Milne: ben [AT] prewired.org
 * Helen Williams: helen [AT] prewired.org

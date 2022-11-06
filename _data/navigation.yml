@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "P++"
-    url: /prewiredplusplus/
   - title: "Registration"
     url: /registration/
  # - title: "Prewired Online"
@@ -12,8 +10,6 @@ main:
     url: /volunteers/
   - title: "Resources"
     url: /resources/
-  - title: "SummerHack"
-    url: /summerhack2021/
   - title: "Contact"
     url: /contact/
   - title: "Privacy"
