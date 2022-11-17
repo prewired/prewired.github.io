@@ -7,14 +7,10 @@ sidebar:
 header:
   overlay_image: /assets/images/summerhack2019/group01.jpg
   overlay_filter: 0.4
-  cta_label: "Visit plusplus.prewired.org"
-  cta_url: "https://plusplus.prewired.org"
 --- 
 {% include base_path %}
 
-As part of Prewired++ we are excited to announce that we are running a new version of our SummerHack, called the **Emporium of Digital Delights**, which runs from the 17th of May to July 2021. It will consist of a series of three Sprints (or hackathons), each of which will last 12 days. You can participate in any one of them, or any two, or all three. After all the Sprints are completed, the Emporium will launch a digital showcase, where you can show off your project to friends 🥳, family 🏠 and the world at large 🌍. 
-
-To find out more, visit: [plusplus.prewired.org](https://plusplus.prewired.org/)
+As part of Prewired++ we ran a new version of our SummerHack, called the **Emporium of Digital Delights**, which ran from the 17th of May to July 2021. It consisted of a series of three Sprints (or hackathons), each of which lasted 12 days. You could participate in any one of them, or any two, or all three. After all the Sprints were completed, the Emporium will launch a digital showcase, which can be browsed here: [eodd.prewired.org](https://eodd.prewired.org/)!
 
 <!--
 **Register now**: Please complete this <a href="https://forms.gle/DUJaXg5r442RRPRJ8" target="_blank">registration form</a>  and we will get back to you soon.
