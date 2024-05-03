@@ -1,4 +1,7 @@
 ---
+import "@fontsource-variable/open-sans";
+import "@fontsource-variable/open-sans/wght-italic.css";
+
 interface Props {
 	title: string;
 }
@@ -20,8 +23,6 @@ const { title } = Astro.props;
 		<slot />
 	</body>
 </html>
+
 <style is:global>
-	html {
-		font-family: system-ui, sans-serif;
-	}
 </style>

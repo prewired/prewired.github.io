@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import colors from "tailwindcss/colors";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 
 const config: Config = {
@@ -54,6 +55,11 @@ const config: Config = {
 				900: "#8F0C4A",
 				950: "#500124",
 			}			
+		},
+		extend: {
+			fontFamily: {
+				sans: ["Open Sans Variable", ...defaultTheme.fontFamily.sans]
+			}
 		}
 	},
 	plugins: [],
