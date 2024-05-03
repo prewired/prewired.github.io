@@ -1,12 +1,25 @@
 ---
+import { Image } from "astro:assets";
 import "@fontsource-variable/open-sans";
 import "@fontsource-variable/open-sans/wght-italic.css";
+import prewiredLogoText from "@assets/prewired-logo-text.png";
+
 
 interface Props {
 	title: string;
 }
 
 const { title } = Astro.props;
+
+const navItems = [
+	{ href: "/news", title: "News" },
+	{ href: "/attending", title: "Attending" },
+	{ href: "/resources", title: "Resources" },
+	{ href: "/volunteering", title: "Volunteering" },
+	{ href: "/support", title: "Support us" },
+	{ href: "/about", title: "About" },
+	{ href: "/contact", title: "Contact" },
+];
 ---
 
 <!DOCTYPE html>
@@ -20,20 +33,33 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<header>
-
+		<header class="w-full max-w-[1200px] mx-auto">
+			<nav class="mb-4 py-4 w-full flex items-center border-b border-b-black">
+				<a href="/" class="mr-auto">
+					<Image
+						src={prewiredLogoText}
+						alt="The Prewired logo"
+						class="w-48"
+					/>
+				</a>
+				{ navItems.map(({ href, title }) => (
+					<a href={href} class="mr-8 text-lg hover:text-purple-600">
+						{ title }
+					</a>
+				))}
+			</nav>
 		</header>
-		<main>
+		<main class="min-h-[80vh]">
 			<slot />
 		</main>
-		<footer>
-			
+		<footer class="w-full h-60 bg-purple-600">
+
 		</footer>
 	</body>
 </html>
 
 <style is:global>
 	::selection {
-		@apply bg-blue-600 text-white;
+		@apply bg-blue-700 text-white;
 	}
 </style>
