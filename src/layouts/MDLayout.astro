@@ -11,6 +11,6 @@ interface Props {
 const { frontmatter } = Astro.props;
 ---
 
-<BaseLayout title={`Prewired | ${frontmatter.title}`}>
+<BaseLayout title={frontmatter.title}>
 	<h1 class="">{frontmatter.title}</h1>
 </BaseLayout>

@@ -4,7 +4,6 @@ import "@fontsource-variable/open-sans";
 import "@fontsource-variable/open-sans/wght-italic.css";
 import prewiredLogoText from "@assets/prewired-logo-text.png";
 
-
 interface Props {
 	title: string;
 }
@@ -30,7 +29,7 @@ const navItems = [
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<!--<meta name="description" content="Astro description" />-->
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{`Prewired | ${title}`}</title>
 	</head>
 	<body>
 		<header class="w-full max-w-[1200px] mx-auto">
@@ -43,7 +42,7 @@ const navItems = [
 					/>
 				</a>
 				{ navItems.map(({ href, title }) => (
-					<a href={href} class="mr-8 text-lg hover:text-purple-600">
+					<a href={href} class={`mr-8 text-lg ${href === Astro.url.pathname ? "font-bold" : "hover:text-purple-600"}`}>
 						{ title }
 					</a>
 				))}
