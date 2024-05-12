@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+
+export async function getStaticPaths() {
+	const allPosts = await getCollection("posts");
+	const uniqueTags = [
+		...new Set(allPosts.map(post => post.data.tags).flat()),
+	];
+
+	return uniqueTags.map(tag => {
+		const filteredPosts = allPosts.filter(post =>
+			post.data.tags.includes(tag),
+		);
+		return {
+			params: { tag },
+			props: { posts: filteredPosts },
+		};
+	});
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+---
+
+<PageLayout title={tag}>
+	<p>Posts tagged with {tag}</p>
+	<ul>
+		{ posts.map(post => (
+			<li>
+				<a href={`/news/${post.slug}`}>{post.data.title}</a>
+			</li>
+		)) }
+	</ul>
+</PageLayout>

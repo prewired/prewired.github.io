@@ -1,0 +1,19 @@
+---
+import PageLayout from "./PageLayout.astro";
+
+interface Props {
+	frontmatter: {
+		title: string;
+		date: Date;
+		author: string;
+		excerpt: string;
+		tags: string[];
+	};
+}
+
+const { frontmatter } = Astro.props;
+---
+
+<PageLayout title={frontmatter.title}>
+	<h1 class="">{frontmatter.title}</h1>
+</PageLayout>
