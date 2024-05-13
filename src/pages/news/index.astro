@@ -1,19 +1,129 @@
 ---
 import { getCollection } from "astro:content";
-import BaseLayout from "@layouts/BaseLayout.astro";
+import PageLayout from "@layouts/PageLayout.astro";
+import { getLinkPreview } from "link-preview-js";
 
+
+/****  GET LOCAL BLOG POSTS ****/
 const posts = await getCollection("posts");
+
+
+/****  GET EXTERNAL POSTS ****/
+type ExternalPost = {
+	url: string;
+	date: Date;
+};
+
+type ExternalPostPreview = {
+    url: string;
+    title: string;
+    siteName?: string;
+    description?: string;
+    mediaType: string;
+    contentType?: string;
+    images: string[];
+    videos: {
+        url?: string;
+        secureUrl?: string | null;
+        type?: string | null;
+        width?: string;
+        height?: string;
+    }[];
+    favicons: string[];
+};
+
+// Redirects are set to error so links that don't work anymore are commented out
+// This is the safest but can be changed
+const externalPosts: ExternalPost[] = [
+	//{ url: "https://medium.com/kinandcartacreated/summer-tech-make-a-thon-dedaa474d3eb", date: new Date("2023-10-09")},
+	//{ url: "https://digit.fyi/prewired-receives-funding-to-bring-coding-club-online/" },
+	{ url: "https://scottishbusinessnews.net/prewired-secures-funding-from-creative-informatics-to-take-one-of-scotlands-longest-running-coding-clubs-for-young-people-online/", date: new Date("2021-01-20") },
+	//{ url: "https://www.ed.ac.uk/informatics/news-events/stories/2021/prewired-secures-funding-coding-club-online" },
+	//{ url: "https://www.scotsman.com/business/nick-freer-comment-start-ups-hit-all-right-notes-night-193754", date: new Date("2018-12-09") },
+	{ url: "https://www.insider.co.uk/news/scottish-tech-startup-awards-finalists-13540999", date: new Date("2018-11-06") },
+	{ url: "https://dailybusinessgroup.co.uk/2018/11/scottish-tech-startups-in-battle-for-honours/", date: new Date("2018-11-06") },
+	{ url: "https://www.thisiscodebase.com/blog/2018/8/1/summerhack2018-roundup", date: new Date("2018-08-02") },
+	//{ url: "https://futurescot.com/hey-teacher-leave-kids-alone-children-better-off-left-learn-coding/" },
+	{ url: "https://blog.scottlogic.com/2016/08/22/building-the-next-generation-of-technology-professionals.html", date: new Date("2016-08-22") },
+	{ url: "https://www.thisiscodebase.com/blog/2015/7/28/prewired-at-codebase-festival-of-code-2015", date: new Date("2015-07-28") },
+	{ url: "https://tfn.scot/features/chief-encounters-its-not-all-play-and-now-work-for-freda-obyrne", date: new Date("2015-06-25") }
+];
+
+// Create a list of link preview promises
+const externalPostPromises = externalPosts.map(post => getLinkPreview(post.url));
+
+// Resolve all link preview promises in parallel
+// We cast it as ExternalPostPreview (a subset of the actual type in link-preview-js) as we only preview web pages, not different media types, and this avoids having to ignore TypeScript
+const externalPostPreviews = await Promise.all(externalPostPromises) as ExternalPostPreview[];
+
+
+/****  COMBINE DIFFERENT POST TYPES INTO ONE FEED ****/
+type FeedItem = {
+	id: string;
+	date: Date;
+	type: "local" | "external";
+};
+
+const feed: FeedItem[] = [];
+posts.forEach(post => feed.push({ id: post.id, date: post.data.date, type: "local" }));
+externalPosts.forEach(post => feed.push({ id: post.url, date: post.date, type: "external" }));
+
+// Sort by date, descending
+feed.sort((a, b) => b.date.valueOf() - a.date.valueOf());
+
+// Break up by year
+const years: number[] = [];
+feed.forEach(post => { if(!years.includes(post.date.getFullYear())) years.push(post.date.getFullYear()) });
+
+const feedByYears = years.map(year => { return { year, posts: feed.filter(post => post.date.getFullYear() === year) } });
 ---
 
-<BaseLayout title="News and updates">
-	<h1 class="">Hello there!</h1>
-	<ul>
-		{ posts.map(post => (
-			<li>
-				<a href={`/news/${post.slug}`}>
-					{ post.data.title }
-				</a>
-			</li>
-		))}
-	</ul>
-</BaseLayout>
+<PageLayout title="News and updates">
+	<h1 class="">News and updates</h1>
+	{ feedByYears.map(feedYear => (
+		<div>
+			<h2>{ feedYear.year }</h2>
+			{ feedYear.posts.map(feedItem => {
+				if(feedItem.type === "local") {
+					const post = posts.find(post => post.id === feedItem.id);
+					if(!post) return;
+					else return (
+						<div class="flex mb-4">
+							<div class="w-60 h-40 shrink-0 mr-8 bg-gray-200">
+							</div>
+							<div>
+								<h3 class="font-bold">
+									{ post.data.title }
+								</h3>
+								<p>
+									{ post.data.excerpt }
+								</p>
+							</div>
+						</div>
+					);
+				}
+				else {
+					const post = externalPostPreviews.find(post => post.url === feedItem.id);
+					if(!post) return;
+					else return (
+						<div class="flex mb-4">
+							<img src={post.images[0]} alt="Image" class="w-60 h-40 object-cover shrink-0 mr-8 bg-gray-200" />
+							<div>
+								<div class="flex mb-2">
+									<img src={post.favicons[0]} alt="Favicon" class="w-6 h-6 mr-2" />
+									<span>{ post.siteName }</span>
+								</div>
+								<h3 class="font-bold">
+									{ post.title }
+								</h3>
+								<p>
+									{ post.description }
+								</p>
+							</div>
+						</div>
+					);
+				}
+			})}
+		</div>
+	))}
+</PageLayout>

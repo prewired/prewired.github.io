@@ -16,6 +16,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/open-sans": "^5.0.29",
     "astro": "^4.7.1",
+    "link-preview-js": "^3.0.5",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5"
   }
