@@ -2,8 +2,9 @@
 title: "Launching Prewired Online"
 date: 2020-04-02
 author: Ewan
-header:
-  image: /assets/images/collaborate_screenshot_cropped.png
+image:
+  url: /assets/images/collaborate_screenshot_cropped.png
+  alt: Alt
 excerpt: "All of us on the Prewired team were really sad about having to close down our regular Wednesday evening sessions in the face of the  Covid-19 emergency. But we started thinking about making the most of the internet and ..."
 tags: ["blog", "online"]
 ---

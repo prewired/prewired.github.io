@@ -95,8 +95,7 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 					else return (
 						<a href={`/news/${post.slug}`} class="group">
 							<div class="flex mb-4">
-								<div class="w-60 h-40 shrink-0 mr-8 bg-gray-200">
-								</div>
+								<img src={post.data.image?.url} alt={post.data.image?.alt} class="w-60 h-40 object-cover shrink-0 mr-8 bg-gray-200" />
 								<div>
 									<h3 class="font-bold group-hover:underline">
 										{ post.data.title }
