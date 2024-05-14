@@ -19,5 +19,23 @@ const { frontmatter } = Astro.props;
 ---
 
 <PageLayout title={frontmatter.title}>
-	<h1 class="">{frontmatter.title}</h1>
+	<img src={frontmatter.image?.url} alt={frontmatter.image?.alt} class="max-w-[800px] aspect-[16/9] mx-auto object-cover" />
+	<article class="prose mt-8 mx-auto">
+		<div class="flex">
+			{ frontmatter.tags.map(tag => (<>
+				<a href={`/news/tags/${tag}`} class="no-underline">
+					<div class="mr-2 bg-purple-700 hover:bg-blue-700 rounded-full px-3">
+						<span class="text-xs font-semibold text-white uppercase">
+							{ tag }
+						</span>
+					</div>
+				</a>
+			</>)) }
+		</div>
+		<h1 class="my-4">
+			{ frontmatter.title }
+		</h1>
+		<small>by { frontmatter.author } &middot; { frontmatter.date.toLocaleDateString("en-GB") }</small>
+		<slot />
+	</article>
 </PageLayout>

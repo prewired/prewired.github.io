@@ -62,7 +62,10 @@ const config: Config = {
 			}
 		}
 	},
-	plugins: [],
+	plugins: [
+		// Plugin with typographic defaults for blog posts
+		require("@tailwindcss/typography")
+	],
 };
 
 export default config;
