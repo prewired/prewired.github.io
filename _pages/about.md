@@ -29,14 +29,13 @@ Prewired became a Scottish Charity (SC047780) in September 2017. The Board of Tr
 
 | Name                  | Position                 |
 |-----------------------|--------------------------|
-| Rikki Guy             | Chairperson              |
+| Rikki Guy             | Chairperson, Data Protection Officer |
 | Rayo Verweij          | Treasurer                |
 | Charlotte Holland     | Sessions Co-ordinator    |
-| Athina Frantzana      | Child Protection Officer |
+| Athina Frantzana      | Child Protection Officer, EDI Officer |
 | India Thomson         | Trustee                  |
 | Claire Wheelan        | Trustee                  |
 | Cameron Gray          | Trustee                  |
-| Jelmer van der Linde  | Trustee                  |
 
 ## Brief History
 
