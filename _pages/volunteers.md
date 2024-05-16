@@ -28,7 +28,7 @@ Any and all software and hardware skills are welcome! See [What we do]({{ "/what
 
 From time to time we hold a more structured workshop about a specific topic, and encourage the attendees to get involved and learn something they might not otherwise have thought about. If you’d like to run a workshop we’d love to have you &mdash; contact our Administrative Assistant (regina [at] prewired.org)  For some ideas, see the [Prewired GitHub Wiki](https://github.com/prewired/workshops/wiki).
 
-We also run a team-based 5-day [Summer Hack](https://www.prewired.org/summerhack2020/) for young people each summer, usually in July. If you can spare the time to help out, this is a great opportunity to give more extended support to Prewired attendees. 
+We also run a team-based [Summer Hack](https://www.prewired.org/summerhack2020/) for young people each summer, usually in July. If you can spare the time to help out, this is a great opportunity to give more extended support to Prewired attendees. 
 
 
 ## Certifications and qualifications

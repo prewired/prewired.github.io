@@ -24,7 +24,7 @@ We have no lower limit on age or ability, so long as your child is enthusiastic 
 
 Prewired provides an unstructured but **supportive environment** for under 19s to explore and learn about computer programming and related topics.
 
-We have **volunteers** from university and industry with a wide variety of skills who volunteer their time because they love to teach young people about computing. 
+We have **volunteers** from university and industry with a wide variety of skills who volunteer their time because they love to teach young people about computing.
 
 Occasionally we run structured **workshops** to introduce attendees to a new topic they may not have considered before. Over the summer we hold **hackathons**, where the kids are challenged to meet specific goals in a set amount of time; this is a really fun learning experience, with concrete outcomes. In the past, we have formed teams to take part in national **events** like [the First Lego League](http://www.firstlegoleague.org/) or [Young Rewired State](https://yrs.io).
 
@@ -32,13 +32,13 @@ Prewired is also a place for young people to **meet peers** with shared interest
 
 ## What does your child need?
 
-First, they'll need to [register for membership]({{ base_path }}/registration/). Once this has been done, [book a place](http://www.eventbrite.co.uk/e/prewired-tickets-12525428895) for each session that they would like to attend.
+First, they'll need to [book a place]({{ base_path }}/registration/) for each session that they would like to attend.
 
-We have plenty of laptops that children can borrow, but your child is welcome to bring their own computers. If they have other pieces of electronic technology (e.g., Raspberry Pis, Arduino kits, Lego Mindstorms) they want to tinker with, they can bring them along! 
+We have plenty of laptops that children can borrow, but your child is welcome to bring their own computers. If they have other pieces of electronic technology (e.g., Raspberry Pis, Arduino kits, Lego Mindstorms) they want to tinker with, they can bring them along!
 
 For more information about ways to get started with coding, see our [Resources page]({{ base_path }}/resources/)
 
-We'll provide fruit juice and a few snacks half-way through the session. If your child wants to bring their own snacks they're welcome to.
+We'll provide a few snacks half-way through the session. If your child wants to bring their own snacks they're welcome to.
 
 ## How much does it cost?
 

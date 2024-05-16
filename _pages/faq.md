@@ -10,10 +10,6 @@ permalink: "/faq/"
 
 See [should I come to Prewired]({{ base_path }}/parents#why-should-my-child-come-to-prewired) and [how to attend]({{ base_path }}/registration/).
 
-## Do I need to register?
-
-Yes! See [registration and membership]({{ base_path }}/registration/).
-
 <!-- ## When is Prewired?
 
 5.30&ndash;7.30 pm, every Wednesday during school term time.
