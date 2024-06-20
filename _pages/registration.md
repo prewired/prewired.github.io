@@ -5,14 +5,16 @@ permalink: /registration/
 sidebar_cal: true
 ---
 
-**Note:** as of June 2024, we are changing our booking system to [TicketTailor](https://buytickets.at/prewired/1223517). Please feel free to email us at hello [at] prewired [dot] org with any questions.
+**Note:** as of June 2024, we have changed our booking system to [TicketTailor](https://buytickets.at/prewired/1223517). Please feel free to email us at hello [at] prewired [dot] org with any questions.
+
+*Looking to book tickets for the 2024 Prewired Make-a-Thon on 27 and 28 July? [Go here!](https://www.tickettailor.com/events/prewired/1253787)*
 
 If you would like to attend Prewired, please:
 
-1. Book a spot. For the remaining sessions in May 2024, please book [on Eventbrite](https://www.eventbrite.co.uk/e/prewired-registration-15338031465). For sessions in June 2024 and beyond, please book [on TicketTailor](https://buytickets.at/prewired/1223517). You can attend as often as you'd like! New dates are added at the end of each month.
+1. Book a spot [on TicketTailor](https://buytickets.at/prewired/1223517). You can attend as often as you'd like! New dates are added at the end of each month.
 2. [Subscribe](https://eepurl.com/dv2dPb) to our mailing list to keep up to date with notices and events.
 3. Turn up!
-    * Check yourself in on the registration list using the tablet at the front desk &mdash; someone at the desk will help you if necessary.
+    * Check yourself in at the registration desk
     * If you have never coded before, or have but don't know what to do, no problem! Introduce yourself to a mentor (they'll be wearing lanyards) when you arrive, and they'll help you to get started.
     * If you're already working on a coding project (maybe you're building your own website), or learning a topic by yourself and are happy to carry on with that, cool beans. Make yourself at home and ask any of our volunteers if you need help, or you can put your hand up and someone will spot you!
 
