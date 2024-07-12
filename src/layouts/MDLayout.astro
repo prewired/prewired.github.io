@@ -1,5 +1,5 @@
 ---
-import BaseLayout from "./BaseLayout.astro";
+import PageLayout from "./PageLayout.astro";
 
 interface Props {
 	frontmatter: {
@@ -11,6 +11,7 @@ interface Props {
 const { frontmatter } = Astro.props;
 ---
 
-<BaseLayout title={frontmatter.title}>
+<PageLayout title={frontmatter.title}>
 	<h1 class="">{frontmatter.title}</h1>
-</BaseLayout>
+	<slot />
+</PageLayout>
