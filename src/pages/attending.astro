@@ -1,5 +1,6 @@
 ---
 import PageLayout from "@layouts/PageLayout.astro";
+import BookTicketsButton from "@components/BookTicketsButton.astro";
 ---
 
 <PageLayout title="Attending">
@@ -14,40 +15,7 @@ import PageLayout from "@layouts/PageLayout.astro";
 	</p>
 
 	<h2>Events</h2>
-	<div class="max-w-[700px] border border-black rounded overflow-hidden">
-		<!-- Ticket Tailor Widget -->
-		<div class="tt-widget">
-			<div class="tt-widget-fallback">
-				<p>
-					<a href="https://www.tickettailor.com/all-tickets/prewired/?ref=website_widget"
-						target="_blank"
-					>
-						Click here to buy tickets
-					</a>
-					<br />
-					<small>
-						<a href="https://www.tickettailor.com?rf=wdg_186493"
-							class="tt-widget-powered"
-						>
-							Sell tickets online with Ticket Tailor
-						</a>
-					</small>
-				</p>
-			</div>
-			<script
-				is:inline
-				src="https://cdn.tickettailor.com/js/widgets/min/widget.js"
-				data-url="https://www.tickettailor.com/all-tickets/prewired/?ref=website_widget"
-				data-type="inline"
-				data-inline-minimal="true"
-				data-inline-show-logo="false"
-				data-inline-bg-fill="false"
-				data-inline-inherit-ref-from-url-param=""
-				data-inline-ref="website_widget">
-			</script>
-		</div>
-		<!-- End of Ticket Tailor Widget -->
-	</div>
+	<BookTicketsButton />
 
 	<h2>Frequently asked questions</h2>
 	<p>...</p>
