@@ -26,7 +26,7 @@ Prewired provides an unstructured but **supportive environment** for under 19s t
 
 We have **volunteers** from university and industry with a wide variety of skills who volunteer their time because they love to teach young people about computing.
 
-Occasionally we run structured **workshops** to introduce attendees to a new topic they may not have considered before. Over the summer we hold **hackathons**, where the kids are challenged to meet specific goals in a set amount of time; this is a really fun learning experience, with concrete outcomes. In the past, we have formed teams to take part in national **events** like [the First Lego League](http://www.firstlegoleague.org/) or [Young Rewired State](https://yrs.io).
+Occasionally we run structured **workshops** to introduce attendees to a new topic they may not have considered before. Over the summer we hold a **Make-a-Thon**, where the kids are challenged to meet specific goals in a set amount of time; this is a really fun learning experience, with concrete outcomes. Sometimes, we form teams to take part in national **events** like [the First Lego League](http://www.firstlegoleague.org/) or, in the past, [Young Rewired State](https://yrs.io).
 
 Prewired is also a place for young people to **meet peers** with shared interests which they can develop together. For some, it can be difficult to interest friends and family in computing, which may lead to a feeling of isolation. It can be hard to figure out where to go next when there's no-one you can ask. We want to let young people know that there's a huge **community** of like-minded people who are waiting to welcome them.
 
@@ -59,7 +59,6 @@ Please see our [child protection policy]({{ base_path }}/child-protection-policy
 ## How do we deal with privacy?
 
 Please see our [privacy policy]({{ base_path }}/privacy/).
-
 
 ## Any other questions?
 

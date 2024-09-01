@@ -8,9 +8,9 @@ toc: true
 toc_label: "On This Page"
 toc_icon: "cog"
 ---
-We're always looking for more helpers! 
+We're always looking for more helpers!
 
-Helping young people learn to code is hugely rewarding. If you can offer your time for two hours on a Wednesday evening, we’d love to hear from you! Prewired sessions take place weekly on Wednesdays from 5.30 pm to 7.30 pm at CodeBase, 37A Castle St, Edinburgh, EH3 9DZ. We run them pretty much throughout the year, with some breaks during Christmas and Easter. We also hold an annual Summer Hack &mdash; a one-week team-based hackathon. 
+Helping young people learn to code is hugely rewarding. If you can offer your time for two hours on a Wednesday evening, we’d love to hear from you! Prewired sessions take place weekly on Wednesdays from 5.30 pm to 7.30 pm at CodeBase, 37a Castle St, Edinburgh, EH3 9DZ. We run them pretty much throughout the year, with a break during Christmas. We also hold an annual Make-a-Thon &mdash; a weekend team-based hackathon.
 
 Please drop us an email before showing up, so we know who to expect &mdash; hello [at] prewired [dot] org.
 
@@ -24,11 +24,11 @@ Prewired is largely unstructured and our main goal is to support the young peopl
 Any and all software and hardware skills are welcome! See [What we do]({{ "/what-we-do/" | absolute_url }}) for more information.
 
 
-## Workshops and Summer Hack
+## Workshops and Make-a-Thon
 
-From time to time we hold a more structured workshop about a specific topic, and encourage the attendees to get involved and learn something they might not otherwise have thought about. If you’d like to run a workshop we’d love to have you &mdash; contact our Administrative Assistant (regina [at] prewired.org)  For some ideas, see the [Prewired GitHub Wiki](https://github.com/prewired/workshops/wiki).
+From time to time we hold a more structured workshop about a specific topic, and encourage the attendees to get involved and learn something they might not otherwise have thought about. If you’d like to run a workshop we’d love to have you &mdash; contact us at hello [at] prewired.org! For some ideas, see the [Prewired GitHub Wiki](https://github.com/prewired/workshops/wiki).
 
-We also run a team-based [Summer Hack](https://www.prewired.org/summerhack2020/) for young people each summer, usually in July. If you can spare the time to help out, this is a great opportunity to give more extended support to Prewired attendees. 
+We also run a team-based Make-a-Thon for young people each summer, usually in July. If you can spare the time to help out, this is a great opportunity to give more extended support to Prewired attendees.
 
 
 ## Certifications and qualifications
