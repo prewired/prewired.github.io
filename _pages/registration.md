@@ -5,8 +5,6 @@ permalink: /registration/
 sidebar_cal: true
 ---
 
-*Looking to book tickets for the FIRST LEGO League Taster Session on 4 September? [Go here!](https://www.tickettailor.com/events/prewired/1351805)*
-
 If you would like to attend Prewired, please:
 
 1. Book a spot [on TicketTailor](https://buytickets.at/prewired/1223517). You can attend as often as you'd like! New dates are added at the end of each month.
