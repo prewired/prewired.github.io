@@ -27,7 +27,7 @@ toc_icon: "cog"
 
 ## 2016
 
-* Freda O'Byrne, FutureScot: <a href="https://futurescot.com/hey-teacher-leave-kids-alone-children-better-off-left-learn-coding/">Hey teacher, leave them kids alone. Why children are better off left to learn coding themselves</a>
+* Freda O'Byrne, FutureScot: <a href="https://futurescot.com/hey-teacher-leave-kids-alone-why-children-better-left-to-learn-coding-by-themselves/">Hey teacher, leave them kids alone. Why children are better off left to learn coding themselves</a>
 
 * Stuart Roebuck, Scott Logic: <a href="https://blog.scottlogic.com/2016/08/22/building-the-next-generation-of-technology-professionals.html">Building the next generation of technology professionals</a>
 
