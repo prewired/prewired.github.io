@@ -13,7 +13,7 @@ toc_icon: "cog"
 
 * Scottish Business News: <a href="https://scottishbusinessnews.net/prewired-secures-funding-from-creative-informatics-to-take-one-of-scotlands-longest-running-coding-clubs-for-young-people-online/">Prewired secures funding from Creative Informatics to take one of Scotland’s longest-running coding clubs for young people online</a>
 
-* School of Informatics, University of Edinburgh: <a href="https://www.ed.ac.uk/informatics/news-events/stories/2021/prewired-secures-funding-coding-club-online">Prewired co-founded by Informatics' Ewan Klein secures funding to take Coding Club online</a>
+* School of Informatics, University of Edinburgh: <a href="https://informatics.ed.ac.uk/news-events/news/news-archive/prewired-secures-funding-coding-club-online">Prewired co-founded by Informatics' Ewan Klein secures funding to take Coding Club online</a>
 
 ## 2018
 
