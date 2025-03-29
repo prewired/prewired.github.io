@@ -21,7 +21,7 @@ We think technology can help us towards a better world, but only if future gener
 
 The full roster of regular Prewired attendees comprises around 40 young people. In a typical evening session, we will host around 25 regulars and another handful who are new or who drop in more occasionally.
 Running Prewired sessions on a regular basis has only been made possible with the voluntary support of a core group of around half a dozen dedicated volunteers, drawn from students at Edinburgh, Napier and Heriot Watt Universities;
-independent developers; and by staff from local tech companies. <!-- Our list of regular volunteers currently comprises 18 people, of whom six are registered under Disclosure Scotland’s PVG Scheme. -->
+independent developers; and by staff from local tech companies.
 
 ## Management Committee
 
@@ -32,9 +32,10 @@ Prewired became a Scottish Charity (SC047780) in September 2017. The Board of Tr
 | Athina Frantzana      | Child Protection Officer, EDI Officer |
 | Cameron Gray          | Trustee                  |
 | Charlotte Holland     | Sessions Co-ordinator    |
+| Christina Ovezik      | Treasurer                |
 | Claire Wheelan        | Trustee                  |
 | India Thomson         | Secretary                |
-| Rayo Verweij          | Treasurer                |
+| Rayo Verweij          | Trustee                  |
 | Rikki Guy             | Chairperson, Data Protection Officer |
 
 ## Brief History
@@ -52,11 +53,9 @@ Thus, Prewired was born, with these objectives:
 The Prewired launch was held on the morning of 16th October 2013, in the University of Edinburgh’s Informatics Forum. Thirty eight young people between the ages of 4 and 18 attended, while 15 volunteers—university students, staff and local industry professionals—came along to help. Following on
 from the launch, we held Prewired on a biweekly basis on Wednesday evenings in one of the School of Informatics computing labs in Appleton Tower. Despite minimal advertising, a devoted cohort of young people attended during 2013-14 on a regular basis, often accompanied by a parent, with numbers consistently in the 30&ndash;40 range.
 
-In spring 2014, Prewired became affiliated with [CodorDojo](http://coderdojoscotland.com), part of a global collaboration that provides free coding clubs for young people. 
+In spring 2014, Prewired became affiliated with [CoderDojo](http://coderdojoscotland.com), part of a global collaboration that provides free coding clubs for young people.
 
 In January 2015, faced with the imminent unavailability of Appleton Tower lab space due to refurbishment works, Prewired moved location to [CodeBase](http://thisiscodebase.com), a UK-leading tech incubator based in central Edinburgh, and due to the high level of demand from participants, began offering sessions on weekly basis. One benefit of the move was that staff from tech companies housed in CodeBase have also started to offer volunteering support.
 
 <!-- ![](/assets/images/report_cover.jpg){: .align-left}]({{ base_path }}/pdfs/prewired-for-web.pdf) -->
 To find out more about how we've developed and what we've been doing, read our [annual reports](docs.md).
-
-
