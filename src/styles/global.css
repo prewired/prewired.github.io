@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+
+/* Extending and overriding the default Tailwind styling */
+@theme {
+	/* Custom colours */
+	--color-blue-50: "#EDFCFF";
+	--color-blue-100: "#D6F6FF";
+	--color-blue-200: "#B5F2FF";
+	--color-blue-300: "#83ECFF";
+	--color-blue-400: "#48DFFF";
+	--color-blue-500: "#1EC4FF";
+	--color-blue-600: "#06A9FF";
+	--color-blue-700: "#0096FF"; /* Prewired logo hue */
+	--color-blue-800: "#0872C5";
+	--color-blue-900: "#0D609B";
+	--color-blue-950: "#0E3A5D";
+
+	--color-purple-50: "#FAF6FE";
+	--color-purple-100: "#F2EAFD";
+	--color-purple-200: "#E7D8FC";
+	--color-purple-300: "#D4B9F9";
+	--color-purple-400: "#BA8CF4";
+	--color-purple-500: "#9F60EC";
+	--color-purple-600: "#7D2DDA"; /* Prewired logo hue */
+	--color-purple-700: "#742EC2";
+	--color-purple-800: "#632A9F";
+	--color-purple-900: "#512380";
+	--color-purple-950: "#350D5E";
+
+	--color-pink-50: "#FFF0F3";
+	--color-pink-100: "#FFE2EA";
+	--color-pink-200: "#FFCADA";
+	--color-pink-300: "#FF9FBB";
+	--color-pink-400: "#FF6998";
+	--color-pink-500: "#FF246E"; /* Prewired logo hue */
+	--color-pink-600: "#ED1166";
+	--color-pink-700: "#C80857";
+	--color-pink-800: "#A8094F";
+	--color-pink-900: "#8F0C4A";
+	--color-pink-950: "#500124";
+
+
+	/* Custom fonts */
+	--font-sans: "Open Sans Variable", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+/* Global styles */
+::selection {
+	@apply bg-blue-700 text-white;
+}
+
+h1 {
+	@apply mb-2 font-bold text-4xl;
+}
+
+h2 {
+	@apply mt-8 mb-1 font-semibold text-xl;
+}
