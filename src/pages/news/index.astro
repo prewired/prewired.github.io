@@ -34,6 +34,7 @@ type ExternalPostPreview = {
 
 // Links that are commented out are broken links from the OG website
 const externalPosts: ExternalPost[] = [
+	{ url: "https://medium.com/@indiathomson/prewired-x-hypercube-summer-make-a-thon-41f03bea0311", date: new Date("2024-08-07") },
 	{ url: "https://medium.com/kinandcartacreated/summer-tech-make-a-thon-dedaa474d3eb", date: new Date("2023-10-09")},
 	{ url: "https://www.digit.fyi/prewired-receives-funding-to-bring-coding-club-online/", date: new Date("2021-01-20") },
 	{ url: "https://scottishbusinessnews.net/prewired-secures-funding-from-creative-informatics-to-take-one-of-scotlands-longest-running-coding-clubs-for-young-people-online/", date: new Date("2021-01-20") },
@@ -41,10 +42,10 @@ const externalPosts: ExternalPost[] = [
 	{ url: "https://www.scotsman.com/business/nick-freer-comment-start-ups-hit-all-right-notes-night-193754", date: new Date("2018-12-09") },
 	{ url: "https://www.insider.co.uk/news/scottish-tech-startup-awards-finalists-13540999", date: new Date("2018-11-06") },
 	{ url: "https://dailybusinessgroup.co.uk/2018/11/scottish-tech-startups-in-battle-for-honours/", date: new Date("2018-11-06") },
-	{ url: "https://www.thisiscodebase.com/blog/2018/8/1/summerhack2018-roundup", date: new Date("2018-08-02") },
+	// { url: "https://www.thisiscodebase.com/blog/2018/8/1/summerhack2018-roundup", date: new Date("2018-08-02") },
 	// { url: "https://futurescot.com/hey-teacher-leave-kids-alone-children-better-off-left-learn-coding/" },
 	{ url: "https://blog.scottlogic.com/2016/08/22/building-the-next-generation-of-technology-professionals.html", date: new Date("2016-08-22") },
-	{ url: "https://www.thisiscodebase.com/blog/2015/7/28/prewired-at-codebase-festival-of-code-2015", date: new Date("2015-07-28") },
+	// { url: "https://www.thisiscodebase.com/blog/2015/7/28/prewired-at-codebase-festival-of-code-2015", date: new Date("2015-07-28") },
 	{ url: "https://tfn.scot/features/chief-encounters-its-not-all-play-and-now-work-for-freda-obyrne", date: new Date("2015-06-25") }
 ];
 
@@ -93,7 +94,7 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 					const post = posts.find(post => post.id === feedItem.id);
 					if(!post) return;
 					else return (
-						<a href={`/news/${post.slug}`} class="group">
+						<a href={`/news/${post.id}`} class="group">
 							<div class="flex mb-4">
 								<img src={post.data.image?.url} alt={post.data.image?.alt} class="w-60 h-40 object-cover shrink-0 mr-8 bg-gray-200" />
 								<div>
