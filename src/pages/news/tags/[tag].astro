@@ -28,7 +28,7 @@ const { posts } = Astro.props;
 	<ul>
 		{ posts.map(post => (
 			<li>
-				<a href={`/news/${post.slug}`}>{post.data.title}</a>
+				<a href={`/news/${post.id}`}>{post.data.title}</a>
 			</li>
 		)) }
 	</ul>

@@ -43,7 +43,7 @@ const navItems = [
 					/>
 				</a>
 				{ navItems.map(({ href, title }) => (
-					<a href={href} class={`mr-8 text-lg ${href === Astro.url.pathname ? "font-bold" : "hover:text-purple-600"}`}>
+					<a href={href} class={`mr-8 text-lg text-black! no-underline! ${href === Astro.url.pathname ? "font-bold" : "hover:text-purple-600!"}`}>
 						{ title }
 					</a>
 				))}

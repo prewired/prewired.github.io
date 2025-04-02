@@ -94,7 +94,7 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 					const post = posts.find(post => post.id === feedItem.id);
 					if(!post) return;
 					else return (
-						<a href={`/news/${post.id}`} class="group">
+						<a href={`/news/${post.id}`} class="group text-black! no-underline!">
 							<div class="flex mb-4">
 								<img src={post.data.image?.url} alt={post.data.image?.alt} class="w-60 h-40 object-cover shrink-0 mr-8 bg-gray-200" />
 								<div>
@@ -113,7 +113,7 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 					const post = externalPostPreviews.find(post => post.url === feedItem.id);
 					if(!post) return;
 					else return (
-						<a href={post.url} target="_blank" rel="noopener noreferrer" class="group">
+						<a href={post.url} target="_blank" rel="noopener noreferrer" class="group text-black! no-underline!">
 							<div class="flex mb-4">
 								<img src={post.images[0]} alt="Image" class="w-60 h-40 object-cover shrink-0 mr-8 bg-gray-200" />
 								<div>
