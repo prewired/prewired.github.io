@@ -1,7 +1,12 @@
 ---
-import BaseLayout from "@layouts/BaseLayout.astro";
+import PageLayout from "@layouts/PageLayout.astro";
+import coverPhoto from "@assets/photos/ws16_longtables.jpg";
 ---
 
-<BaseLayout title="About">
-	<h1 class="">Hello there!</h1>
-</BaseLayout>
+<PageLayout
+	title="About"
+	imgSrc={coverPhoto}
+	imgAlt="Attendees"
+>
+	<p class="">Hello there!</p>
+</PageLayout>

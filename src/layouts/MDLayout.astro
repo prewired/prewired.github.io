@@ -5,13 +5,19 @@ interface Props {
 	frontmatter: {
 		title: string;
 		description: string;
+		imgSrc: ImageMetadata;
+		imgAlt: string;
 	};
 }
 
 const { frontmatter } = Astro.props;
 ---
 
-<PageLayout title={frontmatter.title}>
+<PageLayout
+	title={frontmatter.title}
+	imgSrc={frontmatter.imgSrc}
+	imgAlt={frontmatter.imgAlt}
+>
 	<h1 class="">{frontmatter.title}</h1>
 	<slot />
 </PageLayout>

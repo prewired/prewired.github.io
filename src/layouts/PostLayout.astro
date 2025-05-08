@@ -1,5 +1,5 @@
 ---
-import PageLayout from "./PageLayout.astro";
+import BaseLayout from "./BaseLayout.astro";
 
 interface Props {
 	frontmatter: {
@@ -18,8 +18,12 @@ interface Props {
 const { frontmatter } = Astro.props;
 ---
 
-<PageLayout title={frontmatter.title}>
-	<img src={frontmatter.image?.url} alt={frontmatter.image?.alt} class="max-w-[800px] aspect-[16/9] mx-auto object-cover" />
+<BaseLayout title={frontmatter.title}>
+	<img
+		src={frontmatter.image?.url}
+		alt={frontmatter.image?.alt}
+		class="max-w-[800px] aspect-[16/9] mx-auto object-cover rounded-lg"
+	/>
 	<article class="prose mt-8 mx-auto">
 		<div class="flex">
 			{ frontmatter.tags.map(tag => (<>
@@ -38,4 +42,4 @@ const { frontmatter } = Astro.props;
 		<small>by { frontmatter.author } &middot; { frontmatter.date.toLocaleDateString("en-GB") }</small>
 		<slot />
 	</article>
-</PageLayout>
+</BaseLayout>

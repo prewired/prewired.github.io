@@ -1,15 +1,32 @@
 ---
+import { Image } from "astro:assets";
 import BaseLayout from "./BaseLayout.astro";
 
 interface Props {
 	title: string;
+	imgSrc: ImageMetadata;
+	imgAlt: string;
 }
 
-const { title } = Astro.props;
+const { title, imgSrc, imgAlt } = Astro.props;
 ---
 
 <BaseLayout title={title}>
-	<main class="max-w-[1200px] mx-auto">
+	<div class="relative max-w-screen-xl mx-auto bg-black xl:rounded-lg xl:overflow-hidden">
+		<Image
+			src={imgSrc}
+			alt={imgAlt}
+			class="relative w-full h-72 object-cover mask-b-from-50%"
+		/>
+		<div class="max-w-screen-lg mx-auto">
+			<div class="absolute bottom-4">
+				<h1 class="text-5xl text-white">
+					{ title }
+				</h1>
+			</div>
+		</div>
+	</div>
+	<div class="max-w-screen-lg mx-auto">
 		<slot />
-	</main>
+	</div>
 </BaseLayout>

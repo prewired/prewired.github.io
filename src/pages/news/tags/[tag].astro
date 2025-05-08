@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import PageLayout from "@layouts/PageLayout.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
 
 export async function getStaticPaths() {
 	const allPosts = await getCollection("posts");
@@ -23,7 +23,7 @@ const { tag } = Astro.params;
 const { posts } = Astro.props;
 ---
 
-<PageLayout title={tag}>
+<BaseLayout title={tag}>
 	<p>Posts tagged with {tag}</p>
 	<ul>
 		{ posts.map(post => (
@@ -32,4 +32,4 @@ const { posts } = Astro.props;
 			</li>
 		)) }
 	</ul>
-</PageLayout>
+</BaseLayout>

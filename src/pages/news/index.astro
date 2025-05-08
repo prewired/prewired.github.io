@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import { getLinkPreview } from "link-preview-js";
+import coverPhoto from "@assets/photos/sh18_live_cr.jpg";
 
 
 /****  GET LOCAL BLOG POSTS ****/
@@ -84,8 +85,11 @@ feed.forEach(post => { if(!years.includes(post.date.getFullYear())) years.push(p
 const feedByYears = years.map(year => { return { year, posts: feed.filter(post => post.date.getFullYear() === year) } });
 ---
 
-<PageLayout title="News and updates">
-	<h1 class="">News and updates</h1>
+<PageLayout
+	title="News and updates"
+	imgSrc={coverPhoto}
+	imgAlt="Attendees at Prewired"
+>
 	{ feedByYears.map(feedYear => (
 		<div>
 			<h2>{ feedYear.year }</h2>

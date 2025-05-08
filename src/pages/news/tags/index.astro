@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import PageLayout from "@layouts/PageLayout.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
 
 
 const allPosts = await getCollection("posts");
@@ -8,7 +8,7 @@ const tags = [...new Set(allPosts.map(post => post.data.tags).flat())];
 const pageTitle = "Tag Index";
 ---
 
-<PageLayout title={pageTitle}>
+<BaseLayout title={pageTitle}>
 	<div>
 		{ tags.map(tag => (
 			<p class="tag">
@@ -18,4 +18,4 @@ const pageTitle = "Tag Index";
 			</p>
 		)) }
 	</div>
-</PageLayout>
+</BaseLayout>

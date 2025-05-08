@@ -1,9 +1,21 @@
 ---
-import PageLayout from "@layouts/PageLayout.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
 import BookTicketsButton from "@components/BookTicketsButton.astro";
 ---
 
-<PageLayout title="Home">
-	<h1 class="">Hello there!</h1>
+<BaseLayout title="Home">
+	<!-- <div class="flex items-center justify-between max-w-screen-xl mx-auto pb-8">
+		<div class="w-fit relative pl-4 pr-8 py-2">
+			<h1 class="text-5xl">
+				<span class="text-pink-500">*</span>
+				Hello there!
+			</h1>
+		</div>
+		<Image
+			src={imgSrc}
+			alt={imgAlt}
+			class="relative w-1/2 h-96 object-cover rounded-lg"
+		/>
+	</div> -->
 	<BookTicketsButton />
-</PageLayout>
+</BaseLayout>
