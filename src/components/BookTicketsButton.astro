@@ -1,26 +1,23 @@
 ---
+import DialogCloseButton from "./DialogCloseButton.astro";
 ---
 
 <button
 	class="p-2 mb-4 border border-black rounded-lg"
-	id="tickets-btn"
+	id="book-tickets-btn"
 >
 	Book tickets
 </button>
 
 <dialog
-	class="w-[700px] max-w-[100%] mx-auto mt-[10vh] border rounded-sm shadow-lg overflow-hidden"
+	class="w-[700px] max-w-[100%] mx-auto mt-[10vh] border rounded-sm shadow-lg overflow-hidden scale-95 open:scale-100 starting:open:scale-95"
 	id="tickets-dialog"
 >
 	<div class="max-h-[80vh] overflow-y-auto">
-		<button
-			class="absolute top-5 right-5 p-1 border bg-white rounded-full cursor-pointer transition hover:bg-red-600 hover:border-red-600 hover:text-white active:bg-red-800 active:border-red-800"
-			id="close-btn"
-		>
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-				<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-			</svg>
-		</button>
+		<DialogCloseButton
+			id="tickets-dialog-close-btn"
+			style="absolute top-5 right-5 bg-white"
+		/>
 		<!-- Ticket Tailor Widget -->
 		<div class="tt-widget">
 			<div class="tt-widget-fallback">
@@ -56,9 +53,9 @@
 </dialog>
 
 <script>
-	const ticketsBtn = document.getElementById("tickets-btn") as HTMLButtonElement;
-	const closeBtn = document.getElementById("close-btn") as HTMLButtonElement;
+	const ticketsBtn = document.getElementById("book-tickets-btn") as HTMLButtonElement;
 	const ticketsDialog = document.getElementById("tickets-dialog") as HTMLDialogElement;
+	const closeBtn = document.getElementById("tickets-dialog-close-btn") as HTMLButtonElement;
 
 	ticketsBtn.addEventListener("click", () => {
 		ticketsDialog.showModal();

@@ -3,6 +3,8 @@ import { Image } from "astro:assets";
 import "@fontsource-variable/open-sans";
 import "@fontsource-variable/open-sans/wght-italic.css";
 import "../styles/global.css";
+import DialogCloseButton from "@components/DialogCloseButton.astro";
+import prewiredLogoNoText from "@assets/logos/prewired-logo-no-text.png";
 import prewiredLogoText from "@assets/logos/prewired-logo-text.png";
 import oscr from "@assets/logos/oscr.jpg";
 
@@ -32,26 +34,69 @@ const navItems = [
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<!--<meta name="description" content="Astro description" />-->
 		<meta name="generator" content={Astro.generator} />
-		<title>{`Prewired | ${title}`}</title>
+		<title>{`${title} - Prewired`}</title>
 	</head>
-	<body class="bg-linear-[170deg,#EDFCFF,#FAF6FE_200px,#FFF0F3_400px,white_600px]">
-		<header class="w-full">
-			<nav class="h-32 py-4 pl-8 w-full max-w-screen-xl mx-auto flex items-center">
-				<a href="/" class="mr-auto hover:opacity-70 transition">
-					<Image
-						src={prewiredLogoText}
-						alt="The Prewired logo"
-						class="w-52 pb-6"
-					/>
-				</a>
+	<body class="text-lg bg-linear-[170deg,#EDFCFF,#FAF6FE_200px,#FFF0F3_400px,white_600px]">
+		<header class="h-32 w-full max-w-screen-xl mx-auto py-4 px-8 lg:pr-0 flex items-center">
+			<!-- Responsive logo -->
+			<a href="/" class="lg:max-xl:hidden mr-auto hover:opacity-70 transition">
+				<Image
+					src={prewiredLogoText}
+					alt="The Prewired logo"
+					class="w-auto h-20 pb-5"
+				/>
+			</a>
+			<a href="/" class="hidden lg:max-xl:inline mr-auto hover:opacity-70 transition">
+				<Image
+					src={prewiredLogoNoText}
+					alt="The Prewired logo"
+					class="w-auto h-20 pb-5"
+				/>
+			</a>
+			<!-- Small-screen menu button -->
+			<button
+				class="lg:hidden flex items-center px-4 py-2 bg-pink-500 hover:bg-pink-700 rounded-lg font-semibold text-white cursor-pointer transition"
+				id="menu-open-btn"
+			>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="mt-0.5 mr-2 fill-white" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+				</svg>
+				Menu
+			</button>
+			<!-- Small-screen menu -->
+			<dialog
+				class="h-full max-h-full w-full sm:w-1/2 max-w-full sm:left-1/2 p-10 bg-pink-50 sm:border-l-2 sm:border-pink-500 translate-x-10 open:translate-x-0 starting:open:translate-x-10"
+				id="menu-dialog"
+			>
+				<DialogCloseButton
+					id="menu-dialog-close-btn"
+					style="float-right clear-both"
+				/>
+				<nav class="flex flex-col items-center sm:items-start">
+					<div class="mt-12 mb-8">
+						<a href="/" class={`text-2xl text-black no-underline ${Astro.url.pathname === "/" ? "font-bold" : "hover:text-pink-700"}`}>
+							Home
+						</a>
+					</div>
+					{ navItems.map(({ href, title }) => (
+						<div class="mb-8">
+							<a href={href} class={`text-2xl text-black no-underline ${href === Astro.url.pathname ? "font-bold" : "hover:text-pink-700"}`}>
+								{ title }
+							</a>
+						</div>
+					))}
+				</nav>
+			</dialog>
+			<!-- Large-screen menu -->
+			<nav class="hidden lg:flex">
 				{ navItems.map(({ href, title }) => (
-					<a href={href} class={`mr-10 text-lg text-black no-underline ${href === Astro.url.pathname ? "font-bold" : "hover:text-purple-600"}`}>
+					<a href={href} class={`ml-4 mr-8 font-medium text-black no-underline ${href === Astro.url.pathname ? "text-pink-700 border-b-2 border-pink-700" : "hover:text-pink-700"}`}>
 						{ title }
 					</a>
 				))}
 			</nav>
 		</header>
-		<main>
+		<main class="px-4">
 			<slot />
 		</main>
 		<footer class="w-full mt-20 bg-purple-600 rounded-t-[0.625rem]">
@@ -98,5 +143,24 @@ const navItems = [
 				Prewired is a Scottish Charity, SC047780 &middot; &copy; 2025 Prewired
 			</div>
 		</footer>
+
+		<script>
+			const menuOpenBtn = document.getElementById("menu-open-btn") as HTMLButtonElement;
+			const menuDialog = document.getElementById("menu-dialog") as HTMLDialogElement;
+			const menuCloseBtn = document.getElementById("menu-dialog-close-btn") as HTMLButtonElement;
+
+			menuOpenBtn.addEventListener("click", () => {
+				menuDialog.showModal();
+			});
+
+			menuCloseBtn.addEventListener("click", () => {
+				menuDialog.close();
+			});
+
+			menuDialog.addEventListener("click", event => {
+				// Close the dialog on tapping the backdrop
+				if (event.target === menuDialog) menuDialog.close();
+			});
+		</script>
 	</body>
 </html>

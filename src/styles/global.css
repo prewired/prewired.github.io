@@ -52,48 +52,47 @@
 	::selection {
 		@apply bg-blue-700 text-white;
 	}
-	
+
 	html {
 		@apply transition duration-300;
 		scrollbar-gutter: stable;
 	}
-	
+
 	html:has(dialog[open]) {
 		/* Prevent scrolling and content shift when a modal dialog is open */
-		@apply overflow-y-hidden bg-black/25;
+		@apply overflow-y-hidden;
 	}
-	
-	body {
-		/* Keep background color stable while dialog backdrop is shown */
-		@apply bg-white text-lg;
-	}
-	
+
+	/* Apply correct background colour to scroll gutter when a modal dialog is open */
+	html:has(#menu-dialog[open]) { @apply bg-pink-50; }
+	html:has(#tickets-dialog[open]) { @apply bg-black/25; }
+
 	h1 {
 		@apply mb-2 font-semibold text-4xl;
 	}
-	
+
 	h2 {
 		@apply mt-12 mb-2 font-semibold text-2xl border-b border-gray-300;
 	}
-	
+
 	h3 {
 		@apply font-medium;
 	}
-	
+
 	p {
 		@apply mb-4;
 	}
-	
+
 	ul {
 		@apply list-disc list-inside ml-4;
 	}
-	
+
 	a {
 		@apply text-blue-800 hover:text-purple-600 underline underline-offset-2;
 	}
-	
+
 	dialog {
-		@apply opacity-0 open:opacity-100 starting:open:opacity-0 scale-95 open:scale-100 starting:open:scale-95 transition-all transition-discrete duration-300;
+		@apply opacity-0 open:opacity-100 starting:open:opacity-0 transition-all transition-discrete duration-300;
 		@apply backdrop:bg-transparent open:backdrop:bg-black/25 starting:open:backdrop:bg-transparent backdrop:transition-all backdrop:transition-discrete backdrop:duration-300;
 	}
 
