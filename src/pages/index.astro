@@ -1,21 +1,135 @@
 ---
+import { Image } from "astro:assets";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import BookTicketsButton from "@components/BookTicketsButton.astro";
+import cover from "@assets/photos/sh16_discuss.jpg";
+import overview from "@assets/photos/ws18_session.jpg";
+import codebase from "@assets/logos/codebase-logo.png";
+import hypercube from "@assets/logos/hypercube-logo.png";
+import robotical from "@assets/logos/robotical-logo.png";
+import uoe from "@assets/logos/uoe-logo.png";
 ---
 
 <BaseLayout title="Home">
-	<!-- <div class="flex items-center justify-between max-w-screen-xl mx-auto pb-8">
-		<div class="w-fit relative pl-4 pr-8 py-2">
-			<h1 class="text-5xl">
-				<span class="text-pink-500">*</span>
-				Hello there!
+	<!-- Cover -->
+	<section class="max-w-screen-xl mx-auto mb-8 lg:mb-20 flex flex-wrap-reverse lg:items-center lg:justify-around">
+		<div class="md:w-3/4 md:max-lg:mx-auto lg:w-2/5 text-center lg:text-left pl-4 pr-8 py-2">
+			<h1 class="font-semibold text-3xl text-balance mb-4">
+				Welcome to <span class="font-bold text-blue-700">Prewired</span>, an Edinburgh programming club for young people.
 			</h1>
+			<p class="text-xl mb-8">
+				If you're interested in learning to code, or want support taking your passion further, you're in the right place!
+			</p>
+			<div class="flex flex-wrap justify-center lg:justify-start gap-4">
+				<BookTicketsButton />
+				<a
+					href="http://eepurl.com/dv2dPb"
+					target="_blank" rel="noopener"
+					class="px-4 py-3 border border-black rounded-md cursor-pointer text-black no-underline hover:border-transparent hover:bg-black hover:text-white active:bg-black/60 transition"
+				>
+					Join our mailing list
+				</a>
+			</div>
 		</div>
 		<Image
-			src={imgSrc}
-			alt={imgAlt}
-			class="relative w-1/2 h-96 object-cover rounded-lg"
+			src={cover}
+			alt="Attendees"
+			class="w-full lg:w-1/2 h-60 lg:h-96 mb-8 lg:mb-0 object-cover rounded-lg text-xl"
 		/>
-	</div> -->
-	<BookTicketsButton />
+	</section>
+
+	<!-- Special announcements -->
+	<section class="max-w-[56rem] mx-auto mb-8 lg:mb-20 bg-green-50 border-2 border-green-500 rounded-lg shadow-sm">
+		<h2 class="mt-4 pb-3 border-b-2 border-green-500 text-center">
+			Prewired x DS4G Festive Party
+		</h2>
+		<div class="text-center py-1 px-8">
+			<p>
+				On 18 December we're hosting a <strong>special festive session</strong> in collaboration with Digital Skills 4 Girls!
+			</p>
+			<p>
+				For more info and free tickets, <a href="https://www.tickettailor.com/events/prewired/1484723" target="_blank" rel="noopener noreferrer">go to the event page</a>.
+			</p>
+			<p>
+				For this end-of-term session there will be several festive-themed activities to choose from, as well as games and plenty of snacks. The desk area will also be set up for a regular Prewired session if you'd rather crack on with your usual projects.
+			</p>
+			<p>
+				This will be our last session of the year&mdash;after this we'll be back on 8 January!
+			</p>
+		</div>
+	</section>
+
+	<!-- Overview -->
+	<section class="max-w-screen-xl mx-auto mb-8 lg:mb-20 flex flex-wrap lg:items-center lg:justify-center">
+		<Image
+			src={overview}
+			alt="Attendees"
+			class="w-full lg:w-2/5 h-60 lg:h-[28rem] mb-8 lg:mb-0 object-cover rounded-lg"
+		/>
+		<div class="md:w-3/4 md:max-lg:mx-auto lg:w-2/5 lg:ml-16 text-center lg:text-left pl-4 pr-8 py-2">
+			<h1 class="font-semibold text-3xl text-balance mb-4">
+				What we do
+			</h1>
+			<p class="text-xl">
+				Computers let you create anything you can think of. Prewired is here to help enthusiastic young coders of any ability to do just that.
+			</p>
+			<p class="text-xl mb-8">
+				Every Wednesday 5:30&ndash;7:30 PM, we meet at CodeBase Edinburgh. You can bring your own project to work on or chat to one of our volunteers about how to get started!
+			</p>
+			<a
+				href="/attending"
+				class="px-4 py-3 bg-blue-100 rounded-md cursor-pointer text-black no-underline hover:bg-blue-700 hover:text-white active:bg-blue-900 transition"
+			>
+				More about attending
+			</a>
+		</div>
+	</section>
+
+	<!-- Sponsors -->
+	<section class="w-full h-[500px] mb-12 lg:mb-20 bg-blue-50 rounded-4xl">
+	</section>
+
+	<!-- Sponsors -->
+	<section class="max-w-screen-xl mx-auto">
+		<h1 class="text-center mb-4">
+			Sponsors & supporters
+		</h1>
+		<p class="text-center text-balance mb-12">
+			In addition to the accommodation generously provided by CodeBase, Prewired could not exist without the support from our sponsors, donors, and supporters.
+		</p>
+		<div class="flex flex-wrap items-center justify-center gap-x-20 gap-y-8">
+			<!-- TODO: RPF / CodeClub, refactor -->
+			<a href="https://thisiscodebase.com" target="_blank" rel="noopener" class="hover:opacity-70 transition">
+				<Image
+					src={codebase}
+					alt="CodeBase logo"
+					class="w-auto h-20 py-4"
+				/>
+			</a>
+			<a href="https://wearehypercube.com" target="_blank" rel="noopener" class="hover:opacity-70 transition">
+				<Image
+					src={hypercube}
+					alt="Hypercube logo"
+					class="w-auto h-20 py-4"
+				/>
+			</a>
+			<a href="https://robotical.io" target="_blank" rel="noopener" class="hover:opacity-70 transition">
+				<Image
+					src={robotical}
+					alt="Robotical logo"
+					class="w-auto h-20"
+				/>
+			</a>
+			<a href="https://www.ed.ac.uk" target="_blank" rel="noopener" class="hover:opacity-70 transition">
+				<Image
+					src={uoe}
+					alt="University of Edinburgh logo"
+					class="w-auto h-20"
+				/>
+			</a>
+		</div>
+		<p class="text-center text-balance mt-12">
+			Thank you!
+		</p>
+	</section>
 </BaseLayout>
