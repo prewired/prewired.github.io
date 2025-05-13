@@ -72,7 +72,7 @@
 	}
 
 	h2 {
-		@apply mt-12 mb-2 font-semibold text-2xl border-b border-gray-300;
+		@apply mb-2 font-semibold text-3xl;
 	}
 
 	h3 {
@@ -93,6 +93,26 @@
 
 	a {
 		@apply text-blue-800 hover:text-purple-600 underline underline-offset-2;
+	}
+
+	section {
+		@apply w-full px-4 py-16;
+	}
+
+	section > div {
+		@apply max-w-screen-lg mx-auto;
+	}
+
+	table, th, td {
+		@apply border border-gray-600/30;
+	}
+
+	table {
+		@apply w-full;
+	}
+
+	th, td {
+		@apply px-4 py-2 text-left;
 	}
 
 	dialog {
