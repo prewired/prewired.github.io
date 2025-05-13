@@ -8,6 +8,16 @@ import codebase from "@assets/logos/codebase-logo.png";
 import hypercube from "@assets/logos/hypercube-logo.png";
 import robotical from "@assets/logos/robotical-logo.png";
 import uoe from "@assets/logos/uoe-logo.png";
+import rpf from "@assets/logos/rpf-logo.png";
+
+
+const sponsors = [
+	{ name: "CodeBase", href: "https://thisiscodebase.com", src: codebase, style: "py-4" },
+	{ name: "Hypercube", href: "https://wearehypercube.com", src: hypercube, style: "py-4" },
+	{ name: "Raspberry Pi Foundation", href: "https://www.raspberrypi.org/", src: rpf, style: "py-2" },
+	{ name: "Robotical", href: "https://robotical.io", src: robotical },
+	{ name: "University of Edinburgh", href: "https://www.ed.ac.uk", src: uoe }
+];
 ---
 
 <BaseLayout title="Home">
@@ -98,35 +108,15 @@ import uoe from "@assets/logos/uoe-logo.png";
 			In addition to the accommodation generously provided by CodeBase, Prewired could not exist without the support from our sponsors, donors, and supporters.
 		</p>
 		<div class="flex flex-wrap items-center justify-center gap-x-20 gap-y-8">
-			<!-- TODO: RPF / CodeClub, refactor -->
-			<a href="https://thisiscodebase.com" target="_blank" rel="noopener" class="hover:opacity-70 transition">
-				<Image
-					src={codebase}
-					alt="CodeBase logo"
-					class="w-auto h-20 py-4"
-				/>
-			</a>
-			<a href="https://wearehypercube.com" target="_blank" rel="noopener" class="hover:opacity-70 transition">
-				<Image
-					src={hypercube}
-					alt="Hypercube logo"
-					class="w-auto h-20 py-4"
-				/>
-			</a>
-			<a href="https://robotical.io" target="_blank" rel="noopener" class="hover:opacity-70 transition">
-				<Image
-					src={robotical}
-					alt="Robotical logo"
-					class="w-auto h-20"
-				/>
-			</a>
-			<a href="https://www.ed.ac.uk" target="_blank" rel="noopener" class="hover:opacity-70 transition">
-				<Image
-					src={uoe}
-					alt="University of Edinburgh logo"
-					class="w-auto h-20"
-				/>
-			</a>
+			{ sponsors.map(({name, href, src, style}) => (
+				<a href={href} target="_blank" rel="noopener" class="hover:opacity-70 transition">
+					<Image
+						src={src}
+						alt={`${name} logo`}
+						class={`w-auto h-20 ${style}`}
+					/>
+				</a>
+			))}
 		</div>
 		<p class="text-center text-balance mt-12">
 			Thank you!

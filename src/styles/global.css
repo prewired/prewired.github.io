@@ -79,6 +79,10 @@
 		@apply font-medium;
 	}
 
+	h4 {
+		@apply font-semibold text-lg;
+	}
+
 	p {
 		@apply mb-4;
 	}

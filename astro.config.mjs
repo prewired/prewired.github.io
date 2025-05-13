@@ -5,6 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 
 export default defineConfig({
+	site: "https://prewired.org",
 	integrations: [mdx(), sitemap()],
 
 	vite: {
