@@ -5,6 +5,8 @@ permalink: /registration/
 sidebar_cal: true
 ---
 
+*Looking to book tickets for the 2025 Prewired Make-a-Thon on 19 and 20 July? [Go here!](https://buytickets.at/prewired/1739800)*
+
 If you would like to attend Prewired, please:
 
 1. Book a spot [on TicketTailor](https://buytickets.at/prewired/1223517). You can attend as often as you'd like! New dates are added at the end of each month.
