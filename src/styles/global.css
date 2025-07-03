@@ -99,10 +99,6 @@
 		@apply w-full px-4 py-16;
 	}
 
-	section > div {
-		@apply max-w-screen-lg mx-auto;
-	}
-
 	table, th, td {
 		@apply border border-gray-600/30;
 	}

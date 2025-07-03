@@ -1,6 +1,56 @@
 ---
+import { Image } from "astro:assets";
 import PageLayout from "@layouts/PageLayout.astro";
 import coverPhoto from "@assets/photos/sh18_postits_cr.jpg";
+import codeClubProjects from "@assets/logos/codeclub-logo.png";
+import cyberSkillsLive from "@assets/logos/cyberskillslive-logo.svg";
+
+const technologies = [
+	{ name: "Scratch" },
+	{ name: "Python" },
+	{ name: "Game dev" },
+	{ name: "Web dev" },
+	{ name: "App dev" },
+	{ name: "LEGO robots" },
+	{ name: "micro:bits" },
+	{ name: "Raspberry Pi" },
+	{ name: "Cybersecurity" },
+	{ name: "Artificial intelligence" }
+];
+
+const levelLabels = [
+	{ label: "First steps", style: "bg-blue-100 text-blue-800" },
+	{ label: "Beginner", style: "bg-green-100 text-green-800" },
+	{ label: "Intermediate", style: "bg-amber-100 text-amber-800" },
+	{ label: "Advanced", style: "bg-red-100 text-red-800" },
+	{ label: "Beyond", style: "bg-black text-white" }
+];
+
+const types = ["Project", "Course"];
+
+const resources = [
+	{
+		name: "CodeClub Projects",
+		link: "https://projects.raspberrypi.org/en",
+		img: codeClubProjects,
+		imgAlt: "CodeClub logo",
+		techs: ["Scratch", "Python", "Game dev", "Web dev", "micro:bits", "Raspberry Pi", "Artificial intelligence"],
+		levels: [0, 1, 2],
+		types: ["Project", "Course"],
+		desc: "Our partners at the Raspberry Pi Foundation have created a brilliant website with both short projects you can do at a session and longer learning paths you can follow. This is where we recommend you start if you want to learn Scratch, Python, HTML/CSS, micro:bits, Unity, or Raspberry Pis."
+	},
+	{
+		name: "Cyber Skills Live",
+		link: "https://cyberskillslive.com/",
+		img: cyberSkillsLive,
+		imgAlt: "Cyber Skills Live logo",
+		techs: ["Cybersecurity", "Artificial intelligence"],
+		levels: [1, 2],
+		types: ["Project"],
+		desc: "Cyber Skills Live has short projects around topics like ethical hacking, digital forensics, data science, and artificial intelligence. Try for example 'How to rob a bank' or 'Defend Stirling Castle'!"
+	},
+];
+
 ---
 
 <PageLayout
@@ -8,7 +58,92 @@ import coverPhoto from "@assets/photos/sh18_postits_cr.jpg";
 	imgSrc={coverPhoto}
 	imgAlt="Resources"
 >
-	<p>
-		Intro - what / why / who / where / how
-	</p>
+	<section class="max-w-screen-lg mx-auto">
+		<p>
+			Intro - what / why / who / where / how
+		</p>
+	</section>
+
+	<section class="flex gap-8 px-0">
+		<div class="shrink-0 p-4 border-2 border-gray-500 rounded-lg text-base">
+			<h3>
+				Filters
+			</h3>
+			<h4>
+				Technology
+			</h4>
+			{ technologies.map(({ name }) => (
+				<div>
+					<input type="checkbox" name={name} />
+					<label for={name}>
+						{ name }
+					</label>
+				</div>
+			))}
+			<hr />
+			<h4>
+				Level
+			</h4>
+			{ levelLabels.map(({ label }) => (
+				<div>
+					<input type="checkbox" name={label} />
+					<label for={label}>
+						{ label }
+					</label>
+				</div>
+			))}
+			<hr />
+			<h4>
+				Type
+			</h4>
+			{ types.map(type => (
+				<div>
+					<input type="checkbox" name={type} />
+					<label for={type}>
+						{ type }
+					</label>
+				</div>
+			))}
+		</div>
+
+		<div class="">
+			{ resources.map(({ name, link, img, imgAlt, techs, levels, types, desc }) => (
+				<a
+					href={link}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="text-black no-underline"
+				>
+					<div class="mb-8 flex items-center gap-8 p-4 border-2 border-black rounded-lg">
+						<div class="h-40 aspect-square">
+							<Image
+								src={img}
+								alt={imgAlt}
+								class="object-cover"
+							/>
+						</div>
+						<div class="">
+							<h3 class="font-semibold text-xl mb-1">
+								{ name }
+							</h3>
+							<div class="flex gap-1 mb-2">
+								{ levels.map(level => {
+									const l = levelLabels[level];
+
+									return (
+										<div class={`px-2 py-0.5 rounded text-sm ${l.style}`}>
+											{ l.label }
+										</div>
+									);
+								}) }
+							</div>
+							<p>
+								{ desc }
+							</p>
+						</div>
+					</div>
+				</a>
+			))}
+		</div>
+	</section>
 </PageLayout>
