@@ -8,19 +8,23 @@ import coverPhoto from "@assets/photos/sh19_lanyards.jpg";
 	imgSrc={coverPhoto}
 	imgAlt="Lanyards"
 >
-	<p>
-		Hello! Please support us!
-	</p>
-	{/*!-- Donation widget */}
-	<iframe
-		id="kofiframe"
-		src='https://ko-fi.com/prewired/?hidefeed=true&widget=true&embed=true&preview=true'
-		style="padding:4px;width:100%;"
-		height="712"
-		title="prewired"
-	>
-	</iframe>
-</PageLayout>
+	<section class="flex max-w-screen-xl">
+		<div class="grow">
+			<p>
+				Hello! Please support us!
+			</p>
+		</div>
+		<div class="shrink-0">
+			{/*!-- Donation widget */}
+			<iframe
+				src="https://ko-fi.com/prewired/?hidefeed=true&widget=true&embed=true&preview=true"
+				id="kofiframe"
+				height="712"
+				class="w-[450px] max-w-full"
+				title="prewired"
+			>
+			</iframe>
+		</div>
+	</section>
 
-<!-- {/* Markdown donate button */}
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S35YATV) -->
+</PageLayout>
