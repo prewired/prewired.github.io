@@ -74,7 +74,7 @@
 	h2 {
 		@apply relative w-fit mt-24 mb-2 font-semibold text-2xl text-white;
 	}
-	h2:first-child { @apply mt-8; }
+	h2:first-child { @apply mt-0; }
 
 	/* Background highlighting */
 	h2::after {
@@ -99,11 +99,7 @@
 	}
 
 	ul {
-		@apply list-disc list-inside ml-4;
-	}
-
-	a {
-		@apply text-blue-800 hover:text-purple-600 underline underline-offset-2;
+		@apply list-disc list-outside ml-8;
 	}
 
 	ol {
@@ -112,6 +108,53 @@
 
 	li {
 		@apply mb-4;
+	}
+
+	a {
+		@apply text-blue-800 hover:text-purple-600 underline underline-offset-2;
+	}
+
+	details {
+		@apply border border-b-0 border-gray-400 overflow-hidden;
+	}
+
+	details:first-of-type {
+		@apply mt-6 rounded-t-lg;
+	}
+
+	details:last-of-type {
+		@apply border-b rounded-b-lg;
+	}
+
+	details > p {
+		@apply px-6;
+	}
+
+	details > p:first-of-type {
+		@apply mt-4;
+	}
+
+	summary {
+		@apply flex justify-between items-center py-4 px-6 list-none cursor-pointer;
+	}
+
+	summary::after {
+		/* Chevron pointing down */
+		@apply w-6 h-6 ml-4;
+		background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22currentColor%22%20%20viewBox%3D%220%200%2016%2016%22%3E%0A%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M1.646%204.646a.5.5%200%200%201%20.708%200L8%2010.293l5.646-5.647a.5.5%200%200%201%20.708.708l-6%206a.5.5%200%200%201-.708%200l-6-6a.5.5%200%200%201%200-.708%22%2F%3E%0A%3C%2Fsvg%3E");
+		content: "";
+	}
+
+	details[open] > summary {
+		@apply bg-gray-100;
+	}
+
+	details[open] > summary::after {
+		transform: rotate(180deg);
+	}
+
+	summary:hover {
+		@apply bg-gray-100;
 	}
 
 	table, th, td {

@@ -1,7 +1,12 @@
 ---
+import { Image } from "astro:assets";
 import PageLayout from "@layouts/PageLayout.astro";
 import BookTicketsButton from "@components/BookTicketsButton.astro";
 import coverPhoto from "@assets/photos/ws16_roundtables.jpg";
+import workshop from "@assets/photos/ws15_car.jpg";
+import summerhack from "@assets/photos/sh16_presentation.jpg";
+import fll from "@assets/photos/fll24_showoff.jpg";
+import festiveparty from "@assets/photos/cp22_makeymakey.jpg";
 ---
 
 <PageLayout
@@ -9,18 +14,203 @@ import coverPhoto from "@assets/photos/ws16_roundtables.jpg";
 	imgSrc={coverPhoto}
 	imgAlt="Attendees"
 >
+	<h2>
+		What is Prewired?
+	</h2>
 	<p>
-		Intro - what / why / who / where / how
+		Prewired runs a weekly, free-to-attend coding and technology club in Edinburgh.
+	</p>
+	<ul>
+		<li class="list-['🕠'] pl-2">
+			<strong>When?</strong> Every Wednesday of the year from 5:30&mdash;7:30 PM, except for a break during the winter school holidays.
+		</li>
+		<li class="list-['🏫'] pl-2">
+			<strong>Where?</strong> CodeBase Edinburgh, 37a Castle Terrace.
+		</li>
+		<li class="list-['🧑‍💻'] pl-2">
+			<strong>Who for?</strong> Anyone under 19&mdash;whether you have been coding for years or are completely new!
+		</li>
+	</ul>
+	<p>
+		Prewired is unstructured: we (usually) do not have workshops or set courses, but instead help our attendees work on their own projects. We have attendees working on Scratch, Python, websites (HTML, CSS, JavaScript), GameMaker, Godot, LEGO robots, Arduinos, and much more. If there are different topics, languages, or technologies you want to work with, just let us know!
 	</p>
 
-	<h2>How to book</h2>
+	<h3>
+		Equipment
+	</h3>
 	<p>
-		Details...
+		It's good if you can bring your own laptop if you can, as you'll be able to get to work a lot faster on a system you're familiar with. However, if you don't have any at hand, we do have many spares you can use, as well as mice and headphones.
+	</p>
+	<p>
+		We also have a lot of technical equipment you can borrow: BBC micro:bits, Marty robots, LEGO robotics sets (both EV3 and SPIKE Prime), Arduinos... ask a mentor if you'd like to try something!
 	</p>
 
-	<h2>Events</h2>
+	<h3>
+		Food and drink
+	</h3>
+	<p>
+		Please make sure you've had your dinner or a snack before you come if you usually eat around this time, as we don't allow eating or drinking near the computers. We do provide a brief snack break in the middle of the session.
+	</p>
+
+	<h2>
+		How to attend
+	</h2>
+	<p>
+		We don't have a membership&mdash;you simply book a spot for the day(s) you would like to attend using the button below or via <a href="https://buytickets.at/prewired/1223517" target="_blank" rel="noopener noreferrer">our TicketTailor page</a>.
+	</p>
 	<BookTicketsButton />
+	<p class="mt-4">
+		Please sign up for as many sessions as you want. New sign-up dates are added to the calendar around the end of every month. Coming regularly makes it easier to make friends and do as much coding as possible :)
+	</p>
+	<p>
+		Then, turn up!
+	</p>
+	<ul>
+		<li>
+			We open the check-in desk at 5:30&mdash;if you're early, you can wait in the lobby with the others. Please don't arrive too early though, as CodeBase is an active workplace during the day.
+		</li>
+		<li>
+			If you have never coded before, or have but don't know what to do, no problem! Introduce yourself to a mentor (they'll be wearing lanyards) when you arrive, and they'll help you to get started.
+		</li>
+		<li>
+			If you're already working on a coding project (maybe you're building your own website), or learning a topic by yourself and are happy to carry on with that, cool beans. Make yourself at home and ask any of our volunteers if you need help, or you can put your hand up and someone will spot you!
+		</li>
+	</ul>
+	<p>
+		If you can't make a session anymore, please cancel your booking so your spot can be given to someone else.
+	</p>
 
-	<h2>Frequently asked questions</h2>
-	<p>...</p>
+	<h2>
+		Special events
+	</h2>
+	<p>
+		In addition to our weekly sessions, we sometimes run special events. The best way to stay up-to-date with what's happening is to subscribe to our <a href="http://eepurl.com/dv2dPb" target="_blank" rel="noopener">mailing list</a>!
+	</p>
+
+	<div class="flex flex-wrap md:flex-nowrap mt-8 gap-8">
+		<Image
+			src={workshop}
+			alt="Close-up of a small robotic car wired to some batteries"
+			class="w-full md:w-60 h-60 shrink-0 object-cover rounded-lg"
+		/>
+		<div>
+			<h3 class="mt-0">
+				Workshops
+			</h3>
+			<p>
+				Occasionally during a session we'll run an optional workshop, delivered by one of our volunteers or a guest speaker. Over the past few years, we've covered topics from games for mental health to looking inside a PC and the inner workings of batteries.
+			</p>
+			<p>
+				Interested in running a workshop with us? Feel free to reach out to <a href="mailto:hello@prewired.org">hello@prewired.org</a>!
+			</p>
+		</div>
+	</div>
+
+	<div class="flex flex-wrap md:flex-nowrap mt-8 gap-8">
+		<Image
+			src={summerhack}
+			alt="Four young people presenting a slide in front of an audience of about 30 listening adults"
+			class="w-full md:w-60 h-60 shrink-0 object-cover rounded-lg"
+		/>
+		<div>
+			<h3 class="mt-0">
+				Summer Make-a-Thon
+			</h3>
+			<p>
+				Each year, usually in July, we run our Summer Make-a-Thon: a full-weekend event in which participants work in teams of 3-4 to prototype a solution to a challenge over the course of two days and present their work to a panel of judges at the end.
+			</p>
+			<p>
+				The Make-a-Thon is open to those aged 11-18 and is a fantastic opportunity to practice working in a team, quickly scaffolding a project, and presenting in front of an audience.
+			</p>
+		</div>
+	</div>
+
+	<div class="flex flex-wrap md:flex-nowrap mt-8 gap-8">
+		<Image
+			src={fll}
+			alt="Four children wearing t-shirts that read 'Plastic Pollution Solution' looking at a laptop surrounded by LEGO"
+			class="w-full md:w-60 h-60 shrink-0 object-cover rounded-lg"
+		/>
+		<div>
+			<h3 class="mt-0">
+				FIRST LEGO League
+			</h3>
+			<p>
+				From September to February, we run FIRST LEGO League in parallel to our normal sessions. In FIRST LEGO League, you work in a team over the course of several months to build a LEGO robot that can solve a series of challenges and design an innovation project related to the challenge theme.
+			</p>
+			<p>
+				We've participated in the Edinburgh competition several times and even won a few prizes, such as Best Innovation Project by our team <em>Plastic Pollution Solution</em> in 2025.
+			</p>
+		</div>
+	</div>
+
+	<div class="flex flex-wrap md:flex-nowrap mt-8 gap-8">
+		<Image
+			src={festiveparty}
+			alt="A volunteer pointing at a laptop that is connected to different pieces of fruit using some wires"
+			class="w-full md:w-60 h-60 shrink-0 object-cover rounded-lg"
+		/>
+		<div>
+			<h3 class="mt-0">
+				Prewired x DS4G Festive Party
+			</h3>
+			<p>
+				In December, for the last session of the year, we team up with our pals at Digital Skills 4 Girls for a Festive Party! In addition to normal Prewired, we pull out all the stops (and snacks) with activity stations that have included make-your-own micro:bit Christmas cards, vintage arcade machines, and VR games.
+			</p>
+		</div>
+	</div>
+
+	<h2>
+		Frequently asked questions
+	</h2>
+	<details name="faq">
+		<summary>
+			Do parents need to attend with their children?
+		</summary>
+		<p>
+			<strong>If your child is younger than 11:</strong> yes, you must accompany your child throughout every Prewired session that they attend. If your child is very young and needs lots of support, you should be prepared to sit with them to help. You can of course ask a volunteer for technical advice.
+		</p>
+		<p>
+			<strong>If your child is 11 or older:</strong> it is up to you. You are welcome to accompany your child if you think this would benefit them. They will otherwise be fully supervised at all times by our mentors.
+		</p>
+	</details>
+
+	<details name="faq">
+		<summary>
+			What do I need to bring?
+		</summary>
+		<p>
+			You don't need to bring anything apart from your enthusiasm! We have plenty of laptops and other equipment that you can borrow, but you are more than welcome to bring your own.
+		</p>
+		<p>
+			We provide a few snacks half-way through the session. You are welcome to bring your own too, though please don't bring anything containing nuts as we tend to have attendees that are allergic.
+		</p>
+	</details>
+
+	<details name="faq">
+		<summary>
+			How much does attending Prewired cost?
+		</summary>
+		<p>
+			Nothing! Prewired is free, run by volunteers, supported by donations from local companies.
+		</p>
+	</details>
+
+	<details name="faq">
+		<summary>
+			How does Prewired deal with child protection?
+		</summary>
+		<p>
+			Please see our child protection policy.
+		</p>
+	</details>
+
+	<details name="faq">
+		<summary>
+			How does Prewired deal with privacy?
+		</summary>
+		<p>
+			Please see our privacy policy.
+		</p>
+	</details>
 </PageLayout>
