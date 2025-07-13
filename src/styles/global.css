@@ -72,9 +72,9 @@
 	}
 
 	h2 {
-		@apply relative w-fit mt-16 mb-2 font-semibold text-2xl text-white;
+		@apply relative w-fit mt-24 mb-2 font-semibold text-2xl text-white;
 	}
-	h2:first-child { @apply mt-0; }
+	h2:first-child { @apply mt-8; }
 
 	/* Background highlighting */
 	h2::after {
@@ -112,10 +112,6 @@
 
 	li {
 		@apply mb-4;
-	}
-
-	section {
-		@apply w-full max-w-screen-lg mx-auto px-4 py-8;
 	}
 
 	table, th, td {

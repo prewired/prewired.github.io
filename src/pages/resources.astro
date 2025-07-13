@@ -66,50 +66,48 @@ const resources = [
 	imgSrc={coverPhoto}
 	imgAlt="Resources"
 >
-	<section class="max-w-screen-lg mx-auto">
-		<p>
-			Not sure where to get started? Need some inspiration? This page lists learning resources that we know and trust.
-		</p>
-		<p class="mb-16">
-			<strong>This list is under active construction as we migrate to our new website.</strong> Let us know which bits you find useful (or not), and make suggestions for new things that should be added. Note that although we are happy to receive suggestions for new resources, as a matter of policy we do not post links to sites which have mainly paid-for content or whose main goal is commercial rather than educational.
-		</p>
+	<p>
+		Not sure where to get started? Need some inspiration? This page lists learning resources that we know and trust.
+	</p>
+	<p class="mb-16">
+		<strong>This list is under active construction as we migrate to our new website.</strong> Let us know which bits you find useful (or not), and make suggestions for new things that should be added. Note that although we are happy to receive suggestions for new resources, as a matter of policy we do not post links to sites which have mainly paid-for content or whose main goal is commercial rather than educational.
+	</p>
 
-		{ resources.map(({ name, link, img, imgAlt, levels, desc }) => (
-			<a
-				href={link}
-				target="_blank"
-				rel="noopener noreferrer"
-				class="group text-black no-underline"
-			>
-				<div class="mb-8 flex flex-col md:flex-row gap-8 p-4 group-hover:bg-purple-50 rounded-lg">
-					<div class="w-40 shrink-0">
-						<Image
-							src={img}
-							alt={imgAlt}
-							class="h-full object-contain"
-						/>
-					</div>
-					<div class="">
-						<h3 class="font-semibold text-xl not-italic mt-0 mb-1">
-							{ name }
-						</h3>
-						<div class="flex gap-1 mb-2">
-							{ levels.map(level => {
-								const l = levelLabels[level];
-
-								return (
-									<div class={`px-2 py-0.5 rounded text-sm ${l.style}`}>
-										{ l.label }
-									</div>
-								);
-							}) }
-						</div>
-						<p>
-							{ desc }
-						</p>
-					</div>
+	{ resources.map(({ name, link, img, imgAlt, levels, desc }) => (
+		<a
+			href={link}
+			target="_blank"
+			rel="noopener noreferrer"
+			class="group text-black no-underline"
+		>
+			<div class="mb-8 flex flex-col md:flex-row gap-8 p-4 group-hover:bg-purple-50 rounded-lg">
+				<div class="w-40 shrink-0">
+					<Image
+						src={img}
+						alt={imgAlt}
+						class="h-full object-contain"
+					/>
 				</div>
-			</a>
-		))}
-	</section>
+				<div class="">
+					<h3 class="font-semibold text-xl not-italic mt-0 mb-1">
+						{ name }
+					</h3>
+					<div class="flex gap-1 mb-2">
+						{ levels.map(level => {
+							const l = levelLabels[level];
+
+							return (
+								<div class={`px-2 py-0.5 rounded text-sm ${l.style}`}>
+									{ l.label }
+								</div>
+							);
+						}) }
+					</div>
+					<p>
+						{ desc }
+					</p>
+				</div>
+			</div>
+		</a>
+	))}
 </PageLayout>

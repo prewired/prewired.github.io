@@ -90,55 +90,60 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 	imgSrc={coverPhoto}
 	imgAlt="Attendees at Prewired"
 >
-	<div class="max-w-screen-xl mx-auto">
-		{ feedByYears.map(feedYear => (
-			<div>
-				<h2>{ feedYear.year }</h2>
-				{ feedYear.posts.map(feedItem => {
-					if(feedItem.type === "local") {
-						const post = posts.find(post => post.id === feedItem.id);
-						if(!post) return;
-						else return (
-							<a href={`/news/${post.id}`} class="group text-black! no-underline!">
-								<div class="flex mb-4">
-									<img src={post.data.image?.url} alt={post.data.image?.alt} class="w-60 h-40 object-cover shrink-0 mr-8 bg-gray-200" />
-									<div>
-										<h3 class="font-bold group-hover:underline">
-											{ post.data.title }
-										</h3>
-										<p class="group-hover:underline">
-											{ feedItem.date.toLocaleDateString("en-GB") } | { post.data.excerpt }
-										</p>
-									</div>
+	<p>
+		This page aggregates updates from our own blog with mentions of Prewired in the media, to provide a historic overview of how Prewired has evolved over the years.
+	</p>
+
+	{ feedByYears.map(feedYear => (
+		<>
+			<h2>
+				{ feedYear.year }
+			</h2>
+
+			{ feedYear.posts.map(feedItem => {
+				if(feedItem.type === "local") {
+					const post = posts.find(post => post.id === feedItem.id);
+					if(!post) return;
+					else return (
+						<a href={`/news/${post.id}`} class="group text-black! no-underline!">
+							<div class="flex mb-4">
+								<img src={post.data.image?.url} alt={post.data.image?.alt} class="w-60 h-40 object-cover shrink-0 mr-8 bg-gray-200" />
+								<div>
+									<h3 class="mt-0 font-bold not-italic group-hover:underline">
+										{ post.data.title }
+									</h3>
+									<p class="group-hover:underline">
+										{ feedItem.date.toLocaleDateString("en-GB") } | { post.data.excerpt }
+									</p>
 								</div>
-							</a>
-						);
-					}
-					else {
-						const post = externalPostPreviews.find(post => post.url === feedItem.id);
-						if(!post) return;
-						else return (
-							<a href={post.url} target="_blank" rel="noopener noreferrer" class="group text-black! no-underline!">
-								<div class="flex mb-4">
-									<img src={post.images[0]} alt="Image" class="w-60 h-40 object-cover shrink-0 mr-8 bg-gray-200" />
-									<div>
-										<div class="flex items-center mb-2">
-											<img src={post.favicons[0]} alt="Favicon" class="w-4 h-4 mr-2" />
-											<span>{ post.siteName }</span>
-										</div>
-										<h3 class="font-bold group-hover:underline">
-											{ post.title }
-										</h3>
-										<p class="group-hover:underline">
-											{ feedItem.date.toLocaleDateString("en-GB") } | { post.description }
-										</p>
+							</div>
+						</a>
+					);
+				}
+				else {
+					const post = externalPostPreviews.find(post => post.url === feedItem.id);
+					if(!post) return;
+					else return (
+						<a href={post.url} target="_blank" rel="noopener noreferrer" class="group text-black! no-underline!">
+							<div class="flex mb-4">
+								<img src={post.images[0]} alt="Image" class="w-60 h-40 object-cover shrink-0 mr-8 bg-gray-200" />
+								<div>
+									<div class="flex items-center mb-2">
+										<img src={post.favicons[0]} alt="Favicon" class="w-4 h-4 mr-2" />
+										<span>{ post.siteName }</span>
 									</div>
+									<h3 class="mt-0 font-bold not-italic group-hover:underline">
+										{ post.title }
+									</h3>
+									<p class="group-hover:underline">
+										{ feedItem.date.toLocaleDateString("en-GB") } | { post.description }
+									</p>
 								</div>
-							</a>
-						);
-					}
-				})}
-			</div>
-		))}
-	</div>
+							</div>
+						</a>
+					);
+				}
+			})}
+		</>
+	))}
 </PageLayout>
