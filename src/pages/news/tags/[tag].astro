@@ -33,7 +33,7 @@ const tagCapitalised = String(tag).charAt(0).toUpperCase() + String(tag).slice(1
 	imgAlt="A computer screen with the text 'Prewired Presentations begin 13:00 Friday 27th July 2018'"
 >
 	<p>
-		Posts tagged with <code>{tag}</code>
+		Posts tagged with <span class="font-mono font-medium uppercase bg-blue-200 rounded px-2 py-1 leading-0">{tag}</span>
 	</p>
 	<ul>
 		{ posts.map(post => (

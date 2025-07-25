@@ -28,7 +28,7 @@ const sponsors = [
 				Welcome to <span class="font-bold text-blue-700">Prewired</span>, a free Edinburgh programming club for young people.
 			</h1>
 			<p class="text-xl mb-8">
-				If you're interested in learning to code, or want support taking your passion further, you're in the right place!
+				If you're under 19 years old and interested in learning to code, or want support taking your passion further, you're in the right place!
 			</p>
 			<div class="flex flex-wrap justify-center lg:justify-start gap-4">
 				<BookTicketsButton />
@@ -49,13 +49,13 @@ const sponsors = [
 	</section>
 
 	<!-- Special announcements -->
-	<section class="max-w-[56rem] mx-auto mb-8 lg:mb-24 bg-green-50 border-2 border-green-500 rounded-lg shadow-sm">
-		<div class="py-1 bg-green-500">
-			<p class="mb-0 font-black text-white text-sm text-center uppercase ">
+	<section class="max-w-[56rem] mx-auto mb-8 lg:mb-24 bg-green-50 border-2 border-green-600 rounded-lg shadow-sm overflow-hidden">
+		<div class="py-1 bg-green-600">
+			<p class="mb-0 font-mono font-semibold text-white text-base text-center uppercase ">
 				// Latest announcement //
 			</p>
 		</div>
-		<h1 class="mt-5 pb-4 px-4 border-b-2 border-green-500 text-center text-3xl">
+		<h1 class="mt-5 pb-4 px-4 border-b-2 border-green-600 text-center font-bold text-3xl">
 			Prewired x DS4G Festive Party
 		</h1>
 		<div class="text-center py-1 px-8">
@@ -110,7 +110,7 @@ const sponsors = [
 				<p class="text-4xl mb-4">
 					🧑‍💻
 				</p>
-				<p class="font-semibold text-4xl text-pink-700">
+				<p class="font-mono font-semibold text-5xl text-pink-700">
 					120+
 				</p>
 				<p>
@@ -121,7 +121,7 @@ const sponsors = [
 				<p class="text-4xl mb-4">
 					🗓️
 				</p>
-				<p class="font-semibold text-4xl text-pink-700">
+				<p class="font-mono font-semibold text-5xl text-pink-700">
 					50+
 				</p>
 				<p>
@@ -132,7 +132,7 @@ const sponsors = [
 				<p class="text-4xl mb-4">
 					🍵
 				</p>
-				<p class="font-semibold text-4xl text-pink-700">
+				<p class="font-mono font-semibold text-5xl text-pink-700">
 					100%
 				</p>
 				<p>
@@ -150,7 +150,7 @@ const sponsors = [
 		<p class="text-center text-balance mb-12">
 			In addition to the accommodation generously provided by CodeBase, Prewired could not exist without the support from our sponsors, donors, and supporters.
 		</p>
-		<div class="flex flex-wrap items-center justify-center gap-x-20 gap-y-8">
+		<div class="max-w-screen-lg mx-auto flex flex-wrap items-center justify-center gap-x-20 gap-y-8">
 			{ sponsors.map(({name, href, src, style}) => (
 				<a href={href} target="_blank" rel="noopener" class="hover:opacity-70 transition">
 					<Image

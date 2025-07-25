@@ -11,7 +11,7 @@ type PostPreview = {
     mediaType: string;
     contentType?: string;
     images: string[];
-    videos: {
+    videos?: {
         url?: string;
         secureUrl?: string | null;
         type?: string | null;
@@ -24,14 +24,30 @@ type PostPreview = {
 
 const { url, date } = Astro.props;
 
+// TODO: update with proper error messaging
+let postPreview: PostPreview = {
+	url: url,
+	title: "",
+	siteName: "",
+	description: "",
+	favicons: [""],
+	mediaType: "",
+	images: [""]
+};
+
 // Get a preview of the post we're linking to
-const postPreview = await getLinkPreview(url, {
-	followRedirects: "follow",
-	headers: {
-		// We pretend to be Slack to circumvent Cloudflare's bot protection
-		"user-agent": "Slackbot-LinkExpanding 1.0 (+https://api.slack.com/robots)",
-	}
-}) as PostPreview;
+try {
+	postPreview = await getLinkPreview(url, {
+		followRedirects: "follow",
+		headers: {
+			// We pretend to be Slack to circumvent Cloudflare's bot protection
+			"user-agent": "Slackbot-LinkExpanding 1.0 (+https://api.slack.com/robots)",
+		}
+	}) as PostPreview;
+}
+catch (error) {
+	console.error(error);
+}
 
 ---
 

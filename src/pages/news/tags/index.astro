@@ -15,7 +15,10 @@ const tags = [...new Set(allPosts.map(post => post.data.tags).flat())];
 >
 	{ tags.map(tag => (
 		<p>
-			<a href={`/news/tags/${tag}`}>
+			<a
+				href={`/news/tags/${tag}`}
+				class="font-mono font-medium uppercase text-black no-underline bg-blue-200 hover:bg-purple-200 rounded px-2 py-1 leading-0"
+			>
 				{ tag }
 			</a>
 		</p>
