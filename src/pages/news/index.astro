@@ -21,7 +21,7 @@ const externalPosts: ExternalPost[] = [
 	{ url: "https://medium.com/@indiathomson/prewired-x-hypercube-summer-make-a-thon-41f03bea0311", date: new Date("2024-08-07") },
 	{ url: "https://medium.com/kinandcartacreated/summer-tech-make-a-thon-dedaa474d3eb", date: new Date("2023-10-09")},
 	{ url: "https://www.digit.fyi/prewired-receives-funding-to-bring-coding-club-online/", date: new Date("2021-01-20") },
-	{ url: "https://scottishbusinessnews.net/prewired-secures-funding-from-creative-informatics-to-take-one-of-scotlands-longest-running-coding-clubs-for-young-people-online/", date: new Date("2021-01-20") },
+	// { url: "https://scottishbusinessnews.net/prewired-secures-funding-from-creative-informatics-to-take-one-of-scotlands-longest-running-coding-clubs-for-young-people-online/", date: new Date("2021-01-20") },
 	// { url: "https://informatics.ed.ac.uk/news-events/news/news-archive/prewired-secures-funding-coding-club-online", date: new Date("2021-01-19") },
 	{ url: "https://www.scotsman.com/business/nick-freer-comment-start-ups-hit-all-right-notes-night-193754", date: new Date("2018-12-09") },
 	{ url: "https://www.insider.co.uk/news/scottish-tech-startup-awards-finalists-13540999", date: new Date("2018-11-06") },
@@ -87,7 +87,7 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 										{ post.data.title }
 									</h3>
 									<p class="group-hover:underline">
-										{ feedItem.date.toLocaleDateString("en-GB") } | { post.data.excerpt }
+										{ feedItem.date.toLocaleDateString("en-GB") } &middot; { post.data.excerpt }
 									</p>
 								</div>
 							</div>

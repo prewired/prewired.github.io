@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@plugin "@tailwindcss/typography";
 
 
 /* Extending and overriding the default Tailwind styling */
@@ -176,5 +175,25 @@
 
 	address {
 		@apply not-italic;
+	}
+
+	code {
+		@apply px-1.5 py-1 bg-blue-100 text-blue-800 rounded;
+	}
+
+	article > h2 {
+		@apply mt-12;
+	}
+
+	article > p {
+		@apply leading-8;
+	}
+
+	article > blockquote {
+		@apply mb-8 px-6 py-4 border border-gray-300 rounded-lg;
+	}
+
+	article > blockquote > p {
+		@apply leading-8 mb-0;
 	}
 }
