@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
-import coverPhoto from "@assets/photos/sh18_live_cr.jpg";
+import coverPhoto from "@assets/photos/sh18_live.jpg";
 
 
 const allPosts = await getCollection("posts");
@@ -11,7 +11,7 @@ const tags = [...new Set(allPosts.map(post => post.data.tags).flat())];
 <PageLayout
 	title="All tags"
 	imgSrc={coverPhoto}
-	imgAlt="Attendees at Prewired"
+	imgAlt="A computer screen with the text 'Prewired Presentations begin 13:00 Friday 27th July 2018'"
 >
 	{ tags.map(tag => (
 		<p>

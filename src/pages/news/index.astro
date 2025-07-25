@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
-import coverPhoto from "@assets/photos/sh18_live_cr.jpg";
+import coverPhoto from "@assets/photos/sh18_live.jpg";
 import NewsFeedExternalItem from "@components/NewsFeedExternalItem.astro";
 
 
@@ -58,7 +58,7 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 <PageLayout
 	title="News and updates"
 	imgSrc={coverPhoto}
-	imgAlt="Attendees at Prewired"
+	imgAlt="A computer screen with the text 'Prewired Presentations begin 13:00 Friday 27th July 2018'"
 >
 	<p>
 		This page aggregates updates from our own blog with mentions of Prewired in the media, to provide a historic overview of how Prewired has evolved over the years.

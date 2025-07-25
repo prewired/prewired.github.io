@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
-import coverPhoto from "@assets/photos/sh18_live_cr.jpg";
+import coverPhoto from "@assets/photos/sh18_live.jpg";
 
 
 export async function getStaticPaths() {
@@ -30,7 +30,7 @@ const tagCapitalised = String(tag).charAt(0).toUpperCase() + String(tag).slice(1
 <PageLayout
 	title={tagCapitalised}
 	imgSrc={coverPhoto}
-	imgAlt="Attendees at Prewired"
+	imgAlt="A computer screen with the text 'Prewired Presentations begin 13:00 Friday 27th July 2018'"
 >
 	<p>
 		Posts tagged with <code>{tag}</code>
