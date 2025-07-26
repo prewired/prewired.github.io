@@ -18,15 +18,14 @@ interface Props {
 const { title } = Astro.props;
 
 const navItems = [
-	{ href: "/news", title: "News" },
-	{ href: "/attending", title: "Attending" },
-	{ href: "/resources", title: "Resources" },
-	{ href: "/volunteering", title: "Volunteering" },
-	{ href: "/support", title: "Support us" },
-	{ href: "/about", title: "About" },
-	{ href: "/contact", title: "Contact" },
+	{ href: "/news/", title: "News" },
+	{ href: "/attending/", title: "Attending" },
+	{ href: "/resources/", title: "Resources" },
+	{ href: "/volunteering/", title: "Volunteering" },
+	{ href: "/support/", title: "Support us" },
+	{ href: "/about/", title: "About" },
+	{ href: "/contact/", title: "Contact" },
 ];
-console.log(Astro.url.pathname);
 ---
 
 <!DOCTYPE html>
@@ -84,7 +83,7 @@ console.log(Astro.url.pathname);
 					</div>
 					{ navItems.map(({ href, title }) => (
 						<div class="mb-8">
-							<a href={href} class={`text-2xl text-black no-underline ${href === Astro.url.pathname ? "font-bold" : "hover:text-pink-700"}`}>
+							<a href={href} class={`text-2xl text-black no-underline ${Astro.url.pathname === href ? "font-bold" : "hover:text-pink-700"}`}>
 								{ title }
 							</a>
 						</div>
@@ -94,7 +93,7 @@ console.log(Astro.url.pathname);
 			<!-- Large-screen menu -->
 			<nav class="hidden lg:flex">
 				{ navItems.map(({ href, title }) => (
-					<a href={href} class={`ml-4 mr-8 font-medium text-black no-underline ${href === Astro.url.pathname ? "text-pink-700 border-b-2 border-pink-700" : "hover:text-pink-700"}`}>
+					<a href={href} class={`ml-4 mr-8 font-medium text-black no-underline ${Astro.url.pathname === href ? "text-pink-700 border-b-2 border-pink-700" : "hover:text-pink-700"}`}>
 						{ title }
 					</a>
 				))}
@@ -182,7 +181,7 @@ console.log(Astro.url.pathname);
 							Access
 						</h4>
 						<div class="flex flex-col text-base leading-7">
-							<a href="/docs">Documents</a>
+							<a href="/docs/">Documents</a>
 							<a href="/sitemap-0.xml">Sitemap</a>
 						</div>
 					</div>
