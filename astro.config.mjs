@@ -5,7 +5,13 @@ import tailwindcss from "@tailwindcss/vite";
 
 
 export default defineConfig({
-	site: "https://prewired.org",
+	//site: "https://prewired.org",
+	site: "https://prewired-website.vercel.app", // For beta deployment
+	
+	redirects: {
+		"/docs": "/about#docs"
+	},
+
 	integrations: [mdx(), sitemap()],
 
 	vite: {
