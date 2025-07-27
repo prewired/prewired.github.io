@@ -80,7 +80,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>("/src/assets/photos/
 					const post = posts.find(post => post.id === feedItem.id);
 					if(!post) return;
 					else return (
-						<a href={`/news/${post.id}`} class="group text-black! no-underline!">
+						<a href={`/news/${post.id}/`} class="group text-black! no-underline!">
 							<div class="flex flex-wrap md:flex-nowrap gap-4 md:gap-8 mb-8 md:mb-4">
 								<Image
 									src={images[post.data.image.url]()}

@@ -36,7 +36,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>("/src/assets/photos/
 		<div>
 			<div class="flex">
 				{ frontmatter.tags.map(tag => (<>
-					<a href={`/news/tags/${tag}`} class="no-underline!">
+					<a href={`/news/tags/${tag}/`} class="no-underline!">
 						<div class="mr-2 mb-2 bg-blue-200 hover:bg-purple-200 rounded px-2 py-1 leading-0">
 							<span class="text-sm font-mono font-medium text-black uppercase">
 								{ tag }

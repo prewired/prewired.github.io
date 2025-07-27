@@ -38,7 +38,7 @@ const tagCapitalised = String(tag).charAt(0).toUpperCase() + String(tag).slice(1
 	<ul>
 		{ posts.map(post => (
 			<li>
-				<a href={`/news/${post.id}`}>
+				<a href={`/news/${post.id}/`}>
 					{ post.data.title }
 				</a>
 			</li>

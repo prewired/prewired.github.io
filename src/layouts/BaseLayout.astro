@@ -40,7 +40,7 @@ const navItems = [
 		<title>{`${title} - Prewired`}</title>
 	</head>
 	<body class="text-lg bg-linear-[170deg,#EDFCFF,#FAF6FE_200px,#FFF0F3_400px,white_600px]">
-		<header class="h-32 w-full max-w-screen-xl mx-auto py-4 px-8 lg:pr-0 flex items-center">
+		<header class="h-32 w-full max-w-screen-xl mx-auto py-4 px-4 xl:px-0 lg:pr-0 flex items-center">
 			<!-- Responsive logo -->
 			<a href="/" class="lg:max-xl:hidden mr-auto hover:opacity-70 transition">
 				<Image
@@ -93,7 +93,7 @@ const navItems = [
 			<!-- Large-screen menu -->
 			<nav class="hidden lg:flex">
 				{ navItems.map(({ href, title }) => (
-					<a href={href} class={`ml-4 mr-8 font-medium text-black no-underline ${Astro.url.pathname === href ? "text-pink-700 border-b-2 border-pink-700" : "hover:text-pink-700"}`}>
+					<a href={href} class={`ml-8 mr-4 font-medium text-black no-underline ${Astro.url.pathname === href ? "text-pink-700 border-b-2 border-pink-700" : "hover:text-pink-700"}`}>
 						{ title }
 					</a>
 				))}
@@ -105,15 +105,15 @@ const navItems = [
 		</main>
 
 		<footer class="w-full mt-32 bg-purple-600 rounded-t-[0.625rem]">
-			<div class="w-full pt-14 pb-8 px-10 bg-purple-50 rounded-lg">
-				<div class="w-full xl:max-w-screen-xl mx-auto mb-4 flex flex-wrap justify-between gap-16">
+			<div class="w-full pt-14 pb-8 px-4 sm:px-8 bg-purple-50 rounded-lg">
+				<div class="w-full xl:max-w-screen-xl mx-auto mb-4 flex flex-wrap lg:justify-between gap-16">
 					<div class="w-auto -mt-8 flex flex-col">
 						<Image
 							src={prewiredLogoText}
 							alt="The Prewired logo"
 							class="w-60 mb-8"
 						/>
-						<div class="flex lg:flex-col gap-4">
+						<div class="flex flex-wrap lg:flex-col gap-4">
 							<!-- Ko-fi widget -->
 							<script is:inline type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
 							<script is:inline type="text/javascript">
@@ -211,7 +211,7 @@ const navItems = [
 					</div>
 				</div>
 			</div>
-			<div class="py-4 text-base text-center text-white font-mono font-semibold uppercase">
+			<div class="p-4 text-base text-center text-white font-mono font-semibold uppercase">
 				Prewired is a Scottish Charity, SC047780 &middot; &copy; 2025 Prewired
 			</div>
 		</footer>

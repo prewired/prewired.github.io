@@ -22,15 +22,15 @@ const sponsors = [
 
 <BaseLayout title="Home">
 	<!-- Cover -->
-	<section class="max-w-screen-xl mx-auto mb-8 lg:mb-24 flex flex-wrap-reverse lg:items-center lg:justify-around">
-		<div class="md:w-3/4 md:max-lg:mx-auto lg:w-2/5 text-center lg:text-left pl-4 pr-8 py-2">
+	<section class="max-w-screen-xl mx-auto mb-8 lg:mb-24 flex flex-wrap-reverse lg:items-center lg:justify-between gap-8">
+		<div class="lg:w-1/2 xl:w-2/5 md:max-lg:mx-auto md:text-center lg:text-left py-2">
 			<h1 class="font-semibold text-3xl text-balance mb-4">
 				Welcome to <span class="font-bold text-blue-700">Prewired</span>, a free Edinburgh programming club for young people.
 			</h1>
-			<p class="text-xl mb-8">
+			<p class="text-xl text-balance mb-8">
 				If you're under 19 years old and interested in learning to code, or want support taking your passion further, you're in the right place!
 			</p>
-			<div class="flex flex-wrap justify-center lg:justify-start gap-4">
+			<div class="flex flex-wrap md:justify-center lg:justify-start gap-4">
 				<BookTicketsButton />
 				<a
 					href="http://eepurl.com/dv2dPb"
@@ -44,7 +44,7 @@ const sponsors = [
 		<Image
 			src={cover}
 			alt="Three teenagers coding on laptops while chatting to each other"
-			class="w-full lg:w-1/2 h-60 lg:h-96 mb-8 lg:mb-0 object-cover rounded-lg text-xl"
+			class="w-full lg:w-[calc(50%-2rem)] xl:w-1/2 h-60 lg:h-96 object-cover rounded-lg text-xl"
 		/>
 	</section>
 
@@ -55,10 +55,10 @@ const sponsors = [
 				// Latest announcement //
 			</p>
 		</div>
-		<h1 class="mt-5 pb-4 px-4 border-b-2 border-green-600 text-center font-bold text-3xl">
+		<h1 class="mt-4 pb-4 px-4 border-b-2 border-green-600 md:text-center font-bold text-3xl">
 			Prewired x DS4G Festive Party
 		</h1>
-		<div class="text-center py-1 px-8">
+		<div class="md:text-center py-1 px-4 md:px-8">
 			<p>
 				On 18 December we're hosting a <strong>special festive session</strong> in collaboration with Digital Skills 4 Girls!
 			</p>
@@ -81,14 +81,14 @@ const sponsors = [
 			alt="A room full of young people working on laptops at low and high tables"
 			class="w-full lg:w-2/5 h-60 lg:h-[28rem] mb-8 lg:mb-0 object-cover rounded-lg"
 		/>
-		<div class="md:w-3/4 md:max-lg:mx-auto lg:w-2/5 lg:ml-16 text-center lg:text-left pl-4 pr-8 py-2">
+		<div class="md:w-3/4 md:max-lg:mx-auto lg:w-2/5 lg:ml-16 md:text-center lg:text-left py-2">
 			<h1 class="font-semibold text-3xl text-balance mb-4">
 				What we do
 			</h1>
-			<p class="text-xl">
+			<p class="md:text-xl">
 				Computers let you create anything you can think of. Prewired is here to help enthusiastic young coders of any ability to do just that.
 			</p>
-			<p class="text-xl mb-8">
+			<p class="md:text-xl mb-8">
 				Every Wednesday 5:30&ndash;7:30 PM, we meet at CodeBase Edinburgh. You can bring your own project to work on or chat to one of our volunteers about how to get started!
 			</p>
 			<a
@@ -144,13 +144,13 @@ const sponsors = [
 
 	<!-- Sponsors -->
 	<section class="max-w-screen-xl mx-auto">
-		<h1 class="text-center mb-4">
+		<h1 class="md:text-center mb-4">
 			Sponsors & supporters
 		</h1>
-		<p class="text-center text-balance mb-12">
+		<p class="md:text-center text-balance mb-12">
 			In addition to the accommodation generously provided by CodeBase, Prewired could not exist without the support from our sponsors, donors, and supporters.
 		</p>
-		<div class="max-w-screen-lg mx-auto flex flex-wrap items-center justify-center gap-x-20 gap-y-8">
+		<div class="max-w-screen-lg mx-auto flex flex-col md:flex-row flex-wrap items-center justify-center gap-x-20 gap-y-8">
 			{ sponsors.map(({name, href, src, style}) => (
 				<a href={href} target="_blank" rel="noopener" class="hover:opacity-70 transition">
 					<Image
