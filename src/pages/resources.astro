@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import PageLayout from "@layouts/PageLayout.astro";
 import coverPhoto from "@assets/photos/sh18_postits.jpg";
 import codeClubProjects from "@assets/logos/codeclub-logo.png";
@@ -81,11 +81,13 @@ const resources = [
 			class="group text-black no-underline"
 		>
 			<div class="mb-8 flex flex-col md:flex-row gap-8 p-4 group-hover:bg-purple-50 rounded-lg">
-				<div class="w-40 shrink-0">
-					<Image
+				<div class="w-40 shrink-0 flex items-center">
+					<Picture
 						src={img}
+						formats={["avif", "webp"]}
 						alt={imgAlt}
-						class="h-full object-contain"
+						width="160"
+						class="object-contain"
 					/>
 				</div>
 				<div class="">

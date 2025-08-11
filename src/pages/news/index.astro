@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import { getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import coverPhoto from "@assets/photos/sh18_live.jpg";
@@ -82,10 +82,12 @@ const images = import.meta.glob<{ default: ImageMetadata }>("/src/assets/photos/
 					else return (
 						<a href={`/news/${post.id}/`} class="group text-black! no-underline!">
 							<div class="flex flex-wrap md:flex-nowrap gap-4 md:gap-8 mb-8 md:mb-4">
-								<Image
+								<Picture
 									src={images[post.data.image.url]()}
+									formats={["avif", "webp"]}
 									alt={post.data.image.alt}
-									class="w-full md:w-72 h-52 object-cover shrink-0 bg-gray-200 rounded-lg"
+									class="w-full h-52 object-cover bg-gray-200 rounded-lg"
+									pictureAttributes={{ class: "w-full md:w-72 shrink-0" }}
 								/>
 								<div>
 									<h3 class="mt-0 font-bold text-xl not-italic group-hover:underline">

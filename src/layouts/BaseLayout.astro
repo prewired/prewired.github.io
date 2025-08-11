@@ -1,11 +1,10 @@
 ---
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import "@fontsource-variable/open-sans";
 import "@fontsource-variable/open-sans/wght-italic.css";
 import "@fontsource-variable/geist-mono";
 import "../styles/global.css";
 import DialogCloseButton from "@components/DialogCloseButton.astro";
-import prewiredLogoNoText from "@assets/logos/prewired-logo-no-text.png";
 import prewiredLogoText from "@assets/logos/prewired-logo-text.png";
 import oscr from "@assets/logos/oscr.jpg";
 import codeclub from "@assets/logos/codeclub-logo.png";
@@ -39,21 +38,15 @@ const navItems = [
 		<meta name="generator" content={Astro.generator} />
 		<title>{`${title} - Prewired`}</title>
 	</head>
-	<body class="text-lg bg-linear-[170deg,#EDFCFF,#FAF6FE_200px,#FFF0F3_400px,white_600px]">
-		<header class="h-32 w-full max-w-screen-xl mx-auto py-4 px-4 xl:px-0 lg:pr-0 flex items-center">
-			<!-- Responsive logo -->
-			<a href="/" class="lg:max-xl:hidden mr-auto hover:opacity-70 transition">
-				<Image
+	<body class="px-4 text-lg bg-linear-[170deg,#EDFCFF,#FAF6FE_200px,#FFF0F3_400px,white_600px]">
+		<header class="h-32 w-full max-w-screen-xl mx-auto py-4 lg:pr-0 flex items-center">
+			<a href="/" class="mr-auto hover:opacity-70 transition">
+				<Picture priority
 					src={prewiredLogoText}
+					formats={["avif", "webp"]}
 					alt="The Prewired logo"
-					class="w-auto h-20 pb-5"
-				/>
-			</a>
-			<a href="/" class="hidden lg:max-xl:inline mr-auto hover:opacity-70 transition">
-				<Image
-					src={prewiredLogoNoText}
-					alt="The Prewired logo"
-					class="w-auto h-20 pb-5"
+					width="200"
+					class="pb-5"
 				/>
 			</a>
 			<!-- Small-screen menu button -->
@@ -91,27 +84,29 @@ const navItems = [
 				</nav>
 			</dialog>
 			<!-- Large-screen menu -->
-			<nav class="hidden lg:flex">
+			<nav class="mx-4 hidden lg:flex gap-7 xl:gap-12">
 				{ navItems.map(({ href, title }) => (
-					<a href={href} class={`ml-8 mr-4 font-medium text-black no-underline ${Astro.url.pathname === href ? "text-pink-700 border-b-2 border-pink-700" : "hover:text-pink-700"}`}>
+					<a href={href} class={`shrink-0 font-medium text-black no-underline ${Astro.url.pathname === href ? "text-pink-700 border-b-2 border-pink-700" : "hover:text-pink-700"}`}>
 						{ title }
 					</a>
 				))}
 			</nav>
 		</header>
 
-		<main class="px-4">
+		<main>
 			<slot />
 		</main>
 
-		<footer class="w-full mt-32 bg-purple-600 rounded-t-[0.625rem]">
+		<footer class="w-[calc(100%+2rem)] mt-32 -ml-4 bg-purple-600 rounded-t-[0.625rem]">
 			<div class="w-full pt-14 pb-8 px-4 sm:px-8 bg-purple-50 rounded-lg">
 				<div class="w-full xl:max-w-screen-xl mx-auto mb-4 flex flex-wrap lg:justify-between gap-16">
 					<div class="w-auto -mt-8 flex flex-col">
-						<Image
+						<Picture
 							src={prewiredLogoText}
+							formats={["avif", "webp"]}
 							alt="The Prewired logo"
-							class="w-60 mb-8"
+							width="240"
+							class="mb-8"
 						/>
 						<div class="flex flex-wrap lg:flex-col gap-4">
 							<!-- Ko-fi widget -->
@@ -191,10 +186,12 @@ const navItems = [
 							target="_blank" rel="noopener"
 							class="hover:opacity-70 transition"
 						>
-							<Image
+							<Picture
 								src={oscr}
+								formats={["avif", "webp"]}
 								alt="OSCR wordmark above the text 'Registered SCIO SC047780'"
-								class="w-48 rounded-sm"
+								width="192"
+								class="rounded-sm"
 							/>
 						</a>
 						<a
@@ -202,10 +199,12 @@ const navItems = [
 							target="_blank" rel="noopener"
 							class="hover:opacity-70 transition"
 						>
-							<Image
+							<Picture
 								src={codeclub}
+								formats={["avif", "webp"]}
 								alt="CodeClub logo"
-								class="w-36 rounded-sm"
+								width="144"
+								class="rounded-sm"
 							/>
 						</a>
 					</div>

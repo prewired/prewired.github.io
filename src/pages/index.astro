@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import BookTicketsButton from "@components/BookTicketsButton.astro";
 import cover from "@assets/photos/sh16_discuss.jpg";
@@ -41,10 +41,12 @@ const sponsors = [
 				</a>
 			</div>
 		</div>
-		<Image
+		<Picture priority
 			src={cover}
+			formats={["avif", "webp"]}
 			alt="Three teenagers coding on laptops while chatting to each other"
-			class="w-full lg:w-[calc(50%-2rem)] xl:w-1/2 h-60 lg:h-96 object-cover rounded-lg text-xl"
+			class="h-60 lg:h-96 object-cover rounded-lg"
+			pictureAttributes={{ class: "w-full lg:w-[calc(50%-2rem)] xl:w-1/2" }}
 		/>
 	</section>
 
@@ -76,10 +78,12 @@ const sponsors = [
 
 	<!-- Overview -->
 	<section class="max-w-screen-xl mx-auto mb-8 lg:mb-24 flex flex-wrap lg:items-center lg:justify-center">
-		<Image
+		<Picture
 			src={overview}
+			formats={["avif", "webp"]}
 			alt="A room full of young people working on laptops at low and high tables"
-			class="w-full lg:w-2/5 h-60 lg:h-[28rem] mb-8 lg:mb-0 object-cover rounded-lg"
+			class="h-60 lg:h-[28rem] mb-8 lg:mb-0 object-cover rounded-lg"
+			pictureAttributes={{ class: "w-full lg:w-2/5" }}
 		/>
 		<div class="md:w-3/4 md:max-lg:mx-auto lg:w-2/5 lg:ml-16 md:text-center lg:text-left py-2">
 			<h1 class="font-semibold text-3xl text-balance mb-4">
@@ -153,8 +157,9 @@ const sponsors = [
 		<div class="max-w-screen-lg mx-auto flex flex-col md:flex-row flex-wrap items-center justify-center gap-x-20 gap-y-8">
 			{ sponsors.map(({name, href, src, style}) => (
 				<a href={href} target="_blank" rel="noopener" class="hover:opacity-70 transition">
-					<Image
+					<Picture
 						src={src}
+						formats={["avif", "webp"]}
 						alt={`${name} logo`}
 						class={`w-auto h-20 ${style}`}
 					/>

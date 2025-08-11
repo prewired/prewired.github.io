@@ -8,6 +8,10 @@ export default defineConfig({
 	//site: "https://prewired.org",
 	site: "https://prewired-website.vercel.app", // For beta deployment
 	trailingSlash: "always",
+
+	image: {
+		layout: "constrained"
+	},
 	
 	redirects: {
 		"/docs/": "/about#docs"

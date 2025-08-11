@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import BaseLayout from "./BaseLayout.astro";
 
 interface Props {
@@ -14,10 +14,11 @@ const { title, imgSrc, imgAlt } = Astro.props;
 <BaseLayout title={title}>
 	<div class="max-w-screen-xl mx-auto">
 		<div class="relative bg-black rounded-lg overflow-hidden">
-			<Image
+			<Picture priority
 				src={imgSrc}
+				formats={["avif", "webp"]}
 				alt={imgAlt}
-				class="relative w-full h-60 xl:h-72 object-cover mask-b-from-50%"
+				class="h-60 xl:h-72 object-cover mask-b-from-50%"
 			/>
 			<div class="max-w-screen-lg mx-auto px-4">
 				<div class="absolute bottom-4">
