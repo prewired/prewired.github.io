@@ -108,6 +108,10 @@
 		@apply text-blue-800 hover:text-purple-600 underline underline-offset-2;
 	}
 
+	hr {
+		@apply my-16;
+	}
+
 	details {
 		@apply border border-b-0 border-gray-400 overflow-hidden;
 	}
