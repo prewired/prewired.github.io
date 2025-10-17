@@ -12,9 +12,9 @@ toc_icon: "cog"
 
 ## Our Contact Details
 
-Prewired SCIO   
-37A Castle Terrace   
-Edinburgh EH3 9DZ   
+Prewired SCIO
+37a Castle Terrace
+Edinburgh EH1 2EL
 
 hello [AT] prewired.org
 
@@ -27,7 +27,7 @@ If you have any comments or questions about this notice, feel free to contact ou
 
 ## Personal data that we process
 
-The following table explains the types of data we collect and the legal basis, under current data protection legislation, on which this data is processed. 
+The following table explains the types of data we collect and the legal basis, under current data protection legislation, on which this data is processed.
 
 <table>
 	<tr>
@@ -65,13 +65,13 @@ The following table explains the types of data we collect and the legal basis, u
 
 ## How we use your data
 
-We will only use your data in a manner that is appropriate considering the basis on which that data was collected, as set out in the table at the top of this policy. 
+We will only use your data in a manner that is appropriate considering the basis on which that data was collected, as set out in the table at the top of this policy.
 
 For example, we may use your personal information to:
 
 * reply to enquiries you send to us;
 * ensure that we are able to meet your needs as an attendee in one of our events;
-* include you as a volunteer in regular or one-off events; 
+* include you as a volunteer in regular or one-off events;
 * where you have specifically agreed to this, send you communications by email relating to our work which we think may be of interest to you.
 
 We do not carry out any automated processing of your personal data except to collect aggregated statistics about our events for the purposes of reporting to sponsors and other interested bodies.
@@ -95,15 +95,15 @@ Data that is anonymised such as age, postcode and ethnicity may be kept indefini
 You have a range of rights over your data, which include the following:
 
 * Where data processing is based on consent,  you are able to remove your consent at any time. You can do this by contacting dpo [AT] prewired.org.
-* You have the right to ask for rectification and/or deletion of your information. 
-* You have the right of access to your information. 
-* You have the right to lodge a complaint with the Information Commissioner if you feel your rights have been infringed. 
+* You have the right to ask for rectification and/or deletion of your information.
+* You have the right of access to your information.
+* You have the right to lodge a complaint with the Information Commissioner if you feel your rights have been infringed.
 
 A full summary of your legal rights over your data can be found on the Information Commissioner’s website here: <https://ico.org.uk/>
 
-If you would like to access the rights listed above, or any other legal rights you have over your data under current legislation, please get in touch with us. 
+If you would like to access the rights listed above, or any other legal rights you have over your data under current legislation, please get in touch with us.
 
-Please note that relying on some of these rights, such as the right to deleting your data, will make it impossible for us to continue to deliver some services to you. However, where possible we will always try to allow the maximum access to your rights while continuing to deliver as many services to you as possible. 
+Please note that relying on some of these rights, such as the right to deleting your data, will make it impossible for us to continue to deliver some services to you. However, where possible we will always try to allow the maximum access to your rights while continuing to deliver as many services to you as possible.
 
 Note that we cannot remove anonymised data such as age, postcode and ethnicity, however this cannot be tied back to you and is stored in a separate database, separate from your personal data.
 
@@ -113,6 +113,4 @@ We may modify this Privacy Policy from time to time and will publish the most cu
 
 ----
 
-*Version 1.4, last revised 29 April 2021*
-
-
+*Version 1.4.1, last revised 17 October 2025*
