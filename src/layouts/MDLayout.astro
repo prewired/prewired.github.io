@@ -1,23 +1,29 @@
 ---
+import type { ImageMetadata } from "astro";
 import PageLayout from "./PageLayout.astro";
+
 
 interface Props {
 	frontmatter: {
 		title: string;
 		description: string;
-		imgSrc: ImageMetadata;
+		imgSrc: string;
 		imgAlt: string;
 	};
 }
 
 const { frontmatter } = Astro.props;
+
+// Import the header image from the src/assets/photos folder
+const allImages = import.meta.glob<{ default: ImageMetadata }>("src/assets/photos/*.{jpeg,jpg,png}");
+const imgPath = "/src/assets/photos/" + frontmatter.imgSrc;
+if(!allImages[imgPath]) throw new Error(`"${frontmatter.imgSrc}" does not exist in the photos folder`);
 ---
 
 <PageLayout
 	title={frontmatter.title}
-	imgSrc={frontmatter.imgSrc}
+	imgSrc={allImages[imgPath]()}
 	imgAlt={frontmatter.imgAlt}
 >
-	<h1 class="">{frontmatter.title}</h1>
 	<slot />
 </PageLayout>
