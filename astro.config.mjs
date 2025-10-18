@@ -14,7 +14,7 @@ export default defineConfig({
 	},
 	
 	redirects: {
-		"/docs/": "/about#docs"
+		"/docs/": "/about/#governance"
 	},
 
 	integrations: [mdx(), sitemap()],
