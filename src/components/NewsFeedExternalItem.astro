@@ -22,7 +22,7 @@ type PostPreview = {
 };
 
 
-const { url, date } = Astro.props;
+const { url, date, desc } = Astro.props;
 
 // TODO: update with proper error messaging
 let postPreview: PostPreview = {
@@ -67,7 +67,7 @@ catch (error) {
 				{ postPreview.title }
 			</h3>
 			<p class="group-hover:underline">
-				{ date.toLocaleDateString("en-GB") } &middot; { postPreview.description }
+				{ date.toLocaleDateString("en-GB") } &middot; { desc ?? postPreview.description }
 			</p>
 		</div>
 	</div>

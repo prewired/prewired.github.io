@@ -14,6 +14,7 @@ const posts = await getCollection("posts");
 type ExternalPost = {
 	url: string;
 	date: Date;
+	desc?: string;
 };
 
 // Links that are commented out are broken links from the OG website
@@ -21,10 +22,12 @@ const externalPosts: ExternalPost[] = [
 	{ url: "https://wearehypercube.com/prewired-2025/", date: new Date("2025-07-22") },
 	{ url: "https://medium.com/@indiathomson/prewired-x-hypercube-summer-make-a-thon-41f03bea0311", date: new Date("2024-08-07") },
 	{ url: "https://medium.com/kinandcartacreated/summer-tech-make-a-thon-dedaa474d3eb", date: new Date("2023-10-09")},
+	{ url: "https://www.gov.uk/government/publications/mapping-informal-cyber-security-initiatives-for-young-people-aged-5-19/mapping-informal-cyber-security-initiatives-for-young-people-aged-5-19", date: new Date("2022-07-21"), desc: "This research aimed to provide a first mapping of informal cyber security-related initiatives aimed at children and young people aged 5-19."},
+	{ url: "https://tinderboxcollective.org/2021/05/04/prewired-presents-the-emporium-of-digital-delights/", date: new Date("2021-05-04")},
 	{ url: "https://www.digit.fyi/prewired-receives-funding-to-bring-coding-club-online/", date: new Date("2021-01-20") },
-	{ url: "https://scottishbusinessnews.net/prewired-secures-funding-from-creative-informatics-to-take-one-of-scotlands-longest-running-coding-clubs-for-young-people-online/", date: new Date("2021-01-20") },
+	// { url: "https://scottishbusinessnews.net/prewired-secures-funding-from-creative-informatics-to-take-one-of-scotlands-longest-running-coding-clubs-for-young-people-online/", date: new Date("2021-01-20") },
 	// { url: "https://informatics.ed.ac.uk/news-events/news/news-archive/prewired-secures-funding-coding-club-online", date: new Date("2021-01-19") },
-	{ url: "https://www.scotsman.com/business/nick-freer-comment-start-ups-hit-all-right-notes-night-193754", date: new Date("2018-12-09") },
+	// { url: "https://www.scotsman.com/business/nick-freer-comment-start-ups-hit-all-right-notes-night-193754", date: new Date("2018-12-09") },
 	{ url: "https://www.insider.co.uk/news/scottish-tech-startup-awards-finalists-13540999", date: new Date("2018-11-06") },
 	{ url: "https://dailybusinessgroup.co.uk/2018/11/scottish-tech-startups-in-battle-for-honours/", date: new Date("2018-11-06") },
 	// { url: "https://www.thisiscodebase.com/blog/2018/8/1/summerhack2018-roundup", date: new Date("2018-08-02") },
@@ -40,11 +43,12 @@ type FeedItem = {
 	id: string;
 	date: Date;
 	type: "local" | "external";
+	desc?: string;
 };
 
 const feed: FeedItem[] = [];
 posts.forEach(post => feed.push({ id: post.id, date: post.data.date, type: "local" }));
-externalPosts.forEach(post => feed.push({ id: post.url, date: post.date, type: "external" }));
+externalPosts.forEach(post => feed.push({ id: post.url, date: post.date, desc: post.desc, type: "external" }));
 
 // Sort by date, descending
 feed.sort((a, b) => b.date.valueOf() - a.date.valueOf());
@@ -93,6 +97,15 @@ const images = import.meta.glob<{ default: ImageMetadata }>("/src/assets/photos/
 									pictureAttributes={{ class: "w-full md:w-72 shrink-0" }}
 								/>
 								<div>
+									<div class="inline-flex">
+										{ post.data.tags.map(tag => (
+											<div class="mr-2 mb-2 bg-blue-200 rounded px-2 py-1 leading-0">
+												<span class="text-sm font-mono font-medium text-black uppercase">
+													{ tag }
+												</span>
+											</div>
+										))}
+									</div>
 									<h3 class="mt-0 font-bold text-xl not-italic group-hover:underline">
 										{ post.data.title }
 									</h3>
@@ -109,6 +122,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>("/src/assets/photos/
 						<NewsFeedExternalItem
 							url={feedItem.id}
 							date={feedItem.date}
+							desc={feedItem.desc}
 						/>
 					);
 				}

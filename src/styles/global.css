@@ -195,4 +195,13 @@
 	article > blockquote > p {
 		@apply leading-8 mb-0;
 	}
+
+	/* Responsive sizing for iframes embedded in blog posts */
+	article > .iframe-wrapper {
+		@apply relative w-full pt-[56.25%];
+	}
+
+	article > .iframe-wrapper > iframe {
+		@apply absolute top-0 left-0 w-full h-full border-0;
+	}
 }

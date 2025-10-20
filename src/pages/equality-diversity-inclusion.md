@@ -2,8 +2,8 @@
 layout: "@layouts/MDLayout.astro"
 title: Equality, diversity, and inclusion policy
 desc: Prewired welcomes people of all backgrounds and abilities, both as participants and mentors, and is committed to encouraging equality, diversity, and inclusion within the organisation and our services.
-imgSrc: sh19_group.jpg
-imgAlt: About 20 young people sitting on several rows of chairs, with some looking at a laptop together and one giving a thumbs up to the camera
+imgSrc: mt24_buildtogether.jpg
+imgAlt: A mentor and attendee working together on a LEGO robot
 ---
 
 ## 1. Our Commitment

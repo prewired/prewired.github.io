@@ -11,9 +11,10 @@ export async function getStaticPaths() {
 	];
 
 	return uniqueTags.map(tag => {
+		// Find all posts with this particular tag and sort them from newest to oldest
 		const filteredPosts = allPosts.filter(post =>
 			post.data.tags.includes(tag),
-		);
+		).sort((postA, postB) => postA.data.date < postB.data.date ? 1 : -1);
 		return {
 			params: { tag },
 			props: { posts: filteredPosts },
