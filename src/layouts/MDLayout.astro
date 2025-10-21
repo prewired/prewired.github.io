@@ -22,6 +22,7 @@ if(!allImages[imgPath]) throw new Error(`"${frontmatter.imgSrc}" does not exist 
 
 <PageLayout
 	title={frontmatter.title}
+	desc={frontmatter.description}
 	imgSrc={allImages[imgPath]()}
 	imgAlt={frontmatter.imgAlt}
 >

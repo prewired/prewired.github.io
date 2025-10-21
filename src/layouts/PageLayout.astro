@@ -4,14 +4,18 @@ import BaseLayout from "./BaseLayout.astro";
 
 interface Props {
 	title: string;
+	desc: string;
 	imgSrc: ImageMetadata | Promise<{ default: ImageMetadata; }>;
 	imgAlt: string;
 }
 
-const { title, imgSrc, imgAlt } = Astro.props;
+const { title, desc, imgSrc, imgAlt } = Astro.props;
 ---
 
-<BaseLayout title={title}>
+<BaseLayout
+	title={title}
+	desc={desc}
+>
 	<div class="max-w-screen-xl mx-auto">
 		<div class="relative bg-black rounded-lg overflow-hidden">
 			<Picture priority

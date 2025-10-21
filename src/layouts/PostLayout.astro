@@ -24,7 +24,10 @@ const { frontmatter } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>("/src/assets/photos/*.{jpeg,jpg,png,gif}");
 ---
 
-<BaseLayout title={frontmatter.title}>
+<BaseLayout
+	title={frontmatter.title}
+	desc={frontmatter.excerpt}
+>
 	<div class="w-full max-w-screen-md lg:max-w-screen-xl mx-auto lg:px-8 flex flex-col lg:flex-row lg:items-end gap-8">
 		{ frontmatter.image &&
 			<Image
