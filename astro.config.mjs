@@ -1,6 +1,6 @@
 import { defineConfig } from "astro/config";
-import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
+import a11yEmoji from "@fec/remark-a11y-emoji";
 import tailwindcss from "@tailwindcss/vite";
 
 
@@ -17,7 +17,11 @@ export default defineConfig({
 		"/docs/": "/about/#governance"
 	},
 
-	integrations: [mdx(), sitemap()],
+	integrations: [sitemap()],
+
+	markdown: {
+		remarkPlugins: [a11yEmoji]
+	},
 
 	vite: {
 		plugins: [tailwindcss()]

@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/mdx": "^4.3.7",
     "@astrojs/sitemap": "^3.6.0",
     "@fontsource-variable/geist-mono": "^5.2.7",
     "@fontsource-variable/open-sans": "^5.2.7",
@@ -20,5 +19,8 @@
     "link-preview-js": "^3.1.0",
     "tailwindcss": "^4.1.14",
     "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@fec/remark-a11y-emoji": "^4.0.2"
   }
 }
