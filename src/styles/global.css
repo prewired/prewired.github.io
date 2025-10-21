@@ -12,6 +12,7 @@
 	--color-blue-500: #1EC4FF;
 	--color-blue-600: #06A9FF;
 	--color-blue-700: #0096FF; /* Prewired logo hue */
+	--color-blue-750: #0077CC; /* >4.50:1 contrast vs white (WCAG AA for normal text) */
 	--color-blue-800: #0872C5;
 	--color-blue-900: #0D609B;
 	--color-blue-950: #0E3A5D;
@@ -22,7 +23,7 @@
 	--color-purple-300: #D4B9F9;
 	--color-purple-400: #BA8CF4;
 	--color-purple-500: #9F60EC;
-	--color-purple-600: #7D2DDA; /* Prewired logo hue */
+	--color-purple-600: #7D2DDA; /* Prewired logo hue; >4.50:1 contrast vs white (WCAG AA for normal text) */
 	--color-purple-700: #742EC2;
 	--color-purple-800: #632A9F;
 	--color-purple-900: #512380;
@@ -34,7 +35,7 @@
 	--color-pink-300: #FF9FBB;
 	--color-pink-400: #FF6998;
 	--color-pink-500: #FF246E; /* Prewired logo hue */
-	--color-pink-600: #ED1166;
+	--color-pink-600: #EB004E; /* >4.50:1 contrast vs white (WCAG AA for normal text) */
 	--color-pink-700: #C80857;
 	--color-pink-800: #A8094F;
 	--color-pink-900: #8F0C4A;
@@ -74,8 +75,8 @@
 	h2 {
 		@apply relative w-fit mt-24 mb-2 -ml-2.5 px-2.5 py-0.5 font-mono font-semibold text-2xl text-white uppercase;
 	}
-	h2:nth-of-type(3n) { @apply bg-blue-700; }
-	h2:nth-of-type(3n+1) { @apply bg-pink-500; }
+	h2:nth-of-type(3n) { @apply bg-blue-750; }
+	h2:nth-of-type(3n+1) { @apply bg-pink-600; }
 	h2:nth-of-type(3n+2) { @apply bg-purple-600; }
 	h2:first-child { @apply mt-0; }
 
@@ -84,8 +85,8 @@
 	}
 	h2 + h3 { @apply mt-0; }
 
-	h4 {
-		@apply font-mono font-semibold text-base uppercase;
+	footer h2 {
+		@apply text-base text-black !bg-transparent m-0 p-0;
 	}
 
 	p {
@@ -105,7 +106,7 @@
 	}
 
 	a {
-		@apply text-blue-800 hover:text-purple-600 underline underline-offset-2;
+		@apply text-blue-750 hover:text-purple-600 underline underline-offset-2;
 	}
 
 	hr {
@@ -177,7 +178,7 @@
 	}
 
 	code {
-		@apply px-1.5 py-1 bg-blue-100 text-blue-800 rounded;
+		@apply px-1.5 py-1 bg-blue-100 text-blue-900 rounded;
 	}
 
 	article > h2 {
