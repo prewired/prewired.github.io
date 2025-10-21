@@ -73,7 +73,7 @@
 	}
 
 	h2 {
-		@apply relative w-fit mt-24 mb-2 -ml-2.5 px-2.5 py-0.5 font-mono font-semibold text-2xl text-white uppercase;
+		@apply relative w-fit mt-16 md:mt-24 mb-2 -ml-4 sm:-ml-8 lg:-ml-2.5 px-4 sm:pl-8 lg:px-2.5 py-0.5 font-mono font-semibold text-xl lg:text-2xl text-white uppercase;
 	}
 	h2:nth-of-type(3n) { @apply bg-blue-750; }
 	h2:nth-of-type(3n+1) { @apply bg-pink-600; }
@@ -204,5 +204,13 @@
 
 	article > .iframe-wrapper > iframe {
 		@apply absolute top-0 left-0 w-full h-full border-0;
+	}
+
+	a.kofi-button {
+		@apply !px-3.5 !font-sans !font-semibold !shadow-none hover:!bg-pink-800 hover:!opacity-100;
+	}
+
+	.kofitext img.kofiimg {
+		@apply !w-auto !pr-px;
 	}
 }

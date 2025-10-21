@@ -3,14 +3,14 @@ import DialogCloseButton from "./DialogCloseButton.astro";
 ---
 
 <button
-	class="px-5 py-3 bg-gradient-to-br from-purple-600 to-purple-600 hover:to-pink-500 active:from-pink-500 rounded-md font-semibold text-xl text-white cursor-pointer transition"
+	class="w-full md:w-fit px-5 py-3 bg-gradient-to-br from-purple-600 to-purple-600 hover:to-pink-500 active:from-pink-500 rounded-md font-semibold text-lg md:text-xl text-white cursor-pointer transition"
 	id="book-tickets-btn"
 >
 	Book a spot
 </button>
 
 <dialog
-	class="w-[700px] max-w-[100%] mx-auto mt-[10vh] border rounded-sm shadow-lg overflow-hidden scale-95 open:scale-100 starting:open:scale-95"
+	class="w-[700px] max-w-[100%] mx-auto mt-[5vh] md:mt-[10vh] border rounded-sm shadow-lg overflow-hidden scale-95 open:scale-100 starting:open:scale-95"
 	id="tickets-dialog"
 >
 	<div class="max-h-[80vh] overflow-y-auto">

@@ -38,7 +38,7 @@ const coverImg = (await allImages[frontmatter.image.url]()).default;
 		<Image
 			src={coverImg}
 			alt={frontmatter.image.alt}
-			class="w-full max-w-screen-md aspect-[16/9] object-cover rounded-lg"
+			class="w-[calc(100%+2rem)] md:w-full max-w-screen-md -mx-4 aspect-[16/9] object-cover md:rounded-lg"
 		/>
 		<div>
 			<div class="flex">

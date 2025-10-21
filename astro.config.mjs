@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
+import tunnel from "astro-tunnel";
 import a11yEmoji from "@fec/remark-a11y-emoji";
 import tailwindcss from "@tailwindcss/vite";
 
@@ -17,7 +18,7 @@ export default defineConfig({
 		"/docs/": "/about/#governance"
 	},
 
-	integrations: [sitemap()],
+	integrations: [sitemap(), tunnel()],
 
 	markdown: {
 		remarkPlugins: [a11yEmoji]

@@ -6,11 +6,15 @@ coverImg: ws16_longtables.jpg
 coverImgAlt: Young people working together on laptops at long tables
 ---
 
-Many schools still do not offer appropriate computing classes, and curricula that do exist can be patchy. The technology industry is an ever growing one, and at the moment there are more software engineering (and similar) jobs in the world than there are people qualified to fill them. It would be terrible if gifted and enthusiastic young people were deterred from pursuing computing qualifications and roles because they were not aware of the opportunities available. We feel that this is too important and urgent to wait for schools to catch up.
+## Purpose
 
-But learning to code doesn't only qualify you to be a coder. As our world becomes increasingly technologically-oriented, understanding the process of creating the software that powers our daily lives becomes crucial for everyone. Becoming an empowered digital citizen — or professional in another industry — allows people to navigate their rights and responsibilities and make informed decisions about the products and services they use, or provide to others.
+Prewired is a charity based in Edinburgh, Scotland, established to:
 
-We think technology can help us towards a better world, but only if future generations understand the opportunities (and risks) it brings and the impact it can have.
+* **encourage young people** to become active participants in creatively using and building digital technologies;
+* **provide a supportive environment** in which young people can work collaboratively with their peers and with more experienced mentors to develop their digital skills and undertake individual and team projects; and
+* **support mentors** in building on their existing strengths and in acquiring new skills by working with young people, and in demonstrating how they have developed personally and how they have made a positive impact.
+
+As our world has become increasingly technology-oriented, understanding how the software that powers our daily lives is created is now crucial for everyone. Becoming an empowered digital citizen allows people to navigate their rights and responsibilities and make informed decisions about the products and services they use, or provide to others. We think technology can help us towards a better world, but only if future generations understand both the opportunities and risks it brings and the impact it can have.
 
 ## Governance
 
@@ -55,7 +59,7 @@ Thus, Prewired (pre-Young Rewired State, get it?) was born, with these objective
 * supporting young people in experimenting with the technologies that seem interesting to them;
 * guiding young people to resources for self-teaching, and towards best practices;
 * providing an environment in which young people can safely engage with like-minded peers to work on projects of their own design, and can safely gain access to volunteering by adults from academia and industry; and
-* encouraging idea generation, team building and pooling technical skills in preparation for higher education and the world of work.
+* encouraging idea generation, team building, and pooling technical skills in preparation for higher education and the world of work.
 
 The Prewired launch was held on the morning of 16<sup>th</sup> October 2013, in the University of Edinburgh’s Informatics Forum. 38 young people between the ages of 4 and 18 attended, while 15 volunteers—university students, staff and local industry professionals—came along to help. Following on
 from the launch, we held Prewired on a biweekly basis on Wednesday evenings in one of the School of Informatics computing labs in Appleton Tower. Despite minimal advertising, a devoted cohort of young people attended during 2013-14 on a regular basis, often accompanied by a parent, with numbers consistently in the 30&ndash;40 range.

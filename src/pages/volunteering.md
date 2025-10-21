@@ -32,7 +32,7 @@ Simple snacks are provided at each session. Please note that volunteers must not
 
 If you're interested in getting more involved in the organising side of things, let us know that too! If you have any specific qualifications, skills or experience (e.g., in education, child services, first-aid, accounting, ...), don't forget to mention that.
 
-## Certifications and qualifications
+## Qualifications
 
 ### Disclosure
 
