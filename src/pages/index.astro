@@ -18,11 +18,16 @@ const sponsors = [
 	{ name: "Robotical", href: "https://robotical.io", src: robotical },
 	{ name: "University of Edinburgh", href: "https://www.ed.ac.uk", src: uoe }
 ];
+
+const coverImgAlt = "Three teenagers coding on laptops while chatting to each other";
 ---
 
 <BaseLayout
 	title="Home"
 	desc="Welcome to Prewired, a free Edinburgh programming club for young people. If you're under 19 years old and interested in learning to code, or want support taking your passion further, you're in the right place!"
+	type="website"
+	coverImg={cover}
+	coverImgAlt={coverImgAlt}
 >
 	<!-- Cover -->
 	<section class="max-w-screen-xl mx-auto mb-8 lg:mb-24 flex flex-wrap-reverse lg:items-center lg:justify-between gap-8">
@@ -47,7 +52,7 @@ const sponsors = [
 		<Picture priority
 			src={cover}
 			formats={["avif", "webp"]}
-			alt="Three teenagers coding on laptops while chatting to each other"
+			alt={coverImgAlt}
 			class="h-60 lg:h-96 object-cover rounded-lg"
 			pictureAttributes={{ class: "w-full lg:w-[calc(50%-2rem)] xl:w-1/2" }}
 		/>

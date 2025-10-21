@@ -5,23 +5,26 @@ import BaseLayout from "./BaseLayout.astro";
 interface Props {
 	title: string;
 	desc: string;
-	imgSrc: ImageMetadata | Promise<{ default: ImageMetadata; }>;
-	imgAlt: string;
+	coverImg: ImageMetadata;
+	coverImgAlt: string;
 }
 
-const { title, desc, imgSrc, imgAlt } = Astro.props;
+const { title, desc, coverImg, coverImgAlt } = Astro.props;
 ---
 
 <BaseLayout
 	title={title}
 	desc={desc}
+	type="website"
+	coverImg={coverImg}
+	coverImgAlt={coverImgAlt}
 >
 	<div class="max-w-screen-xl mx-auto">
 		<div class="relative bg-black rounded-lg overflow-hidden">
 			<Picture priority
-				src={imgSrc}
+				src={coverImg}
 				formats={["avif", "webp"]}
-				alt={imgAlt}
+				alt={coverImgAlt}
 				class="h-60 xl:h-72 object-cover mask-b-from-50%"
 			/>
 			<div class="max-w-screen-lg mx-auto px-4">

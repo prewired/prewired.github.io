@@ -1,5 +1,5 @@
 ---
-import { Picture } from "astro:assets";
+import { getImage, Picture } from "astro:assets";
 import "@fontsource-variable/open-sans";
 import "@fontsource-variable/open-sans/wght-italic.css";
 import "@fontsource-variable/geist-mono";
@@ -13,9 +13,13 @@ import codeclub from "@assets/logos/codeclub-logo.png";
 interface Props {
 	title: string;
 	desc: string;
+	type: "website" | "article";
+	author?: string;
+	coverImg: ImageMetadata;
+	coverImgAlt: string;
 }
 
-const { title, desc } = Astro.props;
+const { title, desc, type, author, coverImg, coverImgAlt } = Astro.props;
 
 const navItems = [
 	{ href: "/news/", title: "News" },
@@ -26,17 +30,34 @@ const navItems = [
 	{ href: "/about/", title: "About" },
 	{ href: "/contact/", title: "Contact" },
 ];
+
+// Get the URL for this page
+const { url } = Astro;
+
+// Get a static URL for this page's cover image, for Open Graph use
+const imgURL = new URL((await getImage({ src: coverImg, format: coverImg.format })).src, url).href;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<link rel="sitemap" href="/sitemap-index.xml" />
+
 		<meta name="description" content={desc} />
-		<meta name="generator" content={Astro.generator} />
+		{ author && <meta name="author" content={author} /> }
+		<meta property="og:site_name" content="Prewired" />
+		<meta property="og:url" content={url} />
+		<meta property="og:type" content={type} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={desc} />
+		<meta property="og:locale" content="en_GB" />
+		<meta property="og:image" content={imgURL} />
+		<meta property="og:image:alt" content={coverImgAlt} />
+
 		<title>{`${title} - Prewired`}</title>
 	</head>
 	<body class="px-4 text-lg bg-linear-[170deg,#EDFCFF,#FAF6FE_200px,#FFF0F3_400px,white_600px]">

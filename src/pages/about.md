@@ -2,8 +2,8 @@
 layout: "@layouts/MDLayout.astro"
 title: About us
 desc: Information on the mission, governance, and history of Prewired.
-imgSrc: ws16_longtables.jpg
-imgAlt: Young people working together on laptops at long tables
+coverImg: ws16_longtables.jpg
+coverImgAlt: Young people working together on laptops at long tables
 ---
 
 Many schools still do not offer appropriate computing classes, and curricula that do exist can be patchy. The technology industry is an ever growing one, and at the moment there are more software engineering (and similar) jobs in the world than there are people qualified to fill them. It would be terrible if gifted and enthusiastic young people were deterred from pursuing computing qualifications and roles because they were not aware of the opportunities available. We feel that this is too important and urgent to wait for schools to catch up.

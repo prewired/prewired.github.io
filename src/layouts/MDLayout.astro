@@ -7,24 +7,26 @@ interface Props {
 	frontmatter: {
 		title: string;
 		description: string;
-		imgSrc: string;
-		imgAlt: string;
+		coverImg: string;
+		coverImgAlt: string;
 	};
 }
 
 const { frontmatter } = Astro.props;
 
-// Import the header image from the src/assets/photos folder
+// Allows us to dynamically import the header image from the src/assets folder so it can benefit from the optimisations in the <Image> component
+// See https://docs.astro.build/en/recipes/dynamically-importing-images/
 const allImages = import.meta.glob<{ default: ImageMetadata }>("src/assets/photos/*.{jpeg,jpg,png}");
-const imgPath = "/src/assets/photos/" + frontmatter.imgSrc;
-if(!allImages[imgPath]) throw new Error(`"${frontmatter.imgSrc}" does not exist in the photos folder`);
+const imgPath = "/src/assets/photos/" + frontmatter.coverImg;
+if(!allImages[imgPath]) throw new Error(`"${frontmatter.coverImg}" does not exist in the photos folder`);
+const coverImg = (await allImages[imgPath]()).default;
 ---
 
 <PageLayout
 	title={frontmatter.title}
 	desc={frontmatter.description}
-	imgSrc={allImages[imgPath]()}
-	imgAlt={frontmatter.imgAlt}
+	coverImg={coverImg}
+	coverImgAlt={frontmatter.coverImgAlt}
 >
 	<slot />
 </PageLayout>

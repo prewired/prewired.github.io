@@ -2,8 +2,8 @@
 layout: "@layouts/MDLayout.astro"
 title: Contact us
 desc: Information on how to contact the organisers of Prewired.
-imgSrc: sh18_gateway.jpg
-imgAlt: A young person programming a BBC micro:bit while a mentor is pointing at a screen
+coverImg: sh18_gateway.jpg
+coverImgAlt: A young person programming a BBC micro:bit while a mentor is pointing at a screen
 ---
 
 ## When and where is Prewired?

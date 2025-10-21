@@ -12,7 +12,7 @@ export default defineConfig({
 	image: {
 		layout: "constrained"
 	},
-	
+
 	redirects: {
 		"/docs/": "/about/#governance"
 	},

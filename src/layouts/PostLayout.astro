@@ -8,7 +8,7 @@ interface Props {
 		title: string;
 		date: Date;
 		author: string;
-		image?: {
+		image: {
 			url: string;
 			alt: string;
 		};
@@ -21,21 +21,25 @@ const { frontmatter } = Astro.props;
 
 // Allows us to dynamically import the header image from the src/assets folder so it can benefit from the optimisations in the <Image> component
 // See https://docs.astro.build/en/recipes/dynamically-importing-images/
-const images = import.meta.glob<{ default: ImageMetadata }>("/src/assets/photos/*.{jpeg,jpg,png,gif}");
+const allImages = import.meta.glob<{ default: ImageMetadata }>("/src/assets/photos/*.{jpeg,jpg,png,gif}");
+if(!allImages[frontmatter.image.url]) throw new Error(`"${frontmatter.image.url}" does not exist in the photos folder`);
+const coverImg = (await allImages[frontmatter.image.url]()).default;
 ---
 
 <BaseLayout
 	title={frontmatter.title}
 	desc={frontmatter.excerpt}
+	type="article"
+	author={frontmatter.author}
+	coverImg={coverImg}
+	coverImgAlt={frontmatter.image.alt}
 >
 	<div class="w-full max-w-screen-md lg:max-w-screen-xl mx-auto lg:px-8 flex flex-col lg:flex-row lg:items-end gap-8">
-		{ frontmatter.image &&
-			<Image
-				src={images[frontmatter.image.url]()}
-				alt={frontmatter.image.alt}
-				class="w-full max-w-screen-md aspect-[16/9] object-cover rounded-lg"
-			/>
-		}
+		<Image
+			src={coverImg}
+			alt={frontmatter.image.alt}
+			class="w-full max-w-screen-md aspect-[16/9] object-cover rounded-lg"
+		/>
 		<div>
 			<div class="flex">
 				{ frontmatter.tags.map(tag => (<>
