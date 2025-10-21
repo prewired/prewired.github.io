@@ -12,6 +12,7 @@ import codeclub from "@assets/logos/codeclub-logo.png";
 
 interface Props {
 	title: string;
+	ogTitle?: string; // Set if the OG title should be different from the HTML title
 	desc: string;
 	type: "website" | "article";
 	author?: string;
@@ -19,7 +20,7 @@ interface Props {
 	coverImgAlt: string;
 }
 
-const { title, desc, type, author, coverImg, coverImgAlt } = Astro.props;
+const { title, ogTitle, desc, type, author, coverImg, coverImgAlt } = Astro.props;
 
 const navItems = [
 	{ href: "/news/", title: "News" },
@@ -52,7 +53,7 @@ const imgURL = new URL((await getImage({ src: coverImg, format: coverImg.format 
 		<meta property="og:site_name" content="Prewired" />
 		<meta property="og:url" content={url} />
 		<meta property="og:type" content={type} />
-		<meta property="og:title" content={title} />
+		<meta property="og:title" content={ogTitle ?? title} />
 		<meta property="og:description" content={desc} />
 		<meta property="og:locale" content="en_GB" />
 		<meta property="og:image" content={imgURL} />

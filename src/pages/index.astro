@@ -2,8 +2,8 @@
 import { Picture } from "astro:assets";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import BookTicketsButton from "@components/BookTicketsButton.astro";
-import cover from "@assets/photos/sh16_discuss.jpg";
-import overview from "@assets/photos/ws18_session.jpg";
+import cover from "@assets/photos/ws18_session.jpg";
+import overview from "@assets/photos/sh16_discuss.jpg";
 import codebase from "@assets/logos/codebase-logo.png";
 import hypercube from "@assets/logos/hypercube-logo.png";
 import robotical from "@assets/logos/robotical-logo.png";
@@ -19,11 +19,12 @@ const sponsors = [
 	{ name: "University of Edinburgh", href: "https://www.ed.ac.uk", src: uoe }
 ];
 
-const coverImgAlt = "Three teenagers coding on laptops while chatting to each other";
+const coverImgAlt = "A room full of young people working on laptops at low and high tables";
 ---
 
 <BaseLayout
 	title="Home"
+	ogTitle="Welcome to Prewired!"
 	desc="Welcome to Prewired, a free Edinburgh programming club for young people. If you're under 19 years old and interested in learning to code, or want support taking your passion further, you're in the right place!"
 	type="website"
 	coverImg={cover}
@@ -59,7 +60,7 @@ const coverImgAlt = "Three teenagers coding on laptops while chatting to each ot
 	</section>
 
 	<!-- Special announcements -->
-	<section class="max-w-[56rem] mx-auto mb-8 lg:mb-24 bg-green-600 border-2 border-green-600 rounded-lg shadow-sm overflow-hidden">
+	<section class="max-w-[56rem] mx-auto mb-8 lg:mb-24 bg-green-700 border-2 border-green-700 rounded-lg shadow-sm overflow-hidden">
 		<div class="py-1">
 			<p class="mb-0 font-mono font-semibold text-white text-base text-center uppercase ">
 				&middot; Announcement &middot;
@@ -89,7 +90,7 @@ const coverImgAlt = "Three teenagers coding on laptops while chatting to each ot
 		<Picture
 			src={overview}
 			formats={["avif", "webp"]}
-			alt="A room full of young people working on laptops at low and high tables"
+			alt="Three teenagers coding on laptops while chatting to each other"
 			class="h-60 lg:h-[28rem] mb-8 lg:mb-0 object-cover rounded-lg"
 			pictureAttributes={{ class: "w-full lg:w-2/5" }}
 		/>
