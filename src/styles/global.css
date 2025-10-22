@@ -50,6 +50,10 @@
 
 /* General styles */
 @layer base {
+	@view-transition {
+		navigation: auto;
+	}
+
 	::selection {
 		@apply bg-blue-100 text-black;
 	}
