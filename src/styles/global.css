@@ -86,7 +86,7 @@
 	h2 + h3 { @apply mt-0; }
 
 	footer h2 {
-		@apply text-base text-black !bg-transparent m-0 p-0;
+		@apply text-base text-black bg-transparent! m-0 p-0;
 	}
 
 	p {
@@ -181,6 +181,15 @@
 		@apply px-1.5 py-1 bg-blue-100 text-blue-900 rounded;
 	}
 
+	/* Responsive sizing for iframes */
+	.iframe-wrapper {
+		@apply relative w-full pt-[56.25%];
+	}
+
+	.iframe-wrapper > iframe {
+		@apply absolute top-0 left-0 w-full h-full border-0;
+	}
+
 	article > h2 {
 		@apply mt-12;
 	}
@@ -197,20 +206,11 @@
 		@apply leading-8 mb-0;
 	}
 
-	/* Responsive sizing for iframes embedded in blog posts */
-	article > .iframe-wrapper {
-		@apply relative w-full pt-[56.25%];
-	}
-
-	article > .iframe-wrapper > iframe {
-		@apply absolute top-0 left-0 w-full h-full border-0;
-	}
-
 	a.kofi-button {
-		@apply !px-3.5 !font-sans !font-semibold !shadow-none hover:!bg-pink-800 hover:!opacity-100;
+		@apply px-3.5! font-sans! font-semibold! shadow-none! hover:bg-pink-800! hover:opacity-100!;
 	}
 
 	.kofitext img.kofiimg {
-		@apply !w-auto !pr-px;
+		@apply w-auto! pr-px!;
 	}
 }

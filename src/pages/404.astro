@@ -9,7 +9,18 @@ import coverPhoto from "@assets/photos/sh18_standby.jpg";
 	coverImageData={coverPhoto}
 	coverImageAlt="Please stand by"
 >
-	<p>
-		If you expected to find a page here, please email <a href="mailto:hello@prewired.org">hello@prewired.org</a> with the URL of the page and what you were expecting to find. Thank you!
-	</p>
+	<div class="border border-black rounded-lg overflow-hidden">
+		<div class="iframe-wrapper">
+			<iframe
+				src="https://scratch.mit.edu/projects/855701472/embed"
+				allowtransparency="true"
+				allowfullscreen
+			></iframe>
+		</div>
+		<p class="text-center mb-2">
+			<small>
+				Created at Prewired! To go up, press W or ⬆️. To go down, press S or ⬇️.
+			</small>
+		</p>
+	</div>
 </PageLayout>
