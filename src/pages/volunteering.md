@@ -1,9 +1,10 @@
 ---
-layout: "@layouts/MDLayout.astro"
+layout: "@layouts/MDPageLayout.astro"
 title: Volunteering
 desc: We're always looking for more mentors! Learn how to join Prewired as a volunteer.
-coverImg: mt24_silly.jpg
-coverImgAlt: A large group of mentors and attendee making silly faces at the camera
+coverImage:
+  src: mt24_silly.jpg
+  alt: A large group of mentors and attendee making silly faces at the camera
 ---
 
 **We're always looking for more mentors!**

@@ -10,12 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
+    "@astrojs/check": "^0.9.5",
     "@astrojs/sitemap": "^3.6.0",
     "@fontsource-variable/geist-mono": "^5.2.7",
     "@fontsource-variable/open-sans": "^5.2.7",
     "@tailwindcss/vite": "^4.1.14",
-    "astro": "^5.14.6",
+    "astro": "^5.14.8",
     "astro-tunnel": "^0.1.8",
     "link-preview-js": "^3.1.0",
     "tailwindcss": "^4.1.14",

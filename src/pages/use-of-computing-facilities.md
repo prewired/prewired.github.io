@@ -1,9 +1,10 @@
 ---
-layout: "@layouts/MDLayout.astro"
+layout: "@layouts/MDPageLayout.astro"
 title: Use of Prewired computing facilities
 desc: Prewired's policy on the use of its computing facilities.
-coverImg: sh16_laptops.jpg
-coverImgAlt: A stack of Prewired laptops on a table
+coverImage:
+  src: sh16_laptops.jpg
+  alt: A stack of Prewired laptops on a table
 ---
 
 "Computing facilities" includes remote computing services as provided on behalf of Prewired; computers and peripherals owned by or operated on behalf of Prewired; any associated software and data; and the networking elements which link computing facilities.

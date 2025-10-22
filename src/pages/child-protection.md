@@ -1,9 +1,10 @@
 ---
-layout: "@layouts/MDLayout.astro"
+layout: "@layouts/MDPageLayout.astro"
 title: Child protection policy
 desc: Prewired's Child Protection Policy exists to protect children and young people who participate in Prewired events and activities and to provide parents, staff and volunteers with the overarching principles that guide our approach to child protection.
-coverImg: sh18_obstaclecourse.jpg
-coverImgAlt: A LEGO robot standing in the middle of a makeshift obstacle course on a table
+coverImage:
+  src: sh18_obstaclecourse.jpg
+  alt: A LEGO robot standing in the middle of a makeshift obstacle course on a table
 ---
 
 ## The purpose and scope of this policy statement

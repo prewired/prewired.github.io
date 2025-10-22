@@ -1,0 +1,53 @@
+---
+import { Picture } from "astro:assets";
+import importImage from "src/scripts/dynamicImportImage";
+
+interface Props {
+	id: string;
+	data: {
+		title: string;
+		date: Date;
+		author: string;
+		desc: string;
+		coverImage: {
+			src: string;
+			alt: string;
+		};
+		tags: string[];
+	};
+}
+
+const { id, data } = Astro.props;
+const { title, date, desc, coverImage, tags } = data;
+
+const coverImageData = await importImage(coverImage);
+---
+
+<a href={`/news/${id}/`} class="group text-black! no-underline!">
+	<div class="flex flex-wrap md:flex-nowrap gap-4 md:gap-8 mb-8 md:mb-4">
+		<Picture
+			src={coverImageData}
+			formats={["avif", "webp"]}
+			alt={coverImage.alt}
+			class="w-full h-52 object-cover bg-gray-200 rounded-lg"
+			pictureAttributes={{ class: "w-full md:w-72 shrink-0" }}
+		/>
+		<div>
+			<div class="inline-flex">
+				{ tags.map(tag => (
+					<div class="mr-2 mb-2 bg-blue-200 rounded px-2 py-1 leading-0">
+						<span class="text-sm font-mono font-medium text-black uppercase">
+							{ tag }
+						</span>
+					</div>
+				))}
+			</div>
+			<h3 class="mt-0 font-bold text-xl not-italic group-hover:underline">
+				{ title }
+			</h3>
+			<p class="group-hover:underline">
+				{ date.toLocaleDateString("en-GB") } &middot; { desc }
+			</p>
+		</div>
+	</div>
+</a>

@@ -1,48 +1,45 @@
 ---
-import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 import BaseLayout from "./BaseLayout.astro";
+import importImage from "src/scripts/dynamicImportImage";
 
 interface Props {
 	frontmatter: {
 		title: string;
 		date: Date;
 		author: string;
-		image: {
-			url: string;
+		desc: string;
+		coverImage: {
+			src: string;
 			alt: string;
 		};
-		excerpt: string;
 		tags: string[];
 	};
 }
 
 const { frontmatter } = Astro.props;
+const { title, date, author, desc, coverImage, tags } = frontmatter;
 
-// Allows us to dynamically import the header image from the src/assets folder so it can benefit from the optimisations in the <Image> component
-// See https://docs.astro.build/en/recipes/dynamically-importing-images/
-const allImages = import.meta.glob<{ default: ImageMetadata }>("/src/assets/photos/*.{jpeg,jpg,png,gif}");
-if(!allImages[frontmatter.image.url]) throw new Error(`"${frontmatter.image.url}" does not exist in the photos folder`);
-const coverImg = (await allImages[frontmatter.image.url]()).default;
+const coverImageData = await importImage(coverImage);
 ---
 
 <BaseLayout
-	title={frontmatter.title}
-	desc={frontmatter.excerpt}
+	title={title}
+	desc={desc}
 	type="article"
-	author={frontmatter.author}
-	coverImg={coverImg}
-	coverImgAlt={frontmatter.image.alt}
+	author={author}
+	coverImageData={coverImageData}
+	coverImageAlt={coverImage.alt}
 >
-	<div class="w-full max-w-screen-md lg:max-w-screen-xl mx-auto lg:px-8 flex flex-col lg:flex-row lg:items-end gap-8">
+	<div class="w-full max-w-3xl lg:max-w-7xl mx-auto lg:px-8 flex flex-col lg:flex-row lg:items-end gap-8">
 		<Image
-			src={coverImg}
-			alt={frontmatter.image.alt}
-			class="w-[calc(100%+2rem)] md:w-full max-w-screen-md -mx-4 aspect-[16/9] object-cover md:rounded-lg"
+			src={coverImageData}
+			alt={coverImage.alt}
+			class="w-[calc(100%+2rem)] md:w-full max-w-3xl -mx-4 aspect-video object-cover md:rounded-lg"
 		/>
 		<div>
 			<div class="flex">
-				{ frontmatter.tags.map(tag => (<>
+				{ tags.map(tag => (<>
 					<a href={`/news/tags/${tag}/`} class="no-underline!">
 						<div class="mr-2 mb-2 bg-blue-200 hover:bg-purple-200 rounded px-2 py-1 leading-0">
 							<span class="text-sm font-mono font-medium text-black uppercase">
@@ -53,13 +50,13 @@ const coverImg = (await allImages[frontmatter.image.url]()).default;
 				</>)) }
 			</div>
 			<p class="font-semibold">
-				By <span class="text-purple-700">{ frontmatter.author }</span> on { frontmatter.date.toLocaleDateString("en-GB") }
+				By <span class="text-purple-700">{ author }</span> on { date.toLocaleDateString("en-GB") }
 			</p>
 		</div>
 	</div>
-	<article class="max-w-screen-md mt-6 lg:mt-12 mx-auto">
+	<article class="max-w-3xl mt-6 lg:mt-12 mx-auto">
 		<h1 class="mb-4 font-bold lg:text-5xl leading-tight">
-			{ frontmatter.title }
+			{ title }
 		</h1>
 		<slot />
 	</article>

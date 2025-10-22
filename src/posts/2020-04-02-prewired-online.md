@@ -2,10 +2,10 @@
 title: "Launching Prewired Online"
 date: 2020-04-02
 author: Ewan
-image:
-  url: /src/assets/photos/onl20_collaborate_screenshot.png
+desc: "All of us on the Prewired team were really sad about having to close down our regular Wednesday evening sessions in the face of the  Covid-19 emergency. But we started thinking about making the most of the internet and ..."
+coverImage:
+  src: onl20_collaborate_screenshot.png
   alt: A screenshot of a video calling app that says "Welcome to Prewired Online!"
-excerpt: "All of us on the Prewired team were really sad about having to close down our regular Wednesday evening sessions in the face of the  Covid-19 emergency. But we started thinking about making the most of the internet and ..."
 tags: ["online"]
 ---
 

@@ -1,9 +1,9 @@
 ---
-import { Picture } from "astro:assets";
 import { getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import coverPhoto from "@assets/photos/sh18_live.jpg";
 import NewsFeedExternalItem from "@components/NewsFeedExternalItem.astro";
+import NewsFeedLocalItem from "@components/NewsFeedLocalItem.astro";
 
 
 /****  GET LOCAL BLOG POSTS ****/
@@ -38,7 +38,7 @@ const externalPosts: ExternalPost[] = [
 ];
 
 
-/****  COMBINE DIFFERENT POST TYPES INTO ONE FEED ****/
+/****  COMBINE BOTH POST TYPES INTO ONE FEED ****/
 type FeedItem = {
 	id: string;
 	date: Date;
@@ -58,17 +58,13 @@ const years: number[] = [];
 feed.forEach(post => { if(!years.includes(post.date.getFullYear())) years.push(post.date.getFullYear()) });
 
 const feedByYears = years.map(year => { return { year, posts: feed.filter(post => post.date.getFullYear() === year) } });
-
-// Dynamically import blog post header images from the src/assets folder so it can benefit from the optimisations in the <Image> component
-// See https://docs.astro.build/en/recipes/dynamically-importing-images/
-const images = import.meta.glob<{ default: ImageMetadata }>("/src/assets/photos/*.{jpeg,jpg,png,gif}");
 ---
 
 <PageLayout
 	title="News and updates"
 	desc="Updates from our own blog and mentions of Prewired in the media, to provide a historical overview of how Prewired has evolved over the years."
-	coverImg={coverPhoto}
-	coverImgAlt="A computer screen with the text 'Prewired Presentations begin 13:00 Friday 27th July 2018'"
+	coverImageData={coverPhoto}
+	coverImageAlt="A computer screen with the text 'Prewired Presentations begin 13:00 Friday 27th July 2018'"
 >
 	<p>
 		This page aggregates updates from our own blog with mentions of Prewired in the media, to provide a historical overview of how Prewired has evolved over the years.
@@ -88,34 +84,10 @@ const images = import.meta.glob<{ default: ImageMetadata }>("/src/assets/photos/
 					const post = posts.find(post => post.id === feedItem.id);
 					if(!post) return;
 					else return (
-						<a href={`/news/${post.id}/`} class="group text-black! no-underline!">
-							<div class="flex flex-wrap md:flex-nowrap gap-4 md:gap-8 mb-8 md:mb-4">
-								<Picture
-									src={images[post.data.image.url]()}
-									formats={["avif", "webp"]}
-									alt={post.data.image.alt}
-									class="w-full h-52 object-cover bg-gray-200 rounded-lg"
-									pictureAttributes={{ class: "w-full md:w-72 shrink-0" }}
-								/>
-								<div>
-									<div class="inline-flex">
-										{ post.data.tags.map(tag => (
-											<div class="mr-2 mb-2 bg-blue-200 rounded px-2 py-1 leading-0">
-												<span class="text-sm font-mono font-medium text-black uppercase">
-													{ tag }
-												</span>
-											</div>
-										))}
-									</div>
-									<h3 class="mt-0 font-bold text-xl not-italic group-hover:underline">
-										{ post.data.title }
-									</h3>
-									<p class="group-hover:underline">
-										{ feedItem.date.toLocaleDateString("en-GB") } &middot; { post.data.excerpt }
-									</p>
-								</div>
-							</div>
-						</a>
+						<NewsFeedLocalItem
+							id={post.id}
+							data={post.data}
+						/>
 					);
 				}
 				else {

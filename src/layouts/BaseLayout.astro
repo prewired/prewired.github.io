@@ -16,11 +16,11 @@ interface Props {
 	desc: string;
 	type: "website" | "article";
 	author?: string;
-	coverImg: ImageMetadata;
-	coverImgAlt: string;
+	coverImageData: ImageMetadata;
+	coverImageAlt: string;
 }
 
-const { title, ogTitle, desc, type, author, coverImg, coverImgAlt } = Astro.props;
+const { title, ogTitle, desc, type, author, coverImageData, coverImageAlt } = Astro.props;
 
 const navItems = [
 	{ href: "/news/", title: "News" },
@@ -36,7 +36,7 @@ const navItems = [
 const { url } = Astro;
 
 // Get a static URL for this page's cover image, for Open Graph use
-const imgURL = new URL((await getImage({ src: coverImg, format: coverImg.format })).src, url).href;
+const imgURL = new URL((await getImage({ src: coverImageData, format: coverImageData.format })).src, url).href;
 ---
 
 <!DOCTYPE html>
@@ -57,12 +57,12 @@ const imgURL = new URL((await getImage({ src: coverImg, format: coverImg.format 
 		<meta property="og:description" content={desc} />
 		<meta property="og:locale" content="en_GB" />
 		<meta property="og:image" content={imgURL} />
-		<meta property="og:image:alt" content={coverImgAlt} />
+		<meta property="og:image:alt" content={coverImageAlt} />
 
 		<title>{`${title} - Prewired`}</title>
 	</head>
 	<body class="px-4 lg:text-lg bg-linear-[180deg,white,#EDFCFF_150px,#FAF6FE_350px,#FFF0F3_550px,white_750px] md:bg-linear-[170deg,#EDFCFF,#FAF6FE_200px,#FFF0F3_400px,white_600px]">
-		<header class="h-28 md:h-32 w-full max-w-screen-xl mx-auto pt-2 md:py-4 lg:pr-0 flex items-center">
+		<header class="h-28 md:h-32 w-full max-w-7xl mx-auto pt-2 md:py-4 lg:pr-0 flex items-center">
 			<a href="/" class="mr-auto hover:opacity-70 transition">
 				<Picture priority
 					src={prewiredLogoText}
@@ -122,7 +122,7 @@ const imgURL = new URL((await getImage({ src: coverImg, format: coverImg.format 
 
 		<footer class="w-[calc(100%+2rem)] mt-24 md:mt-32 -ml-4 bg-purple-600 rounded-t-[0.625rem]">
 			<div class="w-full pt-14 pb-8 px-4 sm:px-8 bg-purple-50 rounded-lg">
-				<div class="w-full xl:max-w-screen-xl mx-auto mb-4 flex flex-wrap lg:justify-between gap-16">
+				<div class="w-full xl:max-w-7xl mx-auto mb-4 flex flex-wrap lg:justify-between gap-16">
 					<div class="w-auto -mt-8 flex flex-col">
 						<Picture
 							src={prewiredLogoText}

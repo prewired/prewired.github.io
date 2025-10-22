@@ -1,9 +1,10 @@
 ---
-layout: "@layouts/MDLayout.astro"
+layout: "@layouts/MDPageLayout.astro"
 title: About us
 desc: Information on the mission, governance, and history of Prewired.
-coverImg: ws16_longtables.jpg
-coverImgAlt: Young people working together on laptops at long tables
+coverImage:
+  src: ws16_longtables.jpg
+  alt: Young people working together on laptops at long tables
 ---
 
 ## Purpose

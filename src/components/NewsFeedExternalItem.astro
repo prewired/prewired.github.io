@@ -22,14 +22,20 @@ type PostPreview = {
 };
 
 
+interface Props {
+	url: string;
+	date: Date;
+	desc?: string;
+}
+
 const { url, date, desc } = Astro.props;
 
-// TODO: update with proper error messaging
+// Default values to display an error message if data fetching below somehow fails
 let postPreview: PostPreview = {
 	url: url,
-	title: "",
-	siteName: "",
-	description: "",
+	title: "Post Not Found",
+	siteName: "Error",
+	description: `Unable to retrieve data from ${url}`,
 	favicons: [""],
 	mediaType: "",
 	images: [""]
@@ -48,7 +54,6 @@ try {
 catch (error) {
 	console.error(error);
 }
-
 ---
 
 <a href={url} target="_blank" rel="noopener noreferrer" class="group text-black! no-underline!">

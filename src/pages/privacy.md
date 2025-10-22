@@ -1,9 +1,10 @@
 ---
-layout: "@layouts/MDLayout.astro"
+layout: "@layouts/MDPageLayout.astro"
 title: Privacy policy
 desc: Prewired's Privacy Policy applies to information that Prewired collects about individuals who interact with our organisation. It explains what personal information we collect and how we use it.
-coverImg: sh18_camera.jpg
-coverImgAlt: A camera pointed at a large room with young people working at tables
+coverImage:
+  src: sh18_camera.jpg
+  alt: A camera pointed at a large room with young people working at tables
 ---
 
 

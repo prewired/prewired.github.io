@@ -1,9 +1,10 @@
 ---
-layout: "@layouts/MDLayout.astro"
+layout: "@layouts/MDPageLayout.astro"
 title: Online safety policy
 desc: Prewired's policy on online safety.
-coverImg: sh16_website.jpg
-coverImgAlt: An attendee uploading a file of CSS code to the internet
+coverImage:
+  src: sh16_website.jpg
+  alt: An attendee uploading a file of CSS code to the internet
 ---
 
 ## Purpose and scope
