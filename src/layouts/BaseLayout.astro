@@ -109,7 +109,7 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 			<!-- Large-screen menu -->
 			<nav class="mx-4 hidden lg:flex gap-7 xl:gap-12">
 				{ navItems.map(({ href, title }) => (
-					<a href={href} class={`shrink-0 font-medium text-black no-underline ${Astro.url.pathname === href ? "text-pink-600 border-b-2 border-pink-600" : "hover:text-pink-600"}`}>
+					<a href={href} class={`shrink-0 font-medium text-black no-underline border-b-2 border-transparent ${Astro.url.pathname === href ? "text-pink-600 border-pink-600!" : "hover:text-pink-600"}`}>
 						{ title }
 					</a>
 				))}
