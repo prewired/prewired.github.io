@@ -7,7 +7,7 @@ coverImage:
   alt: A mentor and attendee working together on a LEGO robot
 ---
 
-## 1. Our Commitment
+## 1. Our commitment
 
 Prewired welcomes people of all backgrounds and abilities, both as participants and mentors, and is committed to encouraging Equality, Diversity, and Inclusion within the organisation and our services.
 
@@ -73,7 +73,7 @@ Third parties should also be made aware of and comply with this Policy at all ti
 
 Training on this Policy and EDI matters is provided to all members of the Board of Trustees and all mentors at least once a year. A briefing on raising awareness on this Policy and EDI issues is offered by the EDI Officer to all mentors during their induction training, when they also sign their Mentor Agreement which includes an EDI section.
 
-## 6. Grievance and Disciplinary
+## 6. Grievance and disciplinary
 
 Prewired is committed to taking seriously complaints about any form of unlawful discrimination, victimisation, harassment, and bullying because of any protected characteristic under Equality Act 2010 (age, disability, gender reassignment, pregnancy and maternity, race, religion or belief, sex, and sexual orientation) by management, organisers, and third parties.
 

@@ -7,9 +7,10 @@ interface Props {
 	desc: string;
 	coverImageData: ImageMetadata;
 	coverImageAlt: string;
+	headings?: { depth: number; slug: string; text: string }[];
 }
 
-const { title, desc, coverImageData, coverImageAlt } = Astro.props;
+const { title, desc, coverImageData, coverImageAlt, headings } = Astro.props;
 ---
 
 <BaseLayout
@@ -35,8 +36,26 @@ const { title, desc, coverImageData, coverImageAlt } = Astro.props;
 				</div>
 			</div>
 		</div>
-		<div class="min-h-[40vh] w-full max-w-5xl mx-auto sm:px-4 pt-8 md:pt-12">
-			<slot />
+		<div class="flex items-start min-h-[40vh] w-full pt-8 md:pt-12 gap-20">
+			{ headings &&
+				<div class="hidden lg:block sticky top-8 w-1/5 xl:w-1/6 shrink-0">
+					<div class="pb-2 border-b border-zinc-500 font-mono font-semibold text-sm uppercase text-zinc-500">
+						On this page
+					</div>
+					{ headings.filter(heading => heading.depth === 2).map(heading => (
+						<a
+							href={`#${heading.slug}`}
+							class="block py-2 first-of-type:pt-4 text-sm text-zinc-500 no-underline hover:underline"
+						>
+							{ heading.text }
+						</a>
+					)) }
+				</div>
+			}
+			<div class={`sm:px-4 ${headings ? "lg:px-0" : "w-full max-w-5xl mx-auto"}`}>
+				<slot />
+			</div>
+			{ headings && <div class="hidden lg:block w-1/8 xl:w-1/6 shrink-0" /> }
 		</div>
 	</div>
 </BaseLayout>

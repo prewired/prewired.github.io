@@ -8,7 +8,7 @@ coverImage:
 ---
 
 
-## Our Contact Details
+## Our contact details
 
 Prewired SCIO  
 37a Castle Terrace  

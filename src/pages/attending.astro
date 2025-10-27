@@ -7,6 +7,13 @@ import workshop from "@assets/photos/ws15_car.jpg";
 import summerhack from "@assets/photos/sh16_presentation.jpg";
 import fll from "@assets/photos/fll24_showoff.jpg";
 import festiveparty from "@assets/photos/cp24_card.jpg";
+
+const headings = [
+	{ depth: 2, slug: "what-is-prewired", text: "What is Prewired?" },
+	{ depth: 2, slug: "how-to-attend", text: "How to attend" },
+	{ depth: 2, slug: "special-events", text: "Special events" },
+	{ depth: 2, slug: "frequently-asked-questions", text: "Frequently asked questions" }
+];
 ---
 
 <PageLayout
@@ -14,8 +21,9 @@ import festiveparty from "@assets/photos/cp24_card.jpg";
 	desc="Learn how to attend Prewired, a weekly, free-to-attend coding and technology club in Edinburgh."
 	coverImageData={coverPhoto}
 	coverImageAlt="Young people working on laptops in the CodeBase coworking space with parents sitting in the background"
+	headings={headings}
 >
-	<h2>
+	<h2 id="what-is-prewired">
 		What is Prewired?
 	</h2>
 	<p>
@@ -56,7 +64,7 @@ import festiveparty from "@assets/photos/cp24_card.jpg";
 		Please make sure you've had your dinner or a snack before you come if you usually eat around this time, as we don't allow eating or drinking near the computers. We do provide a brief snack break in the middle of the session.
 	</p>
 
-	<h2>
+	<h2 id="how-to-attend">
 		How to attend
 	</h2>
 	<p>
@@ -84,7 +92,7 @@ import festiveparty from "@assets/photos/cp24_card.jpg";
 		If you can't make a session anymore, please cancel your booking so your spot can be given to someone else.
 	</p>
 
-	<h2>
+	<h2 id="special-events">
 		Special events
 	</h2>
 	<p>
@@ -176,7 +184,7 @@ import festiveparty from "@assets/photos/cp24_card.jpg";
 		</div>
 	</div>
 
-	<h2>
+	<h2 id="frequently-asked-questions">
 		Frequently asked questions
 	</h2>
 	<details name="faq">

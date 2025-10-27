@@ -12,9 +12,10 @@ interface Props {
 			alt: string;
 		}
 	};
+	headings: { depth: number; slug: string; text: string }[];
 }
 
-const { frontmatter } = Astro.props;
+const { frontmatter, headings } = Astro.props;
 const { title, desc, coverImage } = frontmatter;
 
 const coverImageData = await importImage(coverImage);
@@ -25,6 +26,7 @@ const coverImageData = await importImage(coverImage);
 	desc={desc}
 	coverImageData={coverImageData}
 	coverImageAlt={coverImage.alt}
+	headings={headings}
 >
 	<slot />
 </PageLayout>

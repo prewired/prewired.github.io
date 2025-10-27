@@ -13,7 +13,7 @@ Helping young people learn to code is hugely rewarding. If you can offer your ti
 
 Interested? Please drop us an email at [hello@prewired.org](mailto:hello@prewired.org) with some information about your background and why you'd like to join. One of us will then reach out to you to invite you along to a taster session, so you can see how we operate in practice.
 
-## How We Work
+## How we work
 
 Prewired is largely unstructured and our main goal is to support the young people in learning whatever it is they want to learn. So volunteering at Prewired consists mostly of wandering around a room full of budding hackers, answering questions, helping to fix bugs, and actively checking on the kids to make sure they’re happy and learning. You don’t need to come every week, but it’s helpful for the kids to have some consistency, so we’d love it if you could come on at least a semi-regular basis. Any and all software and hardware skills are welcome!
 
@@ -43,7 +43,7 @@ All of our volunteers are required to become members of the [Protecting Vulnerab
 
 Currently volunteering at Prewired doesn't qualify you for any specific awards (except for massive kudos and great experience and references for the CV). However, we're interested in improving your experience however we can, so if you know of a scheme you think we'd fit into that will help you to earn something more, please let us know.
 
-## Volunteer Guidelines
+## Volunteer guidelines
 
 This is a high-level summary of our mentor policies to give you an idea what to expect. When joining as a volunteer, you will be asked to attend a mentor induction training and commit a more detailed set of policies before attending sessions.
 

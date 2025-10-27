@@ -26,19 +26,19 @@ This policy statement applies to anyone working on behalf of Prewired, including
 
 This policy has been drawn up on the basis of legislation, policy and guidance that seeks to protect children in Scotland. A summary of the key legislation and guidance is available from <https://www.gov.scot/policies/child-protection/>.
 
-## We believe that:
+## We believe that...
 
 * children and young people should never experience abuse of any kind
 * we have a responsibility to promote the welfare of all children and young people, to keep them safe and to practise in a way that protects them.
 
-## We recognise that:
+## We recognise that...
 
 * the welfare of the child is paramount
 * all children, regardless of age, disability, gender reassignment, race, religion or belief, sex, or sexual orientation have a right to equal protection from all types of harm or abuse
 * some children are additionally vulnerable because of the impact of previous experiences, their level of dependency, communication needs or other issues
 * working in partnership with children, young people, their parents, carers and other agencies is essential in promoting young people’s welfare.
 
-## We will seek to keep children and young people safe by:
+## We will seek to keep children and young people safe by...
 
 * valuing, listening to and respecting them
 * appointing a nominated child protection office who is also a Trustee
