@@ -38,7 +38,7 @@ This policy applies to:
 
 ## Appendix
 
-**TBA**
+As an appendix to this policy, we keep an internal living document tracking which online services are most-used by our attendees for their projects and their safeguarding features. If you would like to see the latest version of this document, please reach out to our Child Protection Officer at [cpo@prewired.org](mailto:cpo@prewired.org).
 
 ----
 
