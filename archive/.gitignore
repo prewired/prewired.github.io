@@ -1,0 +1,17 @@
+*.gem
+*.sublime-project
+*.sublime-workspace
+.bundle
+.DS_Store
+.jekyll-metadata
+.jekyll-cache
+.sass-cache
+_asset_bundler_cache
+_site
+_build
+codekit-config.json
+example/_site
+node_modules
+npm-debug.log*
+_source_images/*
+vendor/

@@ -6,8 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 
 export default defineConfig({
-	//site: "https://prewired.org",
-	site: "https://prewired-website.vercel.app", // For beta deployment
+	site: "https://prewired.org",
 	trailingSlash: "always",
 
 	image: {
