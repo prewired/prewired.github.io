@@ -1,0 +1,49 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import coverPhoto from "@assets/photos/sh18_live.jpg";
+
+
+export async function getStaticPaths() {
+	const allPosts = await getCollection("posts");
+	const uniqueTags = [
+		...new Set(allPosts.map(post => post.data.tags).flat()),
+	];
+
+	return uniqueTags.map(tag => {
+		// Find all posts with this particular tag and sort them from newest to oldest
+		const filteredPosts = allPosts.filter(post =>
+			post.data.tags.includes(tag),
+		).sort((postA, postB) => postA.data.date < postB.data.date ? 1 : -1);
+		return {
+			params: { tag },
+			props: { posts: filteredPosts },
+		};
+	});
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+
+const tagCapitalised = String(tag).charAt(0).toUpperCase() + String(tag).slice(1);
+---
+
+<PageLayout
+	title={tagCapitalised}
+	desc={`All blog posts tagged as '${tag}''`}
+	coverImageData={coverPhoto}
+	coverImageAlt="A computer screen with the text 'Prewired Presentations begin 13:00 Friday 27th July 2018'"
+>
+	<p>
+		Posts tagged with <span class="font-mono font-medium uppercase bg-blue-200 rounded px-2 py-1 leading-0">{tag}</span>
+	</p>
+	<ul>
+		{ posts.map(post => (
+			<li>
+				<a href={`/news/${post.id}/`}>
+					{ post.data.title }
+				</a>
+			</li>
+		)) }
+	</ul>
+</PageLayout>

@@ -1,0 +1,32 @@
+---
+import PageLayout from "./PageLayout.astro";
+import importImage from "src/scripts/dynamicImportImage";
+
+
+interface Props {
+	frontmatter: {
+		title: string;
+		desc: string;
+		coverImage: {
+			src: string;
+			alt: string;
+		}
+	};
+	headings: { depth: number; slug: string; text: string }[];
+}
+
+const { frontmatter, headings } = Astro.props;
+const { title, desc, coverImage } = frontmatter;
+
+const coverImageData = await importImage(coverImage);
+---
+
+<PageLayout
+	title={title}
+	desc={desc}
+	coverImageData={coverImageData}
+	coverImageAlt={coverImage.alt}
+	headings={headings}
+>
+	<slot />
+</PageLayout>

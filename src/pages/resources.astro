@@ -1,0 +1,125 @@
+---
+import { Picture } from "astro:assets";
+import PageLayout from "@layouts/PageLayout.astro";
+import coverPhoto from "@assets/photos/sh18_postits.jpg";
+import codeClubProjects from "@assets/logos/codeclub-logo.png";
+import hourOfCode from "@assets/logos/hourofcode-logo.png";
+import cyberSkillsLive from "@assets/logos/cyberskillslive-logo.svg";
+import microbit from "@assets/logos/microbit-logo.png";
+import legospike from "@assets/logos/legospike-logo.webp";
+import overthewire from "@assets/logos/overthewire-logo.png";
+
+
+const levelLabels = [
+	{ label: "First steps", style: "bg-blue-100 text-blue-800" },
+	{ label: "Beginner", style: "bg-green-100 text-green-800" },
+	{ label: "Intermediate", style: "bg-amber-100 text-amber-800" },
+	{ label: "Advanced", style: "bg-red-100 text-red-800" },
+	{ label: "Beyond", style: "bg-black text-white" }
+];
+
+const resources = [
+	{
+		name: "CodeClub Projects",
+		link: "https://projects.raspberrypi.org/en",
+		img: codeClubProjects,
+		imgAlt: "CodeClub logo",
+		levels: [0, 1, 2],
+		desc: "Our partners at the Raspberry Pi Foundation have created a brilliant website with both short projects you can do at a session and longer learning paths you can follow. This is where we recommend you start if you want to learn Scratch, Python, HTML/CSS, micro:bits, Unity, or Raspberry Pis."
+	},
+	{
+		name: "Hour of Code",
+		link: "https://hourofcode.com/us/gb/learn",
+		img: hourOfCode,
+		imgAlt: "Hour of Code logo",
+		levels: [0, 1],
+		desc: "Hour of Code, by Code.org, has a great number of projects you can do in one or a few hours—perfect for a Prewired session! They have content for Scratch, Python, JavaScript, and Lua."
+	},
+	{
+		name: "Cyber Skills Live",
+		link: "https://cyberskillslive.com/",
+		img: cyberSkillsLive,
+		imgAlt: "Cyber Skills Live logo",
+		levels: [1, 2],
+		desc: "Cyber Skills Live has short projects around topics like ethical hacking, digital forensics, data science, and artificial intelligence. Try for example 'How to rob a bank' or 'Defend Stirling Castle'!"
+	},
+	{
+		name: "micro:bit projects",
+		link: "https://microbit.org/projects/make-it-code-it/",
+		img: microbit,
+		imgAlt: "micro:bit logo",
+		levels: [1, 2],
+		desc: "We have plenty of micro:bits at Prewired that you're able to use during sessions. The micro:bit website has loads of project ideas using different sensors and for different environments, such as Microsoft MakeCode, Scratch, or Python."
+	},
+	{
+		name: "LEGO SPIKE Prime projects",
+		link: "https://spike.legoeducation.com/prime/models/",
+		img: legospike,
+		imgAlt: "LEGO SPIKE logo",
+		levels: [1, 2],
+		desc: "We have two LEGO SPIKE Prime kits that are available for use outside of FIRST LEGO League season. The SPIKE app has some great ideas for builds, from different driving bases to a CNC machine or safe-deposit box!"
+	},
+	{
+		name: "OverTheWire",
+		link: "https://overthewire.org/wargames/",
+		img: overthewire,
+		imgAlt: "OverTheWire logo",
+		levels: [2, 3],
+		desc: "Free games played on the command line to help you to learn and practice cybersecurity concepts, beginning from how to navigate around a terminal all the way up to binary exploitation and reverse engineering."
+	}
+];
+---
+
+<PageLayout
+	title="Resources"
+	desc="Not sure where to get started? Need some inspiration? This page lists learning resources that we know and trust."
+	coverImageData={coverPhoto}
+	coverImageAlt="Close-up of post-its on a whiteboard, with the one in focus reading 'Learn Python'"
+>
+	<p>
+		Not sure where to get started? Or just looking for something different? These websites contain many short projects that you can do during a Prewired session, using a range of different technologies.
+	</p>
+	<p class="mb-16">
+		Note that although we are happy to receive suggestions for new links to add, as a matter of policy we do not post links to sites which have mainly paid-for content or whose main goal is commercial rather than educational.
+	</p>
+
+	{ resources.map(({ name, link, img, imgAlt, levels, desc }) => (
+		<a
+			href={link}
+			target="_blank"
+			rel="noopener noreferrer"
+			class="group text-black no-underline"
+		>
+			<div class="mb-8 flex flex-col md:flex-row gap-x-12 gap-y-4 p-4 group-hover:bg-purple-50 rounded-lg">
+				<div class="w-40 shrink-0 flex items-center">
+					<Picture
+						src={img}
+						formats={["avif", "webp"]}
+						alt={imgAlt}
+						width="160"
+						class="object-contain"
+					/>
+				</div>
+				<div class="">
+					<h3 class="font-semibold text-xl not-italic mt-0 mb-1">
+						{ name }
+					</h3>
+					<div class="flex gap-1 mb-2">
+						{ levels.map(level => {
+							const l = levelLabels[level];
+
+							return (
+								<div class={`px-2 py-0.5 rounded text-sm ${l.style}`}>
+									{ l.label }
+								</div>
+							);
+						}) }
+					</div>
+					<p>
+						{ desc }
+					</p>
+				</div>
+			</div>
+		</a>
+	))}
+</PageLayout>

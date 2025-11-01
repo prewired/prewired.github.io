@@ -1,0 +1,191 @@
+---
+import { Picture } from "astro:assets";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import BookTicketsButton from "@components/BookTicketsButton.astro";
+import cover from "@assets/photos/ws18_session.jpg";
+import overview from "@assets/photos/sh16_discuss.jpg";
+import codebase from "@assets/logos/codebase-logo.png";
+import hypercube from "@assets/logos/hypercube-logo.png";
+import robotical from "@assets/logos/robotical-logo.png";
+import uoe from "@assets/logos/uoe-logo.png";
+import rpf from "@assets/logos/rpf-logo.png";
+
+
+const sponsors = [
+	{ name: "CodeBase", href: "https://thisiscodebase.com", src: codebase, style: "py-4" },
+	{ name: "Hypercube", href: "https://wearehypercube.com", src: hypercube, style: "py-4" },
+	{ name: "Raspberry Pi Foundation", href: "https://www.raspberrypi.org/", src: rpf, style: "py-2" },
+	{ name: "Robotical", href: "https://robotical.io", src: robotical },
+	{ name: "University of Edinburgh", href: "https://www.ed.ac.uk", src: uoe }
+];
+
+const coverImageAlt = "A room full of young people working on laptops at low and high tables";
+---
+
+<BaseLayout
+	title="Home"
+	ogTitle="Welcome to Prewired!"
+	desc="Welcome to Prewired, a free Edinburgh programming club for young people. If you're under 19 years old and interested in learning to code, or want support taking your passion further, you're in the right place!"
+	type="website"
+	coverImageData={cover}
+	coverImageAlt={coverImageAlt}
+>
+	<!-- Cover -->
+	<section class="max-w-7xl mx-auto mb-8 lg:mb-24 flex flex-wrap-reverse lg:flex-nowrap lg:items-center lg:justify-evenly min-[84rem]:justify-between gap-4 lg:gap-8">
+		<div class="lg:w-md md:max-lg:mx-auto py-6 text-center lg:text-left text-balance">
+			<h1 class="mb-4 lg:mb-2 font-semibold text-3xl lg:text-4xl">
+				Welcome to <span class="font-bold text-blue-700">Prewired</span>!
+			</h1>
+			<p class="mb-4 font-semibold text-xl">
+				A free, weekly programming club for young people in Edinburgh.
+			</p>
+			<p class="mb-12 md:mb-8">
+				If you're under 19 years old and interested in learning to code, or want support taking your passion further, you're in the right place!
+			</p>
+			<div class="flex flex-col md:flex-row flex-wrap md:justify-center lg:justify-start gap-4">
+				<BookTicketsButton />
+				<a
+					href="http://eepurl.com/dv2dPb"
+					target="_blank" rel="noopener"
+					class="px-4 py-3 border border-b-2 border-black rounded-md cursor-pointer text-black no-underline hover:border-transparent hover:bg-black hover:text-white active:bg-black/60"
+				>
+					Join our mailing list
+				</a>
+			</div>
+		</div>
+		<Picture priority
+			src={cover}
+			formats={["avif", "webp"]}
+			alt={coverImageAlt}
+			class="h-60 lg:h-112 object-cover md:rounded-lg"
+			pictureAttributes={{ class: "w-[calc(100%+2rem)] md:w-full lg:w-[calc(50%-2rem)] xl:w-1/2 -mx-4 md:mx-auto lg:mx-0 lg:shrink-0" }}
+		/>
+	</section>
+
+	<!-- Special announcements -->
+	<section class="max-w-216 mx-auto mb-16 lg:mb-24 bg-green-700 border-2 border-green-700 rounded-lg shadow-md overflow-hidden text-center">
+		<div class="py-1">
+			<p class="mb-0 font-mono font-semibold text-white text-base uppercase">
+				Announcement &middot; 1 Nov 2025
+			</p>
+		</div>
+		<h1 class="py-4 px-4 mb-0.5 bg-green-50 rounded-t-lg font-bold text-xl md:text-2xl">
+			🎉&nbsp;&nbsp;We have a new website!&nbsp;&nbsp;🎉
+		</h1>
+		<div class="pt-4 pb-1 px-4 md:px-8 bg-green-50 rounded-b-lg">
+			<p>
+				After 10 years, we have rebuilt our website to be easier to navigate and maintain.
+			</p>
+			<p>
+				While things may look a little different, nothing is changing about how we operate!
+			</p>
+			<p>
+				Book your spot using the new button above or <a href="https://buytickets.at/prewired/1223517" target="_blank" rel="noopener noreferrer">through TicketTailor</a> as before.
+			</p>
+			<p>
+				You can of course also look at the code of this website and leave suggestions <a href="https://github.com/prewired/prewired.github.io" target="_blank" rel="noopener noreferrer">on GitHub</a>!
+			</p>
+		</div>
+	</section>
+
+	<!-- Overview -->
+	<section class="max-w-7xl mx-auto mb-12 lg:mb-24 flex flex-wrap lg:items-center lg:justify-center">
+		<Picture priority
+			src={overview}
+			formats={["avif", "webp"]}
+			alt="Three teenagers coding on laptops while chatting to each other"
+			class="h-60 lg:h-112 mb-8 lg:mb-0 object-cover md:rounded-lg"
+			pictureAttributes={{ class: "w-[calc(100%+2rem)] md:w-full lg:w-2/5 -mx-4 md:mx-0" }}
+		/>
+		<div class="md:w-3/4 md:max-lg:mx-auto lg:w-2/5 lg:ml-16 md:text-center lg:text-left">
+			<h1 class="font-semibold text-2xl md:text-3xl text-balance mb-4">
+				What we do
+			</h1>
+			<p class="md:text-lg">
+				Computers let you create anything you can think of. Prewired is here to help enthusiastic young coders of any ability to do just that.
+			</p>
+			<p class="md:text-lg mb-8">
+				Every Wednesday 5:30&ndash;7:30 PM, we meet at CodeBase Edinburgh. You can bring your own project to work on or chat to one of our volunteers about how to get started!
+			</p>
+			<a
+				href="/attending/"
+				class="block w-full md:w-fit md:mx-auto lg:mx-0 px-4 py-3 bg-blue-100 rounded-md cursor-pointer text-black text-center no-underline hover:bg-blue-700 hover:text-white active:bg-blue-900"
+			>
+				Read more about our sessions
+			</a>
+		</div>
+	</section>
+
+	<!-- Impact -->
+	<section class="w-[100%+2rem] md:w-full -mx-4 md:mx-0 mb-12 lg:mb-24 pt-8 pb-12 lg:py-16 bg-pink-50 md:rounded-lg lg:rounded-4xl">
+		<h1 class="font-semibold text-xl md:text-2xl text-center text-pink-700">
+			Small team, large impact...
+		</h1>
+		<div class="flex flex-wrap justify-center gap-y-4 md:gap-y-8 max-w-7xl mt-8 md:mt-12 lg:mt-16 mx-auto text-center">
+			<div class="w-1/3 min-w-66">
+				<p class="text-4xl mb-4">
+					🧑‍💻
+				</p>
+				<p class="mb-2 lg:mb-4 font-mono font-semibold text-3xl lg:text-5xl text-pink-700">
+					120+
+				</p>
+				<p>
+					unique attendees in 2024
+				</p>
+			</div>
+			<div class="w-1/3 min-w-66">
+				<p class="text-4xl mb-4">
+					🗓️
+				</p>
+				<p class="mb-2 lg:mb-4 font-mono font-semibold text-3xl lg:text-5xl text-pink-700">
+					50+
+				</p>
+				<p>
+					events a year
+				</p>
+			</div>
+			<div class="relative w-1/3 min-w-66">
+				<p class="text-4xl mb-4">
+					🍵
+				</p>
+				<p class="mb-2 lg:mb-4 font-mono font-semibold text-3xl lg:text-5xl text-pink-700">
+					100%
+				</p>
+				<p>
+					volunteer-run
+				</p>
+				<a
+					href="/volunteering/"
+					class="absolute -bottom-6 right-14 px-4 py-2 bg-pink-600 hover:bg-pink-800 border-b-2 border-pink-900 active:border-b-0 active:mt-0.5 rounded-lg -rotate-3 font-mono font-semibold uppercase text-white no-underline"
+				>
+					Get involved!
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Sponsors -->
+	<section class="max-w-7xl mx-auto text-center text-balance">
+		<h1 class="max-md:text-xl mb-4">
+			Sponsors & supporters
+		</h1>
+		<p class="mb-12">
+			In addition to the accommodation generously provided by CodeBase, Prewired could not exist without the support from our sponsors, donors, and supporters.
+		</p>
+		<div class="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-x-12 md:gap-x-20 gap-y-4 md:gap-y-8">
+			{ sponsors.map(({name, href, src, style}) => (
+				<a href={href} target="_blank" rel="noopener" class="hover:opacity-70 transition">
+					<Picture
+						src={src}
+						formats={["avif", "webp"]}
+						alt={`${name} logo`}
+						class={`w-auto h-14 md:h-20 ${style}`}
+					/>
+				</a>
+			))}
+		</div>
+		<p class="mt-12">
+			Thank you!
+		</p>
+	</section>
+</BaseLayout>

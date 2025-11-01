@@ -1,0 +1,63 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "./BaseLayout.astro";
+import importImage from "src/scripts/dynamicImportImage";
+
+interface Props {
+	frontmatter: {
+		title: string;
+		date: Date;
+		author: string;
+		desc: string;
+		coverImage: {
+			src: string;
+			alt: string;
+		};
+		tags: string[];
+	};
+}
+
+const { frontmatter } = Astro.props;
+const { title, date, author, desc, coverImage, tags } = frontmatter;
+
+const coverImageData = await importImage(coverImage);
+---
+
+<BaseLayout
+	title={title}
+	desc={desc}
+	type="article"
+	author={author}
+	coverImageData={coverImageData}
+	coverImageAlt={coverImage.alt}
+>
+	<div class="w-full max-w-3xl lg:max-w-7xl mx-auto lg:px-8 flex flex-col lg:flex-row lg:items-end gap-8">
+		<Image
+			src={coverImageData}
+			alt={coverImage.alt}
+			class="w-[calc(100%+2rem)] md:w-full max-w-3xl -mx-4 aspect-video object-cover md:rounded-lg"
+		/>
+		<div>
+			<div class="flex">
+				{ tags.map(tag => (<>
+					<a href={`/news/tags/${tag}/`} class="no-underline!">
+						<div class="mr-2 mb-2 bg-blue-200 hover:bg-purple-200 rounded px-2 py-1 leading-0">
+							<span class="text-sm font-mono font-medium text-black uppercase">
+								{ tag }
+							</span>
+						</div>
+					</a>
+				</>)) }
+			</div>
+			<p class="font-semibold">
+				By <span class="text-purple-700">{ author }</span> on { date.toLocaleDateString("en-GB") }
+			</p>
+		</div>
+	</div>
+	<article class="max-w-3xl mt-6 lg:mt-12 mx-auto">
+		<h1 class="mb-4 font-bold lg:text-5xl leading-tight">
+			{ title }
+		</h1>
+		<slot />
+	</article>
+</BaseLayout>

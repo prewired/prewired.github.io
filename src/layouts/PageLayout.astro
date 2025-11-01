@@ -1,0 +1,61 @@
+---
+import { Picture } from "astro:assets";
+import BaseLayout from "./BaseLayout.astro";
+
+interface Props {
+	title: string;
+	desc: string;
+	coverImageData: ImageMetadata;
+	coverImageAlt: string;
+	headings?: { depth: number; slug: string; text: string }[];
+}
+
+const { title, desc, coverImageData, coverImageAlt, headings } = Astro.props;
+---
+
+<BaseLayout
+	title={title}
+	desc={desc}
+	type="website"
+	coverImageData={coverImageData}
+	coverImageAlt={coverImageAlt}
+>
+	<div class="max-w-7xl mx-auto">
+		<div class="relative w-[calc(100%+2rem)] md:w-full -mx-4 md:mx-0 md:rounded-lg bg-black overflow-hidden">
+			<Picture priority
+				src={coverImageData}
+				formats={["avif", "webp"]}
+				alt={coverImageAlt}
+				class="h-60 xl:h-72 object-cover mask-b-from-50%"
+			/>
+			<div class="max-w-5xl mx-auto pl-4 pr-8 md:pr-4">
+				<div class="absolute bottom-1 md:bottom-2">
+					<h1 class="lg:text-5xl text-white text-shadow-lg/50">
+						{ title }
+					</h1>
+				</div>
+			</div>
+		</div>
+		<div class="flex items-start min-h-[40vh] w-full pt-8 md:pt-12 gap-20">
+			{ headings &&
+				<div class="hidden lg:block sticky top-8 w-1/5 xl:w-1/6 shrink-0">
+					<div class="pb-2 border-b border-zinc-500 font-mono font-semibold text-sm uppercase text-zinc-500">
+						On this page
+					</div>
+					{ headings.filter(heading => heading.depth === 2).map(heading => (
+						<a
+							href={`#${heading.slug}`}
+							class="block py-2 first-of-type:pt-4 text-sm text-zinc-500 no-underline hover:underline"
+						>
+							{ heading.text }
+						</a>
+					)) }
+				</div>
+			}
+			<div class={`sm:px-4 ${headings ? "lg:px-0" : "w-full max-w-5xl mx-auto"}`}>
+				<slot />
+			</div>
+			{ headings && <div class="hidden lg:block w-1/8 xl:w-1/6 shrink-0" /> }
+		</div>
+	</div>
+</BaseLayout>

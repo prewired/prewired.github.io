@@ -1,0 +1,79 @@
+---
+import { getLinkPreview } from "link-preview-js";
+
+
+// We cast our post previews as a subset of the actual type in link-preview-js as we only preview web pages, not different media types, and this avoids having to ignore TypeScript
+type PostPreview = {
+    url: string;
+    title: string;
+    siteName?: string;
+    description?: string;
+    mediaType: string;
+    contentType?: string;
+    images: string[];
+    videos?: {
+        url?: string;
+        secureUrl?: string | null;
+        type?: string | null;
+        width?: string;
+        height?: string;
+    }[];
+    favicons: string[];
+};
+
+
+interface Props {
+	url: string;
+	date: Date;
+	desc?: string;
+}
+
+const { url, date, desc } = Astro.props;
+
+// Default values to display an error message if data fetching below somehow fails
+let postPreview: PostPreview = {
+	url: url,
+	title: "Post Not Found",
+	siteName: "Error",
+	description: `Unable to retrieve data from ${url}`,
+	favicons: [""],
+	mediaType: "",
+	images: [""]
+};
+
+// Get a preview of the post we're linking to
+try {
+	postPreview = await getLinkPreview(url, {
+		followRedirects: "follow",
+		headers: {
+			// We pretend to be Slack to circumvent Cloudflare's bot protection
+			"user-agent": "Slackbot-LinkExpanding 1.0 (+https://api.slack.com/robots)",
+		}
+	}) as PostPreview;
+}
+catch (error) {
+	console.error(error);
+}
+---
+
+<a href={url} target="_blank" rel="noopener noreferrer" class="group text-black! no-underline!">
+	<div class="flex flex-wrap md:flex-nowrap gap-4 md:gap-8 mb-8 md:mb-4">
+		<img
+			src={postPreview.images[0]}
+			alt="Image"
+			class="w-full md:w-72 h-52 object-cover shrink-0 bg-gray-200 rounded-lg"
+		/>
+		<div>
+			<div class="flex items-center mb-2 text-sm">
+				<img src={postPreview.favicons[0]} alt="Favicon" class="w-4 h-4 mr-2" />
+				<span>{ postPreview.siteName }</span>
+			</div>
+			<h3 class="mt-0 font-bold text-xl not-italic group-hover:underline">
+				{ postPreview.title }
+			</h3>
+			<p class="group-hover:underline">
+				{ date.toLocaleDateString("en-GB") } &middot; { desc ?? postPreview.description }
+			</p>
+		</div>
+	</div>
+</a>

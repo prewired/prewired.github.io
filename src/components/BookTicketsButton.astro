@@ -1,0 +1,72 @@
+---
+import DialogCloseButton from "./DialogCloseButton.astro";
+---
+
+<button
+	class="w-full md:w-fit px-6 py-3 bg-linear-to-br from-purple-600 to-purple-600 hover:to-pink-500 active:from-pink-500 rounded-md font-semibold text-lg md:text-xl text-white cursor-pointer transition"
+	id="book-tickets-btn"
+>
+	Book a spot
+</button>
+
+<dialog
+	class="w-[700px] max-w-full mx-auto mt-[5vh] md:mt-[10vh] border rounded-sm shadow-lg overflow-hidden scale-95 open:scale-100 starting:open:scale-95"
+	id="tickets-dialog"
+>
+	<div class="max-h-[80vh] overflow-y-auto">
+		<DialogCloseButton
+			id="tickets-dialog-close-btn"
+			style="absolute top-5 right-5 bg-white"
+		/>
+		<!-- Ticket Tailor Widget -->
+		<div class="tt-widget">
+			<div class="tt-widget-fallback">
+				<p>
+					<a href="https://www.tickettailor.com/events/prewired/1223517/select-date?ref=website_widget"
+						target="_blank"
+					>
+						Click here to buy tickets
+					</a>
+					<br />
+					<small>
+						<a href="https://www.tickettailor.com?rf=wdg_186493"
+							class="tt-widget-powered"
+						>
+							Sell tickets online with Ticket Tailor
+						</a>
+					</small>
+				</p>
+			</div>
+			<script
+				is:inline
+				src="https://cdn.tickettailor.com/js/widgets/min/widget.js"
+				data-url="https://www.tickettailor.com/events/prewired/1223517/select-date?ref=website_widget"
+				data-type="inline"
+				data-inline-minimal="true"
+				data-inline-show-logo="false"
+				data-inline-bg-fill="false"
+				data-inline-inherit-ref-from-url-param=""
+				data-inline-ref="website_widget">
+			</script>
+		</div>
+	</div>
+</dialog>
+
+<script>
+	const ticketsBtn = document.getElementById("book-tickets-btn") as HTMLButtonElement;
+	const ticketsDialog = document.getElementById("tickets-dialog") as HTMLDialogElement;
+	const closeBtn = document.getElementById("tickets-dialog-close-btn") as HTMLButtonElement;
+
+	ticketsBtn.addEventListener("click", () => {
+		ticketsDialog.showModal();
+	});
+
+	closeBtn.addEventListener("click", () => {
+		ticketsDialog.close();
+	});
+
+	ticketsDialog.addEventListener("click", event => {
+		// Close the dialog on tapping the backdrop
+		if (event.target === ticketsDialog) ticketsDialog.close();
+	});
+</script>

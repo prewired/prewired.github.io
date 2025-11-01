@@ -1,0 +1,27 @@
+{
+  "name": "prewired-website",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.5",
+    "@astrojs/sitemap": "^3.6.0",
+    "@fontsource-variable/geist-mono": "^5.2.7",
+    "@fontsource-variable/open-sans": "^5.2.7",
+    "@tailwindcss/vite": "^4.1.16",
+    "astro": "^5.15.3",
+    "astro-tunnel": "^0.1.8",
+    "link-preview-js": "^3.1.0",
+    "tailwindcss": "^4.1.16",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@fec/remark-a11y-emoji": "^4.0.2"
+  }
+}

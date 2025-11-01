@@ -1,0 +1,220 @@
+@import "tailwindcss";
+
+
+/* Extending and overriding the default Tailwind styling */
+@theme {
+	/* Custom colours */
+	--color-blue-50: #EDFCFF;
+	--color-blue-100: #D6F6FF;
+	--color-blue-200: #B5F2FF;
+	--color-blue-300: #83ECFF;
+	--color-blue-400: #48DFFF;
+	--color-blue-500: #1EC4FF;
+	--color-blue-600: #06A9FF;
+	--color-blue-700: #0096FF; /* Prewired logo hue */
+	--color-blue-750: #0077CC; /* >4.50:1 contrast vs white (WCAG AA for normal text) */
+	--color-blue-800: #0872C5;
+	--color-blue-900: #0D609B;
+	--color-blue-950: #0E3A5D;
+
+	--color-purple-50: #FAF6FE;
+	--color-purple-100: #F2EAFD;
+	--color-purple-200: #E7D8FC;
+	--color-purple-300: #D4B9F9;
+	--color-purple-400: #BA8CF4;
+	--color-purple-500: #9F60EC;
+	--color-purple-600: #7D2DDA; /* Prewired logo hue; >4.50:1 contrast vs white (WCAG AA for normal text) */
+	--color-purple-700: #742EC2;
+	--color-purple-800: #632A9F;
+	--color-purple-900: #512380;
+	--color-purple-950: #350D5E;
+
+	--color-pink-50: #FFF0F3;
+	--color-pink-100: #FFE2EA;
+	--color-pink-200: #FFCADA;
+	--color-pink-300: #FF9FBB;
+	--color-pink-400: #FF6998;
+	--color-pink-500: #FF246E; /* Prewired logo hue */
+	--color-pink-600: #EB004E; /* >4.50:1 contrast vs white (WCAG AA for normal text) */
+	--color-pink-700: #C80857;
+	--color-pink-800: #A8094F;
+	--color-pink-900: #8F0C4A;
+	--color-pink-950: #500124;
+
+
+	/* Custom fonts */
+	--font-sans: "Open Sans Variable", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-mono: "Geist Mono Variable", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
+/* General styles */
+@layer base {
+	@view-transition {
+		navigation: auto;
+	}
+
+	::selection {
+		@apply bg-blue-100 text-black;
+	}
+
+	html {
+		@apply transition duration-300;
+		scrollbar-gutter: stable;
+	}
+
+	html:has(dialog[open]) {
+		/* Prevent scrolling and content shift when a modal dialog is open */
+		@apply overflow-y-hidden;
+	}
+
+	/* Apply correct background colour to scroll gutter when a modal dialog is open */
+	html:has(#menu-dialog[open]) { @apply bg-pink-50; }
+	html:has(#tickets-dialog[open]) { @apply bg-black/25; }
+
+	h1 {
+		@apply mb-2 font-semibold text-4xl;
+	}
+
+	h2 {
+		@apply relative w-fit mt-16 md:mt-24 mb-2 -ml-4 sm:-ml-8 lg:-ml-2.5 px-4 sm:pl-8 lg:px-2.5 py-0.5 font-mono font-semibold text-xl lg:text-2xl text-white uppercase;
+	}
+	h2:nth-of-type(3n) { @apply bg-blue-750; }
+	h2:nth-of-type(3n+1) { @apply bg-pink-600; }
+	h2:nth-of-type(3n+2) { @apply bg-purple-600; }
+	h2:first-child { @apply mt-0; }
+
+	h3 {
+		@apply mt-8 font-semibold;
+	}
+	h2 + h3 { @apply mt-0; }
+
+	footer h2 {
+		@apply text-base text-black bg-transparent! m-0 p-0;
+	}
+
+	p {
+		@apply mb-4;
+	}
+
+	ul {
+		@apply list-disc list-outside ml-8;
+	}
+
+	ol {
+		@apply list-decimal ml-8 mb-8;
+	}
+
+	li {
+		@apply mb-4;
+	}
+
+	a {
+		@apply text-blue-800 hover:text-purple-600 underline underline-offset-2;
+	}
+
+	hr {
+		@apply my-16;
+	}
+
+	details {
+		@apply border border-b-0 border-gray-400 overflow-hidden;
+	}
+
+	details:first-of-type {
+		@apply mt-6 rounded-t-lg;
+	}
+
+	details:last-of-type {
+		@apply border-b rounded-b-lg;
+	}
+
+	details > p {
+		@apply px-6;
+	}
+
+	details > p:first-of-type {
+		@apply mt-4;
+	}
+
+	summary {
+		@apply flex justify-between items-center py-4 px-6 list-none cursor-pointer transition-[font-weight];
+	}
+
+	summary::after {
+		/* Chevron pointing down */
+		@apply w-6 h-6 ml-4 shrink-0 transition-transform;
+		background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22currentColor%22%20%20viewBox%3D%220%200%2016%2016%22%3E%0A%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20d%3D%22M1.646%204.646a.5.5%200%200%201%20.708%200L8%2010.293l5.646-5.647a.5.5%200%200%201%20.708.708l-6%206a.5.5%200%200%201-.708%200l-6-6a.5.5%200%200%201%200-.708%22%2F%3E%0A%3C%2Fsvg%3E");
+		content: "";
+	}
+
+	details[open] > summary {
+		@apply font-semibold bg-gray-100;
+	}
+
+	details[open] > summary::after {
+		transform: rotate(180deg);
+	}
+
+	summary:hover {
+		@apply bg-gray-100;
+	}
+
+	table, th, td {
+		@apply border border-gray-600/30;
+	}
+
+	table {
+		@apply w-full;
+	}
+
+	th, td {
+		@apply px-4 py-2 text-left;
+	}
+
+	dialog {
+		@apply opacity-0 open:opacity-100 starting:open:opacity-0 transition-all transition-discrete duration-300;
+		@apply backdrop:bg-transparent open:backdrop:bg-black/25 starting:open:backdrop:bg-transparent backdrop:transition-all backdrop:transition-discrete backdrop:duration-300;
+	}
+
+	address {
+		@apply not-italic;
+	}
+
+	code {
+		@apply px-1.5 py-1 bg-blue-100 text-blue-900 rounded;
+	}
+
+	/* Responsive sizing for iframes */
+	.iframe-wrapper {
+		@apply relative w-full pt-[56.25%];
+	}
+
+	.iframe-wrapper > iframe {
+		@apply absolute top-0 left-0 w-full h-full border-0;
+	}
+
+	article > h2 {
+		@apply mt-12;
+	}
+
+	article > p {
+		@apply leading-8;
+	}
+
+	article > blockquote {
+		@apply mb-8 px-6 py-4 border border-gray-300 rounded-lg;
+	}
+
+	article > blockquote > p {
+		@apply leading-8 mb-0;
+	}
+
+	a.kofi-button {
+		@apply px-3.5! font-sans! font-semibold! shadow-none! hover:bg-pink-800! hover:opacity-100!;
+	}
+
+	.kofitext img.kofiimg {
+		@apply w-auto! pr-px!;
+	}
+}
