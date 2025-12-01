@@ -9,6 +9,7 @@ import hypercube from "@assets/logos/hypercube-logo.png";
 import robotical from "@assets/logos/robotical-logo.png";
 import uoe from "@assets/logos/uoe-logo.png";
 import rpf from "@assets/logos/rpf-logo.png";
+import santamarty from "@assets/misc/santamarty.png";
 
 
 const sponsors = [
@@ -63,27 +64,33 @@ const coverImageAlt = "A room full of young people working on laptops at low and
 	</section>
 
 	<!-- Special announcements -->
-	<section class="max-w-216 mx-auto mb-16 lg:mb-24 bg-green-700 border-2 border-green-700 rounded-lg shadow-md overflow-hidden text-center">
+	<section class="max-w-216 mx-auto mb-16 lg:mb-24 bg-blue-700 border-2 border-blue-700 rounded-lg shadow-md text-center text-balance">
 		<div class="py-1">
 			<p class="mb-0 font-mono font-semibold text-white text-base uppercase">
-				Announcement &middot; 1 Nov 2025
+				Announcement &middot; 1 Dec 2025
 			</p>
 		</div>
-		<h1 class="py-4 px-4 mb-0.5 bg-green-50 rounded-t-lg font-bold text-xl md:text-2xl">
-			🎉&nbsp;&nbsp;We have a new website!&nbsp;&nbsp;🎉
+		<h1 class="relative py-4 px-4 mb-0.5 bg-blue-50 rounded-t-lg font-bold text-xl md:text-2xl">
+			❄️&nbsp;&nbsp;Festive Party and End-of-Term&nbsp;&nbsp;❄️
+			<Picture priority
+				src={santamarty}
+				formats={["avif", "webp"]}
+				alt="A Marty robot wearing a Santa hat"
+				pictureAttributes={{ class: "absolute w-40 bottom-15 -right-12 md:bottom-0 md:right-0" }}
+			/>
 		</h1>
-		<div class="pt-4 pb-1 px-4 md:px-8 bg-green-50 rounded-b-lg">
+		<div class="pt-4 pb-1 px-4 md:px-8 bg-linear-to-br from-blue-50 to-blue-100 rounded-b-lg">
 			<p>
-				After 10 years, we have rebuilt our website to be easier to navigate and maintain.
+				On 17 December we're hosting a <strong>special festive session</strong> in collaboration with Digital Skills 4 Girls!
 			</p>
 			<p>
-				While things may look a little different, nothing is changing about how we operate!
+				For more info and free tickets, <a href="https://buytickets.at/prewired/1951681" target="_blank" rel="noopener noreferrer">go to the event page</a>.
 			</p>
 			<p>
-				Book your spot using the new button above or <a href="https://buytickets.at/prewired/1223517" target="_blank" rel="noopener noreferrer">through TicketTailor</a> as before.
+				For this end-of-term session there will be several festive-themed activities to choose from, as well as games and plenty of snacks. The desk area will also be set up for a regular Prewired session if you'd rather crack on with your usual projects.
 			</p>
 			<p>
-				You can of course also look at the code of this website and leave suggestions <a href="https://github.com/prewired/prewired.github.io" target="_blank" rel="noopener noreferrer">on GitHub</a>!
+				This will be our last session of the year&mdash;after this we'll be back on 7 January!
 			</p>
 		</div>
 	</section>
