@@ -120,7 +120,7 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.8.0)
-    webrick (1.7.0)
+    webrick (1.8.2)
 
 PLATFORMS
   ruby
@@ -129,7 +129,7 @@ DEPENDENCIES
   jekyll
   jemoji
   minimal-mistakes-jekyll
-  webrick (~> 1.7)
+  webrick (~> 1.8)
 
 BUNDLED WITH
    2.2.31
