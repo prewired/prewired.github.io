@@ -28,6 +28,7 @@ Prewired has been a Scottish Charitable Incorporated Organisation since Septembe
 | India Thomson     | Secretary                             |
 | Athina Frantzana  | Child Protection & EDI Officer        |
 | Rayo Verweij      | Projects Officer                      |
+| Rosie Wilkie      | Parents' Representative               |
 | Cameron Gray      | Trustee                               |
 | Charlotte Holland | Trustee                               |
 | Claire Wheelan    | Trustee                               |
@@ -49,6 +50,7 @@ Prewired has submitted an annual report to OSCR each year since registering as a
 | 📄[Trustees' Annual Report 2021-2022](/docs/TAR_2021-22.pdf) | November 2022  |
 | 📄[Trustees' Annual Report 2022-2023](/docs/TAR_2022-23.pdf) | December 2023  |
 | 📄[Trustees' Annual Report 2023-2024](/docs/TAR_2023-24.pdf) | March 2025     |
+| 📄[Trustees' Annual Report 2024-2025](/docs/TAR_2024-25.pdf) | January 2026   |
 
 ## History
 
