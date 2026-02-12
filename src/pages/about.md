@@ -21,17 +21,17 @@ As our world has become increasingly technology-oriented, understanding how the 
 
 Prewired has been a Scottish Charitable Incorporated Organisation since September 2017, registered as SC047780. Its structure and organisation are detailed in the 📄[Prewired SCIO Constitution](/docs/Prewired_Constitution_v1.2a.pdf). It is governed by a Board of Trustees, which currently has the following members:
 
-| Name              | Position                              |
-| ----------------- | ------------------------------------- |
-| Rikki Guy         | Chairperson & Data Protection Officer |
-| Christina Ovezik  | Treasurer                             |
-| India Thomson     | Secretary                             |
-| Athina Frantzana  | Child Protection & EDI Officer        |
-| Rayo Verweij      | Projects Officer                      |
-| Rosie Wilkie      | Parents' Representative               |
-| Cameron Gray      | Trustee                               |
-| Charlotte Holland | Trustee                               |
-| Claire Wheelan    | Trustee                               |
+| Name              | Position                                   |
+| ----------------- | ------------------------------------------ |
+| Athina Frantzana  | Child Protection & EDI Officer             |
+| Cameron Gray      | Trustee                                    |
+| Charlotte Holland | Trustee                                    |
+| Christina Ovezik  | Treasurer                                  |
+| Claire Wheelan    | Data Protection Officer (acting)           |
+| India Thomson     | Secretary                                  |
+| Rayo Verweij      | Projects Officer; Chair (acting)           |
+| Rikki Guy         | Chair & Data Protection Officer (on leave) |
+| Rosie Wilkie      | Parents' Representative                    |
 
 <br>
 
