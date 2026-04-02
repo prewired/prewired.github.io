@@ -2,7 +2,7 @@
 
 
 /* Extending and overriding the default Tailwind styling */
-@theme {
+@theme inline {
 	/* Custom colours */
 	--color-blue-50: #EDFCFF;
 	--color-blue-100: #D6F6FF;
@@ -43,8 +43,8 @@
 
 
 	/* Custom fonts */
-	--font-sans: "Open Sans Variable", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	--font-mono: "Geist Mono Variable", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	--font-sans: var(--font-opensans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-mono: var(--font-geistmono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 

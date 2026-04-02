@@ -1,8 +1,5 @@
 ---
-import { getImage, Picture } from "astro:assets";
-import "@fontsource-variable/open-sans";
-import "@fontsource-variable/open-sans/wght-italic.css";
-import "@fontsource-variable/geist-mono";
+import { Font, getImage, Picture } from "astro:assets";
 import "../styles/global.css";
 import DialogCloseButton from "@components/DialogCloseButton.astro";
 import prewiredLogoText from "@assets/logos/prewired-logo-text.png";
@@ -60,6 +57,9 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 		<meta property="og:image:alt" content={coverImageAlt} />
 
 		<title>{`${title} - Prewired`}</title>
+
+		<Font cssVariable="--font-opensans" />
+		<Font cssVariable="--font-geistmono" />
 	</head>
 	<body class="px-4 lg:text-lg bg-linear-[180deg,white,#EDFCFF_150px,#FAF6FE_350px,#FFF0F3_550px,white_750px] md:bg-linear-[170deg,#EDFCFF,#FAF6FE_200px,#FFF0F3_400px,white_600px]">
 		<header class="h-28 md:h-32 w-full max-w-7xl mx-auto pt-2 md:py-4 lg:pr-0 flex items-center">
