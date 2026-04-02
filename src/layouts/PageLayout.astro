@@ -39,7 +39,7 @@ const { title, desc, coverImageData, coverImageAlt, headings } = Astro.props;
 		<div class="flex items-start min-h-[40vh] w-full pt-8 md:pt-12 gap-20">
 			{ headings &&
 				<div class="hidden lg:block sticky top-8 w-1/5 xl:w-1/6 shrink-0">
-					<div class="pb-2 border-b border-zinc-500 font-mono font-semibold text-sm uppercase text-zinc-500">
+					<div class="pb-2 border-b border-zinc-500 font-semibold text-sm uppercase text-zinc-500">
 						On this page
 					</div>
 					{ headings.filter(heading => heading.depth === 2).map(heading => (

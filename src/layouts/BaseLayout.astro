@@ -58,8 +58,7 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 
 		<title>{`${title} - Prewired`}</title>
 
-		<Font cssVariable="--font-opensans" />
-		<Font cssVariable="--font-geistmono" />
+		<Font cssVariable="--font-rubik" />
 	</head>
 	<body class="px-4 lg:text-lg bg-linear-[180deg,white,#EDFCFF_150px,#FAF6FE_350px,#FFF0F3_550px,white_750px] md:bg-linear-[170deg,#EDFCFF,#FAF6FE_200px,#FFF0F3_400px,white_600px]">
 		<header class="h-28 md:h-32 w-full max-w-7xl mx-auto pt-2 md:py-4 lg:pr-0 flex items-center">
@@ -74,7 +73,7 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 			</a>
 			<!-- Small-screen menu button -->
 			<button
-				class="lg:hidden flex items-center pl-3 pr-4 py-2 bg-pink-600 hover:bg-pink-800 border-b-2 border-pink-900 active:border-b-0 active:mt-0.5 rounded-lg font-mono uppercase font-semibold text-white cursor-pointer transition"
+				class="lg:hidden flex items-center pl-3 pr-4 py-2 bg-pink-600 hover:bg-pink-800 border-b-2 border-pink-900 active:border-b-0 active:mt-0.5 rounded-lg uppercase font-semibold text-white cursor-pointer transition"
 				id="menu-open-btn"
 			>
 				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="mt-px mr-2 fill-white" viewBox="0 0 16 16">
@@ -109,7 +108,7 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 			<!-- Large-screen menu -->
 			<nav class="mx-4 hidden lg:flex gap-7 xl:gap-12">
 				{ navItems.map(({ href, title }) => (
-					<a href={href} class={`shrink-0 font-medium text-black no-underline border-b-2 border-transparent ${Astro.url.pathname === href ? "text-pink-600 border-pink-600!" : "hover:text-pink-600"}`}>
+					<a href={href} class={`shrink-0 font-[450] text-black no-underline border-b-2 border-transparent ${Astro.url.pathname === href ? "text-pink-600 border-pink-600!" : "hover:text-pink-600"}`}>
 						{ title }
 					</a>
 				))}
@@ -237,7 +236,7 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 					</div>
 				</div>
 			</div>
-			<div class="p-4 text-base text-center text-white font-mono font-semibold uppercase">
+			<div class="p-4 text-base text-center text-white font-medium uppercase">
 				Prewired is a Scottish Charity, SC047780 &middot; &copy; 2025 Prewired
 			</div>
 		</footer>

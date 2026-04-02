@@ -21,14 +21,8 @@ export default defineConfig({
 
 	fonts: [{
 		provider: fontProviders.fontsource(),
-		name: "Open Sans",
-		cssVariable: "--font-opensans",
-		weights: ["400 900"]
-	},
-	{
-		provider: fontProviders.fontsource(),
-		name: "Geist Mono",
-		cssVariable: "--font-geistmono",
+		name: "Rubik",
+		cssVariable: "--font-rubik",
 		weights: ["400 900"]
 	}],
 
