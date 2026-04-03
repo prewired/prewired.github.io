@@ -5,6 +5,7 @@ desc: Prewired's Child Protection Policy exists to protect children and young pe
 coverImage:
   src: sh18_obstaclecourse.jpg
   alt: A LEGO robot standing in the middle of a makeshift obstacle course on a table
+accent: pink
 ---
 
 ## The purpose and scope of this policy statement

@@ -7,10 +7,11 @@ interface Props {
 	desc: string;
 	coverImageData: ImageMetadata;
 	coverImageAlt: string;
+	accent?: "blue" | "purple" | "pink";
 	headings?: { depth: number; slug: string; text: string }[];
 }
 
-const { title, desc, coverImageData, coverImageAlt, headings } = Astro.props;
+const { title, desc, coverImageData, coverImageAlt, accent, headings } = Astro.props;
 ---
 
 <BaseLayout
@@ -20,42 +21,46 @@ const { title, desc, coverImageData, coverImageAlt, headings } = Astro.props;
 	coverImageData={coverImageData}
 	coverImageAlt={coverImageAlt}
 >
-	<div class="max-w-7xl mx-auto">
-		<div class="relative w-[calc(100%+2rem)] md:w-full -mx-4 md:mx-0 md:rounded-lg bg-black overflow-hidden">
+	<div class={`relative h-60 xl:h-72 ${accent === "pink" ? "bg-pink-50" : accent === "purple" ? "bg-purple-50" : "bg-blue-50"} border-b border-gray-200 overflow-hidden`}>
+		<div class="relative max-w-360 mx-auto h-full flex flex-col justify-center z-10">
+			<h1 class={`lg:text-5xl ${accent === "pink" ? "text-pink-950" : accent === "purple" ? "text-purple-950" : "text-blue-950"}`}>
+				{ title }
+			</h1>
+			<p class="max-w-[50ch] mb-0">
+				{ desc }
+			</p>
+		</div>
+		<div class="absolute h-full w-3/5 max-w-360 top-0 right-0">
+			<div class={`absolute h-full w-full bg-linear-85 from-5% to-40% ${accent === "pink" ? "from-pink-50 to-pink-50/5" : accent === "purple" ? "from-purple-50 to-purple-50/5" : "from-blue-50 to-blue-50/5"}`} />
 			<Picture priority
 				src={coverImageData}
 				formats={["avif", "webp"]}
 				alt={coverImageAlt}
-				class="h-60 xl:h-72 object-cover mask-b-from-50%"
+				class="h-60 xl:h-96 object-cover"
 			/>
-			<div class="max-w-5xl mx-auto pl-4 pr-8 md:pr-4">
-				<div class="absolute bottom-1 md:bottom-2">
-					<h1 class="lg:text-5xl text-white text-shadow-lg/50">
-						{ title }
-					</h1>
-				</div>
-			</div>
 		</div>
-		<div class="flex items-start min-h-[40vh] w-full pt-8 md:pt-12 gap-20">
-			{ headings &&
-				<div class="hidden lg:block sticky top-8 w-1/5 xl:w-1/6 shrink-0">
-					<div class="pb-2 border-b border-zinc-500 font-semibold text-sm uppercase text-zinc-500">
-						On this page
-					</div>
-					{ headings.filter(heading => heading.depth === 2).map(heading => (
-						<a
-							href={`#${heading.slug}`}
-							class="block py-2 first-of-type:pt-4 text-sm text-zinc-500 no-underline hover:underline"
-						>
-							{ heading.text }
-						</a>
-					)) }
+	</div>
+	<div class="flex min-h-[40vh] ">
+		{ headings &&
+			<div class="hidden lg:block sticky top-24 w-60 h-full shrink-0 pt-4 pb-2 border-b border-gray-200">
+				<div class="pb-4 px-4 border-b border-gray-200 font-semibold text-sm uppercase text-zinc-500">
+					On this page
 				</div>
-			}
-			<div class={`sm:px-4 ${headings ? "lg:px-0" : "w-full max-w-5xl mx-auto"}`}>
+				{ headings.filter(heading => heading.depth === 2).map(heading => (
+					<a
+						href={`#${heading.slug}`}
+						class="block px-4 py-2 first-of-type:pt-4 text-sm text-zinc-500 no-underline hover:underline"
+					>
+						{ heading.text }
+					</a>
+				)) }
+			</div>
+		}
+		<div class={`grow pb-24 md:pb-32 ${headings && "border-l"} border-gray-200`}>
+			<div class={`w-full max-w-360 mx-auto border-x ${headings ? "lg:px-0" : "max-w-5xl"}`}>
 				<slot />
 			</div>
-			{ headings && <div class="hidden lg:block w-1/8 xl:w-1/6 shrink-0" /> }
 		</div>
+		{ headings && <div class="hidden lg:block w-60 shrink-0" /> }
 	</div>
 </BaseLayout>

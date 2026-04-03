@@ -62,44 +62,52 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 
 <PageLayout
 	title="News and updates"
-	desc="Updates from our own blog and mentions of Prewired in the media, to provide a historical overview of how Prewired has evolved over the years."
+	desc="Posts from our blog and mentions of Prewired in the media, providing an overview of our evolution over the years."
 	coverImageData={coverPhoto}
 	coverImageAlt="A computer screen with the text 'Prewired Presentations begin 13:00 Friday 27th July 2018'"
 >
-	<p>
-		This page aggregates updates from our own blog with mentions of Prewired in the media, to provide a historical overview of how Prewired has evolved over the years.
-	</p>
-	<p>
-		To receive more frequent updates and stay up-to-date with all of our events, subscribe to our <a href="https://eepurl.com/dv2dPb" target="_blank" rel="noopener">mailing list</a>!
-	</p>
+	<div class="flex border-x">
+		<div class="w-8 border-r diastripe"></div>
+		<p class="grow px-12 py-8 mb-0">
+			To receive more frequent updates and stay up-to-date with all of our events, subscribe to our <a href="https://eepurl.com/dv2dPb" target="_blank" rel="noopener">mailing list</a>!
+		</p>
+	</div>
 
 	{ feedByYears.map(feedYear => (
-		<>
-			<h2>
-				{ feedYear.year }
-			</h2>
+		<div class="flex flex-col md:flex-row border-x">
+			<div class="sticky top-48 w-1/5 p-4">
+				<h2 class="border-b-0">
+					{ feedYear.year }
+				</h2>
+			</div>
 
-			{ feedYear.posts.map(feedItem => {
-				if(feedItem.type === "local") {
-					const post = posts.find(post => post.id === feedItem.id);
-					if(!post) return;
-					else return (
-						<NewsFeedLocalItem
-							id={post.id}
-							data={post.data}
-						/>
-					);
-				}
-				else {
-					return (
-						<NewsFeedExternalItem
-							url={feedItem.id}
-							date={feedItem.date}
-							desc={feedItem.desc}
-						/>
-					);
-				}
-			})}
-		</>
+			<div class="w-2/3 shrink-0">
+				{ feedYear.posts.map(feedItem => {
+					if(feedItem.type === "local") {
+						const post = posts.find(post => post.id === feedItem.id);
+						if(!post) return;
+						else return (
+							<NewsFeedLocalItem
+								id={post.id}
+								data={post.data}
+							/>
+						);
+					}
+					else {
+						return (
+							<NewsFeedExternalItem
+								url={feedItem.id}
+								date={feedItem.date}
+								desc={feedItem.desc}
+							/>
+						);
+					}
+				})}
+			</div>
+
+			<div class="absolute w-[calc(100vw-2rem)] h-px left-4 bg-gray-200" />
+		</div>
+		<div class="h-8 border-t" />
 	))}
+	<div class="absolute w-[calc(100vw-2rem)] h-px left-4 bg-gray-200" />
 </PageLayout>

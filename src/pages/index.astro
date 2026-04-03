@@ -31,79 +31,88 @@ const coverImageAlt = "A room full of young people working on laptops at low and
 	coverImageAlt={coverImageAlt}
 >
 	<!-- Cover -->
-	<section class="max-w-7xl mx-auto mb-8 lg:mb-24 flex flex-wrap-reverse lg:flex-nowrap lg:items-center lg:justify-evenly min-[84rem]:justify-between gap-4 lg:gap-8">
-		<div class="lg:w-md md:max-lg:mx-auto py-6 text-center lg:text-left text-balance">
-			<h1 class="mb-4 lg:mb-2 font-semibold text-3xl lg:text-4xl">
-				Welcome to <span class="font-bold text-blue-700">Prewired</span>!
-			</h1>
-			<p class="mb-4 font-medium text-xl">
-				A free, weekly programming club for young people in Edinburgh.
-			</p>
-			<p class="mb-12 md:mb-8">
-				If you're under 19 years old and interested in learning to code, or want support taking your passion further, you're in the right place!
-			</p>
-			<div class="flex flex-col md:flex-row flex-wrap md:justify-center lg:justify-start gap-4">
-				<BookTicketsButton />
-				<a
-					href="http://eepurl.com/dv2dPb"
-					target="_blank" rel="noopener"
-					class="px-4 py-3 border border-b-2 border-black rounded-md cursor-pointer text-black no-underline hover:border-transparent hover:bg-black hover:text-white active:bg-black/60"
-				>
-					Join our mailing list
-				</a>
+	<section class="relative h-60 lg:h-112 xl:h-140 px-8 border-b bg-linear-[170deg,#EDFCFF,#FAF6FE_400px,#FFF0F3_800px] overflow-hidden">
+		<div class="relative max-w-360 mx-auto h-full flex flex-col justify-center z-10">
+			<div class="lg:w-md md:max-lg:mx-auto py-6 text-center lg:text-left text-balance">
+				<h1 class="mb-4 lg:mb-2 font-semibold text-3xl lg:text-4xl">
+					Welcome to <span class="font-bold text-blue-700">Prewired</span>!
+				</h1>
+				<p class="mb-4 font-medium text-xl">
+					A free, weekly programming club for young people in Edinburgh.
+				</p>
+				<p class="mb-12 md:mb-8">
+					If you're under 19 years old and interested in learning to code, or want support taking your passion further, you're in the right place!
+				</p>
+				<div class="flex flex-col md:flex-row flex-wrap md:justify-center lg:justify-start gap-4">
+					<BookTicketsButton />
+					<a
+						href="http://eepurl.com/dv2dPb"
+						target="_blank" rel="noopener"
+						class="px-4 py-3 bg-pink-600 rounded-md cursor-pointer text-white no-underline hover:border-transparent hover:bg-pink-800 active:bg-pink-900 transition"
+					>
+						Join our mailing list
+					</a>
+				</div>
 			</div>
 		</div>
-		<Picture priority
-			src={cover}
-			formats={["avif", "webp"]}
-			alt={coverImageAlt}
-			class="h-60 lg:h-112 object-cover md:rounded-lg"
-			pictureAttributes={{ class: "w-[calc(100%+2rem)] md:w-full lg:w-[calc(50%-2rem)] xl:w-1/2 -mx-4 md:mx-auto lg:mx-0 lg:shrink-0" }}
-		/>
+		<div class="absolute h-full w-[65%] max-w-360 top-0 right-0">
+			<div class={`absolute h-full w-full `} />
+			<Picture priority
+				src={cover}
+				formats={["avif", "webp"]}
+				alt={coverImageAlt}
+				class="h-60 lg:h-112 xl:h-140 object-cover -mask-linear-85 mask-linear-from-60% mask-linear-to-90%"
+			/>
+		</div>
 	</section>
 
 	<!-- Special announcements -->
-	<!-- <section class="max-w-216 mx-auto mb-16 lg:mb-24 bg-blue-700 border-2 border-blue-700 rounded-lg shadow-md text-center text-balance">
-		<div class="py-1">
-			<p class="mb-0 font-semibold text-white text-base uppercase">
-				Announcement &middot; 1 Dec 2025
+	<div class="h-8 border-b diastripe"></div>
+	<section class="text-center text-balance">
+		<div class="relative p-6 bg-blue-50">
+			<p class="mb-2 font-semibold text-base text-blue-750 uppercase">
+				Announcement&nbsp;&nbsp;❄️&nbsp;&nbsp;1 Dec 2025
 			</p>
-		</div>
-		<h1 class="relative py-4 px-4 mb-0.5 bg-blue-50 rounded-t-lg font-bold text-xl md:text-2xl">
-			❄️&nbsp;&nbsp;Festive Party and End-of-Term&nbsp;&nbsp;❄️
-			<Picture priority
+			<h1 class="mb-0 font-bold text-xl md:text-2xl">
+				Festive Party and End-of-Term
+			</h1>
+			<!-- <Picture priority
 				src={santamarty}
 				formats={["avif", "webp"]}
 				alt="A Marty robot wearing a Santa hat"
 				pictureAttributes={{ class: "hidden md:block absolute w-40 bottom-0 right-0" }}
-			/>
-		</h1>
-		<div class="pt-4 pb-1 px-4 md:px-8 bg-linear-to-br from-blue-50 to-blue-100 rounded-b-lg">
-			<p>
-				On 17 December we're hosting a <strong>special festive session</strong> in collaboration with Digital Skills 4 Girls!
-			</p>
-			<p>
-				For more info and free tickets, <a href="https://buytickets.at/prewired/1951681" target="_blank" rel="noopener noreferrer">go to the event page</a>.
-			</p>
-			<p>
-				For this end-of-term session there will be several festive-themed activities to choose from, as well as games and plenty of snacks. The desk area will also be set up for a regular Prewired session if you'd rather crack on with your usual projects.
-			</p>
-			<p>
-				This will be our last session of the year&mdash;after this we'll be back on 7 January!
-			</p>
+			/> -->
 		</div>
-	</section> -->
-
+		<div class="border-y bg-blue-50">
+			<div class="max-w-204 mx-auto pt-6 pb-3 px-4 md:px-12 border-x">
+				<p>
+					On 17 December we're hosting a <strong>special festive session</strong> in collaboration with Digital Skills 4 Girls!
+				</p>
+				<p>
+					For more info and free tickets, <a href="https://buytickets.at/prewired/1951681" target="_blank" rel="noopener noreferrer">go to the event page</a>.
+				</p>
+				<p>
+					For this end-of-term session there will be several festive-themed activities to choose from, as well as games and plenty of snacks. The desk area will also be set up for a regular Prewired session if you'd rather crack on with your usual projects.
+				</p>
+				<p>
+					This will be our last session of the year&mdash;after this we'll be back on 7 January!
+				</p>
+			</div>
+		</div>
+	</section>
+	<div class="h-8 border-b diastripe"></div>
+	
 	<!-- Overview -->
-	<section class="max-w-7xl mx-auto mb-12 lg:mb-24 flex flex-wrap lg:items-center lg:justify-center">
-		<Picture priority
-			src={overview}
-			formats={["avif", "webp"]}
-			alt="Three teenagers coding on laptops while chatting to each other"
-			class="h-60 lg:h-112 mb-8 lg:mb-0 object-cover md:rounded-lg"
-			pictureAttributes={{ class: "w-[calc(100%+2rem)] md:w-full lg:w-2/5 -mx-4 md:mx-0" }}
-		/>
-		<div class="md:w-3/4 md:max-lg:mx-auto lg:w-2/5 lg:ml-16 md:text-center lg:text-left">
+	<section class="flex flex-col lg:flex-row lg:items-center lg:justify-center">
+		<div class="md:w-1/2 py-12 lg:py-24 lg:border-r shrink-0">
+			<Picture priority
+				src={overview}
+				formats={["avif", "webp"]}
+				alt="Three teenagers coding on laptops while chatting to each other"
+				class="h-60 lg:h-112 lg:w-xl lg:float-right mb-8 lg:mb-0 lg:mr-16 object-cover md:rounded-lg"
+			/>
+		</div>
+		<div class="md:w-3/4 md:max-lg:mx-auto lg:w-1/2 lg:ml-16 md:text-center lg:text-left *:max-w-[42ch]">
 			<h1 class="font-semibold text-2xl md:text-3xl text-balance mb-4">
 				What we do
 			</h1>
@@ -123,46 +132,34 @@ const coverImageAlt = "A room full of young people working on laptops at low and
 	</section>
 
 	<!-- Impact -->
-	<section class="w-[100%+2rem] md:w-full -mx-4 md:mx-0 mb-12 lg:mb-24 pt-8 pb-12 lg:py-16 bg-pink-50 md:rounded-lg lg:rounded-4xl">
-		<h1 class="font-semibold text-xl md:text-2xl text-center text-pink-700">
+	<section class="bg-pink-50 border-y">
+		<h1 class="font-semibold text-xl md:text-2xl text-center text-pink-700 mb-0 py-12 border-b">
 			Small team, large impact...
 		</h1>
-		<div class="flex flex-wrap justify-center gap-y-4 md:gap-y-8 max-w-7xl mt-8 md:mt-12 lg:mt-16 mx-auto text-center">
-			<div class="w-1/3 min-w-66">
-				<p class="text-4xl mb-4">
-					🧑‍💻
-				</p>
+		<div class="flex flex-wrap justify-center gap-y-4 md:gap-y-8 max-w-7xl mx-auto divide-x text-center *:w-1/3 *:min-w-66 *:py-8 md:*:py-12 lg:*:py-16 ">
+			<div class="border-l">
+				<p class="text-4xl mb-4">🧑‍💻</p>
 				<p class="mb-2 lg:mb-4 font-semibold text-3xl lg:text-5xl text-pink-700">
 					150+
 				</p>
-				<p>
-					unique attendees in 2025
-				</p>
+				<p>unique attendees in 2025</p>
 			</div>
-			<div class="w-1/3 min-w-66">
-				<p class="text-4xl mb-4">
-					🗓️
-				</p>
+			<div>
+				<p class="text-4xl mb-4">🗓️</p>
 				<p class="mb-2 lg:mb-4 font-semibold text-3xl lg:text-5xl text-pink-700">
 					50+
 				</p>
-				<p>
-					events a year
-				</p>
+				<p>events a year</p>
 			</div>
-			<div class="relative w-1/3 min-w-66">
-				<p class="text-4xl mb-4">
-					🍵
-				</p>
+			<div class="relative border-r">
+				<p class="text-4xl mb-4">🍵</p>
 				<p class="mb-2 lg:mb-4 font-semibold text-3xl lg:text-5xl text-pink-700">
 					100%
 				</p>
-				<p>
-					volunteer-run
-				</p>
+				<p>volunteer-run</p>
 				<a
 					href="/volunteering/"
-					class="absolute -bottom-6 right-14 px-4 py-2 bg-pink-600 hover:bg-pink-800 border-b-2 border-pink-900 active:border-b-0 active:mt-0.5 rounded-lg -rotate-3 font-semibold uppercase text-white no-underline"
+					class="absolute bottom-2 md:bottom-6 lg:bottom-10 right-14 px-4 py-2 bg-pink-600 hover:bg-pink-800 border-b-2 border-pink-900 active:border-b-0 active:mt-0.5 rounded-lg -rotate-3 font-semibold uppercase text-white no-underline"
 				>
 					Get involved!
 				</a>
@@ -171,26 +168,31 @@ const coverImageAlt = "A room full of young people working on laptops at low and
 	</section>
 
 	<!-- Sponsors -->
-	<section class="max-w-7xl mx-auto text-center text-balance">
-		<h1 class="max-md:text-xl mb-4">
-			Sponsors & supporters
-		</h1>
-		<p class="mb-12">
-			In addition to the accommodation generously provided by CodeBase, Prewired could not exist without the support from our sponsors, donors, and supporters.
-		</p>
-		<div class="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-x-12 md:gap-x-20 gap-y-4 md:gap-y-8">
-			{ sponsors.map(({name, href, src, style}) => (
-				<a href={href} target="_blank" rel="noopener" class="hover:opacity-70 transition">
-					<Picture
-						src={src}
-						formats={["avif", "webp"]}
-						alt={`${name} logo`}
-						class={`w-auto h-14 md:h-20 ${style}`}
-					/>
-				</a>
-			))}
+	<section class="text-center text-balance">
+		<div class="max-w-5xl mx-auto pt-16 pb-20 border-x">
+			<h1 class="max-md:text-xl mb-4">
+				Sponsors & supporters
+			</h1>
+			<p class="mb-0">
+				In addition to the accommodation generously provided by CodeBase, Prewired could not exist without the support from our sponsors, donors, and supporters.
+			</p>
 		</div>
-		<p class="mt-12">
+		<div class="relative border-y">
+			<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center -mt-px divide-x divide-y">
+				{ sponsors.map(({name, href, src, style}) => (
+					<a href={href} target="_blank" rel="noopener" class="w-1/3 py-8 first:border-l nth-4:border-l nth-4:border-b-0 last:border-r border-gray-200 hover:opacity-70 transition">
+						<Picture
+							src={src}
+							formats={["avif", "webp"]}
+							alt={`${name} logo`}
+							class={`w-auto h-14 md:h-20 mx-auto ${style}`}
+						/>
+					</a>
+				))}
+			</div>
+			<div class="absolute w-full h-px left-0 top-35.75 bg-gray-200" />
+		</div>
+		<p class="max-w-5xl mx-auto mb-0 py-12 border-x border-gray-200">
 			Thank you!
 		</p>
 	</section>

@@ -8,12 +8,12 @@ import summerhack from "@assets/photos/sh16_presentation.jpg";
 import fll from "@assets/photos/fll24_showoff.jpg";
 import festiveparty from "@assets/photos/cp24_card.jpg";
 
-const headings = [
-	{ depth: 2, slug: "what-is-prewired", text: "What is Prewired?" },
-	{ depth: 2, slug: "how-to-attend", text: "How to attend" },
-	{ depth: 2, slug: "special-events", text: "Special events" },
-	{ depth: 2, slug: "frequently-asked-questions", text: "Frequently asked questions" }
-];
+// const headings = [
+// 	{ depth: 2, slug: "what-is-prewired", text: "What is Prewired?" },
+// 	{ depth: 2, slug: "how-to-attend", text: "How to attend" },
+// 	{ depth: 2, slug: "special-events", text: "Special events" },
+// 	{ depth: 2, slug: "frequently-asked-questions", text: "Frequently asked questions" }
+// ];
 ---
 
 <PageLayout
@@ -21,7 +21,7 @@ const headings = [
 	desc="Learn how to attend Prewired, a weekly, free-to-attend coding and technology club in Edinburgh."
 	coverImageData={coverPhoto}
 	coverImageAlt="Young people working on laptops in the CodeBase coworking space with parents sitting in the background"
-	headings={headings}
+	accent="purple"
 >
 	<h2 id="what-is-prewired">
 		What is Prewired?
@@ -184,75 +184,68 @@ const headings = [
 		</div>
 	</div>
 
-	<h2 id="frequently-asked-questions">
-		Frequently asked questions
-	</h2>
-	<details name="faq">
-		<summary>
-			Do parents/guardians need to attend with their children?
-		</summary>
-		<p>
-			<strong>If your child is younger than 11:</strong> yes, your child needs to be accompanied by an adult throughout every Prewired session that they attend. If your child is very young and needs lots of support, you should be prepared to sit with them to help. You can of course ask a volunteer for technical advice.
-		</p>
-		<p>
-			<strong>If your child is 11 or older:</strong> it is up to you. You are welcome to accompany your child if you think this would benefit them. They will otherwise be fully supervised at all times by our mentors.
-		</p>
-	</details>
+	<section class="flex flex-col md:flex-row border-y">
+		<div class="w-1/3 shrink-0 p-4">
+			<h2 class="border-b-0" id="frequently-asked-questions">
+				Frequently asked questions
+			</h2>
+		</div>
 
-	<details name="faq">
-		<summary>
-			What do I need to bring?
-		</summary>
-		<p>
-			You don't need to bring anything apart from your enthusiasm! We have plenty of laptops and other equipment that you can borrow, but you are more than welcome to bring your own.
-		</p>
-		<p>
-			We provide a few snacks half-way through the session. You are welcome to bring your own too, though please don't bring anything containing nuts as we tend to have attendees that are allergic.
-		</p>
-	</details>
-
-	<details name="faq">
-		<summary>
-			How much does attending Prewired cost?
-		</summary>
-		<p>
-			Nothing! Prewired is free, run by volunteers, supported by donations from local companies.
-		</p>
-	</details>
-
-	<details name="faq">
-		<summary>
-			Can I bring pets to Prewired?
-		</summary>
-		<p>
-			No. Our venue, CodeBase, does not allow animals in the building.
-		</p>
-	</details>
-
-	<details name="faq">
-		<summary>
-			Are you a part of CodeBase?
-		</summary>
-		<p>
-			No, we are an independent charity that simply happens to run from CodeBase Edinburgh. They are amazing friends and supporters, however, and without their allowing us to use their space and storage none of what we do would be possible!
-		</p>
-	</details>
-
-	<details name="faq">
-		<summary>
-			How does Prewired deal with child protection?
-		</summary>
-		<p>
-			Please see our <a href="/child-protection/">child protection policy</a>.
-		</p>
-	</details>
-
-	<details name="faq">
-		<summary>
-			How does Prewired deal with privacy?
-		</summary>
-		<p>
-			Please see our <a href="/privacy/">privacy policy</a>.
-		</p>
-	</details>
+		<div class="grow relative -right-px">
+			<details name="faq" class="-mt-px">
+				<summary>Do parents/guardians need to attend with their children?</summary>
+				<p>
+					<strong>If your child is younger than 11:</strong> yes, your child needs to be accompanied by an adult throughout every Prewired session that they attend. If your child is very young and needs lots of support, you should be prepared to sit with them to help. You can of course ask a volunteer for technical advice.
+				</p>
+				<p>
+					<strong>If your child is 11 or older:</strong> it is up to you. You are welcome to accompany your child if you think this would benefit them. They will otherwise be fully supervised at all times by our mentors.
+				</p>
+			</details>
+		
+			<details name="faq">
+				<summary>What do I need to bring?</summary>
+				<p>
+					You don't need to bring anything apart from your enthusiasm! We have plenty of laptops and other equipment that you can borrow, but you are more than welcome to bring your own.
+				</p>
+				<p>
+					We provide a few snacks half-way through the session. You are welcome to bring your own too, though please don't bring anything containing nuts as we tend to have attendees that are allergic.
+				</p>
+			</details>
+		
+			<details name="faq">
+				<summary>How much does attending Prewired cost?</summary>
+				<p>
+					Nothing! Prewired is free, run by volunteers, supported by donations from local companies.
+				</p>
+			</details>
+		
+			<details name="faq">
+				<summary>Can I bring pets to Prewired?</summary>
+				<p>
+					No. Our venue, CodeBase, does not allow animals in the building.
+				</p>
+			</details>
+		
+			<details name="faq">
+				<summary>Are you a part of CodeBase?</summary>
+				<p>
+					No, we are an independent charity that simply happens to run from CodeBase Edinburgh. They are amazing friends and supporters, however, and without their allowing us to use their space and storage none of what we do would be possible!
+				</p>
+			</details>
+		
+			<details name="faq">
+				<summary>How does Prewired deal with child protection?</summary>
+				<p>
+					Please see our <a href="/child-protection/">child protection policy</a>.
+				</p>
+			</details>
+		
+			<details name="faq">
+				<summary>How does Prewired deal with privacy?</summary>
+				<p>
+					Please see our <a href="/privacy/">privacy policy</a>.
+				</p>
+			</details>
+		</div>
+	</section>
 </PageLayout>

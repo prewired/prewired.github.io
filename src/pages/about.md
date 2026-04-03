@@ -5,6 +5,7 @@ desc: Information on the mission, governance, and history of Prewired.
 coverImage:
   src: ws16_longtables.jpg
   alt: Young people working together on laptops at long tables
+accent: pink
 ---
 
 ## Purpose

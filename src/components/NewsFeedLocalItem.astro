@@ -24,15 +24,15 @@ const coverImageData = await importImage(coverImage);
 ---
 
 <a href={`/news/${id}/`} class="group text-black! no-underline!">
-	<div class="flex flex-wrap md:flex-nowrap gap-4 md:gap-8 mb-8 md:mb-4">
+	<div class="flex flex-wrap md:flex-nowrap">
 		<Picture
 			src={coverImageData}
 			formats={["avif", "webp"]}
 			alt={coverImage.alt}
-			class="w-full h-52 object-cover bg-gray-200 rounded-lg"
-			pictureAttributes={{ class: "w-full md:w-72 shrink-0" }}
+			class="w-full h-52 object-cover bg-gray-200"
+			pictureAttributes={{ class: "w-full md:w-80 shrink-0 p-4 border-l" }}
 		/>
-		<div>
+		<div class="border-l p-4">
 			<div class="inline-flex">
 				{ tags.map(tag => (
 					<div class="mr-2 mb-2 bg-blue-200 rounded px-2 py-1 leading-0">

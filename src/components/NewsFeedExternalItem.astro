@@ -57,13 +57,15 @@ catch (error) {
 ---
 
 <a href={url} target="_blank" rel="noopener noreferrer" class="group text-black! no-underline!">
-	<div class="flex flex-wrap md:flex-nowrap gap-4 md:gap-8 mb-8 md:mb-4">
-		<img
-			src={postPreview.images[0]}
-			alt="Image"
-			class="w-full md:w-72 h-52 object-cover shrink-0 bg-gray-200 rounded-lg"
-		/>
-		<div>
+	<div class="flex flex-wrap md:flex-nowrap">
+		<div class="shrink-0 p-4 border-x">
+			<img
+				src={postPreview.images[0]}
+				alt="Image"
+				class="w-full md:w-72 h-52 object-cover bg-gray-200"
+			/>
+		</div>
+		<div class="p-4 ">
 			<div class="flex items-center mb-2 text-sm">
 				<img src={postPreview.favicons[0]} alt="Favicon" class="w-4 h-4 mr-2" />
 				<span>{ postPreview.siteName }</span>
