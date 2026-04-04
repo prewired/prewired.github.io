@@ -7,6 +7,8 @@ coverImage:
   alt: A stack of Prewired laptops on a table
 ---
 
+## Key terms
+
 "Computing facilities" includes remote computing services as provided on behalf of Prewired; computers and peripherals owned by or operated on behalf of Prewired; any associated software and data; and the networking elements which link computing facilities.
 
 "Users" include members of the Board of Trustees, volunteers, paid staff, and any other person authorised to use computing facilities.

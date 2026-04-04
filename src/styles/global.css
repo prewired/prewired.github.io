@@ -83,12 +83,11 @@
 	}
 
 	h2 {
-		@apply relative mt-16 md:mt-24 mb-2 font-semibold text-xl lg:text-2xl border-b;
+		@apply relative pt-16 mb-2 font-semibold text-xl lg:text-2xl border-b;
 	}
 	h2:nth-of-type(3n) { @apply text-blue-750; }
 	h2:nth-of-type(3n+1) { @apply text-pink-600; }
 	h2:nth-of-type(3n+2) { @apply text-purple-600; }
-	h2:first-child { @apply mt-0; }
 
 	h3 {
 		@apply mt-8 font-medium;
@@ -96,7 +95,7 @@
 	h2 + h3 { @apply mt-0; }
 
 	footer h2 {
-		@apply text-base text-black! border-b-0 m-0 uppercase;
+		@apply text-base text-black! border-b-0 m-0 pt-0 uppercase;
 	}
 
 	p, li {
@@ -158,16 +157,16 @@
 		@apply bg-gray-100;
 	}
 
-	table, th, td {
-		@apply border border-gray-600/30;
-	}
-
 	table {
 		@apply w-full;
 	}
 
 	th, td {
-		@apply px-4 py-2 text-left;
+		@apply px-2 md:px-4 py-2 text-left border border-gray-200;
+	}
+
+	th {
+		@apply font-medium;
 	}
 
 	dialog {
@@ -197,6 +196,28 @@
 		@apply absolute top-0 left-0 w-full h-full border-0;
 	}
 
+	/* Markdown-generated page (e.g. policy pages) styles */
+	.md > h2 {
+		@apply border-b-0 scroll-mt-16;
+	}
+
+	.md > h2::before {
+		@apply content-[""] absolute w-[calc(100%+2rem)] -left-4 lg:w-[calc(100%+4rem)] h-px lg:-left-8 top-6 bg-gray-200;
+	}
+
+	.md > h2:first-child {
+		@apply pt-11 scroll-mt-21;
+	}
+
+	.md > h2:first-child::before {
+		@apply h-0;
+	}
+
+	.md > hr {
+		@apply relative w-[calc(100%+2rem)] -left-4 lg:w-[calc(100%+4rem)] lg:-left-8 my-12;
+	}
+
+	/* Blog post styles */
 	article > h2 {
 		@apply mt-12;
 	}
@@ -213,6 +234,7 @@
 		@apply leading-8 mb-0;
 	}
 
+	/* Ko-fi button */
 	a.kofi-button {
 		@apply px-3.5! font-sans! font-medium! shadow-none! hover:bg-pink-800! hover:opacity-100!;
 	}

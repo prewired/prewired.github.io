@@ -21,7 +21,7 @@ const { title, desc, coverImageData, coverImageAlt, accent, headings } = Astro.p
 	coverImageData={coverImageData}
 	coverImageAlt={coverImageAlt}
 >
-	<div class={`relative lg:h-72 px-4 ${accent === "pink" ? "bg-pink-50" : accent === "purple" ? "bg-purple-50" : "bg-blue-50"} border-b border-gray-200`}>
+	<div class={`relative lg:h-72 px-4 ${accent === "pink" ? "bg-pink-50" : accent === "purple" ? "bg-purple-50" : "bg-blue-50"} border-b`}>
 		<Picture priority
 			src={coverImageData}
 			formats={["avif", "webp"]}
@@ -40,25 +40,25 @@ const { title, desc, coverImageData, coverImageAlt, accent, headings } = Astro.p
 	</div>
 	<div class="flex min-h-[40vh] ">
 		{ headings &&
-			<div class="hidden lg:block sticky top-24 w-60 h-full shrink-0 pt-4 pb-2 border-b border-gray-200">
-				<div class="pb-4 px-4 border-b border-gray-200 font-semibold text-sm uppercase text-zinc-500">
+			<div class="hidden lg:block sticky top-24 w-60 h-full self-stretch shrink-0 pt-4 pb-2 border-b">
+				<div class="pb-4 px-4 border-b font-semibold text-sm uppercase text-gray-600">
 					On this page
 				</div>
 				{ headings.filter(heading => heading.depth === 2).map(heading => (
 					<a
 						href={`#${heading.slug}`}
-						class="block px-4 py-2 first-of-type:pt-4 text-sm text-zinc-500 no-underline hover:underline"
+						class="block px-4 py-2 first-of-type:pt-4 text-sm text-gray-600 no-underline hover:underline"
 					>
 						{ heading.text }
 					</a>
 				)) }
 			</div>
 		}
-		<div class={`grow pb-24 md:pb-32 ${headings && "border-l"} border-gray-200`}>
-			<div class={`w-full max-w-360 mx-auto px-4 md:px-0 md:border-x ${headings ? "" : "max-w-5xl"}`}>
+		<div class={`grow ${headings && "min-[97rem]:border-l"}`}>
+			<div class={`w-full max-w-360 mx-auto px-4 md:px-0`}>
 				<slot />
 			</div>
 		</div>
-		{ headings && <div class="hidden lg:block w-60 shrink-0" /> }
+		{ headings && <div class="hidden xl:block w-60 shrink-0" /> }
 	</div>
 </BaseLayout>
