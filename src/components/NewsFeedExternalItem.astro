@@ -26,9 +26,10 @@ interface Props {
 	url: string;
 	date: Date;
 	desc?: string;
+	yearIndex: number;
 }
 
-const { url, date, desc } = Astro.props;
+const { url, date, desc, yearIndex } = Astro.props;
 
 // Default values to display an error message if data fetching below somehow fails
 let postPreview: PostPreview = {
@@ -54,26 +55,28 @@ try {
 catch (error) {
 	console.error(error);
 }
+
+const hoverBg = yearIndex % 3 === 0 ? "bg-pink-50" : yearIndex % 3 === 1 ? "bg-purple-50" : "bg-blue-50";
 ---
 
-<a href={url} target="_blank" rel="noopener noreferrer" class="group text-black! no-underline!">
+<a href={url} target="_blank" rel="noopener noreferrer" class={`block relative w-[calc(100%+2rem)] md:w-full -left-4 md:left-0 px-4 md:px-0 pt-4 md:pt-0 col-span-5 col-end-7 text-black! no-underline! hover:${hoverBg}`}>
 	<div class="flex flex-wrap md:flex-nowrap">
-		<div class="shrink-0 p-4 border-x">
+		<div class="w-full md:w-80 shrink-0 md:p-2">
 			<img
 				src={postPreview.images[0]}
-				alt="Image"
-				class="w-full md:w-72 h-52 object-cover bg-gray-200"
+				alt={postPreview.description}
+				class="w-full md:w-76 h-52 object-cover bg-gray-200"
 			/>
 		</div>
-		<div class="p-4 ">
+		<div class="max-w-2xl pt-4 md:pt-2 md:px-4 -mt-px">
 			<div class="flex items-center mb-2 text-sm">
 				<img src={postPreview.favicons[0]} alt="Favicon" class="w-4 h-4 mr-2" />
 				<span>{ postPreview.siteName }</span>
 			</div>
-			<h3 class="mt-0 font-bold text-xl not-italic group-hover:underline">
+			<h3 class="mt-0 mb-1 md:mb-0 font-semibold text-xl not-italic">
 				{ postPreview.title }
 			</h3>
-			<p class="group-hover:underline">
+			<p>
 				{ date.toLocaleDateString("en-GB") } &middot; { desc ?? postPreview.description }
 			</p>
 		</div>

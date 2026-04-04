@@ -219,7 +219,7 @@
 
 	/* Blog post styles */
 	article > h2 {
-		@apply mt-12;
+		@apply pt-8 lg:pt-12;
 	}
 
 	article > p {
@@ -227,7 +227,7 @@
 	}
 
 	article > blockquote {
-		@apply mb-8 px-6 py-4 border border-gray-300 rounded-lg;
+		@apply mb-8 px-6 py-4 border border-gray-200;
 	}
 
 	article > blockquote > p {
