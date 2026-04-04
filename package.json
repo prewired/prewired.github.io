@@ -1,7 +1,7 @@
 {
   "name": "prewired-website",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -18,7 +18,7 @@
     "astro-tunnel": "^0.1.9",
     "link-preview-js": "^4.0.0",
     "tailwindcss": "^4.2.2",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.2"
   },
   "devDependencies": {
     "@fec/remark-a11y-emoji": "^4.0.2"

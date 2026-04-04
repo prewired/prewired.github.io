@@ -3,6 +3,9 @@
 
 /* Extending and overriding the default Tailwind styling */
 @theme inline {
+	/* Override large screen breakpoint */
+	--breakpoint-2xl: 90rem;
+
 	/* Custom colours */
 	--color-blue-50: #EDFCFF;
 	--color-blue-100: #D6F6FF;
@@ -96,8 +99,8 @@
 		@apply text-base text-black! border-b-0 m-0 uppercase;
 	}
 
-	p {
-		@apply mb-4;
+	p, li {
+		@apply max-w-[72ch] mb-4;
 	}
 
 	strong {
@@ -110,10 +113,6 @@
 
 	ol {
 		@apply list-decimal ml-8 mb-8;
-	}
-
-	li {
-		@apply mb-4;
 	}
 
 	a {
@@ -177,7 +176,7 @@
 	}
 
 	address {
-		@apply not-italic;
+		@apply text-base leading-7 not-italic;
 	}
 
 	code {
