@@ -2,7 +2,10 @@
 
 
 /* Extending and overriding the default Tailwind styling */
-@theme {
+@theme inline {
+	/* Override large screen breakpoint */
+	--breakpoint-2xl: 90rem;
+
 	/* Custom colours */
 	--color-blue-50: #EDFCFF;
 	--color-blue-100: #D6F6FF;
@@ -43,8 +46,7 @@
 
 
 	/* Custom fonts */
-	--font-sans: "Open Sans Variable", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	--font-mono: "Geist Mono Variable", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	--font-sans: var(--font-rubik), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 
@@ -68,6 +70,10 @@
 		@apply overflow-y-hidden;
 	}
 
+	div, section, header, footer, hr {
+		@apply border-gray-200 divide-gray-200;
+	}
+
 	/* Apply correct background colour to scroll gutter when a modal dialog is open */
 	html:has(#menu-dialog[open]) { @apply bg-pink-50; }
 	html:has(#tickets-dialog[open]) { @apply bg-black/25; }
@@ -77,24 +83,27 @@
 	}
 
 	h2 {
-		@apply relative w-fit mt-16 md:mt-24 mb-2 -ml-4 sm:-ml-8 lg:-ml-2.5 px-4 sm:pl-8 lg:px-2.5 py-0.5 font-mono font-semibold text-xl lg:text-2xl text-white uppercase;
+		@apply relative pt-16 mb-2 font-semibold text-xl lg:text-2xl border-b;
 	}
-	h2:nth-of-type(3n) { @apply bg-blue-750; }
-	h2:nth-of-type(3n+1) { @apply bg-pink-600; }
-	h2:nth-of-type(3n+2) { @apply bg-purple-600; }
-	h2:first-child { @apply mt-0; }
+	h2:nth-of-type(3n) { @apply text-blue-750; }
+	h2:nth-of-type(3n+1) { @apply text-pink-600; }
+	h2:nth-of-type(3n+2) { @apply text-purple-600; }
 
 	h3 {
-		@apply mt-8 font-semibold;
+		@apply mt-8 font-medium;
 	}
 	h2 + h3 { @apply mt-0; }
 
 	footer h2 {
-		@apply text-base text-black bg-transparent! m-0 p-0;
+		@apply text-base text-black! border-b-0 m-0 pt-0 uppercase;
 	}
 
-	p {
-		@apply mb-4;
+	p, li {
+		@apply max-w-[72ch] mb-4;
+	}
+
+	strong {
+		@apply font-semibold;
 	}
 
 	ul {
@@ -103,10 +112,6 @@
 
 	ol {
 		@apply list-decimal ml-8 mb-8;
-	}
-
-	li {
-		@apply mb-4;
 	}
 
 	a {
@@ -118,19 +123,11 @@
 	}
 
 	details {
-		@apply border border-b-0 border-gray-400 overflow-hidden;
-	}
-
-	details:first-of-type {
-		@apply mt-6 rounded-t-lg;
-	}
-
-	details:last-of-type {
-		@apply border-b rounded-b-lg;
+		@apply border-t md:border-x border-gray-200 overflow-hidden;
 	}
 
 	details > p {
-		@apply px-6;
+		@apply px-4 md:px-6;
 	}
 
 	details > p:first-of-type {
@@ -138,7 +135,7 @@
 	}
 
 	summary {
-		@apply flex justify-between items-center py-4 px-6 list-none cursor-pointer transition-[font-weight];
+		@apply flex justify-between items-center py-4 px-4 md:px-6 list-none cursor-pointer transition-[font-weight];
 	}
 
 	summary::after {
@@ -160,16 +157,16 @@
 		@apply bg-gray-100;
 	}
 
-	table, th, td {
-		@apply border border-gray-600/30;
-	}
-
 	table {
 		@apply w-full;
 	}
 
 	th, td {
-		@apply px-4 py-2 text-left;
+		@apply px-2 md:px-4 py-2 text-left border border-gray-200;
+	}
+
+	th {
+		@apply font-medium;
 	}
 
 	dialog {
@@ -178,11 +175,16 @@
 	}
 
 	address {
-		@apply not-italic;
+		@apply text-base leading-7 not-italic;
 	}
 
 	code {
 		@apply px-1.5 py-1 bg-blue-100 text-blue-900 rounded;
+	}
+
+	/* Decorative fill */
+	.diastripe {
+		@apply bg-[repeating-linear-gradient(315deg,var(--color-gray-200)_0,var(--color-gray-200)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] bg-fixed;
 	}
 
 	/* Responsive sizing for iframes */
@@ -194,8 +196,30 @@
 		@apply absolute top-0 left-0 w-full h-full border-0;
 	}
 
+	/* Markdown-generated page (e.g. policy pages) styles */
+	.markdown > h2 {
+		@apply border-b-0 scroll-mt-14;
+	}
+
+	.markdown > h2::before {
+		@apply content-[""] absolute w-[calc(100%+2rem)] -left-4 lg:w-[calc(100%+4rem)] h-px lg:-left-8 top-6 bg-gray-200;
+	}
+
+	.markdown > h2:first-child {
+		@apply pt-0 scroll-mt-30;
+	}
+
+	.markdown > h2:first-child::before {
+		@apply h-0;
+	}
+
+	.markdown > hr {
+		@apply relative w-[calc(100%+2rem)] -left-4 lg:w-[calc(100%+4rem)] lg:-left-8 my-12;
+	}
+
+	/* Blog post styles */
 	article > h2 {
-		@apply mt-12;
+		@apply pt-8 lg:pt-12;
 	}
 
 	article > p {
@@ -203,15 +227,16 @@
 	}
 
 	article > blockquote {
-		@apply mb-8 px-6 py-4 border border-gray-300 rounded-lg;
+		@apply mb-8 px-6 py-4 border border-gray-200;
 	}
 
 	article > blockquote > p {
 		@apply leading-8 mb-0;
 	}
 
+	/* Ko-fi button */
 	a.kofi-button {
-		@apply px-3.5! font-sans! font-semibold! shadow-none! hover:bg-pink-800! hover:opacity-100!;
+		@apply px-3.5! font-sans! font-medium! shadow-none! hover:bg-pink-800! hover:opacity-100!;
 	}
 
 	.kofitext img.kofiimg {

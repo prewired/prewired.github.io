@@ -19,7 +19,7 @@ Prewired is largely unstructured and our main goal is to support the young peopl
 
 Each session has a Duty Mentor, who bears final responsibility for its running and deals with any problems not involving coding, such as unwell or upset attendees. If you've volunteered with us for a while you're more than welcome to join the Duty Mentor team, but this is optional and not a responsibility that will ever be asked of you if you'd rather not have it.
 
-See also [Attending Prewired](/attending/) for more information about our sessions.
+See also [Activities](/activities/) for more information about how we run our sessions.
 
 ### Junior Mentors
 

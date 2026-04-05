@@ -1,7 +1,7 @@
 ---
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import BaseLayout from "./BaseLayout.astro";
-import importImage from "src/scripts/dynamicImportImage";
+import importImage from "@scripts/dynamicImportImage";
 
 interface Props {
 	frontmatter: {
@@ -31,30 +31,32 @@ const coverImageData = await importImage(coverImage);
 	coverImageData={coverImageData}
 	coverImageAlt={coverImage.alt}
 >
-	<div class="w-full max-w-3xl lg:max-w-7xl mx-auto lg:px-8 flex flex-col lg:flex-row lg:items-end gap-8">
-		<Image
+	<div class="flex flex-col lg:flex-row lg:items-end lg:border-b">
+		<Picture priority
 			src={coverImageData}
+			formats={["avif", "webp"]}
 			alt={coverImage.alt}
-			class="w-[calc(100%+2rem)] md:w-full max-w-3xl -mx-4 aspect-video object-cover md:rounded-lg"
+			class="shrink-0 w-full lg:w-3xl h-60 md:h-72 lg:h-full lg:aspect-video object-cover lg:float-right border-b lg:border-b-0 border-gray-200"
+			pictureAttributes={{ class: "lg:w-1/2 lg:min-w-2xl lg:p-6 lg:border-r" }}
 		/>
-		<div>
+		<div class="w-full max-w-3xl lg:w-1/3 mx-auto lg:mx-0 px-4 py-6 lg:px-6">
 			<div class="flex">
 				{ tags.map(tag => (<>
 					<a href={`/news/tags/${tag}/`} class="no-underline!">
-						<div class="mr-2 mb-2 bg-blue-200 hover:bg-purple-200 rounded px-2 py-1 leading-0">
-							<span class="text-sm font-mono font-medium text-black uppercase">
+						<div class="mr-2 mb-2 bg-blue-200 hover:bg-purple-200 px-2 py-1 leading-0">
+							<span class="text-sm font-medium text-black uppercase">
 								{ tag }
 							</span>
 						</div>
 					</a>
 				</>)) }
 			</div>
-			<p class="font-semibold">
+			<p class="font-medium mb-0">
 				By <span class="text-purple-700">{ author }</span> on { date.toLocaleDateString("en-GB") }
 			</p>
 		</div>
 	</div>
-	<article class="max-w-3xl mt-6 lg:mt-12 mx-auto">
+	<article class="max-w-3xl mt-2 lg:mt-10 mx-auto px-4 pb-24 md:pb-32">
 		<h1 class="mb-4 font-bold lg:text-5xl leading-tight">
 			{ title }
 		</h1>

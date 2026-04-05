@@ -30,14 +30,11 @@ const tagCapitalised = String(tag).charAt(0).toUpperCase() + String(tag).slice(1
 
 <PageLayout
 	title={tagCapitalised}
-	desc={`All blog posts tagged as '${tag}''`}
+	desc={`All blog posts tagged with "${tag}".`}
 	coverImageData={coverPhoto}
 	coverImageAlt="A computer screen with the text 'Prewired Presentations begin 13:00 Friday 27th July 2018'"
 >
-	<p>
-		Posts tagged with <span class="font-mono font-medium uppercase bg-blue-200 rounded px-2 py-1 leading-0">{tag}</span>
-	</p>
-	<ul>
+	<ul class="py-16 lg:px-8">
 		{ posts.map(post => (
 			<li>
 				<a href={`/news/${post.id}/`}>

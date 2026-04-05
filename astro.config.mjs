@@ -1,4 +1,4 @@
-import { defineConfig } from "astro/config";
+import { defineConfig, fontProviders } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import tunnel from "astro-tunnel";
 import a11yEmoji from "@fec/remark-a11y-emoji";
@@ -13,11 +13,20 @@ export default defineConfig({
 		layout: "constrained"
 	},
 
+	// Legacy URLs
 	redirects: {
+		"/attending/": "/activities/",
 		"/docs/": "/about/#governance"
 	},
 
 	integrations: [sitemap(), tunnel()],
+
+	fonts: [{
+		provider: fontProviders.fontsource(),
+		name: "Rubik",
+		cssVariable: "--font-rubik",
+		weights: ["400 900"]
+	}],
 
 	markdown: {
 		remarkPlugins: [a11yEmoji]

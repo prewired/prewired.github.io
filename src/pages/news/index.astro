@@ -62,20 +62,22 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 
 <PageLayout
 	title="News and updates"
-	desc="Updates from our own blog and mentions of Prewired in the media, to provide a historical overview of how Prewired has evolved over the years."
+	desc="Posts from our blog and mentions of Prewired in the media, providing an overview of our evolution over the years."
 	coverImageData={coverPhoto}
 	coverImageAlt="A computer screen with the text 'Prewired Presentations begin 13:00 Friday 27th July 2018'"
 >
-	<p>
-		This page aggregates updates from our own blog with mentions of Prewired in the media, to provide a historical overview of how Prewired has evolved over the years.
-	</p>
-	<p>
-		To receive more frequent updates and stay up-to-date with all of our events, subscribe to our <a href="https://eepurl.com/dv2dPb" target="_blank" rel="noopener">mailing list</a>!
-	</p>
+	<div class="flex py-8 px-4 lg:pl-0">
+		<div class="lg:w-1/6 text-right pr-2">
+			&gt;&gt;
+		</div>
+		<p class="max-w-full grow px-2">
+			Subscribe to our <a href="https://eepurl.com/dv2dPb" target="_blank" rel="noopener">mailing list</a> to receive more frequent updates and announcements of all our events!
+		</p>
+	</div>
 
-	{ feedByYears.map(feedYear => (
-		<>
-			<h2>
+	<div class="lg:grid grid-cols-6 gap-y-8 lg:pr-4">
+		{ feedByYears.map((feedYear, index) => (<>
+			<h2 class="pt-8 md:pt-10 md:pb-1 lg:pt-2 px-4 md:max-lg:px-2 border-b-0 before:absolute before:w-screen before:md:w-[calc(100vw)] before:h-px before:left-0 before:min-[93rem]:-left-[calc(50vw-46rem)] before:top-2 before:md:top-5 before:lg:-top-4 before:bg-gray-200">
 				{ feedYear.year }
 			</h2>
 
@@ -87,6 +89,7 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 						<NewsFeedLocalItem
 							id={post.id}
 							data={post.data}
+							yearIndex={index}
 						/>
 					);
 				}
@@ -96,10 +99,11 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 							url={feedItem.id}
 							date={feedItem.date}
 							desc={feedItem.desc}
+							yearIndex={index}
 						/>
 					);
 				}
 			})}
-		</>
-	))}
+		</>))}
+	</div>
 </PageLayout>

@@ -1,6 +1,6 @@
 ---
 import PageLayout from "./PageLayout.astro";
-import importImage from "src/scripts/dynamicImportImage";
+import importImage from "@scripts/dynamicImportImage";
 
 
 interface Props {
@@ -10,13 +10,14 @@ interface Props {
 		coverImage: {
 			src: string;
 			alt: string;
-		}
+		};
+		accent?: "pink" | "purple" | "blue";
 	};
 	headings: { depth: number; slug: string; text: string }[];
 }
 
 const { frontmatter, headings } = Astro.props;
-const { title, desc, coverImage } = frontmatter;
+const { title, desc, coverImage, accent } = frontmatter;
 
 const coverImageData = await importImage(coverImage);
 ---
@@ -26,7 +27,10 @@ const coverImageData = await importImage(coverImage);
 	desc={desc}
 	coverImageData={coverImageData}
 	coverImageAlt={coverImage.alt}
+	accent={accent}
 	headings={headings}
 >
-	<slot />
+	<div class="markdown max-w-5xl mx-auto pt-11 pb-24 md:pb-32 px-4 lg:px-8 lg:border-l xl:border-r">
+		<slot />
+	</div>
 </PageLayout>

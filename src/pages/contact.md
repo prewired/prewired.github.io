@@ -21,9 +21,11 @@ Our correspondence address (incl. delivery of packages) is CodeBase, Argyle Hous
 
 You can contact the organisers by emailing [hello@prewired.org](mailto:hello@prewired.org).
 
-### Complaints and Concerns
+Please keep in mind that Prewired is 100% volunteer-run and in busy periods it might take us a little longer to get back to you.
 
-If you are unhappy about any issue to do with Prewired and wish to discuss this in confidence, you can send an email to either of the following people:
+### Complaints and concerns
+
+If you are unhappy about any issue to do with Prewired and wish to discuss this in confidence, you can reach out to either of the following people:
 
 * Rikki Guy (Chair): [rikki@prewired.org](mailto:rikki@prewired.org)
 * Athina Frantzana (Child Protection & EDI Officer): [athina@prewired.org](mailto:athina@prewired.org)

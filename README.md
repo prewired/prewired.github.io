@@ -39,3 +39,5 @@ For easy maintenance, we try to keep our list of direct dependencies as minimal 
 * `tailwindcss` and `@tailwindcss/vite` - styling framework
 * `link-preview-js` - automatically gets metadata for external websites on [News and Updates](prewired.org/news/)
 * `@fec/remark-a11y-emoji` - processes MD pages to make all emoji accessible to screen readers
+
+ASCII image generated using [asciiart.eu](https://asciiart.eu).
