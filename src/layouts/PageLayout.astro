@@ -9,9 +9,10 @@ interface Props {
 	coverImageAlt: string;
 	accent?: "blue" | "purple" | "pink";
 	headings?: { depth: number; slug: string; text: string }[];
+	noPaddingBottom?: boolean;
 }
 
-const { title, desc, coverImageData, coverImageAlt, accent, headings } = Astro.props;
+const { title, desc, coverImageData, coverImageAlt, accent, headings, noPaddingBottom } = Astro.props;
 ---
 
 <BaseLayout
@@ -40,7 +41,7 @@ const { title, desc, coverImageData, coverImageAlt, accent, headings } = Astro.p
 	</div>
 	<div class="flex min-h-[50vh]">
 		{ headings &&
-			<div class="hidden lg:block sticky top-24 w-60 h-full self-stretch shrink-0 pt-4 pb-2 border-b">
+			<div class="hidden lg:block sticky top-24 w-60 h-full shrink-0 pt-4 pb-2 border-b">
 				<div class="pb-4 px-4 border-b font-semibold text-sm uppercase text-gray-600">
 					On this page
 				</div>
@@ -54,10 +55,8 @@ const { title, desc, coverImageData, coverImageAlt, accent, headings } = Astro.p
 				)) }
 			</div>
 		}
-		<div class={`grow ${headings && "min-[97rem]:border-l"}`}>
-			<div class={`w-full max-w-360 mx-auto px-4 md:px-0`}>
-				<slot />
-			</div>
+		<div class={`grow ${headings ? "min-[97rem]:border-l" : "w-full max-w-360 mx-auto pb-24 md:pb-32 min-[93rem]:border-x"} ${noPaddingBottom && "pb-0!"}`}>
+			<slot />
 		</div>
 		{ headings && <div class="hidden xl:block w-60 shrink-0" /> }
 	</div>

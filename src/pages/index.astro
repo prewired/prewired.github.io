@@ -2,7 +2,9 @@
 import { Picture } from "astro:assets";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import BookTicketsButton from "@components/BookTicketsButton.astro";
+import logo from "@assets/logos/prewired-logo-no-text.png";
 import cover from "@assets/photos/ws18_session.jpg";
+import cover_ascii from "@assets/photos/ws18_session_ascii.png";
 import overview from "@assets/photos/sh16_discuss.jpg";
 import codebase from "@assets/logos/codebase-logo.png";
 import hypercube from "@assets/logos/hypercube-logo.png";
@@ -20,6 +22,7 @@ const sponsors = [
 ];
 
 const coverImageAlt = "A room full of young people working on laptops at low and high tables";
+// bg-linear-[170deg,#EDFCFF,#FAF6FE_400px,#FFF0F3_800px]
 ---
 
 <BaseLayout
@@ -31,17 +34,20 @@ const coverImageAlt = "A room full of young people working on laptops at low and
 	coverImageAlt={coverImageAlt}
 >
 	<!-- Cover -->
-	<section class="relative h-60 lg:h-112 xl:h-140 px-8 border-b bg-linear-[170deg,#EDFCFF,#FAF6FE_400px,#FFF0F3_800px] overflow-hidden">
+	<section class="relative flex flex-col-reverse lg:block lg:h-120 xl:h-140 lg:px-8 border-b overflow-hidden">
 		<div class="relative max-w-360 mx-auto h-full flex flex-col justify-center z-10">
-			<div class="lg:w-md md:max-lg:mx-auto py-6 text-center lg:text-left text-balance">
+			<Picture priority
+				src={logo}
+				formats={["avif", "webp"]}
+				alt="A pixelated map of Scotland with an asterisk centred on Edinburgh and two sets of curly braces around it"
+				class="hidden xl:block absolute h-120 w-120 -top-12 -left-128 opacity-10"
+			/>
+			<div class="lg:w-md md:max-lg:mx-auto px-4 lg:px-0 py-6 text-center lg:text-left text-balance">
 				<h1 class="mb-4 lg:mb-2 font-semibold text-3xl lg:text-4xl">
-					Welcome to <span class="font-bold text-blue-700">Prewired</span>!
+					Create anything you can think of at <span class="text-blue-750">Prewired</span>! 
 				</h1>
-				<p class="mb-4 font-medium text-xl">
-					A free, weekly programming club for young people in Edinburgh.
-				</p>
-				<p class="mb-12 md:mb-8">
-					If you're under 19 years old and interested in learning to code, or want support taking your passion further, you're in the right place!
+				<p class="mb-8 font-[450]">
+					The free, weekly programming club for young people in Edinburgh.
 				</p>
 				<div class="flex flex-col md:flex-row flex-wrap md:justify-center lg:justify-start gap-4">
 					<BookTicketsButton />
@@ -55,33 +61,38 @@ const coverImageAlt = "A room full of young people working on laptops at low and
 				</div>
 			</div>
 		</div>
-		<div class="absolute h-full w-[65%] max-w-360 top-0 right-0">
-			<div class={`absolute h-full w-full `} />
+		<div class="lg:absolute h-full w-full lg:w-[65%] max-w-360 top-0 right-0">
+			<Picture priority
+				src={cover_ascii}
+				formats={["avif", "webp"]}
+				alt=""
+				class="absolute h-60 md:h-72 lg:h-112 xl:h-140 object-cover object-bottom sm:object-center mask-linear-178 mask-linear-from-80% mask-linear-to-90% lg:-mask-linear-85 lg:mask-linear-from-60% lg:mask-linear-to-90%"
+			/>
 			<Picture priority
 				src={cover}
 				formats={["avif", "webp"]}
 				alt={coverImageAlt}
-				class="h-60 lg:h-112 xl:h-140 object-cover -mask-linear-85 mask-linear-from-60% mask-linear-to-90%"
+				class="h-60 md:h-72 lg:h-112 xl:h-140 object-cover object-bottom sm:object-center mask-linear-178 mask-linear-from-50% mask-linear-to-80% sm:mask-linear-from-60% lg:-mask-linear-85 lg:mask-linear-from-30% lg:mask-linear-to-60%"
 			/>
 		</div>
 	</section>
 
 	<!-- Special announcements -->
-	<div class="h-8 border-b diastripe"></div>
-	<section class="text-center text-balance">
-		<div class="relative p-6 bg-blue-50">
+	<!-- <div class="h-8 border-b diastripe"></div>
+	<section class="sm:text-center sm:text-balance">
+		<div class="relative px-4 py-6 bg-blue-50">
 			<p class="max-w-full mb-2 font-semibold text-base text-blue-750 uppercase">
 				Announcement&nbsp;&nbsp;❄️&nbsp;&nbsp;1 Dec 2025
 			</p>
 			<h1 class="mb-0 font-bold text-xl md:text-2xl">
 				Festive Party and End-of-Term
 			</h1>
-			<!-- <Picture priority
+			<Picture priority
 				src={santamarty}
 				formats={["avif", "webp"]}
 				alt="A Marty robot wearing a Santa hat"
 				pictureAttributes={{ class: "hidden md:block absolute w-40 bottom-0 right-0" }}
-			/> -->
+			/>
 		</div>
 		<div class="border-y bg-blue-50">
 			<div class="max-w-204 mx-auto pt-6 pb-3 px-4 md:px-12 border-x">
@@ -100,44 +111,44 @@ const coverImageAlt = "A room full of young people working on laptops at low and
 			</div>
 		</div>
 	</section>
-	<div class="h-8 border-b diastripe"></div>
+	<div class="h-8 border-b diastripe"></div> -->
 	
 	<!-- Overview -->
 	<section class="flex flex-col lg:flex-row lg:items-center lg:justify-center">
-		<div class="md:w-1/2 py-12 lg:py-24 lg:border-r shrink-0">
+		<div class="lg:w-1/2 lg:py-24 lg:border-r shrink-0">
 			<Picture priority
 				src={overview}
 				formats={["avif", "webp"]}
 				alt="Three teenagers coding on laptops while chatting to each other"
-				class="h-60 lg:h-112 lg:w-xl lg:float-right mb-8 lg:mb-0 lg:mr-16 object-cover md:rounded-lg"
+				class="h-60 lg:h-112 lg:w-[80%] lg:max-w-xl lg:float-right lg:mr-16 object-cover lg:rounded-lg"
 			/>
 		</div>
-		<div class="md:w-3/4 md:max-lg:mx-auto lg:w-1/2 lg:ml-16 md:text-center lg:text-left *:max-w-[42ch]">
-			<h1 class="font-semibold text-2xl md:text-3xl text-balance mb-4">
+		<div class="md:w-3/4 md:max-lg:mx-auto lg:w-1/2 lg:ml-12 px-4 py-8 lg:py-0 sm:text-center lg:text-left">
+			<h1 class="mb-4 font-semibold text-2xl md:text-3xl">
 				What we do
 			</h1>
-			<p class="md:text-lg">
-				Computers let you create anything you can think of. Prewired is here to help enthusiastic young coders of any ability to do just that.
+			<p class="max-w-[42ch] sm:max-lg:mx-auto md:text-lg">
+				If you're under 19 years old and interested in learning to code, or want support taking your passion further, you're in the right place!
 			</p>
-			<p class="md:text-lg mb-8">
+			<p class="max-w-[42ch] sm:max-lg:mx-auto mb-8 md:text-lg">
 				Every Wednesday 5:30&ndash;7:30 PM, we meet at CodeBase Edinburgh. You can bring your own project to work on or chat to one of our volunteers about how to get started!
 			</p>
 			<a
-				href="/attending/"
-				class="block w-full md:w-fit md:mx-auto lg:mx-0 px-4 py-3 bg-blue-100 rounded-md cursor-pointer text-black text-center no-underline hover:bg-blue-700 hover:text-white active:bg-blue-900"
+				href="/activities/"
+				class="block w-full sm:w-fit sm:mx-auto lg:mx-0 px-4 py-3 bg-blue-100 rounded-md cursor-pointer text-black text-center no-underline hover:bg-blue-700 hover:text-white active:bg-blue-900"
 			>
-				Read more about our sessions
+				Read more about our activities
 			</a>
 		</div>
 	</section>
 
 	<!-- Impact -->
 	<section class="bg-pink-50 border-y">
-		<h1 class="font-semibold text-xl md:text-2xl text-center text-pink-700 mb-0 py-12 border-b">
+		<h1 class="font-semibold text-xl md:text-2xl text-center text-pink-700 mb-0 py-12 lg:border-b">
 			Small team, large impact...
 		</h1>
-		<div class="flex flex-wrap justify-center gap-y-4 md:gap-y-8 max-w-7xl mx-auto divide-x text-center *:w-1/3 *:min-w-66 *:py-8 md:*:py-12 lg:*:py-16 ">
-			<div class="border-l">
+		<div class="flex flex-wrap justify-center gap-y-4 md:gap-y-8 max-w-7xl mx-auto pb-8 md:pb-0 lg:divide-x text-center *:w-1/3 *:min-w-66 md:*:py-12 lg:*:py-16 ">
+			<div class="min-[83rem]:border-l">
 				<p class="text-4xl mb-4">🧑‍💻</p>
 				<p class="mb-2 lg:mb-4 font-semibold text-3xl lg:text-5xl text-pink-700">
 					150+
@@ -151,7 +162,7 @@ const coverImageAlt = "A room full of young people working on laptops at low and
 				</p>
 				<p>events a year</p>
 			</div>
-			<div class="relative border-r">
+			<div class="relative min-[83rem]:border-r">
 				<p class="text-4xl mb-4">🍵</p>
 				<p class="mb-2 lg:mb-4 font-semibold text-3xl lg:text-5xl text-pink-700">
 					100%
@@ -159,7 +170,7 @@ const coverImageAlt = "A room full of young people working on laptops at low and
 				<p>volunteer-run</p>
 				<a
 					href="/volunteering/"
-					class="absolute bottom-2 md:bottom-6 lg:bottom-10 right-14 px-4 py-2 bg-pink-600 hover:bg-pink-800 border-b-2 border-pink-900 active:border-b-0 active:mt-0.5 rounded-lg -rotate-3 font-semibold uppercase text-white no-underline"
+					class="absolute -bottom-6 md:bottom-6 lg:bottom-10 right-14 px-4 py-2 bg-pink-600 hover:bg-pink-800 border-b-2 border-pink-900 active:border-b-0 active:mt-0.5 rounded-lg -rotate-3 font-semibold uppercase text-white no-underline"
 				>
 					Get involved!
 				</a>
@@ -169,7 +180,7 @@ const coverImageAlt = "A room full of young people working on laptops at low and
 
 	<!-- Sponsors -->
 	<section class="text-center text-balance">
-		<div class="max-w-5xl mx-auto pt-16 pb-20 border-x">
+		<div class="max-w-5xl mx-auto pt-16 pb-8 lg:pb-20 min-[67rem]:border-x">
 			<h1 class="max-md:text-xl mb-4">
 				Sponsors & supporters
 			</h1>
@@ -177,22 +188,21 @@ const coverImageAlt = "A room full of young people working on laptops at low and
 				In addition to the accommodation generously provided by CodeBase, Prewired could not exist without the support from our sponsors, donors, and supporters.
 			</p>
 		</div>
-		<div class="relative border-y">
-			<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center -mt-px divide-x divide-y">
+		<div class="relative md:border-y after:hidden after:xl:block after:absolute after:w-full after:h-px after:left-0 after:top-36 after:bg-gray-200">
+			<div class="max-w-7xl mx-auto flex flex-col md:flex-row flex-wrap items-center justify-center md:divide-x md:divide-y">
 				{ sponsors.map(({name, href, src, style}) => (
-					<a href={href} target="_blank" rel="noopener" class="w-1/3 py-8 first:border-l nth-4:border-l nth-4:border-b-0 last:border-r border-gray-200 hover:opacity-70 transition">
+					<a href={href} target="_blank" rel="noopener" class="md:w-1/2 lg:w-1/3 max-md:px-4 py-2 lg:py-8 first:min-[83rem]:border-l nth-2:max-lg:border-r-0 nth-3:lg:max-[83rem]:border-r-0 nth-4:max-lg:border-r-0 nth-4:lg:border-l nth-4:lg:border-b-0 last:md:max-lg:border-l last:md:border-r border-gray-200 hover:bg-blue-50 transition">
 						<Picture
 							src={src}
 							formats={["avif", "webp"]}
 							alt={`${name} logo`}
-							class={`w-auto h-14 md:h-20 mx-auto ${style}`}
+							class={`w-auto h-18 md:h-20 mx-auto object-cover ${style}`}
 						/>
 					</a>
 				))}
 			</div>
-			<div class="absolute w-full h-px left-0 top-35.75 bg-gray-200" />
 		</div>
-		<p class="max-w-5xl mx-auto mb-0 py-12 border-x border-gray-200">
+		<p class="max-w-5xl mx-auto mb-0 py-12 min-[67rem]:border-x border-gray-200">
 			Thank you!
 		</p>
 	</section>

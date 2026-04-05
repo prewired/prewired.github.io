@@ -13,7 +13,9 @@ export default defineConfig({
 		layout: "constrained"
 	},
 
+	// Legacy URLs
 	redirects: {
+		"/attending/": "/activities/",
 		"/docs/": "/about/#governance"
 	},
 

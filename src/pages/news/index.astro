@@ -66,7 +66,7 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 	coverImageData={coverPhoto}
 	coverImageAlt="A computer screen with the text 'Prewired Presentations begin 13:00 Friday 27th July 2018'"
 >
-	<div class="flex py-8 px-4 lg:pl-0 min-[93rem]:border-x">
+	<div class="flex py-8 px-4 lg:pl-0">
 		<div class="lg:w-1/6 text-right pr-2">
 			&gt;&gt;
 		</div>
@@ -75,7 +75,7 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 		</p>
 	</div>
 
-	<div class="lg:grid grid-cols-6 min-[93rem]:border-x gap-y-8 lg:pr-4 pb-24 md:pb-32">
+	<div class="lg:grid grid-cols-6 gap-y-8 lg:pr-4">
 		{ feedByYears.map((feedYear, index) => (<>
 			<h2 class="pt-8 md:pt-10 md:pb-1 lg:pt-2 md:px-2 lg:px-4 border-b-0 before:absolute before:w-screen before:md:w-[calc(100vw-2rem-1px)] before:h-px before:-left-4 before:md:left-0 before:min-[93rem]:-left-[calc(50vw-46rem)] before:top-2 before:md:top-5 before:lg:-top-4 before:bg-gray-200">
 				{ feedYear.year }

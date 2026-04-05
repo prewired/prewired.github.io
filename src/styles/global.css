@@ -123,11 +123,11 @@
 	}
 
 	details {
-		@apply border border-b-0 border-gray-200 overflow-hidden;
+		@apply border-t md:border-x border-gray-200 overflow-hidden;
 	}
 
 	details > p {
-		@apply px-6;
+		@apply px-4 md:px-6;
 	}
 
 	details > p:first-of-type {
@@ -135,7 +135,7 @@
 	}
 
 	summary {
-		@apply flex justify-between items-center py-4 px-6 list-none cursor-pointer transition-[font-weight];
+		@apply flex justify-between items-center py-4 px-4 md:px-6 list-none cursor-pointer transition-[font-weight];
 	}
 
 	summary::after {
@@ -197,23 +197,23 @@
 	}
 
 	/* Markdown-generated page (e.g. policy pages) styles */
-	.md > h2 {
+	.markdown > h2 {
 		@apply border-b-0 scroll-mt-16;
 	}
 
-	.md > h2::before {
+	.markdown > h2::before {
 		@apply content-[""] absolute w-[calc(100%+2rem)] -left-4 lg:w-[calc(100%+4rem)] h-px lg:-left-8 top-6 bg-gray-200;
 	}
 
-	.md > h2:first-child {
-		@apply pt-11 scroll-mt-21;
+	.markdown > h2:first-child {
+		@apply pt-0 scroll-mt-32;
 	}
 
-	.md > h2:first-child::before {
+	.markdown > h2:first-child::before {
 		@apply h-0;
 	}
 
-	.md > hr {
+	.markdown > hr {
 		@apply relative w-[calc(100%+2rem)] -left-4 lg:w-[calc(100%+4rem)] lg:-left-8 my-12;
 	}
 
