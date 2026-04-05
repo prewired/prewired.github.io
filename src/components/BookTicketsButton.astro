@@ -10,45 +10,43 @@ import DialogCloseButton from "./DialogCloseButton.astro";
 </button>
 
 <dialog
-	class="w-175 max-w-full mx-auto mt-[5vh] md:mt-[10vh] border rounded-sm shadow-lg overflow-hidden scale-95 open:scale-100 starting:open:scale-95"
+	class="w-160 h-screen max-h-screen max-w-full mx-auto shadow-lg scale-95 open:scale-100 starting:open:scale-95"
 	id="tickets-dialog"
 >
-	<div class="max-h-[80vh] overflow-y-auto">
-		<DialogCloseButton
-			id="tickets-dialog-close-btn"
-			style="absolute top-5 right-5 bg-white"
-		/>
-		<!-- Ticket Tailor Widget -->
-		<div class="tt-widget">
-			<div class="tt-widget-fallback">
-				<p>
-					<a href="https://www.tickettailor.com/events/prewired/1223517/select-date?ref=website_widget"
-						target="_blank"
+	<DialogCloseButton
+		id="tickets-dialog-close-btn"
+		style="absolute top-5 right-5"
+	/>
+	<!-- Ticket Tailor Widget -->
+	<div class="tt-widget">
+		<div class="tt-widget-fallback">
+			<p>
+				<a href="https://www.tickettailor.com/events/prewired/1223517/select-date?ref=website_widget"
+					target="_blank"
+				>
+					Click here to buy tickets
+				</a>
+				<br />
+				<small>
+					<a href="https://www.tickettailor.com?rf=wdg_186493"
+						class="tt-widget-powered"
 					>
-						Click here to buy tickets
+						Sell tickets online with Ticket Tailor
 					</a>
-					<br />
-					<small>
-						<a href="https://www.tickettailor.com?rf=wdg_186493"
-							class="tt-widget-powered"
-						>
-							Sell tickets online with Ticket Tailor
-						</a>
-					</small>
-				</p>
-			</div>
-			<script
-				is:inline
-				src="https://cdn.tickettailor.com/js/widgets/min/widget.js"
-				data-url="https://www.tickettailor.com/events/prewired/1223517/select-date?ref=website_widget"
-				data-type="inline"
-				data-inline-minimal="true"
-				data-inline-show-logo="false"
-				data-inline-bg-fill="false"
-				data-inline-inherit-ref-from-url-param=""
-				data-inline-ref="website_widget">
-			</script>
+				</small>
+			</p>
 		</div>
+		<script
+			is:inline
+			src="https://cdn.tickettailor.com/js/widgets/min/widget.js"
+			data-url="https://www.tickettailor.com/events/prewired/1223517/select-date?ref=website_widget"
+			data-type="inline"
+			data-inline-minimal="true"
+			data-inline-show-logo="false"
+			data-inline-bg-fill="true"
+			data-inline-inherit-ref-from-url-param=""
+			data-inline-ref="website_widget">
+		</script>
 	</div>
 </dialog>
 
