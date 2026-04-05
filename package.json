@@ -19,7 +19,7 @@
     "astro-tunnel": "^0.1.9",
     "link-preview-js": "^4.0.0",
     "tailwindcss": "^4.2.2",
-    "typescript": "^6.0.2"
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
     "@fec/remark-a11y-emoji": "^4.0.2"
