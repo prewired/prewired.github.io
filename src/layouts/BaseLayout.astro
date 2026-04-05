@@ -61,7 +61,7 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 
 	<body class="bg-white lg:text-lg">
 		<div class="md:mx-4 md:border-x">
-			<header class="sticky top-0 h-20 lg:h-24 px-4 flex items-center bg-white z-40 after:absolute after:w-full after:md:w-[calc(100%+2rem)] after:h-px after:bg-gray-200 after:left-0 after:md:-left-4 after:-bottom-px">
+			<header class="sticky top-0 h-18 lg:h-22 px-4 flex items-center bg-white z-40 after:absolute after:w-full after:md:w-[calc(100%+2rem)] after:h-px after:bg-gray-200 after:left-0 after:md:-left-4 after:-bottom-px">
 				<a href="/" class="mr-auto hover:opacity-70 transition">
 					<Picture priority
 						src={prewiredLogoText}
@@ -76,7 +76,7 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 					class="lg:hidden flex items-center pl-3 pr-4 py-2 bg-pink-600 hover:bg-pink-800 border-b-2 border-pink-900 active:border-b-0 active:mt-0.5 rounded-lg uppercase font-semibold text-white cursor-pointer transition"
 					id="menu-open-btn"
 				>
-					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="mt-px mr-2 fill-white" viewBox="0 0 16 16">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="-mt-px mr-2 fill-white" viewBox="0 0 16 16">
 						<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
 					</svg>
 					Menu
@@ -108,7 +108,7 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 				<!-- Large-screen menu -->
 				<nav class="relative h-full mx-4 -mb-px hidden lg:flex gap-7 xl:gap-12 z-50">
 					{ navItems.map(({ href, title, accent }) => (
-						<a href={href} class={`pt-2 md:py-9 shrink-0 font-[450] text-black no-underline border-b-2 border-transparent
+						<a href={href} class={`pt-2 md:py-8 shrink-0 font-[450] text-black no-underline border-b-2 border-transparent
 							${Astro.url.pathname === href ? 
 								(accent === "pink" ? "text-pink-600 border-pink-600!" : accent === "purple" ? "text-purple-600 border-purple-600!" : "text-blue-750 border-blue-750!")
 							: (accent === "pink" ? "hover:text-pink-600" : accent === "purple" ? "hover:text-purple-600" : "hover:text-blue-750")}

@@ -77,7 +77,7 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 
 	<div class="lg:grid grid-cols-6 gap-y-8 lg:pr-4">
 		{ feedByYears.map((feedYear, index) => (<>
-			<h2 class="pt-8 md:pt-10 md:pb-1 lg:pt-2 md:px-2 lg:px-4 border-b-0 before:absolute before:w-screen before:md:w-[calc(100vw-2rem-1px)] before:h-px before:-left-4 before:md:left-0 before:min-[93rem]:-left-[calc(50vw-46rem)] before:top-2 before:md:top-5 before:lg:-top-4 before:bg-gray-200">
+			<h2 class="pt-8 md:pt-10 md:pb-1 lg:pt-2 px-4 md:max-lg:px-2 border-b-0 before:absolute before:w-screen before:md:w-[calc(100vw)] before:h-px before:left-0 before:min-[93rem]:-left-[calc(50vw-46rem)] before:top-2 before:md:top-5 before:lg:-top-4 before:bg-gray-200">
 				{ feedYear.year }
 			</h2>
 

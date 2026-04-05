@@ -198,7 +198,7 @@
 
 	/* Markdown-generated page (e.g. policy pages) styles */
 	.markdown > h2 {
-		@apply border-b-0 scroll-mt-16;
+		@apply border-b-0 scroll-mt-14;
 	}
 
 	.markdown > h2::before {
@@ -206,7 +206,7 @@
 	}
 
 	.markdown > h2:first-child {
-		@apply pt-0 scroll-mt-32;
+		@apply pt-0 scroll-mt-30;
 	}
 
 	.markdown > h2:first-child::before {

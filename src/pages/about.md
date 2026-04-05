@@ -1,7 +1,7 @@
 ---
 layout: "@layouts/MDPageLayout.astro"
 title: About the charity
-desc: Information on the mission, governance, and history of Prewired.
+desc: Read about the mission, governance, and history of Prewired.
 coverImage:
   src: ws16_longtables.jpg
   alt: Young people working together on laptops at long tables
