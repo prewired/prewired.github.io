@@ -1,54 +1,158 @@
 ---
+import { Picture } from "astro:assets";
 import { getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
+import importImage from "@scripts/dynamicImportImage";
 import coverPhoto from "@assets/photos/sh18_live.jpg";
-import NewsFeedExternalItem from "@components/NewsFeedExternalItem.astro";
-import NewsFeedLocalItem from "@components/NewsFeedLocalItem.astro";
+import mt23 from "@assets/photos/mt23_winners.jpg";
+import mt24 from "@assets/photos/mt24_winners.jpg";
+import mt25 from "@assets/photos/mt25_winners.jpg";
+import eodd from "@assets/misc/eodd_banner.png";
+import session from "@assets/photos/ws16_kitchen.jpg";
+import digit from "@assets/blog_external/digit_fav.png";
+import futurescot from "@assets/blog_external/futurescot_fav.png";
+import futurescot_banner from "@assets/blog_external/banner_futurescot_2016.jpg";
+import govuk from "@assets/blog_external/govuk_fav.svg";
+import govuk_banner from "@assets/blog_external/govuk_cybersecurity_outcomes.jpg";
+import hypercube from "@assets/blog_external/hypercube_fav.png";
+import insider from "@assets/blog_external/insider_fav.png";
+import insider_banner from "@assets/blog_external/banner_insider_2018.avif";
+import medium from "@assets/blog_external/medium_fav.png";
+import scottlogic from "@assets/blog_external/scottlogic_fav.png";
+import scottlogic_banner from "@assets/photos/sh16_scottlogic.jpg";
+import tinderbox from "@assets/blog_external/tinderbox_fav.png";
 
 
 /****  GET LOCAL BLOG POSTS ****/
 const posts = await getCollection("posts");
 
 
-/****  GET EXTERNAL POSTS ****/
+/****  DEFINE EXTERNAL POSTS ****/
 type ExternalPost = {
 	url: string;
 	date: Date;
-	desc?: string;
+	site: string;
+	title: string;
+	desc: string;
+	favicon: ImageMetadata;
+	banner: ImageMetadata;
+	bannerAlt: string;
 };
 
-// Links that are commented out are broken links from the OG website
 const externalPosts: ExternalPost[] = [
-	{ url: "https://wearehypercube.com/prewired-2025/", date: new Date("2025-07-22") },
-	{ url: "https://medium.com/@indiathomson/prewired-x-hypercube-summer-make-a-thon-41f03bea0311", date: new Date("2024-08-07") },
-	{ url: "https://medium.com/kinandcartacreated/summer-tech-make-a-thon-dedaa474d3eb", date: new Date("2023-10-09")},
-	{ url: "https://www.gov.uk/government/publications/mapping-informal-cyber-security-initiatives-for-young-people-aged-5-19/mapping-informal-cyber-security-initiatives-for-young-people-aged-5-19", date: new Date("2022-07-21"), desc: "This research aimed to provide a first mapping of informal cyber security-related initiatives aimed at children and young people aged 5-19."},
-	{ url: "https://tinderboxcollective.org/2021/05/04/prewired-presents-the-emporium-of-digital-delights/", date: new Date("2021-05-04")},
-	{ url: "https://www.digit.fyi/prewired-receives-funding-to-bring-coding-club-online/", date: new Date("2021-01-20") },
-	// { url: "https://scottishbusinessnews.net/prewired-secures-funding-from-creative-informatics-to-take-one-of-scotlands-longest-running-coding-clubs-for-young-people-online/", date: new Date("2021-01-20") },
-	// { url: "https://informatics.ed.ac.uk/news-events/news/news-archive/prewired-secures-funding-coding-club-online", date: new Date("2021-01-19") },
-	// { url: "https://www.scotsman.com/business/nick-freer-comment-start-ups-hit-all-right-notes-night-193754", date: new Date("2018-12-09") },
-	{ url: "https://www.insider.co.uk/news/scottish-tech-startup-awards-finalists-13540999", date: new Date("2018-11-06") },
-	{ url: "https://dailybusinessgroup.co.uk/2018/11/scottish-tech-startups-in-battle-for-honours/", date: new Date("2018-11-06") },
-	// { url: "https://www.thisiscodebase.com/blog/2018/8/1/summerhack2018-roundup", date: new Date("2018-08-02") },
-	{ url: "https://blog.scottlogic.com/2016/08/22/building-the-next-generation-of-technology-professionals.html", date: new Date("2016-08-22") },
-	{ url: "https://futurescot.com/hey-teacher-leave-kids-alone-why-children-better-left-to-learn-coding-by-themselves/", date: new Date("2016-04-18") },
-	// { url: "https://www.thisiscodebase.com/blog/2015/7/28/prewired-at-codebase-festival-of-code-2015", date: new Date("2015-07-28") },
-	{ url: "https://tfn.scot/features/chief-encounters-its-not-all-play-and-now-work-for-freda-obyrne", date: new Date("2015-06-25") }
+	{
+		url: "https://wearehypercube.com/prewired-2025/",
+		date: new Date("2025-07-22"),
+		site: "Hypercube",
+		title: "Hypercube supports the 2025 Prewired Summer Make-a-Thon",
+		desc: "Our third annual Make-a-Thon was sponsored again by Hypercube! Read all about the event in their blog post.",
+		favicon: hypercube,
+		banner: mt25,
+		bannerAlt: "The three winners of the Make-a-Thon presenting their awards and prizes together with a Prewired mentor and competition judge"
+	},
+	{
+		url: "https://medium.com/@indiathomson/prewired-x-hypercube-summer-make-a-thon-41f03bea0311",
+		date: new Date("2024-08-07"),
+		site: "Medium",
+		title: "Prewired × Hypercube Summer Make-a-Thon 2024",
+		desc: "At the end of July, we hosted our second annual Summer Make-A-Thon, this time sponsored by Hypercube consulting.",
+		favicon: medium,
+		banner: mt24,
+		bannerAlt: "The three winners of the Make-a-Thon presenting their awards and prizes together with a Prewired mentor and competition judge"
+	},
+	{
+		url: "https://medium.com/kinandcartacreated/summer-tech-make-a-thon-dedaa474d3eb",
+		date: new Date("2023-10-09"),
+		site: "Medium",
+		title: "Looking back at the Prewired Summer Make-a-Thon",
+		desc: "For the first time since the pandemic, Prewired hosted a Summer Make-A-Thon, sponsored by Kin + Carta. Read more in India's blog post!",
+		favicon: medium,
+		banner: mt23,
+		bannerAlt: "The four winners of the Make-a-Thon presenting their awards and prizes"
+	},
+	{
+		url: "https://www.gov.uk/government/publications/mapping-informal-cyber-security-initiatives-for-young-people-aged-5-19/mapping-informal-cyber-security-initiatives-for-young-people-aged-5-19",
+		date: new Date("2022-07-21"),
+		site: "UK Government",
+		title: "Mapping informal cyber security initiatives for young people aged 5-19",
+		desc: "See Prewired discussed in government research aimed to provide a first mapping of informal cyber security-related initiatives aimed at children and young people aged 5-19.",
+		favicon: govuk,
+		banner: govuk_banner,
+		bannerAlt: "Four steps in a diagram: 'Build awareness of cybersecurity', 'Feel inspired to get involved in it', Feel like cybersecurity is a field that they can see themselves working in', 'Develop the knowledge and skills required to have a career in cybersecurity'"
+	},
+	{
+		url: "https://tinderboxcollective.org/2021/05/04/prewired-presents-the-emporium-of-digital-delights/",
+		date: new Date("2021-05-04"),
+		site: "Tinderbox Collective",
+		title: "Prewired++ presents the Emporium of Digital Delights!",
+		desc: "Prewired is teaming up with the Tinderbox Collective to launch The Emporium of Digital Delights, our new online summer hackathon series.",
+		favicon: tinderbox,
+		banner: eodd,
+		bannerAlt: "Coloured banner saying 'The Emporium of Digital Delights, May - July 2021'"
+	},
+	{
+		url: "https://www.digit.fyi/prewired-receives-funding-to-bring-coding-club-online/",
+		date: new Date("2021-01-20"),
+		site: "DIGIT News",
+		title: "Prewired Receives Funding to Bring Coding Club Online",
+		desc: "Youth programming club Prewired has secured funding from Creative Informatics to help the long-running Edinburgh group move online.",
+		favicon: digit,
+		banner: session,
+		bannerAlt: "Two attendees and two mentors chatting in a coffee corner"
+	},
+	{
+		url: "https://www.insider.co.uk/news/scottish-tech-startup-awards-finalists-13540999",
+		date: new Date("2018-11-06"),
+		site: "Insider",
+		title: "Prewired's Freda O'Byrne nominated as Diversity in Tech Champion at the first Scottish Tech Startup Awards",
+		desc: "We're proud to share that Freda O'Byrne was nominated as Diversity in Tech Champion for her work at Prewired. Read more about the awards in this article from Insider!",
+		favicon: insider,
+		banner: insider_banner,
+		bannerAlt: "A woman walking on a stage in front of large blue letters spelling TURING"
+	},
+	{
+		url: "https://blog.scottlogic.com/2016/08/22/building-the-next-generation-of-technology-professionals.html",
+		date: new Date("2016-08-22"),
+		site: "Scott Logic",
+		title: "Scott Logic staff mentor at the Prewired Summer Hack",
+		desc: "Last week, five Scott Logic staff took time out of the Edinburgh office to lend a hand with the Prewired Summer Hack coding challenge for children and young adults from 8 to 19 years of age.",
+		favicon: scottlogic,
+		banner: scottlogic_banner,
+		bannerAlt: "Two Scott Logic staff members sitting around a table with a child helping him with programming"
+	},
+	{
+		url: "https://futurescot.com/hey-teacher-leave-kids-alone-why-children-better-left-to-learn-coding-by-themselves/",
+		date: new Date("2016-04-28"),
+		site: "FutureScot",
+		title: "Hey teacher, leave them kids alone. Why children are better off left to learn coding by themselves",
+		desc: "This guest essay by Freda O'Byrne, co-founder of Prewired, explains why they take a different approach to the curriculum.",
+		favicon: futurescot,
+		banner: futurescot_banner,
+		bannerAlt: "A young girl using a laptop displaying a video call with other children"
+	}
 ];
 
 
 /****  COMBINE BOTH POST TYPES INTO ONE FEED ****/
 type FeedItem = {
-	id: string;
-	date: Date;
 	type: "local" | "external";
-	desc?: string;
+	url: string;
+	date: Date;
+	site?: string;
+	title: string;
+	desc: string;
+	author?: string;
+	favicon?: ImageMetadata;
+	banner?: ImageMetadata;
+	bannerAlt?: string;
+	tags?: string[];
 };
 
 const feed: FeedItem[] = [];
-posts.forEach(post => feed.push({ id: post.id, date: post.data.date, type: "local" }));
-externalPosts.forEach(post => feed.push({ id: post.url, date: post.date, desc: post.desc, type: "external" }));
+for (const post of posts) {
+	feed.push({ ...post.data, url: `/news/${post.id}/`, banner: await importImage(post.data.coverImage), bannerAlt: post.data.coverImage.alt, type: "local" });
+}
+externalPosts.forEach(post => feed.push({ ...post, type: "external" }));
 
 // Sort by date, descending
 feed.sort((a, b) => b.date.valueOf() - a.date.valueOf());
@@ -76,34 +180,63 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 	</div>
 
 	<div class="lg:grid grid-cols-6 gap-y-8 lg:pr-4">
-		{ feedByYears.map((feedYear, index) => (<>
-			<h2 class="pt-8 md:pt-10 md:pb-1 lg:pt-2 px-4 md:max-lg:px-2 border-b-0 before:absolute before:w-screen before:md:w-[calc(100vw)] before:h-px before:left-0 before:min-[93rem]:-left-[calc(50vw-46rem)] before:top-2 before:md:top-5 before:lg:-top-4 before:bg-gray-200">
-				{ feedYear.year }
-			</h2>
+		{ feedByYears.map((feedYear, index) => {
+			const hoverBg = index % 3 === 0 ? "bg-pink-50" : index % 3 === 1 ? "bg-purple-50" : "bg-blue-50";
+			const tagBg = index % 3 === 0 ? "bg-pink-200" : index % 3 === 1 ? "bg-purple-200" : "bg-blue-200";
+			return (<>
+				<h2 class="pt-8 md:pt-10 md:pb-1 lg:pt-2 px-4 md:max-lg:px-2 border-b-0 before:absolute before:w-screen before:md:w-[calc(100vw-2rem)] before:h-px before:left-0 before:min-[93rem]:-left-[calc(50vw-46rem)] before:top-2 before:md:top-5 before:lg:-top-4 before:bg-gray-200">
+					{ feedYear.year }
+				</h2>
 
-			{ feedYear.posts.map(feedItem => {
-				if(feedItem.type === "local") {
-					const post = posts.find(post => post.id === feedItem.id);
-					if(!post) return;
-					else return (
-						<NewsFeedLocalItem
-							id={post.id}
-							data={post.data}
-							yearIndex={index}
-						/>
-					);
-				}
-				else {
-					return (
-						<NewsFeedExternalItem
-							url={feedItem.id}
-							date={feedItem.date}
-							desc={feedItem.desc}
-							yearIndex={index}
-						/>
-					);
-				}
-			})}
-		</>))}
+				{ feedYear.posts.map(({ type, url, date, site, title, desc, author, favicon, banner, bannerAlt, tags }) => (
+					<a
+						href={url}
+						target={type === "external" ? "_blank" : "_self"}
+						rel={type === "external" ? "noopener noreferrer" : undefined}
+						class={`block relative px-4 md:px-0 pt-4 md:pt-0 col-span-5 col-end-7 text-black! no-underline! hover:${hoverBg}`}
+					>
+						<div class="flex flex-wrap md:flex-nowrap">
+							<Picture
+								src={banner}
+								formats={["avif", "webp"]}
+								alt={bannerAlt}
+								class="w-full h-52 object-cover bg-gray-200"
+								pictureAttributes={{ class: "w-full md:w-80 shrink-0 md:p-2" }}
+							/>
+							<div class="max-w-2xl pt-4 md:pt-2 md:px-4 lg:-mt-px">
+								{ type === "local" ?
+									tags?.map(tag => (
+										<div class="inline-flex">
+											<div class={`mr-2 mb-2 ${tagBg} px-2 py-1 leading-0`}>
+												<span class="text-sm font-medium text-black uppercase">
+													{ tag }
+												</span>
+											</div>
+										</div>
+									))
+								: (
+									<div class="flex items-center mb-2 text-sm">
+										From
+										<Picture
+											src={favicon}
+											formats={["avif", "webp"]}
+											alt={`${site} favicon`}
+											class="w-4 h-4 mx-2"
+										/>
+										<span>{ site }</span>
+									</div>
+								) }
+								<h3 class="mt-0 mb-1 md:mb-0 font-semibold text-xl not-italic">
+									{ title }
+								</h3>
+								<p>
+									{ date.toLocaleDateString("en-GB") } &middot; { desc }
+								</p>
+							</div>
+						</div>
+					</a>
+				)) }
+			</>);
+		})}
 	</div>
 </PageLayout>
