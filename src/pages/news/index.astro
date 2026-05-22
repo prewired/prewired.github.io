@@ -17,10 +17,12 @@ import govuk_banner from "@assets/blog_external/govuk_cybersecurity_outcomes.jpg
 import hypercube from "@assets/blog_external/hypercube_fav.png";
 import insider from "@assets/blog_external/insider_fav.png";
 import insider_banner from "@assets/blog_external/banner_insider_2018.avif";
+import maths_donation from "@assets/blog_external/maths_donation.jpg";
 import medium from "@assets/blog_external/medium_fav.png";
 import scottlogic from "@assets/blog_external/scottlogic_fav.png";
 import scottlogic_banner from "@assets/photos/sh16_scottlogic.jpg";
 import tinderbox from "@assets/blog_external/tinderbox_fav.png";
+import uoe from "@assets/blog_external/uoe_fav.png";
 
 
 /****  GET LOCAL BLOG POSTS ****/
@@ -40,6 +42,16 @@ type ExternalPost = {
 };
 
 const externalPosts: ExternalPost[] = [
+	{
+		url: "https://maths.ed.ac.uk/school-donates-35-laptops-to-coding-charity",
+		date: new Date("2026-05-05"),
+		site: "The University of Edinburgh",
+		title: "School of Mathematics donates 35 laptops to Prewired",
+		desc: "The second-hand machines were due to be recycled but now have a new lease of life helping Edinburgh's young people learn programming.",
+		favicon: uoe,
+		banner: maths_donation,
+		bannerAlt: "Three Prewired volunteers posing behind a trolley carrying 35 laptops"
+	},
 	{
 		url: "https://wearehypercube.com/prewired-2025/",
 		date: new Date("2025-07-22"),
@@ -165,7 +177,7 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 
 <PageLayout
 	title="News and updates"
-	desc="Posts from our blog and mentions of Prewired in the media, providing an overview of our evolution over the years."
+	desc="Posts from our blog and mentions of Prewired in the media."
 	coverImageData={coverPhoto}
 	coverImageAlt="A computer screen with the text 'Prewired Presentations begin 13:00 Friday 27th July 2018'"
 >
