@@ -184,7 +184,7 @@
 
 	/* Decorative fill */
 	.diastripe {
-		@apply bg-[repeating-linear-gradient(315deg,var(--color-gray-200)_0,var(--color-gray-200)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] bg-fixed;
+		@apply bg-[repeating-linear-gradient(315deg,var(--color-gray-200)_0,var(--color-gray-200)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px];
 	}
 
 	/* Responsive sizing for iframes */

@@ -62,7 +62,7 @@ const coverImageAlt = "A room full of young people working on laptops at low and
 
 	<!-- Events calendar -->
 	<section class="lg:px-8 relative -top-6 lg:-top-32 mt-4 lg:mt-0 -mb-6 lg:-mb-32 border-b z-20 text-center lg:text-left">
-		<div class="max-w-360 mx-auto lg:flex">
+		<div class="max-w-360 mx-auto flex flex-col lg:flex-row">
 			<div class="w-full lg:w-2/3 pb-8">
 				<p class="relative w-fit mx-auto lg:ml-1 lg:mr-0 lg:mb-1 z-20 font-[450] text-purple-700">
 					Book your spot
@@ -97,7 +97,7 @@ const coverImageAlt = "A room full of young people working on laptops at low and
 					Widget not loading? See our <a href="https://www.tickettailor.com/events/prewired/" target="_blank" rel="noreferrer noopener">events page</a>.
 				</small>
 			</div>
-			<div class="relative hidden lg:block w-1/3 mt-32 p-8 pt-32 border-l">
+			<div class="relative block w-full lg:w-1/3 lg:mt-32 p-8 pb-0 lg:pt-32 lg:pb-8 lg:border-l">
 				<div class="relative bg-pink-50 px-6 py-8 rounded-xl after:absolute after:bottom-0 after:left-10 after:w-0 after:h-0 after:border-32 after:border-transparent after:border-t-pink-50 after:border-b-0 after:border-l-0 after:-ml-2 after:-mb-4">
 					<h2 class="pt-0 mb-0 border-b-0 text-pink-900">
 						Stay in touch!
@@ -122,8 +122,8 @@ const coverImageAlt = "A room full of young people working on laptops at low and
 			</div>
 		</div>
 	</section>
-	<div class="h-8 border-b diastripe"></div>
-	
+	<div class="hidden lg:block h-8 border-b diastripe"></div>
+
 	<!-- Overview -->
 	<section class="flex flex-col lg:flex-row lg:items-center lg:justify-center bg-blue-50 border-b">
 		<div class="lg:w-1/2 lg:py-24 lg:border-r shrink-0">
@@ -154,8 +154,8 @@ const coverImageAlt = "A room full of young people working on laptops at low and
 	</section>
 
 	<!-- Recent news -->
-	<section class="flex flex-col lg:flex-row-reverse lg:items-center lg:justify-center">
-		<div class="lg:w-1/2 lg:py-24 lg:border-l shrink-0">
+	<section class="flex flex-col lg:flex-row-reverse lg:justify-center">
+		<div class="lg:w-1/2 lg:py-24 shrink-0">
 			<Picture priority
 				src={news_update}
 				formats={["avif", "webp"]}
@@ -163,27 +163,27 @@ const coverImageAlt = "A room full of young people working on laptops at low and
 				class="h-60 lg:h-96 lg:w-[80%] lg:max-w-xl lg:ml-16 object-cover lg:rounded-lg"
 			/>
 		</div>
-		<div class="md:w-3/4 md:max-lg:mx-auto lg:w-1/2 lg:mr-12 px-4 py-8 lg:py-0 sm:text-center *:lg:float-right *:lg:clear-right">
-			<small class="font-[550] text-purple-600 uppercase lg:text-right">
+		<div class="md:w-3/4 lg:w-1/2 md:max-lg:mx-auto px-4 lg:pr-12 py-8 lg:border-r lg:flex lg:flex-col lg:justify-center lg:items-end sm:text-center lg:text-right">
+			<small class="font-[550] text-purple-600 uppercase">
 				Latest news &middot; 5 May 2026
 			</small>
-			<h1 class="max-w-[24ch] sm:max-lg:mx-auto mb-4 font-semibold text-2xl md:text-3xl lg:text-right">
+			<h1 class="max-w-[24ch] sm:max-lg:mx-auto mb-4 font-semibold text-2xl md:text-3xl">
 				School of Mathematics donates 35 laptops to Prewired
 			</h1>
-			<p class="max-w-[42ch] sm:max-lg:mx-auto md:text-lg lg:text-right">
+			<p class="max-w-[42ch] sm:max-lg:mx-auto md:text-lg italic">
 				The second-hand machines were due to be recycled but now have a new lease of life helping Edinburgh's young people learn programming.
 			</p>
-			<div class="flex flex-col md:flex-row md:justify-center lg:flex-row-reverse mt-4 gap-4">
+			<div class="flex flex-col sm:flex-row sm:justify-center lg:flex-row-reverse mt-4 gap-4">
 				<a
 					href="https://maths.ed.ac.uk/school-donates-35-laptops-to-coding-charity"
 					target="_blank" rel="noopener noreferrer"
-					class="w-full sm:w-fit sm:mx-auto md:mx-0 px-4 py-3 bg-purple-600 rounded-md cursor-pointer text-white text-center no-underline hover:bg-purple-800 active:bg-purple-900"
+					class="w-full sm:w-fit sm:mx-0 px-4 py-3 bg-purple-600 rounded-md cursor-pointer text-white text-center no-underline hover:bg-purple-800 active:bg-purple-900"
 				>
 					Read more
 				</a>
 				<a
 					href="/news/"
-					class="w-full sm:w-fit sm:mx-auto md:mx-0 px-4 py-3 bg-purple-100 rounded-md cursor-pointer text-black text-center no-underline hover:bg-purple-200 active:bg-purple-300"
+					class="w-full sm:w-fit sm:mx-0 px-4 py-3 bg-purple-100 rounded-md cursor-pointer text-black text-center no-underline hover:bg-purple-200 active:bg-purple-300"
 				>
 					See all updates
 				</a>

@@ -83,12 +83,12 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 				</button>
 				<!-- Small-screen menu -->
 				<dialog
-					class="h-[200%] max-h-[200%] w-full sm:w-1/2 max-w-full sm:left-1/2 p-10 bg-pink-50 sm:border-l-2 sm:border-pink-600 translate-x-10 open:translate-x-0 starting:open:translate-x-10"
+					class="h-full max-h-none w-full sm:w-1/2 max-w-full sm:left-1/2 p-10 bg-pink-50 sm:border-l-2 sm:border-pink-600 translate-x-10 open:translate-x-0 starting:open:translate-x-10"
 					id="menu-dialog"
 				>
 					<DialogCloseButton
 						id="menu-dialog-close-btn"
-						style="float-right clear-both"
+						style="absolute right-8"
 					/>
 					<nav class="flex flex-col items-center sm:items-start">
 						<div class="mt-12 mb-8">
