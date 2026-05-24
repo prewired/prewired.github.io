@@ -1,0 +1,178 @@
+---
+import { Picture } from "astro:assets";
+import PageLayout from "@layouts/PageLayout.astro";
+import coverPhoto from "@assets/photos/mt24_silly.jpg";
+import overview_mentor from "@assets/photos/mt24_mentor.jpg";
+import technical_mentor from "@assets/photos/cp24_mentor.jpg";
+import guidance_mentor from "@assets/photos/mt23_checkin.jpg";
+import teamwork from "@assets/photos/mt25_teamwork.jpg";
+---
+
+<PageLayout
+	title="Volunteer with us"
+	desc="We're always looking for more mentors! Learn how to join Prewired as a volunteer."
+	coverImageData={coverPhoto}
+	coverImageAlt="A large group of mentors and attendees making silly faces at the camera"
+>
+	<div class="px-4 md:px-8 pb-12 md:border-b">
+		<h2 class="pt-12">
+			We could always use more mentors!
+		</h2>
+		<p>
+			Helping young people learn to code is hugely rewarding. If you can offer your time for two hours on a Wednesday evening, we'd love to hear from you!
+		</p>
+		<a href="https://forms.gle/kV3kn9Nk9cQqZRvb8"
+			target="_blank" rel="noopener noreferrer"
+			class="block md:w-fit px-4 py-3 mb-4 bg-pink-600 hover:bg-pink-700 active:bg-pink-800 rounded-lg font-[450] text-white no-underline text-center"
+		>
+			Apply to volunteer
+		</a>
+		<p>
+			Prewired sessions take place weekly on Wednesday evenings at CodeBase Edinburgh. We run them pretty much throughout the year, except during Winter Break. Prewired attendees bring their own projects to work on and as mentors we support them in their learning and building.
+		</p>
+		<p>
+			We get a very wide range of young people. Some are absolute beginners just starting out in Scratch, others come to us to practice their skills because their school lacks a computing teacher, and a few are advanced well beyond their years writing C or programming microcontrollers. Some come with their friends and see Prewired as much a social club as a learning opportunity; others take their chance to focus on their individual projects and only ask for help when needed.
+		</p>
+		<p>
+			<strong>They are all welcome&mdash;and so are you</strong>, if you like working with young people and want to further their learning about computing and technology. Prewired is 100% volunteer-run and we can always use more help.
+		</p>
+	</div>
+
+	<div class="flex flex-col md:flex-row-reverse items-center mt-4 md:mt-0 *:md:p-4 *:lg:px-8 *:lg:py-12 md:border-b">
+		<Picture
+			src={overview_mentor}
+			formats={["avif", "webp"]}
+			alt="Two mentors are crouched down next to three attendees, looking at projects on their laptops together"
+			class="w-full h-48 md:h-96 object-cover"
+			pictureAttributes={{ class: "w-full md:w-1/2 shrink-0" }}
+		/>
+		<div class="px-4 max-md:mt-4">
+			<h2 class="text-purple-600 pt-2">
+				Who we're looking for
+			</h2>
+			<p>
+				You do not need to know how to code to volunteer at Prewired! We need both <em>technical mentors</em>, who can sit down with attendees and get into the weeds of their projects, as well as <em>guidance mentors</em>, who support our younger attendees and help with safeguarding.
+			</p>
+			<p>
+				Most importantly, we are looking for people who:
+			</p>
+			<ul class="mb-3 *:mb-1 *:pl-2">
+				<li class="list-['🧑‍👧‍👦']">Enjoy working with young people and care about their learning about technology</li>
+				<li class="list-['💌']">Are respectful, reliable, and communicative</li>
+				<li class="list-['📆']">Can commit to attending at least 1 session a month (on average)</li>
+			</ul>
+			<p>
+				Read on for more details about the different roles we have available.
+			</p>
+		</div>
+	</div>
+	<div class="flex flex-col md:flex-row items-center mt-4 md:mt-0 *:md:p-4 *:lg:px-8 *:lg:py-12 md:border-b">
+		<Picture
+			src={technical_mentor}
+			formats={["avif", "webp"]}
+			alt="Two mentors are crouched down next to three attendees, looking at projects on their laptops together"
+			class="w-full h-48 md:h-96 object-cover"
+			pictureAttributes={{ class: "w-full md:w-1/2 shrink-0" }}
+		/>
+		<div class="px-4 max-md:mt-4">
+			<h3 class="md:text-xl mt-2">
+				🤓 Technical mentors
+			</h3>
+			<p>
+				Technical mentors use their coding and/or tinkering experience to support and guide attendees during our events. Tasks include:
+			</p>
+			<ul class="mb-3 *:mb-1">
+				<li>Providing technical guidance to young people working on their projects</li>
+				<li>Helping new attendees find something to work on</li>
+				<li>Setting up and cleaning before and after sessions</li>
+				<li>Assisting the duty and guidance mentors with enforcing our rules</li>
+			</ul>
+			<p>You do not need prior teaching experience. However, you should really enjoy being with children and young people and not be afraid to take initiative to assist them!</p>
+		</div>
+	</div>
+	<div class="flex flex-col md:flex-row-reverse items-center mt-4 md:mt-0 *:md:p-4 *:lg:px-8 *:lg:py-12 md:border-b">
+		<Picture
+			src={guidance_mentor}
+			formats={["avif", "webp"]}
+			alt="A mentor is checking in two attendees and their parent at the front desk"
+			class="w-full h-48 md:h-96 object-cover"
+			pictureAttributes={{ class: "w-full md:w-1/2 shrink-0" }}
+		/>
+		<div class="px-4 max-md:mt-4">
+			<h3 class="md:text-xl mt-2">
+				🧭 Guidance mentors
+			</h3>
+			<p>
+				Guidance mentors support and encourage young people to participate during the sessions and provide administrative and coordinative support. Tasks include:
+			</p>
+			<ul class="mb-3 *:mb-1">
+				<li>Welcoming new attendees and helping them settle in</li>
+				<li>Providing basic support to our younger attendees</li>
+				<li>Encouraging attendees to participate and helping enforce our rules</li>
+				<li>Acting as duty mentor for some sessions, dealing with non-coding problems such as unwell or upset attendees</li>
+			</ul>
+			<p>
+				No coding experience is required but experience working with children is a plus.  
+			</p>
+		</div>
+	</div>
+	<div class="flex flex-col md:flex-row items-center mt-4 md:mt-0 *:md:p-4 *:lg:px-8 *:lg:py-12 border-b">
+		<Picture
+			src={teamwork}
+			formats={["avif", "webp"]}
+			alt="Three attendees working together on a Scratch project"
+			class="w-full h-48 md:h-96 object-cover"
+			pictureAttributes={{ class: "w-full md:w-1/2 shrink-0" }}
+		/>
+		<div class="px-4 pb-12 max-md:mt-4">
+			<h3 class="md:text-xl mt-2">
+				🐣 Junior mentors
+			</h3>
+			<p>
+				Interested in mentoring but not yet 18 years old? We have a limited capacity for Junior Mentors, older teenagers who help younger attendees with their projects but don't bear the safeguarding responsibilities of adult mentors. Feel free to reach out to us if you're interested in this role and we'll set up a chat to see if this would be suitable for you. It helps if you're already familiar with Prewired as an attendee.
+			</p>
+			<p>
+				If you are looking to volunteer as a Junior Mentor because you are seeking a particular certification, such as the Duke of Edinburgh Award, let us know as well and we'd be happy to support you in that to the extent that we're able to.
+			</p>
+		</div>
+	</div>
+
+	<div class="bg-blue-50 border-b flex">
+		<div class="hidden md:block w-16 border-r diastripe"></div>
+		<div class="px-4 md:px-12 pb-12">
+			<h2 class="text-blue-750">
+				What are duty mentors?
+			</h2>
+			<p>
+				At each session, one mentor takes on the role of Duty Mentor. They bear final responsibility for its running and deal with any problems not involving coding, such as unwell or upset attendees. If you've volunteered with us for a while, you're more than welcome to join the Duty Mentor team, but this is optional and not a responsibility that will ever be asked of you if you'd rather not have it.
+			</p>
+			<p>
+				Junior mentors cannot act as a duty mentor.
+			</p>
+		</div>
+	</div>
+
+	<div class="px-4 md:px-8">
+		<h2>
+			How to join
+		</h2>
+		<p>
+			Interested? Please fill out the following form:
+		</p>
+		<a href="https://forms.gle/kV3kn9Nk9cQqZRvb8"
+			target="_blank" rel="noopener noreferrer"
+			class="block md:w-fit px-4 py-3 mb-4 bg-pink-600 hover:bg-pink-700 active:bg-pink-800 rounded-lg font-[450] text-white no-underline text-center"
+		>
+			Apply to volunteer
+		</a>
+		<p>
+			After you submit, one of us will reach out to you to invite you along to a taster session, so you can see how we operate in practice. If afterwards you'd still like to join and we think you'd be a good fit, then you proceed to the next stage of the induction process: PVG certification. All of our volunteers are required to become members of the <a href="https://www.mygov.scot/pvg-scheme/" target="_blank" rel="noopener noreferrer">Protecting Vulnerable Groups (PVG) Scheme</a> in accordance with Disclosure Scotland and we work with <a href="https://www.volunteerscotland.net" target="_blank" rel="noopener noreferrer">Volunteer Scotland</a> to arrange this, free of charge.
+		</p>
+		<p>
+			When you have received your PVG, we will invite you and any other upcoming mentors to a training session where we share tips on how to make the most out of mentoring at Prewired and make you aware of our safeguarding policies. After this training, we will add you to our workspace and you can start signing up for sessions!
+		</p>
+		<p>
+			Note that all volunteers need to comply with our <a href="/child-protection/">Child Protection</a> as well as our <a href="/equality-diversity-inclusion/">Equality, Diversity, and Inclusion</a> policies.
+		</p>
+	</div>
+</PageLayout>

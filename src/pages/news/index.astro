@@ -60,7 +60,7 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 			const hoverBg = index % 3 === 0 ? "hover:bg-pink-50" : index % 3 === 1 ? "hover:bg-purple-50" : "hover:bg-blue-50";
 			const tagBg = index % 3 === 0 ? "bg-pink-200" : index % 3 === 1 ? "bg-purple-200" : "bg-blue-200";
 			return (<>
-				<h2 class="pt-8 md:pt-10 md:pb-1 lg:pt-2 px-4 md:max-lg:px-2 border-b-0 before:absolute before:w-screen before:md:w-[calc(100vw-2rem)] before:h-px before:left-0 before:min-[93rem]:-left-[calc(50vw-46rem)] before:top-2 before:md:top-5 before:lg:-top-4 before:bg-gray-200">
+				<h2 class="pt-8 md:pt-10 md:pb-1 lg:pt-2 px-4 md:max-lg:px-2 before:absolute before:w-screen before:md:w-[calc(100vw-2rem)] before:h-px before:left-0 before:min-[93rem]:-left-[calc(50vw-46rem)] before:top-2 before:md:top-5 before:lg:-top-4 before:bg-gray-200">
 					{ feedYear.year }
 				</h2>
 

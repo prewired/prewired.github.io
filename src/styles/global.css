@@ -83,7 +83,7 @@
 	}
 
 	h2 {
-		@apply relative pt-16 mb-2 font-semibold text-xl lg:text-2xl border-b;
+		@apply relative pt-16 mb-2 font-semibold text-xl lg:text-2xl;
 	}
 	h2:nth-of-type(3n) { @apply text-blue-750; }
 	h2:nth-of-type(3n+1) { @apply text-pink-600; }
@@ -95,7 +95,7 @@
 	h2 + h3 { @apply mt-0; }
 
 	footer h2 {
-		@apply text-base text-black! border-b-0 m-0 pt-0 uppercase;
+		@apply text-base text-black! m-0 pt-0 uppercase;
 	}
 
 	p, li {
@@ -198,7 +198,7 @@
 
 	/* Markdown-generated page (e.g. policy pages) styles */
 	.markdown > h2 {
-		@apply border-b-0 scroll-mt-14;
+		@apply scroll-mt-14;
 	}
 
 	.markdown > h2::before {
@@ -219,7 +219,7 @@
 
 	/* Blog post styles */
 	article > h2 {
-		@apply pt-8 lg:pt-12;
+		@apply pt-8 lg:pt-12 border-b;
 	}
 
 	article > p {
