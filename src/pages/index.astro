@@ -1,11 +1,13 @@
 ---
 import { Picture } from "astro:assets";
+import { getCollection } from "astro:content";
 import BaseLayout from "@layouts/BaseLayout.astro";
+import importImage from "@scripts/dynamicImportImage";
+import externalPosts from "./news/externalPosts";
 import cover from "@assets/photos/ws18_session.jpg";
 import cover_ascii from "@assets/photos/ws18_session_ascii.png";
 import marty from "@assets/misc/marty.webp";
 import overview from "@assets/photos/sh16_discuss.jpg";
-import news_update from "@assets/blog_external/maths_donation.jpg";
 import codebase from "@assets/logos/codebase-logo.png";
 import hypercube from "@assets/logos/hypercube-logo.png";
 import codeclub from "@assets/logos/codeclub-logo.png";
@@ -13,6 +15,30 @@ import robotical from "@assets/logos/robotical-logo.png";
 import uoe from "@assets/logos/uoe-logo.png";
 
 
+// Find the most recent news post
+const latestExternalPost = externalPosts[0];
+
+const blogPosts = await getCollection("posts");
+const latestInternalPost = blogPosts.at(-1)!;
+
+const recentNews = latestExternalPost.date > latestInternalPost.data.date ? {
+	title: latestExternalPost.title,
+	desc: latestExternalPost.desc,
+	date: latestExternalPost.date,
+	url: latestExternalPost.url,
+	img: latestExternalPost.banner,
+	imgAlt: latestExternalPost.bannerAlt,
+	external: true
+} : {
+	title: latestInternalPost.data.title,
+	desc: latestInternalPost.data.desc,
+	date: latestInternalPost.data.date,
+	url: `/news/${latestInternalPost.id}/`,
+	img: await importImage(latestInternalPost.data.coverImage),
+	imgAlt: latestInternalPost.data.coverImage.alt
+};
+
+// List of sponsors at bottom of page
 const sponsors = [
 	{ name: "CodeBase", href: "https://thisiscodebase.com", src: codebase, style: "py-4" },
 	{ name: "Hypercube", href: "https://wearehypercube.com", src: hypercube, style: "py-4" },
@@ -157,26 +183,27 @@ const coverImageAlt = "A room full of young people working on laptops at low and
 	<section class="flex flex-col lg:flex-row-reverse lg:justify-center">
 		<div class="lg:w-1/2 lg:py-24 shrink-0">
 			<Picture priority
-				src={news_update}
+				src={recentNews.img}
 				formats={["avif", "webp"]}
-				alt="Three Prewired volunteers posing behind a trolley carrying 35 laptops"
+				alt={recentNews.imgAlt}
 				class="h-60 lg:h-96 lg:w-[80%] lg:max-w-xl lg:ml-16 object-cover lg:rounded-lg"
 			/>
 		</div>
 		<div class="md:w-3/4 lg:w-1/2 md:max-lg:mx-auto px-4 lg:pr-12 py-8 lg:border-r lg:flex lg:flex-col lg:justify-center lg:items-end sm:text-center lg:text-right">
 			<small class="font-[550] text-purple-600 uppercase">
-				Latest news &middot; 5 May 2026
+				Latest news &middot; { recentNews.date.toLocaleDateString("en-GB") }
 			</small>
 			<h1 class="max-w-[24ch] sm:max-lg:mx-auto mb-4 font-semibold text-2xl md:text-3xl">
-				School of Mathematics donates 35 laptops to Prewired
+				{ recentNews.title }
 			</h1>
 			<p class="max-w-[42ch] sm:max-lg:mx-auto md:text-lg italic">
-				The second-hand machines were due to be recycled but now have a new lease of life helping Edinburgh's young people learn programming.
+				{ recentNews.desc }
 			</p>
 			<div class="flex flex-col sm:flex-row sm:justify-center lg:flex-row-reverse mt-4 gap-4">
 				<a
-					href="https://maths.ed.ac.uk/school-donates-35-laptops-to-coding-charity"
-					target="_blank" rel="noopener noreferrer"
+					href={recentNews.url}
+					target={recentNews.external ? "_blank" : "_self"}
+					rel={recentNews.external ? "noopener noreferrer" : undefined}
 					class="w-full sm:w-fit sm:mx-0 px-4 py-3 bg-purple-600 rounded-md cursor-pointer text-white text-center no-underline hover:bg-purple-800 active:bg-purple-900"
 				>
 					Read more
