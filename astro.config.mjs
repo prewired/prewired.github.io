@@ -1,4 +1,5 @@
 import { defineConfig, fontProviders } from "astro/config";
+import { unified } from '@astrojs/markdown-remark';
 import sitemap from "@astrojs/sitemap";
 import tunnel from "astro-tunnel";
 import a11yEmoji from "@fec/remark-a11y-emoji";
