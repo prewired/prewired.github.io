@@ -29,7 +29,9 @@ export default defineConfig({
 	}],
 
 	markdown: {
-		remarkPlugins: [a11yEmoji]
+		processor: unified({
+			remarkPlugins: [a11yEmoji]
+		})
 	},
 
 	vite: {

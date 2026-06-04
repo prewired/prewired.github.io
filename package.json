@@ -12,12 +12,12 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
-    "@astrojs/sitemap": "^3.7.2",
+    "@astrojs/sitemap": "^3.7.3",
     "@fontsource-variable/rubik": "^5.2.8",
-    "@tailwindcss/vite": "^4.2.4",
-    "astro": "^6.3.7",
+    "@tailwindcss/vite": "^4.3.0",
+    "astro": "^6.4.4",
     "astro-tunnel": "^0.1.9",
-    "tailwindcss": "^4.2.4",
+    "tailwindcss": "^4.3.0",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
