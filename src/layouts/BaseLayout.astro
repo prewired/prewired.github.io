@@ -3,6 +3,9 @@ import { Font, getImage, Picture } from "astro:assets";
 import "../styles/global.css";
 import DialogCloseButton from "@components/DialogCloseButton.astro";
 import prewiredLogoText from "@assets/logos/prewired-logo-text.png";
+import weeklysessions from "@assets/photos/ws16_roundtables.jpg";
+import summerhack from "@assets/photos/sh16_presentation.jpg";
+import fll from "@assets/photos/fll24_showoff.jpg";
 
 
 interface Props {
@@ -19,12 +22,18 @@ const { title, ogTitle, desc, type, author, coverImageData, coverImageAlt } = As
 
 const navItems = [
 	{ href: "/news/", title: "News", accent: "blue" },
-	{ href: "/activities/", title: "Activities", accent: "purple" },
+	{ href: "/activities/", title: "Events", accent: "purple" },
 	{ href: "/resources/", title: "Resources", accent: "pink" },
 	{ href: "/volunteering/", title: "Volunteering", accent: "blue" },
 	{ href: "/support/", title: "Support us", accent: "purple" },
 	{ href: "/about/", title: "About", accent: "pink" },
 	{ href: "/contact/", title: "Contact", accent: "blue" },
+];
+
+const eventItems = [
+	{ href: "/", title: "Weekly Coding Club", imgSrc: weeklysessions, imgAlt: "Young people working on laptops in the CodeBase coworking space with parents sitting in the background" },
+	{ href: "/", title: "Summer Make-a-Thon", imgSrc: summerhack, imgAlt: "Four young people presenting a slide in front of an audience of about 30 listening adults" },
+	{ href: "/", title: "FIRST LEGO League", imgSrc: fll, imgAlt: "Four children wearing t-shirts that read 'Plastic Pollution Solution' looking at a laptop surrounded by LEGO" }
 ];
 
 // Get the URL for this page
@@ -108,14 +117,38 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 				<!-- Large-screen menu -->
 				<nav class="relative h-full mx-4 -mb-px hidden lg:flex gap-7 xl:gap-12 z-50">
 					{ navItems.map(({ href, title, accent }) => (
-						<a href={href} class={`pt-2 md:py-8 shrink-0 font-[450] text-black no-underline border-b-2 border-transparent
-							${Astro.url.pathname === href ? 
-								(accent === "pink" ? "text-pink-600 border-pink-600!" : accent === "purple" ? "text-purple-600 border-purple-600!" : "text-blue-750 border-blue-750!")
-							: (accent === "pink" ? "hover:text-pink-600" : accent === "purple" ? "hover:text-purple-600" : "hover:text-blue-750")}
-						`}>
+						<a
+							href={href}
+							id={href === "/activities/" ? "eventsPopoverTrigger" : undefined}
+							class={`pt-2 md:py-8 shrink-0 font-[450] text-black no-underline border-b-2 border-transparent
+								${Astro.url.pathname === href ? 
+									(accent === "pink" ? "text-pink-600 border-pink-600!" : accent === "purple" ? "text-purple-600 border-purple-600!" : "text-blue-750 border-blue-750!")
+								: (accent === "pink" ? "hover:text-pink-600" : accent === "purple" ? "hover:text-purple-600" : "hover:text-blue-750")}
+							`}
+						>
 							{ title }
 						</a>
 					))}
+					<div
+						id="events-popover"
+						class="w-153 flex flex-wrap p-2 bg-white border rounded-xl shadow"
+					>
+						{ eventItems.map(({href, title, imgSrc, imgAlt}) => (
+							<a href={href} class="w-fit block p-2 rounded-lg text-black no-underline hover:bg-purple-50 hover:text-purple-900">
+								<Picture
+									src={imgSrc}
+									formats={["avif", "webp"]}
+									alt={imgAlt}
+									width="280"
+									height="180"
+									class="rounded-lg mb-2"
+								/>
+								<p class="mb-0 font-[450]">
+									{ title }
+								</p>
+							</a>
+						))}
+					</div>
 				</nav>
 			</header>
 	
@@ -218,6 +251,11 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 		</div>
 
 		<script>
+			import tippy from "tippy.js";
+			import 'tippy.js/animations/shift-away-subtle.css';
+
+
+			/* Toggle the hamburger menu on small screens */
 			const menuOpenBtn = document.getElementById("menu-open-btn") as HTMLButtonElement;
 			const menuDialog = document.getElementById("menu-dialog") as HTMLDialogElement;
 			const menuCloseBtn = document.getElementById("menu-dialog-close-btn") as HTMLButtonElement;
@@ -233,6 +271,19 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 			menuDialog.addEventListener("click", event => {
 				// Close the dialog on tapping the backdrop
 				if (event.target === menuDialog) menuDialog.close();
+			});
+
+
+			/* Set up the Events navigation menu on large screens */
+			const eventsPopover = document.getElementById("events-popover") as HTMLDivElement;
+
+			tippy("#eventsPopoverTrigger", {
+				content: eventsPopover,
+				animation: "shift-away-subtle",
+				interactive: true,
+				maxWidth: "none",
+				offset: [0, -8],
+				placement: "bottom"
 			});
 		</script>
 	</body>

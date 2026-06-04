@@ -18,6 +18,7 @@
     "astro": "^6.4.4",
     "astro-tunnel": "^0.1.9",
     "tailwindcss": "^4.3.0",
+    "tippy.js": "^6.3.7",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
