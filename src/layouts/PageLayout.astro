@@ -7,7 +7,7 @@ interface Props {
 	desc: string;
 	coverImageData: ImageMetadata;
 	coverImageAlt: string;
-	accent?: "blue" | "purple" | "pink";
+	accent: "blue" | "purple" | "pink";
 	headings?: { depth: number; slug: string; text: string }[];
 	noPaddingBottom?: boolean;
 }
@@ -22,25 +22,33 @@ const { title, desc, coverImageData, coverImageAlt, accent, headings, noPaddingB
 	coverImageData={coverImageData}
 	coverImageAlt={coverImageAlt}
 >
-	<div class={`relative lg:h-72 ${accent === "pink" ? "bg-pink-50" : accent === "purple" ? "bg-purple-50" : "bg-blue-50"} border-b`}>
+	<div
+		style={{ "--accent": `var(--color-${accent}-50)` }}
+		class="relative lg:h-120 bg-(--accent) border-b"
+	>
 		<Picture priority
 			src={coverImageData}
 			formats={["avif", "webp"]}
 			alt={coverImageAlt}
-			class="h-54 lg:h-full object-cover mask-linear-182 mask-linear-from-50% mask-linear-to-90% lg:-mask-linear-85 lg:mask-linear-from-60% lg:mask-linear-to-90%"
-			pictureAttributes={{ class: "block relative lg:absolute h-full w-[calc(100%+2rem)] lg:w-3/5 max-w-360 top-0 max-lg:-left-4 lg:right-0" }}
+			class="h-54 lg:h-full object-cover mask-radial-at-top-right mask-radial-[200%_100%] mask-radial-from-99% lg:mask-radial-at-bottom-right lg:mask-radial-[100%_200%] lg:mask-radial-from-50%"
+			pictureAttributes={{ class: "block relative lg:absolute lg:h-120 w-full lg:w-3/5 max-w-360 top-0 lg:right-0" }}
 		/>
-		<div class="h-full max-w-360 mx-auto pb-6 lg:pb-0 px-4 lg:px-8 flex flex-col justify-end lg:justify-center">
-			<h1 class={`max-w-[20ch] lg:text-4xl xl:text-5xl ${accent === "pink" ? "text-pink-950" : accent === "purple" ? "text-purple-950" : "text-blue-950"}`}>
+		<div class="h-full max-w-360 mx-auto py-6 lg:py-0 px-4 lg:px-8 flex flex-col justify-end lg:justify-center">
+			<h1
+				style={{ "--accent": `var(--color-${accent}-950)` }}
+				class="max-w-[20ch] xl:text-5xl text-(--accent)"
+			>
 				{ title }
 			</h1>
-			<p class="max-w-[72ch] lg:max-w-[36ch] xl:max-w-[48ch] mb-0">
-				{ desc }
-			</p>
+			<slot name="blurb">
+				<p class="max-w-[72ch] lg:max-w-[36ch] xl:max-w-[44ch]">
+					{ desc }
+				</p>
+			</slot>
 		</div>
 	</div>
-	<div class="flex min-h-[50vh]">
-		{ headings &&
+	{ headings ? (
+		<div class="flex min-h-[50vh]">
 			<div class="hidden lg:block sticky top-24 w-60 h-full shrink-0 pt-4 pb-2 border-b">
 				<div class="pb-4 px-4 border-b font-semibold text-sm uppercase text-gray-600">
 					On this page
@@ -54,10 +62,15 @@ const { title, desc, coverImageData, coverImageAlt, accent, headings, noPaddingB
 					</a>
 				)) }
 			</div>
-		}
-		<div class={`grow ${headings ? "min-[97rem]:border-l" : "w-full max-w-360 mx-auto pb-24 md:pb-32 min-[93rem]:border-x"} ${noPaddingBottom && "pb-0!"}`}>
+			<div class="grow min-[97rem]:border-l">
+				<slot />
+			</div>
+			<div class="hidden xl:block w-60 shrink-0" />
+		</div>
+	) :
+		<div class={`min-h-[50vh] pb-24 md:pb-32 ${noPaddingBottom && "pb-0!"}`}>
 			<slot />
 		</div>
-		{ headings && <div class="hidden xl:block w-60 shrink-0" /> }
+	}
 	</div>
 </BaseLayout>

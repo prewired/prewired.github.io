@@ -2,9 +2,10 @@
 
 
 /* Extending and overriding the default Tailwind styling */
-@theme inline {
-	/* Override large screen breakpoint */
+@theme static {
+	/* Override large screen breakpoint and add a version with margins */
 	--breakpoint-2xl: 90rem;
+	--breakpoint-2xlp: 93rem;
 
 	/* Custom colours */
 	--color-blue-50: #EDFCFF;
@@ -43,8 +44,9 @@
 	--color-pink-800: #A8094F;
 	--color-pink-900: #8F0C4A;
 	--color-pink-950: #500124;
+}
 
-
+@theme inline {
 	/* Custom fonts */
 	--font-sans: var(--font-rubik), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -61,8 +63,7 @@
 	}
 
 	html {
-		@apply transition duration-300;
-		scrollbar-gutter: stable;
+		@apply transition duration-300 scrollbar-gutter-stable;
 	}
 
 	html:has(dialog[open]) {
@@ -70,36 +71,43 @@
 		@apply overflow-y-hidden;
 	}
 
+	/* Apply correct background colour to scroll gutter when a modal dialog is open */
+	html:has(#menu-dialog[open]) { @apply bg-pink-50; }
+	html:has(#tickets-dialog[open]) { @apply bg-black/25; }
+
+
 	div, section, header, footer, hr {
 		@apply border-gray-200 divide-gray-200;
 	}
 
-	/* Apply correct background colour to scroll gutter when a modal dialog is open */
-	html:has(#menu-dialog[open]) { @apply bg-pink-50; }
-	html:has(#tickets-dialog[open]) { @apply bg-black/25; }
 
 	h1 {
 		@apply mb-2 font-semibold text-4xl;
 	}
 
 	h2 {
-		@apply relative pt-16 mb-2 font-semibold text-xl lg:text-2xl;
+		@apply mb-2 font-semibold text-xl lg:text-3xl;
 	}
 	h2:nth-of-type(3n) { @apply text-blue-750; }
 	h2:nth-of-type(3n+1) { @apply text-pink-600; }
 	h2:nth-of-type(3n+2) { @apply text-purple-600; }
 
 	h3 {
-		@apply mt-8 font-medium;
+		@apply font-medium lg:text-2xl;
 	}
-	h2 + h3 { @apply mt-0; }
+	/* h2 + h3 { @apply mt-0; } */
 
 	footer h2 {
 		@apply text-base text-black! m-0 pt-0 uppercase;
 	}
 
+
 	p, li {
 		@apply max-w-[72ch] mb-4;
+	}
+
+	p:last-of-type {
+		@apply mb-0;
 	}
 
 	strong {
@@ -116,6 +124,15 @@
 
 	a {
 		@apply text-blue-800 hover:text-purple-600 underline underline-offset-2;
+	}
+
+
+	section {
+		@apply w-full border-b mt-4 md:mt-0 py-8 md:py-12 lg:py-20 *:w-full *:max-w-360 *:mx-auto;
+	}
+
+	section:last-of-type {
+		@apply border-b-0 pb-0!;
 	}
 
 	hr {
@@ -182,10 +199,12 @@
 		@apply px-1.5 py-1 bg-blue-100 text-blue-900 rounded;
 	}
 
+
 	/* Decorative fill */
 	.diastripe {
 		@apply bg-[repeating-linear-gradient(315deg,var(--color-gray-200)_0,var(--color-gray-200)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px];
 	}
+
 
 	/* Responsive sizing for iframes */
 	.iframe-wrapper {
@@ -195,6 +214,7 @@
 	.iframe-wrapper > iframe {
 		@apply absolute top-0 left-0 w-full h-full border-0;
 	}
+
 
 	/* Markdown-generated page (e.g. policy pages) styles */
 	.markdown > h2 {
@@ -217,6 +237,7 @@
 		@apply relative w-[calc(100%+2rem)] -left-4 lg:w-[calc(100%+4rem)] lg:-left-8 my-12;
 	}
 
+
 	/* Blog post styles */
 	article > h2 {
 		@apply pt-8 lg:pt-12 border-b;
@@ -234,6 +255,7 @@
 		@apply leading-8 mb-0;
 	}
 
+
 	/* TicketTailor widget */
 	.tt-widget {
 		@apply max-w-175 shrink-0 relative lg:-left-4 mb-2 mx-auto lg:mx-0 scroll-mt-14;
@@ -242,6 +264,7 @@
 	.tt-widget-fallback {
 		@apply p-8 bg-white border rounded-lg;
 	}
+
 
 	/* Ko-fi button */
 	a.kofi-button {
