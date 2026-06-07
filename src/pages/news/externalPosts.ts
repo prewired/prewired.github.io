@@ -28,6 +28,7 @@ type ExternalPost = {
 	favicon: ImageMetadata;
 	banner: ImageMetadata;
 	bannerAlt: string;
+	tags?: string[];
 };
 
 const externalPosts: ExternalPost[] = [
@@ -49,7 +50,8 @@ const externalPosts: ExternalPost[] = [
 		desc: "Our third annual Make-a-Thon was sponsored again by Hypercube! Read all about the event in their blog post.",
 		favicon: hypercube,
 		banner: mt25,
-		bannerAlt: "The three winners of the Make-a-Thon presenting their awards and prizes together with a Prewired mentor and competition judge"
+		bannerAlt: "The three winners of the Make-a-Thon presenting their awards and prizes together with a Prewired mentor and competition judge",
+		tags: ["make-a-thon"]
 	},
 	{
 		url: "https://medium.com/@indiathomson/prewired-x-hypercube-summer-make-a-thon-41f03bea0311",
@@ -59,7 +61,8 @@ const externalPosts: ExternalPost[] = [
 		desc: "At the end of July, we hosted our second annual Summer Make-A-Thon, this time sponsored by Hypercube consulting.",
 		favicon: medium,
 		banner: mt24,
-		bannerAlt: "The three winners of the Make-a-Thon presenting their awards and prizes together with a Prewired mentor and competition judge"
+		bannerAlt: "The three winners of the Make-a-Thon presenting their awards and prizes together with a Prewired mentor and competition judge",
+		tags: ["make-a-thon"]
 	},
 	{
 		url: "https://medium.com/kinandcartacreated/summer-tech-make-a-thon-dedaa474d3eb",
@@ -69,7 +72,8 @@ const externalPosts: ExternalPost[] = [
 		desc: "For the first time since the pandemic, Prewired hosted a Summer Make-A-Thon, sponsored by Kin + Carta. Read more in India's blog post!",
 		favicon: medium,
 		banner: mt23,
-		bannerAlt: "The four winners of the Make-a-Thon presenting their awards and prizes"
+		bannerAlt: "The four winners of the Make-a-Thon presenting their awards and prizes",
+		tags: ["make-a-thon"]
 	},
 	{
 		url: "https://www.gov.uk/government/publications/mapping-informal-cyber-security-initiatives-for-young-people-aged-5-19/mapping-informal-cyber-security-initiatives-for-young-people-aged-5-19",
@@ -89,7 +93,8 @@ const externalPosts: ExternalPost[] = [
 		desc: "Prewired is teaming up with the Tinderbox Collective to launch The Emporium of Digital Delights, our new online summer hackathon series.",
 		favicon: tinderbox,
 		banner: eodd,
-		bannerAlt: "Coloured banner saying 'The Emporium of Digital Delights, May - July 2021'"
+		bannerAlt: "Coloured banner saying 'The Emporium of Digital Delights, May - July 2021'",
+		tags: ["make-a-thon"]
 	},
 	{
 		url: "https://www.digit.fyi/prewired-receives-funding-to-bring-coding-club-online/",

@@ -1,0 +1,92 @@
+---
+import { Picture } from "astro:assets";
+import SectionWithImage from "@components/SectionWithImage.astro";
+import PageLayout from "@layouts/PageLayout.astro";
+import coverPhoto from "@assets/photos/cp24_lego.jpg";
+import team from "@assets/photos/fll26_competition.jpg";
+import fll from "@assets/photos/fll24_showoff.jpg";
+
+// Four children wearing t-shirts that read 'Plastic Pollution Solution' looking at a laptop surrounded by LEGO
+---
+
+<PageLayout
+	title="FIRST LEGO League"
+	desc="During the school year, we run FIRST LEGO League teams and compete in the Edinburgh competition!"
+	coverImageData={coverPhoto}
+	coverImageAlt="A laptop with block-based code to program a LEGO robot driving on a game mat around LEGO models"
+	accent="purple"
+>
+	<section class="pb-4 max-md:border-b-0">
+		<div class="px-4 lg:px-8">
+			<h2>What is FIRST LEGO League?</h2>
+			<p>
+				From September to February, we run FIRST LEGO League in parallel to our <a href="/events/coding-club/">normal sessions</a>. In FIRST LEGO League, you work in a team on several challenges every week, working up to a big tournament! 
+			</p>
+			<p>
+				FLL consists of several parts:
+			</p>			
+		</div>
+	</section>
+
+	<section class="py-0 max-md:border-b-0">
+		<div class="flex flex-col md:flex-row 2xlp:border-x">
+			<div class="md:w-1/3 px-4 py-2 md:py-4 lg:p-8 md:border-r">
+				<p class="mb-0 md:mb-2 mr-2 font-semibold">🤖&nbsp;&nbsp;Robot game and engineering</p>
+				<p>
+					Build a LEGO robot that can complete challenges on the game mat. On competition day, complete as many challenges as possible in 2.5 mins and present the features of the robot to a panel of judges.
+				</p>
+			</div>
+			<div class="md:w-1/3 p-4 py-2 md:py-4 lg:p-8 md:border-r">
+				<p class="mb-0 md:mb-2 mr-2 font-semibold">💡&nbsp;&nbsp;Innovation project</p>
+				<p>
+					Research a problem related to the challenge theme and design an innovation that can solve it. On competition day, present the design to the judges and convince them why it is important.
+				</p>
+			</div>
+			<div class="md:w-1/3 p-4 py-2 md:py-4 lg:p-8">
+				<p class="mb-0 md:mb-2 mr-2 font-semibold">🤝&nbsp;&nbsp;Core values</p>
+				<p>
+					Embody the FLL Core Values of discovery, innovation, impact, inclusion, teamwork, and fun. On competition day, show the judges how far you've come as a team!
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="max-md:pb-12 lg:pt-8">
+		<div class="px-4 lg:px-8">
+			<p>
+				We've participated in the Edinburgh competition several times and even won a few prizes, such as Best Innovation Project by our team <em>Plastic Pollution Solution</em> in 2025! Thanks to a <a href="https://www.digitalxtra.scot/programmes/99y8n3lf39rhnm8-4wnsf-53cd8-nb46r-a7ga7-rb7b4-9fgmg-tckxj-5mka5-lgnlm-4sw7z-hszpp-73p7l" target="_blank" rel="noopener noreferrer">grant from Digital Xtra</a> in 2024, we have two LEGO SPIKE Prime sets that our teams have full use of during the season.
+			</p>
+			<p>
+				FIRST LEGO League at Prewired is open to those aged 11-16. Sign-up opens in August.
+			</p>
+		</div>
+	</section>
+
+	<SectionWithImage
+		imgSrc={team}
+		imgAlt="All Prewired participants of the 2025-2026 team and two mentors lined up at the competition, showing off medals"
+		style="bg-purple-50"
+	>
+		<h2>
+			Prewired teams shine at the 2026 FIRST LEGO League!
+		</h2>
+		<p class="mb-6">
+			We joined the 2026 competition at Edinburgh College with two teams: the Groundbreakers and the Dale Diorites. Both did very well&mdash;read all about it in our news post!
+		</p>
+		<a
+			href="/news/2026-02-12-first-lego-league-2026/"
+			class="block md:w-fit px-4 py-3 mb-4 bg-purple-600 hover:bg-purple-800 active:bg-purple-900 rounded-lg font-[450] text-white no-underline text-center"
+		>
+			Read blog post
+		</a>
+	</SectionWithImage>
+
+	<section>
+		<div class="px-4 lg:px-8">
+			<h2>Upcoming changes to FIRST LEGO League</h2>
+			<p>
+				In spring 2026, LEGO announced some big changes coming to FLL: they've introduced a new, simplified, format alongside new LEGO kits, which will be mandatory from the 2028-2029 season. In addition, they have ended their partnership with FIRST, and will start organising LEGO League themselves from the 2027-2028 season. What exactly this is going to mean for how we can run FLL is unclear; we are waiting on more details from the Institute of Engineering and Technology, who run FLL in the UK and Ireland, before deciding on whether and how we will run FLL going forward.
+			</p>			
+		</div>
+	</section>
+</PageLayout>

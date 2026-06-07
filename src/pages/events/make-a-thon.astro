@@ -1,0 +1,129 @@
+---
+import { Picture } from "astro:assets";
+import { getCollection } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import importImage from "@scripts/dynamicImportImage";
+import coverPhoto from "@assets/photos/sh16_presentation.jpg";
+import externalPosts from "../news/externalPosts";
+
+
+// Get Make-a-Thon archive
+type FeedItem = {
+	type: "local" | "external";
+	url: string;
+	date: Date;
+	site?: string;
+	title: string;
+	desc: string;
+	favicon?: ImageMetadata;
+	banner?: ImageMetadata;
+	bannerAlt?: string;
+	tags?: string[];
+};
+
+// Get local blog posts
+const blogPosts = await getCollection("posts");
+
+// Combine local blog posts and external posts into one feed
+const feed: FeedItem[] = [];
+for (const post of blogPosts.filter(post => post.data.tags.includes("summerhack"))) {
+	feed.push({ ...post.data, url: `/news/${post.id}/`, banner: await importImage(post.data.coverImage), bannerAlt: post.data.coverImage.alt, type: "local" });
+}
+externalPosts.filter(post => post.tags?.includes("make-a-thon")).forEach(post => feed.push({ ...post, type: "external" }));
+
+// Sort by date, descending
+feed.sort((a, b) => b.date.valueOf() - a.date.valueOf());
+---
+
+<PageLayout
+	title="Summer Make-a-Thon"
+	desc="Since 2016, our yearly Make-a-Thon has drawn young people from in and around Edinburgh to compete in teams to build the best project in a short time!"
+	coverImageData={coverPhoto}
+	coverImageAlt="Four young people presenting a slide in front of an audience of about 30 listening adults"
+	accent="purple"
+>
+	<section>
+		<div class="px-4 lg:px-8">
+			<h2>🏗️ The 2026 Summer Make-a-Thon is coming!</h2>
+			<p>
+				Watch this space... registration for the 2026 Prewired Summer Make-a-Thon will open soon.
+			</p>
+		</div>
+	</section>
+
+	<section>
+		<div class="px-4 lg:px-8">
+			<h2>What is the Summer Make-a-Thon?</h2>
+			<p>
+				Each year, usually in July, we run our Summer Make-a-Thon: a full-weekend event during which participants work in small teams to prototype a solution to a challenge over the course of two days and present their work to a panel of judges at the end.
+			</p>
+			<p>
+				The Make-a-Thon is open to those aged 11-18 and is a fantastic opportunity to practice working in a team, quickly scaffolding a project, and presenting in front of an audience.
+			</p>
+		</div>
+	</section>
+
+	<section>
+		<div class="px-4 lg:px-8">
+			<h2>Make-a-Thon and Summer Hack archive</h2>
+			<p>
+				From 2016 to 2019, we ran week-long Summer Hacks each year. After a break for COVID, we returned in 2023 with the current Make-a-Thon format. See below for impressions of the editions so far:
+			</p>
+		</div>
+
+		<div class="lg:px-6">
+			{ feed.map(({ type, url, date, site, title, desc, favicon, banner, bannerAlt, tags }) => (
+				<a
+					href={url}
+					target={type === "external" ? "_blank" : "_self"}
+					rel={type === "external" ? "noopener noreferrer" : undefined}
+					class={`block relative mt-6 md:mt-0 pb-4 md:py-2 text-black! no-underline! hover:bg-blue-50`}
+				>
+					<div class="flex flex-wrap md:flex-nowrap">
+						{ banner && bannerAlt && 
+							<Picture
+								src={banner}
+								formats={["avif", "webp"]}
+								alt={bannerAlt}
+								class="w-full h-52 object-cover bg-gray-200"
+								pictureAttributes={{ class: "w-full md:w-80 shrink-0 md:p-2" }}
+							/>
+						}
+						<div class="max-w-2xl pt-4 md:pt-2 px-4 lg:-mt-px">
+							{ type === "local" ?
+								tags?.map(tag => (
+									<div class="inline-flex">
+										<div class={`mr-2 mb-2 bg-blue-200 px-2 py-1 leading-0`}>
+											<span class="text-sm font-medium text-black uppercase">
+												{ tag }
+											</span>
+										</div>
+									</div>
+								))
+							: (
+								<div class="flex items-center mb-2 text-sm">
+									From
+									{ favicon &&
+										<Picture
+											src={favicon}
+											formats={["avif", "webp"]}
+											alt={`${site} favicon`}
+											class="w-4 h-4 mx-2"
+										/>
+									}
+									<span>{ site }</span>
+								</div>
+							) }
+							<h3 class="mt-0 mb-1 md:mb-0 font-semibold text-xl not-italic">
+								{ title }
+							</h3>
+							<p>
+								{ date.toLocaleDateString("en-GB") } &middot; { desc }
+							</p>
+						</div>
+					</div>
+				</a>
+			)) }
+		</div>
+	</section>
+</PageLayout>

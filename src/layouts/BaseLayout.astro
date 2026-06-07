@@ -19,12 +19,18 @@ const { title, ogTitle, desc, type, author, coverImageData, coverImageAlt } = As
 
 const navItems = [
 	{ href: "/news/", title: "News", accent: "blue" },
-	{ href: "/activities/", title: "Events", accent: "purple" },
+	{ href: "/events/", title: "Events", accent: "purple" },
 	{ href: "/resources/", title: "Resources", accent: "pink" },
 	{ href: "/volunteering/", title: "Volunteering", accent: "blue" },
 	{ href: "/support/", title: "Support us", accent: "purple" },
 	{ href: "/about/", title: "About", accent: "pink" },
 	{ href: "/contact/", title: "Contact", accent: "blue" },
+];
+
+const eventItems = [
+	{ href: "/events/coding-club/", title: "🧑‍💻\u00A0\u00A0\u00A0Weekly Coding Club" },
+	{ href: "/events/make-a-thon/", title: "☀️\u00A0\u00A0\u00A0Summer Make-a-Thon" },
+	{ href: "/events/first-lego-league/", title: "🤖\u00A0\u00A0\u00A0FIRST LEGO League" }
 ];
 
 // Get the URL for this page
@@ -92,34 +98,46 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 						id="menu-dialog-close-btn"
 						style="absolute right-8"
 					/>
-					<nav class="flex flex-col items-center sm:items-start">
+					<nav>
 						<div class="mt-12 mb-8">
-							<a href="/" class={`text-2xl text-black no-underline ${Astro.url.pathname === "/" ? "font-bold" : "hover:text-pink-600"}`}>
+							<a href="/" class={`text-2xl text-black no-underline ${Astro.url.pathname === "/" ? "font-semibold" : "hover:text-pink-600"}`}>
 								Home
 							</a>
 						</div>
 						{ navItems.map(({ href, title }) => (
 							<div class="mb-8">
-								<a href={href} class={`text-2xl text-black no-underline ${Astro.url.pathname === href ? "font-bold" : "hover:text-pink-600"}`}>
+								<a href={href} class={`text-2xl text-black no-underline ${Astro.url.pathname === href ? "font-semibold" : "hover:text-pink-600"}`}>
 									{ title }
 								</a>
+								{ href === "/events/" &&
+									<div>
+										{ eventItems.map(({ href, title }) => 
+											<a href={href} class={`block mt-4 text-xl text-black no-underline ${Astro.url.pathname === href ? "font-semibold" : "hover:text-pink-600"}`}>
+												{ title }
+											</a>
+										)}
+									</div>
+								}
 							</div>
 						))}
 					</nav>
 				</dialog>
 
 				<!-- Large-screen menu -->
-				<nav class="relative h-full mx-4 -mb-px hidden lg:flex gap-7 xl:gap-12 z-50">
+				<nav class="relative h-full mx-2 -mb-px hidden lg:flex gap-4 xl:gap-8 z-50">
 					{ navItems.map(({ href, title, accent }) =>
-						href === "/activities/" ? (
+						href === "/events/" ? (
 							// Wrapper div for Tippy accessibility
 							<div>
 								<button
 									id="eventsPopoverTrigger"
-									class={`group flex pt-2 md:py-8 shrink-0 font-[450] text-black no-underline border-b-2 border-transparent cursor-pointer ${Astro.url.pathname === href ? "text-purple-600! border-purple-600!" : "hover:text-purple-600 data-open:text-purple-600"}`}
+									class={`group flex pt-8 pb-6 shrink-0 font-[450] text-black no-underline border-b-2 border-transparent cursor-pointer ${Astro.url.pathname.includes(href) ? "text-purple-600 border-purple-600!" : "hover:text-purple-600 data-open:text-purple-600"}`}
 								>
 									{ title }
-									<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 ml-1.5 -mt-px -mr-2 group-hover:fill-purple-600 group-data-open:fill-purple-600 group-data-open:rotate-180 transition-transform duration-200" viewBox="0 -960 960 960">
+									<svg xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 -960 960 960"
+										class={`w-8 h-8 ml-1.5 -mt-px -mr-2 ${Astro.url.pathname.includes(href) ? "fill-purple-600" : "group-hover:fill-purple-600 group-data-open:fill-purple-600"} group-data-open:rotate-180 transition-transform duration-200`}
+									>
 										<path d="M468.31-372.72q-5.28-2.1-10.23-7.05L271.54-566.31q-7.23-7.23-7.22-17.7.01-10.48 7.63-18.09 7.61-7.62 17.9-7.62 10.28 0 17.89 7.62L480-429.43 652.67-602.1q7.23-7.23 17.5-7.22 10.27.01 17.88 7.63 7.62 7.61 7.62 17.9 0 10.28-7.62 17.89L501.92-379.77q-4.95 4.95-10.23 7.05-5.28 2.1-11.69 2.1-6.41 0-11.69-2.1Z"/>
 									</svg>
 								</button>
@@ -128,7 +146,7 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 							<a
 								href={href}
 								style={{ "--accent": accent === "blue" ? `var(--color-${accent}-750)` : `var(--color-${accent}-600)` }}
-								class={`pt-2 md:py-8 shrink-0 font-[450] text-black no-underline border-b-2 border-transparent ${Astro.url.pathname === href ? "text-(--accent)! border-(--accent)!" : "hover:text-(--accent)"}`}
+								class={`px-2 py-8 shrink-0 font-[450] text-black no-underline border-b-2 border-transparent ${Astro.url.pathname === href ? "text-(--accent)! border-(--accent)!" : "hover:text-(--accent)"}`}
 							>
 								{ title }
 							</a>
@@ -138,12 +156,10 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 						id="eventsPopover"
 						class="p-2 bg-white border rounded-xl shadow"
 					>
-						{ [
-							{ href: "/", title: "🧑‍💻\u00A0\u00A0\u00A0Weekly Coding Club" },
-							{ href: "/", title: "☀️\u00A0\u00A0\u00A0Summer Make-a-Thon" },
-							{ href: "/", title: "🤖\u00A0\u00A0\u00A0FIRST LEGO League" }
-						].map(({ href, title }) => (
-							<a href={href} class="block pl-4 pr-6 py-4 rounded-lg font-[450] text-black no-underline hover:bg-purple-50 hover:text-purple-900">
+						{ eventItems.map(({ href, title }) => (
+							<a href={href}
+								class={`block pl-4 pr-6 py-4 rounded-lg font-[450] text-black no-underline ${Astro.url.pathname === href ? "bg-purple-50 text-purple-900" : "hover:bg-purple-50 hover:text-purple-900"}`}
+							>
 								{ title }
 							</a>
 						)) }

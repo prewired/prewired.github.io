@@ -142,12 +142,30 @@
 		@apply border-t md:border-x border-gray-200 overflow-hidden;
 	}
 
+	details::details-content {
+		@apply h-0 transition-[height,content-visibility] transition-discrete motion-reduce:transition-none;
+	}
+
+	details[open]::details-content {
+		@apply h-auto;
+	}
+
+	@supports (height: calc-size(auto, size)) {
+		details[open]::details-content {
+			height: calc-size(auto, size);
+		}
+	}
+
 	details > p {
 		@apply px-4 md:px-6;
 	}
 
 	details > p:first-of-type {
 		@apply mt-4;
+	}
+
+	details > p:last-of-type {
+		@apply mb-4;
 	}
 
 	summary {
@@ -199,22 +217,6 @@
 	}
 
 
-	/* Decorative fill */
-	.diastripe {
-		@apply bg-[repeating-linear-gradient(315deg,var(--color-gray-200)_0,var(--color-gray-200)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px];
-	}
-
-
-	/* Responsive sizing for iframes */
-	.iframe-wrapper {
-		@apply relative w-full pt-[56.25%];
-	}
-
-	.iframe-wrapper > iframe {
-		@apply absolute top-0 left-0 w-full h-full border-0;
-	}
-
-
 	/* Markdown-generated page (e.g. policy pages) styles */
 	.markdown > h2 {
 		@apply relative pt-24 scroll-mt-14;
@@ -256,15 +258,27 @@
 
 	article > blockquote > p {
 		@apply leading-8 mb-0;
+	}	
+}
+
+
+@layer components {
+	/* Responsive sizing for iframes */
+	.iframe-wrapper {
+		@apply relative w-full pt-[56.25%];
+	}
+
+	.iframe-wrapper > iframe {
+		@apply absolute top-0 left-0 w-full h-full border-0;
 	}
 
 
 	/* TicketTailor widget */
-	.tt-widget {
-		@apply max-w-175 shrink-0 relative lg:-left-4 mb-2 mx-auto lg:mx-0 scroll-mt-14;
+	#events-calendar .tt-widget {
+		@apply relative max-w-175 shrink-0 lg:-left-4 mb-2 mx-auto lg:mx-0 scroll-mt-14;
 	}
 
-	.tt-widget-fallback {
+	#events-calendar .tt-widget-fallback {
 		@apply p-8 bg-white border rounded-lg;
 	}
 
@@ -276,5 +290,13 @@
 
 	.kofitext img.kofiimg {
 		@apply w-auto! pr-px!;
+	}
+}
+
+
+@layer utilities {
+	/* Decorative fill */
+	.diastripe {
+		@apply bg-[repeating-linear-gradient(315deg,var(--color-gray-200)_0,var(--color-gray-200)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px];
 	}
 }

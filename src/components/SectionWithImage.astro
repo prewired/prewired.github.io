@@ -6,21 +6,29 @@ import { Picture } from 'astro:assets';
 interface Props {
 	imgSrc: ImageMetadata;
 	imgAlt: string;
+	imgCaption?: string;
 	reverse?: boolean;
+	style?: string;
 }
 
-const { imgSrc, imgAlt, reverse } = Astro.props;
+const { imgSrc, imgAlt, imgCaption, reverse, style } = Astro.props;
 ---
 
-<section class="mt-0 max-md:pt-0">
+<section class={`mt-0 max-md:pt-0 ${style}`}>
 	<div class={`flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} items-center lg:px-8`}>
-		<Picture
-			src={imgSrc}
-			formats={["avif", "webp"]}
-			alt={imgAlt}
-			class="w-full h-48 md:h-108 object-cover md:rounded-lg"
-			pictureAttributes={{ class: `w-full md:w-1/2 shrink-0 ${reverse ? "md:pl-24 md:max-lg:pr-4" : "md:pr-24 md:max-lg:pl-4"}` }}
-		/>
+		<div class={`w-full md:w-1/2 shrink-0 ${reverse ? "md:pl-24 md:max-lg:pr-4" : "md:pr-24 md:max-lg:pl-4"}`}>
+			<Picture
+				src={imgSrc}
+				formats={["avif", "webp"]}
+				alt={imgAlt}
+				class="w-full h-48 md:h-108 object-cover md:rounded-lg"
+			/>
+			{ imgCaption &&
+				<p class="mt-2 text-sm text-gray-500">
+					// <em>{ imgCaption }</em>
+				</p>
+			}
+		</div>
 		<div class="px-4 lg:pl-0 max-md:mt-4">
 			<slot />
 		</div>

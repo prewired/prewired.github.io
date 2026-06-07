@@ -1,0 +1,168 @@
+---
+import { Picture } from "astro:assets";
+import PageLayout from "@layouts/PageLayout.astro";
+import coverPhoto from "@assets/photos/ws16_roundtables.jpg";
+import microbit from "@assets/photos/mt23_microbit.jpg";
+import arduino from "@assets/photos/mt22_arduino.jpg";
+import pear from "@assets/photos/mt24_pear.jpg";
+import lego from "@assets/photos/ws24_lego.jpg";
+import workshop from "@assets/photos/ws24_hardware.jpeg";
+import summerhack from "@assets/photos/sh16_presentation.jpg";
+import fll from "@assets/photos/fll24_showoff.jpg";
+import festiveparty from "@assets/photos/cp22_card.jpg";
+
+const specialEvents = [
+	{
+		title: "🛠️ Workshops",
+		img: workshop,
+		imgAlt: "A Prewired mentor and 7 children sitting around a table with several PC components",
+		imgDesc: "We have a bunch of old computers we can take apart and (with a bit of luck) put together again"
+	},
+	{
+		title: "☀️ Summer Make-a-Thon",
+		img: summerhack,
+		imgAlt: "Four young people presenting a slide in front of an audience of about 30 listening adults",
+		imgDesc: "A team presents during the 2016 Summerhack, the precursor to our modern Make-a-Thon"
+	},
+	{
+		title: "🤖 FIRST LEGO League",
+		img: fll,
+		imgAlt: "Four children wearing t-shirts that read 'Plastic Pollution Solution' looking at a laptop surrounded by LEGO",
+		imgDesc: "Plastic Pollution Solution team members putting the finishing touches on their robot"
+	},
+	{
+		title: "🎄 Prewired x DS4G Festive Party",
+		img: festiveparty,
+		imgAlt: "A mentor helps an attendee to create an electronic Christmas card using a micro:bit",
+		imgDesc: "Build your own electronic Christmas card, using copper tape, LED lights, and a BBC micro:bit!"
+	}
+];
+---
+
+<PageLayout
+	title="Activities"
+	desc="Prewired hosts over 50 events a year, from our Wednesday night coding club to yearly Summer Make-a-Thon!"
+	coverImageData={coverPhoto}
+	coverImageAlt="Young people working on laptops in the CodeBase coworking space with parents sitting in the background"
+	accent="purple"
+>
+	<h2 class="pt-8 px-4 border-t md:text-center">
+		Special events
+	</h2>
+	<p class="mx-auto md:mb-8 px-4 md:text-center text-balance">
+		In addition to our weekly sessions, we sometimes run special events. The best way to stay up-to-date with what's happening is to subscribe to our <a href="http://eepurl.com/dv2dPb" target="_blank" rel="noopener">mailing list</a>!
+	</p>
+	{ specialEvents.map((event, index) => (
+		<div class={`flex ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"} flex-wrap md:flex-nowrap items-center md:border-t`}>
+			<div class="w-full md:w-1/2 shrink-0 py-4 md:px-4 lg:p-8">
+				<Picture
+					src={event.img}
+					formats={["avif", "webp"]}
+					alt={event.imgAlt}
+					class={`w-full h-48 md:h-108 object-cover mb-2 ${index % 2 === 0 ? "float-right" : ""}`}
+				/>
+				<p class="mb-0 px-4 md:px-0 text-sm text-gray-500">
+					// <em>{ event.imgDesc }</em>
+				</p>
+			</div>
+			<div class="md:w-1/2 p-4 lg:px-8">
+				<h3 class="lg:text-xl mt-0">
+					{ event.title }
+				</h3>
+				{ index === 0 ? (
+					<p>
+						Occasionally during a session we'll run an optional workshop, delivered by one of our volunteers or a guest speaker. Over the past few years, we've covered topics from games for mental health to looking inside a PC and even the inner workings of LLM-powered AI chatbots.
+					</p>
+					<p>
+						Interested in running a workshop with us? Feel free to reach out to <a href="mailto:hello@prewired.org">hello@prewired.org</a>!
+					</p>
+				) : index === 1 ? (
+					<p>
+						Each year, usually in July, we run our Summer Make-a-Thon: a full-weekend event during which participants work in small teams to prototype a solution to a challenge over the course of two days and present their work to a panel of judges at the end.
+					</p>
+					<p>
+						The Make-a-Thon is open to those aged 11-18 and is a fantastic opportunity to practice working in a team, quickly scaffolding a project, and presenting in front of an audience.
+					</p>
+				) : index === 2 ? (
+					<p>
+						From September to February, we run FIRST LEGO League in parallel to our normal sessions. In FIRST LEGO League, you work in a team over the course of several months to build a LEGO robot that can solve a series of challenges and design an innovation project related to the challenge theme.
+					</p>
+					<p>
+						We've participated in the Edinburgh competition several times and even won a few prizes, such as Best Innovation Project by our team <em>Plastic Pollution Solution</em> in 2025.
+					</p>
+				) : index === 3 ? (
+					<p>
+						In December, for the last session of the year, we team up with our pals at Digital Skills 4 Girls for a Festive Party! In addition to normal Prewired, we pull out all the stops (and snacks) with activity stations that have included make-your-own micro:bit Christmas cards, vintage arcade machines, and VR games.
+					</p>
+				) : <></>
+				}
+			</div>
+		</div>
+	))}
+	<div class="h-16 border-t diastripe"></div>
+
+	<section class="flex flex-col md:flex-row border-y">
+		<div class="md:w-1/3 shrink-0 p-4">
+			<h2 class="pt-2 md:pt-0">
+				Frequently asked questions
+			</h2>
+		</div>
+
+		<div class="grow relative md:-right-px">
+			<details name="faq" class="md:border-t-0">
+				<summary>Do parents/guardians need to attend with their children?</summary>
+				<p>
+					<strong>If your child is younger than 11:</strong> yes, your child needs to be accompanied by an adult throughout every Prewired session that they attend. If your child is very young and needs lots of support, you should be prepared to sit with them to help. You can of course ask a volunteer for technical advice.
+				</p>
+				<p>
+					<strong>If your child is 11 or older:</strong> it is up to you. You are welcome to accompany your child if you think this would benefit them. They will otherwise be fully supervised at all times by our mentors.
+				</p>
+			</details>
+		
+			<details name="faq">
+				<summary>What do I need to bring?</summary>
+				<p>
+					You don't need to bring anything apart from your enthusiasm! We have plenty of laptops and other equipment that you can borrow, but you are more than welcome to bring your own.
+				</p>
+				<p>
+					We provide a few snacks half-way through the session. You are welcome to bring your own too, though please don't bring anything containing nuts as we tend to have attendees that are allergic.
+				</p>
+			</details>
+		
+			<details name="faq">
+				<summary>How much does attending Prewired cost?</summary>
+				<p>
+					Nothing! Prewired is free, run by volunteers and supported by donations from the local community.
+				</p>
+			</details>
+		
+			<details name="faq">
+				<summary>Can I bring pets to Prewired?</summary>
+				<p>
+					No. Our venue, CodeBase, does not allow animals in the building.
+				</p>
+			</details>
+		
+			<details name="faq">
+				<summary>Are you a part of CodeBase?</summary>
+				<p>
+					No, we are an independent charity that simply happens to run from CodeBase Edinburgh. They are amazing friends and supporters, however, and without their allowing us to use their space and storage none of what we do would be possible!
+				</p>
+			</details>
+		
+			<details name="faq">
+				<summary>How does Prewired ensure the safety of attendees?</summary>
+				<p>
+					Please see our <a href="/child-protection/">child protection policy</a>.
+				</p>
+			</details>
+		
+			<details name="faq">
+				<summary>How does Prewired ensure the privacy of attendees?</summary>
+				<p>
+					Please see our <a href="/privacy/">privacy policy</a>.
+				</p>
+			</details>
+		</div>
+	</section>
+</PageLayout>
