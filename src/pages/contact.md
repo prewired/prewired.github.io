@@ -5,6 +5,7 @@ desc: Information on how to contact the organisers of Prewired.
 coverImage:
   src: sh18_gateway.jpg
   alt: A young person programming a BBC micro:bit while a mentor is pointing at a screen
+accent: blue
 ---
 
 ## When and where is Prewired?
@@ -27,8 +28,8 @@ Please keep in mind that Prewired is 100% volunteer-run and in busy periods it m
 
 If you are unhappy about any issue to do with Prewired and wish to discuss this in confidence, you can reach out to either of the following people:
 
-* Rikki Guy (Chair): [rikki@prewired.org](mailto:rikki@prewired.org)
 * Athina Frantzana (Child Protection & EDI Officer): [athina@prewired.org](mailto:athina@prewired.org)
+* India Thomson (Secretary): [india@prewired.org](mailto:india@prewired.org)
 
 ## Stay in touch
 

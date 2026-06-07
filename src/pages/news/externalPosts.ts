@@ -6,7 +6,7 @@ import session from "@assets/photos/ws16_kitchen.jpg";
 import digit from "@assets/blog_external/digit_fav.png";
 import futurescot from "@assets/blog_external/futurescot_fav.png";
 import futurescot_banner from "@assets/blog_external/banner_futurescot_2016.jpg";
-import govuk from "@assets/blog_external/govuk_fav.svg";
+import govuk from "@assets/blog_external/govuk_fav.png";
 import govuk_banner from "@assets/blog_external/govuk_cybersecurity_outcomes.jpg";
 import hypercube from "@assets/blog_external/hypercube_fav.png";
 import insider from "@assets/blog_external/insider_fav.png";

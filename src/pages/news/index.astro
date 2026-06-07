@@ -45,78 +45,82 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 	desc="Posts from our blog and mentions of Prewired in the media."
 	coverImageData={coverPhoto}
 	coverImageAlt="A computer screen with the text 'Prewired Presentations begin 13:00 Friday 27th July 2018'"
+	accent="blue"
+	noPaddingBottom
 >
-	<div class="flex py-8 px-4 lg:pl-0">
-		<div class="lg:w-1/6 text-right pr-2">
-			&gt;&gt;
+	<div class="w-full max-w-360 mx-auto pb-24 md:pb-32 2xlp:border-x">
+		<div class="flex py-8 px-4 lg:pl-0">
+			<div class="lg:w-1/6 text-right pr-2">
+				&gt;&gt;
+			</div>
+			<p class="max-w-full grow mb-4 px-2">
+				Subscribe to our <a href="https://eepurl.com/dv2dPb" target="_blank" rel="noopener">mailing list</a> to receive more frequent updates and announcements of all our events!
+			</p>
 		</div>
-		<p class="max-w-full grow px-2">
-			Subscribe to our <a href="https://eepurl.com/dv2dPb" target="_blank" rel="noopener">mailing list</a> to receive more frequent updates and announcements of all our events!
-		</p>
-	</div>
 
-	<div class="lg:grid grid-cols-6 gap-y-8 lg:pr-4">
-		{ feedByYears.map((feedYear, index) => {
-			const hoverBg = index % 3 === 0 ? "hover:bg-pink-50" : index % 3 === 1 ? "hover:bg-purple-50" : "hover:bg-blue-50";
-			const tagBg = index % 3 === 0 ? "bg-pink-200" : index % 3 === 1 ? "bg-purple-200" : "bg-blue-200";
-			return (<>
-				<h2 class="pt-8 md:pt-10 md:pb-1 lg:pt-2 px-4 md:max-lg:px-2 before:absolute before:w-screen before:md:w-[calc(100vw-2rem)] before:h-px before:left-0 before:min-[93rem]:-left-[calc(50vw-46rem)] before:top-2 before:md:top-5 before:lg:-top-4 before:bg-gray-200">
-					{ feedYear.year }
-				</h2>
+		<div class="lg:grid grid-cols-6 gap-y-8 lg:pr-4">
+			{ feedByYears.map((feedYear, index) => {
+				const hoverBg = index % 3 === 0 ? "hover:bg-pink-50" : index % 3 === 1 ? "hover:bg-purple-50" : "hover:bg-blue-50";
+				const tagBg = index % 3 === 0 ? "bg-pink-200" : index % 3 === 1 ? "bg-purple-200" : "bg-blue-200";
+				return (<>
+					<h2 class="relative pt-8 md:pt-10 md:pb-1 lg:pt-2 px-4 md:max-lg:px-2 before:absolute before:w-screen before:md:w-[calc(100vw-2rem)] before:h-px before:left-0 before:2xlp:-left-[calc(50vw-46rem)] before:top-2 before:md:top-5 before:lg:-top-4 before:bg-gray-200">
+						{ feedYear.year }
+					</h2>
 
-				{ feedYear.posts.map(({ type, url, date, site, title, desc, favicon, banner, bannerAlt, tags }) => (
-					<a
-						href={url}
-						target={type === "external" ? "_blank" : "_self"}
-						rel={type === "external" ? "noopener noreferrer" : undefined}
-						class={`block relative px-4 md:px-0 pt-4 md:pt-0 col-span-5 col-end-7 text-black! no-underline! ${hoverBg}`}
-					>
-						<div class="flex flex-wrap md:flex-nowrap">
-							{ banner && bannerAlt && 
-								<Picture
-									src={banner}
-									formats={["avif", "webp"]}
-									alt={bannerAlt}
-									class="w-full h-52 object-cover bg-gray-200"
-									pictureAttributes={{ class: "w-full md:w-80 shrink-0 md:p-2" }}
-								/>
-							}
-							<div class="max-w-2xl pt-4 md:pt-2 md:px-4 lg:-mt-px">
-								{ type === "local" ?
-									tags?.map(tag => (
-										<div class="inline-flex">
-											<div class={`mr-2 mb-2 ${tagBg} px-2 py-1 leading-0`}>
-												<span class="text-sm font-medium text-black uppercase">
-													{ tag }
-												</span>
+					{ feedYear.posts.map(({ type, url, date, site, title, desc, favicon, banner, bannerAlt, tags }) => (
+						<a
+							href={url}
+							target={type === "external" ? "_blank" : "_self"}
+							rel={type === "external" ? "noopener noreferrer" : undefined}
+							class={`block relative px-4 md:px-0 pt-4 md:pt-0 col-span-5 col-end-7 text-black! no-underline! ${hoverBg}`}
+						>
+							<div class="flex flex-wrap md:flex-nowrap">
+								{ banner && bannerAlt && 
+									<Picture
+										src={banner}
+										formats={["avif", "webp"]}
+										alt={bannerAlt}
+										class="w-full h-52 object-cover bg-gray-200"
+										pictureAttributes={{ class: "w-full md:w-80 shrink-0 md:p-2" }}
+									/>
+								}
+								<div class="max-w-2xl pt-4 md:pt-2 md:px-4 lg:-mt-px">
+									{ type === "local" ?
+										tags?.map(tag => (
+											<div class="inline-flex">
+												<div class={`mr-2 mb-2 ${tagBg} px-2 py-1 leading-0`}>
+													<span class="text-sm font-medium text-black uppercase">
+														{ tag }
+													</span>
+												</div>
 											</div>
+										))
+									: (
+										<div class="flex items-center mb-2 text-sm">
+											From
+											{ favicon &&
+												<Picture
+													src={favicon}
+													formats={["avif", "webp"]}
+													alt={`${site} favicon`}
+													class="w-4 h-4 mx-2"
+												/>
+											}
+											<span>{ site }</span>
 										</div>
-									))
-								: (
-									<div class="flex items-center mb-2 text-sm">
-										From
-										{ favicon &&
-											<Picture
-												src={favicon}
-												formats={["avif", "webp"]}
-												alt={`${site} favicon`}
-												class="w-4 h-4 mx-2"
-											/>
-										}
-										<span>{ site }</span>
-									</div>
-								) }
-								<h3 class="mt-0 mb-1 md:mb-0 font-semibold text-xl not-italic">
-									{ title }
-								</h3>
-								<p>
-									{ date.toLocaleDateString("en-GB") } &middot; { desc }
-								</p>
+									) }
+									<h3 class="mt-0 mb-1 md:mb-0 font-semibold text-xl not-italic">
+										{ title }
+									</h3>
+									<p>
+										{ date.toLocaleDateString("en-GB") } &middot; { desc }
+									</p>
+								</div>
 							</div>
-						</div>
-					</a>
-				)) }
-			</>);
-		})}
+						</a>
+					)) }
+				</>);
+			})}
+		</div>
 	</div>
 </PageLayout>

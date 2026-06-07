@@ -88,14 +88,13 @@
 	h2 {
 		@apply mb-2 font-semibold text-xl lg:text-3xl;
 	}
-	h2:nth-of-type(3n) { @apply text-blue-750; }
-	h2:nth-of-type(3n+1) { @apply text-pink-600; }
-	h2:nth-of-type(3n+2) { @apply text-purple-600; }
+	h2:nth-of-type(3n), section:nth-child(3n of section:has(h2)) h2 { @apply text-blue-750; }
+	h2:nth-of-type(3n+1), section:nth-child(3n+1 of section:has(h2)) h2 { @apply text-pink-600; }
+	h2:nth-of-type(3n+2), section:nth-child(3n+2 of section:has(h2)) h2 { @apply text-purple-600; }
 
 	h3 {
 		@apply font-medium lg:text-2xl;
 	}
-	/* h2 + h3 { @apply mt-0; } */
 
 	footer h2 {
 		@apply text-base text-black! m-0 pt-0 uppercase;
@@ -218,11 +217,11 @@
 
 	/* Markdown-generated page (e.g. policy pages) styles */
 	.markdown > h2 {
-		@apply scroll-mt-14;
+		@apply relative pt-24 scroll-mt-14;
 	}
 
 	.markdown > h2::before {
-		@apply content-[""] absolute w-[calc(100%+2rem)] -left-4 lg:w-[calc(100%+4rem)] h-px lg:-left-8 top-6 bg-gray-200;
+		@apply content-[""] absolute w-[calc(100%+2rem)] -left-4 lg:w-[calc(100%+4rem)] h-px lg:-left-8 top-10 bg-gray-200;
 	}
 
 	.markdown > h2:first-child {
@@ -231,6 +230,10 @@
 
 	.markdown > h2:first-child::before {
 		@apply h-0;
+	}
+
+	.markdown > h3 {
+		@apply text-lg;
 	}
 
 	.markdown > hr {

@@ -5,6 +5,7 @@ desc: Prewired's Privacy Policy applies to information that Prewired collects ab
 coverImage:
   src: sh18_camera.jpg
   alt: A camera pointed at a large room with young people working at tables
+accent: blue
 ---
 
 
