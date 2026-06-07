@@ -3,9 +3,6 @@ import { Font, getImage, Picture } from "astro:assets";
 import "../styles/global.css";
 import DialogCloseButton from "@components/DialogCloseButton.astro";
 import prewiredLogoText from "@assets/logos/prewired-logo-text.png";
-import weeklysessions from "@assets/photos/ws16_roundtables.jpg";
-import summerhack from "@assets/photos/sh16_presentation.jpg";
-import fll from "@assets/photos/fll24_showoff.jpg";
 
 
 interface Props {
@@ -28,12 +25,6 @@ const navItems = [
 	{ href: "/support/", title: "Support us", accent: "purple" },
 	{ href: "/about/", title: "About", accent: "pink" },
 	{ href: "/contact/", title: "Contact", accent: "blue" },
-];
-
-const eventItems = [
-	{ href: "/", title: "Weekly Coding Club", imgSrc: weeklysessions, imgAlt: "Young people working on laptops in the CodeBase coworking space with parents sitting in the background" },
-	{ href: "/", title: "Summer Make-a-Thon", imgSrc: summerhack, imgAlt: "Four young people presenting a slide in front of an audience of about 30 listening adults" },
-	{ href: "/", title: "FIRST LEGO League", imgSrc: fll, imgAlt: "Four children wearing t-shirts that read 'Plastic Pollution Solution' looking at a laptop surrounded by LEGO" }
 ];
 
 // Get the URL for this page
@@ -80,6 +71,7 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 						class="pb-1"
 					/>
 				</a>
+
 				<!-- Small-screen menu button -->
 				<button
 					class="lg:hidden flex items-center pl-3 pr-4 py-2 bg-pink-600 hover:bg-pink-800 border-b-2 border-pink-900 active:border-b-0 active:mt-0.5 rounded-lg uppercase font-semibold text-white cursor-pointer transition"
@@ -90,6 +82,7 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 					</svg>
 					Menu
 				</button>
+
 				<!-- Small-screen menu -->
 				<dialog
 					class="h-full max-h-none w-full sm:w-1/2 max-w-full sm:left-1/2 p-10 bg-pink-50 sm:border-l-2 sm:border-pink-600 translate-x-10 open:translate-x-0 starting:open:translate-x-10"
@@ -114,48 +107,54 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 						))}
 					</nav>
 				</dialog>
+
 				<!-- Large-screen menu -->
 				<nav class="relative h-full mx-4 -mb-px hidden lg:flex gap-7 xl:gap-12 z-50">
-					{ navItems.map(({ href, title, accent }) => (
-						<a
-							href={href}
-							id={href === "/activities/" ? "eventsPopoverTrigger" : undefined}
-							class={`pt-2 md:py-8 shrink-0 font-[450] text-black no-underline border-b-2 border-transparent
-								${Astro.url.pathname === href ? 
-									(accent === "pink" ? "text-pink-600 border-pink-600!" : accent === "purple" ? "text-purple-600 border-purple-600!" : "text-blue-750 border-blue-750!")
-								: (accent === "pink" ? "hover:text-pink-600" : accent === "purple" ? "hover:text-purple-600" : "hover:text-blue-750")}
-							`}
-						>
-							{ title }
-						</a>
-					))}
-					<div
-						id="events-popover"
-						class="w-153 flex flex-wrap p-2 bg-white border rounded-xl shadow"
-					>
-						{ eventItems.map(({href, title, imgSrc, imgAlt}) => (
-							<a href={href} class="w-fit block p-2 rounded-lg text-black no-underline hover:bg-purple-50 hover:text-purple-900">
-								<Picture
-									src={imgSrc}
-									formats={["avif", "webp"]}
-									alt={imgAlt}
-									width="280"
-									height="180"
-									class="rounded-lg mb-2"
-								/>
-								<p class="mb-0 font-[450]">
+					{ navItems.map(({ href, title, accent }) =>
+						href === "/activities/" ? (
+							// Wrapper div for Tippy accessibility
+							<div>
+								<button
+									id="eventsPopoverTrigger"
+									class={`group flex pt-2 md:py-8 shrink-0 font-[450] text-black no-underline border-b-2 border-transparent cursor-pointer ${Astro.url.pathname === href ? "text-purple-600! border-purple-600!" : "hover:text-purple-600 data-open:text-purple-600"}`}
+								>
 									{ title }
-								</p>
+									<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 ml-1.5 -mt-px -mr-2 group-hover:fill-purple-600 group-data-open:fill-purple-600 group-data-open:rotate-180 transition-transform duration-200" viewBox="0 -960 960 960">
+										<path d="M468.31-372.72q-5.28-2.1-10.23-7.05L271.54-566.31q-7.23-7.23-7.22-17.7.01-10.48 7.63-18.09 7.61-7.62 17.9-7.62 10.28 0 17.89 7.62L480-429.43 652.67-602.1q7.23-7.23 17.5-7.22 10.27.01 17.88 7.63 7.62 7.61 7.62 17.9 0 10.28-7.62 17.89L501.92-379.77q-4.95 4.95-10.23 7.05-5.28 2.1-11.69 2.1-6.41 0-11.69-2.1Z"/>
+									</svg>
+								</button>
+							</div>
+						) : (
+							<a
+								href={href}
+								style={{ "--accent": accent === "blue" ? `var(--color-${accent}-750)` : `var(--color-${accent}-600)` }}
+								class={`pt-2 md:py-8 shrink-0 font-[450] text-black no-underline border-b-2 border-transparent ${Astro.url.pathname === href ? "text-(--accent)! border-(--accent)!" : "hover:text-(--accent)"}`}
+							>
+								{ title }
 							</a>
-						))}
+						)
+					)}
+					<div
+						id="eventsPopover"
+						class="p-2 bg-white border rounded-xl shadow"
+					>
+						{ [
+							{ href: "/", title: "🧑‍💻\u00A0\u00A0\u00A0Weekly Coding Club" },
+							{ href: "/", title: "☀️\u00A0\u00A0\u00A0Summer Make-a-Thon" },
+							{ href: "/", title: "🤖\u00A0\u00A0\u00A0FIRST LEGO League" }
+						].map(({ href, title }) => (
+							<a href={href} class="block pl-4 pr-6 py-4 rounded-lg font-[450] text-black no-underline hover:bg-purple-50 hover:text-purple-900">
+								{ title }
+							</a>
+						)) }
 					</div>
 				</nav>
 			</header>
-	
+
 			<main>
 				<slot />
 			</main>
-	
+
 			<div class="h-16 border-t diastripe"></div>
 			<footer class="relative bg-purple-50 before:absolute before:w-full before:md:w-[calc(100%+2rem)] before:h-px before:bg-gray-200 before:md:-left-4 before:top-0 after:absolute after:w-full after:md:w-[calc(100%+2rem)] after:h-px after:bg-gray-200 after:md:-left-4 after:-bottom-px">
 				<div class="w-full max-w-360 mx-auto flex flex-wrap lg:justify-between 2xl:border-x sm:divide-x divide-y lg:divide-y-0 *:w-full sm:*:w-1/2 lg:*:w-1/4 *:py-6 md:*:py-10 *:px-4 md:*:px-8">
@@ -232,7 +231,8 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 							Prewired &incare; CodeBase<br />
 							Argyle House<br />
 							3 Lady Lawson Street<br />
-							Edinburgh EH3 9DR
+							Edinburgh EH3 9DR<br />
+							<a href="mailto:hello@prewired.org">hello@prewired.org</a>
 						</address>
 					</div>
 				</div>
@@ -275,15 +275,19 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 
 
 			/* Set up the Events navigation menu on large screens */
-			const eventsPopover = document.getElementById("events-popover") as HTMLDivElement;
+			const eventsPopoverTrigger = document.getElementById("eventsPopoverTrigger") as HTMLButtonElement;
+			const eventsPopover = document.getElementById("eventsPopover") as HTMLDivElement;
 
-			tippy("#eventsPopoverTrigger", {
+			tippy(eventsPopoverTrigger, {
 				content: eventsPopover,
 				animation: "shift-away-subtle",
 				interactive: true,
-				maxWidth: "none",
-				offset: [0, -8],
-				placement: "bottom"
+				interactiveBorder: 30,
+				offset: [0, -16],
+				placement: "bottom",
+
+				onShow: () => { eventsPopoverTrigger.dataset.open = "true" },
+				onHide: () => { eventsPopoverTrigger.removeAttribute("data-open") }
 			});
 		</script>
 	</body>
