@@ -2,9 +2,10 @@
 
 
 /* Extending and overriding the default Tailwind styling */
-@theme inline {
-	/* Override large screen breakpoint */
+@theme static {
+	/* Override large screen breakpoint and add a version with margins */
 	--breakpoint-2xl: 90rem;
+	--breakpoint-2xlp: 93rem;
 
 	/* Custom colours */
 	--color-blue-50: #EDFCFF;
@@ -43,8 +44,9 @@
 	--color-pink-800: #A8094F;
 	--color-pink-900: #8F0C4A;
 	--color-pink-950: #500124;
+}
 
-
+@theme inline {
 	/* Custom fonts */
 	--font-sans: var(--font-rubik), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -61,8 +63,7 @@
 	}
 
 	html {
-		@apply transition duration-300;
-		scrollbar-gutter: stable;
+		@apply transition duration-300 scrollbar-gutter-stable;
 	}
 
 	html:has(dialog[open]) {
@@ -70,36 +71,42 @@
 		@apply overflow-y-hidden;
 	}
 
+	/* Apply correct background colour to scroll gutter when a modal dialog is open */
+	html:has(#menu-dialog[open]) { @apply bg-pink-50; }
+	html:has(#tickets-dialog[open]) { @apply bg-black/25; }
+
+
 	div, section, header, footer, hr {
 		@apply border-gray-200 divide-gray-200;
 	}
 
-	/* Apply correct background colour to scroll gutter when a modal dialog is open */
-	html:has(#menu-dialog[open]) { @apply bg-pink-50; }
-	html:has(#tickets-dialog[open]) { @apply bg-black/25; }
 
 	h1 {
 		@apply mb-2 font-semibold text-4xl;
 	}
 
 	h2 {
-		@apply relative pt-16 mb-2 font-semibold text-xl lg:text-2xl border-b;
+		@apply mb-2 font-semibold text-xl lg:text-3xl;
 	}
-	h2:nth-of-type(3n) { @apply text-blue-750; }
-	h2:nth-of-type(3n+1) { @apply text-pink-600; }
-	h2:nth-of-type(3n+2) { @apply text-purple-600; }
+	h2:nth-of-type(3n), section:nth-child(3n of section:has(h2)) h2 { @apply text-blue-750; }
+	h2:nth-of-type(3n+1), section:nth-child(3n+1 of section:has(h2)) h2 { @apply text-pink-600; }
+	h2:nth-of-type(3n+2), section:nth-child(3n+2 of section:has(h2)) h2 { @apply text-purple-600; }
 
 	h3 {
-		@apply mt-8 font-medium;
+		@apply font-medium lg:text-2xl;
 	}
-	h2 + h3 { @apply mt-0; }
 
 	footer h2 {
-		@apply text-base text-black! border-b-0 m-0 pt-0 uppercase;
+		@apply text-base text-black! m-0 pt-0 uppercase;
 	}
+
 
 	p, li {
 		@apply max-w-[72ch] mb-4;
+	}
+
+	p:last-of-type {
+		@apply mb-0;
 	}
 
 	strong {
@@ -118,6 +125,15 @@
 		@apply text-blue-800 hover:text-purple-600 underline underline-offset-2;
 	}
 
+
+	section {
+		@apply w-full border-b mt-4 md:mt-0 py-8 md:py-12 lg:py-20 *:w-full *:max-w-360 *:mx-auto;
+	}
+
+	section:last-of-type {
+		@apply border-b-0 pb-0!;
+	}
+
 	hr {
 		@apply my-16;
 	}
@@ -126,12 +142,30 @@
 		@apply border-t md:border-x border-gray-200 overflow-hidden;
 	}
 
+	details::details-content {
+		@apply h-0 transition-[height,content-visibility] transition-discrete motion-reduce:transition-none;
+	}
+
+	details[open]::details-content {
+		@apply h-auto;
+	}
+
+	@supports (height: calc-size(auto, size)) {
+		details[open]::details-content {
+			height: calc-size(auto, size);
+		}
+	}
+
 	details > p {
 		@apply px-4 md:px-6;
 	}
 
 	details > p:first-of-type {
 		@apply mt-4;
+	}
+
+	details > p:last-of-type {
+		@apply mb-4;
 	}
 
 	summary {
@@ -182,27 +216,14 @@
 		@apply px-1.5 py-1 bg-blue-100 text-blue-900 rounded;
 	}
 
-	/* Decorative fill */
-	.diastripe {
-		@apply bg-[repeating-linear-gradient(315deg,var(--color-gray-200)_0,var(--color-gray-200)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] bg-fixed;
-	}
-
-	/* Responsive sizing for iframes */
-	.iframe-wrapper {
-		@apply relative w-full pt-[56.25%];
-	}
-
-	.iframe-wrapper > iframe {
-		@apply absolute top-0 left-0 w-full h-full border-0;
-	}
 
 	/* Markdown-generated page (e.g. policy pages) styles */
 	.markdown > h2 {
-		@apply border-b-0 scroll-mt-14;
+		@apply relative pt-24 scroll-mt-14;
 	}
 
 	.markdown > h2::before {
-		@apply content-[""] absolute w-[calc(100%+2rem)] -left-4 lg:w-[calc(100%+4rem)] h-px lg:-left-8 top-6 bg-gray-200;
+		@apply content-[""] absolute w-[calc(100%+2rem)] -left-4 lg:w-[calc(100%+4rem)] h-px lg:-left-8 top-10 bg-gray-200;
 	}
 
 	.markdown > h2:first-child {
@@ -213,13 +234,18 @@
 		@apply h-0;
 	}
 
+	.markdown > h3 {
+		@apply text-lg;
+	}
+
 	.markdown > hr {
 		@apply relative w-[calc(100%+2rem)] -left-4 lg:w-[calc(100%+4rem)] lg:-left-8 my-12;
 	}
 
+
 	/* Blog post styles */
 	article > h2 {
-		@apply pt-8 lg:pt-12;
+		@apply pt-8 lg:pt-12 border-b;
 	}
 
 	article > p {
@@ -232,7 +258,30 @@
 
 	article > blockquote > p {
 		@apply leading-8 mb-0;
+	}	
+}
+
+
+@layer components {
+	/* Responsive sizing for iframes */
+	.iframe-wrapper {
+		@apply relative w-full pt-[56.25%];
 	}
+
+	.iframe-wrapper > iframe {
+		@apply absolute top-0 left-0 w-full h-full border-0;
+	}
+
+
+	/* TicketTailor widget */
+	#events-calendar .tt-widget {
+		@apply relative max-w-175 shrink-0 lg:-left-4 mb-2 mx-auto lg:mx-0 scroll-mt-14;
+	}
+
+	#events-calendar .tt-widget-fallback {
+		@apply p-8 bg-white border rounded-lg;
+	}
+
 
 	/* Ko-fi button */
 	a.kofi-button {
@@ -241,5 +290,13 @@
 
 	.kofitext img.kofiimg {
 		@apply w-auto! pr-px!;
+	}
+}
+
+
+@layer utilities {
+	/* Decorative fill */
+	.diastripe {
+		@apply bg-[repeating-linear-gradient(315deg,var(--color-gray-200)_0,var(--color-gray-200)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px];
 	}
 }

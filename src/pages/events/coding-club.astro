@@ -1,0 +1,335 @@
+---
+import { Picture } from "astro:assets";
+import PageLayout from "@layouts/PageLayout.astro";
+import SectionWithImage from "@components/SectionWithImage.astro";
+import coverPhoto from "@assets/photos/ws16_roundtables.jpg";
+import arduino from "@assets/photos/mt22_arduino.jpg";
+import pear from "@assets/photos/mt24_pear.jpg";
+import lego from "@assets/photos/ws24_lego.jpg";
+import workshop from "@assets/photos/ws24_hardware.jpeg";
+import DialogCloseButton from "@components/DialogCloseButton.astro";
+---
+
+<PageLayout
+	title="Weekly coding club"
+	desc="Prewired runs a weekly, free-to-attend coding and technology club in Edinburgh."
+	coverImageData={coverPhoto}
+	coverImageAlt="Young people working on laptops in the CodeBase coworking space with parents sitting in the background"
+	accent="purple"
+>
+	<Fragment slot="blurb">
+		<p class="mb-6 max-w-[72ch] lg:max-w-[36ch] xl:max-w-[42ch]">
+			Wednesday evenings at Prewired are for you to play around with whatever technologies you want. Learn something brand new, get help with something you're stuck on, or even teach others!
+		</p>
+		<button class="book-tickets-btn md:w-fit px-4 py-3 mb-4 bg-purple-950 hover:bg-purple-800 active:bg-purple-900 rounded-lg font-[450] text-white no-underline text-center cursor-pointer">
+			Book a spot
+		</button>
+	</Fragment>
+
+	<section class="pb-4 max-md:border-b-0">
+		<div class="px-4 lg:px-8">
+			<h2>What we do</h2>
+			<p>
+				We run a weekly, free-to-attend coding and technology club in Edinburgh.
+			</p>
+		</div>
+	</section>
+
+	<section class="py-0 max-md:border-b-0">
+		<div class="flex flex-col md:flex-row 2xlp:border-x">
+			<div class="md:w-1/3 px-4 py-2 md:py-4 lg:p-8 md:border-r">
+				<p class="mb-0 md:mb-2 mr-2 font-semibold">🕠&nbsp;&nbsp;When?</p>
+				<p>
+					Every Wednesday of the year from 5:30&ndash;7:30 PM, except during the winter school holidays.
+				</p>
+			</div>
+			<div class="md:w-1/3 p-4 py-2 md:py-4 lg:p-8 md:border-r">
+				<p class="mb-0 md:mb-2 mr-2 font-semibold">🏫&nbsp;&nbsp;Where?</p>
+				<p>
+					CodeBase Edinburgh, 37a Castle Terrace.
+				</p>
+			</div>
+			<div class="md:w-1/3 p-4 py-2 md:py-4 lg:p-8">
+				<p class="mb-0 md:mb-2 mr-2 font-semibold">🧑‍💻&nbsp;&nbsp;Who for?</p>
+				<p>
+					Anyone aged 7 to 17&mdash;whether you have been coding for years or are completely new!
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="max-md:pb-12 lg:pt-8">
+		<div class="px-4 lg:px-8">
+			<p>
+				Our sessions are unstructured: we do not run classes, but instead help our attendees <strong class="text-pink-600">work on their own projects</strong>. Our volunteers support attendees by working through issues together and pointing them to the right resources.
+			</p>
+			<p>
+				We have attendees working with Scratch, Python, websites (HTML, CSS, JavaScript), GameMaker, Godot, LEGO and Marty robots, and much more&mdash;(almost) anything is welcome!
+			</p>
+			<p>
+				Children <strong class="text-pink-600">under the age of 11 should be accompanied by an adult</strong>; those 11+ are allowed to attend by themselves.
+			</p>
+		</div>
+	</section>
+
+	<SectionWithImage reverse
+		imgSrc={arduino}
+		imgAlt="Close-up of someone taking pieces out of a box with many different electronic items"
+		imgCaption="One of the Arduino kits that are available for use during our sessions"
+	>
+		<h3>
+			Equipment
+		</h3>
+		<p>
+			It's good if you can bring your own laptop if you can, as you'll be able to get to work a lot faster on a system you're familiar with. However, we do have many spares you can use, as well as mice and headphones.
+		</p>
+		<p>
+			We also have a lot of electronic equipment you can use:
+		</p>
+		<ul class="mb-3 *:mb-1">
+			<li>
+				<a href="https://microbit.org/get-started/what-is-the-microbit/" target="_blank" rel="noopener noreferrer">BBC micro:bits</a>
+			</li>
+			<li>
+				<a href="https://robotical.io/about/all-about-marty/" target="_blank" rel="noopener noreferrer">Marty robots</a>
+			</li>
+			<li>
+				LEGO robotics sets (both <a href="https://www.lego.com/en-gb/product/lego-mindstorms-ev3-31313" target="_blank" rel="noopener noreferrer">EV3</a> and <a href="https://education.lego.com/en-gb/products/lego-education-spike-prime-set/45678/" target="_blank" rel="noopener noreferrer">SPIKE Prime</a>)
+			</li>
+			<li>
+				(Somewhat outdated) <a href="https://www.raspberrypi.com/" target="_blank" rel="noopener noreferrer">Raspberry Pis</a> with accessories
+			</li>
+			<li>
+				<a href="https://www.arduino.cc/" target="_blank" rel="noopener noreferrer">Arduino UNOs</a> with associated starter kits
+			</li>
+		</ul>
+		<p>
+			...and a bunch more&mdash;ask a mentor if you'd like a nosy in our cupboards!
+		</p>
+	</SectionWithImage>
+
+	<SectionWithImage
+		imgSrc={pear}
+		imgAlt="An attendee grabbing a pear using a robotic claw built from LEGO"
+		imgCaption="This pear was later consumed with the other snacks"
+	>
+		<h3>
+			Food and drink
+		</h3>
+		<p>
+			Make sure you've had your dinner or a snack before you come if you usually eat around this time, as we don't allow eating or drinking near the computers.
+		</p>
+		<p>
+			We do provide a brief snack break in the middle of the session, at 6:30.
+		</p>
+	</SectionWithImage>
+
+	<SectionWithImage reverse
+		imgSrc={workshop}
+		imgAlt="A Prewired mentor and 7 children sitting around a table with several PC components"
+		imgCaption="We have a bunch of old computers we can take apart and (with a bit of luck) put together again"
+	>
+		<h3>
+			Special events
+		</h3>
+		<p>
+			Occasionally during a session we'll run an optional <strong>workshop</strong>, delivered by one of our volunteers or a guest speaker. Over the past few years, we've covered topics from games for mental health to looking inside a PC and even the inner workings of LLM-powered AI chatbots.
+		</p>
+		<p>
+			Twice a year, once in summer and once for our last session in December, we team up with our pals at Digital Skills 4 Girls for a <strong>Festive Party</strong>! In addition to normal Prewired, we pull out all the stops (and snacks) with activity stations that have included make-your-own micro:bit Christmas cards, vintage arcade machines, and VR games.
+		</p>
+		<p>
+			The best way to stay up-to-date with what's happening is to subscribe to our <a href="http://eepurl.com/dv2dPb" target="_blank" rel="noopener">mailing list</a>!
+		</p>
+	</SectionWithImage>
+
+	<!-- <div>
+		<Picture
+			src={microbit}
+			formats={["avif", "webp"]}
+			alt="Two attendees looking at a laptop where they are coding a BBC micro:bit"
+			class="w-full h-48 md:h-88 object-cover mb-2 float-right"
+		/>
+		<p class="mb-0 px-4 md:px-0 text-sm text-gray-500">
+			// <em>Building an automatic light switch using a BBC micro:bit</em>
+		</p>
+	</div> -->
+
+	<section>
+		<div class="px-4 md:pr-0 lg:pl-8">
+			<Picture
+				src={lego}
+				formats={["avif", "webp"]}
+				alt="An attendee standing next to a table, building a contraption using LEGO Mindstorms pieces"
+				class="h-196 object-cover float-right rounded-lg"
+				pictureAttributes={{ class: "hidden md:inline-block w-1/3 float-right ml-4 p-4 lg:p-8" }}
+			/>
+			<h2 class="pt-4 md:pt-8 lg:pt-12">
+				How to attend
+			</h2>
+			<div>
+				<p>
+					We don't have a membership&mdash;simply book a spot for the day(s) you would like to attend using the button below or via <a href="https://buytickets.at/prewired/1223517" target="_blank" rel="noopener noreferrer">our TicketTailor page</a>.
+				</p>
+				<button class="book-tickets-btn md:w-fit px-4 py-3 mb-4 bg-purple-600 hover:bg-purple-800 active:bg-purple-900 rounded-lg font-[450] text-white no-underline text-center cursor-pointer">
+					Book a spot
+				</button>
+				<p class="mt-4 md:mb-12">
+					Please sign up for as many sessions as you want. New sign-up dates are added to the calendar at the end of every month. Coming regularly makes it easier to make friends and do as much coding as possible :)
+				</p>
+				<p>
+					<strong class="text-purple-600">Then, turn up!</strong>
+				</p>
+				<ul>
+					<li class="list-['⌛'] pl-2">
+						We open the check-in desk at 5:30&mdash;if you're early, you can wait in the lobby with the others. Please don't arrive too early though, as CodeBase is an active workplace during the day.
+					</li>
+					<li class="list-['🤔'] pl-2">
+						If you have never coded before, or have but don't know what to do, no problem! Introduce yourself to a mentor (they'll be wearing lanyards) when you arrive, and they'll help you to get started.
+					</li>
+					<li class="list-['🙋'] pl-2">
+						If you're already working on a coding project or learning a topic by yourself and are happy to carry on with that, cool beans. Make yourself at home and ask any of our volunteers if you need help, or you can put your hand up and someone will spot you!
+					</li>
+				</ul>
+				<p>
+					If you can't make a session anymore, please cancel your booking so your spot can be given to someone else.
+				</p>
+			</div>
+		</div>
+		<div class="clear-both" />
+	</section>
+
+	<section>
+		<div class="flex flex-col md:flex-row lg:px-8">
+			<div class="md:w-1/3 shrink-0 pt-4 px-4 lg:pl-0">
+				<h2 class="pt-2 md:pt-0">
+					Frequently asked questions
+				</h2>
+			</div>
+	
+			<div class="grow relative md:-right-px border-b">
+				<details name="faq">
+					<summary>Do parents/guardians need to attend with their children?</summary>
+					<p>
+						<strong>If your child is younger than 11:</strong> yes, your child needs to be accompanied by an adult throughout every Prewired session that they attend. If your child is very young and needs lots of support, you should be prepared to sit with them to help. You can of course ask a volunteer for technical advice.
+					</p>
+					<p>
+						<strong>If your child is 11 or older:</strong> it is up to you. You are welcome to accompany your child if you think this would benefit them. They will otherwise be fully supervised at all times by our mentors.
+					</p>
+				</details>
+
+				<details name="faq">
+					<summary>Can children younger than 7 join?</summary>
+					<p>
+						Prewired is self-guided: we don't usually run classes but support our attendees working on their own projects. As such, we've found from experience that children younger than 7 are rarely able to get much out of our sessions. If you do want to bring younger children (or have to bring them together with their older siblings), please be prepared to sit with them and support them as needed.
+					</p>
+				</details>
+			
+				<details name="faq">
+					<summary>What do I need to bring?</summary>
+					<p>
+						You don't need to bring anything apart from your enthusiasm! We have plenty of laptops and other equipment that you can borrow, but you are more than welcome to bring your own.
+					</p>
+					<p>
+						We provide a few snacks halfway through the session. You are welcome to bring your own too, though please don't bring anything containing nuts as we tend to have attendees that are allergic.
+					</p>
+				</details>
+			
+				<details name="faq">
+					<summary>How much does attending Prewired cost?</summary>
+					<p>
+						Nothing! Prewired is free, run by volunteers and supported by donations from the local community.
+					</p>
+				</details>
+			
+				<details name="faq">
+					<summary>Can I bring pets to Prewired?</summary>
+					<p>
+						No. Our venue, CodeBase, does not allow animals in the building.
+					</p>
+				</details>
+			
+				<details name="faq">
+					<summary>Are you a part of CodeBase?</summary>
+					<p>
+						No, we are an independent charity that simply happens to run from CodeBase Edinburgh. They are amazing friends and supporters, however, and without their allowing us to use their space and storage none of what we do would be possible!
+					</p>
+				</details>
+			
+				<details name="faq">
+					<summary>How does Prewired ensure the safety of attendees?</summary>
+					<p>
+						Please see our <a href="/child-protection/">child protection policy</a>.
+					</p>
+				</details>
+			
+				<details name="faq">
+					<summary>How does Prewired ensure the privacy of attendees?</summary>
+					<p>
+						Please see our <a href="/privacy/">privacy policy</a>.
+					</p>
+				</details>
+			</div>
+		</div>
+	</section>
+</PageLayout>
+
+<dialog
+	class="w-160 h-screen max-h-screen max-w-full mx-auto shadow-lg scale-95 open:scale-100 starting:open:scale-95"
+	id="tickets-dialog"
+>
+	<DialogCloseButton
+		id="tickets-dialog-close-btn"
+		style="absolute top-4 right-8 z-100"
+	/>
+	<!-- Ticket Tailor Widget -->
+	<div class="tt-widget">
+		<div class="tt-widget-fallback">
+			<p>
+				<a href="https://www.tickettailor.com/events/prewired/1223517/select-date?ref=website_widget"
+					target="_blank"
+				>
+					Click here to buy tickets
+				</a>
+				<br />
+				<small>
+					<a href="https://www.tickettailor.com?rf=wdg_186493"
+						class="tt-widget-powered"
+					>
+						Sell tickets online with Ticket Tailor
+					</a>
+				</small>
+			</p>
+		</div>
+		<script
+			is:inline
+			src="https://cdn.tickettailor.com/js/widgets/min/widget.js"
+			data-url="https://www.tickettailor.com/events/prewired/1223517/select-date?ref=website_widget"
+			data-type="inline"
+			data-inline-minimal="true"
+			data-inline-show-logo="false"
+			data-inline-bg-fill="true"
+			data-inline-inherit-ref-from-url-param=""
+			data-inline-ref="website_widget">
+		</script>
+	</div>
+</dialog>
+
+<script>
+	const ticketsBtns = document.getElementsByClassName("book-tickets-btn") as HTMLCollectionOf<HTMLButtonElement>;
+	const ticketsDialog = document.getElementById("tickets-dialog") as HTMLDialogElement;
+	const closeBtn = document.getElementById("tickets-dialog-close-btn") as HTMLButtonElement;
+
+	Array.from(ticketsBtns).forEach(btn => btn.addEventListener("click", () => {
+		ticketsDialog.showModal();
+	}));
+
+	closeBtn.addEventListener("click", () => {
+		ticketsDialog.close();
+	});
+
+	ticketsDialog.addEventListener("click", event => {
+		// Close the dialog on tapping the backdrop
+		if (event.target === ticketsDialog) ticketsDialog.close();
+	});
+</script>

@@ -1,4 +1,5 @@
 import { defineConfig, fontProviders } from "astro/config";
+import { unified } from '@astrojs/markdown-remark';
 import sitemap from "@astrojs/sitemap";
 import tunnel from "astro-tunnel";
 import a11yEmoji from "@fec/remark-a11y-emoji";
@@ -15,7 +16,7 @@ export default defineConfig({
 
 	// Legacy URLs
 	redirects: {
-		"/attending/": "/activities/",
+		"/attending/": "/events/",
 		"/docs/": "/about/#governance"
 	},
 
@@ -29,7 +30,9 @@ export default defineConfig({
 	}],
 
 	markdown: {
-		remarkPlugins: [a11yEmoji]
+		processor: unified({
+			remarkPlugins: [a11yEmoji]
+		})
 	},
 
 	vite: {

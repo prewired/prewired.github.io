@@ -5,6 +5,7 @@ desc: Prewired's policy on the use of its computing facilities.
 coverImage:
   src: sh16_laptops.jpg
   alt: A stack of Prewired laptops on a table
+accent: pink
 ---
 
 ## Key terms

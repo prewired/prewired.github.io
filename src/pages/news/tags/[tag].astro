@@ -33,8 +33,9 @@ const tagCapitalised = String(tag).charAt(0).toUpperCase() + String(tag).slice(1
 	desc={`All blog posts tagged with "${tag}".`}
 	coverImageData={coverPhoto}
 	coverImageAlt="A computer screen with the text 'Prewired Presentations begin 13:00 Friday 27th July 2018'"
+	accent="blue"
 >
-	<ul class="py-16 lg:px-8">
+	<ul class="w-full max-w-360 mx-auto py-16 px-8 lg:px-16">
 		{ posts.map(post => (
 			<li>
 				<a href={`/news/${post.id}/`}>

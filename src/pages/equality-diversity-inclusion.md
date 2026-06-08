@@ -5,6 +5,7 @@ desc: Prewired welcomes people of all backgrounds and abilities, both as partici
 coverImage:
   src: mt24_buildtogether.jpg
   alt: A mentor and attendee working together on a LEGO robot
+accent: blue
 ---
 
 ## 1. Our commitment

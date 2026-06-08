@@ -3,137 +3,10 @@ import { Picture } from "astro:assets";
 import { getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import importImage from "@scripts/dynamicImportImage";
+import externalPosts from "./externalPosts";
 import coverPhoto from "@assets/photos/sh18_live.jpg";
-import mt23 from "@assets/photos/mt23_winners.jpg";
-import mt24 from "@assets/photos/mt24_winners.jpg";
-import mt25 from "@assets/photos/mt25_winners.jpg";
-import eodd from "@assets/misc/eodd_banner.png";
-import session from "@assets/photos/ws16_kitchen.jpg";
-import digit from "@assets/blog_external/digit_fav.png";
-import futurescot from "@assets/blog_external/futurescot_fav.png";
-import futurescot_banner from "@assets/blog_external/banner_futurescot_2016.jpg";
-import govuk from "@assets/blog_external/govuk_fav.svg";
-import govuk_banner from "@assets/blog_external/govuk_cybersecurity_outcomes.jpg";
-import hypercube from "@assets/blog_external/hypercube_fav.png";
-import insider from "@assets/blog_external/insider_fav.png";
-import insider_banner from "@assets/blog_external/banner_insider_2018.avif";
-import medium from "@assets/blog_external/medium_fav.png";
-import scottlogic from "@assets/blog_external/scottlogic_fav.png";
-import scottlogic_banner from "@assets/photos/sh16_scottlogic.jpg";
-import tinderbox from "@assets/blog_external/tinderbox_fav.png";
 
 
-/****  GET LOCAL BLOG POSTS ****/
-const posts = await getCollection("posts");
-
-
-/****  DEFINE EXTERNAL POSTS ****/
-type ExternalPost = {
-	url: string;
-	date: Date;
-	site: string;
-	title: string;
-	desc: string;
-	favicon: ImageMetadata;
-	banner: ImageMetadata;
-	bannerAlt: string;
-};
-
-const externalPosts: ExternalPost[] = [
-	{
-		url: "https://wearehypercube.com/prewired-2025/",
-		date: new Date("2025-07-22"),
-		site: "Hypercube",
-		title: "Hypercube supports the 2025 Prewired Summer Make-a-Thon",
-		desc: "Our third annual Make-a-Thon was sponsored again by Hypercube! Read all about the event in their blog post.",
-		favicon: hypercube,
-		banner: mt25,
-		bannerAlt: "The three winners of the Make-a-Thon presenting their awards and prizes together with a Prewired mentor and competition judge"
-	},
-	{
-		url: "https://medium.com/@indiathomson/prewired-x-hypercube-summer-make-a-thon-41f03bea0311",
-		date: new Date("2024-08-07"),
-		site: "Medium",
-		title: "Prewired × Hypercube Summer Make-a-Thon 2024",
-		desc: "At the end of July, we hosted our second annual Summer Make-A-Thon, this time sponsored by Hypercube consulting.",
-		favicon: medium,
-		banner: mt24,
-		bannerAlt: "The three winners of the Make-a-Thon presenting their awards and prizes together with a Prewired mentor and competition judge"
-	},
-	{
-		url: "https://medium.com/kinandcartacreated/summer-tech-make-a-thon-dedaa474d3eb",
-		date: new Date("2023-10-09"),
-		site: "Medium",
-		title: "Looking back at the Prewired Summer Make-a-Thon",
-		desc: "For the first time since the pandemic, Prewired hosted a Summer Make-A-Thon, sponsored by Kin + Carta. Read more in India's blog post!",
-		favicon: medium,
-		banner: mt23,
-		bannerAlt: "The four winners of the Make-a-Thon presenting their awards and prizes"
-	},
-	{
-		url: "https://www.gov.uk/government/publications/mapping-informal-cyber-security-initiatives-for-young-people-aged-5-19/mapping-informal-cyber-security-initiatives-for-young-people-aged-5-19",
-		date: new Date("2022-07-21"),
-		site: "UK Government",
-		title: "Mapping informal cyber security initiatives for young people aged 5-19",
-		desc: "See Prewired discussed in government research aimed to provide a first mapping of informal cyber security-related initiatives aimed at children and young people aged 5-19.",
-		favicon: govuk,
-		banner: govuk_banner,
-		bannerAlt: "Four steps in a diagram: 'Build awareness of cybersecurity', 'Feel inspired to get involved in it', Feel like cybersecurity is a field that they can see themselves working in', 'Develop the knowledge and skills required to have a career in cybersecurity'"
-	},
-	{
-		url: "https://tinderboxcollective.org/2021/05/04/prewired-presents-the-emporium-of-digital-delights/",
-		date: new Date("2021-05-04"),
-		site: "Tinderbox Collective",
-		title: "Prewired++ presents the Emporium of Digital Delights!",
-		desc: "Prewired is teaming up with the Tinderbox Collective to launch The Emporium of Digital Delights, our new online summer hackathon series.",
-		favicon: tinderbox,
-		banner: eodd,
-		bannerAlt: "Coloured banner saying 'The Emporium of Digital Delights, May - July 2021'"
-	},
-	{
-		url: "https://www.digit.fyi/prewired-receives-funding-to-bring-coding-club-online/",
-		date: new Date("2021-01-20"),
-		site: "DIGIT News",
-		title: "Prewired Receives Funding to Bring Coding Club Online",
-		desc: "Youth programming club Prewired has secured funding from Creative Informatics to help the long-running Edinburgh group move online.",
-		favicon: digit,
-		banner: session,
-		bannerAlt: "Two attendees and two mentors chatting in a coffee corner"
-	},
-	{
-		url: "https://www.insider.co.uk/news/scottish-tech-startup-awards-finalists-13540999",
-		date: new Date("2018-11-06"),
-		site: "Insider",
-		title: "Prewired's Freda O'Byrne nominated as Diversity in Tech Champion at the first Scottish Tech Startup Awards",
-		desc: "We're proud to share that Freda O'Byrne was nominated as Diversity in Tech Champion for her work at Prewired. Read more about the awards in this article from Insider!",
-		favicon: insider,
-		banner: insider_banner,
-		bannerAlt: "A woman walking on a stage in front of large blue letters spelling TURING"
-	},
-	{
-		url: "https://blog.scottlogic.com/2016/08/22/building-the-next-generation-of-technology-professionals.html",
-		date: new Date("2016-08-22"),
-		site: "Scott Logic",
-		title: "Scott Logic staff mentor at the Prewired Summer Hack",
-		desc: "Last week, five Scott Logic staff took time out of the Edinburgh office to lend a hand with the Prewired Summer Hack coding challenge for children and young adults from 8 to 19 years of age.",
-		favicon: scottlogic,
-		banner: scottlogic_banner,
-		bannerAlt: "Two Scott Logic staff members sitting around a table with a child helping him with programming"
-	},
-	{
-		url: "https://futurescot.com/hey-teacher-leave-kids-alone-why-children-better-left-to-learn-coding-by-themselves/",
-		date: new Date("2016-04-28"),
-		site: "FutureScot",
-		title: "Hey teacher, leave them kids alone. Why children are better off left to learn coding by themselves",
-		desc: "This guest essay by Freda O'Byrne, co-founder of Prewired, explains why they take a different approach to the curriculum.",
-		favicon: futurescot,
-		banner: futurescot_banner,
-		bannerAlt: "A young girl using a laptop displaying a video call with other children"
-	}
-];
-
-
-/****  COMBINE BOTH POST TYPES INTO ONE FEED ****/
 type FeedItem = {
 	type: "local" | "external";
 	url: string;
@@ -147,8 +20,12 @@ type FeedItem = {
 	tags?: string[];
 };
 
+// Get local blog posts
+const blogPosts = await getCollection("posts");
+
+// Combine local blog posts and external posts into one feed
 const feed: FeedItem[] = [];
-for (const post of posts) {
+for (const post of blogPosts) {
 	feed.push({ ...post.data, url: `/news/${post.id}/`, banner: await importImage(post.data.coverImage), bannerAlt: post.data.coverImage.alt, type: "local" });
 }
 externalPosts.forEach(post => feed.push({ ...post, type: "external" }));
@@ -165,81 +42,85 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 
 <PageLayout
 	title="News and updates"
-	desc="Posts from our blog and mentions of Prewired in the media, providing an overview of our evolution over the years."
+	desc="Posts from our blog and mentions of Prewired in the media."
 	coverImageData={coverPhoto}
 	coverImageAlt="A computer screen with the text 'Prewired Presentations begin 13:00 Friday 27th July 2018'"
+	accent="blue"
+	noPaddingBottom
 >
-	<div class="flex py-8 px-4 lg:pl-0">
-		<div class="lg:w-1/6 text-right pr-2">
-			&gt;&gt;
+	<div class="w-full max-w-360 mx-auto pb-24 md:pb-32 2xlp:border-x">
+		<div class="flex py-8 px-4 lg:pl-0">
+			<div class="lg:w-1/6 text-right pr-2">
+				&gt;&gt;
+			</div>
+			<p class="max-w-full grow mb-4 px-2">
+				Subscribe to our <a href="https://eepurl.com/dv2dPb" target="_blank" rel="noopener">mailing list</a> to receive more frequent updates and announcements of all our events!
+			</p>
 		</div>
-		<p class="max-w-full grow px-2">
-			Subscribe to our <a href="https://eepurl.com/dv2dPb" target="_blank" rel="noopener">mailing list</a> to receive more frequent updates and announcements of all our events!
-		</p>
-	</div>
 
-	<div class="lg:grid grid-cols-6 gap-y-8 lg:pr-4">
-		{ feedByYears.map((feedYear, index) => {
-			const hoverBg = index % 3 === 0 ? "hover:bg-pink-50" : index % 3 === 1 ? "hover:bg-purple-50" : "hover:bg-blue-50";
-			const tagBg = index % 3 === 0 ? "bg-pink-200" : index % 3 === 1 ? "bg-purple-200" : "bg-blue-200";
-			return (<>
-				<h2 class="pt-8 md:pt-10 md:pb-1 lg:pt-2 px-4 md:max-lg:px-2 border-b-0 before:absolute before:w-screen before:md:w-[calc(100vw-2rem)] before:h-px before:left-0 before:min-[93rem]:-left-[calc(50vw-46rem)] before:top-2 before:md:top-5 before:lg:-top-4 before:bg-gray-200">
-					{ feedYear.year }
-				</h2>
+		<div class="lg:grid grid-cols-6 gap-y-8 lg:pr-4">
+			{ feedByYears.map((feedYear, index) => {
+				const hoverBg = index % 3 === 0 ? "hover:bg-pink-50" : index % 3 === 1 ? "hover:bg-purple-50" : "hover:bg-blue-50";
+				const tagBg = index % 3 === 0 ? "bg-pink-200" : index % 3 === 1 ? "bg-purple-200" : "bg-blue-200";
+				return (<>
+					<h2 class="relative pt-8 md:pt-10 md:pb-1 lg:pt-2 px-4 md:max-lg:px-2 before:absolute before:w-screen before:md:w-[calc(100vw-2rem)] before:h-px before:left-0 before:2xlp:-left-[calc(50vw-46rem)] before:top-2 before:md:top-5 before:lg:-top-4 before:bg-gray-200">
+						{ feedYear.year }
+					</h2>
 
-				{ feedYear.posts.map(({ type, url, date, site, title, desc, favicon, banner, bannerAlt, tags }) => (
-					<a
-						href={url}
-						target={type === "external" ? "_blank" : "_self"}
-						rel={type === "external" ? "noopener noreferrer" : undefined}
-						class={`block relative px-4 md:px-0 pt-4 md:pt-0 col-span-5 col-end-7 text-black! no-underline! ${hoverBg}`}
-					>
-						<div class="flex flex-wrap md:flex-nowrap">
-							{ banner && bannerAlt && 
-								<Picture
-									src={banner}
-									formats={["avif", "webp"]}
-									alt={bannerAlt}
-									class="w-full h-52 object-cover bg-gray-200"
-									pictureAttributes={{ class: "w-full md:w-80 shrink-0 md:p-2" }}
-								/>
-							}
-							<div class="max-w-2xl pt-4 md:pt-2 md:px-4 lg:-mt-px">
-								{ type === "local" ?
-									tags?.map(tag => (
-										<div class="inline-flex">
-											<div class={`mr-2 mb-2 ${tagBg} px-2 py-1 leading-0`}>
-												<span class="text-sm font-medium text-black uppercase">
-													{ tag }
-												</span>
+					{ feedYear.posts.map(({ type, url, date, site, title, desc, favicon, banner, bannerAlt, tags }) => (
+						<a
+							href={url}
+							target={type === "external" ? "_blank" : "_self"}
+							rel={type === "external" ? "noopener noreferrer" : undefined}
+							class={`block relative px-4 md:px-0 pt-4 md:pt-0 col-span-5 col-end-7 text-black! no-underline! ${hoverBg}`}
+						>
+							<div class="flex flex-wrap md:flex-nowrap">
+								{ banner && bannerAlt && 
+									<Picture
+										src={banner}
+										formats={["avif", "webp"]}
+										alt={bannerAlt}
+										class="w-full h-52 object-cover bg-gray-200"
+										pictureAttributes={{ class: "w-full md:w-80 shrink-0 md:p-2" }}
+									/>
+								}
+								<div class="max-w-2xl pt-4 md:pt-2 md:px-4 lg:-mt-px">
+									{ type === "local" ?
+										tags?.map(tag => (
+											<div class="inline-flex">
+												<div class={`mr-2 mb-2 ${tagBg} px-2 py-1 leading-0`}>
+													<span class="text-sm font-medium text-black uppercase">
+														{ tag }
+													</span>
+												</div>
 											</div>
+										))
+									: (
+										<div class="flex items-center mb-2 text-sm">
+											From
+											{ favicon &&
+												<Picture
+													src={favicon}
+													formats={["avif", "webp"]}
+													alt={`${site} favicon`}
+													class="w-4 h-4 mx-2"
+												/>
+											}
+											<span>{ site }</span>
 										</div>
-									))
-								: (
-									<div class="flex items-center mb-2 text-sm">
-										From
-										{ favicon &&
-											<Picture
-												src={favicon}
-												formats={["avif", "webp"]}
-												alt={`${site} favicon`}
-												class="w-4 h-4 mx-2"
-											/>
-										}
-										<span>{ site }</span>
-									</div>
-								) }
-								<h3 class="mt-0 mb-1 md:mb-0 font-semibold text-xl not-italic">
-									{ title }
-								</h3>
-								<p>
-									{ date.toLocaleDateString("en-GB") } &middot; { desc }
-								</p>
+									) }
+									<h3 class="mt-0 mb-1 md:mb-0 font-semibold text-xl not-italic">
+										{ title }
+									</h3>
+									<p>
+										{ date.toLocaleDateString("en-GB") } &middot; { desc }
+									</p>
+								</div>
 							</div>
-						</div>
-					</a>
-				)) }
-			</>);
-		})}
+						</a>
+					)) }
+				</>);
+			})}
+		</div>
 	</div>
 </PageLayout>

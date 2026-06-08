@@ -3,8 +3,8 @@ import { Picture } from "astro:assets";
 import PageLayout from "@layouts/PageLayout.astro";
 import coverPhoto from "@assets/photos/sh18_postits.jpg";
 import codeClubProjects from "@assets/logos/codeclub-logo.png";
-import hourOfCode from "@assets/logos/hourofcode-logo.png";
-import cyberSkillsLive from "@assets/logos/cyberskillslive-logo.svg";
+import hedy from "@assets/logos/hedy-logo.png";
+import cyberSkillsLive from "@assets/logos/cyberskillslive-logo.png";
 import microbit from "@assets/logos/microbit-logo.png";
 import legospike from "@assets/logos/legospike-logo.webp";
 import overthewire from "@assets/logos/overthewire-logo.png";
@@ -28,12 +28,12 @@ const resources = [
 		desc: "The CodeClub website has both short projects you can do at a session and longer learning paths you can follow. This is where we recommend you start if you want to learn Scratch, Python, HTML/CSS, micro:bits, Unity, or Raspberry Pis."
 	},
 	{
-		name: "Hour of Code",
-		link: "https://hourofcode.com/us/gb/learn",
-		img: hourOfCode,
-		imgAlt: "Hour of Code logo",
-		levels: [0, 1],
-		desc: "Hour of Code, by Code.org, has a great number of projects you can do in one or a few hours—perfect for a Prewired session! They have content for Scratch, Python, JavaScript, and Lua."
+		name: "Hedy",
+		link: "https://hedy.org",
+		img: hedy,
+		imgAlt: "Hedy logo",
+		levels: [1, 2],
+		desc: "Hedy teaches Python through short, interactive tutorials. It is open source and available in many different languages besides English!"
 	},
 	{
 		name: "Cyber Skills Live",
@@ -68,13 +68,6 @@ const resources = [
 		desc: "Free games played on the command line to help you to learn and practice cybersecurity concepts, beginning from how to navigate around a terminal all the way up to binary exploitation and reverse engineering."
 	}
 ];
-
-// const headings = [
-// 	{ depth: 2, slug: "what-is-prewired", text: "What is Prewired?" },
-// 	{ depth: 2, slug: "how-to-attend", text: "How to attend" },
-// 	{ depth: 2, slug: "special-events", text: "Special events" },
-// 	{ depth: 2, slug: "frequently-asked-questions", text: "Frequently asked questions" }
-// ];
 ---
 
 <PageLayout
@@ -84,45 +77,47 @@ const resources = [
 	coverImageAlt="Close-up of post-its on a whiteboard, with the one in focus reading 'Learn Python'"
 	accent="pink"
 >
-	<p class="py-8 px-4 lg:px-8">
-		Note that although we are happy to receive suggestions for new links to add, as a matter of policy we do not post links to sites which have mainly paid-for content or whose main goal is commercial rather than educational.
-	</p>
+	<div class="w-full max-w-360 mx-auto">
+		<p class="py-8 px-4 lg:px-8">
+			Note that although we are happy to receive suggestions for new links to add, as a matter of policy we do not post links to sites which have mainly paid-for content or whose main goal is commercial rather than educational.
+		</p>
 
-	{ resources.map(({ name, link, img, imgAlt, levels, desc }) => (
-		<a
-			href={link}
-			target="_blank"
-			rel="noopener noreferrer"
-			class="py-8 px-4 lg:px-8 flex flex-col md:flex-row gap-x-12 gap-y-4 hover:bg-pink-50 text-black no-underline"
-		>
-			<div class="w-40 shrink-0 flex items-center">
-				<Picture
-					src={img}
-					formats={["avif", "webp"]}
-					alt={imgAlt}
-					width="160"
-					class="object-contain"
-				/>
-			</div>
-			<div class="">
-				<h3 class="font-semibold text-xl not-italic mt-0 mb-1">
-					{ name }
-				</h3>
-				<div class="flex gap-1 mb-2">
-					{ levels.map(level => {
-						const l = levelLabels[level];
-
-						return (
-							<div class={`px-2 py-0.5 text-sm ${l.style}`}>
-								{ l.label }
-							</div>
-						);
-					}) }
+		{ resources.map(({ name, link, img, imgAlt, levels, desc }) => (
+			<a
+				href={link}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="py-8 px-4 lg:px-8 flex flex-col md:flex-row gap-x-12 gap-y-4 hover:bg-pink-50 text-black no-underline"
+			>
+				<div class="w-40 shrink-0 flex items-center">
+					<Picture
+						src={img}
+						formats={["avif", "webp"]}
+						alt={imgAlt}
+						width="160"
+						class="object-contain"
+					/>
 				</div>
-				<p>
-					{ desc }
-				</p>
-			</div>
-		</a>
-	))}
+				<div class="">
+					<h3 class="font-semibold text-xl not-italic mt-0 mb-1">
+						{ name }
+					</h3>
+					<div class="flex gap-1 mb-2">
+						{ levels.map(level => {
+							const l = levelLabels[level];
+
+							return (
+								<div class={`px-2 py-0.5 text-sm ${l.style}`}>
+									{ l.label }
+								</div>
+							);
+						}) }
+					</div>
+					<p>
+						{ desc }
+					</p>
+				</div>
+			</a>
+		))}
+	</div>
 </PageLayout>

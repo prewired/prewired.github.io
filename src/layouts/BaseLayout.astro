@@ -19,12 +19,18 @@ const { title, ogTitle, desc, type, author, coverImageData, coverImageAlt } = As
 
 const navItems = [
 	{ href: "/news/", title: "News", accent: "blue" },
-	{ href: "/activities/", title: "Activities", accent: "purple" },
+	{ href: "/events/", title: "Events", accent: "purple" },
 	{ href: "/resources/", title: "Resources", accent: "pink" },
 	{ href: "/volunteering/", title: "Volunteering", accent: "blue" },
 	{ href: "/support/", title: "Support us", accent: "purple" },
 	{ href: "/about/", title: "About", accent: "pink" },
 	{ href: "/contact/", title: "Contact", accent: "blue" },
+];
+
+const eventItems = [
+	{ href: "/events/coding-club/", title: "🧑‍💻\u00A0\u00A0\u00A0Weekly Coding Club" },
+	{ href: "/events/make-a-thon/", title: "☀️\u00A0\u00A0\u00A0Summer Make-a-Thon" },
+	{ href: "/events/first-lego-league/", title: "🤖\u00A0\u00A0\u00A0FIRST LEGO League" }
 ];
 
 // Get the URL for this page
@@ -71,6 +77,7 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 						class="pb-1"
 					/>
 				</a>
+
 				<!-- Small-screen menu button -->
 				<button
 					class="lg:hidden flex items-center pl-3 pr-4 py-2 bg-pink-600 hover:bg-pink-800 border-b-2 border-pink-900 active:border-b-0 active:mt-0.5 rounded-lg uppercase font-semibold text-white cursor-pointer transition"
@@ -81,48 +88,89 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 					</svg>
 					Menu
 				</button>
+
 				<!-- Small-screen menu -->
 				<dialog
-					class="h-[200%] max-h-[200%] w-full sm:w-1/2 max-w-full sm:left-1/2 p-10 bg-pink-50 sm:border-l-2 sm:border-pink-600 translate-x-10 open:translate-x-0 starting:open:translate-x-10"
+					class="h-full max-h-none w-full sm:w-1/2 max-w-full sm:left-1/2 p-10 bg-pink-50 sm:border-l-2 sm:border-pink-600 translate-x-10 open:translate-x-0 starting:open:translate-x-10"
 					id="menu-dialog"
 				>
 					<DialogCloseButton
 						id="menu-dialog-close-btn"
-						style="float-right clear-both"
+						style="absolute right-8"
 					/>
-					<nav class="flex flex-col items-center sm:items-start">
+					<nav>
 						<div class="mt-12 mb-8">
-							<a href="/" class={`text-2xl text-black no-underline ${Astro.url.pathname === "/" ? "font-bold" : "hover:text-pink-600"}`}>
+							<a href="/" class={`text-2xl text-black no-underline ${Astro.url.pathname === "/" ? "font-semibold" : "hover:text-pink-600"}`}>
 								Home
 							</a>
 						</div>
 						{ navItems.map(({ href, title }) => (
 							<div class="mb-8">
-								<a href={href} class={`text-2xl text-black no-underline ${Astro.url.pathname === href ? "font-bold" : "hover:text-pink-600"}`}>
+								<a href={href} class={`text-2xl text-black no-underline ${Astro.url.pathname === href ? "font-semibold" : "hover:text-pink-600"}`}>
 									{ title }
 								</a>
+								{ href === "/events/" &&
+									<div>
+										{ eventItems.map(({ href, title }) => 
+											<a href={href} class={`block mt-4 text-xl text-black no-underline ${Astro.url.pathname === href ? "font-semibold" : "hover:text-pink-600"}`}>
+												{ title }
+											</a>
+										)}
+									</div>
+								}
 							</div>
 						))}
 					</nav>
 				</dialog>
+
 				<!-- Large-screen menu -->
-				<nav class="relative h-full mx-4 -mb-px hidden lg:flex gap-7 xl:gap-12 z-50">
-					{ navItems.map(({ href, title, accent }) => (
-						<a href={href} class={`pt-2 md:py-8 shrink-0 font-[450] text-black no-underline border-b-2 border-transparent
-							${Astro.url.pathname === href ? 
-								(accent === "pink" ? "text-pink-600 border-pink-600!" : accent === "purple" ? "text-purple-600 border-purple-600!" : "text-blue-750 border-blue-750!")
-							: (accent === "pink" ? "hover:text-pink-600" : accent === "purple" ? "hover:text-purple-600" : "hover:text-blue-750")}
-						`}>
-							{ title }
-						</a>
-					))}
+				<nav class="relative h-full mx-2 -mb-px hidden lg:flex gap-4 xl:gap-8 z-50">
+					{ navItems.map(({ href, title, accent }) =>
+						href === "/events/" ? (
+							// Wrapper div for Tippy accessibility
+							<div>
+								<button
+									id="eventsPopoverTrigger"
+									class={`group flex pt-8 pb-6 shrink-0 font-[450] text-black no-underline border-b-2 border-transparent cursor-pointer ${Astro.url.pathname.includes(href) ? "text-purple-600 border-purple-600!" : "hover:text-purple-600 data-open:text-purple-600"}`}
+								>
+									{ title }
+									<svg xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 -960 960 960"
+										class={`w-8 h-8 ml-1.5 -mt-px -mr-2 ${Astro.url.pathname.includes(href) ? "fill-purple-600" : "group-hover:fill-purple-600 group-data-open:fill-purple-600"} group-data-open:rotate-180 transition-transform duration-200`}
+									>
+										<path d="M468.31-372.72q-5.28-2.1-10.23-7.05L271.54-566.31q-7.23-7.23-7.22-17.7.01-10.48 7.63-18.09 7.61-7.62 17.9-7.62 10.28 0 17.89 7.62L480-429.43 652.67-602.1q7.23-7.23 17.5-7.22 10.27.01 17.88 7.63 7.62 7.61 7.62 17.9 0 10.28-7.62 17.89L501.92-379.77q-4.95 4.95-10.23 7.05-5.28 2.1-11.69 2.1-6.41 0-11.69-2.1Z"/>
+									</svg>
+								</button>
+							</div>
+						) : (
+							<a
+								href={href}
+								style={{ "--accent": accent === "blue" ? `var(--color-${accent}-750)` : `var(--color-${accent}-600)` }}
+								class={`px-2 py-8 shrink-0 font-[450] text-black no-underline border-b-2 border-transparent ${Astro.url.pathname === href ? "text-(--accent)! border-(--accent)!" : "hover:text-(--accent)"}`}
+							>
+								{ title }
+							</a>
+						)
+					)}
+					<div
+						id="eventsPopover"
+						class="p-2 bg-white border rounded-xl shadow"
+					>
+						{ eventItems.map(({ href, title }) => (
+							<a href={href}
+								class={`block pl-4 pr-6 py-4 rounded-lg font-[450] text-black no-underline ${Astro.url.pathname === href ? "bg-purple-50 text-purple-900" : "hover:bg-purple-50 hover:text-purple-900"}`}
+							>
+								{ title }
+							</a>
+						)) }
+					</div>
 				</nav>
 			</header>
-	
+
 			<main>
 				<slot />
 			</main>
-	
+
 			<div class="h-16 border-t diastripe"></div>
 			<footer class="relative bg-purple-50 before:absolute before:w-full before:md:w-[calc(100%+2rem)] before:h-px before:bg-gray-200 before:md:-left-4 before:top-0 after:absolute after:w-full after:md:w-[calc(100%+2rem)] after:h-px after:bg-gray-200 after:md:-left-4 after:-bottom-px">
 				<div class="w-full max-w-360 mx-auto flex flex-wrap lg:justify-between 2xl:border-x sm:divide-x divide-y lg:divide-y-0 *:w-full sm:*:w-1/2 lg:*:w-1/4 *:py-6 md:*:py-10 *:px-4 md:*:px-8">
@@ -199,7 +247,8 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 							Prewired &incare; CodeBase<br />
 							Argyle House<br />
 							3 Lady Lawson Street<br />
-							Edinburgh EH3 9DR
+							Edinburgh EH3 9DR<br />
+							<a href="mailto:hello@prewired.org">hello@prewired.org</a>
 						</address>
 					</div>
 				</div>
@@ -218,6 +267,11 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 		</div>
 
 		<script>
+			import tippy from "tippy.js";
+			import 'tippy.js/animations/shift-away-subtle.css';
+
+
+			/* Toggle the hamburger menu on small screens */
 			const menuOpenBtn = document.getElementById("menu-open-btn") as HTMLButtonElement;
 			const menuDialog = document.getElementById("menu-dialog") as HTMLDialogElement;
 			const menuCloseBtn = document.getElementById("menu-dialog-close-btn") as HTMLButtonElement;
@@ -233,6 +287,24 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 			menuDialog.addEventListener("click", event => {
 				// Close the dialog on tapping the backdrop
 				if (event.target === menuDialog) menuDialog.close();
+			});
+
+
+			/* Set up the Events navigation menu on large screens */
+			const eventsPopoverTrigger = document.getElementById("eventsPopoverTrigger") as HTMLButtonElement;
+			const eventsPopover = document.getElementById("eventsPopover") as HTMLDivElement;
+
+			tippy(eventsPopoverTrigger, {
+				content: eventsPopover,
+				animation: "shift-away-subtle",
+				interactive: true,
+				interactiveBorder: 30,
+				offset: [0, -16],
+				placement: "bottom",
+				trigger: "click focus mouseenter",
+
+				onShow: () => { eventsPopoverTrigger.dataset.open = "true" },
+				onHide: () => { eventsPopoverTrigger.removeAttribute("data-open") }
 			});
 		</script>
 	</body>

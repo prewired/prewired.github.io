@@ -5,6 +5,7 @@ desc: Prewired's policy on online safety.
 coverImage:
   src: sh16_website.jpg
   alt: An attendee uploading a file of CSS code to the internet
+accent: blue
 ---
 
 ## Purpose and scope

@@ -1,0 +1,141 @@
+import mt23 from "@assets/photos/mt23_winners.jpg";
+import mt24 from "@assets/photos/mt24_winners.jpg";
+import mt25 from "@assets/photos/mt25_winners.jpg";
+import eodd from "@assets/misc/eodd_banner.png";
+import session from "@assets/photos/ws16_kitchen.jpg";
+import digit from "@assets/blog_external/digit_fav.png";
+import futurescot from "@assets/blog_external/futurescot_fav.png";
+import futurescot_banner from "@assets/blog_external/banner_futurescot_2016.jpg";
+import govuk from "@assets/blog_external/govuk_fav.png";
+import govuk_banner from "@assets/blog_external/govuk_cybersecurity_outcomes.jpg";
+import hypercube from "@assets/blog_external/hypercube_fav.png";
+import insider from "@assets/blog_external/insider_fav.png";
+import insider_banner from "@assets/blog_external/banner_insider_2018.avif";
+import maths_donation from "@assets/blog_external/maths_donation.jpg";
+import medium from "@assets/blog_external/medium_fav.png";
+import scottlogic from "@assets/blog_external/scottlogic_fav.png";
+import scottlogic_banner from "@assets/photos/sh16_scottlogic.jpg";
+import tinderbox from "@assets/blog_external/tinderbox_fav.png";
+import uoe from "@assets/blog_external/uoe_fav.png";
+
+
+type ExternalPost = {
+	url: string;
+	date: Date;
+	site: string;
+	title: string;
+	desc: string;
+	favicon: ImageMetadata;
+	banner: ImageMetadata;
+	bannerAlt: string;
+	tags?: string[];
+};
+
+const externalPosts: ExternalPost[] = [
+	{
+		url: "https://maths.ed.ac.uk/school-donates-35-laptops-to-coding-charity",
+		date: new Date("2026-05-05"),
+		site: "The University of Edinburgh",
+		title: "School of Mathematics donates 35 laptops to Prewired",
+		desc: "The second-hand machines were due to be recycled but now have a new lease of life helping Edinburgh's young people learn programming.",
+		favicon: uoe,
+		banner: maths_donation,
+		bannerAlt: "Three Prewired volunteers posing behind a trolley carrying 35 laptops"
+	},
+	{
+		url: "https://wearehypercube.com/prewired-2025/",
+		date: new Date("2025-07-22"),
+		site: "Hypercube",
+		title: "Hypercube supports the 2025 Prewired Summer Make-a-Thon",
+		desc: "Our third annual Make-a-Thon was sponsored again by Hypercube! Read all about the event in their blog post.",
+		favicon: hypercube,
+		banner: mt25,
+		bannerAlt: "The three winners of the Make-a-Thon presenting their awards and prizes together with a Prewired mentor and competition judge",
+		tags: ["make-a-thon"]
+	},
+	{
+		url: "https://medium.com/@indiathomson/prewired-x-hypercube-summer-make-a-thon-41f03bea0311",
+		date: new Date("2024-08-07"),
+		site: "Medium",
+		title: "Prewired × Hypercube Summer Make-a-Thon 2024",
+		desc: "At the end of July, we hosted our second annual Summer Make-A-Thon, this time sponsored by Hypercube consulting.",
+		favicon: medium,
+		banner: mt24,
+		bannerAlt: "The three winners of the Make-a-Thon presenting their awards and prizes together with a Prewired mentor and competition judge",
+		tags: ["make-a-thon"]
+	},
+	{
+		url: "https://medium.com/kinandcartacreated/summer-tech-make-a-thon-dedaa474d3eb",
+		date: new Date("2023-10-09"),
+		site: "Medium",
+		title: "Looking back at the Prewired Summer Make-a-Thon",
+		desc: "For the first time since the pandemic, Prewired hosted a Summer Make-A-Thon, sponsored by Kin + Carta. Read more in India's blog post!",
+		favicon: medium,
+		banner: mt23,
+		bannerAlt: "The four winners of the Make-a-Thon presenting their awards and prizes",
+		tags: ["make-a-thon"]
+	},
+	{
+		url: "https://www.gov.uk/government/publications/mapping-informal-cyber-security-initiatives-for-young-people-aged-5-19/mapping-informal-cyber-security-initiatives-for-young-people-aged-5-19",
+		date: new Date("2022-07-21"),
+		site: "UK Government",
+		title: "Mapping informal cyber security initiatives for young people aged 5-19",
+		desc: "See Prewired discussed in government research aimed to provide a first mapping of informal cyber security-related initiatives aimed at children and young people aged 5-19.",
+		favicon: govuk,
+		banner: govuk_banner,
+		bannerAlt: "Four steps in a diagram: 'Build awareness of cybersecurity', 'Feel inspired to get involved in it', Feel like cybersecurity is a field that they can see themselves working in', 'Develop the knowledge and skills required to have a career in cybersecurity'"
+	},
+	{
+		url: "https://tinderboxcollective.org/2021/05/04/prewired-presents-the-emporium-of-digital-delights/",
+		date: new Date("2021-05-04"),
+		site: "Tinderbox Collective",
+		title: "Prewired++ presents the Emporium of Digital Delights!",
+		desc: "Prewired is teaming up with the Tinderbox Collective to launch The Emporium of Digital Delights, our new online summer hackathon series.",
+		favicon: tinderbox,
+		banner: eodd,
+		bannerAlt: "Coloured banner saying 'The Emporium of Digital Delights, May - July 2021'",
+		tags: ["make-a-thon"]
+	},
+	{
+		url: "https://www.digit.fyi/prewired-receives-funding-to-bring-coding-club-online/",
+		date: new Date("2021-01-20"),
+		site: "DIGIT News",
+		title: "Prewired Receives Funding to Bring Coding Club Online",
+		desc: "Youth programming club Prewired has secured funding from Creative Informatics to help the long-running Edinburgh group move online.",
+		favicon: digit,
+		banner: session,
+		bannerAlt: "Two attendees and two mentors chatting in a coffee corner"
+	},
+	{
+		url: "https://www.insider.co.uk/news/scottish-tech-startup-awards-finalists-13540999",
+		date: new Date("2018-11-06"),
+		site: "Insider",
+		title: "Prewired's Freda O'Byrne nominated as Diversity in Tech Champion at the first Scottish Tech Startup Awards",
+		desc: "We're proud to share that Freda O'Byrne was nominated as Diversity in Tech Champion for her work at Prewired. Read more about the awards in this article from Insider!",
+		favicon: insider,
+		banner: insider_banner,
+		bannerAlt: "A woman walking on a stage in front of large blue letters spelling TURING"
+	},
+	{
+		url: "https://blog.scottlogic.com/2016/08/22/building-the-next-generation-of-technology-professionals.html",
+		date: new Date("2016-08-22"),
+		site: "Scott Logic",
+		title: "Scott Logic staff mentor at the Prewired Summer Hack",
+		desc: "Last week, five Scott Logic staff took time out of the Edinburgh office to lend a hand with the Prewired Summer Hack coding challenge for children and young adults from 8 to 19 years of age.",
+		favicon: scottlogic,
+		banner: scottlogic_banner,
+		bannerAlt: "Two Scott Logic staff members sitting around a table with a child helping him with programming"
+	},
+	{
+		url: "https://futurescot.com/hey-teacher-leave-kids-alone-why-children-better-left-to-learn-coding-by-themselves/",
+		date: new Date("2016-04-28"),
+		site: "FutureScot",
+		title: "Hey teacher, leave them kids alone. Why children are better off left to learn coding by themselves",
+		desc: "This guest essay by Freda O'Byrne, co-founder of Prewired, explains why they take a different approach to the curriculum.",
+		favicon: futurescot,
+		banner: futurescot_banner,
+		bannerAlt: "A young girl using a laptop displaying a video call with other children"
+	}
+];
+
+export default externalPosts;

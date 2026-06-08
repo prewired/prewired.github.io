@@ -5,6 +5,7 @@ desc: Information on how to contact the organisers of Prewired.
 coverImage:
   src: sh18_gateway.jpg
   alt: A young person programming a BBC micro:bit while a mentor is pointing at a screen
+accent: blue
 ---
 
 ## When and where is Prewired?
@@ -23,12 +24,18 @@ You can contact the organisers by emailing [hello@prewired.org](mailto:hello@pre
 
 Please keep in mind that Prewired is 100% volunteer-run and in busy periods it might take us a little longer to get back to you.
 
+### Feedback
+
+If you'd like to provide general feedback, you can do so through our [Open Feedback Form](https://forms.gle/Hw5CVtqgbP2GPS6c9).
+
+You can choose whether to leave your name and contact details or whether to provide feedback anonymously. Your feedback will be visible to all members of the [Board of Trustees](http://localhost:4321/about/#governance).
+
 ### Complaints and concerns
 
 If you are unhappy about any issue to do with Prewired and wish to discuss this in confidence, you can reach out to either of the following people:
 
-* Rikki Guy (Chair): [rikki@prewired.org](mailto:rikki@prewired.org)
 * Athina Frantzana (Child Protection & EDI Officer): [athina@prewired.org](mailto:athina@prewired.org)
+* India Thomson (Secretary): [india@prewired.org](mailto:india@prewired.org)
 
 ## Stay in touch
 

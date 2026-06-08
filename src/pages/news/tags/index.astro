@@ -13,8 +13,9 @@ const tags = [...new Set(allPosts.map(post => post.data.tags).flat())].sort((a, 
 	desc="All tags used on the Prewired blog."
 	coverImageData={coverPhoto}
 	coverImageAlt="A computer screen with the text 'Prewired Presentations begin 13:00 Friday 27th July 2018'"
+	accent="blue"
 >
-	<div class="px-4 lg:px-8 py-8">
+	<div class="w-full max-w-360 mx-auto px-4 lg:px-8 py-8">
 		{ tags.map(tag => (
 			<p>
 				<a

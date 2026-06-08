@@ -1,0 +1,84 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import SectionWithImage from "@components/SectionWithImage.astro";
+import coverPhoto from "@assets/photos/mt23_microbit.jpg";
+import codingClub from "@assets/photos/ws16_roundtables.jpg";
+import summerhack from "@assets/photos/sh16_presentation.jpg";
+import fll from "@assets/photos/fll24_showoff.jpg";
+---
+
+<PageLayout
+	title="Events"
+	desc="Prewired hosts over 50 events a year, from our Wednesday night coding club to yearly Summer Make-a-Thon!"
+	coverImageData={coverPhoto}
+	coverImageAlt="Two attendees sitting behind a laptop, programming a BBC micro:bit connected to it"
+	accent="purple"
+>
+	<section>
+		<div class="px-4 lg:px-8">
+			<p>
+				We organise a range of events throughout the year. See their individual pages for more information:
+			</p>
+		</div>
+	</section>
+
+	<SectionWithImage reverse
+		imgSrc={codingClub}
+		imgAlt="Young people working on laptops in the CodeBase coworking space with parents sitting in the background"
+	>
+		<h2>
+			Weekly coding club
+		</h2>
+		<p>
+			Wednesday evenings at Prewired are for you to play around with whatever technologies you want. Learn something brand new, get help with something you're stuck on, or even teach others!
+		</p>
+		<p class="mb-6">
+			We meet almost every Wednesday of the year, from 5:30PM to 7:30PM at CodeBase Edinburgh.
+		</p>
+		<a href="/events/coding-club/"
+			class="block md:w-fit px-4 py-3 mb-4 bg-pink-600 hover:bg-pink-800 active:bg-pink-900 rounded-lg font-[450] text-white no-underline text-center"
+		>
+			Read more
+		</a>
+	</SectionWithImage>
+
+	<SectionWithImage
+		imgSrc={summerhack}
+		imgAlt="Four young people presenting a slide in front of an audience of about 30 listening adults"
+	>
+		<h2>
+			Summer Make-a-Thon
+		</h2>
+		<p>
+			Each year, usually in July, we run our Summer Make-a-Thon: a full-weekend event during which participants work in small teams to prototype a solution to a challenge over the course of two days and present their work to a panel of judges at the end.
+		</p>
+		<p class="mb-6">
+			The Make-a-Thon is open to those aged 11-18 and is a fantastic opportunity to practice working in a team, quickly scaffolding a project, and presenting in front of an audience.
+		</p>
+		<a href="/events/make-a-thon/"
+			class="block md:w-fit px-4 py-3 mb-4 bg-purple-600 hover:bg-purple-800 active:bg-purple-900 rounded-lg font-[450] text-white no-underline text-center"
+		>
+			Read more
+		</a>
+	</SectionWithImage>
+
+	<SectionWithImage reverse
+		imgSrc={fll}
+		imgAlt="Four attendees wearing t-shirts that say 'Plastic Pollution Solution' huddled around a laptop surrounded by LEGO parts"
+	>
+		<h2>
+			FIRST LEGO League
+		</h2>
+		<p>
+			From September to February, we run FIRST LEGO League in parallel to our normal sessions. In FIRST LEGO League, you work in a team over the course of several months to build a LEGO robot that can solve a series of challenges and design an innovation project related to the challenge theme.
+		</p>
+		<p class="mb-6">
+			We've participated in the Edinburgh competition several times and even won a few prizes, such as Best Innovation Project by our team <em>Plastic Pollution Solution</em> in 2025.
+		</p>
+		<a href="/events/first-lego-league/"
+			class="block md:w-fit px-4 py-3 mb-4 bg-blue-600 hover:bg-blue-800 active:bg-blue-900 rounded-lg font-[450] text-white no-underline text-center"
+		>
+			Read more
+		</a>
+	</SectionWithImage>
+</PageLayout>
