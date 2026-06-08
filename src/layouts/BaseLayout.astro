@@ -301,6 +301,7 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 				interactiveBorder: 30,
 				offset: [0, -16],
 				placement: "bottom",
+				trigger: "click focus mouseenter",
 
 				onShow: () => { eventsPopoverTrigger.dataset.open = "true" },
 				onHide: () => { eventsPopoverTrigger.removeAttribute("data-open") }

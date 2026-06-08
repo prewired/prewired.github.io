@@ -16,7 +16,7 @@ export default defineConfig({
 
 	// Legacy URLs
 	redirects: {
-		"/attending/": "/activities/",
+		"/attending/": "/events/",
 		"/docs/": "/about/#governance"
 	},
 
