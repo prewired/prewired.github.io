@@ -12,9 +12,10 @@ interface Props {
 }
 
 const { imgSrc, imgAlt, imgCaption, reverse, style } = Astro.props;
+const sectionStyle = style ?? "";
 ---
 
-<section class={`mt-0 max-md:pt-0 ${style}`}>
+<section class={`mt-0 max-md:pt-0 ${sectionStyle}`}>
 	<div class={`flex flex-col ${reverse ? "md:flex-row-reverse" : "md:flex-row"} items-center lg:px-8`}>
 		<figure class={`w-full md:w-1/2 shrink-0 ${reverse ? "md:pl-24 md:max-lg:pr-4" : "md:pr-24 md:max-lg:pl-4"}`}>
 			<Picture

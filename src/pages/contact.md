@@ -28,7 +28,7 @@ Please keep in mind that Prewired is 100% volunteer-run and in busy periods it m
 
 If you'd like to provide general feedback, you can do so through our [Open Feedback Form](https://forms.gle/Hw5CVtqgbP2GPS6c9).
 
-You can choose whether to leave your name and contact details or whether to provide feedback anonymously. Your feedback will be visible to all members of the [Board of Trustees](http://localhost:4321/about/#governance).
+You can choose whether to leave your name and contact details or whether to provide feedback anonymously. Your feedback will be visible to all members of the [Board of Trustees](/about/#governance).
 
 ### Complaints and concerns
 

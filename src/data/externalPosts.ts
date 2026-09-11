@@ -18,7 +18,6 @@ import scottlogic_banner from "@assets/photos/sh16_scottlogic.jpg";
 import tinderbox from "@assets/blog_external/tinderbox_fav.png";
 import uoe from "@assets/blog_external/uoe_fav.png";
 
-
 type ExternalPost = {
 	url: string;
 	date: Date;

@@ -72,7 +72,7 @@ const { title, desc, coverImageData, coverImageAlt, accent, headings, noPaddingB
 			<div class="hidden xl:block w-60 shrink-0" />
 		</div>
 	) :
-		<div class={`min-h-[50vh] pb-24 md:pb-32 ${noPaddingBottom && "pb-0!"}`}>
+		<div class={`min-h-[50vh] pb-24 md:pb-32 ${noPaddingBottom ? "pb-0!" : ""}`}>
 			<slot />
 		</div>
 	}
