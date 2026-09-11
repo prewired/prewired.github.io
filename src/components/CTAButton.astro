@@ -1,0 +1,59 @@
+---
+interface Props {
+	href?: string;
+	target?: string;
+	rel?: string;
+	type?: "button" | "submit" | "reset";
+	variant: "pink" | "pink-soft" | "purple" | "purple-dark" | "purple-soft" | "blue" | "blue-dark";
+	id?: string;
+	class?: string;
+	ariaControls?: string;
+	ariaHaspopup?: boolean | "false" | "true" | "menu" | "listbox" | "tree" | "grid" | "dialog";
+}
+
+const variantClasses = {
+	"pink": "bg-pink-600 hover:bg-pink-800 active:bg-pink-900 text-white",
+	"pink-soft": "bg-pink-200 hover:bg-pink-300 active:bg-pink-400 text-black",
+	"purple": "bg-purple-600 hover:bg-purple-800 active:bg-purple-900 text-white",
+	"purple-dark": "bg-purple-950 hover:bg-purple-800 active:bg-purple-900 text-white",
+	"purple-soft": "bg-purple-100 hover:bg-purple-200 active:bg-purple-300 text-black",
+	"blue": "bg-blue-750 hover:bg-blue-800 active:bg-blue-900 text-white",
+	"blue-dark": "bg-blue-950 hover:bg-blue-800 active:bg-blue-900 text-white",
+} as const;
+
+const {
+	href,
+	target,
+	rel,
+	type = "button",
+	variant,
+	id,
+	class: className = "",
+	ariaControls,
+	ariaHaspopup,
+} = Astro.props;
+
+const buttonClasses = `px-4 py-3 text-center no-underline cursor-pointer rounded-md ${variantClasses[variant]} ${className}`;
+---
+
+{ href ? (
+	<a
+		href={href}
+		target={target}
+		rel={rel}
+		id={id}
+		class={buttonClasses}
+	>
+		<slot />
+	</a>
+) : (
+	<button
+		type={type}
+		id={id}
+		aria-controls={ariaControls}
+		aria-haspopup={ariaHaspopup}
+		class={buttonClasses}
+	>
+		<slot />
+	</button>
+) }

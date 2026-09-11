@@ -1,7 +1,11 @@
 ---
 import { Picture } from "astro:assets";
 import PageLayout from "@layouts/PageLayout.astro";
+import ContentSection from "@components/ContentSection.astro";
 import SectionWithImage from "@components/SectionWithImage.astro";
+import ThreeColumnSection from "@components/ThreeColumnSection.astro";
+import ThreeColumnItem from "@components/ThreeColumnItem.astro";
+import CTAButton from "@components/CTAButton.astro";
 import coverPhoto from "@assets/photos/ws16_roundtables.jpg";
 import arduino from "@assets/photos/mt22_arduino.jpg";
 import pear from "@assets/photos/mt24_pear.jpg";
@@ -21,56 +25,56 @@ import DialogCloseButton from "@components/DialogCloseButton.astro";
 		<p class="mb-6 max-w-[72ch] lg:max-w-[36ch] xl:max-w-[42ch]">
 			Wednesday evenings at Prewired are for you to play around with whatever technologies you want. Learn something brand new, get help with something you're stuck on, or even teach others!
 		</p>
-		<button class="book-tickets-btn md:w-fit px-4 py-3 mb-4 bg-purple-950 hover:bg-purple-800 active:bg-purple-900 rounded-lg font-[450] text-white no-underline text-center cursor-pointer">
+		<CTAButton
+			type="button"
+			variant="purple-dark"
+			ariaControls="tickets-dialog"
+			ariaHaspopup="dialog"
+			class="book-tickets-btn md:w-fit mb-4 font-[450]"
+		>
 			Book a spot
-		</button>
+		</CTAButton>
 	</Fragment>
 
-	<section class="pb-4 max-md:border-b-0">
-		<div class="px-4 lg:px-8">
-			<h2>What we do</h2>
-			<p>
-				We run a weekly, free-to-attend coding and technology club in Edinburgh.
-			</p>
-		</div>
-	</section>
+	<ContentSection sectionClass="pb-4 max-md:border-b-0">
+		<h2>What we do</h2>
+		<p>
+			We run a weekly, free-to-attend coding and technology club in Edinburgh.
+		</p>
+	</ContentSection>
 
-	<section class="py-0 max-md:border-b-0">
-		<div class="flex flex-col md:flex-row 2xlp:border-x">
-			<div class="md:w-1/3 px-4 py-2 md:py-4 lg:p-8 md:border-r">
-				<p class="mb-0 md:mb-2 mr-2 font-semibold">🕠&nbsp;&nbsp;When?</p>
-				<p>
-					Every Wednesday of the year from 5:30&ndash;7:30 PM, except during the winter school holidays.
-				</p>
-			</div>
-			<div class="md:w-1/3 p-4 py-2 md:py-4 lg:p-8 md:border-r">
-				<p class="mb-0 md:mb-2 mr-2 font-semibold">🏫&nbsp;&nbsp;Where?</p>
-				<p>
-					CodeBase Edinburgh, 37a Castle Terrace.
-				</p>
-			</div>
-			<div class="md:w-1/3 p-4 py-2 md:py-4 lg:p-8">
-				<p class="mb-0 md:mb-2 mr-2 font-semibold">🧑‍💻&nbsp;&nbsp;Who for?</p>
-				<p>
-					Anyone aged 7 to 17&mdash;whether you have been coding for years or are completely new!
-				</p>
-			</div>
-		</div>
-	</section>
+	<ThreeColumnSection sectionClass="py-0 max-md:border-b-0">
+		<ThreeColumnItem bordered>
+			<p class="mb-0 md:mb-2 mr-2 font-semibold">🕠&nbsp;&nbsp;When?</p>
+			<p>
+				Every Wednesday of the year from 5:30&ndash;7:30 PM, except during the winter school holidays.
+			</p>
+		</ThreeColumnItem>
+		<ThreeColumnItem bordered>
+			<p class="mb-0 md:mb-2 mr-2 font-semibold">🏫&nbsp;&nbsp;Where?</p>
+			<p>
+				CodeBase Edinburgh, 37a Castle Terrace.
+			</p>
+		</ThreeColumnItem>
+		<ThreeColumnItem>
+			<p class="mb-0 md:mb-2 mr-2 font-semibold">🧑‍💻&nbsp;&nbsp;Who for?</p>
+			<p>
+				Anyone aged 7 to 17&mdash;whether you have been coding for years or are completely new!
+			</p>
+		</ThreeColumnItem>
+	</ThreeColumnSection>
 
-	<section class="max-md:pb-12 lg:pt-8">
-		<div class="px-4 lg:px-8">
-			<p>
-				Our sessions are unstructured: we do not run classes, but instead help our attendees <strong class="text-pink-600">work on their own projects</strong>. Our volunteers support attendees by working through issues together and pointing them to the right resources.
-			</p>
-			<p>
-				We have attendees working with Scratch, Python, websites (HTML, CSS, JavaScript), GameMaker, Godot, LEGO and Marty robots, and much more&mdash;(almost) anything is welcome!
-			</p>
-			<p>
-				Children <strong class="text-pink-600">under the age of 11 should be accompanied by an adult</strong>; those 11+ are allowed to attend by themselves.
-			</p>
-		</div>
-	</section>
+	<ContentSection sectionClass="max-md:pb-12 lg:pt-8">
+		<p>
+			Our sessions are unstructured: we do not run classes, but instead help our attendees <strong class="text-pink-600">work on their own projects</strong>. Our volunteers support attendees by working through issues together and pointing them to the right resources.
+		</p>
+		<p>
+			We have attendees working with Scratch, Python, websites (HTML, CSS, JavaScript), GameMaker, Godot, LEGO and Marty robots, and much more&mdash;(almost) anything is welcome!
+		</p>
+		<p>
+			Children <strong class="text-pink-600">under the age of 11 should be accompanied by an adult</strong>; those 11+ are allowed to attend by themselves.
+		</p>
+	</ContentSection>
 
 	<SectionWithImage reverse
 		imgSrc={arduino}
@@ -139,7 +143,7 @@ import DialogCloseButton from "@components/DialogCloseButton.astro";
 			Twice a year, once in summer and once for our last session in December, we team up with our pals at Digital Skills 4 Girls for a <strong>Festive Party</strong>! In addition to normal Prewired, we pull out all the stops (and snacks) with activity stations that have included make-your-own micro:bit Christmas cards, vintage arcade machines, and VR games.
 		</p>
 		<p>
-			The best way to stay up-to-date with what's happening is to subscribe to our <a href="http://eepurl.com/dv2dPb" target="_blank" rel="noopener">mailing list</a>!
+			The best way to stay up-to-date with what's happening is to subscribe to our <a href="http://eepurl.com/dv2dPb" target="_blank" rel="noopener noreferrer">mailing list</a>!
 		</p>
 	</SectionWithImage>
 
@@ -155,49 +159,53 @@ import DialogCloseButton from "@components/DialogCloseButton.astro";
 		</p>
 	</div> -->
 
-	<section>
-		<div class="px-4 md:pr-0 lg:pl-8">
-			<Picture
-				src={lego}
-				formats={["avif", "webp"]}
-				alt="An attendee standing next to a table, building a contraption using LEGO Mindstorms pieces"
-				class="h-196 object-cover float-right rounded-lg"
-				pictureAttributes={{ class: "hidden md:inline-block w-1/3 float-right ml-4 p-4 lg:p-8" }}
-			/>
-			<h2 class="pt-4 md:pt-8 lg:pt-12">
-				How to attend
-			</h2>
-			<div>
-				<p>
-					We don't have a membership&mdash;simply book a spot for the day(s) you would like to attend using the button below or via <a href="https://buytickets.at/prewired/1223517" target="_blank" rel="noopener noreferrer">our TicketTailor page</a>.
-				</p>
-				<button class="book-tickets-btn md:w-fit px-4 py-3 mb-4 bg-purple-600 hover:bg-purple-800 active:bg-purple-900 rounded-lg font-[450] text-white no-underline text-center cursor-pointer">
-					Book a spot
-				</button>
-				<p class="mt-4 md:mb-12">
-					Please sign up for as many sessions as you want. New sign-up dates are added to the calendar at the end of every month. Coming regularly makes it easier to make friends and do as much coding as possible :)
-				</p>
-				<p>
-					<strong class="text-purple-600">Then, turn up!</strong>
-				</p>
-				<ul>
-					<li class="list-['⌛'] pl-2">
-						We open the check-in desk at 5:30&mdash;if you're early, you can wait in the lobby with the others. Please don't arrive too early though, as CodeBase is an active workplace during the day.
-					</li>
-					<li class="list-['🤔'] pl-2">
-						If you have never coded before, or have but don't know what to do, no problem! Introduce yourself to a mentor (they'll be wearing lanyards) when you arrive, and they'll help you to get started.
-					</li>
-					<li class="list-['🙋'] pl-2">
-						If you're already working on a coding project or learning a topic by yourself and are happy to carry on with that, cool beans. Make yourself at home and ask any of our volunteers if you need help, or you can put your hand up and someone will spot you!
-					</li>
-				</ul>
-				<p>
-					If you can't make a session anymore, please cancel your booking so your spot can be given to someone else.
-				</p>
-			</div>
+	<ContentSection containerClass="px-4 md:pr-0 lg:pl-8">
+		<Picture
+			src={lego}
+			formats={["avif", "webp"]}
+			alt="An attendee standing next to a table, building a contraption using LEGO Mindstorms pieces"
+			class="h-196 object-cover float-right rounded-lg"
+			pictureAttributes={{ class: "hidden md:inline-block w-1/3 float-right ml-4 p-4 lg:p-8" }}
+		/>
+		<h2 class="pt-4 md:pt-8 lg:pt-12">
+			How to attend
+		</h2>
+		<div>
+			<p>
+				We don't have a membership&mdash;simply book a spot for the day(s) you would like to attend using the button below or via <a href="https://buytickets.at/prewired/1223517" target="_blank" rel="noopener noreferrer">our TicketTailor page</a>.
+			</p>
+			<CTAButton
+				type="button"
+				variant="purple"
+				ariaControls="tickets-dialog"
+				ariaHaspopup="dialog"
+				class="book-tickets-btn md:w-fit mb-4 font-[450]"
+			>
+				Book a spot
+			</CTAButton>
+			<p class="mt-4 md:mb-12">
+				Please sign up for as many sessions as you want. New sign-up dates are added to the calendar at the end of every month. Coming regularly makes it easier to make friends and do as much coding as possible :)
+			</p>
+			<p>
+				<strong class="text-purple-600">Then, turn up!</strong>
+			</p>
+			<ul>
+				<li class="list-['⌛'] pl-2">
+					We open the check-in desk at 5:30&mdash;if you're early, you can wait in the lobby with the others. Please don't arrive too early though, as CodeBase is an active workplace during the day.
+				</li>
+				<li class="list-['🤔'] pl-2">
+					If you have never coded before, or have but don't know what to do, no problem! Introduce yourself to a mentor (they'll be wearing lanyards) when you arrive, and they'll help you to get started.
+				</li>
+				<li class="list-['🙋'] pl-2">
+					If you're already working on a coding project or learning a topic by yourself and are happy to carry on with that, cool beans. Make yourself at home and ask any of our volunteers if you need help, or you can put your hand up and someone will spot you!
+				</li>
+			</ul>
+			<p>
+				If you can't make a session anymore, please cancel your booking so your spot can be given to someone else.
+			</p>
 		</div>
-		<div class="clear-both" />
-	</section>
+		<div slot="after" class="clear-both" />
+	</ContentSection>
 
 	<section>
 		<div class="flex flex-col md:flex-row lg:px-8">
@@ -277,17 +285,21 @@ import DialogCloseButton from "@components/DialogCloseButton.astro";
 <dialog
 	class="w-160 h-screen max-h-screen max-w-full mx-auto shadow-lg scale-95 open:scale-100 starting:open:scale-95"
 	id="tickets-dialog"
+	aria-labelledby="tickets-dialog-title"
 >
 	<DialogCloseButton
 		id="tickets-dialog-close-btn"
+		label="Close booking dialog"
 		style="absolute top-4 right-8 z-100"
 	/>
+	<h2 id="tickets-dialog-title" class="sr-only">Book a spot at Prewired</h2>
 	<!-- Ticket Tailor Widget -->
 	<div class="tt-widget">
 		<div class="tt-widget-fallback">
 			<p>
 				<a href="https://www.tickettailor.com/events/prewired/1223517/select-date?ref=website_widget"
 					target="_blank"
+					rel="noopener noreferrer"
 				>
 					Click here to buy tickets
 				</a>
@@ -319,9 +331,12 @@ import DialogCloseButton from "@components/DialogCloseButton.astro";
 	const ticketsBtns = document.getElementsByClassName("book-tickets-btn") as HTMLCollectionOf<HTMLButtonElement>;
 	const ticketsDialog = document.getElementById("tickets-dialog") as HTMLDialogElement;
 	const closeBtn = document.getElementById("tickets-dialog-close-btn") as HTMLButtonElement;
+	let lastTrigger: HTMLButtonElement | null = null;
 
 	Array.from(ticketsBtns).forEach(btn => btn.addEventListener("click", () => {
+		lastTrigger = btn;
 		ticketsDialog.showModal();
+		closeBtn.focus();
 	}));
 
 	closeBtn.addEventListener("click", () => {
@@ -331,5 +346,9 @@ import DialogCloseButton from "@components/DialogCloseButton.astro";
 	ticketsDialog.addEventListener("click", event => {
 		// Close the dialog on tapping the backdrop
 		if (event.target === ticketsDialog) ticketsDialog.close();
+	});
+
+	ticketsDialog.addEventListener("close", () => {
+		lastTrigger?.focus();
 	});
 </script>

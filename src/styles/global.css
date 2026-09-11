@@ -64,6 +64,7 @@
 
 	html {
 		@apply transition duration-300 scrollbar-gutter-stable;
+		scroll-padding-top: 6rem;
 	}
 
 	html:has(dialog[open]) {
@@ -123,6 +124,11 @@
 
 	a {
 		@apply text-blue-800 hover:text-purple-600 underline underline-offset-2;
+	}
+
+	:where(a, button, summary, input, select, textarea, [tabindex]:not([tabindex="-1"])):focus-visible {
+		outline: 3px solid var(--color-blue-750);
+		outline-offset: 3px;
 	}
 
 
@@ -187,7 +193,7 @@
 		transform: rotate(180deg);
 	}
 
-	summary:hover {
+	summary:hover, summary:focus-visible {
 		@apply bg-gray-100;
 	}
 
@@ -214,6 +220,16 @@
 
 	code {
 		@apply px-1.5 py-1 bg-blue-100 text-blue-900 rounded;
+	}
+
+	.skip-link {
+		@apply fixed left-4 top-4 z-100 rounded-md bg-black px-4 py-3 text-white no-underline;
+		transform: translateY(-200%);
+		transition: transform 0.2s ease;
+	}
+
+	.skip-link:focus {
+		transform: translateY(0);
 	}
 
 
@@ -258,6 +274,19 @@
 
 	article > blockquote > p {
 		@apply leading-8 mb-0;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+
+		*, *::before, *::after {
+			animation-duration: 0.01ms !important;
+			animation-iteration-count: 1 !important;
+			scroll-behavior: auto !important;
+			transition-duration: 0.01ms !important;
+		}
 	}
 }
 

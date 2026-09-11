@@ -1,6 +1,8 @@
 ---
 import PageLayout from "@layouts/PageLayout.astro";
+import ContentSection from "@components/ContentSection.astro";
 import SectionWithImage from "@components/SectionWithImage.astro";
+import CTAButton from "@components/CTAButton.astro";
 import coverPhoto from "@assets/photos/mt23_microbit.jpg";
 import codingClub from "@assets/photos/ws16_roundtables.jpg";
 import summerhack from "@assets/photos/sh16_presentation.jpg";
@@ -14,13 +16,11 @@ import fll from "@assets/photos/fll24_showoff.jpg";
 	coverImageAlt="Two attendees sitting behind a laptop, programming a BBC micro:bit connected to it"
 	accent="purple"
 >
-	<section>
-		<div class="px-4 lg:px-8">
-			<p>
-				We organise a range of events throughout the year. See their individual pages for more information:
-			</p>
-		</div>
-	</section>
+	<ContentSection>
+		<p>
+			We organise a range of events throughout the year. See their individual pages for more information:
+		</p>
+	</ContentSection>
 
 	<SectionWithImage reverse
 		imgSrc={codingClub}
@@ -35,11 +35,13 @@ import fll from "@assets/photos/fll24_showoff.jpg";
 		<p class="mb-6">
 			We meet almost every Wednesday of the year, from 5:30PM to 7:30PM at CodeBase Edinburgh.
 		</p>
-		<a href="/events/coding-club/"
-			class="block md:w-fit px-4 py-3 mb-4 bg-pink-600 hover:bg-pink-800 active:bg-pink-900 rounded-lg font-[450] text-white no-underline text-center"
+		<CTAButton
+			href="/events/coding-club/"
+			variant="pink"
+			class="block md:w-fit mb-4 font-[450]"
 		>
 			Read more
-		</a>
+		</CTAButton>
 	</SectionWithImage>
 
 	<SectionWithImage
@@ -55,11 +57,13 @@ import fll from "@assets/photos/fll24_showoff.jpg";
 		<p class="mb-6">
 			The Make-a-Thon is open to those aged 11-18 and is a fantastic opportunity to practice working in a team, quickly scaffolding a project, and presenting in front of an audience.
 		</p>
-		<a href="/events/make-a-thon/"
-			class="block md:w-fit px-4 py-3 mb-4 bg-purple-600 hover:bg-purple-800 active:bg-purple-900 rounded-lg font-[450] text-white no-underline text-center"
+		<CTAButton
+			href="/events/make-a-thon/"
+			variant="purple"
+			class="block md:w-fit mb-4 font-[450]"
 		>
 			Read more
-		</a>
+		</CTAButton>
 	</SectionWithImage>
 
 	<SectionWithImage reverse
@@ -75,10 +79,12 @@ import fll from "@assets/photos/fll24_showoff.jpg";
 		<p class="mb-6">
 			We've participated in the Edinburgh competition several times and even won a few prizes, such as Best Innovation Project by our team <em>Plastic Pollution Solution</em> in 2025.
 		</p>
-		<a href="/events/first-lego-league/"
-			class="block md:w-fit px-4 py-3 mb-4 bg-blue-600 hover:bg-blue-800 active:bg-blue-900 rounded-lg font-[450] text-white no-underline text-center"
+		<CTAButton
+			href="/events/first-lego-league/"
+			variant="blue"
+			class="block md:w-fit mb-4 font-[450]"
 		>
 			Read more
-		</a>
+		</CTAButton>
 	</SectionWithImage>
 </PageLayout>

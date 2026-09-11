@@ -1,0 +1,17 @@
+---
+interface Props {
+	bordered?: boolean;
+	stacked?: boolean;
+	style?: string;
+}
+
+const {
+	bordered = false,
+	stacked = false,
+	style = "",
+} = Astro.props;
+---
+
+<div class={`md:w-1/3 p-4 py-2 md:py-4 lg:p-8 ${bordered ? "md:border-r" : ""} ${stacked ? "flex md:flex-col" : ""} ${style}`}>
+	<slot />
+</div>
