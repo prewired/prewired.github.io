@@ -22,7 +22,7 @@ const navItems = [
 	{ href: "/events/", title: "Events", accent: "purple" },
 	{ href: "/resources/", title: "Resources", accent: "pink" },
 	{ href: "/volunteering/", title: "Volunteering", accent: "blue" },
-	{ href: "/support/", title: "Support us", accent: "purple" },
+	{ href: "/donate/", title: "Donate", accent: "purple" },
 	{ href: "/about/", title: "About", accent: "pink" },
 	{ href: "/contact/", title: "Contact", accent: "blue" },
 ];
@@ -183,17 +183,17 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 							class="mb-8"
 						/>
 						<div class="flex flex-wrap lg:flex-col gap-4">
-							<!-- Ko-fi widget -->
-							<script is:inline type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
-							<script is:inline type="text/javascript">
-								kofiwidget2.init("Support us on Ko-fi", "#EB004E", "S6S35YATV");
-								kofiwidget2.draw();
-							</script>
-							<!-- End of Ko-fi widget -->
+							<a
+								href="https://www.justgiving.com/charity/Prewired"
+								target="_blank" rel="noopener"
+								class="w-fit h-fit px-3.5 py-2.5 bg-pink-600 hover:bg-pink-800 rounded-md cursor-pointer font-medium text-sm text-white no-underline"
+							>
+								🤍&nbsp;&nbsp;Donate to Prewired
+							</a>
 							<a
 								href="http://eepurl.com/dv2dPb"
 								target="_blank" rel="noopener"
-								class="w-fit px-3.5 py-2.5 bg-purple-600 hover:bg-purple-800 rounded-md cursor-pointer font-medium text-sm text-white no-underline"
+								class="w-fit h-fit px-3.5 py-2.5 bg-purple-600 hover:bg-purple-800 rounded-md cursor-pointer font-medium text-sm text-white no-underline"
 							>
 								Join our mailing list
 							</a>

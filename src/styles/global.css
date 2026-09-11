@@ -283,13 +283,13 @@
 	}
 
 
-	/* Ko-fi button */
-	a.kofi-button {
-		@apply px-3.5! font-sans! font-medium! shadow-none! hover:bg-pink-800! hover:opacity-100!;
+	/* Just Giving button */
+	.just-giving-button a {
+		@apply mt-0! mb-0!;
 	}
 
-	.kofitext img.kofiimg {
-		@apply w-auto! pr-px!;
+	.just-giving-button a:hover {
+		@apply opacity-80;
 	}
 }
 
