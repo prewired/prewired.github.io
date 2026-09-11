@@ -1,0 +1,128 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import ContentSection from "@components/ContentSection.astro";
+import SectionWithImage from "@components/SectionWithImage.astro";
+import ThreeColumnSection from "@components/ThreeColumnSection.astro";
+import ThreeColumnItem from "@components/ThreeColumnItem.astro";
+import CTAButton from "@components/CTAButton.astro";
+import coverPhoto from "@assets/photos/mt24_threeattendees.jpg";
+import makeAThon from "@assets/photos/sh16_presentation.jpg";
+import equipment from "@assets/photos/mt24_equipment.jpg";
+---
+
+<PageLayout
+	title="Donate to Prewired"
+	desc="We think providing a free, accessible space for young people to learn about technology is really important, and if you'd like to help us keep going, there are many ways to support us!"
+	coverImageData={coverPhoto}
+	coverImageAlt="Three Prewired attendees, sitting next to each other, working on laptops with code and graphics editors"
+	accent="purple"
+>
+	<Fragment slot="blurb">
+		<p class="mb-6 max-w-[72ch] lg:max-w-[36ch] xl:max-w-[42ch]">
+			We think providing a free, accessible space for young people to learn about technology is really important, and if you'd like to help us keep going, there are many ways to support us!
+		</p>
+		<CTAButton
+			href="https://www.justgiving.com/charity/Prewired"
+			target="_blank"
+			rel="noopener noreferrer"
+			variant="purple-dark"
+			class="block md:w-fit mb-4 font-[450]"
+		>
+			Make a donation
+		</CTAButton>
+	</Fragment>
+
+	<ContentSection sectionClass="pb-4 max-md:border-b-0">
+		<h2>Why Prewired?</h2>
+		<p>
+			Each year, over 150 different children from Edinburgh and beyond attend one of our 50+ events, completely for free.
+		</p>
+		<p>
+			Since 2013, we have provided a supportive space for young coders and budding hackers to get support from mentors and meet peers with the same interests. Some are new to exploring the world of digital creativity, others come to us to practice their skills because their school lacks a computing teacher, and a few are advanced well beyond their years, in search for a community that understands them and can help them take their passion further.
+		</p>
+		<p>
+			Prewired is <strong>100% volunteer-run</strong>, relying on donations and grants to keep operating. Even small gifts can make a large impact:
+		</p>
+	</ContentSection>
+
+	<ThreeColumnSection sectionClass="py-0 max-md:border-b-0">
+		<ThreeColumnItem bordered stacked>
+			<p class="mb-0 md:mb-2 mr-2 md:text-2xl lg:text-4xl">🧃</p>
+			<p>
+				<strong>£5</strong> pays for a session's snack break, provided for free to all attendees
+			</p>
+		</ThreeColumnItem>
+		<ThreeColumnItem bordered stacked>
+			<p class="mb-0 md:mb-2 mr-2 md:text-2xl lg:text-4xl">⚡</p>
+			<p>
+				<strong>£15</strong> can buy a <a href="https://microbit.org/" target="_blank" rel="noopener noreferrer">BBC micro:bit</a>, introducing an attendee to the world of electronics
+			</p>
+		</ThreeColumnItem>
+		<ThreeColumnItem stacked>
+			<p class="mb-0 md:mb-2 mr-2 md:text-2xl lg:text-4xl">🤖</p>
+			<p>
+				<strong>£50</strong> allows a child to participate in a season of <a href="/events/first-lego-league/">FIRST LEGO League</a>
+			</p>
+		</ThreeColumnItem>
+	</ThreeColumnSection>
+
+	<ContentSection sectionClass="max-md:pb-12 lg:pt-8">
+		<p>
+			When you donate through our <a href="https://www.justgiving.com/charity/Prewired" target="_blank" rel="noopener noreferrer">our JustGiving page</a>, 100% of your donation will reach Prewired. It will help cover our costs such as equipment (batteries, wires, accessories), snacks for attendees, training support for our volunteers, as well as larger recurring expenses such as our insurance.
+		</p>
+		<CTAButton
+			href="https://www.justgiving.com/charity/Prewired"
+			target="_blank"
+			rel="noopener noreferrer"
+			variant="pink"
+			class="block md:w-fit mb-4 font-[450]"
+		>
+			Donate to Prewired
+		</CTAButton>
+		<p>
+			To discuss other options, please reach out to <a href="mailto:hello@prewired.org">hello@prewired.org</a> or directly to our Treasurer Christina Ovezik at <a href="mailto:christina@prewired.org">christina@prewired.org</a>.
+		</p>
+	</ContentSection>
+
+	<SectionWithImage reverse
+		imgSrc={makeAThon}
+		imgAlt="Four young people presenting a slide in front of an audience of about 30 listening adults"
+	>
+		<h2>Sponsoring events</h2>
+		<p>
+			If you're a local company, you might be interested in sponsoring a specific event or programme, such as our yearly <a href="/events/make-a-thon/">Summer Make-a-Thon</a> or <a href="/events/first-lego-league/">FIRST LEGO League</a>.
+		</p>
+		<p>
+			We will highlight your business on our event advertising materials as well as thank you with a special spot on our <a href="/#sponsors">home page</a>. Please reach out to <a href="mailto:hello@prewired.org">hello@prewired.org</a> to discuss the available options!
+		</p>
+	</SectionWithImage>
+
+	<SectionWithImage
+		imgSrc={equipment}
+		imgAlt="A mentor is checking in two attendees and their parent at the front desk"
+	>
+		<h2>Donating equipment</h2>
+		<p>
+			Prewired is accessible to young people regardless of their background in large part due to our extensive collection of equipment that they can borrow during our sessions. We are always on the lookout for new additions: in particular, we would welcome LEGO, microcontrollers (such as micro:bits and Raspberry Pis), and accessories such as mice. Let us know if you have anything to spare!
+		</p>
+		<p>
+			Due to a generous donation from the University of Edinburgh's School of Mathematics, in early 2026, we have a large fleet of laptops and are currently not in need of more. We also cannot recycle broken equipment, and highly recommend you bring any to the <a href="https://www.edinburghremakery.org.uk/" target="_blank" rel="noopener noreferrer">Edinburgh Remakery</a> instead.
+		</p>
+	</SectionWithImage>
+
+	<ContentSection>
+		<h2>Sponsorship policy</h2>
+		<p>
+			Prewired is an independent, non-political organisation. Views of organisers, volunteers, and participants are our own and will be neither directed nor constrained by our sponsors. Our sponsors do not and will not influence how Prewired runs as an organisation and have no hand in its management.
+		</p>
+		<p>
+			We are not under any obligation to endorse any of the products or services of our sponsors. Where our volunteers make recommendations, they are based on merit alone.
+		</p>
+		<p>
+			Since we wish to encourage our participants to think independently, we do not support advertising targeted at them. We refrain from asking for, or handing out, branded merchandise or marketing material from any of our sponsors, except where products are of particular use or benefit to participants. We hope that sponsors choose to support us for the benefit of the participants and the positive impact our activities may have on their future, rather than for personal, organisational, or commercial gain.
+		</p>
+		<p>
+			We continue to be grateful for any support we have been given, financially or in-kind. Without this we couldn't sustain our offerings or aim to grow in the future.
+		</p>
+	</ContentSection>
+</PageLayout>

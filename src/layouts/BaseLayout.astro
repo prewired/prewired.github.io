@@ -22,7 +22,7 @@ const navItems = [
 	{ href: "/events/", title: "Events", accent: "purple" },
 	{ href: "/resources/", title: "Resources", accent: "pink" },
 	{ href: "/volunteering/", title: "Volunteering", accent: "blue" },
-	{ href: "/support/", title: "Support us", accent: "purple" },
+	{ href: "/donate/", title: "Donate", accent: "purple" },
 	{ href: "/about/", title: "About", accent: "pink" },
 	{ href: "/contact/", title: "Contact", accent: "blue" },
 ];
@@ -66,9 +66,13 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 	</head>
 
 	<body class="bg-white lg:text-lg">
+		<a href="#main-content" class="skip-link">
+			Skip to main content
+		</a>
+
 		<div class="md:mx-4 md:border-x">
 			<header class="sticky top-0 h-18 lg:h-22 px-4 flex items-center bg-white z-40 after:absolute after:w-full after:md:w-[calc(100%+2rem)] after:h-px after:bg-gray-200 after:left-0 after:md:-left-4 after:-bottom-px">
-				<a href="/" class="mr-auto hover:opacity-70 transition">
+				<a href="/" aria-label="Prewired home" class="mr-auto hover:opacity-70 transition">
 					<Picture priority
 						src={prewiredLogoText}
 						formats={["avif", "webp"]}
@@ -80,10 +84,14 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 
 				<!-- Small-screen menu button -->
 				<button
+					type="button"
 					class="lg:hidden flex items-center pl-3 pr-4 py-2 bg-pink-600 hover:bg-pink-800 border-b-2 border-pink-900 active:border-b-0 active:mt-0.5 rounded-lg uppercase font-semibold text-white cursor-pointer transition"
 					id="menu-open-btn"
+					aria-controls="menu-dialog"
+					aria-expanded="false"
+					aria-haspopup="dialog"
 				>
-					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="-mt-px mr-2 fill-white" viewBox="0 0 16 16">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="-mt-px mr-2 fill-white" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
 						<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
 					</svg>
 					Menu
@@ -93,26 +101,31 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 				<dialog
 					class="h-full max-h-none w-full sm:w-1/2 max-w-full sm:left-1/2 p-10 bg-pink-50 sm:border-l-2 sm:border-pink-600 translate-x-10 open:translate-x-0 starting:open:translate-x-10"
 					id="menu-dialog"
+					aria-labelledby="menu-dialog-title"
 				>
 					<DialogCloseButton
 						id="menu-dialog-close-btn"
+						label="Close site menu"
 						style="absolute right-8"
 					/>
-					<nav>
+					<h2 id="menu-dialog-title" class="sr-only">
+						Site menu
+					</h2>
+					<nav aria-label="Primary">
 						<div class="mt-12 mb-8">
-							<a href="/" class={`text-2xl text-black no-underline ${Astro.url.pathname === "/" ? "font-semibold" : "hover:text-pink-600"}`}>
+							<a href="/" aria-current={Astro.url.pathname === "/" ? "page" : undefined} class={`text-2xl text-black no-underline ${Astro.url.pathname === "/" ? "font-semibold" : "hover:text-pink-600"}`}>
 								Home
 							</a>
 						</div>
 						{ navItems.map(({ href, title }) => (
 							<div class="mb-8">
-								<a href={href} class={`text-2xl text-black no-underline ${Astro.url.pathname === href ? "font-semibold" : "hover:text-pink-600"}`}>
+								<a href={href} aria-current={Astro.url.pathname === href ? "page" : undefined} class={`text-2xl text-black no-underline ${Astro.url.pathname === href ? "font-semibold" : "hover:text-pink-600"}`}>
 									{ title }
 								</a>
 								{ href === "/events/" &&
 									<div>
 										{ eventItems.map(({ href, title }) => 
-											<a href={href} class={`block mt-4 text-xl text-black no-underline ${Astro.url.pathname === href ? "font-semibold" : "hover:text-pink-600"}`}>
+											<a href={href} aria-current={Astro.url.pathname === href ? "page" : undefined} class={`block mt-4 text-xl text-black no-underline ${Astro.url.pathname === href ? "font-semibold" : "hover:text-pink-600"}`}>
 												{ title }
 											</a>
 										)}
@@ -124,27 +137,71 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 				</dialog>
 
 				<!-- Large-screen menu -->
-				<nav class="relative h-full mx-2 -mb-px hidden lg:flex gap-4 xl:gap-8 z-50">
+				<nav aria-label="Primary" class="relative h-full mx-2 -mb-px hidden lg:flex gap-4 xl:gap-8 z-50">
 					{ navItems.map(({ href, title, accent }) =>
 						href === "/events/" ? (
 							// Wrapper div for Tippy accessibility
 							<div>
 								<button
+									type="button"
 									id="eventsPopoverTrigger"
+									aria-controls="eventsPopover"
+									aria-expanded="false"
+									aria-haspopup="true"
 									class={`group flex pt-8 pb-6 shrink-0 font-[450] text-black no-underline border-b-2 border-transparent cursor-pointer ${Astro.url.pathname.includes(href) ? "text-purple-600 border-purple-600!" : "hover:text-purple-600 data-open:text-purple-600"}`}
 								>
 									{ title }
 									<svg xmlns="http://www.w3.org/2000/svg"
 										viewBox="0 -960 960 960"
+										aria-hidden="true"
+										focusable="false"
 										class={`w-8 h-8 ml-1.5 -mt-px -mr-2 ${Astro.url.pathname.includes(href) ? "fill-purple-600" : "group-hover:fill-purple-600 group-data-open:fill-purple-600"} group-data-open:rotate-180 transition-transform duration-200`}
 									>
 										<path d="M468.31-372.72q-5.28-2.1-10.23-7.05L271.54-566.31q-7.23-7.23-7.22-17.7.01-10.48 7.63-18.09 7.61-7.62 17.9-7.62 10.28 0 17.89 7.62L480-429.43 652.67-602.1q7.23-7.23 17.5-7.22 10.27.01 17.88 7.63 7.62 7.61 7.62 17.9 0 10.28-7.62 17.89L501.92-379.77q-4.95 4.95-10.23 7.05-5.28 2.1-11.69 2.1-6.41 0-11.69-2.1Z"/>
 									</svg>
 								</button>
 							</div>
+						) : href === "/donate/" ? (
+							<a
+								href={href}
+								aria-current={Astro.url.pathname === href ? "page" : undefined}
+								style={{ "--accent": `var(--color-${accent}-600)` }}
+								class={`donate-nav-link group relative px-2 py-8 shrink-0 font-[450] text-black no-underline border-b-2 border-transparent ${Astro.url.pathname === href ? "donate-nav-link--current text-(--accent)! border-(--accent)!" : "hover:text-(--accent) focus-visible:text-(--accent)"}`}
+							>
+								<span class="donate-nav-link__label relative inline-block px-2.5">
+									<span class="donate-nav-link__sparkles" aria-hidden="true">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											class="donate-nav-link__sparkle donate-nav-link__sparkle--left"
+											focusable="false"
+										>
+											<path d="M12 2.5 14.2 9.8 21.5 12l-7.3 2.2L12 21.5l-2.2-7.3L2.5 12l7.3-2.2Z" />
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											class="donate-nav-link__sparkle donate-nav-link__sparkle--right"
+											focusable="false"
+										>
+											<path d="M12 3.5 13.7 10.3 20.5 12l-6.8 1.7L12 20.5l-1.7-6.8L3.5 12l6.8-1.7Z" />
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											class="donate-nav-link__sparkle donate-nav-link__sparkle--lower"
+											focusable="false"
+										>
+											<path d="M12 5.25 13.35 10.65 18.75 12l-5.4 1.35L12 18.75l-1.35-5.4L5.25 12l5.4-1.35Z" />
+										</svg>
+									</span>
+									<span>{ title }</span>
+								</span>
+							</a>
 						) : (
 							<a
 								href={href}
+								aria-current={Astro.url.pathname === href ? "page" : undefined}
 								style={{ "--accent": accent === "blue" ? `var(--color-${accent}-750)` : `var(--color-${accent}-600)` }}
 								class={`px-2 py-8 shrink-0 font-[450] text-black no-underline border-b-2 border-transparent ${Astro.url.pathname === href ? "text-(--accent)! border-(--accent)!" : "hover:text-(--accent)"}`}
 							>
@@ -155,19 +212,23 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 					<div
 						id="eventsPopover"
 						class="p-2 bg-white border rounded-xl shadow"
+						hidden
 					>
-						{ eventItems.map(({ href, title }) => (
-							<a href={href}
-								class={`block pl-4 pr-6 py-4 rounded-lg font-[450] text-black no-underline ${Astro.url.pathname === href ? "bg-purple-50 text-purple-900" : "hover:bg-purple-50 hover:text-purple-900"}`}
-							>
-								{ title }
-							</a>
-						)) }
+						<nav aria-label="Events submenu">
+							{ eventItems.map(({ href, title }) => (
+								<a href={href}
+									aria-current={Astro.url.pathname === href ? "page" : undefined}
+									class={`block pl-4 pr-6 py-4 rounded-lg font-[450] text-black no-underline ${Astro.url.pathname === href ? "bg-purple-50 text-purple-900" : "hover:bg-purple-50 hover:text-purple-900"}`}
+								>
+									{ title }
+								</a>
+							)) }
+						</nav>
 					</div>
 				</nav>
 			</header>
 
-			<main>
+			<main id="main-content" tabindex="-1">
 				<slot />
 			</main>
 
@@ -183,17 +244,17 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 							class="mb-8"
 						/>
 						<div class="flex flex-wrap lg:flex-col gap-4">
-							<!-- Ko-fi widget -->
-							<script is:inline type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
-							<script is:inline type="text/javascript">
-								kofiwidget2.init("Support us on Ko-fi", "#EB004E", "S6S35YATV");
-								kofiwidget2.draw();
-							</script>
-							<!-- End of Ko-fi widget -->
+							<a
+								href="https://www.justgiving.com/charity/Prewired"
+								target="_blank" rel="noopener noreferrer"
+								class="footer-donate-link w-fit h-fit px-3.5 py-2.5 bg-pink-600 hover:bg-pink-800 rounded-md cursor-pointer font-medium text-sm text-white no-underline"
+							>
+								<span class="footer-donate-link__heart" aria-hidden="true">🤍</span>&nbsp;&nbsp;Donate to Prewired
+							</a>
 							<a
 								href="http://eepurl.com/dv2dPb"
-								target="_blank" rel="noopener"
-								class="w-fit px-3.5 py-2.5 bg-purple-600 hover:bg-purple-800 rounded-md cursor-pointer font-medium text-sm text-white no-underline"
+								target="_blank" rel="noopener noreferrer"
+								class="w-fit h-fit px-3.5 py-2.5 bg-purple-600 hover:bg-purple-800 rounded-md cursor-pointer font-medium text-sm text-white no-underline"
 							>
 								Join our mailing list
 							</a>
@@ -217,29 +278,29 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 							Edinburgh EH1 2EL
 						</address>
 						<hr class="hidden lg:block w-[calc(100%+4rem)] -ml-8 mt-6 mb-8" />
-						<div class="mt-4 lg:mt-0 flex gap-10">
+						<nav aria-label="Social media" class="mt-4 lg:mt-0 flex gap-10">
 							<!-- LinkedIn -->
-							<a href="https://uk.linkedin.com/company/prewired" target="_blank" rel="noopener noreferrer">
+							<a href="https://uk.linkedin.com/company/prewired" target="_blank" rel="noopener noreferrer" aria-label="Prewired on LinkedIn">
 								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-purple-600 hover:fill-purple-800 active:fill-purple-500" viewBox="0 0 16 16">
 									<title>LinkedIn</title>
 									<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
 								</svg>
 							</a>
 							<!-- Facebook -->
-							<a href="https://www.facebook.com/Prewired1" target="_blank" rel="noopener noreferrer">
+							<a href="https://www.facebook.com/Prewired1" target="_blank" rel="noopener noreferrer" aria-label="Prewired on Facebook">
 								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-purple-600 hover:fill-purple-800 active:fill-purple-500" viewBox="0 0 16 16">
 									<title>Facebook</title>
 									<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
 								</svg>
 							</a>
 							<!-- GitHub -->
-							<a href="https://github.com/prewired" target="_blank" rel="noopener noreferrer">
+							<a href="https://github.com/prewired" target="_blank" rel="noopener noreferrer" aria-label="Prewired on GitHub">
 								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="fill-purple-600 hover:fill-purple-800 active:fill-purple-500" viewBox="0 0 16 16">
 									<title>GitHub</title>
 									<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
 								</svg>
 							</a>
-						</div>
+						</nav>
 					</div>
 					<div>
 						<h2>Correspondence to</h2>
@@ -255,7 +316,7 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 			</footer>
 			<div class="w-full max-w-360 mx-auto py-4 md:py-0 flex flex-col md:flex-row 2xl:border-x text-base text-center">
 				<div class="md:w-1/2 lg:w-1/3 md:py-4">
-					Prewired is a Scottish Charity, <a href="https://www.oscr.org.uk/about-charities/search-the-register/charity-details?number=SC047780" target="_blank" rel="noopener">SC047780</a>
+					Prewired is a Scottish Charity, <a href="https://www.oscr.org.uk/about-charities/search-the-register/charity-details?number=SC047780" target="_blank" rel="noopener noreferrer">SC047780</a>
 				</div>
 				<div class="md:w-1/2 lg:w-1/3 md:py-4 md:border-l">
 					&copy; 2026 Prewired
@@ -275,9 +336,13 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 			const menuOpenBtn = document.getElementById("menu-open-btn") as HTMLButtonElement;
 			const menuDialog = document.getElementById("menu-dialog") as HTMLDialogElement;
 			const menuCloseBtn = document.getElementById("menu-dialog-close-btn") as HTMLButtonElement;
+			let lastMenuTrigger: HTMLElement | null = null; // Enables auto-focus down the line for accessibility
 
 			menuOpenBtn.addEventListener("click", () => {
+				lastMenuTrigger = menuOpenBtn;
 				menuDialog.showModal();
+				menuOpenBtn.setAttribute("aria-expanded", "true");
+				menuCloseBtn.focus();
 			});
 
 			menuCloseBtn.addEventListener("click", () => {
@@ -289,10 +354,16 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 				if (event.target === menuDialog) menuDialog.close();
 			});
 
+			menuDialog.addEventListener("close", () => {
+				menuOpenBtn.setAttribute("aria-expanded", "false");
+				lastMenuTrigger?.focus();
+			});
+
 
 			/* Set up the Events navigation menu on large screens */
 			const eventsPopoverTrigger = document.getElementById("eventsPopoverTrigger") as HTMLButtonElement;
 			const eventsPopover = document.getElementById("eventsPopover") as HTMLDivElement;
+			eventsPopover.hidden = false;
 
 			tippy(eventsPopoverTrigger, {
 				content: eventsPopover,
@@ -303,8 +374,14 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 				placement: "bottom",
 				trigger: "click focus mouseenter",
 
-				onShow: () => { eventsPopoverTrigger.dataset.open = "true" },
-				onHide: () => { eventsPopoverTrigger.removeAttribute("data-open") }
+				onShow: () => {
+					eventsPopoverTrigger.dataset.open = "true";
+					eventsPopoverTrigger.setAttribute("aria-expanded", "true");
+				},
+				onHide: () => {
+					eventsPopoverTrigger.removeAttribute("data-open");
+					eventsPopoverTrigger.setAttribute("aria-expanded", "false");
+				}
 			});
 		</script>
 	</body>

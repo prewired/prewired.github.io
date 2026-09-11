@@ -3,7 +3,7 @@ import { Picture } from "astro:assets";
 import { getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import importImage from "@scripts/dynamicImportImage";
-import externalPosts from "./externalPosts";
+import externalPosts from "@data/externalPosts";
 import coverPhoto from "@assets/photos/sh18_live.jpg";
 
 
@@ -54,7 +54,7 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 				&gt;&gt;
 			</div>
 			<p class="max-w-full grow mb-4 px-2">
-				Subscribe to our <a href="https://eepurl.com/dv2dPb" target="_blank" rel="noopener">mailing list</a> to receive more frequent updates and announcements of all our events!
+				Subscribe to our <a href="https://eepurl.com/dv2dPb" target="_blank" rel="noopener noreferrer">mailing list</a> to receive more frequent updates and announcements of all our events!
 			</p>
 		</div>
 
@@ -102,7 +102,7 @@ const feedByYears = years.map(year => { return { year, posts: feed.filter(post =
 												<Picture
 													src={favicon}
 													formats={["avif", "webp"]}
-													alt={`${site} favicon`}
+													alt=""
 													class="w-4 h-4 mx-2"
 												/>
 											}

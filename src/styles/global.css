@@ -64,6 +64,7 @@
 
 	html {
 		@apply transition duration-300 scrollbar-gutter-stable;
+		scroll-padding-top: 6rem;
 	}
 
 	html:has(dialog[open]) {
@@ -123,6 +124,11 @@
 
 	a {
 		@apply text-blue-800 hover:text-purple-600 underline underline-offset-2;
+	}
+
+	:where(a, button, summary, input, select, textarea, [tabindex]:not([tabindex="-1"])):focus-visible {
+		outline: 3px solid var(--color-blue-750);
+		outline-offset: 3px;
 	}
 
 
@@ -187,7 +193,7 @@
 		transform: rotate(180deg);
 	}
 
-	summary:hover {
+	summary:hover, summary:focus-visible {
 		@apply bg-gray-100;
 	}
 
@@ -214,6 +220,16 @@
 
 	code {
 		@apply px-1.5 py-1 bg-blue-100 text-blue-900 rounded;
+	}
+
+	.skip-link {
+		@apply fixed left-4 top-4 z-100 rounded-md bg-black px-4 py-3 text-white no-underline;
+		transform: translateY(-200%);
+		transition: transform 0.2s ease;
+	}
+
+	.skip-link:focus {
+		transform: translateY(0);
 	}
 
 
@@ -259,6 +275,19 @@
 	article > blockquote > p {
 		@apply leading-8 mb-0;
 	}
+
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+
+		*, *::before, *::after {
+			animation-duration: 0.01ms !important;
+			animation-iteration-count: 1 !important;
+			scroll-behavior: auto !important;
+			transition-duration: 0.01ms !important;
+		}
+	}
 }
 
 
@@ -283,13 +312,120 @@
 	}
 
 
-	/* Ko-fi button */
-	a.kofi-button {
-		@apply px-3.5! font-sans! font-medium! shadow-none! hover:bg-pink-800! hover:opacity-100!;
+	/* Just Giving button */
+	.just-giving-button a {
+		@apply mt-0! mb-0!;
 	}
 
-	.kofitext img.kofiimg {
-		@apply w-auto! pr-px!;
+	.just-giving-button a:hover {
+		@apply opacity-80;
+	}
+
+
+	/* Footer donate button */
+	.footer-donate-link__heart {
+		@apply inline-block;
+		transform-origin: center;
+		animation: footer-donate-heart-pulse 1.35s ease-in-out infinite;
+	}
+
+	.footer-donate-link:hover .footer-donate-link__heart,
+	.footer-donate-link:focus-visible .footer-donate-link__heart {
+		animation: footer-donate-heart-hover 260ms ease-out forwards;
+	}
+
+	@keyframes footer-donate-heart-pulse {
+		0%, 100% {
+			transform: scale(1);
+		}
+
+		40% {
+			transform: scale(1.14);
+		}
+
+		60% {
+			transform: scale(1.05);
+		}
+	}
+
+	@keyframes footer-donate-heart-hover {
+		0% {
+			transform: scale(1.05);
+		}
+
+		100% {
+			transform: scale(1.38);
+		}
+	}
+
+
+	/* Donate nav sparkles */
+	.donate-nav-link__sparkles {
+		@apply absolute pointer-events-none;
+		inset: -0.35rem -0.45rem -0.4rem;
+	}
+
+	.donate-nav-link__sparkle {
+		@apply absolute size-[0.8rem] stroke-current opacity-[0.85] scale-100 origin-center;
+		stroke-width: 1.7;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+		transition: opacity 180ms ease-in-out, transform 220ms ease-out;
+		transform-box: fill-box;
+	}
+
+	.donate-nav-link__sparkle path {
+		@apply fill-current;
+	}
+
+	.donate-nav-link__sparkle--left {
+		@apply top-[0.05rem] -left-1;
+	}
+
+	.donate-nav-link__sparkle--right {
+		@apply top-[-0.35rem] right-[-0.3rem] size-[0.7rem];
+	}
+
+	.donate-nav-link__sparkle--lower {
+		@apply right-[0.7rem] bottom-[-0.2rem] size-[0.62rem];
+	}
+
+	.donate-nav-link:hover .donate-nav-link__sparkle,
+	.donate-nav-link:focus-visible .donate-nav-link__sparkle,
+	.donate-nav-link--current .donate-nav-link__sparkle {
+		@apply opacity-100;
+	}
+
+	.donate-nav-link:hover .donate-nav-link__sparkle {
+		animation: donate-sparkle-glow 1.8s ease-in-out infinite;
+	}
+
+	.donate-nav-link:hover .donate-nav-link__sparkle--left {
+		animation-duration: 1.95s;
+	}
+
+	.donate-nav-link:hover .donate-nav-link__sparkle--lower {
+		animation-duration: 1.65s;
+	}
+
+	@keyframes donate-sparkle-glow {
+		0%, 100% {
+			transform: scale(1);
+		}
+
+		50% {
+			transform: scale(1.4);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.footer-donate-link__heart {
+			@apply animate-none;
+		}
+
+		.donate-nav-link__sparkle {
+			@apply animate-none transition-none;
+		}
 	}
 }
 

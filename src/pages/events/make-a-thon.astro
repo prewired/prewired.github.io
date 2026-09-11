@@ -1,13 +1,15 @@
 ---
 import { Picture } from "astro:assets";
 import { getCollection } from "astro:content";
-import SectionWithImage from "@components/SectionWithImage.astro";
 import PageLayout from "@layouts/PageLayout.astro";
+import ContentSection from "@components/ContentSection.astro";
+import SectionWithImage from "@components/SectionWithImage.astro";
+import CTAButton from "@components/CTAButton.astro";
 import importImage from "@scripts/dynamicImportImage";
+import externalPosts from "@data/externalPosts";
 import coverPhoto from "@assets/photos/sh16_presentation.jpg";
 import teams from "@assets/photos/mt26_teams.jpg";
 import logo from "@assets/logos/2026-make-a-thon-logo.png";
-import externalPosts from "../news/externalPosts";
 
 
 // Get Make-a-Thon archive
@@ -58,29 +60,27 @@ feed.sort((a, b) => b.date.valueOf() - a.date.valueOf());
 		</a> -->
 	</Fragment>
 
-	<section>
-		<div class="px-4 lg:px-8">
-			<Picture
-				src={logo}
-				formats={["avif", "webp"]}
-				alt={"The text 'Summer Make-a-Thon 2026' displayed on top of a photo of three young people tinkering with a small LEGO robot"}
-				class="w-48 md:w-88 xl:w-120 object-cover md:float-right"
-			/>
-			<h2>What is the Summer Make-a-Thon?</h2>
-			<p>
-				The Prewired Summer Make-a-Thon is a 2-day event during the summer holidays, running from 10 to 5 on both Saturday and Sunday. Each year, we have a theme: for example, <em>mental health</em> in 2026 and <em>sustainability</em> in 2025. In a team of 3 or 4, you'll think of a problem that you'd like to create a solution for and then spend the weekend building it. You can use <strong class="text-pink-600">any technology</strong> you'd like - whether software-based (Scratch, Python, websites, ...) or hardware-based, using any of the equipment we have available, such as LEGO robotics, BBC micro:bits, or Arduinos. Of course, our volunteer mentors will be there the entire time to help you out.
-			</p>
-			<p>
-				At the end of the weekend, you'll present your solution to the other attendees as well as a professional jury who will judge each entry. There are <strong class="text-pink-600">many awards to be won</strong> and one team will take home the grand prize!
-			</p>
-			<p>
-				The Make-a-Thon is <strong class="text-pink-600">open to all aged 11-17</strong>, regardless of experience.
-			</p>
-			<p>
-				<strong>The 2026 Summer Make-a-Thon happened on 1 and 2 August 2026. See you next year!</strong>
-			</p>
-		</div>
-	</section>
+	<ContentSection>
+		<Picture
+			src={logo}
+			formats={["avif", "webp"]}
+			alt={"The text 'Summer Make-a-Thon 2026' displayed on top of a photo of three young people tinkering with a small LEGO robot"}
+			class="w-48 md:w-88 xl:w-120 object-cover md:float-right"
+		/>
+		<h2>What is the Summer Make-a-Thon?</h2>
+		<p>
+			The Prewired Summer Make-a-Thon is a 2-day event during the summer holidays, running from 10 to 5 on both Saturday and Sunday. Each year, we have a theme: for example, <em>mental health</em> in 2026 and <em>sustainability</em> in 2025. In a team of 3 or 4, you'll think of a problem that you'd like to create a solution for and then spend the weekend building it. You can use <strong class="text-pink-600">any technology</strong> you'd like - whether software-based (Scratch, Python, websites, ...) or hardware-based, using any of the equipment we have available, such as LEGO robotics, BBC micro:bits, or Arduinos. Of course, our volunteer mentors will be there the entire time to help you out.
+		</p>
+		<p>
+			At the end of the weekend, you'll present your solution to the other attendees as well as a professional jury who will judge each entry. There are <strong class="text-pink-600">many awards to be won</strong> and one team will take home the grand prize!
+		</p>
+		<p>
+			The Make-a-Thon is <strong class="text-pink-600">open to all aged 11-17</strong>, regardless of experience.
+		</p>
+		<p>
+			<strong>The 2026 Summer Make-a-Thon happened on 1 and 2 August 2026. See you next year!</strong>
+		</p>
+	</ContentSection>
 
 	<SectionWithImage
 		imgSrc={teams}
@@ -93,23 +93,21 @@ feed.sort((a, b) => b.date.valueOf() - a.date.valueOf());
 		<p class="mb-6">
 			The 2026 edition of the Summer Make-a-Thon happened on 1 and 2 August. Six teams of teenagers spent the weekend working together to build innovative solutions for mental health issues.
 		</p>
-		<a
+		<CTAButton
 			href="/news/2026-08-07-make-a-thon-2026/"
-			class="block md:w-fit px-4 py-3 mb-4 bg-purple-600 hover:bg-purple-800 active:bg-purple-900 rounded-lg font-[450] text-white no-underline text-center"
+			variant="purple"
+			class="block md:w-fit mb-4 font-[450]"
 		>
 			Read the blog post
-		</a>
+		</CTAButton>
 	</SectionWithImage>
 
-	<section>
-		<div class="px-4 lg:px-8">
-			<h2>Make-a-Thon and Summer Hack archive</h2>
-			<p>
-				From 2016 to 2019, we ran week-long Summer Hacks each year. After a break for COVID, we returned in 2023 with the current Make-a-Thon format. See below for impressions of the editions so far:
-			</p>
-		</div>
-
-		<div class="lg:px-6">
+	<ContentSection>
+		<h2>Make-a-Thon and Summer Hack archive</h2>
+		<p>
+			From 2016 to 2019, we ran week-long Summer Hacks each year. After a break for COVID, we returned in 2023 with the current Make-a-Thon format. See below for impressions of the editions so far:
+		</p>
+		<div slot="after" class="lg:px-6">
 			{ feed.map(({ type, url, date, site, title, desc, favicon, banner, bannerAlt, tags }) => (
 				<a
 					href={url}
@@ -145,7 +143,7 @@ feed.sort((a, b) => b.date.valueOf() - a.date.valueOf());
 										<Picture
 											src={favicon}
 											formats={["avif", "webp"]}
-											alt={`${site} favicon`}
+											alt=""
 											class="w-4 h-4 mx-2"
 										/>
 									}
@@ -163,5 +161,5 @@ feed.sort((a, b) => b.date.valueOf() - a.date.valueOf());
 				</a>
 			)) }
 		</div>
-	</section>
+	</ContentSection>
 </PageLayout>

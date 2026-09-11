@@ -15,7 +15,8 @@ export default defineConfig({
 	// Legacy URLs
 	redirects: {
 		"/attending/": "/events/",
-		"/docs/": "/about/#governance"
+		"/docs/": "/about/#governance",
+		"/support/": "/donate/"
 	},
 
 	integrations: [sitemap(), tunnel()],
