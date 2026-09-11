@@ -291,6 +291,72 @@
 	.just-giving-button a:hover {
 		@apply opacity-80;
 	}
+
+
+	/* Donate nav sparkles */
+	.donate-nav-link__sparkles {
+		@apply absolute pointer-events-none;
+		inset: -0.35rem -0.45rem -0.4rem;
+	}
+
+	.donate-nav-link__sparkle {
+		@apply absolute size-[0.8rem] stroke-current opacity-[0.85] scale-100 origin-center;
+		stroke-width: 1.7;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+		transition: opacity 180ms ease-in-out, transform 220ms ease-out;
+		transform-box: fill-box;
+	}
+
+	.donate-nav-link__sparkle path {
+		@apply fill-current;
+	}
+
+	.donate-nav-link__sparkle--left {
+		@apply top-[0.05rem] -left-1;
+	}
+
+	.donate-nav-link__sparkle--right {
+		@apply top-[-0.35rem] right-[-0.3rem] size-[0.7rem];
+	}
+
+	.donate-nav-link__sparkle--lower {
+		@apply right-[0.7rem] bottom-[-0.2rem] size-[0.62rem];
+	}
+
+	.donate-nav-link:hover .donate-nav-link__sparkle,
+	.donate-nav-link:focus-visible .donate-nav-link__sparkle,
+	.donate-nav-link--current .donate-nav-link__sparkle {
+		@apply opacity-100;
+	}
+
+	.donate-nav-link:hover .donate-nav-link__sparkle {
+		animation: donate-sparkle-glow 1.8s ease-in-out infinite;
+	}
+
+	.donate-nav-link:hover .donate-nav-link__sparkle--left {
+		animation-duration: 1.95s;
+	}
+
+	.donate-nav-link:hover .donate-nav-link__sparkle--lower {
+		animation-duration: 1.65s;
+	}
+
+	@keyframes donate-sparkle-glow {
+		0%, 100% {
+			transform: scale(1);
+		}
+
+		50% {
+			transform: scale(1.4);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.donate-nav-link__sparkle {
+			@apply animate-none transition-none;
+		}
+	}
 }
 
 

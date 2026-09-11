@@ -142,6 +142,43 @@ const imgURL = new URL((await getImage({ src: coverImageData, format: coverImage
 									</svg>
 								</button>
 							</div>
+						) : href === "/donate/" ? (
+							<a
+								href={href}
+								aria-current={Astro.url.pathname === href ? "page" : undefined}
+								style={{ "--accent": `var(--color-${accent}-600)` }}
+								class={`donate-nav-link group relative px-2 py-8 shrink-0 font-[450] text-black no-underline border-b-2 border-transparent ${Astro.url.pathname === href ? "donate-nav-link--current text-(--accent)! border-(--accent)!" : "hover:text-(--accent) focus-visible:text-(--accent)"}`}
+							>
+								<span class="donate-nav-link__label relative inline-block px-2.5">
+									<span class="donate-nav-link__sparkles" aria-hidden="true">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											class="donate-nav-link__sparkle donate-nav-link__sparkle--left"
+											focusable="false"
+										>
+											<path d="M12 2.5 14.2 9.8 21.5 12l-7.3 2.2L12 21.5l-2.2-7.3L2.5 12l7.3-2.2Z" />
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											class="donate-nav-link__sparkle donate-nav-link__sparkle--right"
+											focusable="false"
+										>
+											<path d="M12 3.5 13.7 10.3 20.5 12l-6.8 1.7L12 20.5l-1.7-6.8L3.5 12l6.8-1.7Z" />
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											class="donate-nav-link__sparkle donate-nav-link__sparkle--lower"
+											focusable="false"
+										>
+											<path d="M12 5.25 13.35 10.65 18.75 12l-5.4 1.35L12 18.75l-1.35-5.4L5.25 12l5.4-1.35Z" />
+										</svg>
+									</span>
+									<span>{ title }</span>
+								</span>
+							</a>
 						) : (
 							<a
 								href={href}
