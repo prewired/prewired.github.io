@@ -322,6 +322,43 @@
 	}
 
 
+	/* Footer donate button */
+	.footer-donate-link__heart {
+		@apply inline-block;
+		transform-origin: center;
+		animation: footer-donate-heart-pulse 1.35s ease-in-out infinite;
+	}
+
+	.footer-donate-link:hover .footer-donate-link__heart,
+	.footer-donate-link:focus-visible .footer-donate-link__heart {
+		animation: footer-donate-heart-hover 260ms ease-out forwards;
+	}
+
+	@keyframes footer-donate-heart-pulse {
+		0%, 100% {
+			transform: scale(1);
+		}
+
+		40% {
+			transform: scale(1.14);
+		}
+
+		60% {
+			transform: scale(1.05);
+		}
+	}
+
+	@keyframes footer-donate-heart-hover {
+		0% {
+			transform: scale(1.05);
+		}
+
+		100% {
+			transform: scale(1.38);
+		}
+	}
+
+
 	/* Donate nav sparkles */
 	.donate-nav-link__sparkles {
 		@apply absolute pointer-events-none;
@@ -382,6 +419,10 @@
 	}
 
 	@media (prefers-reduced-motion: reduce) {
+		.footer-donate-link__heart {
+			@apply animate-none;
+		}
+
 		.donate-nav-link__sparkle {
 			@apply animate-none transition-none;
 		}
